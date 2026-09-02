@@ -58,7 +58,9 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add -A data/ dashboard.html || true
+          mkdir -p data/historial_partidos
+          touch data/.gitkeep data/historial_partidos/.gitkeep
+          git add -A
           if git diff --staged --quiet; then
             echo "No hay cambios para commitear"
           else

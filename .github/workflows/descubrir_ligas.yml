@@ -31,7 +31,9 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add -A data/ligas_espn.json || true
+          mkdir -p data
+          touch data/.gitkeep
+          git add -A
           if git diff --staged --quiet; then
             echo "No hay cambios"
           else
