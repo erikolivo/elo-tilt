@@ -62,10 +62,10 @@ def _extraer_evento(evento, liga_slug):
             return None
 
     return {
-        "fixture": {"id": evento["id"], "date": evento.get("date")},
+        "fixture": {"id": str(evento["id"]), "date": evento.get("date")},
         "teams": {
-            "home": {"id": home["team"]["id"], "name": home["team"].get("displayName")},
-            "away": {"id": away["team"]["id"], "name": away["team"].get("displayName")},
+            "home": {"id": str(home["team"]["id"]), "name": home["team"].get("displayName")},
+            "away": {"id": str(away["team"]["id"]), "name": away["team"].get("displayName")},
         },
         "league": {
             "country": liga.get("country") or "",

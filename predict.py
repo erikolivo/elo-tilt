@@ -164,7 +164,7 @@ def predecir_fecha(fecha_iso, ligas=None):
         for lado in ["home", "away"]:
             t = fx["teams"][lado]
             equipos_info.append({
-                "team_id": t["id"],
+                "team_id": str(t["id"]),
                 "nombre": t["name"],
                 "pais": fx["league"].get("country"),
                 "liga": fx["league"].get("name"),
@@ -182,8 +182,8 @@ def predecir_fecha(fecha_iso, ligas=None):
 
     predicciones = []
     for fx in fixtures:
-        home_id = fx["teams"]["home"]["id"]
-        away_id = fx["teams"]["away"]["id"]
+        home_id = str(fx["teams"]["home"]["id"])
+        away_id = str(fx["teams"]["away"]["id"])
 
         tilt_home = tilt_map.get(home_id, form_calculator.calcular_tilt_completo(
             home_id, nombre=fx["teams"]["home"]["name"]))

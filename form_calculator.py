@@ -352,6 +352,7 @@ def tiltear_multiples(equipos_info):
     for eq in equipos_info:
         tid = eq.get("team_id")
         if tid:
+            tid = str(tid)
             resultados[tid] = calcular_tilt_completo(
                 tid, nombre=eq.get("nombre"),
                 pais=eq.get("pais"), liga=eq.get("liga")
