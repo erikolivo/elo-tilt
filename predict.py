@@ -190,8 +190,11 @@ def predecir_fecha(fecha_iso, ligas=None):
         tilt_away = tilt_map.get(away_id, form_calculator.calcular_tilt_completo(
             away_id, nombre=fx["teams"]["away"]["name"]))
 
-        pred = predecir_partido(fx, tilt_home, tilt_away)
-        predicciones.append(pred)
+        try:
+            pred = predecir_partido(fx, tilt_home, tilt_away)
+            predicciones.append(pred)
+        except Exception as e:
+            print(f"[AVISO] Error prediciendo {fx['teams']['home']['name']} vs {fx['teams']['away']['name']}: {e}")
 
     predicciones.sort(key=lambda x: (x["liga"], x["fecha"], x["diff_elo"]), reverse=True)
 

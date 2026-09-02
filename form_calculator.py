@@ -301,10 +301,19 @@ def calcular_tilt_completo(team_id, nombre=None, pais=None, liga=None):
     Calcula todos los indicadores de tilt para un equipo.
     Devuelve un dict con todos los indicadores.
     """
-    llave = ratings_store.llave_equipo(team_id, pais=pais, nombre=nombre)
-    eq = ratings_store.obtener_o_crear(llave, nombre=nombre, pais=pais, liga=liga)
+    team_id = str(team_id)
 
-    partidos_5 = _obtener_partidos_equipo(team_id, n=VENTANA_FORMA)
+    try:
+        llave = ratings_store.llave_equipo(team_id, pais=pais, nombre=nombre)
+        eq = ratings_store.obtener_o_crear(llave, nombre=nombre, pais=pais, liga=liga)
+    except Exception:
+        eq = {"rating": glicko2.RATING_BASE, "rd": glicko2.RD_INICIAL, "partidos_jugados": 0}
+
+    try:
+        partidos_5 = _obtener_partidos_equipo(team_id, n=VENTANA_FORMA)
+    except Exception:
+        partidos_5 = []
+
     partidos_3 = partidos_5[:VENTANA_MOMENTUM]
 
     form_score = _calcular_form_score(partidos_5, team_id)
@@ -314,13 +323,13 @@ def calcular_tilt_completo(team_id, nombre=None, pais=None, liga=None):
     gf, gc, goal_diff = _calcular_goal_trend(partidos_5, team_id)
     home_away = _calcular_home_away_split(partidos_5, team_id)
     field_tilt = _calcular_field_tilt(partidos_5, team_id)
-    overperf = _calcular_overperformance(partidos_5, team_id, eq["rating"])
+    overperf = _calcular_overperformance(partidos_5, team_id, eq.get("rating", glicko2.RATING_BASE))
 
     return {
         "team_id": team_id,
         "nombre": nombre or eq.get("nombre"),
-        "rating": eq["rating"],
-        "rd": eq["rd"],
+        "rating": eq.get("rating", glicko2.RATING_BASE),
+        "rd": eq.get("rd", glicko2.RD_INICIAL),
         "partidos_jugados": eq.get("partidos_jugados", 0),
         "form_score": form_score,
         "momentum": {
@@ -353,8 +362,22 @@ def tiltear_multiples(equipos_info):
         tid = eq.get("team_id")
         if tid:
             tid = str(tid)
-            resultados[tid] = calcular_tilt_completo(
-                tid, nombre=eq.get("nombre"),
-                pais=eq.get("pais"), liga=eq.get("liga")
-            )
+            try:
+                resultados[tid] = calcular_tilt_completo(
+                    tid, nombre=eq.get("nombre"),
+                    pais=eq.get("pais"), liga=eq.get("liga")
+                )
+            except Exception as e:
+                print(f"[AVISO] Error calculando tilt para {tid}: {e}")
+                resultados[tid] = {
+                    "team_id": tid, "nombre": eq.get("nombre"),
+                    "rating": glicko2.RATING_BASE, "rd": glicko2.RD_INICIAL,
+                    "partidos_jugados": 0, "form_score": 50.0,
+                    "momentum": {"direccion": "stable", "diferencia": 0.0},
+                    "streak": {"tipo": "N/A", "cantidad": 0},
+                    "goal_trend": {"goles_favor": 0.0, "goles_contra": 0.0, "diferencia": 0.0},
+                    "home_away": {"form_local": 50.0, "form_visitante": 50.0, "partidos_local": 0, "partidos_visitante": 0},
+                    "field_tilt": {"posesion": 50.0, "tiros": 50.0, "overall": 50.0},
+                    "overperformance": 0.0,
+                }
     return resultados
