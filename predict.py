@@ -159,36 +159,43 @@ def predecir_fecha(fecha_iso, ligas=None):
         print(f"No se encontraron fixtures futuros para {fecha_iso}")
         return []
 
-    equipos_info = []
-    for fx in fixtures:
-        for lado in ["home", "away"]:
-            t = fx["teams"][lado]
-            equipos_info.append({
-                "team_id": str(t["id"]),
-                "nombre": t["name"],
-                "pais": fx["league"].get("country"),
-                "liga": fx["league"].get("name"),
-            })
-
-    unique_ids = set()
-    equipos_unicos = []
-    for eq in equipos_info:
-        if eq["team_id"] not in unique_ids:
-            unique_ids.add(eq["team_id"])
-            equipos_unicos.append(eq)
-
-    print(f"Calculando tilt para {len(equipos_unicos)} equipos...")
-    tilt_map = form_calculator.tiltear_multiples(equipos_unicos)
+    import ratings_store
+    ratings_data = ratings_store._cargar()
+    equipos_ratings = ratings_data.get("equipos", {})
 
     predicciones = []
     for fx in fixtures:
         home_id = str(fx["teams"]["home"]["id"])
         away_id = str(fx["teams"]["away"]["id"])
 
-        tilt_home = tilt_map.get(home_id, form_calculator.calcular_tilt_completo(
-            home_id, nombre=fx["teams"]["home"]["name"]))
-        tilt_away = tilt_map.get(away_id, form_calculator.calcular_tilt_completo(
-            away_id, nombre=fx["teams"]["away"]["name"]))
+        home_key = f"espn:{home_id}"
+        away_key = f"espn:{away_id}"
+
+        home_eq = equipos_ratings.get(home_key, {})
+        away_eq = equipos_ratings.get(away_key, {})
+
+        tilt_home = {
+            "team_id": home_id, "nombre": fx["teams"]["home"]["name"],
+            "rating": home_eq.get("rating", glicko2.RATING_BASE),
+            "rd": home_eq.get("rd", glicko2.RD_INICIAL),
+            "partidos_jugados": home_eq.get("partidos_jugados", 0),
+            "form_score": 50.0, "momentum": {"direccion": "stable", "diferencia": 0.0},
+            "streak": {"tipo": "N/A", "cantidad": 0},
+            "goal_trend": {"goles_favor": 0.0, "goles_contra": 0.0, "diferencia": 0.0},
+            "home_away": {"form_local": 50.0, "form_visitante": 50.0, "partidos_local": 0, "partidos_visitante": 0},
+            "field_tilt": {"overall": 50.0}, "overperformance": 0.0,
+        }
+        tilt_away = {
+            "team_id": away_id, "nombre": fx["teams"]["away"]["name"],
+            "rating": away_eq.get("rating", glicko2.RATING_BASE),
+            "rd": away_eq.get("rd", glicko2.RD_INICIAL),
+            "partidos_jugados": away_eq.get("partidos_jugados", 0),
+            "form_score": 50.0, "momentum": {"direccion": "stable", "diferencia": 0.0},
+            "streak": {"tipo": "N/A", "cantidad": 0},
+            "goal_trend": {"goles_favor": 0.0, "goles_contra": 0.0, "diferencia": 0.0},
+            "home_away": {"form_local": 50.0, "form_visitante": 50.0, "partidos_local": 0, "partidos_visitante": 0},
+            "field_tilt": {"overall": 50.0}, "overperformance": 0.0,
+        }
 
         try:
             pred = predecir_partido(fx, tilt_home, tilt_away)
