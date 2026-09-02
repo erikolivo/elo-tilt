@@ -1,0 +1,51 @@
+name: Backfill Retroactivo
+
+on:
+  workflow_dispatch:
+    inputs:
+      dias:
+        description: 'Dias hacia atras'
+        required: false
+        default: '30'
+        type: string
+      pausa:
+        description: 'Pausa entre dias (segundos)'
+        required: false
+        default: '2'
+        type: string
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run backfill
+        run: python backfill_retroactivo.py --dias ${{ inputs.dias || '30' }} --pausa ${{ inputs.pausa || '2' }}
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          mkdir -p data/historial_partidos
+          touch data/.gitkeep data/historial_partidos/.gitkeep
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No hay cambios"
+          else
+            git commit -m "Backfill: ${{ inputs.dias || '30' }} dias - $(date -u +%Y-%m-%d)"
+            git push
+          fi
