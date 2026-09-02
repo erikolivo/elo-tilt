@@ -166,8 +166,86 @@ def predecir_fecha(fecha_iso, ligas=None):
         return []
 
     import ratings_store
+    import historial_store
+    import datetime
+
     ratings_data = ratings_store._cargar()
     equipos_ratings = ratings_data.get("equipos", {})
+
+    def _obtener_historial_rapido(team_id):
+        team_id = str(team_id)
+        partidos = []
+        hoy = datetime.date.today()
+        for offset in range(6):
+            fecha_mes = hoy - datetime.timedelta(days=30 * offset)
+            fecha_iso_mes = fecha_mes.isoformat()
+            datos = historial_store._cargar_mes(fecha_iso_mes)
+            for p in datos.get("partidos", []):
+                home = p.get("equipo_local", {})
+                away = p.get("equipo_visitante", {})
+                if str(home.get("id", "")) == team_id or str(away.get("id", "")) == team_id:
+                    partidos.append(p)
+        partidos.sort(key=lambda x: x.get("fecha", ""), reverse=True)
+        return partidos[:10]
+
+    def _calcular_forma_rapida(partidos, team_id):
+        if not partidos:
+            return 50.0
+        import math
+        team_id = str(team_id)
+        resultados = []
+        for i, p in enumerate(reversed(partidos)):
+            home = p.get("equipo_local", {})
+            gh = p.get("goles_local", 0)
+            ga = p.get("goles_visitante", 0)
+            es_local = str(home.get("id", "")) == team_id
+            if gh == ga:
+                r = 0.5
+            elif (gh > ga and es_local) or (ga > gh and not es_local):
+                r = 1.0
+            else:
+                r = 0.0
+            peso = math.exp(-0.5 * i)
+            resultados.append((r, peso))
+        return round(sum(r * p for r, p in resultados) / sum(p for _, p in resultados) * 100, 1)
+
+    def _calcular_streak_rapido(partidos, team_id):
+        if not partidos:
+            return ("N/A", 0)
+        team_id = str(team_id)
+        streak_tipo = None
+        streak_count = 0
+        for p in partidos:
+            home = p.get("equipo_local", {})
+            gh = p.get("goles_local", 0)
+            ga = p.get("goles_visitante", 0)
+            es_local = str(home.get("id", "")) == team_id
+            if gh == ga:
+                tipo = "D"
+            elif (gh > ga and es_local) or (ga > gh and not es_local):
+                tipo = "W"
+            else:
+                tipo = "L"
+            if streak_tipo is None:
+                streak_tipo = tipo
+                streak_count = 1
+            elif tipo == streak_tipo:
+                streak_count += 1
+            else:
+                break
+        return (streak_tipo, streak_count)
+
+    def _calcular_momentum_rapido(partidos, team_id):
+        if len(partidos) < 5:
+            return "stable"
+        form_5 = _calcular_forma_rapida(partidos[:5], team_id)
+        form_10 = _calcular_forma_rapida(partidos[:10], team_id)
+        diff = form_5 - form_10
+        if diff > 5:
+            return "up"
+        elif diff < -5:
+            return "down"
+        return "stable"
 
     predicciones = []
     for fx in fixtures:
@@ -180,26 +258,39 @@ def predecir_fecha(fecha_iso, ligas=None):
         home_eq = equipos_ratings.get(home_key, {})
         away_eq = equipos_ratings.get(away_key, {})
 
+        rating_h = home_eq.get("rating", glicko2.RATING_BASE)
+        rating_a = away_eq.get("rating", glicko2.RATING_BASE)
+        rd_h = home_eq.get("rd", glicko2.RD_INICIAL)
+        rd_a = away_eq.get("rd", glicko2.RD_INICIAL)
+        partidos_h = home_eq.get("partidos_jugados", 0)
+        partidos_a = away_eq.get("partidos_jugados", 0)
+
+        hist_h = _obtener_historial_rapido(home_id)
+        hist_a = _obtener_historial_rapido(away_id)
+
+        form_h = _calcular_forma_rapida(hist_h, home_id)
+        form_a = _calcular_forma_rapida(hist_a, away_id)
+        streak_h_tipo, streak_h_cant = _calcular_streak_rapido(hist_h, home_id)
+        streak_a_tipo, streak_a_cant = _calcular_streak_rapido(hist_a, away_id)
+        mom_h = _calcular_momentum_rapido(hist_h, home_id)
+        mom_a = _calcular_momentum_rapido(hist_a, away_id)
+
         tilt_home = {
             "team_id": home_id, "nombre": fx["teams"]["home"]["name"],
-            "rating": home_eq.get("rating", glicko2.RATING_BASE),
-            "rd": home_eq.get("rd", glicko2.RD_INICIAL),
-            "partidos_jugados": home_eq.get("partidos_jugados", 0),
-            "form_score": 50.0, "momentum": {"direccion": "stable", "diferencia": 0.0},
-            "streak": {"tipo": "N/A", "cantidad": 0},
+            "rating": rating_h, "rd": rd_h, "partidos_jugados": partidos_h,
+            "form_score": form_h, "momentum": {"direccion": mom_h, "diferencia": 0.0},
+            "streak": {"tipo": streak_h_tipo, "cantidad": streak_h_cant},
             "goal_trend": {"goles_favor": 0.0, "goles_contra": 0.0, "diferencia": 0.0},
-            "home_away": {"form_local": 50.0, "form_visitante": 50.0, "partidos_local": 0, "partidos_visitante": 0},
+            "home_away": {"form_local": form_h, "form_visitante": form_h, "partidos_local": 0, "partidos_visitante": 0},
             "field_tilt": {"overall": 50.0}, "overperformance": 0.0,
         }
         tilt_away = {
             "team_id": away_id, "nombre": fx["teams"]["away"]["name"],
-            "rating": away_eq.get("rating", glicko2.RATING_BASE),
-            "rd": away_eq.get("rd", glicko2.RD_INICIAL),
-            "partidos_jugados": away_eq.get("partidos_jugados", 0),
-            "form_score": 50.0, "momentum": {"direccion": "stable", "diferencia": 0.0},
-            "streak": {"tipo": "N/A", "cantidad": 0},
+            "rating": rating_a, "rd": rd_a, "partidos_jugados": partidos_a,
+            "form_score": form_a, "momentum": {"direccion": mom_a, "diferencia": 0.0},
+            "streak": {"tipo": streak_a_tipo, "cantidad": streak_a_cant},
             "goal_trend": {"goles_favor": 0.0, "goles_contra": 0.0, "diferencia": 0.0},
-            "home_away": {"form_local": 50.0, "form_visitante": 50.0, "partidos_local": 0, "partidos_visitante": 0},
+            "home_away": {"form_local": form_a, "form_visitante": form_a, "partidos_local": 0, "partidos_visitante": 0},
             "field_tilt": {"overall": 50.0}, "overperformance": 0.0,
         }
 
