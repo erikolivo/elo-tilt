@@ -36,6 +36,7 @@ def _obtener_partidos_equipo(team_id, n=10):
     import datetime
     partidos = []
     hoy = datetime.date.today()
+    team_id_str = str(team_id)
 
     for offset in range(12):
         fecha_mes = hoy - datetime.timedelta(days=30 * offset)
@@ -45,7 +46,9 @@ def _obtener_partidos_equipo(team_id, n=10):
         for p in datos.get("partidos", []):
             home = p.get("equipo_local", {})
             away = p.get("equipo_visitante", {})
-            if home.get("id") == team_id or away.get("id") == team_id:
+            home_id = str(home.get("id", ""))
+            away_id = str(away.get("id", ""))
+            if home_id == team_id_str or away_id == team_id_str:
                 partidos.append(p)
 
     partidos.sort(key=lambda x: x.get("fecha", ""), reverse=True)
@@ -63,13 +66,14 @@ def _calcular_form_score(partidos, team_id):
         return 50.0
 
     resultados = []
+    team_id_str = str(team_id)
     for i, p in enumerate(reversed(partidos)):
         home = p.get("equipo_local", {})
         away = p.get("equipo_visitante", {})
         gh = p.get("goles_local", 0)
         ga = p.get("goles_visitante", 0)
 
-        es_local = home.get("id") == team_id
+        es_local = str(home.get("id", "")) == team_id_str
 
         if gh == ga:
             resultado = 0.5
@@ -112,13 +116,14 @@ def _calcular_streak(partidos, team_id):
 
     streak_tipo = None
     streak_count = 0
+    team_id_str = str(team_id)
 
     for p in partidos:
         home = p.get("equipo_local", {})
         away = p.get("equipo_visitante", {})
         gh = p.get("goles_local", 0)
         ga = p.get("goles_visitante", 0)
-        es_local = home.get("id") == team_id
+        es_local = str(home.get("id", "")) == team_id_str
 
         if gh == ga:
             tipo = "D"
@@ -148,11 +153,12 @@ def _calcular_goal_trend(partidos, team_id):
 
     gf_total = 0
     gc_total = 0
+    team_id_str = str(team_id)
     for p in partidos:
         home = p.get("equipo_local", {})
         gh = p.get("goles_local", 0)
         ga = p.get("goles_visitante", 0)
-        es_local = home.get("id") == team_id
+        es_local = str(home.get("id", "")) == team_id_str
 
         if es_local:
             gf_total += gh
@@ -175,10 +181,11 @@ def _calcular_home_away_split(partidos, team_id):
     """
     local_partidos = []
     visitante_partidos = []
+    team_id_str = str(team_id)
 
     for p in partidos:
         home = p.get("equipo_local", {})
-        if home.get("id") == team_id:
+        if str(home.get("id", "")) == team_id_str:
             local_partidos.append(p)
         else:
             visitante_partidos.append(p)
@@ -198,6 +205,7 @@ def _calcular_field_tilt(partidos, team_id):
     Solo funciona si el historial tiene estadisticas guardadas.
     """
     stats_acum = {"posesion": [], "tiros": [], "tiros_arco": [], "corners": []}
+    team_id_str = str(team_id)
 
     for p in partidos:
         estadisticas = p.get("estadisticas")
@@ -205,7 +213,7 @@ def _calcular_field_tilt(partidos, team_id):
             continue
 
         home = p.get("equipo_local", {})
-        es_local = home.get("id") == team_id
+        es_local = str(home.get("id", "")) == team_id_str
         clave_equipo = "home" if es_local else "away"
 
         eq_stats = estadisticas.get(clave_equipo)
@@ -261,15 +269,16 @@ def _calcular_overperformance(partidos, team_id, rating_actual):
         return 0.0
 
     overperformance_scores = []
+    team_id_str = str(team_id)
 
     for p in partidos:
         home = p.get("equipo_local", {})
         away = p.get("equipo_visitante", {})
         gh = p.get("goles_local", 0)
         ga = p.get("goles_visitante", 0)
-        es_local = home.get("id") == team_id
+        es_local = str(home.get("id", "")) == team_id_str
 
-        rival_id = away.get("id") if es_local else home.get("id")
+        rival_id = str(away.get("id", "")) if es_local else str(home.get("id", ""))
         rival_llave = ratings_store.llave_equipo(rival_id)
         rival_eq = ratings_store.obtener_o_crear(rival_llave)
         rating_rival = rival_eq.get("rating", glicko2.RATING_BASE)
