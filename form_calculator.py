@@ -377,7 +377,9 @@ def tiltear_multiples(equipos_info):
                     pais=eq.get("pais"), liga=eq.get("liga")
                 )
             except Exception as e:
+                import traceback
                 print(f"[AVISO] Error calculando tilt para {tid}: {e}")
+                traceback.print_exc()
                 resultados[tid] = {
                     "team_id": tid, "nombre": eq.get("nombre"),
                     "rating": glicko2.RATING_BASE, "rd": glicko2.RD_INICIAL,
