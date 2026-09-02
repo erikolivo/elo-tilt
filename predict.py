@@ -113,6 +113,12 @@ def predecir_partido(fx, tilt_home, tilt_away):
         prob_local, prob_empate, prob_visitante,
         tilt_home["home_away"], tilt_away["home_away"])
 
+    prob_local = max(0.01, min(0.99, prob_local))
+    prob_empate = max(0.01, min(0.99, prob_empate))
+    prob_visitante = max(0.01, min(0.99, prob_visitante))
+    total = prob_local + prob_empate + prob_visitante
+    prob_local, prob_empate, prob_visitante = prob_local/total, prob_empate/total, prob_visitante/total
+
     diff_elo = rating_h - rating_a
     confianza = min(abs(diff_elo) / 200, 1.0) * 100
 
