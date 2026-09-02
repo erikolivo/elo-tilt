@@ -1,0 +1,67 @@
+name: Actualizar ELO + Tilt
+
+on:
+  schedule:
+    - cron: '0 20 * * *'  # 14:00 Ecuador (UTC-6 = 20:00 UTC)
+    - cron: '0 5 * * *'   # 23:00 Ecuador (anterior dia UTC)
+  workflow_dispatch:
+    inputs:
+      solo_prediccion:
+        description: 'Solo predecir (no recopilar resultados)'
+        required: false
+        default: 'false'
+        type: boolean
+      solo_dashboard:
+        description: 'Solo regenerar dashboard HTML'
+        required: false
+        default: 'false'
+        type: boolean
+      fecha:
+        description: 'Fecha YYYY-MM-DD (vacio = hoy)'
+        required: false
+        type: string
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        run: |
+          ARGS=""
+          if [ "${{ inputs.solo_prediccion }}" = "true" ]; then
+            ARGS="$ARGS --solo-prediccion"
+          fi
+          if [ "${{ inputs.solo_dashboard }}" = "true" ]; then
+            ARGS="$ARGS --solo-dashboard"
+          fi
+          if [ -n "${{ inputs.fecha }}" ]; then
+            ARGS="$ARGS --fecha ${{ inputs.fecha }}"
+          fi
+          python actualizar.py $ARGS
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/ dashboard.html
+          if git diff --staged --quiet; then
+            echo "No hay cambios para commitear"
+          else
+            git commit -m "Auto-update: $(date -u +%Y-%m-%d)"
+            git push
+          fi

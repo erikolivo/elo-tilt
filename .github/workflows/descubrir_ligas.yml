@@ -1,0 +1,40 @@
+name: Descubrir Ligas ESPN
+
+on:
+  schedule:
+    - cron: '0 3 * * 0'  # Domingos 21:00 Ecuador
+  workflow_dispatch:
+
+jobs:
+  descubrir:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Descubrir ligas
+        run: python descubrir_ligas.py
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/ligas_espn.json
+          if git diff --staged --quiet; then
+            echo "No hay cambios"
+          else
+            git commit -m "Update ligas ESPN: $(date -u +%Y-%m-%d)"
+            git push
+          fi
