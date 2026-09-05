@@ -1,8 +1,620 @@
 {
-  "generado": "2026-09-04T22:00:24.857733Z",
-  "fecha_consulta": "2026-09-04",
-  "total": 786,
+  "generado": "2026-09-05T08:42:07.397737Z",
+  "fecha_consulta": "2026-09-05",
+  "total": 793,
   "predicciones": [
+    {
+      "fixture_id": "401898570",
+      "fecha": "2026-09-08",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5603",
+        "nombre": "SMU Mustangs",
+        "rating": 1854.85,
+        "form_score": 100.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 4
+        }
+      },
+      "equipo_visitante": {
+        "id": "18032",
+        "nombre": "Incarnate Word INCARNATE WORD CARDINALS",
+        "rating": 1339.19,
+        "form_score": 25.3,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        }
+      },
+      "prediccion": {
+        "prob_local": 79.9,
+        "prob_empate": 19.3,
+        "prob_visitante": 0.8
+      },
+      "diff_elo": 515.7,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401890992",
+      "fecha": "2026-09-08",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5585",
+        "nombre": "Indiana Hoosiers",
+        "rating": 1775.81,
+        "form_score": 94.9,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "5732",
+        "nombre": "Denver Pioneers",
+        "rating": 1296.07,
+        "form_score": 22.8,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 3
+        }
+      },
+      "prediccion": {
+        "prob_local": 79.7,
+        "prob_empate": 19.4,
+        "prob_visitante": 0.8
+      },
+      "diff_elo": 479.7,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401873644",
+      "fecha": "2026-09-08",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5264",
+        "nombre": "Atlético Nacional",
+        "rating": 1692.71,
+        "form_score": 38.4,
+        "momentum": "up",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        }
+      },
+      "equipo_visitante": {
+        "id": "2672",
+        "nombre": "Deportivo Cali",
+        "rating": 1470.32,
+        "form_score": 66.7,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 75.9,
+        "prob_empate": 23.1,
+        "prob_visitante": 1.0
+      },
+      "diff_elo": 222.4,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401859724",
+      "fecha": "2026-09-08",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "17176",
+        "nombre": "Mushuc Runa",
+        "rating": 1546.36,
+        "form_score": 76.2,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "131702",
+        "nombre": "Leones",
+        "rating": 1400.58,
+        "form_score": 27.6,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        }
+      },
+      "prediccion": {
+        "prob_local": 71.7,
+        "prob_empate": 23.1,
+        "prob_visitante": 5.2
+      },
+      "diff_elo": 145.8,
+      "confianza": 72.9
+    },
+    {
+      "fixture_id": "401898932",
+      "fecha": "2026-09-08",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5679",
+        "nombre": "Drake DRAKE BULLDOGS",
+        "rating": 1673.34,
+        "form_score": 63.4,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        }
+      },
+      "equipo_visitante": {
+        "id": "5626",
+        "nombre": "Kansas City Kangaroos",
+        "rating": 1569.57,
+        "form_score": 81.4,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 62.0,
+        "prob_empate": 23.1,
+        "prob_visitante": 14.9
+      },
+      "diff_elo": 103.8,
+      "confianza": 51.9
+    },
+    {
+      "fixture_id": "401859685",
+      "fecha": "2026-09-08",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "2668",
+        "nombre": "Emelec",
+        "rating": 1555.79,
+        "form_score": 60.5,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "10307",
+        "nombre": "Manta F.C.",
+        "rating": 1457.55,
+        "form_score": 55.7,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 63.7,
+        "prob_empate": 23.1,
+        "prob_visitante": 13.2
+      },
+      "diff_elo": 98.2,
+      "confianza": 49.1
+    },
+    {
+      "fixture_id": "401902167",
+      "fecha": "2026-09-08",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "6814",
+        "nombre": "Central Arkansas Bears",
+        "rating": 1532.97,
+        "form_score": 44.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "132666",
+        "nombre": "Central Baptist",
+        "rating": 1500.0,
+        "form_score": 50.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        }
+      },
+      "prediccion": {
+        "prob_local": 55.9,
+        "prob_empate": 23.1,
+        "prob_visitante": 21.0
+      },
+      "diff_elo": 33.0,
+      "confianza": 16.5
+    },
+    {
+      "fixture_id": "401898555",
+      "fecha": "2026-09-08",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "18010",
+        "nombre": "Grand Canyon Antelopes",
+        "rating": 1415.53,
+        "form_score": 30.7,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "17392",
+        "nombre": "Houston Christian Huskies",
+        "rating": 1411.2,
+        "form_score": 27.6,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        }
+      },
+      "prediccion": {
+        "prob_local": 54.4,
+        "prob_empate": 23.1,
+        "prob_visitante": 22.5
+      },
+      "diff_elo": 4.3,
+      "confianza": 2.2
+    },
+    {
+      "fixture_id": "401841552",
+      "fecha": "2026-09-08",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20",
+        "nombre": "Unión (Santa Fe)",
+        "rating": 1610.81,
+        "form_score": 58.2,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        }
+      },
+      "equipo_visitante": {
+        "id": "2975",
+        "nombre": "Instituto (Córdoba)",
+        "rating": 1749.91,
+        "form_score": 87.3,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 37.7,
+        "prob_empate": 23.1,
+        "prob_visitante": 39.2
+      },
+      "diff_elo": -139.1,
+      "confianza": 69.6
+    },
+    {
+      "fixture_id": "401891293",
+      "fecha": "2026-09-08",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5663",
+        "nombre": "Loyola Marymount Lions",
+        "rating": 1338.95,
+        "form_score": 25.3,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        }
+      },
+      "equipo_visitante": {
+        "id": "5752",
+        "nombre": "Cal Poly CAL POLY MUSTANGS",
+        "rating": 1520.52,
+        "form_score": 58.4,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 34.5,
+        "prob_empate": 23.1,
+        "prob_visitante": 42.4
+      },
+      "diff_elo": -181.6,
+      "confianza": 90.8
+    },
+    {
+      "fixture_id": "401859687",
+      "fecha": "2026-09-08",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20695",
+        "nombre": "Orense",
+        "rating": 1323.54,
+        "form_score": 50.4,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        }
+      },
+      "equipo_visitante": {
+        "id": "11124",
+        "nombre": "Guayaquil City FC",
+        "rating": 1695.66,
+        "form_score": 63.4,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        }
+      },
+      "prediccion": {
+        "prob_local": 21.8,
+        "prob_empate": 23.1,
+        "prob_visitante": 55.1
+      },
+      "diff_elo": -372.1,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401899632",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "2923",
+        "nombre": "Palermo",
+        "rating": 1807.46,
+        "form_score": 74.9,
+        "momentum": "down",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 4
+        }
+      },
+      "equipo_visitante": {
+        "id": "2734",
+        "nombre": "Sampdoria",
+        "rating": 1360.82,
+        "form_score": 53.9,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 78.4,
+        "prob_empate": 20.7,
+        "prob_visitante": 0.9
+      },
+      "diff_elo": 446.6,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401900364",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "929",
+        "nombre": "Al Hilal",
+        "rating": 1908.44,
+        "form_score": 100.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 6
+        }
+      },
+      "equipo_visitante": {
+        "id": "130899",
+        "nombre": "Neom SC",
+        "rating": 1524.33,
+        "form_score": 85.2,
+        "momentum": "down",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 78.8,
+        "prob_empate": 20.3,
+        "prob_visitante": 0.9
+      },
+      "diff_elo": 384.1,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401890727",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5615",
+        "nombre": "Creighton Bluejays",
+        "rating": 1769.5,
+        "form_score": 86.2,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        }
+      },
+      "equipo_visitante": {
+        "id": "5588",
+        "nombre": "Santa Clara SANTA CLARA BRONCOS",
+        "rating": 1476.63,
+        "form_score": 68.9,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 3
+        }
+      },
+      "prediccion": {
+        "prob_local": 77.1,
+        "prob_empate": 22.0,
+        "prob_visitante": 0.9
+      },
+      "diff_elo": 292.9,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401845081",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "10054",
+        "nombre": "Excursionistas",
+        "rating": 1573.76,
+        "form_score": 51.3,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "10105",
+        "nombre": "Ituzaingó",
+        "rating": 1286.98,
+        "form_score": 20.9,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        }
+      },
+      "prediccion": {
+        "prob_local": 77.3,
+        "prob_empate": 21.8,
+        "prob_visitante": 0.9
+      },
+      "diff_elo": 286.8,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401891076",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5672",
+        "nombre": "Stanford Cardinal",
+        "rating": 1890.42,
+        "form_score": 100.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 4
+        }
+      },
+      "equipo_visitante": {
+        "id": "5664",
+        "nombre": "Cal State Northridge Matadors",
+        "rating": 1619.71,
+        "form_score": 49.4,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        }
+      },
+      "prediccion": {
+        "prob_local": 77.1,
+        "prob_empate": 22.0,
+        "prob_visitante": 0.9
+      },
+      "diff_elo": 270.7,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401890726",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5655",
+        "nombre": "Loyola Chicago Ramblers",
+        "rating": 1757.08,
+        "form_score": 87.3,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "5587",
+        "nombre": "Gonzaga GONZAGA BULLDOGS",
+        "rating": 1498.55,
+        "form_score": 49.6,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        }
+      },
+      "prediccion": {
+        "prob_local": 76.9,
+        "prob_empate": 22.2,
+        "prob_visitante": 1.0
+      },
+      "diff_elo": 258.5,
+      "confianza": 100.0
+    },
     {
       "fixture_id": "401891119",
       "fecha": "2026-09-07",
@@ -37,6 +649,42 @@
         "prob_visitante": 3.1
       },
       "diff_elo": 250.3,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401901767",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5644",
+        "nombre": "South Carolina Gamecocks",
+        "rating": 1853.65,
+        "form_score": 100.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        }
+      },
+      "equipo_visitante": {
+        "id": "5753",
+        "nombre": "High Point Panthers",
+        "rating": 1607.34,
+        "form_score": 81.4,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 76.0,
+        "prob_empate": 23.0,
+        "prob_visitante": 1.0
+      },
+      "diff_elo": 246.3,
       "confianza": 100.0
     },
     {
@@ -76,6 +724,186 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401882891",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "2922",
+        "nombre": "Getafe",
+        "rating": 1440.26,
+        "form_score": 26.8,
+        "momentum": "up",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        }
+      },
+      "equipo_visitante": {
+        "id": "85",
+        "nombre": "Celta Vigo",
+        "rating": 1242.82,
+        "form_score": 27.8,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 75.9,
+        "prob_empate": 23.1,
+        "prob_visitante": 1.0
+      },
+      "diff_elo": 197.4,
+      "confianza": 98.7
+    },
+    {
+      "fixture_id": "401883216",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "11487",
+        "nombre": "CD Sabadell",
+        "rating": 1658.53,
+        "form_score": 65.4,
+        "momentum": "up",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "8447",
+        "nombre": "Córdoba",
+        "rating": 1499.41,
+        "form_score": 52.4,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 73.7,
+        "prob_empate": 23.1,
+        "prob_visitante": 3.2
+      },
+      "diff_elo": 159.1,
+      "confianza": 79.6
+    },
+    {
+      "fixture_id": "401888303",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "7656",
+        "nombre": "Caykur Rizespor",
+        "rating": 1661.58,
+        "form_score": 83.3,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "9078",
+        "nombre": "Alanyaspor",
+        "rating": 1516.16,
+        "form_score": 56.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 69.2,
+        "prob_empate": 23.1,
+        "prob_visitante": 7.7
+      },
+      "diff_elo": 145.4,
+      "confianza": 72.7
+    },
+    {
+      "fixture_id": "401898241",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5657",
+        "nombre": "San Francisco Dons",
+        "rating": 1542.46,
+        "form_score": 24.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "5763",
+        "nombre": "Marist Red Foxes",
+        "rating": 1403.76,
+        "form_score": 40.7,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 65.2,
+        "prob_empate": 23.1,
+        "prob_visitante": 11.7
+      },
+      "diff_elo": 138.7,
+      "confianza": 69.4
+    },
+    {
+      "fixture_id": "401882893",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "3751",
+        "nombre": "Elche",
+        "rating": 1449.56,
+        "form_score": 59.3,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        }
+      },
+      "equipo_visitante": {
+        "id": "89",
+        "nombre": "Real Sociedad",
+        "rating": 1324.78,
+        "form_score": 7.3,
+        "momentum": "up",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 67.2,
+        "prob_empate": 23.1,
+        "prob_visitante": 9.6
+      },
+      "diff_elo": 124.8,
+      "confianza": 62.4
+    },
+    {
       "fixture_id": "401914323",
       "fecha": "2026-09-07",
       "liga": "",
@@ -110,6 +938,186 @@
       },
       "diff_elo": 91.6,
       "confianza": 45.8
+    },
+    {
+      "fixture_id": "401887797",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5702",
+        "nombre": "Providence Friars",
+        "rating": 1468.38,
+        "form_score": 67.3,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "5746",
+        "nombre": "Rhode Island Rams",
+        "rating": 1379.23,
+        "form_score": 18.6,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 66.1,
+        "prob_empate": 23.1,
+        "prob_visitante": 10.8
+      },
+      "diff_elo": 89.2,
+      "confianza": 44.6
+    },
+    {
+      "fixture_id": "401882528",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "21140",
+        "nombre": "Granada",
+        "rating": 1337.69,
+        "form_score": 0.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "21428",
+        "nombre": "Real Sociedad",
+        "rating": 1249.46,
+        "form_score": 0.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        }
+      },
+      "prediccion": {
+        "prob_local": 61.1,
+        "prob_empate": 23.1,
+        "prob_visitante": 15.8
+      },
+      "diff_elo": 88.2,
+      "confianza": 44.1
+    },
+    {
+      "fixture_id": "401899267",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5755",
+        "nombre": "NJIT NJIT HIGHLANDERS",
+        "rating": 1413.23,
+        "form_score": 23.3,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        }
+      },
+      "equipo_visitante": {
+        "id": "6804",
+        "nombre": "James Madison Dukes",
+        "rating": 1336.77,
+        "form_score": 30.7,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 60.5,
+        "prob_empate": 23.1,
+        "prob_visitante": 16.4
+      },
+      "diff_elo": 76.5,
+      "confianza": 38.2
+    },
+    {
+      "fixture_id": "401880872",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "3129",
+        "nombre": "Bromley",
+        "rating": 1471.22,
+        "form_score": 55.3,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        }
+      },
+      "equipo_visitante": {
+        "id": "3802",
+        "nombre": "AFC Wimbledon",
+        "rating": 1402.86,
+        "form_score": 36.3,
+        "momentum": "down",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 65.4,
+        "prob_empate": 23.1,
+        "prob_visitante": 11.4
+      },
+      "diff_elo": 68.4,
+      "confianza": 34.2
+    },
+    {
+      "fixture_id": "401888669",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "7385",
+        "nombre": "Guaraní",
+        "rating": 1438.99,
+        "form_score": 36.2,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 2
+        }
+      },
+      "equipo_visitante": {
+        "id": "22517",
+        "nombre": "Deportivo Recoleta",
+        "rating": 1371.07,
+        "form_score": 65.2,
+        "momentum": "down",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 5
+        }
+      },
+      "prediccion": {
+        "prob_local": 61.3,
+        "prob_empate": 23.1,
+        "prob_visitante": 15.6
+      },
+      "diff_elo": 67.9,
+      "confianza": 34.0
     },
     {
       "fixture_id": "401899188",
@@ -148,6 +1156,222 @@
       "confianza": 27.8
     },
     {
+      "fixture_id": "401874962",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "118",
+        "nombre": "Udinese",
+        "rating": 1669.65,
+        "form_score": 84.6,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "112",
+        "nombre": "Lazio",
+        "rating": 1621.82,
+        "form_score": 72.4,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        }
+      },
+      "prediccion": {
+        "prob_local": 59.3,
+        "prob_empate": 23.1,
+        "prob_visitante": 17.5
+      },
+      "diff_elo": 47.8,
+      "confianza": 23.9
+    },
+    {
+      "fixture_id": "401879865",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "3851",
+        "nombre": "Rubin Kazan",
+        "rating": 1559.41,
+        "form_score": 55.1,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "2991",
+        "nombre": "Akhmat Grozny",
+        "rating": 1512.31,
+        "form_score": 44.6,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 59.2,
+        "prob_empate": 23.1,
+        "prob_visitante": 17.6
+      },
+      "diff_elo": 47.1,
+      "confianza": 23.6
+    },
+    {
+      "fixture_id": "401875943",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "9983",
+        "nombre": "Jong PSV",
+        "rating": 1491.77,
+        "form_score": 66.3,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 2
+        }
+      },
+      "equipo_visitante": {
+        "id": "271",
+        "nombre": "FC Den Bosch",
+        "rating": 1449.29,
+        "form_score": 39.5,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 60.1,
+        "prob_empate": 23.1,
+        "prob_visitante": 16.7
+      },
+      "diff_elo": 42.5,
+      "confianza": 21.2
+    },
+    {
+      "fixture_id": "401887566",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5700",
+        "nombre": "Villanova Wildcats",
+        "rating": 1757.5,
+        "form_score": 91.6,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "5591",
+        "nombre": "Fairleigh Dickinson Knights",
+        "rating": 1720.94,
+        "form_score": 68.9,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 59.1,
+        "prob_empate": 23.1,
+        "prob_visitante": 17.8
+      },
+      "diff_elo": 36.6,
+      "confianza": 18.3
+    },
+    {
+      "fixture_id": "401890633",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5617",
+        "nombre": "Maryland Terrapins",
+        "rating": 1833.3,
+        "form_score": 100.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        }
+      },
+      "equipo_visitante": {
+        "id": "5645",
+        "nombre": "Georgetown Hoyas",
+        "rating": 1814.4,
+        "form_score": 77.2,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        }
+      },
+      "prediccion": {
+        "prob_local": 57.4,
+        "prob_empate": 23.1,
+        "prob_visitante": 19.5
+      },
+      "diff_elo": 18.9,
+      "confianza": 9.4
+    },
+    {
+      "fixture_id": "401901771",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5658",
+        "nombre": "West Virginia Mountaineers",
+        "rating": 1569.38,
+        "form_score": 40.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "5643",
+        "nombre": "George Mason Patriots",
+        "rating": 1556.85,
+        "form_score": 40.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 54.9,
+        "prob_empate": 23.1,
+        "prob_visitante": 22.0
+      },
+      "diff_elo": 12.5,
+      "confianza": 6.3
+    },
+    {
       "fixture_id": "401906486",
       "fecha": "2026-09-07",
       "liga": "",
@@ -182,6 +1406,42 @@
       },
       "diff_elo": 4.3,
       "confianza": 2.2
+    },
+    {
+      "fixture_id": "401874943",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "2925",
+        "nombre": "Cagliari",
+        "rating": 1529.06,
+        "form_score": 63.2,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        }
+      },
+      "equipo_visitante": {
+        "id": "113",
+        "nombre": "Lecce",
+        "rating": 1529.66,
+        "form_score": 62.2,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 53.7,
+        "prob_empate": 23.1,
+        "prob_visitante": 23.1
+      },
+      "diff_elo": -0.6,
+      "confianza": 0.3
     },
     {
       "fixture_id": "401853995",
@@ -220,6 +1480,78 @@
       "confianza": 10.1
     },
     {
+      "fixture_id": "401896794",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "8354",
+        "nombre": "Asteras Tripoli",
+        "rating": 1353.8,
+        "form_score": 50.6,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        }
+      },
+      "equipo_visitante": {
+        "id": "2575",
+        "nombre": "Iraklis",
+        "rating": 1394.07,
+        "form_score": 34.6,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 51.1,
+        "prob_empate": 23.1,
+        "prob_visitante": 25.7
+      },
+      "diff_elo": -40.3,
+      "confianza": 20.1
+    },
+    {
+      "fixture_id": "401850645",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "19195",
+        "nombre": "Deportes Limache",
+        "rating": 1443.33,
+        "form_score": 35.6,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "4133",
+        "nombre": "Cobresal",
+        "rating": 1510.75,
+        "form_score": 18.5,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 48.5,
+        "prob_empate": 23.1,
+        "prob_visitante": 28.4
+      },
+      "diff_elo": -67.4,
+      "confianza": 33.7
+    },
+    {
       "fixture_id": "401915342",
       "fecha": "2026-09-07",
       "liga": "",
@@ -254,6 +1586,78 @@
       },
       "diff_elo": -78.5,
       "confianza": 39.2
+    },
+    {
+      "fixture_id": "401888302",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "789",
+        "nombre": "Goztepe",
+        "rating": 1403.67,
+        "form_score": 59.3,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        }
+      },
+      "equipo_visitante": {
+        "id": "20070",
+        "nombre": "Gaziantep FK",
+        "rating": 1483.3,
+        "form_score": 56.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 46.3,
+        "prob_empate": 23.1,
+        "prob_visitante": 30.5
+      },
+      "diff_elo": -79.6,
+      "confianza": 39.8
+    },
+    {
+      "fixture_id": "401878038",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "7915",
+        "nombre": "Llaneros FC",
+        "rating": 1460.55,
+        "form_score": 70.8,
+        "momentum": "down",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        }
+      },
+      "equipo_visitante": {
+        "id": "5489",
+        "nombre": "Deportes Tolima",
+        "rating": 1541.74,
+        "form_score": 32.8,
+        "momentum": "down",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 48.2,
+        "prob_empate": 23.1,
+        "prob_visitante": 28.7
+      },
+      "diff_elo": -81.2,
+      "confianza": 40.6
     },
     {
       "fixture_id": "401901535",
@@ -292,6 +1696,186 @@
       "confianza": 48.2
     },
     {
+      "fixture_id": "401898114",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5744",
+        "nombre": "Pittsburgh Panthers",
+        "rating": 1589.11,
+        "form_score": 49.4,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        }
+      },
+      "equipo_visitante": {
+        "id": "5704",
+        "nombre": "Pennsylvania Quakers",
+        "rating": 1708.97,
+        "form_score": 100.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 39.2,
+        "prob_empate": 23.1,
+        "prob_visitante": 37.6
+      },
+      "diff_elo": -119.9,
+      "confianza": 59.9
+    },
+    {
+      "fixture_id": "401914291",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "21403",
+        "nombre": "Albion FC",
+        "rating": 1166.48,
+        "form_score": 0.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 4
+        }
+      },
+      "equipo_visitante": {
+        "id": "6866",
+        "nombre": "Progreso",
+        "rating": 1289.92,
+        "form_score": 10.2,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 41.1,
+        "prob_empate": 23.1,
+        "prob_visitante": 35.8
+      },
+      "diff_elo": -123.4,
+      "confianza": 61.7
+    },
+    {
+      "fixture_id": "401874509",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "572",
+        "nombre": "FC Midtjylland",
+        "rating": 1767.01,
+        "form_score": 91.5,
+        "momentum": "down",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "3101",
+        "nombre": "FC Nordsjælland",
+        "rating": 1891.25,
+        "form_score": 98.8,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 37.3,
+        "prob_empate": 23.1,
+        "prob_visitante": 39.6
+      },
+      "diff_elo": -124.2,
+      "confianza": 62.1
+    },
+    {
+      "fixture_id": "401897325",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20408",
+        "nombre": "Gardner-Webb Runnin' Bulldogs",
+        "rating": 1372.35,
+        "form_score": 71.8,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "132442",
+        "nombre": "Montreat",
+        "rating": 1500.0,
+        "form_score": 50.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        }
+      },
+      "prediccion": {
+        "prob_local": 45.1,
+        "prob_empate": 23.1,
+        "prob_visitante": 31.8
+      },
+      "diff_elo": -127.7,
+      "confianza": 63.8
+    },
+    {
+      "fixture_id": "401890740",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5741",
+        "nombre": "Western Michigan WESTERN MICHIGAN BRONCOS",
+        "rating": 1159.07,
+        "form_score": 22.8,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 3
+        }
+      },
+      "equipo_visitante": {
+        "id": "5748",
+        "nombre": "Butler Bulldogs",
+        "rating": 1298.0,
+        "form_score": 13.8,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        }
+      },
+      "prediccion": {
+        "prob_local": 41.3,
+        "prob_empate": 23.1,
+        "prob_visitante": 35.5
+      },
+      "diff_elo": -138.9,
+      "confianza": 69.5
+    },
+    {
       "fixture_id": "401841548",
       "fecha": "2026-09-07",
       "liga": "",
@@ -326,6 +1910,78 @@
       },
       "diff_elo": -146.1,
       "confianza": 73.1
+    },
+    {
+      "fixture_id": "401898959",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5721",
+        "nombre": "Saint Mary's Gaels",
+        "rating": 1276.15,
+        "form_score": 16.7,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "5718",
+        "nombre": "Air Force Falcons",
+        "rating": 1445.98,
+        "form_score": 40.7,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 36.1,
+        "prob_empate": 23.1,
+        "prob_visitante": 40.8
+      },
+      "diff_elo": -169.8,
+      "confianza": 84.9
+    },
+    {
+      "fixture_id": "401900365",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "21829",
+        "nombre": "Al Khaleej",
+        "rating": 1276.9,
+        "form_score": 32.9,
+        "momentum": "down",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        }
+      },
+      "equipo_visitante": {
+        "id": "21965",
+        "nombre": "Al Riyadh",
+        "rating": 1457.27,
+        "form_score": 35.3,
+        "momentum": "up",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 29.5,
+        "prob_empate": 23.1,
+        "prob_visitante": 47.3
+      },
+      "diff_elo": -180.4,
+      "confianza": 90.2
     },
     {
       "fixture_id": "401876859",
@@ -364,6 +2020,474 @@
       "confianza": 93.3
     },
     {
+      "fixture_id": "401891174",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5650",
+        "nombre": "Rutgers Scarlet Knights",
+        "rating": 1478.45,
+        "form_score": 44.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "5618",
+        "nombre": "UC Santa Barbara Gauchos",
+        "rating": 1666.05,
+        "form_score": 75.3,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 2
+        }
+      },
+      "prediccion": {
+        "prob_local": 34.1,
+        "prob_empate": 23.1,
+        "prob_visitante": 42.8
+      },
+      "diff_elo": -187.6,
+      "confianza": 93.8
+    },
+    {
+      "fixture_id": "401841544",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "10060",
+        "nombre": "Barracas Central",
+        "rating": 1265.82,
+        "form_score": 2.9,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "3",
+        "nombre": "Argentinos Juniors",
+        "rating": 1457.64,
+        "form_score": 64.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 30.8,
+        "prob_empate": 23.1,
+        "prob_visitante": 46.0
+      },
+      "diff_elo": -191.8,
+      "confianza": 95.9
+    },
+    {
+      "fixture_id": "401898123",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5687",
+        "nombre": "Massachusetts MInutewomen",
+        "rating": 1473.33,
+        "form_score": 56.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "5669",
+        "nombre": "Princeton Tigers",
+        "rating": 1672.58,
+        "form_score": 68.9,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 35.4,
+        "prob_empate": 23.1,
+        "prob_visitante": 41.4
+      },
+      "diff_elo": -199.2,
+      "confianza": 99.6
+    },
+    {
+      "fixture_id": "401841222",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "3457",
+        "nombre": "Vitória",
+        "rating": 1334.92,
+        "form_score": 33.7,
+        "momentum": "down",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 3
+        }
+      },
+      "equipo_visitante": {
+        "id": "6273",
+        "nombre": "Grêmio",
+        "rating": 1541.4,
+        "form_score": 72.7,
+        "momentum": "down",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 30.0,
+        "prob_empate": 23.1,
+        "prob_visitante": 46.8
+      },
+      "diff_elo": -206.5,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401888604",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "2671",
+        "nombre": "Cerro Porteño",
+        "rating": 1309.36,
+        "form_score": 29.5,
+        "momentum": "up",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "5584",
+        "nombre": "Nacional Asunción",
+        "rating": 1546.26,
+        "form_score": 36.3,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        }
+      },
+      "prediccion": {
+        "prob_local": 33.8,
+        "prob_empate": 23.1,
+        "prob_visitante": 43.1
+      },
+      "diff_elo": -236.9,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401903340",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "6037",
+        "nombre": "Carabobo",
+        "rating": 1412.23,
+        "form_score": 64.1,
+        "momentum": "down",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "6038",
+        "nombre": "Estudiantes de Mérida",
+        "rating": 1665.97,
+        "form_score": 61.3,
+        "momentum": "up",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 24.0,
+        "prob_empate": 23.1,
+        "prob_visitante": 52.8
+      },
+      "diff_elo": -253.7,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401898098",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5737",
+        "nombre": "Dartmouth Big Green",
+        "rating": 1417.56,
+        "form_score": 0.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "21976",
+        "nombre": "Stonehill Skyhawks",
+        "rating": 1696.61,
+        "form_score": 90.7,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 24.5,
+        "prob_empate": 23.1,
+        "prob_visitante": 52.4
+      },
+      "diff_elo": -279.0,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401900282",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20614",
+        "nombre": "Jackson State JACKSON STATE LADY TIGERS",
+        "rating": 1219.78,
+        "form_score": 2.9,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "131719",
+        "nombre": "Delta State",
+        "rating": 1500.0,
+        "form_score": 50.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        }
+      },
+      "prediccion": {
+        "prob_local": 28.8,
+        "prob_empate": 23.1,
+        "prob_visitante": 48.1
+      },
+      "diff_elo": -280.2,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401844103",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "236",
+        "nombre": "Nueva Chicago",
+        "rating": 1162.89,
+        "form_score": 0.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 5
+        }
+      },
+      "equipo_visitante": {
+        "id": "2741",
+        "nombre": "Quilmes",
+        "rating": 1456.75,
+        "form_score": 71.6,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        }
+      },
+      "prediccion": {
+        "prob_local": 21.8,
+        "prob_empate": 23.1,
+        "prob_visitante": 55.1
+      },
+      "diff_elo": -293.9,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401875944",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "18278",
+        "nombre": "Jong FC Utrecht",
+        "rating": 1070.43,
+        "form_score": 0.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 5
+        }
+      },
+      "equipo_visitante": {
+        "id": "3732",
+        "nombre": "FC Eindhoven",
+        "rating": 1367.79,
+        "form_score": 45.5,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 3
+        }
+      },
+      "prediccion": {
+        "prob_local": 24.0,
+        "prob_empate": 23.1,
+        "prob_visitante": 52.8
+      },
+      "diff_elo": -297.4,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401874015",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20301",
+        "nombre": "Mjällby AIF",
+        "rating": 1252.14,
+        "form_score": 8.9,
+        "momentum": "up",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 4
+        }
+      },
+      "equipo_visitante": {
+        "id": "2556",
+        "nombre": "IFK Göteborg",
+        "rating": 1562.81,
+        "form_score": 38.9,
+        "momentum": "up",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 23.2,
+        "prob_empate": 23.1,
+        "prob_visitante": 53.7
+      },
+      "diff_elo": -310.7,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401874084",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "2720",
+        "nombre": "Malmö FF",
+        "rating": 1465.23,
+        "form_score": 37.8,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "994",
+        "nombre": "AIK",
+        "rating": 1815.49,
+        "form_score": 100.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        }
+      },
+      "prediccion": {
+        "prob_local": 19.7,
+        "prob_empate": 23.1,
+        "prob_visitante": 57.1
+      },
+      "diff_elo": -350.3,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401891394",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20590",
+        "nombre": "Troy TROY TROJANS",
+        "rating": 1308.56,
+        "form_score": 27.6,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        }
+      },
+      "equipo_visitante": {
+        "id": "131300",
+        "nombre": "West Florida Argonauts",
+        "rating": 1668.88,
+        "form_score": 68.9,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 21.7,
+        "prob_empate": 23.1,
+        "prob_visitante": 55.1
+      },
+      "diff_elo": -360.3,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401859682",
       "fecha": "2026-09-07",
       "liga": "",
@@ -397,6 +2521,150 @@
         "prob_visitante": 59.9
       },
       "diff_elo": -383.9,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401876758",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "165",
+        "nombre": "Nantes",
+        "rating": 1212.19,
+        "form_score": 5.1,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "3267",
+        "nombre": "AS Nancy Lorraine",
+        "rating": 1601.95,
+        "form_score": 49.6,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        }
+      },
+      "prediccion": {
+        "prob_local": 18.5,
+        "prob_empate": 23.1,
+        "prob_visitante": 58.3
+      },
+      "diff_elo": -389.8,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401903350",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "10094",
+        "nombre": "UCV FC",
+        "rating": 1342.87,
+        "form_score": 48.7,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "18995",
+        "nombre": "Academia Puerto Cabello",
+        "rating": 1760.46,
+        "form_score": 95.2,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 16.5,
+        "prob_empate": 23.1,
+        "prob_visitante": 60.4
+      },
+      "diff_elo": -417.6,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401874079",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "3052",
+        "nombre": "Kalmar FF",
+        "rating": 1146.62,
+        "form_score": 8.4,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "2339",
+        "nombre": "Djurgården",
+        "rating": 1590.64,
+        "form_score": 59.7,
+        "momentum": "down",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        }
+      },
+      "prediccion": {
+        "prob_local": 17.8,
+        "prob_empate": 23.1,
+        "prob_visitante": 59.0
+      },
+      "diff_elo": -444.0,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401885454",
+      "fecha": "2026-09-07",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "12216",
+        "nombre": "Estoril",
+        "rating": 1223.38,
+        "form_score": 22.8,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 3
+        }
+      },
+      "equipo_visitante": {
+        "id": "15784",
+        "nombre": "Arouca",
+        "rating": 1742.38,
+        "form_score": 83.3,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        }
+      },
+      "prediccion": {
+        "prob_local": 11.7,
+        "prob_empate": 23.1,
+        "prob_visitante": 65.2
+      },
+      "diff_elo": -519.0,
       "confianza": 100.0
     },
     {
@@ -2161,42 +4429,6 @@
         "prob_visitante": 1.9
       },
       "diff_elo": 231.8,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401891979",
-      "fecha": "2026-09-06",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "usa.ncaa.m.1",
-      "equipo_local": {
-        "id": "8726",
-        "nombre": "Lipscomb Bisons",
-        "rating": 1429.64,
-        "form_score": 31.1,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "21667",
-        "nombre": "Queens University Royals",
-        "rating": 1200.47,
-        "form_score": 0.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 3
-        }
-      },
-      "prediccion": {
-        "prob_local": 75.6,
-        "prob_empate": 23.1,
-        "prob_visitante": 1.3
-      },
-      "diff_elo": 229.2,
       "confianza": 100.0
     },
     {
@@ -11747,7 +13979,7 @@
       "liga_slug": "all",
       "equipo_local": {
         "id": "132983",
-        "nombre": "EMLEY AFC",
+        "nombre": "Emley AFC",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -11953,42 +14185,6 @@
         "prob_visitante": 54.0
       },
       "diff_elo": -310.7,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401891850",
-      "fecha": "2026-09-06",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "usa.ncaa.m.1",
-      "equipo_local": {
-        "id": "131753",
-        "nombre": "West Florida Argonauts",
-        "rating": 1210.13,
-        "form_score": 5.1,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "17390",
-        "nombre": "Florida Gulf Coast Eagles",
-        "rating": 1526.08,
-        "form_score": 26.9,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        }
-      },
-      "prediccion": {
-        "prob_local": 25.0,
-        "prob_empate": 23.1,
-        "prob_visitante": 51.9
-      },
-      "diff_elo": -315.9,
       "confianza": 100.0
     },
     {
@@ -13144,42 +15340,6 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401884281",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "usa.ncaa.w.1",
-      "equipo_local": {
-        "id": "20360",
-        "nombre": "Washington Huskies",
-        "rating": 1846.76,
-        "form_score": 100.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 4
-        }
-      },
-      "equipo_visitante": {
-        "id": "20628",
-        "nombre": "Seattle U SEATTLE U REDHAWKS",
-        "rating": 1423.31,
-        "form_score": 18.9,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 79.1,
-        "prob_empate": 20.0,
-        "prob_visitante": 0.9
-      },
-      "diff_elo": 423.5,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401878781",
       "fecha": "2026-09-05",
       "liga": "",
@@ -13213,42 +15373,6 @@
         "prob_visitante": 0.9
       },
       "diff_elo": 414.6,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401860321",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "9970",
-        "nombre": "CRB",
-        "rating": 1658.09,
-        "form_score": 77.4,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "6154",
-        "nombre": "América Mineiro",
-        "rating": 1263.81,
-        "form_score": 5.8,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 79.2,
-        "prob_empate": 19.9,
-        "prob_visitante": 0.9
-      },
-      "diff_elo": 394.3,
       "confianza": 100.0
     },
     {
@@ -13810,7 +15934,7 @@
       },
       "equipo_visitante": {
         "id": "132346",
-        "nombre": "BRENTWOOD TOWN",
+        "nombre": "Brentwood Town",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -13969,42 +16093,6 @@
         "prob_visitante": 1.0
       },
       "diff_elo": 291.9,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401899172",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "usa.ncaa.m.1",
-      "equipo_local": {
-        "id": "5603",
-        "nombre": "SMU Mustangs",
-        "rating": 1854.85,
-        "form_score": 100.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 4
-        }
-      },
-      "equipo_visitante": {
-        "id": "5626",
-        "nombre": "Kansas City Kangaroos",
-        "rating": 1569.57,
-        "form_score": 81.4,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 76.7,
-        "prob_empate": 22.4,
-        "prob_visitante": 1.0
-      },
-      "diff_elo": 285.3,
       "confianza": 100.0
     },
     {
@@ -14224,78 +16312,6 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401890725",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "usa.ncaa.m.1",
-      "equipo_local": {
-        "id": "5615",
-        "nombre": "Creighton Bluejays",
-        "rating": 1769.5,
-        "form_score": 86.2,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        }
-      },
-      "equipo_visitante": {
-        "id": "5587",
-        "nombre": "Gonzaga GONZAGA BULLDOGS",
-        "rating": 1498.55,
-        "form_score": 49.6,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        }
-      },
-      "prediccion": {
-        "prob_local": 77.0,
-        "prob_empate": 22.1,
-        "prob_visitante": 1.0
-      },
-      "diff_elo": 271.0,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401854080",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "19141",
-        "nombre": "Utah Royals",
-        "rating": 1446.13,
-        "form_score": 37.8,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "131562",
-        "nombre": "Boston Legacy FC",
-        "rating": 1175.55,
-        "form_score": 0.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 4
-        }
-      },
-      "prediccion": {
-        "prob_local": 77.0,
-        "prob_empate": 22.1,
-        "prob_visitante": 1.0
-      },
-      "diff_elo": 270.6,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401873923",
       "fecha": "2026-09-05",
       "liga": "",
@@ -14476,42 +16492,6 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401850644",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "8110",
-        "nombre": "Deportes Concepcion",
-        "rating": 1764.47,
-        "form_score": 91.6,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "4138",
-        "nombre": "Audax Italiano",
-        "rating": 1505.62,
-        "form_score": 44.9,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 77.0,
-        "prob_empate": 22.0,
-        "prob_visitante": 1.0
-      },
-      "diff_elo": 258.9,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401889332",
       "fecha": "2026-09-05",
       "liga": "",
@@ -14545,42 +16525,6 @@
         "prob_visitante": 1.0
       },
       "diff_elo": 257.4,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401890991",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "usa.ncaa.m.1",
-      "equipo_local": {
-        "id": "5585",
-        "nombre": "Indiana Hoosiers",
-        "rating": 1775.81,
-        "form_score": 94.9,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "5752",
-        "nombre": "Cal Poly CAL POLY MUSTANGS",
-        "rating": 1520.52,
-        "form_score": 58.4,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 76.7,
-        "prob_empate": 22.3,
-        "prob_visitante": 1.0
-      },
-      "diff_elo": 255.3,
       "confianza": 100.0
     },
     {
@@ -14638,7 +16582,7 @@
       },
       "equipo_visitante": {
         "id": "132979",
-        "nombre": "RACING CLUB WARWICK FC",
+        "nombre": "Racing Club Warwick FC",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -14890,7 +16834,7 @@
       },
       "equipo_visitante": {
         "id": "133367",
-        "nombre": "POOLE TOWN",
+        "nombre": "Poole Town",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -15088,6 +17032,42 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401891979",
+      "fecha": "2026-09-05",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "usa.ncaa.m.1",
+      "equipo_local": {
+        "id": "8726",
+        "nombre": "Lipscomb Bisons",
+        "rating": 1429.64,
+        "form_score": 31.1,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "21667",
+        "nombre": "Queens University Royals",
+        "rating": 1200.47,
+        "form_score": 0.0,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "L",
+          "cantidad": 3
+        }
+      },
+      "prediccion": {
+        "prob_local": 75.6,
+        "prob_empate": 23.1,
+        "prob_visitante": 1.3
+      },
+      "diff_elo": 229.2,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401892307",
       "fecha": "2026-09-05",
       "liga": "",
@@ -15265,42 +17245,6 @@
         "prob_visitante": 1.0
       },
       "diff_elo": 212.7,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401891075",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "usa.ncaa.m.1",
-      "equipo_local": {
-        "id": "5664",
-        "nombre": "Cal State Northridge Matadors",
-        "rating": 1619.71,
-        "form_score": 49.4,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        }
-      },
-      "equipo_visitante": {
-        "id": "17392",
-        "nombre": "Houston Christian Huskies",
-        "rating": 1411.2,
-        "form_score": 27.6,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        }
-      },
-      "prediccion": {
-        "prob_local": 74.3,
-        "prob_empate": 23.1,
-        "prob_visitante": 2.6
-      },
-      "diff_elo": 208.5,
       "confianza": 100.0
     },
     {
@@ -15995,7 +17939,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "132383",
-        "nombre": "BELPER TOWN",
+        "nombre": "Belper Town",
         "rating": 1662.31,
         "form_score": 100.0,
         "momentum": "stable",
@@ -16114,7 +18058,7 @@
       },
       "equipo_visitante": {
         "id": "132975",
-        "nombre": "FROME TOWN FC",
+        "nombre": "Frome Town FC",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -16546,7 +18490,7 @@
       },
       "equipo_visitante": {
         "id": "132756",
-        "nombre": "LEEK TOWN FC",
+        "nombre": "Leek Town FC",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -16562,42 +18506,6 @@
       },
       "diff_elo": 123.8,
       "confianza": 61.9
-    },
-    {
-      "fixture_id": "401886382",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "21533",
-        "nombre": "Club Atlético La Paz",
-        "rating": 1769.28,
-        "form_score": 91.6,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "17514",
-        "nombre": "Mineros de Zacatecas",
-        "rating": 1650.31,
-        "form_score": 60.5,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 67.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 9.2
-      },
-      "diff_elo": 119.0,
-      "confianza": 59.5
     },
     {
       "fixture_id": "401878643",
@@ -16670,42 +18578,6 @@
       },
       "diff_elo": 113.2,
       "confianza": 56.6
-    },
-    {
-      "fixture_id": "401899005",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "6814",
-        "nombre": "Central Arkansas Bears",
-        "rating": 1532.97,
-        "form_score": 44.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "5596",
-        "nombre": "Oral Roberts ORAL ROBERTS GOLDEN EAGLES",
-        "rating": 1420.1,
-        "form_score": 67.7,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 62.5,
-        "prob_empate": 23.1,
-        "prob_visitante": 14.4
-      },
-      "diff_elo": 112.9,
-      "confianza": 56.4
     },
     {
       "fixture_id": "401883175",
@@ -16886,42 +18758,6 @@
       },
       "diff_elo": 103.9,
       "confianza": 51.9
-    },
-    {
-      "fixture_id": "401898958",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "usa.ncaa.m.1",
-      "equipo_local": {
-        "id": "5657",
-        "nombre": "San Francisco Dons",
-        "rating": 1542.46,
-        "form_score": 24.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "5718",
-        "nombre": "Air Force Falcons",
-        "rating": 1445.98,
-        "form_score": 40.7,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 61.4,
-        "prob_empate": 23.1,
-        "prob_visitante": 15.5
-      },
-      "diff_elo": 96.5,
-      "confianza": 48.2
     },
     {
       "fixture_id": "401874939",
@@ -17426,42 +19262,6 @@
       },
       "diff_elo": 75.4,
       "confianza": 37.7
-    },
-    {
-      "fixture_id": "401876990",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "17851",
-        "nombre": "FC Juarez",
-        "rating": 1443.65,
-        "form_score": 66.5,
-        "momentum": "down",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 4
-        }
-      },
-      "equipo_visitante": {
-        "id": "234",
-        "nombre": "Pachuca",
-        "rating": 1369.77,
-        "form_score": 19.7,
-        "momentum": "up",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 2
-        }
-      },
-      "prediccion": {
-        "prob_local": 59.0,
-        "prob_empate": 23.1,
-        "prob_visitante": 17.8
-      },
-      "diff_elo": 73.9,
-      "confianza": 36.9
     },
     {
       "fixture_id": "401886846",
@@ -18110,42 +19910,6 @@
       },
       "diff_elo": 17.5,
       "confianza": 8.8
-    },
-    {
-      "fixture_id": "401901846",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "usa.ncaa.m.1",
-      "equipo_local": {
-        "id": "5670",
-        "nombre": "Memphis Tigers",
-        "rating": 1681.38,
-        "form_score": 83.3,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "6812",
-        "nombre": "UNC Asheville UNC ASHEVILLE BULLDOGS",
-        "rating": 1666.28,
-        "form_score": 84.6,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 55.0,
-        "prob_empate": 23.1,
-        "prob_visitante": 21.8
-      },
-      "diff_elo": 15.1,
-      "confianza": 7.6
     },
     {
       "fixture_id": "401900366",
@@ -19246,7 +21010,7 @@
       },
       "equipo_visitante": {
         "id": "132350",
-        "nombre": "BERKHAMSTED",
+        "nombre": "Berkhamsted",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -19343,7 +21107,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "132353",
-        "nombre": "CHERTSEY TOWN",
+        "nombre": "Chertsey Town",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -19426,7 +21190,7 @@
       },
       "equipo_visitante": {
         "id": "132948",
-        "nombre": "PLYMOUTH PARKWAY",
+        "nombre": "Plymouth Parkway",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -19451,7 +21215,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "132984",
-        "nombre": "HANWORTH VILLA FC",
+        "nombre": "Hanworth Villa FC",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -19523,7 +21287,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "132423",
-        "nombre": "LEAMINGTON",
+        "nombre": "Leamington",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -19667,7 +21431,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "132349",
-        "nombre": "REAL BEDFORD",
+        "nombre": "Real Bedford",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -19739,7 +21503,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "132959",
-        "nombre": "STANWAY ROVERS FC",
+        "nombre": "Stanway Rovers FC",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -19775,7 +21539,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "132733",
-        "nombre": "STOCKTON TOWN FC",
+        "nombre": "Stockton Town FC",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -19811,7 +21575,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "133280",
-        "nombre": "WARRINGTON RYLANDS 1906 FC",
+        "nombre": "Warrington Rylands 1906 FC",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -20711,7 +22475,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "132396",
-        "nombre": "MARGATE",
+        "nombre": "Margate",
         "rating": 1731.88,
         "form_score": 100.0,
         "momentum": "stable",
@@ -20747,7 +22511,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "132399",
-        "nombre": "SITTINGBOURNE",
+        "nombre": "Sittingbourne",
         "rating": 1731.88,
         "form_score": 100.0,
         "momentum": "stable",
@@ -22576,42 +24340,6 @@
       "confianza": 52.5
     },
     {
-      "fixture_id": "401884142",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "usa.ncaa.w.1",
-      "equipo_local": {
-        "id": "20313",
-        "nombre": "UCLA Bruins",
-        "rating": 1576.45,
-        "form_score": 37.8,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "20513",
-        "nombre": "Pepperdine Waves",
-        "rating": 1682.31,
-        "form_score": 84.6,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 40.5,
-        "prob_empate": 23.1,
-        "prob_visitante": 36.4
-      },
-      "diff_elo": -105.9,
-      "confianza": 52.9
-    },
-    {
       "fixture_id": "401892345",
       "fecha": "2026-09-05",
       "liga": "",
@@ -23080,42 +24808,6 @@
       "confianza": 63.3
     },
     {
-      "fixture_id": "401898240",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "usa.ncaa.m.1",
-      "equipo_local": {
-        "id": "5721",
-        "nombre": "Saint Mary's Gaels",
-        "rating": 1276.15,
-        "form_score": 16.7,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "5763",
-        "nombre": "Marist Red Foxes",
-        "rating": 1403.76,
-        "form_score": 40.7,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 39.8,
-        "prob_empate": 23.1,
-        "prob_visitante": 37.1
-      },
-      "diff_elo": -127.6,
-      "confianza": 63.8
-    },
-    {
       "fixture_id": "401842095",
       "fecha": "2026-09-05",
       "liga": "",
@@ -23258,42 +24950,6 @@
       },
       "diff_elo": -142.1,
       "confianza": 71.0
-    },
-    {
-      "fixture_id": "401879546",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "7253",
-        "nombre": "Antigua GFC",
-        "rating": 1435.17,
-        "form_score": 39.2,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        }
-      },
-      "equipo_visitante": {
-        "id": "131213",
-        "nombre": "Aurora FC",
-        "rating": 1577.53,
-        "form_score": 41.4,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        }
-      },
-      "prediccion": {
-        "prob_local": 39.1,
-        "prob_empate": 23.1,
-        "prob_visitante": 37.7
-      },
-      "diff_elo": -142.4,
-      "confianza": 71.2
     },
     {
       "fixture_id": "401841226",
@@ -23476,78 +25132,6 @@
       "confianza": 79.5
     },
     {
-      "fixture_id": "401898569",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "18032",
-        "nombre": "Incarnate Word INCARNATE WORD CARDINALS",
-        "rating": 1339.19,
-        "form_score": 25.3,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        }
-      },
-      "equipo_visitante": {
-        "id": "131310",
-        "nombre": "Our Lady of the Lake",
-        "rating": 1500.0,
-        "form_score": 50.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        }
-      },
-      "prediccion": {
-        "prob_local": 39.1,
-        "prob_empate": 23.1,
-        "prob_visitante": 37.8
-      },
-      "diff_elo": -160.8,
-      "confianza": 80.4
-    },
-    {
-      "fixture_id": "401886383",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "21534",
-        "nombre": "Durango",
-        "rating": 1254.32,
-        "form_score": 5.1,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "20722",
-        "nombre": "Tlaxcala FC",
-        "rating": 1415.86,
-        "form_score": 24.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 37.2,
-        "prob_empate": 23.1,
-        "prob_visitante": 39.7
-      },
-      "diff_elo": -161.5,
-      "confianza": 80.8
-    },
-    {
       "fixture_id": "401906225",
       "fecha": "2026-09-05",
       "liga": "",
@@ -23663,7 +25247,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "132345",
-        "nombre": "BROMSGROVE SPORTING",
+        "nombre": "Bromsgrove Sporting",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -23699,7 +25283,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "132356",
-        "nombre": "CLEETHORPES TOWN",
+        "nombre": "Cleethorpes Town",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -23735,7 +25319,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "132971",
-        "nombre": "LANCASTER",
+        "nombre": "Lancaster",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -23843,7 +25427,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "133363",
-        "nombre": "WINGATE & FINCHLEY",
+        "nombre": "Wingate & Finchley",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -23854,7 +25438,7 @@
       },
       "equipo_visitante": {
         "id": "132386",
-        "nombre": "FELIXSTOWE & WALTON UNITED",
+        "nombre": "Felixstowe & Walton United",
         "rating": 1662.31,
         "form_score": 100.0,
         "momentum": "stable",
@@ -24304,42 +25888,6 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401915344",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "11677",
-        "nombre": "CD Choloma",
-        "rating": 1331.56,
-        "form_score": 16.7,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "21583",
-        "nombre": "Olancho FC",
-        "rating": 1540.52,
-        "form_score": 58.7,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 31.0,
-        "prob_empate": 23.1,
-        "prob_visitante": 45.9
-      },
-      "diff_elo": -209.0,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401899739",
       "fecha": "2026-09-05",
       "liga": "",
@@ -24491,7 +26039,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "133370",
-        "nombre": "WIMBORNE TOWN",
+        "nombre": "Wimborne Town",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -24517,42 +26065,6 @@
         "prob_visitante": 42.4
       },
       "diff_elo": -227.8,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401853990",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "22187",
-        "nombre": "Bay FC",
-        "rating": 1365.06,
-        "form_score": 39.5,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "20907",
-        "nombre": "Kansas City Current",
-        "rating": 1596.31,
-        "form_score": 41.3,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 32.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 44.2
-      },
-      "diff_elo": -231.2,
       "confianza": 100.0
     },
     {
@@ -24599,7 +26111,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "132343",
-        "nombre": "BURGESS HILL TOWN",
+        "nombre": "Burgess Hill Town",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -24610,7 +26122,7 @@
       },
       "equipo_visitante": {
         "id": "132398",
-        "nombre": "JERSEY BULLS",
+        "nombre": "Jersey Bulls",
         "rating": 1731.88,
         "form_score": 100.0,
         "momentum": "stable",
@@ -24635,7 +26147,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "132982",
-        "nombre": "HALESOWN TOWN FC",
+        "nombre": "Halesown Town FC",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -24671,7 +26183,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "132972",
-        "nombre": "LEIGHTON",
+        "nombre": "Leighton",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -24682,7 +26194,7 @@
       },
       "equipo_visitante": {
         "id": "132385",
-        "nombre": "GORLESTON",
+        "nombre": "Gorleston",
         "rating": 1731.88,
         "form_score": 100.0,
         "momentum": "stable",
@@ -24779,7 +26291,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "132392",
-        "nombre": "THAME UNITED",
+        "nombre": "Thame United",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -25103,7 +26615,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "132347",
-        "nombre": "BAMBER BRIDGE",
+        "nombre": "Bamber Bridge",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -25211,7 +26723,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "133366",
-        "nombre": "SHOLING",
+        "nombre": "Sholing",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -25283,7 +26795,7 @@
       "liga_slug": "eng.fa_qual",
       "equipo_local": {
         "id": "133369",
-        "nombre": "UXBRIDGE",
+        "nombre": "Uxbridge",
         "rating": 1500.0,
         "form_score": 50.0,
         "momentum": "stable",
@@ -25561,42 +27073,6 @@
         "prob_visitante": 48.4
       },
       "diff_elo": -267.2,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401892381",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "usa.ncaa.m.1",
-      "equipo_local": {
-        "id": "5732",
-        "nombre": "Denver Pioneers",
-        "rating": 1296.07,
-        "form_score": 22.8,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 3
-        }
-      },
-      "equipo_visitante": {
-        "id": "5595",
-        "nombre": "Tulsa Golden Hurricane",
-        "rating": 1563.91,
-        "form_score": 76.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 25.6,
-        "prob_empate": 23.1,
-        "prob_visitante": 51.3
-      },
-      "diff_elo": -267.8,
       "confianza": 100.0
     },
     {
@@ -26212,6 +27688,42 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401891850",
+      "fecha": "2026-09-05",
+      "liga": "",
+      "liga_pais": "",
+      "liga_slug": "usa.ncaa.m.1",
+      "equipo_local": {
+        "id": "131753",
+        "nombre": "West Florida Argonauts",
+        "rating": 1210.13,
+        "form_score": 5.1,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        }
+      },
+      "equipo_visitante": {
+        "id": "17390",
+        "nombre": "Florida Gulf Coast Eagles",
+        "rating": 1526.08,
+        "form_score": 26.9,
+        "momentum": "stable",
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        }
+      },
+      "prediccion": {
+        "prob_local": 25.0,
+        "prob_empate": 23.1,
+        "prob_visitante": 51.9
+      },
+      "diff_elo": -315.9,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401902053",
       "fecha": "2026-09-05",
       "liga": "",
@@ -26281,42 +27793,6 @@
         "prob_visitante": 55.0
       },
       "diff_elo": -324.6,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401859686",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "9292",
-        "nombre": "Técnico Universitario",
-        "rating": 1216.56,
-        "form_score": 9.6,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "4816",
-        "nombre": "Liga de Quito",
-        "rating": 1543.27,
-        "form_score": 63.0,
-        "momentum": "up",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 17.1,
-        "prob_empate": 23.1,
-        "prob_visitante": 59.8
-      },
-      "diff_elo": -326.7,
       "confianza": 100.0
     },
     {
@@ -26896,42 +28372,6 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401899000",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "usa.ncaa.m.1",
-      "equipo_local": {
-        "id": "18009",
-        "nombre": "San José State Spartans",
-        "rating": 1388.05,
-        "form_score": 18.6,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "5672",
-        "nombre": "Stanford Cardinal",
-        "rating": 1890.42,
-        "form_score": 100.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 4
-        }
-      },
-      "prediccion": {
-        "prob_local": 11.1,
-        "prob_empate": 23.1,
-        "prob_visitante": 65.8
-      },
-      "diff_elo": -502.4,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401899256",
       "fecha": "2026-09-05",
       "liga": "",
@@ -26965,42 +28405,6 @@
         "prob_visitante": 66.5
       },
       "diff_elo": -511.2,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401876897",
-      "fecha": "2026-09-05",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "132447",
-        "nombre": "Escorpiones Belén",
-        "rating": 1227.99,
-        "form_score": 22.8,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 3
-        }
-      },
-      "equipo_visitante": {
-        "id": "131790",
-        "nombre": "Inter de San Carlos",
-        "rating": 1745.76,
-        "form_score": 89.8,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 11.4,
-        "prob_empate": 23.1,
-        "prob_visitante": 65.4
-      },
-      "diff_elo": -517.8,
       "confianza": 100.0
     },
     {
@@ -27145,1158 +28549,6 @@
         "prob_visitante": 70.6
       },
       "diff_elo": -611.4,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401887725",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5712",
-        "nombre": "Xavier Muskateers",
-        "rating": 1760.86,
-        "form_score": 84.6,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "5689",
-        "nombre": "Bowling Green Falcons",
-        "rating": 1321.72,
-        "form_score": 45.5,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 3
-        }
-      },
-      "prediccion": {
-        "prob_local": 79.0,
-        "prob_empate": 20.2,
-        "prob_visitante": 0.9
-      },
-      "diff_elo": 439.1,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401914272",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "19002",
-        "nombre": "Montevideo City Torque",
-        "rating": 1896.45,
-        "form_score": 100.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 5
-        }
-      },
-      "equipo_visitante": {
-        "id": "9902",
-        "nombre": "Cerro Largo",
-        "rating": 1545.59,
-        "form_score": 50.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 4
-        }
-      },
-      "prediccion": {
-        "prob_local": 78.3,
-        "prob_empate": 20.8,
-        "prob_visitante": 0.9
-      },
-      "diff_elo": 350.9,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401898122",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5669",
-        "nombre": "Princeton Tigers",
-        "rating": 1672.58,
-        "form_score": 68.9,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "6804",
-        "nombre": "James Madison Dukes",
-        "rating": 1336.77,
-        "form_score": 30.7,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 77.5,
-        "prob_empate": 21.5,
-        "prob_visitante": 0.9
-      },
-      "diff_elo": 335.8,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401891008",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5617",
-        "nombre": "Maryland Terrapins",
-        "rating": 1833.3,
-        "form_score": 100.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 3
-        }
-      },
-      "equipo_visitante": {
-        "id": "5726",
-        "nombre": "Delaware Fightin' Blue Hens",
-        "rating": 1517.66,
-        "form_score": 78.2,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 77.2,
-        "prob_empate": 21.8,
-        "prob_visitante": 0.9
-      },
-      "diff_elo": 315.6,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401844101",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "9743",
-        "nombre": "Ferro Carril Oeste",
-        "rating": 1772.02,
-        "form_score": 94.9,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "11990",
-        "nombre": "Mitre (Santiago del Estero)",
-        "rating": 1496.06,
-        "form_score": 64.4,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 76.9,
-        "prob_empate": 22.2,
-        "prob_visitante": 1.0
-      },
-      "diff_elo": 276.0,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401885770",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "usa.ncaa.w.1",
-      "equipo_local": {
-        "id": "20495",
-        "nombre": "Arkansas Razorbacks",
-        "rating": 1394.81,
-        "form_score": 18.8,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "20614",
-        "nombre": "Jackson State JACKSON STATE LADY TIGERS",
-        "rating": 1219.78,
-        "form_score": 2.9,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 71.6,
-        "prob_empate": 23.1,
-        "prob_visitante": 5.2
-      },
-      "diff_elo": 175.0,
-      "confianza": 87.5
-    },
-    {
-      "fixture_id": "401898315",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "7012",
-        "nombre": "Rider Broncs",
-        "rating": 1551.89,
-        "form_score": 81.4,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "5755",
-        "nombre": "NJIT NJIT HIGHLANDERS",
-        "rating": 1413.23,
-        "form_score": 23.3,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        }
-      },
-      "prediccion": {
-        "prob_local": 71.5,
-        "prob_empate": 23.1,
-        "prob_visitante": 5.4
-      },
-      "diff_elo": 138.7,
-      "confianza": 69.3
-    },
-    {
-      "fixture_id": "401898899",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5699",
-        "nombre": "Belmont BELMONT BRUINS",
-        "rating": 1348.15,
-        "form_score": 30.7,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "5677",
-        "nombre": "Mercer Bears",
-        "rating": 1234.16,
-        "form_score": 13.8,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        }
-      },
-      "prediccion": {
-        "prob_local": 65.8,
-        "prob_empate": 23.1,
-        "prob_visitante": 11.0
-      },
-      "diff_elo": 114.0,
-      "confianza": 57.0
-    },
-    {
-      "fixture_id": "401841547",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "7764",
-        "nombre": "Platense",
-        "rating": 1577.76,
-        "form_score": 43.2,
-        "momentum": "up",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "17702",
-        "nombre": "Deportivo Riestra",
-        "rating": 1469.51,
-        "form_score": 58.4,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 3
-        }
-      },
-      "prediccion": {
-        "prob_local": 66.8,
-        "prob_empate": 23.1,
-        "prob_visitante": 10.1
-      },
-      "diff_elo": 108.2,
-      "confianza": 54.1
-    },
-    {
-      "fixture_id": "401898941",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5703",
-        "nombre": "Kentucky Wildcats",
-        "rating": 1315.87,
-        "form_score": 25.3,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        }
-      },
-      "equipo_visitante": {
-        "id": "5682",
-        "nombre": "Evansville Purple Aces",
-        "rating": 1227.6,
-        "form_score": 0.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 3
-        }
-      },
-      "prediccion": {
-        "prob_local": 63.9,
-        "prob_empate": 23.1,
-        "prob_visitante": 13.0
-      },
-      "diff_elo": 88.3,
-      "confianza": 44.1
-    },
-    {
-      "fixture_id": "401886818",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "usa.ncaa.w.1",
-      "equipo_local": {
-        "id": "20339",
-        "nombre": "Creighton Bluejays",
-        "rating": 1502.35,
-        "form_score": 26.9,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        }
-      },
-      "equipo_visitante": {
-        "id": "20622",
-        "nombre": "Northern Colorado NORTHERN COLORADO BEARS",
-        "rating": 1419.49,
-        "form_score": 50.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 2
-        }
-      },
-      "prediccion": {
-        "prob_local": 59.5,
-        "prob_empate": 23.1,
-        "prob_visitante": 17.3
-      },
-      "diff_elo": 82.9,
-      "confianza": 41.4
-    },
-    {
-      "fixture_id": "401890632",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5645",
-        "nombre": "Georgetown Hoyas",
-        "rating": 1814.4,
-        "form_score": 77.2,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 3
-        }
-      },
-      "equipo_visitante": {
-        "id": "5674",
-        "nombre": "Oregon State Beavers",
-        "rating": 1733.54,
-        "form_score": 74.7,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        }
-      },
-      "prediccion": {
-        "prob_local": 61.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 15.1
-      },
-      "diff_elo": 80.9,
-      "confianza": 40.4
-    },
-    {
-      "fixture_id": "401841543",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "4",
-        "nombre": "Belgrano (Córdoba)",
-        "rating": 1478.92,
-        "form_score": 62.8,
-        "momentum": "up",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "10",
-        "nombre": "Huracán",
-        "rating": 1451.9,
-        "form_score": 55.1,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 2
-        }
-      },
-      "prediccion": {
-        "prob_local": 60.1,
-        "prob_empate": 23.1,
-        "prob_visitante": 16.7
-      },
-      "diff_elo": 27.0,
-      "confianza": 13.5
-    },
-    {
-      "fixture_id": "401887796",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5840",
-        "nombre": "Harvard Crimson",
-        "rating": 1494.74,
-        "form_score": 62.2,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "5702",
-        "nombre": "Providence Friars",
-        "rating": 1468.38,
-        "form_score": 67.3,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 55.8,
-        "prob_empate": 23.1,
-        "prob_visitante": 21.1
-      },
-      "diff_elo": 26.4,
-      "confianza": 13.2
-    },
-    {
-      "fixture_id": "401842173",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "19410",
-        "nombre": "Loudoun United FC",
-        "rating": 1480.33,
-        "form_score": 22.2,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "17830",
-        "nombre": "Colorado Springs Switchbacks FC",
-        "rating": 1472.42,
-        "form_score": 31.2,
-        "momentum": "up",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 50.8,
-        "prob_empate": 23.1,
-        "prob_visitante": 26.1
-      },
-      "diff_elo": 7.9,
-      "confianza": 4.0
-    },
-    {
-      "fixture_id": "401891173",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5717",
-        "nombre": "Cornell Big Red",
-        "rating": 1670.45,
-        "form_score": 100.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "5618",
-        "nombre": "UC Santa Barbara Gauchos",
-        "rating": 1666.05,
-        "form_score": 75.3,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 2
-        }
-      },
-      "prediccion": {
-        "prob_local": 56.1,
-        "prob_empate": 23.1,
-        "prob_visitante": 20.8
-      },
-      "diff_elo": 4.4,
-      "confianza": 2.2
-    },
-    {
-      "fixture_id": "401887775",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5650",
-        "nombre": "Rutgers Scarlet Knights",
-        "rating": 1478.45,
-        "form_score": 44.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "5631",
-        "nombre": "Seton Hall Pirates",
-        "rating": 1508.47,
-        "form_score": 40.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 51.2,
-        "prob_empate": 23.1,
-        "prob_visitante": 25.7
-      },
-      "diff_elo": -30.0,
-      "confianza": 15.0
-    },
-    {
-      "fixture_id": "401900687",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "usa.ncaa.w.1",
-      "equipo_local": {
-        "id": "20523",
-        "nombre": "Missouri Tigers",
-        "rating": 1375.81,
-        "form_score": 51.4,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "20582",
-        "nombre": "Southeast Missouri State SOUTHEAST MISSOURI STATE REDHAWKS",
-        "rating": 1418.97,
-        "form_score": 53.9,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 49.1,
-        "prob_empate": 23.1,
-        "prob_visitante": 27.8
-      },
-      "diff_elo": -43.2,
-      "confianza": 21.6
-    },
-    {
-      "fixture_id": "401901793",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5660",
-        "nombre": "St. Bonaventure Bonnies",
-        "rating": 1528.35,
-        "form_score": 60.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "5733",
-        "nombre": "Robert Morris Colonials",
-        "rating": 1607.01,
-        "form_score": 49.4,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 47.2,
-        "prob_empate": 23.1,
-        "prob_visitante": 29.7
-      },
-      "diff_elo": -78.7,
-      "confianza": 39.3
-    },
-    {
-      "fixture_id": "401891393",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "usa.ncaa.w.1",
-      "equipo_local": {
-        "id": "20590",
-        "nombre": "Troy TROY TROJANS",
-        "rating": 1308.56,
-        "form_score": 27.6,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        }
-      },
-      "equipo_visitante": {
-        "id": "20555",
-        "nombre": "Kennesaw State Owls",
-        "rating": 1395.69,
-        "form_score": 36.1,
-        "momentum": "up",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 41.3,
-        "prob_empate": 23.1,
-        "prob_visitante": 35.6
-      },
-      "diff_elo": -87.1,
-      "confianza": 43.6
-    },
-    {
-      "fixture_id": "401892280",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5737",
-        "nombre": "Dartmouth Big Green",
-        "rating": 1417.56,
-        "form_score": 0.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "5693",
-        "nombre": "UAlbany Great Danes",
-        "rating": 1561.56,
-        "form_score": 34.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 38.8,
-        "prob_empate": 23.1,
-        "prob_visitante": 38.0
-      },
-      "diff_elo": -144.0,
-      "confianza": 72.0
-    },
-    {
-      "fixture_id": "401884169",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5676",
-        "nombre": "Syracuse Orange",
-        "rating": 1616.11,
-        "form_score": 72.4,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        }
-      },
-      "equipo_visitante": {
-        "id": "5629",
-        "nombre": "Clemson Tigers",
-        "rating": 1770.95,
-        "form_score": 83.3,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 38.0,
-        "prob_empate": 23.1,
-        "prob_visitante": 38.8
-      },
-      "diff_elo": -154.8,
-      "confianza": 77.4
-    },
-    {
-      "fixture_id": "401878644",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "131450",
-        "nombre": "DC Power FC",
-        "rating": 1613.79,
-        "form_score": 49.4,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        }
-      },
-      "equipo_visitante": {
-        "id": "131453",
-        "nombre": "Sporting Jax",
-        "rating": 1794.25,
-        "form_score": 100.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 3
-        }
-      },
-      "prediccion": {
-        "prob_local": 33.5,
-        "prob_empate": 23.1,
-        "prob_visitante": 43.3
-      },
-      "diff_elo": -180.5,
-      "confianza": 90.2
-    },
-    {
-      "fixture_id": "401860320",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "20851",
-        "nombre": "Athletic",
-        "rating": 1386.75,
-        "form_score": 68.9,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 3
-        }
-      },
-      "equipo_visitante": {
-        "id": "9973",
-        "nombre": "Vila Nova",
-        "rating": 1591.18,
-        "form_score": 52.4,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 35.4,
-        "prob_empate": 23.1,
-        "prob_visitante": 41.4
-      },
-      "diff_elo": -204.4,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401890739",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5748",
-        "nombre": "Butler Bulldogs",
-        "rating": 1298.0,
-        "form_score": 13.8,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        }
-      },
-      "equipo_visitante": {
-        "id": "21653",
-        "nombre": "Lindenwood Lions",
-        "rating": 1503.41,
-        "form_score": 67.3,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 30.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 46.2
-      },
-      "diff_elo": -205.4,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401899047",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5694",
-        "nombre": "Davidson Wildcats",
-        "rating": 1472.69,
-        "form_score": 50.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 3
-        }
-      },
-      "equipo_visitante": {
-        "id": "5739",
-        "nombre": "Furman Paladins",
-        "rating": 1682.76,
-        "form_score": 35.6,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 36.0,
-        "prob_empate": 23.1,
-        "prob_visitante": 40.9
-      },
-      "diff_elo": -210.1,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401898129",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5598",
-        "nombre": "Penn State Nittany Lions",
-        "rating": 1358.74,
-        "form_score": 50.6,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "5711",
-        "nombre": "Yale Bulldogs",
-        "rating": 1575.87,
-        "form_score": 37.8,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 35.5,
-        "prob_empate": 23.1,
-        "prob_visitante": 41.3
-      },
-      "diff_elo": -217.1,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401860312",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "9971",
-        "nombre": "Criciúma",
-        "rating": 1448.94,
-        "form_score": 33.9,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        }
-      },
-      "equipo_visitante": {
-        "id": "17313",
-        "nombre": "Cuiabá",
-        "rating": 1725.32,
-        "form_score": 73.8,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 25.4,
-        "prob_empate": 23.1,
-        "prob_visitante": 51.4
-      },
-      "diff_elo": -276.4,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "761770",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "17606",
-        "nombre": "New York City FC",
-        "rating": 1286.15,
-        "form_score": 43.2,
-        "momentum": "down",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 2
-        }
-      },
-      "equipo_visitante": {
-        "id": "18986",
-        "nombre": "Nashville SC",
-        "rating": 1617.62,
-        "form_score": 44.5,
-        "momentum": "up",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 4
-        }
-      },
-      "prediccion": {
-        "prob_local": 17.6,
-        "prob_empate": 23.1,
-        "prob_visitante": 59.3
-      },
-      "diff_elo": -331.5,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401898263",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5666",
-        "nombre": "Loyola Maryland Greyhounds",
-        "rating": 1098.69,
-        "form_score": 0.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 4
-        }
-      },
-      "equipo_visitante": {
-        "id": "5710",
-        "nombre": "Mount St. Mary's Mountaineers",
-        "rating": 1430.55,
-        "form_score": 34.6,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        }
-      },
-      "prediccion": {
-        "prob_local": 23.0,
-        "prob_empate": 23.1,
-        "prob_visitante": 53.8
-      },
-      "diff_elo": -331.9,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401898448",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5624",
-        "nombre": "Boston University Terriers",
-        "rating": 1320.13,
-        "form_score": 9.3,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "5686",
-        "nombre": "New Hampshire Wildcats",
-        "rating": 1700.42,
-        "form_score": 49.4,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        }
-      },
-      "prediccion": {
-        "prob_local": 20.6,
-        "prob_empate": 23.1,
-        "prob_visitante": 56.2
-      },
-      "diff_elo": -380.3,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401883909",
-      "fecha": "2026-09-04",
-      "liga": "",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5612",
-        "nombre": "Virginia Cavaliers",
-        "rating": 1335.64,
-        "form_score": 16.7,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        }
-      },
-      "equipo_visitante": {
-        "id": "5592",
-        "nombre": "Boston College Eagles",
-        "rating": 1841.51,
-        "form_score": 100.0,
-        "momentum": "stable",
-        "streak": {
-          "tipo": "W",
-          "cantidad": 3
-        }
-      },
-      "prediccion": {
-        "prob_local": 10.9,
-        "prob_empate": 23.1,
-        "prob_visitante": 65.9
-      },
-      "diff_elo": -505.9,
       "confianza": 100.0
     }
   ]
