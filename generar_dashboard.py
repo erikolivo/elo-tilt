@@ -1,8 +1,8 @@
 """
 generar_dashboard.py
 --------------------
-Genera el dashboard HTML autocontenido con las predicciones
-y datos de tilt/momentum de los partidos a jugarse.
+Genera el dashboard HTML autocontenido con predicciones y datos completos
+de tilt/momentum/estadisticas para partidos a jugarse.
 
 Lee data/predicciones_cache.json y genera dashboard.html.
 
@@ -21,22 +21,46 @@ ARCHIVO_SALIDA = Path(__file__).parent / "dashboard.html"
 
 
 def _clase_forma(score):
+    if score is None:
+        return "neutral"
     if score >= 70:
-        return "forma-alta"
+        return "high"
     elif score >= 40:
-        return "forma-media"
-    return "forma-baja"
+        return "mid"
+    return "low"
+
+
+def _clase_rating(rating):
+    if rating is None:
+        return "neutral"
+    if rating >= 1700:
+        return "elite"
+    elif rating >= 1550:
+        return "above"
+    elif rating >= 1400:
+        return "average"
+    return "below"
+
+
+def _clase_rd(rd, partidos):
+    if partidos is not None and partidos < 10:
+        return "provisional"
+    if rd is not None and rd > 100:
+        return "high-uncertainty"
+    return "normal"
 
 
 def _icono_momentum(direccion):
     if direccion == "up":
-        return '<span class="momentum-up">&#9650;</span>'
+        return '<span class="mom-up">▲</span>'
     elif direccion == "down":
-        return '<span class="momentum-down">&#9660;</span>'
-    return '<span class="momentum-stable">&#9644;</span>'
+        return '<span class="mom-down">▼</span>'
+    return '<span class="mom-stable">—</span>'
 
 
 def _streak_html(streak):
+    if not streak:
+        return '<span class="streak-na">—</span>'
     tipo = streak.get("tipo", "N/A")
     cant = streak.get("cantidad", 0)
     if tipo == "W":
@@ -45,26 +69,57 @@ def _streak_html(streak):
         return f'<span class="streak-d">{cant}E</span>'
     elif tipo == "L":
         return f'<span class="streak-l">{cant}D</span>'
-    return '<span class="streak-na">-</span>'
+    return '<span class="streak-na">—</span>'
 
 
-def _barra_prob(valor):
-    if valor >= 50:
-        return f'<div class="barra barra-alta" style="width:{valor}%">{valor:.0f}%</div>'
-    elif valor >= 30:
-        return f'<div class="barra barra-media" style="width:{valor}%">{valor:.0f}%</div>'
-    return f'<div class="barra barra-baja" style="width:{valor}%">{valor:.0f}%</div>'
+def _barra_prob(valor, clase):
+    return f'<div class="prob-bar prob-{clase}" style="width:{max(valor, 5)}%">{valor:.0f}%</div>'
 
 
-def _sparkline_html(form_score):
-    width = 60
-    height = 20
-    fill = int(form_score / 100 * width)
-    color = "#22c55e" if form_score >= 70 else "#eab308" if form_score >= 40 else "#ef4444"
-    return (f'<svg width="{width}" height="{height}" class="sparkline">'
-            f'<rect x="0" y="0" width="{fill}" height="{height}" fill="{color}" rx="3"/>'
-            f'<rect x="{fill}" y="0" width="{width - fill}" height="{height}" fill="#374151" rx="3"/>'
+def _sparkline(form_score, width=50, height=14):
+    fill = int(form_score / 100 * width) if form_score else 0
+    color = "#22c55e" if form_score and form_score >= 70 else "#eab308" if form_score and form_score >= 40 else "#ef4444"
+    return (f'<svg width="{width}" height="{height}" class="spark">'
+            f'<rect x="0" y="0" width="{fill}" height="{height}" fill="{color}" rx="2"/>'
+            f'<rect x="{fill}" y="0" width="{width - fill}" height="{height}" fill="#1e293b" rx="2"/>'
             f'</svg>')
+
+
+def _badge_provisional(partidos):
+    if partidos is not None and partidos < 10:
+        return '<span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span>'
+    return ""
+
+
+def _goal_trend_bar(gt):
+    if not gt:
+        return ""
+    gf = gt.get("goles_favor", 0)
+    gc = gt.get("goles_contra", 0)
+    diff = gt.get("diferencia", 0)
+    if gf == 0 and gc == 0:
+        return ""
+    color = "#22c55e" if diff > 0 else "#ef4444" if diff < 0 else "#94a3b8"
+    signo = "+" if diff > 0 else ""
+    return f'<span class="gt" title="GF: {gf} | GC: {gc}"><span style="color:{color}">{signo}{diff:.1f}</span></span>'
+
+
+def _overperformance_badge(op):
+    if op is None or op == 0:
+        return ""
+    color = "#22c55e" if op > 10 else "#ef4444" if op < -10 else "#94a3b8"
+    signo = "+" if op > 0 else ""
+    return f'<span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:{color}">{signo}{op:.0f}</span>'
+
+
+def _field_tilt_bar(ft):
+    if not ft:
+        return ""
+    overall = ft.get("overall", 50)
+    if overall == 50:
+        return ""
+    color = "#22c55e" if overall > 60 else "#ef4444" if overall < 40 else "#94a3b8"
+    return f'<span class="ft-badge" title="Control territorial" style="color:{color}">{overall:.0f}%</span>'
 
 
 def _agrupar_por_liga(predicciones):
@@ -78,22 +133,191 @@ def _agrupar_por_liga(predicciones):
     return ligas
 
 
+def _es_destacado(p):
+    conf = p.get("confianza", 0)
+    diff = abs(p.get("diff_elo", 0))
+    return conf > 40 or diff > 150
+
+
+def _es_parejo(p):
+    return p.get("confianza", 100) < 20 or abs(p.get("diff_elo", 999)) < 50
+
+
+def _es_sorpresa_potencial(p):
+    local = p.get("equipo_local", {})
+    visitante = p.get("equipo_visitante", {})
+    mom_l = local.get("momentum", "stable")
+    mom_v = visitante.get("momentum", "stable")
+    op_l = local.get("overperformance", 0)
+    op_v = visitante.get("overperformance", 0)
+    if local.get("rating", 0) < visitante.get("rating", 0):
+        return mom_l == "up" or op_l > 10
+    return mom_v == "up" or op_v > 10
+
+
+def _score_relevancia(p):
+    elo_avg = (p.get("equipo_local", {}).get("rating", 1500) + p.get("equipo_visitante", {}).get("rating", 1500)) / 2
+    conf = p.get("confianza", 0)
+    elo_norm = min(max((elo_avg - 1200) / 600, 0), 1)
+    return elo_norm * 60 + (conf / 100) * 40
+
+
+def _score_ajuste_forma(p):
+    diff_elo = abs(p.get("diff_elo", 0))
+    prob_l = p["prediccion"]["prob_local"]
+    prob_v = p["prediccion"]["prob_visitante"]
+    if prob_l > prob_v:
+        favorito_prob = prob_l
+    else:
+        favorito_prob = prob_v
+    return diff_elo * (1 - favorito_prob / 100)
+
+
 def generar_html(predicciones, titulo="ELO + Tilt Tracker"):
     ligas = _agrupar_por_liga(predicciones)
-
-    todos_equipos = []
+    todos_equipos = {}
     for p in predicciones:
         for lado in ["equipo_local", "equipo_visitante"]:
             eq = p[lado]
-            todos_equipos.append(eq)
+            todos_equipos[eq["id"]] = eq
 
-    equipos_unicos = {}
-    for eq in todos_equipos:
-        eid = eq["id"]
-        if eid not in equipos_unicos:
-            equipos_unicos[eid] = eq
+    ranking_forma = sorted(todos_equipos.values(), key=lambda x: x.get("form_score", 50), reverse=True)[:30]
+    ranking_elo = sorted(todos_equipos.values(), key=lambda x: x.get("rating", 1500), reverse=True)[:30]
 
-    ranking = sorted(equipos_unicos.values(), key=lambda x: x["form_score"], reverse=True)
+    n_destacados = sum(1 for p in predicciones if _es_destacado(p))
+    n_parejos = sum(1 for p in predicciones if _es_parejo(p))
+    n_sorpresas = sum(1 for p in predicciones if _es_sorpresa_potencial(p))
+
+    liga_counts = {}
+    for p in predicciones:
+        lk = p.get("liga_slug", "")
+        liga_counts[lk] = liga_counts.get(lk, 0) + 1
+    liga_top = max(liga_counts.items(), key=lambda x: x[1]) if liga_counts else ("", 0)
+    liga_top_nombre = ligas.get(liga_top[0], {}).get("liga", liga_top[0]) if liga_top[0] else "N/A"
+
+    generado = predicciones[0].get("fecha_display", "") if predicciones else ""
+    if predicciones:
+        generado = predicciones[0].get("fecha", "")[:10]
+
+    all_ligas_json = json.dumps([{"slug": k, "nombre": v["nombre"]} for k, v in sorted(ligas.items())])
+
+    match_cards = ""
+    for p in predicciones:
+        h = p["equipo_local"]
+        a = p["equipo_visitante"]
+        pred = p["prediccion"]
+        hora = p.get("hora", "")
+        fecha_d = p.get("fecha_display", "")
+        diff = p.get("diff_elo", 0)
+        conf = p.get("confianza", 0)
+        slug = p.get("liga_slug", "")
+
+        es_dest = _es_destacado(p)
+        es_par = _es_sorpresa_potencial(p)
+        clase_card = ""
+        if es_dest:
+            clase_card += " card-highlight"
+        elif es_par:
+            clase_card += " card-suspense"
+
+        prob_l = pred["prob_local"]
+        prob_e = pred["prob_empate"]
+        prob_v = pred["prob_visitante"]
+
+        if prob_l >= prob_e and prob_l >= prob_v:
+            pred_clase_l, pred_clase_e, pred_clase_v = "best", "", ""
+        elif prob_v >= prob_e and prob_v >= prob_l:
+            pred_clase_l, pred_clase_e, pred_clase_v = "", "", "best"
+        else:
+            pred_clase_l, pred_clase_e, pred_clase_v = "", "best", ""
+
+        diff_signo = "+" if diff > 0 else ""
+
+        match_cards += f'''<div class="mc{clase_card}" data-slug="{slug}" data-dest="{1 if es_dest else 0}" data-par="{1 if _es_parejo(p) else 0}" data-sorp="{1 if _es_sorpresa_potencial(p) else 0}" data-ajuste="{_score_ajuste_forma(p):.1f}" data-relev="{_score_relevancia(p):.1f}" data-home="{h['nombre'].lower()}" data-away="{a['nombre'].lower()}" data-diff="{abs(diff):.0f}">
+<div class="mc-top">
+  <span class="mc-liga">{p.get("liga", "")}</span>
+  <span class="mc-hora">{hora}</span>
+</div>
+<div class="mc-body">
+  <div class="mc-team mc-home">
+    <div class="mc-name">{h['nombre']}</div>
+    <div class="mc-meta">
+      <span class="elo {_clase_rating(h.get('rating'))}">{h.get('rating', 0):.0f}</span>
+      {_badge_provisional(h.get('partidos_jugados'))}
+      {_streak_html(h.get('streak'))}
+    </div>
+    <div class="mc-tilt">
+      <span class="tf {_clase_forma(h.get('form_score'))}">{h.get('form_score', 50):.0f}</span>
+      {_icono_momentum(h.get('momentum'))}
+      {_sparkline(h.get('form_score', 50))}
+      {_goal_trend_bar(h.get('goal_trend'))}
+      {_overperformance_badge(h.get('overperformance'))}
+      {_field_tilt_bar(h.get('field_tilt'))}
+    </div>
+    <div class="mc-subtilt">
+      <span class="sub-item" title="Forma local">L:{h.get('form_local', 50):.0f}</span>
+      <span class="sub-item" title="Forma visitante">V:{h.get('form_visitante', 50):.0f}</span>
+      <span class="sub-item" title="RD (incertidumbre)">RD:{h.get('rd', 0):.0f}</span>
+    </div>
+  </div>
+  <div class="mc-preds">
+    <div class="pred-row {pred_clase_l}"><span class="pred-pct">{prob_l:.0f}%</span></div>
+    <div class="pred-row {pred_clase_e}"><span class="pred-pct pred-draw">{prob_e:.0f}%</span></div>
+    <div class="pred-row {pred_clase_v}"><span class="pred-pct">{prob_v:.0f}%</span></div>
+  </div>
+  <div class="mc-team mc-away">
+    <div class="mc-name">{a['nombre']}</div>
+    <div class="mc-meta">
+      <span class="elo {_clase_rating(a.get('rating'))}">{a.get('rating', 0):.0f}</span>
+      {_badge_provisional(a.get('partidos_jugados'))}
+      {_streak_html(a.get('streak'))}
+    </div>
+    <div class="mc-tilt">
+      <span class="tf {_clase_forma(a.get('form_score'))}">{a.get('form_score', 50):.0f}</span>
+      {_icono_momentum(a.get('momentum'))}
+      {_sparkline(a.get('form_score', 50))}
+      {_goal_trend_bar(a.get('goal_trend'))}
+      {_overperformance_badge(a.get('overperformance'))}
+      {_field_tilt_bar(a.get('field_tilt'))}
+    </div>
+    <div class="mc-subtilt">
+      <span class="sub-item" title="Forma local">L:{a.get('form_local', 50):.0f}</span>
+      <span class="sub-item" title="Forma visitante">V:{a.get('form_visitante', 50):.0f}</span>
+      <span class="sub-item" title="RD (incertidumbre)">RD:{a.get('rd', 0):.0f}</span>
+    </div>
+  </div>
+</div>
+<div class="mc-footer">
+  <span class="mc-diff" title="Diferencia ELO">Δ{diff_signo}{diff:.0f}</span>
+  <span class="mc-conf" title="Confianza de la predicción">C:{conf:.0f}%</span>
+</div>
+</div>
+'''
+
+    ranking_rows_forma = ""
+    for i, eq in enumerate(ranking_forma, 1):
+        ranking_rows_forma += f'''<tr>
+<td class="rk">{i}</td>
+<td class="rk-name">{eq['nombre']}</td>
+<td><span class="elo {_clase_rating(eq.get('rating'))}">{eq.get('rating', 0):.0f}</span></td>
+<td class="{_clase_forma(eq.get('form_score'))}">{eq.get('form_score', 50):.0f}</td>
+<td>{_icono_momentum(eq.get('momentum'))}</td>
+<td>{_streak_html(eq.get('streak'))}</td>
+<td>{_overperformance_badge(eq.get('overperformance'))}</td>
+</tr>
+'''
+
+    ranking_rows_elo = ""
+    for i, eq in enumerate(ranking_elo, 1):
+        ranking_rows_elo += f'''<tr>
+<td class="rk">{i}</td>
+<td class="rk-name">{eq['nombre']}</td>
+<td><span class="elo {_clase_rating(eq.get('rating'))}">{eq.get('rating', 0):.0f}</span></td>
+<td>{_badge_provisional(eq.get('partidos_jugados'))}</td>
+<td class="{_clase_forma(eq.get('form_score'))}">{eq.get('form_score', 50):.0f}</td>
+<td>{_icono_momentum(eq.get('momentum'))}</td>
+</tr>
+'''
 
     html = f'''<!DOCTYPE html>
 <html lang="es">
@@ -102,171 +326,288 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker"):
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{titulo}</title>
 <style>
+:root {{
+  --bg: #0a0e17;
+  --surface: #111827;
+  --surface2: #1a2234;
+  --border: #1e2d3d;
+  --text: #e2e8f0;
+  --text2: #94a3b8;
+  --text3: #64748b;
+  --accent: #38bdf8;
+  --accent2: #818cf8;
+  --green: #22c55e;
+  --yellow: #eab308;
+  --red: #ef4444;
+  --orange: #f97316;
+}}
 * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-       background: #0f172a; color: #e2e8f0; padding: 20px; }}
-.container {{ max-width: 1200px; margin: 0 auto; }}
-h1 {{ text-align: center; font-size: 1.8em; margin-bottom: 5px; color: #38bdf8; }}
-.subtitle {{ text-align: center; color: #94a3b8; margin-bottom: 20px; font-size: 0.9em; }}
-.section {{ margin-bottom: 30px; }}
-.section-title {{ font-size: 1.2em; color: #38bdf8; margin-bottom: 10px;
-                  border-bottom: 1px solid #1e293b; padding-bottom: 5px; }}
-.liga-header {{ background: #1e293b; padding: 10px 15px; border-radius: 8px 8px 0 0;
-                font-weight: bold; color: #38bdf8; margin-top: 15px; }}
-.match-card {{ background: #1e293b; padding: 15px; margin-bottom: 2px; display: grid;
-               grid-template-columns: 1fr auto 1fr; gap: 10px; align-items: center; }}
-.match-card:last-child {{ border-radius: 0 0 8px 8px; }}
-.team {{ display: flex; flex-direction: column; gap: 4px; }}
-.team-name {{ font-weight: 600; font-size: 1em; }}
-.team-small {{ font-size: 0.8em; color: #94a3b8; }}
-.team-right {{ text-align: right; }}
-.predicciones {{ display: flex; flex-direction: column; gap: 4px; min-width: 120px; }}
-.pred-row {{ display: flex; align-items: center; gap: 6px; font-size: 0.85em; }}
-.pred-label {{ width: 16px; text-align: center; font-weight: bold; }}
-.pred-label.home {{ color: #38bdf8; }}
-.pred-label.draw {{ color: #94a3b8; }}
-.pred-label.away {{ color: #f97316; }}
-.barra {{ height: 18px; border-radius: 4px; display: flex; align-items: center;
-          padding: 0 6px; font-size: 0.75em; font-weight: bold; color: white;
-          min-width: 30px; transition: width 0.3s; }}
-.barra-alta {{ background: linear-gradient(90deg, #22c55e, #16a34a); }}
-.barra-media {{ background: linear-gradient(90deg, #eab308, #ca8a04); }}
-.barra-baja {{ background: linear-gradient(90deg, #ef4444, #dc2626); }}
-.tilt-info {{ display: flex; gap: 8px; font-size: 0.8em; color: #94a3b8;
-              flex-wrap: wrap; margin-top: 4px; }}
-.tilt-item {{ display: flex; align-items: center; gap: 3px; }}
-.forma-alta {{ color: #22c55e; }}
-.forma-media {{ color: #eab308; }}
-.forma-baja {{ color: #ef4444; }}
-.momentum-up {{ color: #22c55e; }}
-.momentum-down {{ color: #ef4444; }}
-.momentum-stable {{ color: #94a3b8; }}
-.streak-w {{ color: #22c55e; font-weight: bold; }}
-.streak-d {{ color: #94a3b8; font-weight: bold; }}
-.streak-l {{ color: #ef4444; font-weight: bold; }}
-.streak-na {{ color: #64748b; }}
-.elo-badge {{ background: #334155; padding: 2px 8px; border-radius: 12px;
-              font-size: 0.8em; font-weight: bold; color: #38bdf8; }}
-.sparkline {{ border-radius: 3px; }}
-.ranking-table {{ width: 100%; border-collapse: collapse; }}
-.ranking-table th {{ text-align: left; padding: 8px 12px; background: #1e293b;
-                     color: #38bdf8; font-size: 0.85em; }}
-.ranking-table td {{ padding: 8px 12px; border-bottom: 1px solid #1e293b; font-size: 0.9em; }}
-.ranking-table tr:hover {{ background: #1e293b; }}
-.rank-num {{ color: #64748b; font-weight: bold; width: 30px; }}
-.confianza {{ font-size: 0.75em; color: #64748b; }}
-.filters {{ display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap; }}
-.filter-btn {{ background: #1e293b; border: 1px solid #334155; color: #e2e8f0;
-               padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 0.85em; }}
-.filter-btn:hover, .filter-btn.active {{ background: #38bdf8; color: #0f172a; border-color: #38bdf8; }}
-.updated {{ text-align: center; color: #475569; font-size: 0.8em; margin-top: 20px; }}
+body {{ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+       background: var(--bg); color: var(--text); line-height: 1.5; }}
+.container {{ max-width: 1280px; margin: 0 auto; padding: 16px; }}
+
+/* Header */
+.header {{ text-align: center; padding: 32px 16px 24px; }}
+.header h1 {{ font-size: 2em; font-weight: 800; letter-spacing: -0.02em;
+              background: linear-gradient(135deg, var(--accent), var(--accent2));
+              -webkit-background-clip: text; -webkit-text-fill-color: transparent; }}
+.header .sub {{ color: var(--text2); font-size: 0.9em; margin-top: 4px; }}
+
+/* Stats bar */
+.stats {{ display: flex; justify-content: center; gap: 32px; padding: 16px;
+          margin-bottom: 20px; flex-wrap: wrap; }}
+.stat {{ text-align: center; }}
+.stat-val {{ font-size: 1.6em; font-weight: 700; color: var(--accent); }}
+.stat-label {{ font-size: 0.75em; color: var(--text3); text-transform: uppercase; letter-spacing: 0.05em; }}
+
+/* Controls */
+.controls {{ display: flex; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; align-items: center; }}
+.search {{ flex: 1; min-width: 200px; padding: 8px 14px; background: var(--surface);
+           border: 1px solid var(--border); border-radius: 8px; color: var(--text);
+           font-size: 0.9em; outline: none; }}
+.search:focus {{ border-color: var(--accent); }}
+.search::placeholder {{ color: var(--text3); }}
+
+/* Tabs */
+.tabs {{ display: flex; gap: 4px; flex-wrap: wrap; }}
+.tab {{ padding: 6px 14px; background: var(--surface); border: 1px solid var(--border);
+        border-radius: 6px; color: var(--text2); cursor: pointer; font-size: 0.82em;
+        transition: all 0.15s; white-space: nowrap; }}
+.tab:hover {{ border-color: var(--accent); color: var(--text); }}
+.tab.active {{ background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 600; }}
+.tab .count {{ font-size: 0.8em; opacity: 0.7; margin-left: 4px; }}
+
+/* League filter */
+.league-filter {{ display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 16px; }}
+.lf-btn {{ padding: 4px 10px; background: var(--surface); border: 1px solid var(--border);
+           border-radius: 4px; color: var(--text3); cursor: pointer; font-size: 0.75em; }}
+.lf-btn:hover {{ border-color: var(--accent); color: var(--text2); }}
+.lf-btn.active {{ background: var(--surface2); color: var(--accent); border-color: var(--accent); }}
+
+/* Match cards */
+.match-list {{ display: flex; flex-direction: column; gap: 2px; }}
+.mc {{ background: var(--surface); border-radius: 10px; padding: 14px 16px;
+       border: 1px solid var(--border); transition: all 0.2s; }}
+.mc:hover {{ border-color: var(--accent); transform: translateY(-1px);
+             box-shadow: 0 4px 20px rgba(56,189,248,0.08); }}
+.card-highlight {{ border-left: 3px solid var(--accent); }}
+.card-suspense {{ border-left: 3px solid var(--orange); }}
+
+.mc-top {{ display: flex; justify-content: space-between; align-items: center;
+           margin-bottom: 8px; font-size: 0.75em; color: var(--text3); }}
+.mc-liga {{ font-weight: 600; }}
+.mc-hora {{ color: var(--accent); font-weight: 500; }}
+
+.mc-body {{ display: grid; grid-template-columns: 1fr 80px 1fr; gap: 12px; align-items: center; }}
+
+.mc-team {{ display: flex; flex-direction: column; gap: 3px; }}
+.mc-away {{ text-align: right; }}
+.mc-name {{ font-weight: 600; font-size: 0.95em; line-height: 1.2; }}
+.mc-meta {{ display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }}
+.mc-away .mc-meta {{ justify-content: flex-end; }}
+.mc-tilt {{ display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }}
+.mc-away .mc-tilt {{ justify-content: flex-end; }}
+.mc-subtilt {{ display: flex; gap: 8px; font-size: 0.7em; color: var(--text3); }}
+.mc-away .mc-subtilt {{ justify-content: flex-end; }}
+
+.mc-preds {{ display: flex; flex-direction: column; gap: 3px; align-items: center; }}
+.pred-row {{ width: 100%; text-align: center; padding: 3px 0; border-radius: 4px; font-size: 0.9em; }}
+.pred-row.best {{ background: rgba(56,189,248,0.12); }}
+.pred-pct {{ font-weight: 700; font-size: 1em; }}
+.pred-draw {{ color: var(--text3); }}
+
+.mc-footer {{ display: flex; justify-content: space-between; margin-top: 8px;
+              padding-top: 8px; border-top: 1px solid var(--border); font-size: 0.75em; color: var(--text3); }}
+
+/* Badges & tags */
+.elo {{ padding: 1px 7px; border-radius: 10px; font-size: 0.8em; font-weight: 700; }}
+.elite {{ background: rgba(56,189,248,0.15); color: var(--accent); }}
+.above {{ background: rgba(34,197,94,0.12); color: var(--green); }}
+.average {{ background: rgba(148,163,184,0.12); color: var(--text2); }}
+.below {{ background: rgba(239,68,68,0.12); color: var(--red); }}
+
+.badge-prov {{ font-size: 0.6em; padding: 1px 5px; background: rgba(234,179,8,0.15);
+               color: var(--yellow); border-radius: 4px; font-weight: 700; letter-spacing: 0.04em; }}
+
+.tf {{ font-weight: 700; font-size: 0.85em; }}
+.high {{ color: var(--green); }}
+.mid {{ color: var(--yellow); }}
+.low {{ color: var(--red); }}
+.neutral {{ color: var(--text3); }}
+
+.mom-up {{ color: var(--green); font-size: 0.75em; }}
+.mom-down {{ color: var(--red); font-size: 0.75em; }}
+.mom-stable {{ color: var(--text3); font-size: 0.75em; }}
+
+.streak-w {{ color: var(--green); font-weight: 700; font-size: 0.8em; }}
+.streak-d {{ color: var(--text3); font-weight: 700; font-size: 0.8em; }}
+.streak-l {{ color: var(--red); font-weight: 700; font-size: 0.8em; }}
+.streak-na {{ color: var(--text3); font-size: 0.8em; }}
+
+.spark {{ border-radius: 2px; vertical-align: middle; }}
+
+.gt {{ font-size: 0.75em; font-weight: 600; }}
+.op-badge {{ font-size: 0.7em; font-weight: 700; }}
+.ft-badge {{ font-size: 0.7em; font-weight: 600; }}
+.sub-item {{ white-space: nowrap; }}
+
+/* Rankings */
+.ranking-section {{ margin-top: 32px; }}
+.ranking-title {{ font-size: 1.1em; font-weight: 700; color: var(--accent); margin-bottom: 12px;
+                  padding-bottom: 8px; border-bottom: 1px solid var(--border); }}
+.ranking-tabs {{ display: flex; gap: 4px; margin-bottom: 12px; }}
+.rtab {{ padding: 6px 12px; background: var(--surface); border: 1px solid var(--border);
+         border-radius: 6px; color: var(--text2); cursor: pointer; font-size: 0.82em; }}
+.rtab.active {{ background: var(--accent); color: var(--bg); border-color: var(--accent); }}
+table {{ width: 100%; border-collapse: collapse; }}
+th {{ text-align: left; padding: 8px 10px; background: var(--surface2); color: var(--text3);
+      font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.04em; font-weight: 600; }}
+td {{ padding: 7px 10px; border-bottom: 1px solid var(--border); font-size: 0.85em; }}
+tr:hover {{ background: var(--surface2); }}
+.rk {{ color: var(--text3); font-weight: 700; width: 30px; }}
+.rk-name {{ font-weight: 500; }}
+
+.footer {{ text-align: center; color: var(--text3); font-size: 0.75em; padding: 24px 0; }}
+.hidden {{ display: none !important; }}
+
+@media (max-width: 768px) {{
+  .mc-body {{ grid-template-columns: 1fr; gap: 8px; }}
+  .mc-preds {{ flex-direction: row; gap: 12px; padding: 6px 0; }}
+  .mc-away {{ text-align: left; }}
+  .mc-away .mc-meta, .mc-away .mc-tilt, .mc-away .mc-subtilt {{ justify-content: flex-start; }}
+  .stats {{ gap: 16px; }}
+  .tabs {{ gap: 3px; }}
+  .tab {{ padding: 5px 10px; font-size: 0.78em; }}
+}}
 </style>
 </head>
 <body>
 <div class="container">
-<h1>{titulo}</h1>
-<p class="subtitle">Partidos a jugarse | Rating Glicko-2 + Tilt/Momentum</p>
-
-<div class="filters">
-<button class="filter-btn active" onclick="filtrarLiga('todas')">Todas</button>
-'''
-
-    for liga_key in sorted(ligas.keys()):
-        nombre = ligas[liga_key]["nombre"]
-        html += f'<button class="filter-btn" onclick="filtrarLiga(\'{liga_key}\')">{nombre}</button>\n'
-
-    html += '</div>\n<div class="section" id="partidos">\n'
-
-    for liga_key, liga_data in sorted(ligas.items()):
-        html += f'<div class="liga-header" data-liga="{liga_key}">{liga_data["nombre"]}</div>\n'
-        for p in liga_data["partidos"]:
-            h = p["equipo_local"]
-            a = p["equipo_visitante"]
-            pred = p["prediccion"]
-
-            html += f'''<div class="match-card" data-liga="{liga_key}">
-<div class="team">
-  <div class="team-name">{h["nombre"]}</div>
-  <div class="team-small">
-    <span class="elo-badge">{h["rating"]:.0f}</span>
-    {_streak_html(h["streak"])}
+  <div class="header">
+    <h1>{titulo}</h1>
+    <div class="sub">Predicciones con Glicko-2 + Tilt/Momentum | {len(predicciones)} partidos | {generado}</div>
   </div>
-  <div class="tilt-info">
-    <span class="tilt-item {_clase_forma(h["form_score"])}">Forma: {h["form_score"]:.0f}</span>
-    <span class="tilt-item">{_icono_momentum(h["momentum"])}</span>
-    {_sparkline_html(h["form_score"])}
-  </div>
-</div>
-<div class="predicciones">
-  <div class="pred-row">
-    <span class="pred-label home">L</span>
-    {_barra_prob(pred["prob_local"])}
-  </div>
-  <div class="pred-row">
-    <span class="pred-label draw">E</span>
-    {_barra_prob(pred["prob_empate"])}
-  </div>
-  <div class="pred-row">
-    <span class="pred-label away">V</span>
-    {_barra_prob(pred["prob_visitante"])}
-  </div>
-</div>
-<div class="team team-right">
-  <div class="team-name">{a["nombre"]}</div>
-  <div class="team-small">
-    {_streak_html(a["streak"])}
-    <span class="elo-badge">{a["rating"]:.0f}</span>
-  </div>
-  <div class="tilt-info">
-    {_sparkline_html(a["form_score"])}
-    <span class="tilt-item">{_icono_momentum(a["momentum"])}</span>
-    <span class="tilt-item {_clase_forma(a["form_score"])}">Forma: {a["form_score"]:.0f}</span>
-  </div>
-</div>
-</div>
-'''
 
-    html += '</div>\n'
+  <div class="stats">
+    <div class="stat"><div class="stat-val">{len(predicciones)}</div><div class="stat-label">Partidos</div></div>
+    <div class="stat"><div class="stat-val">{len(ligas)}</div><div class="stat-label">Ligas</div></div>
+    <div class="stat"><div class="stat-val">{n_destacados}</div><div class="stat-label">Destacados</div></div>
+    <div class="stat"><div class="stat-val">{n_parejos}</div><div class="stat-label">Parejos</div></div>
+    <div class="stat"><div class="stat-val">{n_sorpresas}</div><div class="stat-label">Sorpresas?</div></div>
+  </div>
 
-    html += '''<div class="section">
-<div class="section-title">Ranking de Forma</div>
-<table class="ranking-table">
-<thead><tr><th>#</th><th>Equipo</th><th>Rating</th><th>Forma</th><th>Tendencia</th><th>Racha</th></tr></thead>
-<tbody>
-'''
+  <div class="controls">
+    <input type="text" class="search" id="searchBox" placeholder="Buscar equipo..." oninput="aplicarFiltros()">
+  </div>
 
-    for i, eq in enumerate(ranking[:30], 1):
-        html += f'''<tr>
-<td class="rank-num">{i}</td>
-<td>{eq["nombre"]}</td>
-<td><span class="elo-badge">{eq["rating"]:.0f}</span></td>
-<td class="{_clase_forma(eq["form_score"])}">{eq["form_score"]:.0f}</td>
-<td>{_icono_momentum(eq["momentum"])}</td>
-<td>{_streak_html(eq["streak"])}</td>
-</tr>
-'''
+  <div class="tabs" id="catTabs">
+    <div class="tab active" data-cat="todos" onclick="setCat('todos')">Todos<span class="count">{len(predicciones)}</span></div>
+    <div class="tab" data-cat="destacados" onclick="setCat('destacados')">Destacados<span class="count">{n_destacados}</span></div>
+    <div class="tab" data-cat="parejos" onclick="setCat('parejos')">Parejos<span class="count">{n_parejos}</span></div>
+    <div class="tab" data-cat="sorpresas" onclick="setCat('sorpresas')">Sorpresas<span class="count">{n_sorpresas}</span></div>
+    <div class="tab" data-cat="ajuste" onclick="setCat('ajuste')">Ajuste Forma</div>
+  </div>
 
-    html += '</tbody></table></div>\n'
+  <div class="league-filter" id="leagueFilter">
+    <div class="lf-btn active" data-slug="todas" onclick="setLiga('todas')">Todas</div>
+  </div>
 
-    html += f'''<p class="updated">Ultima actualizacion: {predicciones[0]["fecha"] if predicciones else "N/A"}</p>
+  <div class="match-list" id="matchList">
+    {match_cards}
+  </div>
+
+  <div class="ranking-section">
+    <div class="ranking-title">Rankings</div>
+    <div class="ranking-tabs">
+      <div class="rtab active" data-rtab="forma" onclick="showRanking('forma')">Por Forma</div>
+      <div class="rtab" data-rtab="elo" onclick="showRanking('elo')">Por ELO</div>
+    </div>
+    <div id="rankForma">
+      <table>
+        <thead><tr><th>#</th><th>Equipo</th><th>ELO</th><th>Forma</th><th>Momentum</th><th>Racha</th><th>Overperf</th></tr></thead>
+        <tbody>{ranking_rows_forma}</tbody>
+      </table>
+    </div>
+    <div id="rankElo" class="hidden">
+      <table>
+        <thead><tr><th>#</th><th>Equipo</th><th>ELO</th><th>RD</th><th>Forma</th><th>Momentum</th></tr></thead>
+        <tbody>{ranking_rows_elo}</tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="footer">ELO + Tilt Tracker | Actualizado: {predicciones[0].get('fecha', '')[:10] if predicciones else 'N/A'}</div>
 </div>
 
 <script>
-function filtrarLiga(liga) {{
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  event.target.classList.add('active');
-  document.querySelectorAll('.liga-header, .match-card').forEach(el => {{
-    if (liga === 'todas') {{
-      el.style.display = '';
-    }} else {{
-      el.style.display = el.dataset.liga === liga ? '' : 'none';
+const ligas = {all_ligas_json};
+let catActual = 'todos';
+let ligaActual = 'todas';
+
+function initLeagueButtons() {{
+  const cont = document.getElementById('leagueFilter');
+  const slugsVistos = new Set();
+  document.querySelectorAll('.mc').forEach(c => {{
+    const s = c.dataset.slug;
+    if (s && !slugsVistos.has(s)) {{
+      slugsVistos.add(s);
+      const nombre = ligas.find(l => l.slug === s)?.nombre || s;
+      const btn = document.createElement('div');
+      btn.className = 'lf-btn';
+      btn.dataset.slug = s;
+      btn.textContent = nombre;
+      btn.onclick = () => setLiga(s);
+      cont.appendChild(btn);
     }}
   }});
 }}
+
+function setCat(cat) {{
+  catActual = cat;
+  document.querySelectorAll('#catTabs .tab').forEach(t => t.classList.toggle('active', t.dataset.cat === cat));
+  aplicarFiltros();
+}}
+
+function setLiga(slug) {{
+  ligaActual = slug;
+  document.querySelectorAll('#leagueFilter .lf-btn').forEach(b => b.classList.toggle('active', b.dataset.slug === slug));
+  aplicarFiltros();
+}}
+
+function showRanking(r) {{
+  document.querySelectorAll('.rtab').forEach(t => t.classList.toggle('active', t.dataset.rtab === r));
+  document.getElementById('rankForma').classList.toggle('hidden', r !== 'forma');
+  document.getElementById('rankElo').classList.toggle('hidden', r !== 'elo');
+}}
+
+function aplicarFiltros() {{
+  const q = document.getElementById('searchBox').value.toLowerCase().trim();
+  document.querySelectorAll('.mc').forEach(card => {{
+    let show = true;
+    if (ligaActual !== 'todas' && card.dataset.slug !== ligaActual) show = false;
+    if (q) {{
+      const h = card.dataset.home || '';
+      const a = card.dataset.away || '';
+      if (!h.includes(q) && !a.includes(q)) show = false;
+    }}
+    if (catActual === 'destacados' && card.dataset.dest !== '1') show = false;
+    if (catActual === 'parejos' && card.dataset.par !== '1') show = false;
+    if (catActual === 'sorpresas' && card.dataset.sorp !== '1') show = false;
+    if (catActual === 'ajuste') show = true;
+    card.classList.toggle('hidden', !show);
+  }});
+  if (catActual === 'ajuste') {{
+    const cards = Array.from(document.querySelectorAll('.mc:not(.hidden)'));
+    cards.sort((a, b) => parseFloat(b.dataset.ajuste || 0) - parseFloat(a.dataset.ajuste || 0));
+    const list = document.getElementById('matchList');
+    cards.forEach(c => list.appendChild(c));
+  }}
+}}
+
+initLeagueButtons();
 </script>
 </body>
 </html>'''
-
     return html
 
 

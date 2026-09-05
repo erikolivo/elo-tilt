@@ -7,7 +7,7 @@ Para cada partido futuro:
   1. Obtiene ratings Glicko-2 de ambos equipos
   2. Calcula probabilidad base desde diferencia de ELO
   3. Ajusta por: localia, forma reciente, momentum, home/away
-  4. Genera predicción final con probabilidades
+  4. Genera prediccion final con probabilidades
 
 Uso:
     python predict.py                     # hoy
@@ -24,11 +24,11 @@ import glicko2
 import ratings_store
 import fetch_data
 import form_calculator
+import ligas_nombres
 
 DATA_DIR = Path(__file__).parent / "data"
 ARCHIVO_PREDICCIONES = DATA_DIR / "predicciones_cache.json"
 
-# Pesos para ajuste de prediccion
 PESO_ELO = 0.50
 PESO_FORMA = 0.20
 PESO_MOMENTUM = 0.10
@@ -37,19 +37,50 @@ PESO_LOCALIA = 0.10
 
 BONUS_LOCALIA = 0.08
 
+ZONA_HORARIA_ECUADOR = datetime.timezone(datetime.timedelta(hours=-5))
+
+
+def _hora_ecuador(fecha_iso):
+    """Convierte una fecha ISO (con o sin timezone) a hora Ecuador (UTC-5)."""
+    if not fecha_iso:
+        return None
+    try:
+        if "T" in fecha_iso:
+            if fecha_iso.endswith("Z"):
+                dt = datetime.datetime.fromisoformat(fecha_iso.replace("Z", "+00:00"))
+            elif "+" in fecha_iso[10:] or "-" in fecha_iso[10:]:
+                dt = datetime.datetime.fromisoformat(fecha_iso)
+            else:
+                dt = datetime.datetime.fromisoformat(fecha_iso + "+00:00")
+            dt_ec = dt.astimezone(ZONA_HORARIA_ECUADOR)
+            return dt_ec.strftime("%Y-%m-%dT%H:%M:%S-05:00")
+        return fecha_iso
+    except Exception:
+        return fecha_iso
+
+
+def _hora_display(fecha_iso):
+    """Devuelve hora legible para mostrar en dashboard (HH:MM)."""
+    if not fecha_iso:
+        return ""
+    try:
+        if "T" in fecha_iso:
+            parte = fecha_iso.split("T")[1][:5]
+            return parte
+    except Exception:
+        pass
+    return ""
+
 
 def _ajustar_por_localia(prob_local, prob_empate, prob_visitante):
-    """Aplica el factor de localia: +8% al local, redistribuido."""
     prob_local += BONUS_LOCALIA
     total = prob_local + prob_empate + prob_visitante
     return (prob_local / total, prob_empate / total, prob_visitante / total)
 
 
 def _ajustar_por_forma(prob_local, prob_empate, prob_visitante, forma_local, forma_visitante):
-    """Ajusta segun diferencia de forma. Maximo +/- 5%."""
     diff_forma = (forma_local - forma_visitante) / 100
     ajuste = diff_forma * 0.05
-
     prob_local += ajuste
     prob_visitante -= ajuste
     total = prob_local + prob_empate + prob_visitante
@@ -57,12 +88,10 @@ def _ajustar_por_forma(prob_local, prob_empate, prob_visitante, forma_local, for
 
 
 def _ajustar_por_momentum(prob_local, prob_empate, prob_visitante, mom_local, mom_visitante):
-    """Ajusta segun momentum direction. Maximo +/- 3%."""
     mapa = {"up": 0.03, "stable": 0.0, "down": -0.03}
     mom_l = mapa.get(mom_local, 0.0)
     mom_v = mapa.get(mom_visitante, 0.0)
     ajuste = mom_l - mom_v
-
     prob_local += ajuste
     prob_visitante -= ajuste
     total = prob_local + prob_empate + prob_visitante
@@ -70,21 +99,38 @@ def _ajustar_por_momentum(prob_local, prob_empate, prob_visitante, mom_local, mo
 
 
 def _ajustar_por_home_away(prob_local, prob_empate, prob_visitante, ha_local, ha_visitante):
-    """Ajusta segun rendimiento local/visitante."""
     form_l = ha_local.get("form_local", 50.0) / 100
     form_v = ha_visitante.get("form_visitante", 50.0) / 100
     diff = (form_l - form_v) * 0.03
-
     prob_local += diff
     prob_visitante -= diff
     total = prob_local + prob_empate + prob_visitante
     return (prob_local / total, prob_empate / total, prob_visitante / total)
 
 
+def _streak_a_json(streak_tuple):
+    tipo, cant = streak_tuple
+    return {"tipo": tipo, "cantidad": cant}
+
+
+def _goal_trend_a_json(gt_tuple):
+    gf, gc, diff = gt_tuple
+    return {"goles_favor": gf, "goles_contra": gc, "diferencia": diff}
+
+
+def _field_tilt_a_json(ft_dict):
+    return {k: v for k, v in ft_dict.items()}
+
+
+def _momentum_a_json(mom_tuple):
+    direccion, diferencia = mom_tuple
+    return {"direccion": direccion, "diferencia": diferencia}
+
+
 def predecir_partido(fx, tilt_home, tilt_away):
     """
     Genera prediccion para un solo partido.
-    Devuelve dict con probabilidades y metadata.
+    Devuelve dict con probabilidades y metadata completa.
     """
     rating_h = tilt_home["rating"]
     rating_a = tilt_away["rating"]
@@ -122,27 +168,55 @@ def predecir_partido(fx, tilt_home, tilt_away):
     diff_elo = rating_h - rating_a
     confianza = min(abs(diff_elo) / 200, 1.0) * 100
 
+    fecha_raw = fx["fixture"].get("date", "")
+    fecha_ec = _hora_ecuador(fecha_raw)
+    hora_ec = _hora_display(fecha_ec)
+
+    liga_slug = fx.get("_liga_slug", "")
+    liga_name_espn = fx["league"].get("name", "")
+    liga_nombre = ligas_nombres.nombre_liga(liga_slug, liga_name_espn)
+
     return {
         "fixture_id": fx["fixture"]["id"],
-        "fecha": fx["fixture"].get("date", "")[:10],
-        "liga": fx["league"].get("name", ""),
+        "fecha": fecha_ec or fecha_raw,
+        "fecha_display": fecha_ec[:10] if fecha_ec else "",
+        "hora": hora_ec,
+        "liga": liga_nombre,
         "liga_pais": fx["league"].get("country", ""),
-        "liga_slug": fx.get("_liga_slug", ""),
+        "liga_slug": liga_slug,
         "equipo_local": {
             "id": fx["teams"]["home"]["id"],
             "nombre": fx["teams"]["home"]["name"],
             "rating": rating_h,
+            "rd": rd_h,
+            "partidos_jugados": tilt_home["partidos_jugados"],
             "form_score": tilt_home["form_score"],
+            "form_local": tilt_home["home_away"]["form_local"],
+            "form_visitante": tilt_home["home_away"]["form_visitante"],
             "momentum": tilt_home["momentum"]["direccion"],
+            "momentum_diff": tilt_home["momentum"]["diferencia"],
             "streak": tilt_home["streak"],
+            "goal_trend": tilt_home["goal_trend"],
+            "field_tilt": tilt_home["field_tilt"],
+            "overperformance": tilt_home["overperformance"],
+            "vol": tilt_home.get("vol", glicko2.VOL_INICIAL),
         },
         "equipo_visitante": {
             "id": fx["teams"]["away"]["id"],
             "nombre": fx["teams"]["away"]["name"],
             "rating": rating_a,
+            "rd": rd_a,
+            "partidos_jugados": tilt_away["partidos_jugados"],
             "form_score": tilt_away["form_score"],
+            "form_local": tilt_away["home_away"]["form_local"],
+            "form_visitante": tilt_away["home_away"]["form_visitante"],
             "momentum": tilt_away["momentum"]["direccion"],
+            "momentum_diff": tilt_away["momentum"]["diferencia"],
             "streak": tilt_away["streak"],
+            "goal_trend": tilt_away["goal_trend"],
+            "field_tilt": tilt_away["field_tilt"],
+            "overperformance": tilt_away["overperformance"],
+            "vol": tilt_away.get("vol", glicko2.VOL_INICIAL),
         },
         "prediccion": {
             "prob_local": round(prob_local * 100, 1),
@@ -157,7 +231,7 @@ def predecir_partido(fx, tilt_home, tilt_away):
 def predecir_fecha(fecha_iso, ligas=None):
     """
     Obtiene todos los fixtures futuros de una fecha y genera
-    predicciones para cada uno.
+    predicciones para cada uno usando form_calculator real.
     """
     fixtures = fetch_data.obtener_fixtures_futuros(fecha_iso, ligas=ligas)
 
@@ -165,134 +239,51 @@ def predecir_fecha(fecha_iso, ligas=None):
         print(f"No se encontraron fixtures futuros para {fecha_iso}")
         return []
 
-    import ratings_store
-    import historial_store
-    import datetime
+    equipos_info = []
+    for fx in fixtures:
+        for lado in ["home", "away"]:
+            t = fx["teams"][lado]
+            equipos_info.append({
+                "team_id": str(t["id"]),
+                "nombre": t["name"],
+                "pais": fx["league"].get("country"),
+                "liga": fx.get("_liga_slug"),
+            })
 
-    ratings_data = ratings_store._cargar()
-    equipos_ratings = ratings_data.get("equipos", {})
+    unique_ids = set()
+    equipos_unicos = []
+    for eq in equipos_info:
+        if eq["team_id"] not in unique_ids:
+            unique_ids.add(eq["team_id"])
+            equipos_unicos.append(eq)
 
-    def _obtener_historial_rapido(team_id):
-        team_id = str(team_id)
-        partidos = []
-        hoy = datetime.date.today()
-        for offset in range(6):
-            fecha_mes = hoy - datetime.timedelta(days=30 * offset)
-            fecha_iso_mes = fecha_mes.isoformat()
-            datos = historial_store._cargar_mes(fecha_iso_mes)
-            for p in datos.get("partidos", []):
-                home = p.get("equipo_local", {})
-                away = p.get("equipo_visitante", {})
-                if str(home.get("id", "")) == team_id or str(away.get("id", "")) == team_id:
-                    partidos.append(p)
-        partidos.sort(key=lambda x: x.get("fecha", ""), reverse=True)
-        return partidos[:10]
-
-    def _calcular_forma_rapida(partidos, team_id):
-        if not partidos:
-            return 50.0
-        import math
-        team_id = str(team_id)
-        resultados = []
-        for i, p in enumerate(reversed(partidos)):
-            home = p.get("equipo_local", {})
-            gh = p.get("goles_local", 0)
-            ga = p.get("goles_visitante", 0)
-            es_local = str(home.get("id", "")) == team_id
-            if gh == ga:
-                r = 0.5
-            elif (gh > ga and es_local) or (ga > gh and not es_local):
-                r = 1.0
-            else:
-                r = 0.0
-            peso = math.exp(-0.5 * i)
-            resultados.append((r, peso))
-        return round(sum(r * p for r, p in resultados) / sum(p for _, p in resultados) * 100, 1)
-
-    def _calcular_streak_rapido(partidos, team_id):
-        if not partidos:
-            return ("N/A", 0)
-        team_id = str(team_id)
-        streak_tipo = None
-        streak_count = 0
-        for p in partidos:
-            home = p.get("equipo_local", {})
-            gh = p.get("goles_local", 0)
-            ga = p.get("goles_visitante", 0)
-            es_local = str(home.get("id", "")) == team_id
-            if gh == ga:
-                tipo = "D"
-            elif (gh > ga and es_local) or (ga > gh and not es_local):
-                tipo = "W"
-            else:
-                tipo = "L"
-            if streak_tipo is None:
-                streak_tipo = tipo
-                streak_count = 1
-            elif tipo == streak_tipo:
-                streak_count += 1
-            else:
-                break
-        return (streak_tipo, streak_count)
-
-    def _calcular_momentum_rapido(partidos, team_id):
-        if len(partidos) < 5:
-            return "stable"
-        form_5 = _calcular_forma_rapida(partidos[:5], team_id)
-        form_10 = _calcular_forma_rapida(partidos[:10], team_id)
-        diff = form_5 - form_10
-        if diff > 5:
-            return "up"
-        elif diff < -5:
-            return "down"
-        return "stable"
+    print(f"Calculando tilt para {len(equipos_unicos)} equipos (con cache)...")
+    tilt_cache = {}
+    for eq in equipos_unicos:
+        tid = eq["team_id"]
+        if tid not in tilt_cache:
+            tilt_cache[tid] = form_calculator.calcular_tilt_completo(
+                tid, nombre=eq.get("nombre"),
+                pais=eq.get("pais"), liga=eq.get("liga")
+            )
+    print(f"Tilt calculado para {len(tilt_cache)} equipos.")
 
     predicciones = []
     for fx in fixtures:
         home_id = str(fx["teams"]["home"]["id"])
         away_id = str(fx["teams"]["away"]["id"])
 
-        home_key = f"espn:{home_id}"
-        away_key = f"espn:{away_id}"
+        tilt_home = tilt_cache.get(home_id)
+        if tilt_home is None:
+            tilt_home = form_calculator.calcular_tilt_completo(
+                home_id, nombre=fx["teams"]["home"]["name"])
+            tilt_cache[home_id] = tilt_home
 
-        home_eq = equipos_ratings.get(home_key, {})
-        away_eq = equipos_ratings.get(away_key, {})
-
-        rating_h = home_eq.get("rating", glicko2.RATING_BASE)
-        rating_a = away_eq.get("rating", glicko2.RATING_BASE)
-        rd_h = home_eq.get("rd", glicko2.RD_INICIAL)
-        rd_a = away_eq.get("rd", glicko2.RD_INICIAL)
-        partidos_h = home_eq.get("partidos_jugados", 0)
-        partidos_a = away_eq.get("partidos_jugados", 0)
-
-        hist_h = _obtener_historial_rapido(home_id)
-        hist_a = _obtener_historial_rapido(away_id)
-
-        form_h = _calcular_forma_rapida(hist_h, home_id)
-        form_a = _calcular_forma_rapida(hist_a, away_id)
-        streak_h_tipo, streak_h_cant = _calcular_streak_rapido(hist_h, home_id)
-        streak_a_tipo, streak_a_cant = _calcular_streak_rapido(hist_a, away_id)
-        mom_h = _calcular_momentum_rapido(hist_h, home_id)
-        mom_a = _calcular_momentum_rapido(hist_a, away_id)
-
-        tilt_home = {
-            "team_id": home_id, "nombre": fx["teams"]["home"]["name"],
-            "rating": rating_h, "rd": rd_h, "partidos_jugados": partidos_h,
-            "form_score": form_h, "momentum": {"direccion": mom_h, "diferencia": 0.0},
-            "streak": {"tipo": streak_h_tipo, "cantidad": streak_h_cant},
-            "goal_trend": {"goles_favor": 0.0, "goles_contra": 0.0, "diferencia": 0.0},
-            "home_away": {"form_local": form_h, "form_visitante": form_h, "partidos_local": 0, "partidos_visitante": 0},
-            "field_tilt": {"overall": 50.0}, "overperformance": 0.0,
-        }
-        tilt_away = {
-            "team_id": away_id, "nombre": fx["teams"]["away"]["name"],
-            "rating": rating_a, "rd": rd_a, "partidos_jugados": partidos_a,
-            "form_score": form_a, "momentum": {"direccion": mom_a, "diferencia": 0.0},
-            "streak": {"tipo": streak_a_tipo, "cantidad": streak_a_cant},
-            "goal_trend": {"goles_favor": 0.0, "goles_contra": 0.0, "diferencia": 0.0},
-            "home_away": {"form_local": form_a, "form_visitante": form_a, "partidos_local": 0, "partidos_visitante": 0},
-            "field_tilt": {"overall": 50.0}, "overperformance": 0.0,
-        }
+        tilt_away = tilt_cache.get(away_id)
+        if tilt_away is None:
+            tilt_away = form_calculator.calcular_tilt_completo(
+                away_id, nombre=fx["teams"]["away"]["name"])
+            tilt_cache[away_id] = tilt_away
 
         try:
             pred = predecir_partido(fx, tilt_home, tilt_away)

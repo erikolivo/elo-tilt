@@ -61,11 +61,17 @@ def _extraer_evento(evento, liga_slug):
         except (TypeError, ValueError):
             return None
 
+    def _safe_team_id(team_obj):
+        tid = team_obj.get("id")
+        if isinstance(tid, list):
+            tid = tid[0] if tid else None
+        return str(tid) if tid else "0"
+
     return {
         "fixture": {"id": str(evento["id"]), "date": evento.get("date")},
         "teams": {
-            "home": {"id": str(home["team"]["id"]), "name": home["team"].get("displayName")},
-            "away": {"id": str(away["team"]["id"]), "name": away["team"].get("displayName")},
+            "home": {"id": _safe_team_id(home["team"]), "name": home["team"].get("displayName")},
+            "away": {"id": _safe_team_id(away["team"]), "name": away["team"].get("displayName")},
         },
         "league": {
             "country": liga.get("country") or "",
