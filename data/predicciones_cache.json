@@ -1,7 +1,7 @@
 {
-  "generado": "2026-09-06T01:00:19.308227Z",
+  "generado": "2026-09-06T01:13:51.892209Z",
   "fecha_consulta": "2026-09-05",
-  "total": 420,
+  "total": 411,
   "predicciones": [
     {
       "fixture_id": "401897367",
@@ -8436,74 +8436,6 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401891133",
-      "fecha": "2026-09-05T20:00:00-05:00",
-      "fecha_display": "2026-09-05",
-      "hora": "20:00",
-      "liga": "usa.ncaa.m.1",
-      "liga_pais": "",
-      "liga_slug": "usa.ncaa.m.1",
-      "equipo_local": {
-        "id": "5667",
-        "nombre": "UC Irvine Anteaters",
-        "rating": 1696.54,
-        "rd": 218.3,
-        "partidos_jugados": 3,
-        "form_score": 74.7,
-        "form_local": 68.9,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "goal_trend": {
-          "goles_favor": 3.0,
-          "goles_contra": 1.33,
-          "diferencia": 1.67
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 18.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "5651",
-        "nombre": "Missouri State MISSOURI STATE BEARS",
-        "rating": 1805.1,
-        "rd": 240.24,
-        "partidos_jugados": 3,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 3
-        },
-        "goal_trend": {
-          "goles_favor": 3.67,
-          "goles_contra": 0.67,
-          "diferencia": 3.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 23.5,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 43.1,
-        "prob_empate": 23.1,
-        "prob_visitante": 33.8
-      },
-      "diff_elo": -108.6,
-      "confianza": 54.3
-    },
-    {
       "fixture_id": "401899720",
       "fecha": "2026-09-06T18:30:00-05:00",
       "fecha_display": "2026-09-06",
@@ -8706,74 +8638,6 @@
       },
       "diff_elo": -250.8,
       "confianza": 100.0
-    },
-    {
-      "fixture_id": "401899793",
-      "fecha": "2026-09-05T20:00:00-05:00",
-      "fecha_display": "2026-09-05",
-      "hora": "20:00",
-      "liga": "slv.1",
-      "liga_pais": "",
-      "liga_slug": "slv.1",
-      "equipo_local": {
-        "id": "7224",
-        "nombre": "Isidro Metapán",
-        "rating": 1496.84,
-        "rd": 196.93,
-        "partidos_jugados": 4,
-        "form_score": 62.2,
-        "form_local": 100.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "goal_trend": {
-          "goles_favor": 1.25,
-          "goles_contra": 1.25,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -2.2,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "132480",
-        "nombre": "Inca Aruba",
-        "rating": 1358.8,
-        "rd": 203.8,
-        "partidos_jugados": 4,
-        "form_score": 18.9,
-        "form_local": 50.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "goal_trend": {
-          "goles_favor": 0.5,
-          "goles_contra": 1.75,
-          "diferencia": -1.25
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -9.3,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 72.2,
-        "prob_empate": 23.1,
-        "prob_visitante": 4.7
-      },
-      "diff_elo": 138.0,
-      "confianza": 69.0
     },
     {
       "fixture_id": "401909466",
@@ -9454,74 +9318,6 @@
       },
       "diff_elo": 23.9,
       "confianza": 11.9
-    },
-    {
-      "fixture_id": "401879542",
-      "fecha": "2026-09-05T20:00:00-05:00",
-      "fecha_display": "2026-09-05",
-      "hora": "20:00",
-      "liga": "gua.1",
-      "liga_pais": "",
-      "liga_slug": "gua.1",
-      "equipo_local": {
-        "id": "7870",
-        "nombre": "CD Malacateco",
-        "rating": 1439.64,
-        "rd": 207.7,
-        "partidos_jugados": 4,
-        "form_score": 39.5,
-        "form_local": 68.9,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "goal_trend": {
-          "goles_favor": 1.5,
-          "goles_contra": 1.75,
-          "diferencia": -0.25
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -5.3,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "7251",
-        "nombre": "Suchitepequez",
-        "rating": 1288.96,
-        "rd": 199.0,
-        "partidos_jugados": 4,
-        "form_score": 10.2,
-        "form_local": 37.8,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "goal_trend": {
-          "goles_favor": 1.5,
-          "goles_contra": 2.5,
-          "diferencia": -1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -8.8,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 71.6,
-        "prob_empate": 23.1,
-        "prob_visitante": 5.3
-      },
-      "diff_elo": 150.7,
-      "confianza": 75.3
     },
     {
       "fixture_id": "401876859",
@@ -21900,412 +21696,72 @@
       "confianza": 7.5
     },
     {
-      "fixture_id": "761777",
-      "fecha": "2026-09-05T20:05:00-05:00",
+      "fixture_id": "761773",
+      "fecha": "2026-09-05T18:30:00-05:00",
       "fecha_display": "2026-09-05",
-      "hora": "20:05",
+      "hora": "18:30",
       "liga": "all",
       "liga_pais": "",
       "liga_slug": "all",
       "equipo_local": {
-        "id": "20232",
-        "nombre": "Inter Miami CF",
-        "rating": 1392.28,
-        "rd": 167.92,
+        "id": "18267",
+        "nombre": "FC Cincinnati",
+        "rating": 1419.79,
+        "rd": 166.18,
         "partidos_jugados": 7,
-        "form_score": 45.3,
-        "form_local": 48.7,
-        "form_visitante": 18.9,
+        "form_score": 76.9,
+        "form_local": 81.3,
+        "form_visitante": 31.1,
         "momentum": "down",
-        "momentum_diff": -31.6,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "goal_trend": {
-          "goles_favor": 2.57,
-          "goles_contra": 2.29,
-          "diferencia": 0.28
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -1.1,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "18418",
-        "nombre": "Atlanta United FC",
-        "rating": 1676.43,
-        "rd": 198.01,
-        "partidos_jugados": 4,
-        "form_score": 89.8,
-        "form_local": 81.4,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
+        "momentum_diff": -43.3,
         "streak": {
           "tipo": "L",
           "cantidad": 1
         },
         "goal_trend": {
-          "goles_favor": 1.5,
-          "goles_contra": 1.25,
-          "diferencia": 0.25
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 10.6,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 21.1,
-        "prob_empate": 23.1,
-        "prob_visitante": 55.8
-      },
-      "diff_elo": -284.2,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401876987",
-      "fecha": "2026-09-05T20:00:00-05:00",
-      "fecha_display": "2026-09-05",
-      "hora": "20:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "232",
-        "nombre": "Tigres UANL",
-        "rating": 1410.86,
-        "rd": 166.86,
-        "partidos_jugados": 6,
-        "form_score": 48.2,
-        "form_local": 55.1,
-        "form_visitante": 18.9,
-        "momentum": "stable",
-        "momentum_diff": -1.3,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "goal_trend": {
-          "goles_favor": 0.83,
-          "goles_contra": 0.67,
-          "diferencia": 0.16
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 4.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "229",
-        "nombre": "Necaxa",
-        "rating": 1302.54,
-        "rd": 172.41,
-        "partidos_jugados": 6,
-        "form_score": 18.0,
-        "form_local": 0.0,
-        "form_visitante": 21.8,
-        "momentum": "up",
-        "momentum_diff": 12.8,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 2.0,
-          "diferencia": -1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -11.2,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 64.5,
-        "prob_empate": 23.1,
-        "prob_visitante": 12.4
-      },
-      "diff_elo": 108.3,
-      "confianza": 54.2
-    },
-    {
-      "fixture_id": "401886380",
-      "fecha": "2026-09-05T20:00:00-05:00",
-      "fecha_display": "2026-09-05",
-      "hora": "20:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "10131",
-        "nombre": "Club Jaiba Brava",
-        "rating": 1505.01,
-        "rd": 206.77,
-        "partidos_jugados": 4,
-        "form_score": 62.2,
-        "form_local": 100.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "goal_trend": {
-          "goles_favor": 1.25,
-          "goles_contra": 1.75,
-          "diferencia": -0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 5.2,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "10124",
-        "nombre": "Venados FC",
-        "rating": 1422.14,
-        "rd": 204.35,
-        "partidos_jugados": 4,
-        "form_score": 62.2,
-        "form_local": 100.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "goal_trend": {
-          "goles_favor": 2.25,
-          "goles_contra": 3.0,
-          "diferencia": -0.75
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 6.4,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 64.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 12.1
-      },
-      "diff_elo": 82.9,
-      "confianza": 41.4
-    },
-    {
-      "fixture_id": "401886381",
-      "fecha": "2026-09-05T20:00:00-05:00",
-      "fecha_display": "2026-09-05",
-      "hora": "20:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "221",
-        "nombre": "Club Atlético Morelia",
-        "rating": 1591.9,
-        "rd": 209.51,
-        "partidos_jugados": 4,
-        "form_score": 83.3,
-        "form_local": 62.2,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 1.25,
-          "diferencia": 0.75
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 15.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "17233",
-        "nombre": "Alebrijes de Oaxaca",
-        "rating": 1570.01,
-        "rd": 210.27,
-        "partidos_jugados": 4,
-        "form_score": 78.2,
-        "form_local": 81.1,
-        "form_visitante": 62.2,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "goal_trend": {
-          "goles_favor": 1.25,
-          "goles_contra": 0.75,
-          "diferencia": 0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 5.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 56.1,
-        "prob_empate": 23.1,
-        "prob_visitante": 20.8
-      },
-      "diff_elo": 21.9,
-      "confianza": 10.9
-    },
-    {
-      "fixture_id": "401886379",
-      "fecha": "2026-09-05T20:00:00-05:00",
-      "fecha_display": "2026-09-05",
-      "hora": "20:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "20724",
-        "nombre": "Cancún FC",
-        "rating": 1521.78,
-        "rd": 195.03,
-        "partidos_jugados": 4,
-        "form_score": 44.3,
-        "form_local": 62.2,
-        "form_visitante": 37.8,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "goal_trend": {
-          "goles_favor": 1.25,
-          "goles_contra": 1.5,
-          "diferencia": -0.25
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.4,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "9371",
-        "nombre": "Cruz Azul Hidalgo",
-        "rating": 1507.33,
-        "rd": 214.19,
-        "partidos_jugados": 4,
-        "form_score": 18.5,
-        "form_local": 37.8,
-        "form_visitante": 18.9,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 1.5,
-          "diferencia": 0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -9.6,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 57.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 19.1
-      },
-      "diff_elo": 14.5,
-      "confianza": 7.2
-    },
-    {
-      "fixture_id": "401842181",
-      "fecha": "2026-09-05T20:00:00-05:00",
-      "fecha_display": "2026-09-05",
-      "hora": "20:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "18455",
-        "nombre": "Orange County SC",
-        "rating": 1249.23,
-        "rd": 203.47,
-        "partidos_jugados": 4,
-        "form_score": 5.1,
-        "form_local": 0.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 3.0,
-          "diferencia": -2.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -15.8,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "17828",
-        "nombre": "Sacramento Republic FC",
-        "rating": 1491.65,
-        "rd": 192.9,
-        "partidos_jugados": 5,
-        "form_score": 36.5,
-        "form_local": 81.1,
-        "form_visitante": 24.7,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 2
-        },
-        "goal_trend": {
-          "goles_favor": 0.8,
-          "goles_contra": 0.8,
+          "goles_favor": 1.43,
+          "goles_contra": 1.43,
           "diferencia": 0.0
         },
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.9,
+        "overperformance": 7.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "193",
+        "nombre": "D.C. United",
+        "rating": 1294.61,
+        "rd": 206.56,
+        "partidos_jugados": 4,
+        "form_score": 27.8,
+        "form_local": 18.9,
+        "form_visitante": 31.1,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "goal_trend": {
+          "goles_favor": 0.5,
+          "goles_contra": 1.75,
+          "diferencia": -1.25
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -9.3,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 29.2,
+        "prob_local": 67.1,
         "prob_empate": 23.1,
-        "prob_visitante": 47.6
+        "prob_visitante": 9.7
       },
-      "diff_elo": -242.4,
-      "confianza": 100.0
+      "diff_elo": 125.2,
+      "confianza": 62.6
     },
     {
       "fixture_id": "401842193",
@@ -23870,74 +23326,6 @@
       },
       "diff_elo": -30.0,
       "confianza": 15.0
-    },
-    {
-      "fixture_id": "401887412",
-      "fecha": "2026-09-05T20:00:00-05:00",
-      "fecha_display": "2026-09-05",
-      "hora": "20:00",
-      "liga": "México - Liga de Expansión MX",
-      "liga_pais": "",
-      "liga_slug": "mex.2",
-      "equipo_local": {
-        "id": "131881",
-        "nombre": "Piratas",
-        "rating": 1449.14,
-        "rd": 197.76,
-        "partidos_jugados": 4,
-        "form_score": 50.6,
-        "form_local": 0.0,
-        "form_visitante": 60.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 1.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -6.9,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "8931",
-        "nombre": "Correcaminos UAT",
-        "rating": 1533.83,
-        "rd": 223.01,
-        "partidos_jugados": 4,
-        "form_score": 67.3,
-        "form_local": 18.9,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 1.25,
-          "diferencia": 0.75
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 11.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 41.8,
-        "prob_empate": 23.1,
-        "prob_visitante": 35.1
-      },
-      "diff_elo": -84.7,
-      "confianza": 42.3
     },
     {
       "fixture_id": "401877645",
