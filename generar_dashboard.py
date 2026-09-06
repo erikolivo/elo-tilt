@@ -232,65 +232,52 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker"):
             pred_clase_l, pred_clase_e, pred_clase_v = "", "best", ""
 
         diff_signo = "+" if diff > 0 else ""
+        gt_h = h.get("goal_trend", {})
+        gt_a = a.get("goal_trend", {})
+        gt_h_d = gt_h.get("diferencia", 0) if gt_h else 0
+        gt_a_d = gt_a.get("diferencia", 0) if gt_a else 0
+        gt_h_s = f"+{gt_h_d}" if gt_h_d > 0 else str(gt_h_d)
+        gt_a_s = f"+{gt_a_d}" if gt_a_d > 0 else str(gt_a_d)
 
-        match_cards += f'''<div class="mc{clase_card}" data-slug="{slug}" data-dest="{1 if es_dest else 0}" data-par="{1 if _es_parejo(p) else 0}" data-sorp="{1 if _es_sorpresa_potencial(p) else 0}" data-ajuste="{_score_ajuste_forma(p):.1f}" data-relev="{_score_relevancia(p):.1f}" data-home="{h['nombre'].lower()}" data-away="{a['nombre'].lower()}" data-diff="{abs(diff):.0f}">
-<div class="mc-top">
-  <span class="mc-liga">{p.get("liga", "")}</span>
-  <span class="mc-hora">{hora}</span>
-</div>
-<div class="mc-body">
-  <div class="mc-team mc-home">
-    <div class="mc-name">{h['nombre']}</div>
-    <div class="mc-meta">
-      <span class="elo {_clase_rating(h.get('rating'))}">{h.get('rating', 0):.0f}</span>
-      {_badge_provisional(h.get('partidos_jugados'))}
-      {_streak_html(h.get('streak'))}
+        match_cards += f'''<div class="mc{clase_card}" data-slug="{slug}" data-fecha="{fecha_d}" data-dest="{1 if es_dest else 0}" data-par="{1 if _es_parejo(p) else 0}" data-sorp="{1 if _es_sorpresa_potencial(p) else 0}" data-ajuste="{_score_ajuste_forma(p):.1f}" data-relev="{_score_relevancia(p):.1f}" data-home="{h['nombre'].lower()}" data-away="{a['nombre'].lower()}" data-diff="{abs(diff):.0f}">
+  <div class="mc-datetime">
+    <span class="mc-date">{fecha_d}</span>
+    <span class="mc-time">{hora}</span>
+  </div>
+  <div class="mc-liga-tag">{p.get("liga", "")}</div>
+  <div class="mc-teams">
+    <div class="mc-team-row">
+      <div class="mc-team-info">
+        <span class="mc-team-name">{h['nombre']}</span>
+        <span class="mc-tilt-line">
+          <span class="elo {_clase_rating(h.get('rating'))}">{h.get('rating', 0):.0f}</span>
+          <span class="tf {_clase_forma(h.get('form_score'))}">F:{h.get('form_score', 50):.0f}</span>
+          {_streak_html(h.get('streak'))}
+          {_icono_momentum(h.get('momentum'))}
+        </span>
+      </div>
+      <div class="mc-prob {pred_clase_l}">{prob_l:.0f}%</div>
     </div>
-    <div class="mc-tilt">
-      <span class="tf {_clase_forma(h.get('form_score'))}">{h.get('form_score', 50):.0f}</span>
-      {_icono_momentum(h.get('momentum'))}
-      {_sparkline(h.get('form_score', 50))}
-      {_goal_trend_bar(h.get('goal_trend'))}
-      {_overperformance_badge(h.get('overperformance'))}
-      {_field_tilt_bar(h.get('field_tilt'))}
-    </div>
-    <div class="mc-subtilt">
-      <span class="sub-item" title="Forma local">L:{h.get('form_local', 50):.0f}</span>
-      <span class="sub-item" title="Forma visitante">V:{h.get('form_visitante', 50):.0f}</span>
-      <span class="sub-item" title="RD (incertidumbre)">RD:{h.get('rd', 0):.0f}</span>
+    <div class="mc-draw-row"><span class="mc-draw-pct">{prob_e:.0f}%</span> <span class="mc-draw-label">EMPATE</span></div>
+    <div class="mc-team-row">
+      <div class="mc-team-info">
+        <span class="mc-team-name">{a['nombre']}</span>
+        <span class="mc-tilt-line">
+          <span class="elo {_clase_rating(a.get('rating'))}">{a.get('rating', 0):.0f}</span>
+          <span class="tf {_clase_forma(a.get('form_score'))}">F:{a.get('form_score', 50):.0f}</span>
+          {_streak_html(a.get('streak'))}
+          {_icono_momentum(a.get('momentum'))}
+        </span>
+      </div>
+      <div class="mc-prob {pred_clase_v}">{prob_v:.0f}%</div>
     </div>
   </div>
-  <div class="mc-preds">
-    <div class="pred-row {pred_clase_l}"><span class="pred-pct">{prob_l:.0f}%</span></div>
-    <div class="pred-row {pred_clase_e}"><span class="pred-pct pred-draw">{prob_e:.0f}%</span></div>
-    <div class="pred-row {pred_clase_v}"><span class="pred-pct">{prob_v:.0f}%</span></div>
+  <div class="mc-meta-row">
+    <span title="Diferencia ELO">Δ{diff_signo}{diff:.0f}</span>
+    <span title="Confianza">C:{conf:.0f}%</span>
+    <span title="Goal Trend local">{gt_h_s}</span>
+    <span title="Goal Trend visitante">{gt_a_s}</span>
   </div>
-  <div class="mc-team mc-away">
-    <div class="mc-name">{a['nombre']}</div>
-    <div class="mc-meta">
-      <span class="elo {_clase_rating(a.get('rating'))}">{a.get('rating', 0):.0f}</span>
-      {_badge_provisional(a.get('partidos_jugados'))}
-      {_streak_html(a.get('streak'))}
-    </div>
-    <div class="mc-tilt">
-      <span class="tf {_clase_forma(a.get('form_score'))}">{a.get('form_score', 50):.0f}</span>
-      {_icono_momentum(a.get('momentum'))}
-      {_sparkline(a.get('form_score', 50))}
-      {_goal_trend_bar(a.get('goal_trend'))}
-      {_overperformance_badge(a.get('overperformance'))}
-      {_field_tilt_bar(a.get('field_tilt'))}
-    </div>
-    <div class="mc-subtilt">
-      <span class="sub-item" title="Forma local">L:{a.get('form_local', 50):.0f}</span>
-      <span class="sub-item" title="Forma visitante">V:{a.get('form_visitante', 50):.0f}</span>
-      <span class="sub-item" title="RD (incertidumbre)">RD:{a.get('rd', 0):.0f}</span>
-    </div>
-  </div>
-</div>
-<div class="mc-footer">
-  <span class="mc-diff" title="Diferencia ELO">Δ{diff_signo}{diff:.0f}</span>
-  <span class="mc-conf" title="Confianza de la predicción">C:{conf:.0f}%</span>
-</div>
 </div>
 '''
 
@@ -384,40 +371,42 @@ body {{ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', san
 .lf-btn:hover {{ border-color: var(--accent); color: var(--text2); }}
 .lf-btn.active {{ background: var(--surface2); color: var(--accent); border-color: var(--accent); }}
 
-/* Match cards */
-.match-list {{ display: flex; flex-direction: column; gap: 2px; }}
-.mc {{ background: var(--surface); border-radius: 10px; padding: 14px 16px;
-       border: 1px solid var(--border); transition: all 0.2s; }}
-.mc:hover {{ border-color: var(--accent); transform: translateY(-1px);
-             box-shadow: 0 4px 20px rgba(56,189,248,0.08); }}
-.card-highlight {{ border-left: 3px solid var(--accent); }}
-.card-suspense {{ border-left: 3px solid var(--orange); }}
+/* Match cards - grid of boxes */
+.match-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }}
+.mc {{ background: var(--surface); border-radius: 10px; padding: 12px;
+       border: 1px solid var(--border); transition: all 0.2s; position: relative; overflow: hidden; }}
+.mc:hover {{ border-color: var(--accent); transform: translateY(-2px);
+             box-shadow: 0 6px 24px rgba(56,189,248,0.1); }}
+.card-highlight {{ border-color: var(--accent); box-shadow: 0 0 0 1px rgba(56,189,248,0.2); }}
+.card-suspense {{ border-color: var(--orange); box-shadow: 0 0 0 1px rgba(249,115,22,0.2); }}
 
-.mc-top {{ display: flex; justify-content: space-between; align-items: center;
-           margin-bottom: 8px; font-size: 0.75em; color: var(--text3); }}
-.mc-liga {{ font-weight: 600; }}
-.mc-hora {{ color: var(--accent); font-weight: 500; }}
+.mc-datetime {{ display: flex; justify-content: space-between; align-items: center;
+                margin-bottom: 6px; }}
+.mc-date {{ font-size: 0.72em; color: var(--text3); font-weight: 500; }}
+.mc-time {{ font-size: 0.8em; color: var(--accent); font-weight: 700; }}
 
-.mc-body {{ display: grid; grid-template-columns: 1fr 80px 1fr; gap: 12px; align-items: center; }}
+.mc-liga-tag {{ font-size: 0.65em; color: var(--text3); background: var(--surface2);
+                padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 8px;
+                max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
 
-.mc-team {{ display: flex; flex-direction: column; gap: 3px; }}
-.mc-away {{ text-align: right; }}
-.mc-name {{ font-weight: 600; font-size: 0.95em; line-height: 1.2; }}
-.mc-meta {{ display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }}
-.mc-away .mc-meta {{ justify-content: flex-end; }}
-.mc-tilt {{ display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }}
-.mc-away .mc-tilt {{ justify-content: flex-end; }}
-.mc-subtilt {{ display: flex; gap: 8px; font-size: 0.7em; color: var(--text3); }}
-.mc-away .mc-subtilt {{ justify-content: flex-end; }}
+.mc-teams {{ display: flex; flex-direction: column; gap: 4px; }}
+.mc-team-row {{ display: flex; justify-content: space-between; align-items: center; gap: 8px; }}
+.mc-team-info {{ display: flex; flex-direction: column; gap: 1px; min-width: 0; flex: 1; }}
+.mc-team-name {{ font-weight: 600; font-size: 0.85em; line-height: 1.2;
+                 overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
+.mc-tilt-line {{ display: flex; gap: 5px; align-items: center; flex-wrap: wrap; }}
 
-.mc-preds {{ display: flex; flex-direction: column; gap: 3px; align-items: center; }}
-.pred-row {{ width: 100%; text-align: center; padding: 3px 0; border-radius: 4px; font-size: 0.9em; }}
-.pred-row.best {{ background: rgba(56,189,248,0.12); }}
-.pred-pct {{ font-weight: 700; font-size: 1em; }}
-.pred-draw {{ color: var(--text3); }}
+.mc-prob {{ font-size: 1.3em; font-weight: 800; color: var(--text3); white-space: nowrap;
+            min-width: 48px; text-align: right; }}
+.mc-prob.best {{ color: var(--accent); }}
 
-.mc-footer {{ display: flex; justify-content: space-between; margin-top: 8px;
-              padding-top: 8px; border-top: 1px solid var(--border); font-size: 0.75em; color: var(--text3); }}
+.mc-draw-row {{ text-align: center; padding: 2px 0; font-size: 0.75em; }}
+.mc-draw-pct {{ color: var(--text3); font-weight: 600; }}
+.mc-draw-label {{ color: var(--text3); font-size: 0.85em; }}
+
+.mc-meta-row {{ display: flex; justify-content: space-between; margin-top: 8px;
+                padding-top: 6px; border-top: 1px solid var(--border);
+                font-size: 0.68em; color: var(--text3); gap: 4px; flex-wrap: wrap; }}
 
 /* Badges & tags */
 .elo {{ padding: 1px 7px; border-radius: 10px; font-size: 0.8em; font-weight: 700; }}
@@ -471,13 +460,16 @@ tr:hover {{ background: var(--surface2); }}
 .hidden {{ display: none !important; }}
 
 @media (max-width: 768px) {{
-  .mc-body {{ grid-template-columns: 1fr; gap: 8px; }}
-  .mc-preds {{ flex-direction: row; gap: 12px; padding: 6px 0; }}
-  .mc-away {{ text-align: left; }}
-  .mc-away .mc-meta, .mc-away .mc-tilt, .mc-away .mc-subtilt {{ justify-content: flex-start; }}
+  .match-grid {{ grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 8px; }}
+  .mc {{ padding: 10px; }}
+  .mc-team-name {{ font-size: 0.8em; }}
+  .mc-prob {{ font-size: 1.1em; }}
   .stats {{ gap: 16px; }}
   .tabs {{ gap: 3px; }}
   .tab {{ padding: 5px 10px; font-size: 0.78em; }}
+}}
+@media (max-width: 480px) {{
+  .match-grid {{ grid-template-columns: 1fr; }}
 }}
 </style>
 </head>
@@ -512,7 +504,7 @@ tr:hover {{ background: var(--surface2); }}
     <div class="lf-btn active" data-slug="todas" onclick="setLiga('todas')">Todas</div>
   </div>
 
-  <div class="match-list" id="matchList">
+  <div class="match-grid" id="matchList">
     {match_cards}
   </div>
 
