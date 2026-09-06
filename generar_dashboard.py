@@ -225,7 +225,7 @@ def _score_ajuste_forma(p):
     return diff_elo * (1 - favorito_prob / 100)
 
 
-def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None):
+def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None, build_ts=None):
     ligas = _agrupar_por_liga(predicciones)
     todos_equipos = {}
     for p in predicciones:
@@ -357,6 +357,7 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None)
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
+<meta name="build" content="{build_ts or ''}">
 <title>{titulo}</title>
 <style>
 :root {{
@@ -1112,7 +1113,9 @@ def generar(predicciones=None, archivo_entrada=None, archivo_salida=None, fecha=
     if not fecha:
         fecha = datetime.now(ZONA_ECUADOR).strftime("%Y-%m-%d")
 
-    html = generar_html(predicciones, fecha_consulta=fecha)
+    build_ts = datetime.now(ZONA_ECUADOR).strftime("%Y%m%d%H%M%S")
+
+    html = generar_html(predicciones, fecha_consulta=fecha, build_ts=build_ts)
     salida = archivo_salida or ARCHIVO_SALIDA
     Path(salida).write_text(html, encoding="utf-8")
     print(f"Dashboard generado: {salida}")
