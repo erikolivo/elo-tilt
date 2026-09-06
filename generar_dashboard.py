@@ -239,7 +239,12 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker"):
         gt_h_s = f"+{gt_h_d}" if gt_h_d > 0 else str(gt_h_d)
         gt_a_s = f"+{gt_a_d}" if gt_a_d > 0 else str(gt_a_d)
 
-        match_cards += f'''<div class="mc{clase_card}" data-slug="{slug}" data-fecha="{fecha_d}" data-dest="{1 if es_dest else 0}" data-par="{1 if _es_parejo(p) else 0}" data-sorp="{1 if _es_sorpresa_potencial(p) else 0}" data-ajuste="{_score_ajuste_forma(p):.1f}" data-relev="{_score_relevancia(p):.1f}" data-home="{h['nombre'].lower()}" data-away="{a['nombre'].lower()}" data-diff="{abs(diff):.0f}">
+        nombre_limpio_h = h['nombre'].replace("'", "").replace('"', '')
+        nombre_limpio_a = a['nombre'].replace("'", "").replace('"', '')
+        busqueda = f"{nombre_limpio_h} vs {nombre_limpio_a} {fecha_d} site:bessoccer.com"
+        url_google = f"https://www.google.com/search?q={busqueda.replace(' ', '+')}"
+
+        match_cards += f'''<a href="{url_google}" target="_blank" class="mc-link{clase_card}" data-slug="{slug}" data-fecha="{fecha_d}" data-elo-h="{h.get('rating', 0):.0f}" data-form-h="{h.get('form_score', 50):.0f}" data-dest="{1 if es_dest else 0}" data-par="{1 if _es_parejo(p) else 0}" data-sorp="{1 if _es_sorpresa_potencial(p) else 0}" data-ajuste="{_score_ajuste_forma(p):.1f}" data-relev="{_score_relevancia(p):.1f}" data-home="{h['nombre'].lower()}" data-away="{a['nombre'].lower()}" data-diff="{abs(diff):.0f}">
   <div class="mc-datetime">
     <span class="mc-date">{fecha_d}</span>
     <span class="mc-time">{hora}</span>
@@ -278,7 +283,7 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker"):
     <span title="Goal Trend local">{gt_h_s}</span>
     <span title="Goal Trend visitante">{gt_a_s}</span>
   </div>
-</div>
+</a>
 '''
 
     ranking_rows_forma = ""
@@ -355,6 +360,14 @@ body {{ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', san
 .search:focus {{ border-color: var(--accent); }}
 .search::placeholder {{ color: var(--text3); }}
 
+/* Sort buttons */
+.sort-btns {{ display: flex; gap: 4px; }}
+.sort-btn {{ padding: 6px 12px; background: var(--surface); border: 1px solid var(--border);
+             border-radius: 6px; color: var(--text2); cursor: pointer; font-size: 0.8em;
+             transition: all 0.15s; white-space: nowrap; }}
+.sort-btn:hover {{ border-color: var(--accent); color: var(--text); }}
+.sort-btn.active {{ background: var(--accent2); color: white; border-color: var(--accent2); }}
+
 /* Tabs */
 .tabs {{ display: flex; gap: 4px; flex-wrap: wrap; }}
 .tab {{ padding: 6px 14px; background: var(--surface); border: 1px solid var(--border);
@@ -400,9 +413,12 @@ body {{ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', san
             min-width: 48px; text-align: right; }}
 .mc-prob.best {{ color: var(--accent); }}
 
-.mc-draw-row {{ text-align: center; padding: 2px 0; font-size: 0.75em; }}
-.mc-draw-pct {{ color: var(--text3); font-weight: 600; }}
-.mc-draw-label {{ color: var(--text3); font-size: 0.85em; }}
+.mc-draw-row {{ text-align: center; padding: 4px 0; font-size: 0.85em;
+                background: var(--surface2); border-radius: 6px; margin: 2px 0; }}
+.mc-draw-pct {{ color: var(--text2); font-weight: 700; font-size: 1.2em; }}
+.mc-draw-label {{ color: var(--text3); font-size: 0.8em; font-weight: 500; }}
+
+.mc-link {{ text-decoration: none; color: inherit; display: block; cursor: pointer; }}
 
 .mc-meta-row {{ display: flex; justify-content: space-between; margin-top: 8px;
                 padding-top: 6px; border-top: 1px solid var(--border);
@@ -490,6 +506,12 @@ tr:hover {{ background: var(--surface2); }}
 
   <div class="controls">
     <input type="text" class="search" id="searchBox" placeholder="Buscar equipo..." oninput="aplicarFiltros()">
+    <div class="sort-btns">
+      <button class="sort-btn" onclick="sortCards('elo-desc')" title="Mayor ELO primero">ELO ↓</button>
+      <button class="sort-btn" onclick="sortCards('elo-asc')" title="Menor ELO primero">ELO ↑</button>
+      <button class="sort-btn" onclick="sortCards('form-desc')" title="Mayor forma primero">Forma ↓</button>
+      <button class="sort-btn" onclick="sortCards('form-asc')" title="Menor forma primero">Forma ↑</button>
+    </div>
   </div>
 
   <div class="tabs" id="catTabs">
@@ -539,7 +561,7 @@ let ligaActual = 'todas';
 function initLeagueButtons() {{
   const cont = document.getElementById('leagueFilter');
   const slugsVistos = new Set();
-  document.querySelectorAll('.mc').forEach(c => {{
+  document.querySelectorAll('.mc-link').forEach(c => {{
     const s = c.dataset.slug;
     if (s && !slugsVistos.has(s)) {{
       slugsVistos.add(s);
@@ -574,7 +596,7 @@ function showRanking(r) {{
 
 function aplicarFiltros() {{
   const q = document.getElementById('searchBox').value.toLowerCase().trim();
-  document.querySelectorAll('.mc').forEach(card => {{
+  document.querySelectorAll('.mc-link').forEach(card => {{
     let show = true;
     if (ligaActual !== 'todas' && card.dataset.slug !== ligaActual) show = false;
     if (q) {{
@@ -589,11 +611,28 @@ function aplicarFiltros() {{
     card.classList.toggle('hidden', !show);
   }});
   if (catActual === 'ajuste') {{
-    const cards = Array.from(document.querySelectorAll('.mc:not(.hidden)'));
+    const cards = Array.from(document.querySelectorAll('.mc-link:not(.hidden)'));
     cards.sort((a, b) => parseFloat(b.dataset.ajuste || 0) - parseFloat(a.dataset.ajuste || 0));
     const list = document.getElementById('matchList');
     cards.forEach(c => list.appendChild(c));
   }}
+}}
+
+function sortCards(criterion) {{
+  document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  const cards = Array.from(document.querySelectorAll('.mc-link'));
+  const list = document.getElementById('matchList');
+  if (criterion === 'elo-desc') {{
+    cards.sort((a, b) => parseFloat(b.dataset.eloH || 0) - parseFloat(a.dataset.eloH || 0));
+  }} else if (criterion === 'elo-asc') {{
+    cards.sort((a, b) => parseFloat(a.dataset.eloH || 0) - parseFloat(b.dataset.eloH || 0));
+  }} else if (criterion === 'form-desc') {{
+    cards.sort((a, b) => parseFloat(b.dataset.formH || 0) - parseFloat(a.dataset.formH || 0));
+  }} else if (criterion === 'form-asc') {{
+    cards.sort((a, b) => parseFloat(a.dataset.formH || 0) - parseFloat(b.dataset.formH || 0));
+  }}
+  cards.forEach(c => list.appendChild(c));
 }}
 
 initLeagueButtons();
