@@ -346,6 +346,9 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None)
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>{titulo}</title>
 <style>
 :root {{
@@ -653,7 +656,7 @@ tr:hover {{ background: var(--surface2); }}
     </div>
   </div>
 
-  <div class="footer">ELO + Tilt Tracker | Actualizado: {predicciones[0].get('fecha', '')[:10] if predicciones else 'N/A'}</div>
+  <div class="footer">ELO + Tilt Tracker | Actualizado: {predicciones[0].get('fecha', '')[:10] if predicciones else 'N/A'} | v2.1</div>
 </div>
 
 <script>
