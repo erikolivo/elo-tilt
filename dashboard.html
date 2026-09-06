@@ -151,6 +151,15 @@ body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans
 .rtab { padding: 6px 12px; background: var(--surface); border: 1px solid var(--border);
          border-radius: 6px; color: var(--text2); cursor: pointer; font-size: 0.82em; }
 .rtab.active { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+
+/* Country filter */
+.country-filter { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 12px; }
+.cf-btn { padding: 4px 10px; background: var(--surface); border: 1px solid var(--border);
+           border-radius: 4px; color: var(--text3); cursor: pointer; font-size: 0.75em; }
+.cf-btn:hover { border-color: var(--accent); color: var(--text2); }
+.cf-btn.active { background: var(--surface2); color: var(--accent); border-color: var(--accent); }
+
+.rk-pais { font-size: 0.8em; color: var(--text3); }
 table { width: 100%; border-collapse: collapse; }
 th { text-align: left; padding: 8px 10px; background: var(--surface2); color: var(--text3);
       font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.04em; font-weight: 600; }
@@ -12894,6 +12903,46 @@ tr:hover { background: var(--surface2); }
     <span title="Goal Trend visitante">+0.5</span>
   </div>
 </a>
+<a href="https://www.google.com/search?q=FC+Cincinnati+vs+D.C.+United+2026-09-05+site:bessoccer.com" target="_blank" class="mc-link card-highlight" data-slug="all" data-fecha="2026-09-05" data-elo-h="1420" data-form-h="77" data-dest="1" data-par="0" data-sorp="0" data-ajuste="41.2" data-relev="40.8" data-home="fc cincinnati" data-away="d.c. united" data-diff="125">
+  <div class="mc-datetime">
+    <span class="mc-date">2026-09-05</span>
+    <span class="mc-time">20:31</span>
+  </div>
+  <div class="mc-liga-tag">all</div>
+  <div class="mc-teams">
+    <div class="mc-team-row">
+      <div class="mc-team-info">
+        <span class="mc-team-name">FC Cincinnati</span>
+        <span class="mc-tilt-line">
+          <span class="elo average">1420</span>
+          <span class="tf high">F:77</span>
+          <span class="streak-l">1D</span>
+          <span class="mom-down">▼</span>
+        </span>
+      </div>
+      <div class="mc-prob best">67%</div>
+    </div>
+    <div class="mc-draw-row"><span class="mc-draw-pct">23%</span> <span class="mc-draw-label">EMPATE</span></div>
+    <div class="mc-team-row">
+      <div class="mc-team-info">
+        <span class="mc-team-name">D.C. United</span>
+        <span class="mc-tilt-line">
+          <span class="elo below">1295</span>
+          <span class="tf low">F:28</span>
+          <span class="streak-d">1E</span>
+          <span class="mom-stable">—</span>
+        </span>
+      </div>
+      <div class="mc-prob ">10%</div>
+    </div>
+  </div>
+  <div class="mc-meta-row">
+    <span title="Diferencia ELO">Δ+125</span>
+    <span title="Confianza">C:63%</span>
+    <span title="Goal Trend local">0.0</span>
+    <span title="Goal Trend visitante">-1.25</span>
+  </div>
+</a>
 <a href="https://www.google.com/search?q=Real+Salt+Lake+vs+LAFC+2026-09-05+site:bessoccer.com" target="_blank" class="mc-link" data-slug="all" data-fecha="2026-09-05" data-elo-h="1477" data-form-h="64" data-dest="0" data-par="1" data-sorp="0" data-ajuste="19.8" data-relev="35.1" data-home="real salt lake" data-away="lafc" data-diff="50">
   <div class="mc-datetime">
     <span class="mc-date">2026-09-05</span>
@@ -12972,46 +13021,6 @@ tr:hover { background: var(--surface2); }
     <span title="Confianza">C:8%</span>
     <span title="Goal Trend local">-0.5</span>
     <span title="Goal Trend visitante">+0.4</span>
-  </div>
-</a>
-<a href="https://www.google.com/search?q=FC+Cincinnati+vs+D.C.+United+2026-09-05+site:bessoccer.com" target="_blank" class="mc-link card-highlight" data-slug="all" data-fecha="2026-09-05" data-elo-h="1420" data-form-h="77" data-dest="1" data-par="0" data-sorp="0" data-ajuste="41.2" data-relev="40.8" data-home="fc cincinnati" data-away="d.c. united" data-diff="125">
-  <div class="mc-datetime">
-    <span class="mc-date">2026-09-05</span>
-    <span class="mc-time">18:30</span>
-  </div>
-  <div class="mc-liga-tag">all</div>
-  <div class="mc-teams">
-    <div class="mc-team-row">
-      <div class="mc-team-info">
-        <span class="mc-team-name">FC Cincinnati</span>
-        <span class="mc-tilt-line">
-          <span class="elo average">1420</span>
-          <span class="tf high">F:77</span>
-          <span class="streak-l">1D</span>
-          <span class="mom-down">▼</span>
-        </span>
-      </div>
-      <div class="mc-prob best">67%</div>
-    </div>
-    <div class="mc-draw-row"><span class="mc-draw-pct">23%</span> <span class="mc-draw-label">EMPATE</span></div>
-    <div class="mc-team-row">
-      <div class="mc-team-info">
-        <span class="mc-team-name">D.C. United</span>
-        <span class="mc-tilt-line">
-          <span class="elo below">1295</span>
-          <span class="tf low">F:28</span>
-          <span class="streak-d">1E</span>
-          <span class="mom-stable">—</span>
-        </span>
-      </div>
-      <div class="mc-prob ">10%</div>
-    </div>
-  </div>
-  <div class="mc-meta-row">
-    <span title="Diferencia ELO">Δ+125</span>
-    <span title="Confianza">C:63%</span>
-    <span title="Goal Trend local">0.0</span>
-    <span title="Goal Trend visitante">-1.25</span>
   </div>
 </a>
 <a href="https://www.google.com/search?q=Miami+FC+vs+Pittsburgh+Riverhounds+2026-09-05+site:bessoccer.com" target="_blank" class="mc-link card-highlight" data-slug="all" data-fecha="2026-09-05" data-elo-h="1169" data-form-h="0" data-dest="1" data-par="0" data-sorp="0" data-ajuste="167.8" data-relev="59.7" data-home="miami fc" data-away="pittsburgh riverhounds" data-diff="457">
@@ -16658,14 +16667,293 @@ tr:hover { background: var(--surface2); }
   </div>
 
   <div class="ranking-section">
-    <div class="ranking-title">Rankings</div>
+    <div class="ranking-title">Rankings ELO</div>
     <div class="ranking-tabs">
-      <div class="rtab active" data-rtab="forma" onclick="showRanking('forma')">Por Forma</div>
-      <div class="rtab" data-rtab="elo" onclick="showRanking('elo')">Por ELO</div>
+      <div class="rtab active" data-rtab="global" onclick="showRanking('global')">Global</div>
+      <div class="rtab" data-rtab="forma" onclick="showRanking('forma')">Por Forma</div>
     </div>
-    <div id="rankForma">
+    <div class="country-filter" id="countryFilter">
+      <div class="cf-btn active" data-pais="todos" onclick="filterCountry('todos')">Todos</div>
+    </div>
+    <div id="rankGlobal">
       <table>
-        <thead><tr><th>#</th><th>Equipo</th><th>ELO</th><th>Forma</th><th>Momentum</th><th>Racha</th><th>Overperf</th></tr></thead>
+        <thead><tr><th>#</th><th>Equipo</th><th>País</th><th>ELO</th><th>RD</th><th>Forma</th><th>Momentum</th></tr></thead>
+        <tbody><tr>
+<td class="rk">1</td>
+<td class="rk-name">Alabama Crimson Tide</td>
+<td><span class="elo elite">1948</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">100</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">2</td>
+<td class="rk-name">Wake Forest Demon Deacons</td>
+<td><span class="elo elite">1938</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">100</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">3</td>
+<td class="rk-name">Real Madrid</td>
+<td><span class="elo elite">1924</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">100</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">4</td>
+<td class="rk-name">Stanford Cardinal</td>
+<td><span class="elo elite">1915</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">100</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">5</td>
+<td class="rk-name">Al Hilal</td>
+<td><span class="elo elite">1908</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">100</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">6</td>
+<td class="rk-name">FC Nordsjælland</td>
+<td><span class="elo elite">1891</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">99</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">7</td>
+<td class="rk-name">Stanford Cardinal</td>
+<td><span class="elo elite">1890</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">100</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">8</td>
+<td class="rk-name">Colo Colo</td>
+<td><span class="elo elite">1878</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">87</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais="Chile">Chile</td>
+</tr>
+<tr>
+<td class="rk">9</td>
+<td class="rk-name">AZ Alkmaar</td>
+<td><span class="elo elite">1876</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">100</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">10</td>
+<td class="rk-name">Internacional Santa Tecla</td>
+<td><span class="elo elite">1870</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">100</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">11</td>
+<td class="rk-name">América</td>
+<td><span class="elo elite">1866</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">92</td>
+<td><span class="mom-down">▼</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">12</td>
+<td class="rk-name">Barcelona</td>
+<td><span class="elo elite">1866</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">100</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">13</td>
+<td class="rk-name">Wisconsin Badgers</td>
+<td><span class="elo elite">1861</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">100</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">14</td>
+<td class="rk-name">Eastern Washington Eagles</td>
+<td><span class="elo elite">1857</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">100</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">15</td>
+<td class="rk-name">Middle Tennessee Blue Raiders</td>
+<td><span class="elo elite">1856</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">100</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">16</td>
+<td class="rk-name">SMU Mustangs</td>
+<td><span class="elo elite">1855</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">100</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">17</td>
+<td class="rk-name">KAA Gent</td>
+<td><span class="elo elite">1854</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">90</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">18</td>
+<td class="rk-name">South Carolina Gamecocks</td>
+<td><span class="elo elite">1854</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">100</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">19</td>
+<td class="rk-name">Virginia Cavaliers</td>
+<td><span class="elo elite">1842</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">95</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">20</td>
+<td class="rk-name">F.C. København</td>
+<td><span class="elo elite">1840</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">90</td>
+<td><span class="mom-down">▼</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">21</td>
+<td class="rk-name">Maryland Terrapins</td>
+<td><span class="elo elite">1833</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">100</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">22</td>
+<td class="rk-name">León</td>
+<td><span class="elo elite">1833</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">87</td>
+<td><span class="mom-up">▲</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">23</td>
+<td class="rk-name">Kashima Antlers</td>
+<td><span class="elo elite">1833</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">100</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais="Japón">Japón</td>
+</tr>
+<tr>
+<td class="rk">24</td>
+<td class="rk-name">UCF Knights</td>
+<td><span class="elo elite">1830</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">100</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">25</td>
+<td class="rk-name">Granada</td>
+<td><span class="elo elite">1829</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">86</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">26</td>
+<td class="rk-name">Kashiwa Reysol</td>
+<td><span class="elo elite">1829</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">100</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais="Japón">Japón</td>
+</tr>
+<tr>
+<td class="rk">27</td>
+<td class="rk-name">Old Dominion Monarchs</td>
+<td><span class="elo elite">1821</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">100</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">28</td>
+<td class="rk-name">Boston College Eagles</td>
+<td><span class="elo elite">1821</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">95</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">29</td>
+<td class="rk-name">AIK</td>
+<td><span class="elo elite">1815</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">100</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+<tr>
+<td class="rk">30</td>
+<td class="rk-name">Georgetown Hoyas</td>
+<td><span class="elo elite">1814</span></td>
+<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+<td class="high">77</td>
+<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
+</tr>
+</tbody>
+      </table>
+    </div>
+    <div id="rankForma" class="hidden">
+      <table>
+        <thead><tr><th>#</th><th>Equipo</th><th>País</th><th>ELO</th><th>Forma</th><th>Momentum</th><th>Racha</th><th>Overperf</th></tr></thead>
         <tbody><tr>
 <td class="rk">1</td>
 <td class="rk-name">Stanford Cardinal</td>
@@ -16674,6 +16962,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">4V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+22</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">2</td>
@@ -16683,6 +16972,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">2V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+17</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">3</td>
@@ -16692,6 +16982,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">5V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+16</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">4</td>
@@ -16701,6 +16992,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">1V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+25</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">5</td>
@@ -16710,6 +17002,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">6V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+22</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">6</td>
@@ -16719,6 +17012,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">3V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+26</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">7</td>
@@ -16728,6 +17022,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">4V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+19</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">8</td>
@@ -16737,6 +17032,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">3V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+28</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">9</td>
@@ -16746,6 +17042,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">2V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+29</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">10</td>
@@ -16755,6 +17052,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">3V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+24</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">11</td>
@@ -16764,6 +17062,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">5V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+24</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">12</td>
@@ -16773,6 +17072,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">3V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+29</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">13</td>
@@ -16782,6 +17082,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">1V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+23</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">14</td>
@@ -16791,6 +17092,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">3V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+28</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">15</td>
@@ -16800,6 +17102,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">3V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+22</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">16</td>
@@ -16809,6 +17112,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">4V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+22</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">17</td>
@@ -16818,6 +17122,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">4V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+26</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">18</td>
@@ -16827,6 +17132,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">4V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+20</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">19</td>
@@ -16836,6 +17142,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">4V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+21</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">20</td>
@@ -16845,6 +17152,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">3V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+30</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">21</td>
@@ -16854,6 +17162,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">3V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+26</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">22</td>
@@ -16863,6 +17172,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">1V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+32</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">23</td>
@@ -16872,6 +17182,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">6V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+19</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">24</td>
@@ -16881,6 +17192,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">3V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+26</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">25</td>
@@ -16890,6 +17202,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">2V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+27</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">26</td>
@@ -16899,6 +17212,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">1V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+20</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">27</td>
@@ -16908,6 +17222,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">1V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+24</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">28</td>
@@ -16917,6 +17232,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">1V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+35</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">29</td>
@@ -16926,6 +17242,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">2V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+26</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 <tr>
 <td class="rk">30</td>
@@ -16935,252 +17252,7 @@ tr:hover { background: var(--surface2); }
 <td><span class="mom-stable">—</span></td>
 <td><span class="streak-w">2V</span></td>
 <td><span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+21</span></td>
-</tr>
-</tbody>
-      </table>
-    </div>
-    <div id="rankElo" class="hidden">
-      <table>
-        <thead><tr><th>#</th><th>Equipo</th><th>ELO</th><th>RD</th><th>Forma</th><th>Momentum</th></tr></thead>
-        <tbody><tr>
-<td class="rk">1</td>
-<td class="rk-name">Alabama Crimson Tide</td>
-<td><span class="elo elite">1948</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">100</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">2</td>
-<td class="rk-name">Wake Forest Demon Deacons</td>
-<td><span class="elo elite">1938</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">100</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">3</td>
-<td class="rk-name">Real Madrid</td>
-<td><span class="elo elite">1924</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">100</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">4</td>
-<td class="rk-name">Stanford Cardinal</td>
-<td><span class="elo elite">1915</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">100</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">5</td>
-<td class="rk-name">Al Hilal</td>
-<td><span class="elo elite">1908</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">100</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">6</td>
-<td class="rk-name">FC Nordsjælland</td>
-<td><span class="elo elite">1891</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">99</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">7</td>
-<td class="rk-name">Stanford Cardinal</td>
-<td><span class="elo elite">1890</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">100</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">8</td>
-<td class="rk-name">Colo Colo</td>
-<td><span class="elo elite">1878</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">87</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">9</td>
-<td class="rk-name">AZ Alkmaar</td>
-<td><span class="elo elite">1876</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">100</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">10</td>
-<td class="rk-name">Internacional Santa Tecla</td>
-<td><span class="elo elite">1870</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">100</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">11</td>
-<td class="rk-name">América</td>
-<td><span class="elo elite">1866</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">92</td>
-<td><span class="mom-down">▼</span></td>
-</tr>
-<tr>
-<td class="rk">12</td>
-<td class="rk-name">Barcelona</td>
-<td><span class="elo elite">1866</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">100</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">13</td>
-<td class="rk-name">Wisconsin Badgers</td>
-<td><span class="elo elite">1861</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">100</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">14</td>
-<td class="rk-name">Eastern Washington Eagles</td>
-<td><span class="elo elite">1857</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">100</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">15</td>
-<td class="rk-name">Middle Tennessee Blue Raiders</td>
-<td><span class="elo elite">1856</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">100</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">16</td>
-<td class="rk-name">SMU Mustangs</td>
-<td><span class="elo elite">1855</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">100</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">17</td>
-<td class="rk-name">KAA Gent</td>
-<td><span class="elo elite">1854</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">90</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">18</td>
-<td class="rk-name">South Carolina Gamecocks</td>
-<td><span class="elo elite">1854</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">100</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">19</td>
-<td class="rk-name">Virginia Cavaliers</td>
-<td><span class="elo elite">1842</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">95</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">20</td>
-<td class="rk-name">F.C. København</td>
-<td><span class="elo elite">1840</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">90</td>
-<td><span class="mom-down">▼</span></td>
-</tr>
-<tr>
-<td class="rk">21</td>
-<td class="rk-name">Maryland Terrapins</td>
-<td><span class="elo elite">1833</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">100</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">22</td>
-<td class="rk-name">León</td>
-<td><span class="elo elite">1833</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">87</td>
-<td><span class="mom-up">▲</span></td>
-</tr>
-<tr>
-<td class="rk">23</td>
-<td class="rk-name">Kashima Antlers</td>
-<td><span class="elo elite">1833</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">100</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">24</td>
-<td class="rk-name">UCF Knights</td>
-<td><span class="elo elite">1830</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">100</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">25</td>
-<td class="rk-name">Granada</td>
-<td><span class="elo elite">1829</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">86</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">26</td>
-<td class="rk-name">Kashiwa Reysol</td>
-<td><span class="elo elite">1829</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">100</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">27</td>
-<td class="rk-name">Old Dominion Monarchs</td>
-<td><span class="elo elite">1821</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">100</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">28</td>
-<td class="rk-name">Boston College Eagles</td>
-<td><span class="elo elite">1821</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">95</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">29</td>
-<td class="rk-name">AIK</td>
-<td><span class="elo elite">1815</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">100</td>
-<td><span class="mom-stable">—</span></td>
-</tr>
-<tr>
-<td class="rk">30</td>
-<td class="rk-name">Georgetown Hoyas</td>
-<td><span class="elo elite">1814</span></td>
-<td><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-<td class="high">77</td>
-<td><span class="mom-stable">—</span></td>
+<td class="rk-pais" data-pais=""></td>
 </tr>
 </tbody>
       </table>
@@ -17192,8 +17264,10 @@ tr:hover { background: var(--surface2); }
 
 <script>
 const ligas = [{"slug": "all", "nombre": "all"}, {"slug": "arg.1", "nombre": "Argentina - Liga Profesional"}, {"slug": "arg.2", "nombre": "Argentina - Nacional B"}, {"slug": "arg.3", "nombre": "arg.3"}, {"slug": "bol.1", "nombre": "Bolivia - Liga Profesional"}, {"slug": "bra.1", "nombre": "Brasil - S\u00e9rie A"}, {"slug": "bra.2", "nombre": "Brasil - S\u00e9rie B"}, {"slug": "caf.champions", "nombre": "CAF Champions League"}, {"slug": "caf.confed", "nombre": "CAF Confederation Cup"}, {"slug": "chi.1", "nombre": "Chile - Liga Asportivo"}, {"slug": "col.1", "nombre": "Colombia - Liga BetPlay"}, {"slug": "crc.1", "nombre": "crc.1"}, {"slug": "den.1", "nombre": "Dinamarca - Superliga"}, {"slug": "ecu.1", "nombre": "Ecuador - Serie A"}, {"slug": "gua.1", "nombre": "gua.1"}, {"slug": "hon.1", "nombre": "hon.1"}, {"slug": "jpn.1", "nombre": "Jap\u00f3n - J1 League"}, {"slug": "ned.w.knvb_cup", "nombre": "ned.w.knvb_cup"}, {"slug": "nor.1", "nombre": "Noruega - Eliteserien"}, {"slug": "par.1", "nombre": "Paraguay - Primera Divisi\u00f3n"}, {"slug": "per.1", "nombre": "Per\u00fa - Liga 1"}, {"slug": "rsa.1", "nombre": "Sud\u00e1frica - PSL"}, {"slug": "slv.1", "nombre": "slv.1"}, {"slug": "uru.1", "nombre": "Uruguay - Primera Divisi\u00f3n"}, {"slug": "usa.ncaa.m.1", "nombre": "usa.ncaa.m.1"}, {"slug": "usa.ncaa.w.1", "nombre": "usa.ncaa.w.1"}, {"slug": "ven.1", "nombre": "Venezuela - Liga FUTVE"}];
+const paises = ["Argentina", "Bolivia", "Brasil", "Chile", "Colombia", "Dinamarca", "Ecuador", "Jap\u00f3n", "Noruega", "Paraguay", "Per\u00fa", "Sud\u00e1frica", "Uruguay", "Venezuela"];
 let catActual = 'todos';
 let ligaActual = 'todas';
+let paisActual = 'todos';
 
 function initLeagueButtons() {
   const cont = document.getElementById('leagueFilter');
@@ -17227,8 +17301,42 @@ function setLiga(slug) {
 
 function showRanking(r) {
   document.querySelectorAll('.rtab').forEach(t => t.classList.toggle('active', t.dataset.rtab === r));
+  document.getElementById('rankGlobal').classList.toggle('hidden', r !== 'global');
   document.getElementById('rankForma').classList.toggle('hidden', r !== 'forma');
-  document.getElementById('rankElo').classList.toggle('hidden', r !== 'elo');
+}
+
+function initCountryButtons() {
+  const cont = document.getElementById('countryFilter');
+  paises.forEach(p => {
+    const btn = document.createElement('div');
+    btn.className = 'cf-btn';
+    btn.dataset.pais = p;
+    btn.textContent = p;
+    btn.onclick = () => filterCountry(p);
+    cont.appendChild(btn);
+  });
+}
+
+function filterCountry(pais) {
+  paisActual = pais;
+  document.querySelectorAll('#countryFilter .cf-btn').forEach(b => b.classList.toggle('active', b.dataset.pais === pais));
+  document.querySelectorAll('#rankGlobal tbody tr, #rankForma tbody tr').forEach(row => {
+    const cell = row.querySelector('.rk-pais');
+    const p = cell ? cell.dataset.pais : '';
+    row.style.display = (pais === 'todos' || p === pais) ? '' : 'none';
+  });
+  renumberVisible('rankGlobal');
+  renumberVisible('rankForma');
+}
+
+function renumberVisible(sectionId) {
+  const rows = document.querySelectorAll('#' + sectionId + ' tbody tr');
+  let n = 1;
+  rows.forEach(row => {
+    if (row.style.display !== 'none') {
+      row.querySelector('.rk').textContent = n++;
+    }
+  });
 }
 
 function aplicarFiltros() {
@@ -17273,6 +17381,7 @@ function sortCards(criterion) {
 }
 
 initLeagueButtons();
+initCountryButtons();
 </script>
 </body>
 </html>
