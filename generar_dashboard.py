@@ -1033,9 +1033,8 @@ async function cargarEnVivo() {{
             const local = equiposComp.find(e => e.homeAway === 'home') || equiposComp[0];
             const visitante = equiposComp.find(e => e.homeAway === 'away') || equiposComp[1];
             const marcador = `${{local.score || 0}} - ${{visitante.score || 0}}`;
-            const fechaEcuador = new Date(new Date(event.date).getTime() - 5 * 60 * 60 * 1000);
-            const fechaLocal = fechaEcuador.toISOString().split('T')[0];
-            const hora = fechaEcuador.toLocaleTimeString('es-EC', {{ hour: '2-digit', minute: '2-digit' }});
+            const fechaLocal = new Date(event.date).toLocaleDateString('es-EC', {{ timeZone: 'America/Guayaquil', year: 'numeric', month: '2-digit', day: '2-digit' }}).split('/').reverse().join('-');
+            const hora = new Date(event.date).toLocaleTimeString('es-EC', {{ hour: '2-digit', minute: '2-digit', timeZone: 'America/Guayaquil' }});
             
             const nombreLocal = local.team?.displayName || local.team?.shortDisplayName || 'N/A';
             const nombreVisitante = visitante.team?.displayName || visitante.team?.shortDisplayName || 'N/A';
