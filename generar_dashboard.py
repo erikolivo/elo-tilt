@@ -296,6 +296,7 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker"):
 <td>{_icono_momentum(eq.get('momentum'))}</td>
 <td>{_streak_html(eq.get('streak'))}</td>
 <td>{_overperformance_badge(eq.get('overperformance'))}</td>
+<td class="rk-pais" data-pais="{eq.get('pais', '')}">{eq.get('pais', '')}</td>
 </tr>
 '''
 
@@ -308,8 +309,12 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker"):
 <td>{_badge_provisional(eq.get('partidos_jugados'))}</td>
 <td class="{_clase_forma(eq.get('form_score'))}">{eq.get('form_score', 50):.0f}</td>
 <td>{_icono_momentum(eq.get('momentum'))}</td>
+<td class="rk-pais" data-pais="{eq.get('pais', '')}">{eq.get('pais', '')}</td>
 </tr>
 '''
+
+    paises_en_datos = sorted(set(eq.get("pais", "") for eq in todos_equipos.values() if eq.get("pais")))
+    paises_json = json.dumps(paises_en_datos)
 
     html = f'''<!DOCTYPE html>
 <html lang="es">
@@ -464,6 +469,15 @@ body {{ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', san
 .rtab {{ padding: 6px 12px; background: var(--surface); border: 1px solid var(--border);
          border-radius: 6px; color: var(--text2); cursor: pointer; font-size: 0.82em; }}
 .rtab.active {{ background: var(--accent); color: var(--bg); border-color: var(--accent); }}
+
+/* Country filter */
+.country-filter {{ display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 12px; }}
+.cf-btn {{ padding: 4px 10px; background: var(--surface); border: 1px solid var(--border);
+           border-radius: 4px; color: var(--text3); cursor: pointer; font-size: 0.75em; }}
+.cf-btn:hover {{ border-color: var(--accent); color: var(--text2); }}
+.cf-btn.active {{ background: var(--surface2); color: var(--accent); border-color: var(--accent); }}
+
+.rk-pais {{ font-size: 0.8em; color: var(--text3); }}
 table {{ width: 100%; border-collapse: collapse; }}
 th {{ text-align: left; padding: 8px 10px; background: var(--surface2); color: var(--text3);
       font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.04em; font-weight: 600; }}
@@ -531,21 +545,24 @@ tr:hover {{ background: var(--surface2); }}
   </div>
 
   <div class="ranking-section">
-    <div class="ranking-title">Rankings</div>
+    <div class="ranking-title">Rankings ELO</div>
     <div class="ranking-tabs">
-      <div class="rtab active" data-rtab="forma" onclick="showRanking('forma')">Por Forma</div>
-      <div class="rtab" data-rtab="elo" onclick="showRanking('elo')">Por ELO</div>
+      <div class="rtab active" data-rtab="global" onclick="showRanking('global')">Global</div>
+      <div class="rtab" data-rtab="forma" onclick="showRanking('forma')">Por Forma</div>
     </div>
-    <div id="rankForma">
+    <div class="country-filter" id="countryFilter">
+      <div class="cf-btn active" data-pais="todos" onclick="filterCountry('todos')">Todos</div>
+    </div>
+    <div id="rankGlobal">
       <table>
-        <thead><tr><th>#</th><th>Equipo</th><th>ELO</th><th>Forma</th><th>Momentum</th><th>Racha</th><th>Overperf</th></tr></thead>
-        <tbody>{ranking_rows_forma}</tbody>
+        <thead><tr><th>#</th><th>Equipo</th><th>País</th><th>ELO</th><th>RD</th><th>Forma</th><th>Momentum</th></tr></thead>
+        <tbody>{ranking_rows_elo}</tbody>
       </table>
     </div>
-    <div id="rankElo" class="hidden">
+    <div id="rankForma" class="hidden">
       <table>
-        <thead><tr><th>#</th><th>Equipo</th><th>ELO</th><th>RD</th><th>Forma</th><th>Momentum</th></tr></thead>
-        <tbody>{ranking_rows_elo}</tbody>
+        <thead><tr><th>#</th><th>Equipo</th><th>País</th><th>ELO</th><th>Forma</th><th>Momentum</th><th>Racha</th><th>Overperf</th></tr></thead>
+        <tbody>{ranking_rows_forma}</tbody>
       </table>
     </div>
   </div>
@@ -555,8 +572,10 @@ tr:hover {{ background: var(--surface2); }}
 
 <script>
 const ligas = {all_ligas_json};
+const paises = {paises_json};
 let catActual = 'todos';
 let ligaActual = 'todas';
+let paisActual = 'todos';
 
 function initLeagueButtons() {{
   const cont = document.getElementById('leagueFilter');
@@ -590,8 +609,42 @@ function setLiga(slug) {{
 
 function showRanking(r) {{
   document.querySelectorAll('.rtab').forEach(t => t.classList.toggle('active', t.dataset.rtab === r));
+  document.getElementById('rankGlobal').classList.toggle('hidden', r !== 'global');
   document.getElementById('rankForma').classList.toggle('hidden', r !== 'forma');
-  document.getElementById('rankElo').classList.toggle('hidden', r !== 'elo');
+}}
+
+function initCountryButtons() {{
+  const cont = document.getElementById('countryFilter');
+  paises.forEach(p => {{
+    const btn = document.createElement('div');
+    btn.className = 'cf-btn';
+    btn.dataset.pais = p;
+    btn.textContent = p;
+    btn.onclick = () => filterCountry(p);
+    cont.appendChild(btn);
+  }});
+}}
+
+function filterCountry(pais) {{
+  paisActual = pais;
+  document.querySelectorAll('#countryFilter .cf-btn').forEach(b => b.classList.toggle('active', b.dataset.pais === pais));
+  document.querySelectorAll('#rankGlobal tbody tr, #rankForma tbody tr').forEach(row => {{
+    const cell = row.querySelector('.rk-pais');
+    const p = cell ? cell.dataset.pais : '';
+    row.style.display = (pais === 'todos' || p === pais) ? '' : 'none';
+  }});
+  renumberVisible('rankGlobal');
+  renumberVisible('rankForma');
+}}
+
+function renumberVisible(sectionId) {{
+  const rows = document.querySelectorAll('#' + sectionId + ' tbody tr');
+  let n = 1;
+  rows.forEach(row => {{
+    if (row.style.display !== 'none') {{
+      row.querySelector('.rk').textContent = n++;
+    }}
+  }});
 }}
 
 function aplicarFiltros() {{
@@ -636,6 +689,7 @@ function sortCards(criterion) {{
 }}
 
 initLeagueButtons();
+initCountryButtons();
 </script>
 </body>
 </html>'''

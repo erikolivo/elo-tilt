@@ -1,14 +1,7 @@
 """
 ligas_nombres.py
 ----------------
-Mapeo de slugs de ESPN a nombres legibles en español.
-
-ESPN solo expone slugs internos (ej. "arg.1", "uefa.champions") pero
-nunca nombres legibles. Este diccionario los traduce para que el
-dashboard muestre nombres comprensibles.
-
-El nombre se usa como fallback: primero se intenta el campo "name" del
-scoreboard de ESPN; si viene vacío, se usa este mapeo.
+Mapeo de slugs de ESPN a nombres legibles en español y países.
 """
 
 NOMBRES_LIGAS = {
@@ -121,8 +114,67 @@ NOMBRES_LIGAS = {
 
 
 def nombre_liga(slug, nombre_espn=None):
-    """Devuelve el nombre legible de una liga.
-    Primero intenta el nombre de ESPN; si viene vacío, usa el mapeo."""
+    """Devuelve el nombre legible de una liga."""
     if nombre_espn and nombre_espn.strip():
         return nombre_espn.strip()
     return NOMBRES_LIGAS.get(slug, slug or "Liga desconocida")
+
+
+PAIS_POR_SLUG = {
+    "eng.1": "Inglaterra", "eng.2": "Inglaterra", "eng.3": "Inglaterra", "eng.4": "Inglaterra",
+    "eng.facup": "Inglaterra", "eng.leagucup": "Inglaterra", "eng.wsl": "Inglaterra",
+    "esp.1": "España", "esp.2": "España",
+    "ger.1": "Alemania", "ger.2": "Alemania",
+    "ita.1": "Italia", "ita.2": "Italia",
+    "fra.1": "Francia", "fra.2": "Francia",
+    "ned.1": "Países Bajos",
+    "por.1": "Portugal",
+    "bel.1": "Bélgica",
+    "tur.1": "Turquía",
+    "gre.1": "Grecia",
+    "rus.1": "Rusia",
+    "ukr.1": "Ucrania",
+    "cze.1": "República Checa",
+    "cro.1": "Croacia",
+    "sui.1": "Suiza",
+    "aut.1": "Austria",
+    "den.1": "Dinamarca",
+    "swe.1": "Suecia",
+    "nor.1": "Noruega",
+    "pol.1": "Polonia",
+    "scotland.1": "Escocia",
+    "irl.1": "Irlanda",
+    "usa.1": "EE.UU.", "usa.usl": "EE.UU.", "usa.ncaa": "EE.UU.", "usa.ncaa.w": "EE.UU.",
+    "mex.1": "México", "mex.2": "México",
+    "can.1": "Canadá",
+    "bra.1": "Brasil", "bra.2": "Brasil",
+    "arg.1": "Argentina", "arg.2": "Argentina",
+    "col.1": "Colombia",
+    "chi.1": "Chile",
+    "uru.1": "Uruguay",
+    "par.1": "Paraguay",
+    "per.1": "Perú",
+    "ecu.1": "Ecuador",
+    "bol.1": "Bolivia",
+    "ven.1": "Venezuela",
+    "chn.1": "China",
+    "jpn.1": "Japón",
+    "kor.1": "Corea del Sur",
+    "aus.1": "Australia",
+    "ind.1": "India",
+    "sau.1": "Arabia Saudita",
+    "uae.1": "EAU",
+    "qat.1": "Qatar",
+    "mor.1": "Marruecos",
+    "tun.1": "Túnez",
+    "egy.1": "Egipto",
+    "nga.1": "Nigeria",
+    "rsa.1": "Sudáfrica",
+}
+
+PAISES_ORDER = sorted(set(PAIS_POR_SLUG.values()))
+
+
+def pais_por_slug(slug):
+    """Devuelve el país de un slug de liga."""
+    return PAIS_POR_SLUG.get(slug, "")

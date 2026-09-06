@@ -256,6 +256,7 @@ def predecir_partido(fx, tilt_home, tilt_away):
     hora_ec = _hora_display(fecha_ec)
     liga_slug = fx.get("_liga_slug", "")
     liga_nombre = ligas_nombres.nombre_liga(liga_slug, fx["league"].get("name", ""))
+    pais_liga = ligas_nombres.pais_por_slug(liga_slug)
 
     return {
         "fixture_id": fx["fixture"]["id"],
@@ -263,11 +264,12 @@ def predecir_partido(fx, tilt_home, tilt_away):
         "fecha_display": fecha_ec[:10] if fecha_ec else "",
         "hora": hora_ec,
         "liga": liga_nombre,
-        "liga_pais": fx["league"].get("country", ""),
+        "liga_pais": fx["league"].get("country", "") or pais_liga,
         "liga_slug": liga_slug,
         "equipo_local": {
             "id": fx["teams"]["home"]["id"],
             "nombre": fx["teams"]["home"]["name"],
+            "pais": pais_liga,
             "rating": rating_h, "rd": rd_h,
             "partidos_jugados": tilt_home["partidos_jugados"],
             "form_score": tilt_home["form_score"],
@@ -284,6 +286,7 @@ def predecir_partido(fx, tilt_home, tilt_away):
         "equipo_visitante": {
             "id": fx["teams"]["away"]["id"],
             "nombre": fx["teams"]["away"]["name"],
+            "pais": pais_liga,
             "rating": rating_a, "rd": rd_a,
             "partidos_jugados": tilt_away["partidos_jugados"],
             "form_score": tilt_away["form_score"],
