@@ -18,6 +18,29 @@ from pathlib import Path
 DATA_DIR = Path(__file__).parent / "data"
 ARCHIVO_PREDICCIONES = DATA_DIR / "predicciones_cache.json"
 ARCHIVO_SALIDA = Path(__file__).parent / "dashboard.html"
+DIR_HISTORIAL = DATA_DIR / "historial_partidos"
+
+
+def _cargar_resultados_fecha(fecha_iso):
+    if not fecha_iso:
+        return {}
+    aaaa_mm = fecha_iso[:7]
+    archivo = DIR_HISTORIAL / f"{aaaa_mm}.json"
+    if not archivo.exists():
+        return {}
+    try:
+        datos = json.loads(archivo.read_text(encoding="utf-8"))
+        resultados = {}
+        for p in datos.get("partidos", []):
+            if p.get("fecha") == fecha_iso:
+                key = f"{p.get('equipo_local', {}).get('name', '').lower()}_{p.get('equipo_visitante', {}).get('name', '').lower()}"
+                resultados[key] = {
+                    "goles_local": p.get("goles_local", 0),
+                    "goles_visitante": p.get("goles_visitante", 0)
+                }
+        return resultados
+    except Exception:
+        return {}
 
 
 def _clase_forma(score):
@@ -189,7 +212,7 @@ def _score_ajuste_forma(p):
     return diff_elo * (1 - favorito_prob / 100)
 
 
-def generar_html(predicciones, titulo="ELO + Tilt Tracker"):
+def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None):
     ligas = _agrupar_por_liga(predicciones)
     todos_equipos = {}
     for p in predicciones:
@@ -199,10 +222,6 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker"):
 
     ranking_forma = sorted(todos_equipos.values(), key=lambda x: x.get("form_score", 50), reverse=True)[:30]
     ranking_elo = sorted(todos_equipos.values(), key=lambda x: x.get("rating", 1500), reverse=True)[:30]
-
-    n_destacados = sum(1 for p in predicciones if _es_destacado(p))
-    n_parejos = sum(1 for p in predicciones if _es_parejo(p))
-    n_sorpresas = sum(1 for p in predicciones if _es_sorpresa_potencial(p))
 
     liga_counts = {}
     for p in predicciones:
@@ -214,6 +233,8 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker"):
     generado = predicciones[0].get("fecha_display", "") if predicciones else ""
     if predicciones:
         generado = predicciones[0].get("fecha", "")[:10]
+
+    resultados = _cargar_resultados_fecha(fecha_consulta) if fecha_consulta else {}
 
     all_ligas_json = json.dumps([{"slug": k, "nombre": v["nombre"]} for k, v in sorted(ligas.items())])
 
@@ -241,6 +262,14 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker"):
         u5_h = h.get("ultimos5", {})
         u5_a = a.get("ultimos5", {})
 
+        key = f"{h['nombre'].lower()}_{a['nombre'].lower()}"
+        key_inv = f"{a['nombre'].lower()}_{h['nombre'].lower()}"
+        resultado = resultados.get(key) or resultados.get(key_inv)
+        if resultado:
+            marcador = f"{resultado['goles_local']} - {resultado['goles_visitante']}"
+        else:
+            marcador = "?"
+
         excel_rows += f'''<tr class="excel-row" data-slug="{slug}" data-fecha="{fecha_d}" data-elo-h="{h.get('rating', 0):.0f}" data-form-h="{h.get('form_score', 50):.0f}" data-home="{h['nombre'].lower()}" data-away="{a['nombre'].lower()}" data-diff="{abs(diff):.0f}">
   <td class="ex-fecha">{fecha_d}</td>
   <td class="ex-hora">{hora}</td>
@@ -248,6 +277,7 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker"):
   <td class="ex-elo {_clase_rating(h.get('rating'))}">{h.get('rating', 0):.0f}</td>
   <td class="ex-forma {_clase_forma(h.get('form_score'))}">{h.get('form_score', 50):.0f}</td>
   <td class="ex-racha">{_ultimos5_html(u5_h)}</td>
+  <td class="ex-marcador">{marcador}</td>
   <td class="ex-visitante"><a href="{url_google}" target="_blank">{a['nombre']}</a></td>
   <td class="ex-elo {_clase_rating(a.get('rating'))}">{a.get('rating', 0):.0f}</td>
   <td class="ex-forma {_clase_forma(a.get('form_score'))}">{a.get('form_score', 50):.0f}</td>
@@ -555,6 +585,7 @@ tr:hover {{ background: var(--surface2); }}
             <th>ELO</th>
             <th>Forma</th>
             <th>Racha</th>
+            <th>Marcador</th>
             <th>Visitante</th>
             <th>ELO</th>
             <th>Forma</th>
@@ -734,7 +765,7 @@ function cambiarFecha(valor) {{
 
 async function cargarEnVivo() {{
   const tbody = document.querySelector('.excel-table tbody');
-  tbody.innerHTML = '<tr><td colspan="12" style="text-align:center; padding:20px;">Cargando partidos en vivo...</td></tr>';
+  tbody.innerHTML = '<tr><td colspan="13" style="text-align:center; padding:20px;">Cargando partidos en vivo...</td></tr>';
   
   try {{
     const response = await fetch('https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard');
@@ -763,11 +794,12 @@ async function cargarEnVivo() {{
               <td class="ex-elo">-</td>
               <td class="ex-forma">-</td>
               <td class="ex-racha">-</td>
+              <td class="ex-marcador">${{marcador}}</td>
               <td class="ex-visitante">${{visitante.team?.displayName || visitante.team?.shortDisplayName || 'N/A'}}</td>
               <td class="ex-elo">-</td>
               <td class="ex-forma">-</td>
               <td class="ex-racha">-</td>
-              <td class="ex-marcador">${{marcador}}</td>
+              <td class="ex-diff">-</td>
               <td class="ex-pred">${{comp.status?.type?.shortDetail || ''}}</td>
             </tr>`;
           }}
@@ -776,12 +808,12 @@ async function cargarEnVivo() {{
     }}
     
     if (html === '') {{
-      html = '<tr><td colspan="12" style="text-align:center; padding:20px;">No hay partidos en vivo ahora</td></tr>';
+      html = '<tr><td colspan="13" style="text-align:center; padding:20px;">No hay partidos en vivo ahora</td></tr>';
     }}
     
     tbody.innerHTML = html;
   }} catch (error) {{
-    tbody.innerHTML = '<tr><td colspan="12" style="text-align:center; padding:20px; color:#ef4444;">Error al cargar partidos en vivo</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="13" style="text-align:center; padding:20px; color:#ef4444;">Error al cargar partidos en vivo</td></tr>';
   }}
 }}
 
@@ -847,7 +879,7 @@ def generar(predicciones=None, archivo_entrada=None, archivo_salida=None, fecha=
         print("[AVISO] No hay predicciones para generar el dashboard.")
         return None
 
-    html = generar_html(predicciones)
+    html = generar_html(predicciones, fecha_consulta=fecha)
     salida = archivo_salida or ARCHIVO_SALIDA
     Path(salida).write_text(html, encoding="utf-8")
     print(f"Dashboard generado: {salida}")
