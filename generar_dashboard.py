@@ -21,6 +21,11 @@ ARCHIVO_SALIDA = Path(__file__).parent / "dashboard.html"
 DIR_HISTORIAL = DATA_DIR / "historial_partidos"
 
 
+from datetime import datetime, timezone, timedelta
+
+ZONA_ECUADOR = timezone(timedelta(hours=-5))
+
+
 def _cargar_resultados_fecha(fecha_iso):
     if not fecha_iso:
         return {}
@@ -245,6 +250,9 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None)
     resultados = _cargar_resultados_fecha(fecha_consulta) if fecha_consulta else {}
 
     all_ligas_json = json.dumps([{"slug": k, "nombre": v["nombre"]} for k, v in sorted(ligas.items())])
+
+    historial_months = sorted(f.stem for f in DIR_HISTORIAL.glob("*.json"))
+    historial_months_json = json.dumps(historial_months)
 
     excel_rows = ""
     for p in predicciones:
@@ -662,9 +670,65 @@ tr:hover {{ background: var(--surface2); }}
 <script>
 const ligas = {all_ligas_json};
 const paises = {paises_json};
+const historialMonths = {historial_months_json};
 let catActual = 'todos';
 let ligaActual = 'todas';
 let paisActual = 'todos';
+let historialCache = null;
+
+async function cargarTodoElHistorial() {{
+  if (historialCache) return historialCache;
+  const todos = [];
+  for (const m of historialMonths) {{
+    try {{
+      const res = await fetch('data/historial_partidos/' + m + '.json');
+      if (res.ok) {{
+        const data = await res.json();
+        if (data.partidos) todos.push(...data.partidos);
+      }}
+    }} catch(e) {{}}
+  }}
+  historialCache = todos;
+  return todos;
+}}
+
+function calcularEstadisticas(nombre, todosPartidos) {{
+  const n = nombre.toLowerCase();
+  const mismos = todosPartidos.filter(p => {{
+    const ln = (p.equipo_local?.name || '').toLowerCase();
+    const vn = (p.equipo_visitante?.name || '').toLowerCase();
+    return ln.includes(n) || vn.includes(n);
+  }}).sort((a,b) => (b.fecha || '').localeCompare(a.fecha || ''));
+  const ultimos10 = mismos.slice(0, 10);
+  if (ultimos10.length === 0) return {{ form_score: null, streak: null, ultimos5: null }};
+  let puntos = 0;
+  const resultados = [];
+  for (const p of ultimos10) {{
+    const ln = (p.equipo_local?.name || '').toLowerCase();
+    const gl = p.goles_local ?? 0;
+    const ga = p.goles_visitante ?? 0;
+    const esLocal = ln.includes(n);
+    const GF = esLocal ? gl : ga;
+    const GC = esLocal ? ga : gl;
+    if (GF > GC) {{ puntos += 3; resultados.push('V'); }}
+    else if (GF === GC) {{ puntos += 1; resultados.push('E'); }}
+    else {{ resultados.push('D'); }}
+  }}
+  const form_score = Math.round((puntos / (ultimos10.length * 3)) * 100);
+  const u5 = resultados.slice(0, 5);
+  const ultimos5 = {{ texto: u5.map(r => r === 'V' ? 'Victoria' : r === 'E' ? 'Empate' : 'Derrota').join(', '), resultados: u5 }};
+  let streak_tipo = null, streak_cantidad = 0;
+  if (u5.length > 0) {{
+    streak_tipo = u5[0] === 'V' ? 'W' : u5[0] === 'E' ? 'D' : 'L';
+    for (const r of u5) {{
+      const t = r === 'V' ? 'W' : r === 'E' ? 'D' : 'L';
+      if (t === streak_tipo) streak_cantidad++;
+      else break;
+    }}
+  }}
+  const streak = streak_tipo ? {{ tipo: streak_tipo, cantidad: streak_cantidad }} : null;
+  return {{ form_score, streak, ultimos5 }};
+}}
 
 function initLeagueButtons() {{
   const cont = document.getElementById('leagueFilter');
@@ -738,43 +802,29 @@ function renumberVisible(sectionId) {{
 
 function aplicarFiltros() {{
   const q = document.getElementById('searchBox').value.toLowerCase().trim();
-  document.querySelectorAll('.mc-link').forEach(card => {{
-    let show = true;
-    if (ligaActual !== 'todas' && card.dataset.slug !== ligaActual) show = false;
-    if (q) {{
-      const h = card.dataset.home || '';
-      const a = card.dataset.away || '';
-      if (!h.includes(q) && !a.includes(q)) show = false;
-    }}
-    if (catActual === 'destacados' && card.dataset.dest !== '1') show = false;
-    if (catActual === 'parejos' && card.dataset.par !== '1') show = false;
-    if (catActual === 'sorpresas' && card.dataset.sorp !== '1') show = false;
-    if (catActual === 'ajuste') show = true;
-    card.classList.toggle('hidden', !show);
+  document.querySelectorAll('.excel-row').forEach(row => {{
+    const local = row.dataset.home || '';
+    const away = row.dataset.away || '';
+    const show = !q || local.includes(q) || away.includes(q);
+    row.style.display = show ? '' : 'none';
   }});
-  if (catActual === 'ajuste') {{
-    const cards = Array.from(document.querySelectorAll('.mc-link:not(.hidden)'));
-    cards.sort((a, b) => parseFloat(b.dataset.ajuste || 0) - parseFloat(a.dataset.ajuste || 0));
-    const list = document.getElementById('matchList');
-    cards.forEach(c => list.appendChild(c));
-  }}
 }}
 
-function sortCards(criterion) {{
+function sortExcel(criterion) {{
   document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
   event.target.classList.add('active');
-  const cards = Array.from(document.querySelectorAll('.mc-link'));
-  const list = document.getElementById('matchList');
-  if (criterion === 'elo-desc') {{
-    cards.sort((a, b) => parseFloat(b.dataset.eloH || 0) - parseFloat(a.dataset.eloH || 0));
-  }} else if (criterion === 'elo-asc') {{
-    cards.sort((a, b) => parseFloat(a.dataset.eloH || 0) - parseFloat(b.dataset.eloH || 0));
-  }} else if (criterion === 'form-desc') {{
-    cards.sort((a, b) => parseFloat(b.dataset.formH || 0) - parseFloat(a.dataset.formH || 0));
-  }} else if (criterion === 'form-asc') {{
-    cards.sort((a, b) => parseFloat(a.dataset.formH || 0) - parseFloat(b.dataset.formH || 0));
-  }}
-  cards.forEach(c => list.appendChild(c));
+  const tbody = document.querySelector('.excel-table tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  rows.sort((a, b) => {{
+    if (criterion === 'elo-desc') return parseFloat(b.dataset.eloH || 0) - parseFloat(a.dataset.eloH || 0);
+    if (criterion === 'elo-asc') return parseFloat(a.dataset.eloH || 0) - parseFloat(b.dataset.eloH || 0);
+    if (criterion === 'form-desc') return parseFloat(b.dataset.formH || 0) - parseFloat(a.dataset.formH || 0);
+    if (criterion === 'form-asc') return parseFloat(a.dataset.formH || 0) - parseFloat(b.dataset.formH || 0);
+    if (criterion === 'diff-desc') return parseFloat(b.dataset.diff || 0) - parseFloat(a.dataset.diff || 0);
+    if (criterion === 'diff-asc') return parseFloat(a.dataset.diff || 0) - parseFloat(b.dataset.diff || 0);
+    return 0;
+  }});
+  rows.forEach(row => tbody.appendChild(row));
 }}
 
 initLeagueButtons();
@@ -792,6 +842,41 @@ function cambiarFecha(valor) {{
   }}
 }}
 
+function claseRating(r) {{
+  if (!r) return '';
+  if (r >= 1700) return 'elite';
+  if (r >= 1550) return 'above';
+  if (r >= 1400) return 'average';
+  return 'below';
+}}
+
+function claseForma(f) {{
+  if (f == null) return '';
+  if (f >= 70) return 'high';
+  if (f >= 40) return 'mid';
+  return 'low';
+}}
+
+function streakHtml(s) {{
+  if (!s) return '-';
+  const t = s.tipo || 'N/A';
+  const c = s.cantidad || 0;
+  if (t === 'W') return `<span class="streak-w">${{c}}V</span>`;
+  if (t === 'D') return `<span class="streak-d">${{c}}E</span>`;
+  if (t === 'L') return `<span class="streak-l">${{c}}D</span>`;
+  return '-';
+}}
+
+function ultimos5Html(u5) {{
+  if (!u5 || !u5.resultados || u5.resultados.length === 0) return '<span class="streak-na">—</span>';
+  return u5.resultados.map(r => {{
+    if (r === 'V') return '<span class="u5-v">V</span>';
+    if (r === 'D') return '<span class="u5-d">D</span>';
+    if (r === 'E') return '<span class="u5-e">E</span>';
+    return '';
+  }}).join('');
+}}
+
 async function cargarHistorial(cuando) {{
   const tbody = document.querySelector('.excel-table tbody');
   tbody.innerHTML = '<tr><td colspan="14" style="text-align:center; padding:20px;">Cargando...</td></tr>';
@@ -804,89 +889,51 @@ async function cargarHistorial(cuando) {{
   const dd = String(fecha.getDate()).padStart(2, '0');
   const fechaIso = yyyy + '-' + mm + '-' + dd;
   
-    try {{
-      console.log('[Ayer/Manana] Cargando ratings...');
-      const resRatings = await fetch('data/ratings_propios.json');
-      if (!resRatings.ok) {{
-        throw new Error('No se pudo cargar ratings: ' + resRatings.status);
-      }}
-      const dataRatings = await resRatings.json();
-      const equipos = dataRatings.equipos || {{}};
-      console.log('[Ayer/Manana] Ratings cargados:', Object.keys(equipos).length, 'equipos');
-      
-      let partidos = [];
-      
-      if (cuando === 'manana') {{
-        console.log('[Manana] Buscando partidos en ESPN...');
-        const resESPN = await fetch('https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard?dates=' + yyyy + mm + dd);
-        if (!resESPN.ok) {{
-          throw new Error('Error ESPN: ' + resESPN.status);
-        }}
-        const dataESPN = await resESPN.json();
-        if (dataESPN.events) {{
-          dataESPN.events.forEach(event => {{
-            const comp = event.competitions?.[0];
-            if (!comp) return;
-            const equiposComp = comp.competitors || [];
-            if (equiposComp.length < 2) return;
-            const local = equiposComp.find(e => e.homeAway === 'home') || equiposComp[0];
-            const visitante = equiposComp.find(e => e.homeAway === 'away') || equiposComp[1];
-            partidos.push({{
-              fecha: fechaIso,
-              equipo_local: {{ name: local.team?.displayName || 'N/A' }},
-              equipo_visitante: {{ name: visitante.team?.displayName || 'N/A' }},
-              goles_local: null,
-              goles_visitante: null,
-              hora: new Date(event.date).toLocaleTimeString('es-EC', {{ hour: '2-digit', minute: '2-digit', timeZone: 'America/Guayaquil' }})
-            }});
+  try {{
+    const [dataRatings, allMatches] = await Promise.all([
+      fetch('data/ratings_propios.json').then(r => r.json()),
+      cargarTodoElHistorial()
+    ]);
+    const equipos = dataRatings.equipos || {{}};
+    
+    let partidos = [];
+    
+    if (cuando === 'manana') {{
+      const resESPN = await fetch('https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard?dates=' + yyyy + mm + dd);
+      if (!resESPN.ok) throw new Error('Error ESPN: ' + resESPN.status);
+      const dataESPN = await resESPN.json();
+      if (dataESPN.events) {{
+        dataESPN.events.forEach(event => {{
+          const comp = event.competitions?.[0];
+          if (!comp) return;
+          const equiposComp = comp.competitors || [];
+          if (equiposComp.length < 2) return;
+          const local = equiposComp.find(e => e.homeAway === 'home') || equiposComp[0];
+          const visitante = equiposComp.find(e => e.homeAway === 'away') || equiposComp[1];
+          partidos.push({{
+            fecha: fechaIso,
+            equipo_local: {{ name: local.team?.displayName || 'N/A' }},
+            equipo_visitante: {{ name: visitante.team?.displayName || 'N/A' }},
+            goles_local: null,
+            goles_visitante: null,
+            hora: new Date(event.date).toLocaleTimeString('es-EC', {{ hour: '2-digit', minute: '2-digit', timeZone: 'America/Guayaquil' }})
           }});
-        }}
-        console.log('[Manana] Partidos encontrados:', partidos.length);
-      }} else {{
-        const archivo = 'data/historial_partidos/' + yyyy + '-' + mm + '.json';
-        console.log('[Ayer] Cargando historial:', archivo);
-        const resHistorial = await fetch(archivo);
-        if (!resHistorial.ok) {{
-          throw new Error('No se encontro historial para ' + fechaIso + ': ' + resHistorial.status);
-        }}
-        const dataHistorial = await resHistorial.json();
-        partidos = (dataHistorial.partidos || []).filter(p => p.fecha === fechaIso);
-        console.log('[Ayer] Partidos para', fechaIso, ':', partidos.length);
+        }});
       }}
+    }} else {{
+      const archivo = 'data/historial_partidos/' + yyyy + '-' + mm + '.json';
+      const resHistorial = await fetch(archivo);
+      if (!resHistorial.ok) throw new Error('No se encontro historial para ' + fechaIso + ': ' + resHistorial.status);
+      const dataHistorial = await resHistorial.json();
+      partidos = (dataHistorial.partidos || []).filter(p => p.fecha === fechaIso);
+    }}
     
     function buscarElo(nombre) {{
       const nombreLower = nombre.toLowerCase();
       for (const [key, eq] of Object.entries(equipos)) {{
-        if (eq.nombre && eq.nombre.toLowerCase().includes(nombreLower)) {{
-          return eq;
-        }}
+        if (eq.nombre && eq.nombre.toLowerCase().includes(nombreLower)) return eq;
       }}
       return null;
-    }}
-    
-    function claseRating(r) {{
-      if (!r) return '';
-      if (r >= 1700) return 'elite';
-      if (r >= 1550) return 'above';
-      if (r >= 1400) return 'average';
-      return 'below';
-    }}
-    
-    function claseForma(f) {{
-      if (!f) return '';
-      if (f >= 70) return 'high';
-      if (f >= 40) return 'mid';
-      return 'low';
-    }}
-    
-    function streakHtml(s) {{
-      if (!s) return '-';
-      const t = s.tipo || 'N/A';
-      const c = s.cantidad || 0;
-      if (t === 'W') return `<span class="streak-w">${{c}}V</span>`;
-      if (t === 'D') return `<span class="streak-d">${{c}}E</span>`;
-      if (t === 'L') return `<span class="streak-l">${{c}}D</span>`;
-      return '-';
     }}
     
     let html = '';
@@ -895,46 +942,44 @@ async function cargarHistorial(cuando) {{
       const nombreVisitante = p.equipo_visitante?.name || 'N/A';
       const gl = p.goles_local;
       const ga = p.goles_visitante;
-      const marcador = gl !== null ? gl + ' - ' + ga : '?';
+      const marcador = gl != null ? gl + ' - ' + ga : '?';
       const hora = p.hora || '-';
       
       const eqLocal = buscarElo(nombreLocal);
       const eqVisitante = buscarElo(nombreVisitante);
-      
       const eloLocal = eqLocal ? eqLocal.rating.toFixed(0) : '-';
       const eloVisitante = eqVisitante ? eqVisitante.rating.toFixed(0) : '-';
-      const formaLocal = eqLocal?.form_score != null ? eqLocal.form_score.toFixed(0) : '-';
-      const formaVisitante = eqVisitante?.form_score != null ? eqVisitante.form_score.toFixed(0) : '-';
-      const streakLocal = eqLocal ? streakHtml(eqLocal.streak) : '-';
-      const streakVisitante = eqVisitante ? streakHtml(eqVisitante.streak) : '-';
+      
+      const statsLocal = calcularEstadisticas(nombreLocal, allMatches);
+      const statsVisitante = calcularEstadisticas(nombreVisitante, allMatches);
+      const formaLocal = statsLocal.form_score != null ? statsLocal.form_score : '-';
+      const formaVisitante = statsVisitante.form_score != null ? statsVisitante.form_score : '-';
+      
       const diff = (eqLocal && eqVisitante) ? (eqLocal.rating - eqVisitante.rating).toFixed(0) : '-';
       
       let acierto = '';
-      if (gl !== null && eqLocal && eqVisitante) {{
+      if (gl != null && ga != null && eqLocal && eqVisitante) {{
         const probLocal = 50 + (eqLocal.rating - eqVisitante.rating) / 40;
         const probVisitante = 100 - probLocal - 25;
         const maxProb = Math.max(probLocal, probVisitante);
         if (maxProb > 69) {{
-          if (probLocal > probVisitante) {{
-            acierto = gl > ga ? '<span class="acierto-ok">✓</span>' : '<span class="acierto-fail">✗</span>';
-          }} else {{
-            acierto = ga > gl ? '<span class="acierto-ok">✓</span>' : '<span class="acierto-fail">✗</span>';
-          }}
+          if (probLocal > probVisitante) acierto = gl > ga ? '<span class="acierto-ok">&#10003;</span>' : '<span class="acierto-fail">&#10007;</span>';
+          else acierto = ga > gl ? '<span class="acierto-ok">&#10003;</span>' : '<span class="acierto-fail">&#10007;</span>';
         }}
       }}
       
-      html += `<tr class="excel-row">
+      html += `<tr class="excel-row" data-home="${{nombreLocal.toLowerCase()}}" data-away="${{nombreVisitante.toLowerCase()}}">
         <td class="ex-fecha">${{fechaIso}}</td>
         <td class="ex-hora">${{hora}}</td>
         <td class="ex-local">${{nombreLocal}}</td>
         <td class="ex-elo ${{claseRating(eqLocal?.rating)}}">${{eloLocal}}</td>
-        <td class="ex-forma ${{claseForma(eqLocal?.form_score)}}">${{formaLocal}}</td>
-        <td class="ex-racha">${{streakLocal}}</td>
+        <td class="ex-forma ${{claseForma(formaLocal)}}">${{formaLocal}}</td>
+        <td class="ex-racha">${{streakHtml(statsLocal.streak)}}</td>
         <td class="ex-marcador">${{marcador}}</td>
         <td class="ex-visitante">${{nombreVisitante}}</td>
         <td class="ex-elo ${{claseRating(eqVisitante?.rating)}}">${{eloVisitante}}</td>
-        <td class="ex-forma ${{claseForma(eqVisitante?.form_score)}}">${{formaVisitante}}</td>
-        <td class="ex-racha">${{streakVisitante}}</td>
+        <td class="ex-forma ${{claseForma(formaVisitante)}}">${{formaVisitante}}</td>
+        <td class="ex-racha">${{streakHtml(statsVisitante.streak)}}</td>
         <td class="ex-diff">${{diff}}</td>
         <td class="ex-pred">-</td>
         <td class="ex-acierto">${{acierto}}</td>
@@ -957,56 +1002,22 @@ async function cargarEnVivo() {{
   tbody.innerHTML = '<tr><td colspan="14" style="text-align:center; padding:20px;">Cargando partidos en vivo...</td></tr>';
   
   try {{
-    console.log('[EnVivo] Cargando datos...');
-    const [resESPN, resRatings] = await Promise.all([
-      fetch('https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard'),
-      fetch('data/ratings_propios.json')
+    const [dataESPN, dataRatings, allMatches] = await Promise.all([
+      fetch('https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard').then(r => {{
+        if (!r.ok) throw new Error('Error ESPN: ' + r.status);
+        return r.json();
+      }}),
+      fetch('data/ratings_propios.json').then(r => r.json()),
+      cargarTodoElHistorial()
     ]);
-    console.log('[EnVivo] ESPN:', resESPN.status, '| Ratings:', resRatings.status);
-    if (!resESPN.ok) {{
-      throw new Error('Error ESPN: ' + resESPN.status);
-    }}
-    if (!resRatings.ok) {{
-      throw new Error('Error Ratings: ' + resRatings.status);
-    }}
-    const dataESPN = await resESPN.json();
-    const dataRatings = await resRatings.json();
     const equipos = dataRatings.equipos || {{}};
-    console.log('[EnVivo] Equipos cargados:', Object.keys(equipos).length);
     
     function buscarElo(nombre) {{
       const nombreLower = nombre.toLowerCase();
       for (const [key, eq] of Object.entries(equipos)) {{
-        if (eq.nombre && eq.nombre.toLowerCase().includes(nombreLower)) {{
-          return eq;
-        }}
+        if (eq.nombre && eq.nombre.toLowerCase().includes(nombreLower)) return eq;
       }}
       return null;
-    }}
-    
-    function claseRating(r) {{
-      if (!r) return '';
-      if (r >= 1700) return 'elite';
-      if (r >= 1550) return 'above';
-      if (r >= 1400) return 'average';
-      return 'below';
-    }}
-    
-    function claseForma(f) {{
-      if (!f) return '';
-      if (f >= 70) return 'high';
-      if (f >= 40) return 'mid';
-      return 'low';
-    }}
-    
-    function streakHtml(s) {{
-      if (!s) return '-';
-      const t = s.tipo || 'N/A';
-      const c = s.cantidad || 0;
-      if (t === 'W') return `<span class="streak-w">${{c}}V</span>`;
-      if (t === 'D') return `<span class="streak-d">${{c}}E</span>`;
-      if (t === 'L') return `<span class="streak-l">${{c}}D</span>`;
-      return '-';
     }}
     
     let html = '';
@@ -1015,9 +1026,7 @@ async function cargarEnVivo() {{
         const competiciones = event.competitions || [];
         competiciones.forEach(comp => {{
           const status = comp.status?.type?.name || '';
-          if (status !== 'STATUS_IN_PROGRESS' && status !== 'STATUS_HALFTIME' && status !== 'STATUS_SECOND_HALF' && status !== 'STATUS_FIRST_HALF' && status !== 'STATUS_END_PERIOD') {{
-            return;
-          }}
+          if (status !== 'STATUS_IN_PROGRESS' && status !== 'STATUS_HALFTIME' && status !== 'STATUS_SECOND_HALF' && status !== 'STATUS_FIRST_HALF' && status !== 'STATUS_END_PERIOD') return;
           const equiposComp = comp.competitors || [];
           if (equiposComp.length >= 2) {{
             const local = equiposComp.find(e => e.homeAway === 'home') || equiposComp[0];
@@ -1032,27 +1041,28 @@ async function cargarEnVivo() {{
             
             const eqLocal = buscarElo(nombreLocal);
             const eqVisitante = buscarElo(nombreVisitante);
-            
             const eloLocal = eqLocal ? eqLocal.rating.toFixed(0) : '-';
             const eloVisitante = eqVisitante ? eqVisitante.rating.toFixed(0) : '-';
-            const formaLocal = eqLocal?.form_score != null ? eqLocal.form_score.toFixed(0) : '-';
-            const formaVisitante = eqVisitante?.form_score != null ? eqVisitante.form_score.toFixed(0) : '-';
-            const streakLocal = eqLocal ? streakHtml(eqLocal.streak) : '-';
-            const streakVisitante = eqVisitante ? streakHtml(eqVisitante.streak) : '-';
+            
+            const statsLocal = calcularEstadisticas(nombreLocal, allMatches);
+            const statsVisitante = calcularEstadisticas(nombreVisitante, allMatches);
+            const formaLocal = statsLocal.form_score != null ? statsLocal.form_score : '-';
+            const formaVisitante = statsVisitante.form_score != null ? statsVisitante.form_score : '-';
+            
             const diff = (eqLocal && eqVisitante) ? (eqLocal.rating - eqVisitante.rating).toFixed(0) : '-';
             
-            html += `<tr class="excel-row live-row">
+            html += `<tr class="excel-row live-row" data-home="${{nombreLocal.toLowerCase()}}" data-away="${{nombreVisitante.toLowerCase()}}">
               <td class="ex-fecha">${{fechaLocal}}</td>
               <td class="ex-hora live-indicator">${{hora}}</td>
               <td class="ex-local">${{nombreLocal}}</td>
               <td class="ex-elo ${{claseRating(eqLocal?.rating)}}">${{eloLocal}}</td>
-              <td class="ex-forma ${{claseForma(eqLocal?.form_score)}}">${{formaLocal}}</td>
-              <td class="ex-racha">${{streakLocal}}</td>
+              <td class="ex-forma ${{claseForma(formaLocal)}}">${{formaLocal}}</td>
+              <td class="ex-racha">${{streakHtml(statsLocal.streak)}}</td>
               <td class="ex-marcador">${{marcador}}</td>
               <td class="ex-visitante">${{nombreVisitante}}</td>
               <td class="ex-elo ${{claseRating(eqVisitante?.rating)}}">${{eloVisitante}}</td>
-              <td class="ex-forma ${{claseForma(eqVisitante?.form_score)}}">${{formaVisitante}}</td>
-              <td class="ex-racha">${{streakVisitante}}</td>
+              <td class="ex-forma ${{claseForma(formaVisitante)}}">${{formaVisitante}}</td>
+              <td class="ex-racha">${{streakHtml(statsVisitante.streak)}}</td>
               <td class="ex-diff">${{diff}}</td>
               <td class="ex-pred">${{comp.status?.type?.shortDetail || ''}}</td>
               <td class="ex-acierto"></td>
@@ -1071,42 +1081,6 @@ async function cargarEnVivo() {{
     console.error('[EnVivo] Error:', error);
     tbody.innerHTML = `<tr><td colspan="14" style="text-align:center; padding:20px; color:#ef4444;">Error: ${{error.message}}</td></tr>`;
   }}
-}}
-
-function sortExcel(criterion) {{
-  document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
-  event.target.classList.add('active');
-  const tbody = document.querySelector('.excel-table tbody');
-  const rows = Array.from(tbody.querySelectorAll('tr'));
-  
-  rows.sort((a, b) => {{
-    if (criterion === 'elo-desc') {{
-      return parseFloat(b.dataset.eloH || 0) - parseFloat(a.dataset.eloH || 0);
-    }} else if (criterion === 'elo-asc') {{
-      return parseFloat(a.dataset.eloH || 0) - parseFloat(b.dataset.eloH || 0);
-    }} else if (criterion === 'form-desc') {{
-      return parseFloat(b.dataset.formH || 0) - parseFloat(a.dataset.formH || 0);
-    }} else if (criterion === 'form-asc') {{
-      return parseFloat(a.dataset.formH || 0) - parseFloat(b.dataset.formH || 0);
-    }} else if (criterion === 'diff-desc') {{
-      return parseFloat(b.dataset.diff || 0) - parseFloat(a.dataset.diff || 0);
-    }} else if (criterion === 'diff-asc') {{
-      return parseFloat(a.dataset.diff || 0) - parseFloat(b.dataset.diff || 0);
-    }}
-    return 0;
-  }});
-  
-  rows.forEach(row => tbody.appendChild(row));
-}}
-
-function aplicarFiltros() {{
-  const q = document.getElementById('searchBox').value.toLowerCase().trim();
-  document.querySelectorAll('.excel-row').forEach(row => {{
-    const local = row.dataset.home || '';
-    const away = row.dataset.away || '';
-    const show = !q || local.includes(q) || away.includes(q);
-    row.style.display = show ? '' : 'none';
-  }});
 }}
 </script>
 </body>
@@ -1134,6 +1108,9 @@ def generar(predicciones=None, archivo_entrada=None, archivo_salida=None, fecha=
     if not predicciones:
         print("[AVISO] No hay predicciones para generar el dashboard.")
         return None
+
+    if not fecha:
+        fecha = datetime.now(ZONA_ECUADOR).strftime("%Y-%m-%d")
 
     html = generar_html(predicciones, fecha_consulta=fecha)
     salida = archivo_salida or ARCHIVO_SALIDA
