@@ -903,8 +903,8 @@ async function cargarHistorial(cuando) {{
       
       const eloLocal = eqLocal ? eqLocal.rating.toFixed(0) : '-';
       const eloVisitante = eqVisitante ? eqVisitante.rating.toFixed(0) : '-';
-      const formaLocal = eqLocal ? eqLocal.form_score.toFixed(0) : '-';
-      const formaVisitante = eqVisitante ? eqVisitante.form_score.toFixed(0) : '-';
+      const formaLocal = eqLocal?.form_score != null ? eqLocal.form_score.toFixed(0) : '-';
+      const formaVisitante = eqVisitante?.form_score != null ? eqVisitante.form_score.toFixed(0) : '-';
       const streakLocal = eqLocal ? streakHtml(eqLocal.streak) : '-';
       const streakVisitante = eqVisitante ? streakHtml(eqVisitante.streak) : '-';
       const diff = (eqLocal && eqVisitante) ? (eqLocal.rating - eqVisitante.rating).toFixed(0) : '-';
@@ -1035,8 +1035,8 @@ async function cargarEnVivo() {{
             
             const eloLocal = eqLocal ? eqLocal.rating.toFixed(0) : '-';
             const eloVisitante = eqVisitante ? eqVisitante.rating.toFixed(0) : '-';
-            const formaLocal = eqLocal ? eqLocal.form_score.toFixed(0) : '-';
-            const formaVisitante = eqVisitante ? eqVisitante.form_score.toFixed(0) : '-';
+            const formaLocal = eqLocal?.form_score != null ? eqLocal.form_score.toFixed(0) : '-';
+            const formaVisitante = eqVisitante?.form_score != null ? eqVisitante.form_score.toFixed(0) : '-';
             const streakLocal = eqLocal ? streakHtml(eqLocal.streak) : '-';
             const streakVisitante = eqVisitante ? streakHtml(eqVisitante.streak) : '-';
             const diff = (eqLocal && eqVisitante) ? (eqLocal.rating - eqVisitante.rating).toFixed(0) : '-';
