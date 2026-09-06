@@ -114,6 +114,36 @@ def _calcular_streak(partidos, team_id):
     return {"tipo": streak_tipo, "cantidad": streak_count}
 
 
+def _calcular_ultimos_5(partidos, team_id):
+    if not partidos:
+        return {"texto": "N/A", "resultados": []}
+    team_id = str(team_id)
+    resultados = []
+    for p in partidos[:5]:
+        gh = p.get("goles_local", 0)
+        ga = p.get("goles_visitante", 0)
+        es_local = str(p.get("equipo_local", {}).get("id", "")) == team_id
+        if gh == ga:
+            tipo = "E"
+        elif (gh > ga and es_local) or (ga > gh and not es_local):
+            tipo = "V"
+        else:
+            tipo = "D"
+        resultados.append(tipo)
+    conteo = {"V": 0, "D": 0, "E": 0}
+    for r in resultados:
+        conteo[r] = conteo.get(r, 0) + 1
+    partes = []
+    if conteo["V"] > 0:
+        partes.append(f"{conteo['V']}V")
+    if conteo["D"] > 0:
+        partes.append(f"{conteo['D']}D")
+    if conteo["E"] > 0:
+        partes.append(f"{conteo['E']}E")
+    texto = " ".join(partes) if partes else "N/A"
+    return {"texto": texto, "resultados": resultados}
+
+
 def _calcular_momentum(partidos, team_id):
     if len(partidos) < 5:
         return {"direccion": "stable", "diferencia": 0.0}
@@ -278,6 +308,7 @@ def predecir_partido(fx, tilt_home, tilt_away):
             "momentum": tilt_home["momentum"]["direccion"],
             "momentum_diff": tilt_home["momentum"]["diferencia"],
             "streak": tilt_home["streak"],
+            "ultimos5": tilt_home["ultimos5"],
             "goal_trend": tilt_home["goal_trend"],
             "field_tilt": tilt_home["field_tilt"],
             "overperformance": tilt_home["overperformance"],
@@ -295,6 +326,7 @@ def predecir_partido(fx, tilt_home, tilt_away):
             "momentum": tilt_away["momentum"]["direccion"],
             "momentum_diff": tilt_away["momentum"]["diferencia"],
             "streak": tilt_away["streak"],
+            "ultimos5": tilt_away["ultimos5"],
             "goal_trend": tilt_away["goal_trend"],
             "field_tilt": tilt_away["field_tilt"],
             "overperformance": tilt_away["overperformance"],
@@ -341,6 +373,8 @@ def predecir_fecha(fecha_iso, ligas=None):
         form_a = _calcular_forma(hist_a, away_id)
         streak_h = _calcular_streak(hist_h, home_id)
         streak_a = _calcular_streak(hist_a, away_id)
+        ultimos5_h = _calcular_ultimos_5(hist_h, home_id)
+        ultimos5_a = _calcular_ultimos_5(hist_a, away_id)
         mom_h = _calcular_momentum(hist_h, home_id)
         mom_a = _calcular_momentum(hist_a, away_id)
         gt_h = _calcular_goal_trend(hist_h, home_id)
@@ -352,15 +386,15 @@ def predecir_fecha(fecha_iso, ligas=None):
 
         tilt_home = {
             "rating": rating_h, "rd": rd_h, "partidos_jugados": pj_h,
-            "form_score": form_h, "streak": streak_h, "momentum": mom_h,
-            "goal_trend": gt_h, "home_away": ha_h, "overperformance": op_h,
-            "field_tilt": {"overall": 50.0},
+            "form_score": form_h, "streak": streak_h, "ultimos5": ultimos5_h,
+            "momentum": mom_h, "goal_trend": gt_h, "home_away": ha_h,
+            "overperformance": op_h, "field_tilt": {"overall": 50.0},
         }
         tilt_away = {
             "rating": rating_a, "rd": rd_a, "partidos_jugados": pj_a,
-            "form_score": form_a, "streak": streak_a, "momentum": mom_a,
-            "goal_trend": gt_a, "home_away": ha_a, "overperformance": op_a,
-            "field_tilt": {"overall": 50.0},
+            "form_score": form_a, "streak": streak_a, "ultimos5": ultimos5_a,
+            "momentum": mom_a, "goal_trend": gt_a, "home_away": ha_a,
+            "overperformance": op_a, "field_tilt": {"overall": 50.0},
         }
 
         try:

@@ -72,6 +72,22 @@ def _streak_html(streak):
     return '<span class="streak-na">—</span>'
 
 
+def _ultimos5_html(ultimos5):
+    if not ultimos5 or ultimos5.get("texto") == "N/A":
+        return '<span class="streak-na">—</span>'
+    texto = ultimos5.get("texto", "N/A")
+    resultados = ultimos5.get("resultados", [])
+    html_parts = []
+    for r in resultados:
+        if r == "V":
+            html_parts.append('<span class="u5-v">V</span>')
+        elif r == "D":
+            html_parts.append('<span class="u5-d">D</span>')
+        elif r == "E":
+            html_parts.append('<span class="u5-e">E</span>')
+    return f'<span class="ultimos5" title="{texto}">{"".join(html_parts)}</span>'
+
+
 def _barra_prob(valor, clase):
     return f'<div class="prob-bar prob-{clase}" style="width:{max(valor, 5)}%">{valor:.0f}%</div>'
 
@@ -202,6 +218,7 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker"):
     all_ligas_json = json.dumps([{"slug": k, "nombre": v["nombre"]} for k, v in sorted(ligas.items())])
 
     match_cards = ""
+    excel_rows = ""
     for p in predicciones:
         h = p["equipo_local"]
         a = p["equipo_visitante"]
@@ -286,17 +303,36 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker"):
 </a>
 '''
 
+        u5_h = h.get("ultimos5", {})
+        u5_a = a.get("ultimos5", {})
+
+        excel_rows += f'''<tr class="excel-row" data-slug="{slug}" data-fecha="{fecha_d}" data-elo-h="{h.get('rating', 0):.0f}" data-form-h="{h.get('form_score', 50):.0f}" data-home="{h['nombre'].lower()}" data-away="{a['nombre'].lower()}" data-diff="{abs(diff):.0f}">
+  <td class="ex-fecha">{fecha_d}</td>
+  <td class="ex-hora">{hora}</td>
+  <td class="ex-local"><a href="{url_google}" target="_blank">{h['nombre']}</a></td>
+  <td class="ex-elo {_clase_rating(h.get('rating'))}">{h.get('rating', 0):.0f}</td>
+  <td class="ex-forma {_clase_forma(h.get('form_score'))}">{h.get('form_score', 50):.0f}</td>
+  <td class="ex-racha">{_ultimos5_html(u5_h)}</td>
+  <td class="ex-visitante"><a href="{url_google}" target="_blank">{a['nombre']}</a></td>
+  <td class="ex-elo {_clase_rating(a.get('rating'))}">{a.get('rating', 0):.0f}</td>
+  <td class="ex-forma {_clase_forma(a.get('form_score'))}">{a.get('form_score', 50):.0f}</td>
+  <td class="ex-racha">{_ultimos5_html(u5_a)}</td>
+  <td class="ex-diff" style="color:{'#22c55e' if diff > 0 else '#ef4444' if diff < 0 else '#94a3b8'}">{diff_signo}{diff:.0f}</td>
+  <td class="ex-pred best">{prob_l:.0f}% | {prob_e:.0f}% | {prob_v:.0f}%</td>
+</tr>
+'''
+
     ranking_rows_forma = ""
     for i, eq in enumerate(ranking_forma, 1):
         ranking_rows_forma += f'''<tr>
 <td class="rk">{i}</td>
 <td class="rk-name">{eq['nombre']}</td>
+<td class="rk-pais" data-pais="{eq.get('pais', '')}">{eq.get('pais', '')}</td>
 <td><span class="elo {_clase_rating(eq.get('rating'))}">{eq.get('rating', 0):.0f}</span></td>
 <td class="{_clase_forma(eq.get('form_score'))}">{eq.get('form_score', 50):.0f}</td>
 <td>{_icono_momentum(eq.get('momentum'))}</td>
 <td>{_streak_html(eq.get('streak'))}</td>
 <td>{_overperformance_badge(eq.get('overperformance'))}</td>
-<td class="rk-pais" data-pais="{eq.get('pais', '')}">{eq.get('pais', '')}</td>
 </tr>
 '''
 
@@ -305,11 +341,11 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker"):
         ranking_rows_elo += f'''<tr>
 <td class="rk">{i}</td>
 <td class="rk-name">{eq['nombre']}</td>
+<td class="rk-pais" data-pais="{eq.get('pais', '')}">{eq.get('pais', '')}</td>
 <td><span class="elo {_clase_rating(eq.get('rating'))}">{eq.get('rating', 0):.0f}</span></td>
 <td>{_badge_provisional(eq.get('partidos_jugados'))}</td>
 <td class="{_clase_forma(eq.get('form_score'))}">{eq.get('form_score', 50):.0f}</td>
 <td>{_icono_momentum(eq.get('momentum'))}</td>
-<td class="rk-pais" data-pais="{eq.get('pais', '')}">{eq.get('pais', '')}</td>
 </tr>
 '''
 
@@ -364,6 +400,8 @@ body {{ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', san
            font-size: 0.9em; outline: none; }}
 .search:focus {{ border-color: var(--accent); }}
 .search::placeholder {{ color: var(--text3); }}
+.date-select {{ padding: 8px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; color: var(--text); font-size: 0.9em; outline: none; cursor: pointer; }}
+.date-select:focus {{ border-color: var(--accent); }}
 
 /* Sort buttons */
 .sort-btns {{ display: flex; gap: 4px; }}
@@ -381,6 +419,9 @@ body {{ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', san
 .tab:hover {{ border-color: var(--accent); color: var(--text); }}
 .tab.active {{ background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 600; }}
 .tab .count {{ font-size: 0.8em; opacity: 0.7; margin-left: 4px; }}
+
+.view-tabs {{ display: flex; gap: 4px; margin-bottom: 16px; justify-content: center; }}
+.view-tabs .tab {{ padding: 8px 20px; font-size: 0.9em; }}
 
 /* League filter */
 .league-filter {{ display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 16px; }}
@@ -488,6 +529,39 @@ tr:hover {{ background: var(--surface2); }}
 .footer {{ text-align: center; color: var(--text3); font-size: 0.75em; padding: 24px 0; }}
 .hidden {{ display: none !important; }}
 
+/* Excel table styles */
+.excel-section {{ margin-top: 32px; background: var(--surface); border-radius: 12px; padding: 16px; border: 1px solid var(--border); }}
+.excel-header {{ display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }}
+.excel-header h3 {{ color: var(--accent); font-size: 1.1em; }}
+.excel-controls {{ display: flex; gap: 4px; }}
+.excel-btn {{ padding: 6px 12px; background: var(--surface2); border: 1px solid var(--border); border-radius: 6px; color: var(--text2); cursor: pointer; font-size: 0.82em; }}
+.excel-btn.active {{ background: var(--accent); color: var(--bg); border-color: var(--accent); }}
+.excel-table-container {{ overflow-x: auto; }}
+.excel-table {{ width: 100%; border-collapse: collapse; font-size: 0.82em; }}
+.excel-table th {{ background: var(--surface2); color: var(--text3); padding: 8px 10px; text-align: left; font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.04em; position: sticky; top: 0; }}
+.excel-table td {{ padding: 7px 10px; border-bottom: 1px solid var(--border); white-space: nowrap; }}
+.excel-table tr:hover {{ background: var(--surface2); }}
+.excel-table a {{ color: var(--text); text-decoration: none; }}
+.excel-table a:hover {{ color: var(--accent); text-decoration: underline; }}
+.ex-fecha {{ color: var(--text3); font-size: 0.9em; }}
+.ex-hora {{ color: var(--accent); font-weight: 600; }}
+.ex-local, .ex-visitante {{ font-weight: 500; max-width: 180px; overflow: hidden; text-overflow: ellipsis; }}
+.ex-elo {{ font-weight: 700; padding: 2px 6px; border-radius: 8px; }}
+.ex-forma {{ font-weight: 600; }}
+.ex-racha {{ font-size: 0.9em; }}
+.ex-goles {{ color: var(--text2); font-size: 0.9em; }}
+.ex-marcador {{ font-weight: 700; color: var(--accent); font-size: 1.1em; text-align: center; }}
+.ex-diff {{ font-weight: 700; }}
+.ex-pred {{ font-size: 0.9em; color: var(--text2); }}
+.ex-pred.best {{ color: var(--accent); font-weight: 600; }}
+.ultimos5 {{ display: inline-flex; gap: 2px; }}
+.u5-v {{ background: rgba(34,197,94,0.2); color: var(--green); padding: 1px 4px; border-radius: 3px; font-weight: 700; font-size: 0.85em; }}
+.u5-d {{ background: rgba(239,68,68,0.2); color: var(--red); padding: 1px 4px; border-radius: 3px; font-weight: 700; font-size: 0.85em; }}
+.u5-e {{ background: rgba(148,163,184,0.15); color: var(--text3); padding: 1px 4px; border-radius: 3px; font-weight: 700; font-size: 0.85em; }}
+.live-indicator {{ color: var(--red) !important; font-weight: 700; animation: pulse 1.5s infinite; }}
+.live-row {{ background: rgba(239,68,68,0.05) !important; }}
+@keyframes pulse {{ 0%, 100% {{ opacity: 1; }} 50% {{ opacity: 0.5; }} }}
+
 @media (max-width: 768px) {{
   .match-grid {{ grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 8px; }}
   .mc {{ padding: 10px; }}
@@ -519,11 +593,16 @@ tr:hover {{ background: var(--surface2); }}
 
   <div class="controls">
     <input type="text" class="search" id="searchBox" placeholder="Buscar equipo..." oninput="aplicarFiltros()">
+    <select class="date-select" id="dateSelect" onchange="cambiarFecha(this.value)">
+      <option value="hoy">Hoy</option>
+      <option value="ayer">Ayer</option>
+      <option value="en-vivo">🔴 En Vivo</option>
+    </select>
     <div class="sort-btns">
-      <button class="sort-btn" onclick="sortCards('elo-desc')" title="Mayor ELO primero">ELO ↓</button>
-      <button class="sort-btn" onclick="sortCards('elo-asc')" title="Menor ELO primero">ELO ↑</button>
-      <button class="sort-btn" onclick="sortCards('form-desc')" title="Mayor forma primero">Forma ↓</button>
-      <button class="sort-btn" onclick="sortCards('form-asc')" title="Menor forma primero">Forma ↑</button>
+      <button class="sort-btn" onclick="sortExcel('elo-desc')" title="Mayor ELO primero">ELO ↓</button>
+      <button class="sort-btn" onclick="sortExcel('elo-asc')" title="Menor ELO primero">ELO ↑</button>
+      <button class="sort-btn" onclick="sortExcel('form-desc')" title="Mayor forma primero">Forma ↓</button>
+      <button class="sort-btn" onclick="sortExcel('form-asc')" title="Menor forma primero">Forma ↑</button>
     </div>
   </div>
 
@@ -539,7 +618,38 @@ tr:hover {{ background: var(--surface2); }}
     <div class="lf-btn active" data-slug="todas" onclick="setLiga('todas')">Todas</div>
   </div>
 
-  <div class="match-grid" id="matchList">
+  <div class="view-tabs" id="viewTabs">
+    <div class="tab active" data-view="excel" onclick="setView('excel')">Tabla Excel</div>
+    <div class="tab" data-view="cards" onclick="setView('cards')">Tarjetas</div>
+  </div>
+
+  <div class="excel-section" id="excelSection">
+    <div class="excel-table-container">
+      <table class="excel-table">
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Local</th>
+            <th>ELO</th>
+            <th>Forma</th>
+            <th>Racha</th>
+            <th>Visitante</th>
+            <th>ELO</th>
+            <th>Forma</th>
+            <th>Racha</th>
+            <th>Diff</th>
+            <th>Pred</th>
+          </tr>
+        </thead>
+        <tbody>
+          {excel_rows}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="match-grid hidden" id="matchList">
     {match_cards}
   </div>
 
@@ -689,15 +799,135 @@ function sortCards(criterion) {{
 
 initLeagueButtons();
 initCountryButtons();
+
+function setView(view) {{
+  document.querySelectorAll('#viewTabs .tab').forEach(t => t.classList.toggle('active', t.dataset.view === view));
+  const excelSection = document.getElementById('excelSection');
+  const matchGrid = document.getElementById('matchList');
+  if (view === 'excel') {{
+    excelSection.classList.remove('hidden');
+    matchGrid.classList.add('hidden');
+  }} else {{
+    excelSection.classList.add('hidden');
+    matchGrid.classList.remove('hidden');
+  }}
+}}
+
+function cambiarFecha(valor) {{
+  if (valor === 'hoy') {{
+    window.location.href = window.location.href.split('?')[0];
+  }} else if (valor === 'ayer') {{
+    const fecha = new Date();
+    fecha.setDate(fecha.getDate() - 1);
+    const yyyy = fecha.getFullYear();
+    const mm = String(fecha.getMonth() + 1).padStart(2, '0');
+    const dd = String(fecha.getDate()).padStart(2, '0');
+    window.location.href = window.location.href.split('?')[0] + '?fecha=' + yyyy + '-' + mm + '-' + dd;
+  }} else if (valor === 'en-vivo') {{
+    cargarEnVivo();
+  }}
+}}
+
+async function cargarEnVivo() {{
+  const tbody = document.querySelector('.excel-table tbody');
+  tbody.innerHTML = '<tr><td colspan="12" style="text-align:center; padding:20px;">Cargando partidos en vivo...</td></tr>';
+  
+  try {{
+    const response = await fetch('https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard');
+    const data = await response.json();
+    
+    let html = '';
+    if (data.events && data.events.length > 0) {{
+      data.events.forEach(event => {{
+        const competiciones = event.competitions || [];
+        competiciones.forEach(comp => {{
+          const equipos = comp.competitors || [];
+          if (equipos.length >= 2) {{
+            const local = equipos.find(e => e.homeAway === 'home') || equipos[0];
+            const visitante = equipos.find(e => e.homeAway === 'away') || equipos[1];
+            const marcador = comp.status?.type?.completed ? 
+              `${{local.score || 0}} - ${{visitante.score || 0}}` : 
+              'EN VIVO';
+            const hora = new Date(event.date).toLocaleTimeString('es-EC', {{ hour: '2-digit', minute: '2-digit' }});
+            
+            html += `<tr class="excel-row live-row">
+              <td class="ex-fecha">${{event.date?.split('T')[0] || ''}}</td>
+              <td class="ex-hora live-indicator">${{hora}}</td>
+              <td class="ex-local">${{local.team?.displayName || local.team?.shortDisplayName || 'N/A'}}</td>
+              <td class="ex-elo">-</td>
+              <td class="ex-forma">-</td>
+              <td class="ex-racha">-</td>
+              <td class="ex-visitante">${{visitante.team?.displayName || visitante.team?.shortDisplayName || 'N/A'}}</td>
+              <td class="ex-elo">-</td>
+              <td class="ex-forma">-</td>
+              <td class="ex-racha">-</td>
+              <td class="ex-marcador">${{marcador}}</td>
+              <td class="ex-pred">${{comp.status?.type?.shortDetail || ''}}</td>
+            </tr>`;
+          }}
+        }});
+      }});
+    }}
+    
+    if (html === '') {{
+      html = '<tr><td colspan="12" style="text-align:center; padding:20px;">No hay partidos en vivo ahora</td></tr>';
+    }}
+    
+    tbody.innerHTML = html;
+  }} catch (error) {{
+    tbody.innerHTML = '<tr><td colspan="12" style="text-align:center; padding:20px; color:#ef4444;">Error al cargar partidos en vivo</td></tr>';
+  }}
+}}
+
+let intervaloVivo = null;
+function sortExcel(criterion) {{
+  document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  const tbody = document.querySelector('.excel-table tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  
+  rows.sort((a, b) => {{
+    if (criterion === 'elo-desc') {{
+      return parseFloat(b.dataset.eloH || 0) - parseFloat(a.dataset.eloH || 0);
+    }} else if (criterion === 'elo-asc') {{
+      return parseFloat(a.dataset.eloH || 0) - parseFloat(b.dataset.eloH || 0);
+    }} else if (criterion === 'form-desc') {{
+      return parseFloat(b.dataset.formH || 0) - parseFloat(a.dataset.formH || 0);
+    }} else if (criterion === 'form-asc') {{
+      return parseFloat(a.dataset.formH || 0) - parseFloat(b.dataset.formH || 0);
+    }}
+    return 0;
+  }});
+  
+  rows.forEach(row => tbody.appendChild(row));
+}}
+
+function aplicarFiltros() {{
+  const q = document.getElementById('searchBox').value.toLowerCase().trim();
+  document.querySelectorAll('.excel-row').forEach(row => {{
+    const local = row.dataset.home || '';
+    const away = row.dataset.away || '';
+    const show = !q || local.includes(q) || away.includes(q);
+    row.style.display = show ? '' : 'none';
+  }});
+}}
 </script>
 </body>
 </html>'''
     return html
 
 
-def generar(predicciones=None, archivo_entrada=None, archivo_salida=None):
+def generar(predicciones=None, archivo_entrada=None, archivo_salida=None, fecha=None):
     if predicciones is None:
-        archivo_entrada = archivo_entrada or ARCHIVO_PREDICCIONES
+        if fecha:
+            archivo_fecha = DATA_DIR / f"predicciones_{fecha}.json"
+            if archivo_fecha.exists():
+                archivo_entrada = archivo_fecha
+            else:
+                archivo_entrada = archivo_entrada or ARCHIVO_PREDICCIONES
+        else:
+            archivo_entrada = archivo_entrada or ARCHIVO_PREDICCIONES
+        
         if not archivo_entrada.exists():
             print(f"[ERROR] No existe {archivo_entrada}. Ejecuta predict.py primero.")
             return None
@@ -719,5 +949,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Genera el dashboard HTML.")
     parser.add_argument("--entrada", help="Archivo JSON de predicciones")
     parser.add_argument("--salida", help="Archivo HTML de salida")
+    parser.add_argument("--fecha", help="Fecha YYYY-MM-DD para cargar predicciones específicas")
     args = parser.parse_args()
-    generar(archivo_entrada=args.entrada, archivo_salida=args.salida)
+    generar(archivo_entrada=args.entrada, archivo_salida=args.salida, fecha=args.fecha)
