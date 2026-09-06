@@ -967,7 +967,9 @@ async function cargarEnVivo() {{
             const local = equiposComp.find(e => e.homeAway === 'home') || equiposComp[0];
             const visitante = equiposComp.find(e => e.homeAway === 'away') || equiposComp[1];
             const marcador = `${{local.score || 0}} - ${{visitante.score || 0}}`;
-            const hora = new Date(event.date).toLocaleTimeString('es-EC', {{ hour: '2-digit', minute: '2-digit' }});
+            const fechaEcuador = new Date(new Date(event.date).getTime() - 5 * 60 * 60 * 1000);
+            const fechaLocal = fechaEcuador.toISOString().split('T')[0];
+            const hora = fechaEcuador.toLocaleTimeString('es-EC', {{ hour: '2-digit', minute: '2-digit' }});
             
             const nombreLocal = local.team?.displayName || local.team?.shortDisplayName || 'N/A';
             const nombreVisitante = visitante.team?.displayName || visitante.team?.shortDisplayName || 'N/A';
@@ -984,7 +986,7 @@ async function cargarEnVivo() {{
             const diff = (eqLocal && eqVisitante) ? (eqLocal.rating - eqVisitante.rating).toFixed(0) : '-';
             
             html += `<tr class="excel-row live-row">
-              <td class="ex-fecha">${{event.date?.split('T')[0] || ''}}</td>
+              <td class="ex-fecha">${{fechaLocal}}</td>
               <td class="ex-hora live-indicator">${{hora}}</td>
               <td class="ex-local">${{nombreLocal}}</td>
               <td class="ex-elo ${{claseRating(eqLocal?.rating)}}">${{eloLocal}}</td>
