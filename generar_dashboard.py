@@ -293,7 +293,7 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None)
             marcador = "?"
             acierto = ""
 
-        excel_rows += f'''<tr class="excel-row" data-slug="{slug}" data-fecha="{fecha_d}" data-elo-h="{h.get('rating', 0):.0f}" data-form-h="{h.get('form_score', 50):.0f}" data-home="{h['nombre'].lower()}" data-away="{a['nombre'].lower()}" data-diff="{abs(diff):.0f}">
+        excel_rows += f'''<tr class="excel-row" data-slug="{slug}" data-fecha="{fecha_d}" data-elo-h="{h.get('rating', 0):.0f}" data-form-h="{h.get('form_score', 50):.0f}" data-home="{h['nombre'].lower()}" data-away="{a['nombre'].lower()}" data-diff="{diff:.0f}">
   <td class="ex-fecha">{fecha_d}</td>
   <td class="ex-hora">{hora}</td>
   <td class="ex-local"><a href="{url_google}" target="_blank">{h['nombre']}</a></td>
