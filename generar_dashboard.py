@@ -33,11 +33,19 @@ def _cargar_resultados_fecha(fecha_iso):
         resultados = {}
         for p in datos.get("partidos", []):
             if p.get("fecha") == fecha_iso:
-                key = f"{p.get('equipo_local', {}).get('name', '').lower()}_{p.get('equipo_visitante', {}).get('name', '').lower()}"
-                resultados[key] = {
-                    "goles_local": p.get("goles_local", 0),
-                    "goles_visitante": p.get("goles_visitante", 0)
-                }
+                fixture_id = p.get("fixture_id", "")
+                if fixture_id:
+                    resultados[f"fx:{fixture_id}"] = {
+                        "goles_local": p.get("goles_local", 0),
+                        "goles_visitante": p.get("goles_visitante", 0)
+                    }
+                nombre_l = p.get("equipo_local", {}).get("name", "").lower()
+                nombre_v = p.get("equipo_visitante", {}).get("name", "").lower()
+                if nombre_l and nombre_v:
+                    resultados[f"{nombre_l}_{nombre_v}"] = {
+                        "goles_local": p.get("goles_local", 0),
+                        "goles_visitante": p.get("goles_visitante", 0)
+                    }
         return resultados
     except Exception:
         return {}
@@ -262,13 +270,28 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None)
         u5_h = h.get("ultimos5", {})
         u5_a = a.get("ultimos5", {})
 
+        fixture_id = p.get("fixture_id", "")
+        key_fx = f"fx:{fixture_id}" if fixture_id else ""
         key = f"{h['nombre'].lower()}_{a['nombre'].lower()}"
         key_inv = f"{a['nombre'].lower()}_{h['nombre'].lower()}"
-        resultado = resultados.get(key) or resultados.get(key_inv)
+        resultado = resultados.get(key_fx) if key_fx else None
+        if not resultado:
+            resultado = resultados.get(key) or resultados.get(key_inv)
         if resultado:
             marcador = f"{resultado['goles_local']} - {resultado['goles_visitante']}"
+            gl = resultado['goles_local']
+            ga = resultado['goles_visitante']
+            max_prob = max(prob_l, prob_v)
+            if max_prob > 69:
+                if prob_l > prob_v:
+                    acierto = "✓" if gl > ga else "✗"
+                else:
+                    acierto = "✓" if ga > gl else "✗"
+            else:
+                acierto = "-"
         else:
             marcador = "?"
+            acierto = ""
 
         excel_rows += f'''<tr class="excel-row" data-slug="{slug}" data-fecha="{fecha_d}" data-elo-h="{h.get('rating', 0):.0f}" data-form-h="{h.get('form_score', 50):.0f}" data-home="{h['nombre'].lower()}" data-away="{a['nombre'].lower()}" data-diff="{abs(diff):.0f}">
   <td class="ex-fecha">{fecha_d}</td>
@@ -284,6 +307,7 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None)
   <td class="ex-racha">{_ultimos5_html(u5_a)}</td>
   <td class="ex-diff" style="color:{'#22c55e' if diff > 0 else '#ef4444' if diff < 0 else '#94a3b8'}">{diff_signo}{diff:.0f}</td>
   <td class="ex-pred best">{prob_l:.0f}% | {prob_e:.0f}% | {prob_v:.0f}%</td>
+  <td class="ex-acierto {'acierto-ok' if acierto == '✓' else 'acierto-fail' if acierto == '✗' else ''}">{acierto}</td>
 </tr>
 '''
 
@@ -526,6 +550,9 @@ tr:hover {{ background: var(--surface2); }}
 .live-indicator {{ color: var(--red) !important; font-weight: 700; animation: pulse 1.5s infinite; }}
 .live-row {{ background: rgba(239,68,68,0.05) !important; }}
 @keyframes pulse {{ 0%, 100% {{ opacity: 1; }} 50% {{ opacity: 0.5; }} }}
+.ex-acierto {{ text-align: center; font-weight: 700; font-size: 1.1em; }}
+.acierto-ok {{ color: var(--green); }}
+.acierto-fail {{ color: var(--red); }}
 
 @media (max-width: 768px) {{
   .match-grid {{ grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 8px; }}
@@ -592,6 +619,7 @@ tr:hover {{ background: var(--surface2); }}
             <th>Racha</th>
             <th>Diff</th>
             <th>Pred</th>
+            <th>Acierto</th>
           </tr>
         </thead>
         <tbody>
@@ -765,42 +793,97 @@ function cambiarFecha(valor) {{
 
 async function cargarEnVivo() {{
   const tbody = document.querySelector('.excel-table tbody');
-  tbody.innerHTML = '<tr><td colspan="13" style="text-align:center; padding:20px;">Cargando partidos en vivo...</td></tr>';
+  tbody.innerHTML = '<tr><td colspan="14" style="text-align:center; padding:20px;">Cargando partidos en vivo...</td></tr>';
   
   try {{
-    const response = await fetch('https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard');
-    const data = await response.json();
+    const [resESPN, resRatings] = await Promise.all([
+      fetch('https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard'),
+      fetch('data/ratings_propios.json')
+    ]);
+    const dataESPN = await resESPN.json();
+    const dataRatings = await resRatings.json();
+    const equipos = dataRatings.equipos || {{}};
+    
+    function buscarElo(nombre) {{
+      const nombreLower = nombre.toLowerCase();
+      for (const [key, eq] of Object.entries(equipos)) {{
+        if (eq.nombre && eq.nombre.toLowerCase().includes(nombreLower)) {{
+          return eq;
+        }}
+      }}
+      return null;
+    }}
+    
+    function claseRating(r) {{
+      if (!r) return '';
+      if (r >= 1700) return 'elite';
+      if (r >= 1550) return 'above';
+      if (r >= 1400) return 'average';
+      return 'below';
+    }}
+    
+    function claseForma(f) {{
+      if (!f) return '';
+      if (f >= 70) return 'high';
+      if (f >= 40) return 'mid';
+      return 'low';
+    }}
+    
+    function streakHtml(s) {{
+      if (!s) return '-';
+      const t = s.tipo || 'N/A';
+      const c = s.cantidad || 0;
+      if (t === 'W') return `<span class="streak-w">${{c}}V</span>`;
+      if (t === 'D') return `<span class="streak-d">${{c}}E</span>`;
+      if (t === 'L') return `<span class="streak-l">${{c}}D</span>`;
+      return '-';
+    }}
     
     let html = '';
-    if (data.events && data.events.length > 0) {{
-      data.events.forEach(event => {{
+    if (dataESPN.events && dataESPN.events.length > 0) {{
+      dataESPN.events.forEach(event => {{
         const competiciones = event.competitions || [];
         competiciones.forEach(comp => {{
           const status = comp.status?.type?.name || '';
           if (status !== 'STATUS_IN_PROGRESS' && status !== 'STATUS_HALFTIME' && status !== 'STATUS_SECOND_HALF' && status !== 'STATUS_FIRST_HALF' && status !== 'STATUS_END_PERIOD') {{
             return;
           }}
-          const equipos = comp.competitors || [];
-          if (equipos.length >= 2) {{
-            const local = equipos.find(e => e.homeAway === 'home') || equipos[0];
-            const visitante = equipos.find(e => e.homeAway === 'away') || equipos[1];
+          const equiposComp = comp.competitors || [];
+          if (equiposComp.length >= 2) {{
+            const local = equiposComp.find(e => e.homeAway === 'home') || equiposComp[0];
+            const visitante = equiposComp.find(e => e.homeAway === 'away') || equiposComp[1];
             const marcador = `${{local.score || 0}} - ${{visitante.score || 0}}`;
             const hora = new Date(event.date).toLocaleTimeString('es-EC', {{ hour: '2-digit', minute: '2-digit' }});
+            
+            const nombreLocal = local.team?.displayName || local.team?.shortDisplayName || 'N/A';
+            const nombreVisitante = visitante.team?.displayName || visitante.team?.shortDisplayName || 'N/A';
+            
+            const eqLocal = buscarElo(nombreLocal);
+            const eqVisitante = buscarElo(nombreVisitante);
+            
+            const eloLocal = eqLocal ? eqLocal.rating.toFixed(0) : '-';
+            const eloVisitante = eqVisitante ? eqVisitante.rating.toFixed(0) : '-';
+            const formaLocal = eqLocal ? eqLocal.form_score.toFixed(0) : '-';
+            const formaVisitante = eqVisitante ? eqVisitante.form_score.toFixed(0) : '-';
+            const streakLocal = eqLocal ? streakHtml(eqLocal.streak) : '-';
+            const streakVisitante = eqVisitante ? streakHtml(eqVisitante.streak) : '-';
+            const diff = (eqLocal && eqVisitante) ? (eqLocal.rating - eqVisitante.rating).toFixed(0) : '-';
             
             html += `<tr class="excel-row live-row">
               <td class="ex-fecha">${{event.date?.split('T')[0] || ''}}</td>
               <td class="ex-hora live-indicator">${{hora}}</td>
-              <td class="ex-local">${{local.team?.displayName || local.team?.shortDisplayName || 'N/A'}}</td>
-              <td class="ex-elo">-</td>
-              <td class="ex-forma">-</td>
-              <td class="ex-racha">-</td>
+              <td class="ex-local">${{nombreLocal}}</td>
+              <td class="ex-elo ${{claseRating(eqLocal?.rating)}}">${{eloLocal}}</td>
+              <td class="ex-forma ${{claseForma(eqLocal?.form_score)}}">${{formaLocal}}</td>
+              <td class="ex-racha">${{streakLocal}}</td>
               <td class="ex-marcador">${{marcador}}</td>
-              <td class="ex-visitante">${{visitante.team?.displayName || visitante.team?.shortDisplayName || 'N/A'}}</td>
-              <td class="ex-elo">-</td>
-              <td class="ex-forma">-</td>
-              <td class="ex-racha">-</td>
-              <td class="ex-diff">-</td>
+              <td class="ex-visitante">${{nombreVisitante}}</td>
+              <td class="ex-elo ${{claseRating(eqVisitante?.rating)}}">${{eloVisitante}}</td>
+              <td class="ex-forma ${{claseForma(eqVisitante?.form_score)}}">${{formaVisitante}}</td>
+              <td class="ex-racha">${{streakVisitante}}</td>
+              <td class="ex-diff">${{diff}}</td>
               <td class="ex-pred">${{comp.status?.type?.shortDetail || ''}}</td>
+              <td class="ex-acierto"></td>
             </tr>`;
           }}
         }});
@@ -808,12 +891,12 @@ async function cargarEnVivo() {{
     }}
     
     if (html === '') {{
-      html = '<tr><td colspan="13" style="text-align:center; padding:20px;">No hay partidos en vivo ahora</td></tr>';
+      html = '<tr><td colspan="14" style="text-align:center; padding:20px;">No hay partidos en vivo ahora</td></tr>';
     }}
     
     tbody.innerHTML = html;
   }} catch (error) {{
-    tbody.innerHTML = '<tr><td colspan="13" style="text-align:center; padding:20px; color:#ef4444;">Error al cargar partidos en vivo</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="14" style="text-align:center; padding:20px; color:#ef4444;">Error al cargar partidos en vivo</td></tr>';
   }}
 }}
 
