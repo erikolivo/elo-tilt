@@ -585,6 +585,7 @@ tr:hover {{ background: var(--surface2); }}
     <select class="date-select" id="dateSelect" onchange="cambiarFecha(this.value)">
       <option value="hoy">Hoy</option>
       <option value="ayer">Ayer</option>
+      <option value="manana">Mañana</option>
       <option value="en-vivo">🔴 En Vivo</option>
     </select>
     <div class="sort-btns">
@@ -781,6 +782,8 @@ function cambiarFecha(valor) {{
     window.location.href = window.location.href.split('?')[0];
   }} else if (valor === 'ayer') {{
     cargarHistorial('ayer');
+  }} else if (valor === 'manana') {{
+    cargarHistorial('manana');
   }} else if (valor === 'en-vivo') {{
     cargarEnVivo();
   }}
@@ -788,26 +791,50 @@ function cambiarFecha(valor) {{
 
 async function cargarHistorial(cuando) {{
   const tbody = document.querySelector('.excel-table tbody');
-  tbody.innerHTML = '<tr><td colspan="14" style="text-align:center; padding:20px;">Cargando resultados...</td></tr>';
+  tbody.innerHTML = '<tr><td colspan="14" style="text-align:center; padding:20px;">Cargando...</td></tr>';
   
   const fecha = new Date();
   if (cuando === 'ayer') fecha.setDate(fecha.getDate() - 1);
+  if (cuando === 'manana') fecha.setDate(fecha.getDate() + 1);
   const yyyy = fecha.getFullYear();
   const mm = String(fecha.getMonth() + 1).padStart(2, '0');
   const dd = String(fecha.getDate()).padStart(2, '0');
   const fechaIso = yyyy + '-' + mm + '-' + dd;
-  const archivo = 'data/historial_partidos/' + yyyy + '-' + mm + '.json';
   
   try {{
-    const [resHistorial, resRatings] = await Promise.all([
-      fetch(archivo),
-      fetch('data/ratings_propios.json')
-    ]);
-    const dataHistorial = await resHistorial.json();
+    const resRatings = await fetch('data/ratings_propios.json');
     const dataRatings = await resRatings.json();
     const equipos = dataRatings.equipos || {{}};
     
-    const partidos = (dataHistorial.partidos || []).filter(p => p.fecha === fechaIso);
+    let partidos = [];
+    
+    if (cuando === 'manana') {{
+      const resESPN = await fetch('https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard?dates=' + yyyy + mm + dd);
+      const dataESPN = await resESPN.json();
+      if (dataESPN.events) {{
+        dataESPN.events.forEach(event => {{
+          const comp = event.competitions?.[0];
+          if (!comp) return;
+          const equiposComp = comp.competitors || [];
+          if (equiposComp.length < 2) return;
+          const local = equiposComp.find(e => e.homeAway === 'home') || equiposComp[0];
+          const visitante = equiposComp.find(e => e.homeAway === 'away') || equiposComp[1];
+          partidos.push({{
+            fecha: fechaIso,
+            equipo_local: {{ name: local.team?.displayName || 'N/A' }},
+            equipo_visitante: {{ name: visitante.team?.displayName || 'N/A' }},
+            goles_local: null,
+            goles_visitante: null,
+            hora: new Date(event.date).toLocaleTimeString('es-EC', {{ hour: '2-digit', minute: '2-digit', timeZone: 'America/Guayaquil' }})
+          }});
+        }});
+      }}
+    }} else {{
+      const archivo = 'data/historial_partidos/' + yyyy + '-' + mm + '.json';
+      const resHistorial = await fetch(archivo);
+      const dataHistorial = await resHistorial.json();
+      partidos = (dataHistorial.partidos || []).filter(p => p.fecha === fechaIso);
+    }}
     
     function buscarElo(nombre) {{
       const nombreLower = nombre.toLowerCase();
@@ -848,9 +875,10 @@ async function cargarHistorial(cuando) {{
     partidos.forEach(p => {{
       const nombreLocal = p.equipo_local?.name || 'N/A';
       const nombreVisitante = p.equipo_visitante?.name || 'N/A';
-      const gl = p.goles_local || 0;
-      const ga = p.goles_visitante || 0;
-      const marcador = gl + ' - ' + ga;
+      const gl = p.goles_local;
+      const ga = p.goles_visitante;
+      const marcador = gl !== null ? gl + ' - ' + ga : '?';
+      const hora = p.hora || '-';
       
       const eqLocal = buscarElo(nombreLocal);
       const eqVisitante = buscarElo(nombreVisitante);
@@ -863,8 +891,8 @@ async function cargarHistorial(cuando) {{
       const streakVisitante = eqVisitante ? streakHtml(eqVisitante.streak) : '-';
       const diff = (eqLocal && eqVisitante) ? (eqLocal.rating - eqVisitante.rating).toFixed(0) : '-';
       
-      let acierto = '-';
-      if (eqLocal && eqVisitante) {{
+      let acierto = '';
+      if (gl !== null && eqLocal && eqVisitante) {{
         const probLocal = 50 + (eqLocal.rating - eqVisitante.rating) / 40;
         const probVisitante = 100 - probLocal - 25;
         const maxProb = Math.max(probLocal, probVisitante);
@@ -879,7 +907,7 @@ async function cargarHistorial(cuando) {{
       
       html += `<tr class="excel-row">
         <td class="ex-fecha">${{fechaIso}}</td>
-        <td class="ex-hora">-</td>
+        <td class="ex-hora">${{hora}}</td>
         <td class="ex-local">${{nombreLocal}}</td>
         <td class="ex-elo ${{claseRating(eqLocal?.rating)}}">${{eloLocal}}</td>
         <td class="ex-forma ${{claseForma(eqLocal?.form_score)}}">${{formaLocal}}</td>
@@ -896,12 +924,12 @@ async function cargarHistorial(cuando) {{
     }});
     
     if (html === '') {{
-      html = '<tr><td colspan="14" style="text-align:center; padding:20px;">No hay resultados para esta fecha</td></tr>';
+      html = '<tr><td colspan="14" style="text-align:center; padding:20px;">No hay partidos para esta fecha</td></tr>';
     }}
     
     tbody.innerHTML = html;
   }} catch (error) {{
-    tbody.innerHTML = '<tr><td colspan="14" style="text-align:center; padding:20px; color:#ef4444;">Error al cargar resultados</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="14" style="text-align:center; padding:20px; color:#ef4444;">Error al cargar datos</td></tr>';
   }}
 }}
 
