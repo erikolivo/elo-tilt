@@ -418,8 +418,7 @@ body {{ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', san
             min-width: 48px; text-align: right; }}
 .mc-prob.best {{ color: var(--accent); }}
 
-.mc-draw-row {{ text-align: center; padding: 4px 0; font-size: 0.85em;
-                background: var(--surface2); border-radius: 6px; margin: 2px 0; }}
+.mc-draw-row {{ text-align: center; padding: 2px 0; font-size: 0.85em; }}
 .mc-draw-pct {{ color: var(--text2); font-weight: 700; font-size: 1.2em; }}
 .mc-draw-label {{ color: var(--text3); font-size: 0.8em; font-weight: 500; }}
 
