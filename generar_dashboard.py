@@ -217,7 +217,6 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker"):
 
     all_ligas_json = json.dumps([{"slug": k, "nombre": v["nombre"]} for k, v in sorted(ligas.items())])
 
-    match_cards = ""
     excel_rows = ""
     for p in predicciones:
         h = p["equipo_local"]
@@ -226,82 +225,18 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker"):
         hora = p.get("hora", "")
         fecha_d = p.get("fecha_display", "")
         diff = p.get("diff_elo", 0)
-        conf = p.get("confianza", 0)
         slug = p.get("liga_slug", "")
-
-        es_dest = _es_destacado(p)
-        es_par = _es_sorpresa_potencial(p)
-        clase_card = ""
-        if es_dest:
-            clase_card += " card-highlight"
-        elif es_par:
-            clase_card += " card-suspense"
 
         prob_l = pred["prob_local"]
         prob_e = pred["prob_empate"]
         prob_v = pred["prob_visitante"]
 
-        if prob_l >= prob_e and prob_l >= prob_v:
-            pred_clase_l, pred_clase_e, pred_clase_v = "best", "", ""
-        elif prob_v >= prob_e and prob_v >= prob_l:
-            pred_clase_l, pred_clase_e, pred_clase_v = "", "", "best"
-        else:
-            pred_clase_l, pred_clase_e, pred_clase_v = "", "best", ""
-
         diff_signo = "+" if diff > 0 else ""
-        gt_h = h.get("goal_trend", {})
-        gt_a = a.get("goal_trend", {})
-        gt_h_d = gt_h.get("diferencia", 0) if gt_h else 0
-        gt_a_d = gt_a.get("diferencia", 0) if gt_a else 0
-        gt_h_s = f"+{gt_h_d}" if gt_h_d > 0 else str(gt_h_d)
-        gt_a_s = f"+{gt_a_d}" if gt_a_d > 0 else str(gt_a_d)
 
         nombre_limpio_h = h['nombre'].replace("'", "").replace('"', '')
         nombre_limpio_a = a['nombre'].replace("'", "").replace('"', '')
         busqueda = f"{nombre_limpio_h} vs {nombre_limpio_a} {fecha_d} site:bessoccer.com"
         url_google = f"https://www.google.com/search?q={busqueda.replace(' ', '+')}"
-
-        match_cards += f'''<a href="{url_google}" target="_blank" class="mc-link{clase_card}" data-slug="{slug}" data-fecha="{fecha_d}" data-elo-h="{h.get('rating', 0):.0f}" data-form-h="{h.get('form_score', 50):.0f}" data-dest="{1 if es_dest else 0}" data-par="{1 if _es_parejo(p) else 0}" data-sorp="{1 if _es_sorpresa_potencial(p) else 0}" data-ajuste="{_score_ajuste_forma(p):.1f}" data-relev="{_score_relevancia(p):.1f}" data-home="{h['nombre'].lower()}" data-away="{a['nombre'].lower()}" data-diff="{abs(diff):.0f}">
-  <div class="mc-datetime">
-    <span class="mc-date">{fecha_d}</span>
-    <span class="mc-time">{hora}</span>
-  </div>
-  <div class="mc-liga-tag">{p.get("liga", "")}</div>
-  <div class="mc-teams">
-    <div class="mc-team-row">
-      <div class="mc-team-info">
-        <span class="mc-team-name">{h['nombre']}</span>
-        <span class="mc-tilt-line">
-          <span class="elo {_clase_rating(h.get('rating'))}">{h.get('rating', 0):.0f}</span>
-          <span class="tf {_clase_forma(h.get('form_score'))}">F:{h.get('form_score', 50):.0f}</span>
-          {_streak_html(h.get('streak'))}
-          {_icono_momentum(h.get('momentum'))}
-        </span>
-      </div>
-      <div class="mc-prob {pred_clase_l}">{prob_l:.0f}%</div>
-    </div>
-    <div class="mc-draw-row"><span class="mc-draw-pct">{prob_e:.0f}%</span> <span class="mc-draw-label">EMPATE</span></div>
-    <div class="mc-team-row">
-      <div class="mc-team-info">
-        <span class="mc-team-name">{a['nombre']}</span>
-        <span class="mc-tilt-line">
-          <span class="elo {_clase_rating(a.get('rating'))}">{a.get('rating', 0):.0f}</span>
-          <span class="tf {_clase_forma(a.get('form_score'))}">F:{a.get('form_score', 50):.0f}</span>
-          {_streak_html(a.get('streak'))}
-          {_icono_momentum(a.get('momentum'))}
-        </span>
-      </div>
-      <div class="mc-prob {pred_clase_v}">{prob_v:.0f}%</div>
-    </div>
-  </div>
-  <div class="mc-meta-row">
-    <span title="Diferencia ELO">Δ{diff_signo}{diff:.0f}</span>
-    <span title="Confianza">C:{conf:.0f}%</span>
-    <span title="Goal Trend local">{gt_h_s}</span>
-    <span title="Goal Trend visitante">{gt_a_s}</span>
-  </div>
-</a>
-'''
 
         u5_h = h.get("ultimos5", {})
         u5_a = a.get("ultimos5", {})
@@ -586,9 +521,6 @@ tr:hover {{ background: var(--surface2); }}
   <div class="stats">
     <div class="stat"><div class="stat-val">{len(predicciones)}</div><div class="stat-label">Partidos</div></div>
     <div class="stat"><div class="stat-val">{len(ligas)}</div><div class="stat-label">Ligas</div></div>
-    <div class="stat"><div class="stat-val">{n_destacados}</div><div class="stat-label">Destacados</div></div>
-    <div class="stat"><div class="stat-val">{n_parejos}</div><div class="stat-label">Parejos</div></div>
-    <div class="stat"><div class="stat-val">{n_sorpresas}</div><div class="stat-label">Sorpresas?</div></div>
   </div>
 
   <div class="controls">
@@ -603,24 +535,13 @@ tr:hover {{ background: var(--surface2); }}
       <button class="sort-btn" onclick="sortExcel('elo-asc')" title="Menor ELO primero">ELO ↑</button>
       <button class="sort-btn" onclick="sortExcel('form-desc')" title="Mayor forma primero">Forma ↓</button>
       <button class="sort-btn" onclick="sortExcel('form-asc')" title="Menor forma primero">Forma ↑</button>
+      <button class="sort-btn" onclick="sortExcel('diff-desc')" title="Mayor diff ELO">Diff ↓</button>
+      <button class="sort-btn" onclick="sortExcel('diff-asc')" title="Menor diff ELO">Diff ↑</button>
     </div>
-  </div>
-
-  <div class="tabs" id="catTabs">
-    <div class="tab active" data-cat="todos" onclick="setCat('todos')">Todos<span class="count">{len(predicciones)}</span></div>
-    <div class="tab" data-cat="destacados" onclick="setCat('destacados')">Destacados<span class="count">{n_destacados}</span></div>
-    <div class="tab" data-cat="parejos" onclick="setCat('parejos')">Parejos<span class="count">{n_parejos}</span></div>
-    <div class="tab" data-cat="sorpresas" onclick="setCat('sorpresas')">Sorpresas<span class="count">{n_sorpresas}</span></div>
-    <div class="tab" data-cat="ajuste" onclick="setCat('ajuste')">Ajuste Forma</div>
   </div>
 
   <div class="league-filter" id="leagueFilter">
     <div class="lf-btn active" data-slug="todas" onclick="setLiga('todas')">Todas</div>
-  </div>
-
-  <div class="view-tabs" id="viewTabs">
-    <div class="tab active" data-view="excel" onclick="setView('excel')">Tabla Excel</div>
-    <div class="tab" data-view="cards" onclick="setView('cards')">Tarjetas</div>
   </div>
 
   <div class="excel-section" id="excelSection">
@@ -647,10 +568,6 @@ tr:hover {{ background: var(--surface2); }}
         </tbody>
       </table>
     </div>
-  </div>
-
-  <div class="match-grid hidden" id="matchList">
-    {match_cards}
   </div>
 
   <div class="ranking-section">
@@ -800,19 +717,6 @@ function sortCards(criterion) {{
 initLeagueButtons();
 initCountryButtons();
 
-function setView(view) {{
-  document.querySelectorAll('#viewTabs .tab').forEach(t => t.classList.toggle('active', t.dataset.view === view));
-  const excelSection = document.getElementById('excelSection');
-  const matchGrid = document.getElementById('matchList');
-  if (view === 'excel') {{
-    excelSection.classList.remove('hidden');
-    matchGrid.classList.add('hidden');
-  }} else {{
-    excelSection.classList.add('hidden');
-    matchGrid.classList.remove('hidden');
-  }}
-}}
-
 function cambiarFecha(valor) {{
   if (valor === 'hoy') {{
     window.location.href = window.location.href.split('?')[0];
@@ -841,13 +745,15 @@ async function cargarEnVivo() {{
       data.events.forEach(event => {{
         const competiciones = event.competitions || [];
         competiciones.forEach(comp => {{
+          const status = comp.status?.type?.name || '';
+          if (status !== 'STATUS_IN_PROGRESS' && status !== 'STATUS_HALFTIME' && status !== 'STATUS_SECOND_HALF' && status !== 'STATUS_FIRST_HALF' && status !== 'STATUS_END_PERIOD') {{
+            return;
+          }}
           const equipos = comp.competitors || [];
           if (equipos.length >= 2) {{
             const local = equipos.find(e => e.homeAway === 'home') || equipos[0];
             const visitante = equipos.find(e => e.homeAway === 'away') || equipos[1];
-            const marcador = comp.status?.type?.completed ? 
-              `${{local.score || 0}} - ${{visitante.score || 0}}` : 
-              'EN VIVO';
+            const marcador = `${{local.score || 0}} - ${{visitante.score || 0}}`;
             const hora = new Date(event.date).toLocaleTimeString('es-EC', {{ hour: '2-digit', minute: '2-digit' }});
             
             html += `<tr class="excel-row live-row">
@@ -879,7 +785,6 @@ async function cargarEnVivo() {{
   }}
 }}
 
-let intervaloVivo = null;
 function sortExcel(criterion) {{
   document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
   event.target.classList.add('active');
@@ -895,6 +800,10 @@ function sortExcel(criterion) {{
       return parseFloat(b.dataset.formH || 0) - parseFloat(a.dataset.formH || 0);
     }} else if (criterion === 'form-asc') {{
       return parseFloat(a.dataset.formH || 0) - parseFloat(b.dataset.formH || 0);
+    }} else if (criterion === 'diff-desc') {{
+      return parseFloat(b.dataset.diff || 0) - parseFloat(a.dataset.diff || 0);
+    }} else if (criterion === 'diff-asc') {{
+      return parseFloat(a.dataset.diff || 0) - parseFloat(b.dataset.diff || 0);
     }}
     return 0;
   }});
