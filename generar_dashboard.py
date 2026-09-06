@@ -801,40 +801,55 @@ async function cargarHistorial(cuando) {{
   const dd = String(fecha.getDate()).padStart(2, '0');
   const fechaIso = yyyy + '-' + mm + '-' + dd;
   
-  try {{
-    const resRatings = await fetch('data/ratings_propios.json');
-    const dataRatings = await resRatings.json();
-    const equipos = dataRatings.equipos || {{}};
-    
-    let partidos = [];
-    
-    if (cuando === 'manana') {{
-      const resESPN = await fetch('https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard?dates=' + yyyy + mm + dd);
-      const dataESPN = await resESPN.json();
-      if (dataESPN.events) {{
-        dataESPN.events.forEach(event => {{
-          const comp = event.competitions?.[0];
-          if (!comp) return;
-          const equiposComp = comp.competitors || [];
-          if (equiposComp.length < 2) return;
-          const local = equiposComp.find(e => e.homeAway === 'home') || equiposComp[0];
-          const visitante = equiposComp.find(e => e.homeAway === 'away') || equiposComp[1];
-          partidos.push({{
-            fecha: fechaIso,
-            equipo_local: {{ name: local.team?.displayName || 'N/A' }},
-            equipo_visitante: {{ name: visitante.team?.displayName || 'N/A' }},
-            goles_local: null,
-            goles_visitante: null,
-            hora: new Date(event.date).toLocaleTimeString('es-EC', {{ hour: '2-digit', minute: '2-digit', timeZone: 'America/Guayaquil' }})
-          }});
-        }});
+    try {{
+      console.log('[Ayer/Manana] Cargando ratings...');
+      const resRatings = await fetch('data/ratings_propios.json');
+      if (!resRatings.ok) {{
+        throw new Error('No se pudo cargar ratings: ' + resRatings.status);
       }}
-    }} else {{
-      const archivo = 'data/historial_partidos/' + yyyy + '-' + mm + '.json';
-      const resHistorial = await fetch(archivo);
-      const dataHistorial = await resHistorial.json();
-      partidos = (dataHistorial.partidos || []).filter(p => p.fecha === fechaIso);
-    }}
+      const dataRatings = await resRatings.json();
+      const equipos = dataRatings.equipos || {{}};
+      console.log('[Ayer/Manana] Ratings cargados:', Object.keys(equipos).length, 'equipos');
+      
+      let partidos = [];
+      
+      if (cuando === 'manana') {{
+        console.log('[Manana] Buscando partidos en ESPN...');
+        const resESPN = await fetch('https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard?dates=' + yyyy + mm + dd);
+        if (!resESPN.ok) {{
+          throw new Error('Error ESPN: ' + resESPN.status);
+        }}
+        const dataESPN = await resESPN.json();
+        if (dataESPN.events) {{
+          dataESPN.events.forEach(event => {{
+            const comp = event.competitions?.[0];
+            if (!comp) return;
+            const equiposComp = comp.competitors || [];
+            if (equiposComp.length < 2) return;
+            const local = equiposComp.find(e => e.homeAway === 'home') || equiposComp[0];
+            const visitante = equiposComp.find(e => e.homeAway === 'away') || equiposComp[1];
+            partidos.push({{
+              fecha: fechaIso,
+              equipo_local: {{ name: local.team?.displayName || 'N/A' }},
+              equipo_visitante: {{ name: visitante.team?.displayName || 'N/A' }},
+              goles_local: null,
+              goles_visitante: null,
+              hora: new Date(event.date).toLocaleTimeString('es-EC', {{ hour: '2-digit', minute: '2-digit', timeZone: 'America/Guayaquil' }})
+            }});
+          }});
+        }}
+        console.log('[Manana] Partidos encontrados:', partidos.length);
+      }} else {{
+        const archivo = 'data/historial_partidos/' + yyyy + '-' + mm + '.json';
+        console.log('[Ayer] Cargando historial:', archivo);
+        const resHistorial = await fetch(archivo);
+        if (!resHistorial.ok) {{
+          throw new Error('No se encontro historial para ' + fechaIso + ': ' + resHistorial.status);
+        }}
+        const dataHistorial = await resHistorial.json();
+        partidos = (dataHistorial.partidos || []).filter(p => p.fecha === fechaIso);
+        console.log('[Ayer] Partidos para', fechaIso, ':', partidos.length);
+      }}
     
     function buscarElo(nombre) {{
       const nombreLower = nombre.toLowerCase();
@@ -929,7 +944,8 @@ async function cargarHistorial(cuando) {{
     
     tbody.innerHTML = html;
   }} catch (error) {{
-    tbody.innerHTML = '<tr><td colspan="14" style="text-align:center; padding:20px; color:#ef4444;">Error al cargar datos</td></tr>';
+    console.error('[Ayer/Manana] Error:', error);
+    tbody.innerHTML = `<tr><td colspan="14" style="text-align:center; padding:20px; color:#ef4444;">Error: ${{error.message}}</td></tr>`;
   }}
 }}
 
@@ -938,13 +954,22 @@ async function cargarEnVivo() {{
   tbody.innerHTML = '<tr><td colspan="14" style="text-align:center; padding:20px;">Cargando partidos en vivo...</td></tr>';
   
   try {{
+    console.log('[EnVivo] Cargando datos...');
     const [resESPN, resRatings] = await Promise.all([
       fetch('https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard'),
       fetch('data/ratings_propios.json')
     ]);
+    console.log('[EnVivo] ESPN:', resESPN.status, '| Ratings:', resRatings.status);
+    if (!resESPN.ok) {{
+      throw new Error('Error ESPN: ' + resESPN.status);
+    }}
+    if (!resRatings.ok) {{
+      throw new Error('Error Ratings: ' + resRatings.status);
+    }}
     const dataESPN = await resESPN.json();
     const dataRatings = await resRatings.json();
     const equipos = dataRatings.equipos || {{}};
+    console.log('[EnVivo] Equipos cargados:', Object.keys(equipos).length);
     
     function buscarElo(nombre) {{
       const nombreLower = nombre.toLowerCase();
@@ -1040,7 +1065,8 @@ async function cargarEnVivo() {{
     
     tbody.innerHTML = html;
   }} catch (error) {{
-    tbody.innerHTML = '<tr><td colspan="14" style="text-align:center; padding:20px; color:#ef4444;">Error al cargar partidos en vivo</td></tr>';
+    console.error('[EnVivo] Error:', error);
+    tbody.innerHTML = `<tr><td colspan="14" style="text-align:center; padding:20px; color:#ef4444;">Error: ${{error.message}}</td></tr>`;
   }}
 }}
 
