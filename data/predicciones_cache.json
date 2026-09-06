@@ -1,7 +1,7 @@
 {
-  "generado": "2026-09-06T01:29:49.715304Z",
+  "generado": "2026-09-06T01:38:30.053568Z",
   "fecha_consulta": "2026-09-05",
-  "total": 411,
+  "total": 408,
   "predicciones": [
     {
       "fixture_id": "401897367",
@@ -9312,76 +9312,6 @@
       },
       "diff_elo": 360.8,
       "confianza": 100.0
-    },
-    {
-      "fixture_id": "401915343",
-      "fecha": "2026-09-05T20:30:00-05:00",
-      "fecha_display": "2026-09-05",
-      "hora": "20:30",
-      "liga": "hon.1",
-      "liga_pais": "Honduras",
-      "liga_slug": "hon.1",
-      "equipo_local": {
-        "id": "7249",
-        "nombre": "Club Deportivo Marathón",
-        "pais": "Honduras",
-        "rating": 1683.23,
-        "rd": 156.95,
-        "partidos_jugados": 8,
-        "form_score": 80.8,
-        "form_local": 64.0,
-        "form_visitante": 77.2,
-        "momentum": "down",
-        "momentum_diff": -14.7,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "goal_trend": {
-          "goles_favor": 1.5,
-          "goles_contra": 0.5,
-          "diferencia": 1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 8.8,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "132449",
-        "nombre": "CD Estrella Roja",
-        "pais": "Honduras",
-        "rating": 1749.25,
-        "rd": 206.11,
-        "partidos_jugados": 4,
-        "form_score": 81.1,
-        "form_local": 81.1,
-        "form_visitante": 81.1,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "goal_trend": {
-          "goles_favor": 2.75,
-          "goles_contra": 1.5,
-          "diferencia": 1.25
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 10.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 43.4,
-        "prob_empate": 23.1,
-        "prob_visitante": 33.4
-      },
-      "diff_elo": -66.0,
-      "confianza": 33.0
     },
     {
       "fixture_id": "401879629",
@@ -23524,76 +23454,6 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401886206",
-      "fecha": "2026-09-05T20:30:00-05:00",
-      "fecha_display": "2026-09-05",
-      "hora": "20:30",
-      "liga": "Perú - Liga 1",
-      "liga_pais": "Perú",
-      "liga_slug": "per.1",
-      "equipo_local": {
-        "id": "2685",
-        "nombre": "Universitario",
-        "pais": "Perú",
-        "rating": 1744.72,
-        "rd": 218.68,
-        "partidos_jugados": 4,
-        "form_score": 77.2,
-        "form_local": 68.9,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 3
-        },
-        "goal_trend": {
-          "goles_favor": 2.75,
-          "goles_contra": 1.25,
-          "diferencia": 1.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 9.7,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "18153",
-        "nombre": "Comerciantes Unidos",
-        "pais": "Perú",
-        "rating": 1443.44,
-        "rd": 198.2,
-        "partidos_jugados": 4,
-        "form_score": 62.2,
-        "form_local": 62.2,
-        "form_visitante": 37.8,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 1.5,
-          "diferencia": 0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 3.1,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 77.1,
-        "prob_empate": 21.9,
-        "prob_visitante": 0.9
-      },
-      "diff_elo": 301.3,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401888670",
       "fecha": "2026-09-06T16:30:00-05:00",
       "fecha_display": "2026-09-06",
@@ -25062,76 +24922,6 @@
       },
       "diff_elo": 0.5,
       "confianza": 0.2
-    },
-    {
-      "fixture_id": "401877889",
-      "fecha": "2026-09-05T20:30:00-05:00",
-      "fecha_display": "2026-09-05",
-      "hora": "20:30",
-      "liga": "Colombia - Liga BetPlay",
-      "liga_pais": "Colombia",
-      "liga_slug": "col.1",
-      "equipo_local": {
-        "id": "4815",
-        "nombre": "Atlético Junior",
-        "pais": "Colombia",
-        "rating": 1428.59,
-        "rd": 180.41,
-        "partidos_jugados": 5,
-        "form_score": 45.2,
-        "form_local": 50.0,
-        "form_visitante": 31.1,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "goal_trend": {
-          "goles_favor": 0.8,
-          "goles_contra": 1.2,
-          "diferencia": -0.4
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -3.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "10309",
-        "nombre": "Jaguares de Córdoba",
-        "pais": "Colombia",
-        "rating": 1523.84,
-        "rd": 166.3,
-        "partidos_jugados": 6,
-        "form_score": 36.9,
-        "form_local": 65.4,
-        "form_visitante": 24.7,
-        "momentum": "up",
-        "momentum_diff": 26.1,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 3
-        },
-        "goal_trend": {
-          "goles_favor": 0.67,
-          "goles_contra": 0.67,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -1.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 42.0,
-        "prob_empate": 23.1,
-        "prob_visitante": 34.8
-      },
-      "diff_elo": -95.2,
-      "confianza": 47.6
     },
     {
       "fixture_id": "401850647",
