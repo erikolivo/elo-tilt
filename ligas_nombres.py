@@ -170,11 +170,23 @@ PAIS_POR_SLUG = {
     "egy.1": "Egipto",
     "nga.1": "Nigeria",
     "rsa.1": "Sudáfrica",
+    "crc.1": "Costa Rica",
+    "gua.1": "Guatemala",
+    "hon.1": "Honduras",
+    "slv.1": "El Salvador",
 }
 
 PAISES_ORDER = sorted(set(PAIS_POR_SLUG.values()))
 
 
 def pais_por_slug(slug):
-    """Devuelve el país de un slug de liga."""
-    return PAIS_POR_SLUG.get(slug, "")
+    """Devuelve el país de un slug de liga, usando prefix matching."""
+    if not slug:
+        return ""
+    if slug in PAIS_POR_SLUG:
+        return PAIS_POR_SLUG[slug]
+    prefix = slug.split(".")[0]
+    for k, v in PAIS_POR_SLUG.items():
+        if k.startswith(prefix):
+            return v
+    return ""
