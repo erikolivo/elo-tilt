@@ -7535,14 +7535,128 @@ function cambiarFecha(valor) {
   if (valor === 'hoy') {
     window.location.href = window.location.href.split('?')[0];
   } else if (valor === 'ayer') {
-    const fecha = new Date();
-    fecha.setDate(fecha.getDate() - 1);
-    const yyyy = fecha.getFullYear();
-    const mm = String(fecha.getMonth() + 1).padStart(2, '0');
-    const dd = String(fecha.getDate()).padStart(2, '0');
-    window.location.href = window.location.href.split('?')[0] + '?fecha=' + yyyy + '-' + mm + '-' + dd;
+    cargarHistorial('ayer');
   } else if (valor === 'en-vivo') {
     cargarEnVivo();
+  }
+}
+
+async function cargarHistorial(cuando) {
+  const tbody = document.querySelector('.excel-table tbody');
+  tbody.innerHTML = '<tr><td colspan="14" style="text-align:center; padding:20px;">Cargando resultados...</td></tr>';
+  
+  const fecha = new Date();
+  if (cuando === 'ayer') fecha.setDate(fecha.getDate() - 1);
+  const yyyy = fecha.getFullYear();
+  const mm = String(fecha.getMonth() + 1).padStart(2, '0');
+  const dd = String(fecha.getDate()).padStart(2, '0');
+  const fechaIso = yyyy + '-' + mm + '-' + dd;
+  const archivo = 'data/historial_partidos/' + yyyy + '-' + mm + '.json';
+  
+  try {
+    const [resHistorial, resRatings] = await Promise.all([
+      fetch(archivo),
+      fetch('data/ratings_propios.json')
+    ]);
+    const dataHistorial = await resHistorial.json();
+    const dataRatings = await resRatings.json();
+    const equipos = dataRatings.equipos || {};
+    
+    const partidos = (dataHistorial.partidos || []).filter(p => p.fecha === fechaIso);
+    
+    function buscarElo(nombre) {
+      const nombreLower = nombre.toLowerCase();
+      for (const [key, eq] of Object.entries(equipos)) {
+        if (eq.nombre && eq.nombre.toLowerCase().includes(nombreLower)) {
+          return eq;
+        }
+      }
+      return null;
+    }
+    
+    function claseRating(r) {
+      if (!r) return '';
+      if (r >= 1700) return 'elite';
+      if (r >= 1550) return 'above';
+      if (r >= 1400) return 'average';
+      return 'below';
+    }
+    
+    function claseForma(f) {
+      if (!f) return '';
+      if (f >= 70) return 'high';
+      if (f >= 40) return 'mid';
+      return 'low';
+    }
+    
+    function streakHtml(s) {
+      if (!s) return '-';
+      const t = s.tipo || 'N/A';
+      const c = s.cantidad || 0;
+      if (t === 'W') return `<span class="streak-w">${c}V</span>`;
+      if (t === 'D') return `<span class="streak-d">${c}E</span>`;
+      if (t === 'L') return `<span class="streak-l">${c}D</span>`;
+      return '-';
+    }
+    
+    let html = '';
+    partidos.forEach(p => {
+      const nombreLocal = p.equipo_local?.name || 'N/A';
+      const nombreVisitante = p.equipo_visitante?.name || 'N/A';
+      const gl = p.goles_local || 0;
+      const ga = p.goles_visitante || 0;
+      const marcador = gl + ' - ' + ga;
+      
+      const eqLocal = buscarElo(nombreLocal);
+      const eqVisitante = buscarElo(nombreVisitante);
+      
+      const eloLocal = eqLocal ? eqLocal.rating.toFixed(0) : '-';
+      const eloVisitante = eqVisitante ? eqVisitante.rating.toFixed(0) : '-';
+      const formaLocal = eqLocal ? eqLocal.form_score.toFixed(0) : '-';
+      const formaVisitante = eqVisitante ? eqVisitante.form_score.toFixed(0) : '-';
+      const streakLocal = eqLocal ? streakHtml(eqLocal.streak) : '-';
+      const streakVisitante = eqVisitante ? streakHtml(eqVisitante.streak) : '-';
+      const diff = (eqLocal && eqVisitante) ? (eqLocal.rating - eqVisitante.rating).toFixed(0) : '-';
+      
+      let acierto = '-';
+      if (eqLocal && eqVisitante) {
+        const probLocal = 50 + (eqLocal.rating - eqVisitante.rating) / 40;
+        const probVisitante = 100 - probLocal - 25;
+        const maxProb = Math.max(probLocal, probVisitante);
+        if (maxProb > 69) {
+          if (probLocal > probVisitante) {
+            acierto = gl > ga ? '<span class="acierto-ok">✓</span>' : '<span class="acierto-fail">✗</span>';
+          } else {
+            acierto = ga > gl ? '<span class="acierto-ok">✓</span>' : '<span class="acierto-fail">✗</span>';
+          }
+        }
+      }
+      
+      html += `<tr class="excel-row">
+        <td class="ex-fecha">${fechaIso}</td>
+        <td class="ex-hora">-</td>
+        <td class="ex-local">${nombreLocal}</td>
+        <td class="ex-elo ${claseRating(eqLocal?.rating)}">${eloLocal}</td>
+        <td class="ex-forma ${claseForma(eqLocal?.form_score)}">${formaLocal}</td>
+        <td class="ex-racha">${streakLocal}</td>
+        <td class="ex-marcador">${marcador}</td>
+        <td class="ex-visitante">${nombreVisitante}</td>
+        <td class="ex-elo ${claseRating(eqVisitante?.rating)}">${eloVisitante}</td>
+        <td class="ex-forma ${claseForma(eqVisitante?.form_score)}">${formaVisitante}</td>
+        <td class="ex-racha">${streakVisitante}</td>
+        <td class="ex-diff">${diff}</td>
+        <td class="ex-pred">-</td>
+        <td class="ex-acierto">${acierto}</td>
+      </tr>`;
+    });
+    
+    if (html === '') {
+      html = '<tr><td colspan="14" style="text-align:center; padding:20px;">No hay resultados para esta fecha</td></tr>';
+    }
+    
+    tbody.innerHTML = html;
+  } catch (error) {
+    tbody.innerHTML = '<tr><td colspan="14" style="text-align:center; padding:20px; color:#ef4444;">Error al cargar resultados</td></tr>';
   }
 }
 
