@@ -73,7 +73,7 @@ def _calcular_forma(partidos, team_id):
         return 50.0
     team_id = str(team_id)
     resultados = []
-    for i, p in enumerate(reversed(partidos)):
+    for i, p in enumerate(partidos):
         gh = p.get("goles_local", 0)
         ga = p.get("goles_visitante", 0)
         es_local = str(p.get("equipo_local", {}).get("id", "")) == team_id
@@ -198,10 +198,11 @@ def _calcular_home_away(partidos, team_id):
     }
 
 
-def _calcular_overperformance(partidos, team_id, rating_actual):
+def _calcular_overperformance(partidos, team_id, rating_actual, rd_actual=None):
     if not partidos or not rating_actual:
         return 0.0
     team_id = str(team_id)
+    rd_actual = rd_actual or glicko2.RD_INICIAL
     scores = []
     for p in partidos:
         gh = p.get("goles_local", 0)
@@ -211,7 +212,8 @@ def _calcular_overperformance(partidos, team_id, rating_actual):
         rival_key = f"espn:{rival_id}"
         rival_eq = ratings_store._cargar()["equipos"].get(rival_key, {})
         rating_rival = rival_eq.get("rating", glicko2.RATING_BASE)
-        prob_esperada = glicko2.probabilidad_victoria(rating_actual, glicko2.RD_INICIAL, rating_rival, glicko2.RD_INICIAL)
+        rd_rival = rival_eq.get("rd", glicko2.RD_INICIAL)
+        prob_esperada = glicko2.probabilidad_victoria(rating_actual, rd_actual, rating_rival, rd_rival)
         if gh == ga:
             resultado_real = 0.5
         elif (gh > ga and es_local) or (ga > gh and not es_local):
@@ -381,8 +383,8 @@ def predecir_fecha(fecha_iso, ligas=None):
         gt_a = _calcular_goal_trend(hist_a, away_id)
         ha_h = _calcular_home_away(hist_h, home_id)
         ha_a = _calcular_home_away(hist_a, away_id)
-        op_h = _calcular_overperformance(hist_h, home_id, rating_h)
-        op_a = _calcular_overperformance(hist_a, away_id, rating_a)
+        op_h = _calcular_overperformance(hist_h, home_id, rating_h, rd_h)
+        op_a = _calcular_overperformance(hist_a, away_id, rating_a, rd_a)
 
         tilt_home = {
             "rating": rating_h, "rd": rd_h, "partidos_jugados": pj_h,

@@ -270,16 +270,12 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
 
         diff_signo = "+" if diff > 0 else ""
 
-        nombre_limpio_h = h['nombre'].replace("'", "").replace('"', '')
-        nombre_limpio_a = a['nombre'].replace("'", "").replace('"', '')
-        busqueda = f"{nombre_limpio_h} vs {nombre_limpio_a} {fecha_d} site:bessoccer.com"
-        url_google = f"https://www.google.com/search?q={busqueda.replace(' ', '+')}"
-
         u5_h = h.get("ultimos5", {})
         u5_a = a.get("ultimos5", {})
 
         fixture_id = p.get("fixture_id", "")
         key_fx = f"fx:{fixture_id}" if fixture_id else ""
+        url_espn = f"https://www.espn.com/soccer/match/_/gameId/{fixture_id}" if fixture_id else None
         key = f"{h['nombre'].lower()}_{a['nombre'].lower()}"
         key_inv = f"{a['nombre'].lower()}_{h['nombre'].lower()}"
         resultado = resultados.get(key_fx) if key_fx else None
@@ -304,12 +300,12 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
         excel_rows += f'''<tr class="excel-row" data-slug="{slug}" data-fecha="{fecha_d}" data-elo-h="{h.get('rating', 0):.0f}" data-form-h="{h.get('form_score', 50):.0f}" data-home="{h['nombre'].lower()}" data-away="{a['nombre'].lower()}" data-diff="{diff:.0f}" data-pj-h="{h.get('partidos_jugados', 0)}" data-pj-a="{a.get('partidos_jugados', 0)}">
   <td class="ex-fecha">{fecha_d}</td>
   <td class="ex-hora">{hora}</td>
-  <td class="ex-local"><a href="{url_google}" target="_blank">{h['nombre']}</a>{_badge_provisional(h.get('partidos_jugados'))}</td>
+  <td class="ex-local">{f'<a href="{url_espn}" target="_blank">{h["nombre"]}</a>' if url_espn else h['nombre']}{_badge_provisional(h.get('partidos_jugados'))}</td>
   <td class="ex-elo {_clase_rating(h.get('rating'))}">{h.get('rating', 0):.0f}</td>
   <td class="ex-forma {_clase_forma(h.get('form_score'))}">{h.get('form_score', 50):.0f}</td>
   <td class="ex-racha">{_ultimos5_html(u5_h)}</td>
   <td class="ex-marcador">{marcador}</td>
-  <td class="ex-visitante"><a href="{url_google}" target="_blank">{a['nombre']}</a>{_badge_provisional(a.get('partidos_jugados'))}</td>
+  <td class="ex-visitante">{f'<a href="{url_espn}" target="_blank">{a["nombre"]}</a>' if url_espn else a['nombre']}{_badge_provisional(a.get('partidos_jugados'))}</td>
   <td class="ex-elo {_clase_rating(a.get('rating'))}">{a.get('rating', 0):.0f}</td>
   <td class="ex-forma {_clase_forma(a.get('form_score'))}">{a.get('form_score', 50):.0f}</td>
   <td class="ex-racha">{_ultimos5_html(u5_a)}</td>
@@ -434,45 +430,6 @@ body {{ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', san
 .lf-btn:hover {{ border-color: var(--accent); color: var(--text2); }}
 .lf-btn.active {{ background: var(--surface2); color: var(--accent); border-color: var(--accent); }}
 
-/* Match cards - grid of boxes */
-.match-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }}
-.mc {{ background: var(--surface); border-radius: 10px; padding: 12px;
-       border: 1px solid var(--border); transition: all 0.2s; position: relative; overflow: hidden; }}
-.mc:hover {{ border-color: var(--accent); transform: translateY(-2px);
-             box-shadow: 0 6px 24px rgba(56,189,248,0.1); }}
-.card-highlight {{ border-color: var(--accent); box-shadow: 0 0 0 1px rgba(56,189,248,0.2); }}
-.card-suspense {{ border-color: var(--orange); box-shadow: 0 0 0 1px rgba(249,115,22,0.2); }}
-
-.mc-datetime {{ display: flex; justify-content: space-between; align-items: center;
-                margin-bottom: 6px; }}
-.mc-date {{ font-size: 0.72em; color: var(--text3); font-weight: 500; }}
-.mc-time {{ font-size: 0.8em; color: var(--accent); font-weight: 700; }}
-
-.mc-liga-tag {{ font-size: 0.65em; color: var(--text3); background: var(--surface2);
-                padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 8px;
-                max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
-
-.mc-teams {{ display: flex; flex-direction: column; gap: 4px; }}
-.mc-team-row {{ display: flex; justify-content: space-between; align-items: center; gap: 8px; }}
-.mc-team-info {{ display: flex; flex-direction: column; gap: 1px; min-width: 0; flex: 1; }}
-.mc-team-name {{ font-weight: 600; font-size: 0.85em; line-height: 1.2;
-                 overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
-.mc-tilt-line {{ display: flex; gap: 5px; align-items: center; flex-wrap: wrap; }}
-
-.mc-prob {{ font-size: 1.3em; font-weight: 800; color: var(--text3); white-space: nowrap;
-            min-width: 48px; text-align: right; }}
-.mc-prob.best {{ color: var(--accent); }}
-
-.mc-draw-row {{ text-align: center; padding: 2px 0; font-size: 0.85em; }}
-.mc-draw-pct {{ color: var(--text2); font-weight: 700; font-size: 1.2em; }}
-.mc-draw-label {{ color: var(--text3); font-size: 0.8em; font-weight: 500; }}
-
-.mc-link {{ text-decoration: none; color: inherit; display: block; cursor: pointer; }}
-
-.mc-meta-row {{ display: flex; justify-content: space-between; margin-top: 8px;
-                padding-top: 6px; border-top: 1px solid var(--border);
-                font-size: 0.68em; color: var(--text3); gap: 4px; flex-wrap: wrap; }}
-
 /* Badges & tags */
 .elo {{ padding: 1px 7px; border-radius: 10px; font-size: 0.8em; font-weight: 700; }}
 .elite {{ background: rgba(56,189,248,0.15); color: var(--accent); }}
@@ -570,16 +527,9 @@ tr:hover {{ background: var(--surface2); }}
 .acierto-fail {{ color: var(--red); }}
 
 @media (max-width: 768px) {{
-  .match-grid {{ grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 8px; }}
-  .mc {{ padding: 10px; }}
-  .mc-team-name {{ font-size: 0.8em; }}
-  .mc-prob {{ font-size: 1.1em; }}
   .stats {{ gap: 16px; }}
   .tabs {{ gap: 3px; }}
   .tab {{ padding: 5px 10px; font-size: 0.78em; }}
-}}
-@media (max-width: 480px) {{
-  .match-grid {{ grid-template-columns: 1fr; }}
 }}
 </style>
 </head>
@@ -676,7 +626,6 @@ tr:hover {{ background: var(--surface2); }}
 const ligas = {all_ligas_json};
 const paises = {paises_json};
 const historialMonths = {historial_months_json};
-let catActual = 'todos';
 let ligaActual = 'todas';
 let paisActual = 'todos';
 let historialCache = null;
@@ -738,7 +687,7 @@ function calcularEstadisticas(nombre, todosPartidos) {{
 function initLeagueButtons() {{
   const cont = document.getElementById('leagueFilter');
   const slugsVistos = new Set();
-  document.querySelectorAll('.mc-link').forEach(c => {{
+  document.querySelectorAll('.excel-row').forEach(c => {{
     const s = c.dataset.slug;
     if (s && !slugsVistos.has(s)) {{
       slugsVistos.add(s);
@@ -751,12 +700,6 @@ function initLeagueButtons() {{
       cont.appendChild(btn);
     }}
   }});
-}}
-
-function setCat(cat) {{
-  catActual = cat;
-  document.querySelectorAll('#catTabs .tab').forEach(t => t.classList.toggle('active', t.dataset.cat === cat));
-  aplicarFiltros();
 }}
 
 function setLiga(slug) {{

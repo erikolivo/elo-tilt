@@ -75,6 +75,8 @@ def obtener_o_crear(llave, nombre=None, pais=None, liga=None):
         if nombre and not equipo.get("nombre"):
             equipo["nombre"] = nombre
             cambiado = True
+        if nombre and equipo.get("nombre"):
+            equipo["nombre"] = _limpiar_nombre_duplicado(equipo["nombre"])
         if pais and not equipo.get("pais"):
             equipo["pais"] = pais
             cambiado = True
@@ -85,6 +87,19 @@ def obtener_o_crear(llave, nombre=None, pais=None, liga=None):
             datos["equipos"][llave] = equipo
             _guardar(datos)
     return equipo
+
+
+def _limpiar_nombre_duplicado(nombre):
+    """Limpia nombres duplicados de ESPN (ej: 'LSU LSU TIGERS' -> 'LSU Tigers').
+    Solo limpia cuando dos palabras consecutivas son iguales ignorando mayusculas
+    (como 'LSU LSU' o 'Belmont BELMONT'), pero preserva nombres legitimos como 'Colo Colo'."""
+    if not nombre:
+        return nombre
+    words = nombre.split()
+    for i in range(len(words) - 1):
+        if words[i].lower() == words[i+1].lower() and words[i] != words[i+1]:
+            return ' '.join(words[:i+1]).strip()
+    return nombre
 
 
 def actualizar_tras_partido(llave, rating_rival, rd_rival, resultado, fecha=None):
@@ -117,3 +132,32 @@ def actualizar_tras_partido(llave, rating_rival, rd_rival, resultado, fecha=None
 def rd_de(llave):
     eq = obtener_o_crear(llave)
     return eq["rd"]
+
+
+def decaer_rd_inactivos(dias_minimos=30):
+    """Incrementa el RD (incertidumbre) de equipos que no han jugado
+    en los ultimos 'dias_minimos' dias. Llama a glicko2._incrementar_rd_por_inactividad
+    para que aplique el decaimiento por inactividad.
+    Retorna cantidad de equipos afectados."""
+    datos = _cargar()
+    hoy = datetime.date.today()
+    afectados = 0
+    for llave, eq in datos["equipos"].items():
+        ultima = eq.get("ultima_actualizacion")
+        if not ultima:
+            continue
+        try:
+            fecha_ult = datetime.date.fromisoformat(ultima)
+        except (ValueError, TypeError):
+            continue
+        dias_inactivo = (hoy - fecha_ult).days
+        if dias_inactivo >= dias_minimos:
+            periodos = min(dias_inactivo // 30, 12)
+            if periodos > 0:
+                nuevo_rd = glicko2._incrementar_rd_por_inactividad(eq["rd"], periodos, eq.get("vol", glicko2.VOL_INICIAL))
+                if nuevo_rd != eq["rd"]:
+                    eq["rd"] = nuevo_rd
+                    afectados += 1
+    if afectados:
+        _guardar(datos)
+    return afectados

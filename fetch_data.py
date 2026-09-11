@@ -70,8 +70,8 @@ def _extraer_evento(evento, liga_slug):
     return {
         "fixture": {"id": str(evento["id"]), "date": evento.get("date")},
         "teams": {
-            "home": {"id": _safe_team_id(home["team"]), "name": home["team"].get("displayName")},
-            "away": {"id": _safe_team_id(away["team"]), "name": away["team"].get("displayName")},
+            "home": {"id": _safe_team_id(home["team"]), "name": home["team"].get("shortDisplayName") or home["team"].get("displayName")},
+            "away": {"id": _safe_team_id(away["team"]), "name": away["team"].get("shortDisplayName") or away["team"].get("displayName")},
         },
         "league": {
             "country": liga.get("country") or "",
@@ -265,12 +265,12 @@ def obtener_historial_equipo(liga_slug, team_id, limit=20):
                 "fecha": evento.get("date", "")[:10],
                 "home": {
                     "id": home["team"]["id"],
-                    "name": home["team"].get("displayName"),
+                    "name": home["team"].get("shortDisplayName") or home["team"].get("displayName"),
                     "score": int(home.get("score", 0)),
                 },
                 "away": {
                     "id": away["team"]["id"],
-                    "name": away["team"].get("displayName"),
+                    "name": away["team"].get("shortDisplayName") or away["team"].get("displayName"),
                     "score": int(away.get("score", 0)),
                 },
             })

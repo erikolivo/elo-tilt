@@ -27,6 +27,7 @@ def _hoy_ecuador():
 
 def paso_recopilar(fecha):
     import recopilar_dia
+    import ratings_store
     print(f"\n{'='*50}")
     print(f"PASO 1: Recopilando resultados de {fecha}")
     print(f"{'='*50}")
@@ -35,6 +36,12 @@ def paso_recopilar(fecha):
         print(f"Recopilacion completa: {nuevos} partido(s) nuevo(s).")
     except Exception as e:
         print(f"[ERROR] Fallo la recopilacion: {e}")
+    try:
+        afectados = ratings_store.decaer_rd_inactivos(dias_minimos=30)
+        if afectados:
+            print(f"RD decaido por inactividad: {afectados} equipo(s).")
+    except Exception as e:
+        print(f"[ERROR] Fallo el decaimiento RD: {e}")
 
 
 def paso_predecir(fecha):
