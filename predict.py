@@ -198,11 +198,14 @@ def _calcular_home_away(partidos, team_id):
     }
 
 
-def _calcular_overperformance(partidos, team_id, rating_actual, rd_actual=None):
+def _calcular_overperformance(partidos, team_id, rating_actual, rd_actual=None, ratings_data=None):
     if not partidos or not rating_actual:
         return 0.0
     team_id = str(team_id)
     rd_actual = rd_actual or glicko2.RD_INICIAL
+    if ratings_data is None:
+        ratings_data = ratings_store._cargar()
+    equipos_ratings = ratings_data.get("equipos", {})
     scores = []
     for p in partidos:
         gh = p.get("goles_local", 0)
@@ -210,7 +213,7 @@ def _calcular_overperformance(partidos, team_id, rating_actual, rd_actual=None):
         es_local = str(p.get("equipo_local", {}).get("id", "")) == team_id
         rival_id = str(p.get("equipo_visitante", {}).get("id", "")) if es_local else str(p.get("equipo_local", {}).get("id", ""))
         rival_key = f"espn:{rival_id}"
-        rival_eq = ratings_store._cargar()["equipos"].get(rival_key, {})
+        rival_eq = equipos_ratings.get(rival_key, {})
         rating_rival = rival_eq.get("rating", glicko2.RATING_BASE)
         rd_rival = rival_eq.get("rd", glicko2.RD_INICIAL)
         prob_esperada = glicko2.probabilidad_victoria(rating_actual, rd_actual, rating_rival, rd_rival)
@@ -383,8 +386,8 @@ def predecir_fecha(fecha_iso, ligas=None):
         gt_a = _calcular_goal_trend(hist_a, away_id)
         ha_h = _calcular_home_away(hist_h, home_id)
         ha_a = _calcular_home_away(hist_a, away_id)
-        op_h = _calcular_overperformance(hist_h, home_id, rating_h, rd_h)
-        op_a = _calcular_overperformance(hist_a, away_id, rating_a, rd_a)
+        op_h = _calcular_overperformance(hist_h, home_id, rating_h, rd_h, ratings_data)
+        op_a = _calcular_overperformance(hist_a, away_id, rating_a, rd_a, ratings_data)
 
         tilt_home = {
             "rating": rating_h, "rd": rd_h, "partidos_jugados": pj_h,

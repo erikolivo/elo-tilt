@@ -94,6 +94,18 @@ def _icono_momentum(direccion):
     return '<span class="mom-stable">—</span>'
 
 
+def _icono_momentum_texto(direccion):
+    return {"up": "▲", "down": "▼", "stable": "—"}.get(direccion, "—")
+
+
+def _clase_momentum(direccion):
+    return {"up": "mom-up", "down": "mom-down", "stable": "mom-stable"}.get(direccion, "mom-stable")
+
+
+def _clase_signo(valor):
+    return "op-pos" if valor > 0 else ("op-neg" if valor < 0 else "op-neutral")
+
+
 def _streak_html(streak):
     if not streak:
         return '<span class="streak-na">—</span>'
@@ -273,6 +285,13 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
         u5_h = h.get("ultimos5", {})
         u5_a = a.get("ultimos5", {})
 
+        mom_h = h.get("momentum", "stable")
+        mom_h_diff = h.get("momentum_diff", 0)
+        mom_a = a.get("momentum", "stable")
+        mom_a_diff = a.get("momentum_diff", 0)
+        op_h = h.get("overperformance", 0)
+        op_a = a.get("overperformance", 0)
+
         fixture_id = p.get("fixture_id", "")
         key_fx = f"fx:{fixture_id}" if fixture_id else ""
         url_espn = f"https://www.espn.com/soccer/match/_/gameId/{fixture_id}" if fixture_id else None
@@ -312,6 +331,23 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
   <td class="ex-diff" style="color:{'#22c55e' if diff > 0 else '#ef4444' if diff < 0 else '#94a3b8'}">{diff_signo}{diff:.0f}</td>
   <td class="ex-pred best">{prob_l:.0f}% | {prob_e:.0f}% | {prob_v:.0f}%</td>
   <td class="ex-acierto {'acierto-ok' if acierto == '✓' else 'acierto-fail' if acierto == '✗' else ''}">{acierto}</td>
+  <td><button class="expand-btn" onclick="toggleDetalle('{fixture_id}')">▾</button></td>
+</tr>
+<tr class="detail-row" id="detail-{fixture_id}" style="display:none">
+  <td colspan="15">
+    <div class="detail-panel">
+      <div class="detail-team">
+        <strong>{h["nombre"]}</strong>
+        <span class="{_clase_momentum(mom_h)}">{_icono_momentum_texto(mom_h)} Momentum ({mom_h_diff:+.1f})</span>
+        <span class="{_clase_signo(op_h)}">Overperf: {op_h:+.1f}</span>
+      </div>
+      <div class="detail-team">
+        <strong>{a["nombre"]}</strong>
+        <span class="{_clase_momentum(mom_a)}">{_icono_momentum_texto(mom_a)} Momentum ({mom_a_diff:+.1f})</span>
+        <span class="{_clase_signo(op_a)}">Overperf: {op_a:+.1f}</span>
+      </div>
+    </div>
+  </td>
 </tr>
 '''
 
@@ -525,6 +561,18 @@ tr:hover {{ background: var(--surface2); }}
 .ex-acierto {{ text-align: center; font-weight: 700; font-size: 1.1em; }}
 .acierto-ok {{ color: var(--green); }}
 .acierto-fail {{ color: var(--red); }}
+
+.expand-btn {{ background: none; border: none; cursor: pointer; font-size: 14px; color: var(--accent, #888); transition: transform 0.2s ease; padding: 2px 6px; }}
+.expand-btn.open {{ transform: rotate(180deg); }}
+.detail-row td {{ padding: 0; }}
+.detail-panel {{ display: flex; gap: 24px; padding: 10px 16px; background: rgba(255,255,255,0.03); font-size: 13px; flex-wrap: wrap; }}
+.detail-team {{ display: flex; flex-direction: column; gap: 4px; }}
+.mom-up {{ color: #4caf50; }}
+.mom-down {{ color: #f44336; }}
+.mom-stable {{ color: #999; }}
+.op-pos {{ color: #4caf50; }}
+.op-neg {{ color: #f44336; }}
+.op-neutral {{ color: #999; }}
 
 @media (max-width: 768px) {{
   .stats {{ gap: 16px; }}
@@ -765,6 +813,15 @@ function aplicarFiltros() {{
   }});
 }}
 
+function toggleDetalle(fixtureId) {{
+  const fila = document.getElementById('detail-' + fixtureId);
+  const boton = event.currentTarget;
+  if (!fila) return;
+  const abierta = fila.style.display !== 'none';
+  fila.style.display = abierta ? 'none' : 'table-row';
+  boton.classList.toggle('open', !abierta);
+}}
+
 function sortExcel(criterion) {{
   document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
   event.target.classList.add('active');
@@ -834,7 +891,7 @@ function ultimos5Html(u5) {{
 
 async function cargarHistorial(cuando) {{
   const tbody = document.querySelector('.excel-table tbody');
-  tbody.innerHTML = '<tr><td colspan="14" style="text-align:center; padding:20px;">Cargando...</td></tr>';
+  tbody.innerHTML = '<tr><td colspan="15" style="text-align:center; padding:20px;">Cargando...</td></tr>';
   
   const fecha = new Date();
   if (cuando === 'ayer') fecha.setDate(fecha.getDate() - 1);
@@ -947,19 +1004,19 @@ async function cargarHistorial(cuando) {{
     }});
     
     if (html === '') {{
-      html = '<tr><td colspan="14" style="text-align:center; padding:20px;">No hay partidos para esta fecha</td></tr>';
+      html = '<tr><td colspan="15" style="text-align:center; padding:20px;">No hay partidos para esta fecha</td></tr>';
     }}
     
     tbody.innerHTML = html;
   }} catch (error) {{
     console.error('[Ayer/Manana] Error:', error);
-    tbody.innerHTML = `<tr><td colspan="14" style="text-align:center; padding:20px; color:#ef4444;">Error: ${{error.message}}</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="15" style="text-align:center; padding:20px; color:#ef4444;">Error: ${{error.message}}</td></tr>`;
   }}
 }}
 
 async function cargarEnVivo() {{
   const tbody = document.querySelector('.excel-table tbody');
-  tbody.innerHTML = '<tr><td colspan="14" style="text-align:center; padding:20px;">Cargando partidos en vivo...</td></tr>';
+  tbody.innerHTML = '<tr><td colspan="15" style="text-align:center; padding:20px;">Cargando partidos en vivo...</td></tr>';
   
   try {{
     const [dataESPN, dataRatings, allMatches] = await Promise.all([
@@ -1037,13 +1094,13 @@ async function cargarEnVivo() {{
     }}
     
     if (html === '') {{
-      html = '<tr><td colspan="14" style="text-align:center; padding:20px;">No hay partidos en vivo ahora</td></tr>';
+      html = '<tr><td colspan="15" style="text-align:center; padding:20px;">No hay partidos en vivo ahora</td></tr>';
     }}
     
     tbody.innerHTML = html;
   }} catch (error) {{
     console.error('[EnVivo] Error:', error);
-    tbody.innerHTML = `<tr><td colspan="14" style="text-align:center; padding:20px; color:#ef4444;">Error: ${{error.message}}</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="15" style="text-align:center; padding:20px; color:#ef4444;">Error: ${{error.message}}</td></tr>`;
   }}
 }}
 </script>
