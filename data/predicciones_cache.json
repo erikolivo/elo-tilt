@@ -1,7 +1,7 @@
 {
-  "generado": "2026-09-18T09:19:07.355811Z",
+  "generado": "2026-09-18T22:08:11.525679Z",
   "fecha_consulta": "2026-09-18",
-  "total": 822,
+  "total": 763,
   "predicciones": [
     {
       "fixture_id": "401842148",
@@ -1690,90 +1690,6 @@
       },
       "diff_elo": 77.9,
       "confianza": 38.9
-    },
-    {
-      "fixture_id": "401920984",
-      "fecha": "2026-09-20T15:00:00-05:00",
-      "fecha_display": "2026-09-20",
-      "hora": "15:00",
-      "liga": "usa.ncaa.w.1",
-      "liga_pais": "EE.UU.",
-      "liga_slug": "usa.ncaa.w.1",
-      "equipo_local": {
-        "id": "20620",
-        "nombre": "North Dakota",
-        "pais": "EE.UU.",
-        "rating": 1507.1,
-        "rd": 168.27,
-        "partidos_jugados": 7,
-        "form_score": 67.3,
-        "form_local": 89.8,
-        "form_visitante": 15.4,
-        "momentum": "stable",
-        "momentum_diff": 3.8,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 1D 1E",
-          "resultados": [
-            "V",
-            "D",
-            "V",
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.43,
-          "goles_contra": 1.43,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -1.9,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "133866",
-        "nombre": "NDSCS",
-        "pais": "EE.UU.",
-        "rating": 1500.0,
-        "rd": 350.0,
-        "partidos_jugados": 0,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 56.4,
-        "prob_empate": 23.1,
-        "prob_visitante": 20.5
-      },
-      "diff_elo": 7.1,
-      "confianza": 3.5
     },
     {
       "fixture_id": "401887088",
@@ -7227,7 +7143,7 @@
         "nombre": "Seattle U",
         "pais": "EE.UU.",
         "rating": 1423.31,
-        "rd": 261.9455996510067,
+        "rd": 262.15288268821956,
         "partidos_jugados": 2,
         "form_score": 31.1,
         "form_local": 31.1,
@@ -10972,7 +10888,7 @@
         "nombre": "Texas",
         "pais": "EE.UU.",
         "rating": 1791.93,
-        "rd": 248.99183525916752,
+        "rd": 249.20990022922652,
         "partidos_jugados": 2,
         "form_score": 100.0,
         "form_local": 100.0,
@@ -11362,7 +11278,7 @@
         "nombre": "Baylor",
         "pais": "EE.UU.",
         "rating": 1662.31,
-        "rd": 292.7422533644982,
+        "rd": 292.92775090703964,
         "partidos_jugados": 1,
         "form_score": 100.0,
         "form_local": 50.0,
@@ -11844,175 +11760,6 @@
       },
       "diff_elo": -183.2,
       "confianza": 91.6
-    },
-    {
-      "fixture_id": "401900234",
-      "fecha": "2026-09-18T17:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "17:00",
-      "liga": "usa.ncaa.w.1",
-      "liga_pais": "EE.UU.",
-      "liga_slug": "usa.ncaa.w.1",
-      "equipo_local": {
-        "id": "20552",
-        "nombre": "Jacksonville",
-        "pais": "EE.UU.",
-        "rating": 1435.74,
-        "rd": 182.6,
-        "partidos_jugados": 5,
-        "form_score": 18.5,
-        "form_local": 68.9,
-        "form_visitante": 9.3,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "1V 2D 2E",
-          "resultados": [
-            "D",
-            "D",
-            "E",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.4,
-          "goles_contra": 1.4,
-          "diferencia": -1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 7.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "132489",
-        "nombre": "Warner",
-        "pais": "EE.UU.",
-        "rating": 1500.0,
-        "rd": 350.0,
-        "partidos_jugados": 0,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 47.4,
-        "prob_empate": 23.1,
-        "prob_visitante": 29.5
-      },
-      "diff_elo": -64.3,
-      "confianza": 32.1
-    },
-    {
-      "fixture_id": "401900298",
-      "fecha": "2026-09-18T17:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "17:00",
-      "liga": "usa.ncaa.w.1",
-      "liga_pais": "EE.UU.",
-      "liga_slug": "usa.ncaa.w.1",
-      "equipo_local": {
-        "id": "20635",
-        "nombre": "Southern",
-        "pais": "EE.UU.",
-        "rating": 1462.49,
-        "rd": 236.94,
-        "partidos_jugados": 2,
-        "form_score": 37.8,
-        "form_local": 100.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1D",
-          "resultados": [
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.5,
-          "goles_contra": 4.5,
-          "diferencia": -3.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "131300",
-        "nombre": "West Florida",
-        "pais": "EE.UU.",
-        "rating": 1706.64,
-        "rd": 228.71,
-        "partidos_jugados": 3,
-        "form_score": 90.7,
-        "form_local": 81.1,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V 1E",
-          "resultados": [
-            "V",
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 0.67,
-          "diferencia": 1.33
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 6.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 30.2,
-        "prob_empate": 23.1,
-        "prob_visitante": 46.7
-      },
-      "diff_elo": -244.2,
-      "confianza": 100.0
     },
     {
       "fixture_id": "401897956",
@@ -18989,7 +18736,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.5,
+        "overperformance": 2.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19116,7 +18863,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.2,
+        "overperformance": 2.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -19169,7 +18916,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.7,
+        "overperformance": -3.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19206,7 +18953,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.9,
+        "overperformance": 5.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -19296,7 +19043,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -11.2,
+        "overperformance": -11.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -19792,7 +19539,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.3,
+        "overperformance": -7.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19829,7 +19576,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.3,
+        "overperformance": 8.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -19882,7 +19629,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.9,
+        "overperformance": 5.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19919,7 +19666,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.2,
+        "overperformance": 8.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -22730,7 +22477,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 18.1,
+        "overperformance": 18.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -26151,7 +25898,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 18.1,
+        "overperformance": 18.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -27297,7 +27044,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.2,
+        "overperformance": -0.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -27387,7 +27134,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.9,
+        "overperformance": 2.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -27440,7 +27187,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.7,
+        "overperformance": 0.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -27567,7 +27314,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.7,
+        "overperformance": -2.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -27747,7 +27494,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.6,
+        "overperformance": -2.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -27800,7 +27547,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.6,
+        "overperformance": -8.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -27980,7 +27727,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.8,
+        "overperformance": -3.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -28017,7 +27764,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.0,
+        "overperformance": 5.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -28160,7 +27907,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.5,
+        "overperformance": 1.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -29325,7 +29072,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.4,
+        "overperformance": -7.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -29415,7 +29162,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.4,
+        "overperformance": 1.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -31512,7 +31259,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.9,
+        "overperformance": 0.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -31602,7 +31349,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.0,
+        "overperformance": 5.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -31655,7 +31402,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.4,
+        "overperformance": 4.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -31692,7 +31439,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.3,
+        "overperformance": 4.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -31745,7 +31492,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.1,
+        "overperformance": 6.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -31782,7 +31529,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.4,
+        "overperformance": 0.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -32285,7 +32032,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.6,
+        "overperformance": 4.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -32412,7 +32159,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.1,
+        "overperformance": 3.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -32465,7 +32212,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.1,
+        "overperformance": -1.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -32502,7 +32249,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.1,
+        "overperformance": 4.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -32555,7 +32302,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.8,
+        "overperformance": 7.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -32682,7 +32429,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.0,
+        "overperformance": 5.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -32735,7 +32482,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.3,
+        "overperformance": -2.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -32772,7 +32519,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.4,
+        "overperformance": -0.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -32825,7 +32572,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.7,
+        "overperformance": -0.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -32997,7 +32744,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 14.9,
+        "overperformance": 13.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -33034,7 +32781,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.7,
+        "overperformance": 8.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -33173,7 +32920,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.4,
+        "overperformance": 5.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -33263,7 +33010,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.0,
+        "overperformance": -0.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -33300,7 +33047,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.3,
+        "overperformance": 9.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -33353,7 +33100,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.6,
+        "overperformance": 2.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -33390,7 +33137,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.2,
+        "overperformance": -0.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -33693,7 +33440,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.2,
+        "overperformance": -0.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -33730,7 +33477,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.7,
+        "overperformance": 4.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -34143,7 +33890,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.2,
+        "overperformance": 4.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -34750,7 +34497,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.1,
+        "overperformance": -2.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -35451,7 +35198,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.1,
+        "overperformance": -1.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -35488,7 +35235,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.0,
+        "overperformance": -7.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -36023,7 +35770,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.4,
+        "overperformance": 5.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -36113,7 +35860,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.4,
+        "overperformance": 5.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -36404,7 +36151,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.3,
+        "overperformance": 4.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -36457,7 +36204,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.3,
+        "overperformance": -1.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -36668,7 +36415,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 20.5,
+        "overperformance": 16.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -36758,7 +36505,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.9,
+        "overperformance": 4.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -36811,7 +36558,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.7,
+        "overperformance": 6.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -36848,7 +36595,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 11.4,
+        "overperformance": 11.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -36901,7 +36648,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.4,
+        "overperformance": 0.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -37022,7 +36769,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.5,
+        "overperformance": 1.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -37075,7 +36822,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -10.3,
+        "overperformance": -9.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -37345,7 +37092,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.7,
+        "overperformance": -1.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -37382,7 +37129,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.0,
+        "overperformance": 7.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -37435,7 +37182,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.2,
+        "overperformance": -1.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -37525,7 +37272,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.1,
+        "overperformance": 7.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -37562,7 +37309,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.5,
+        "overperformance": 2.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -37652,7 +37399,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.9,
+        "overperformance": 3.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -37705,7 +37452,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.5,
+        "overperformance": -1.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -37742,7 +37489,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.4,
+        "overperformance": -5.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -37795,7 +37542,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.6,
+        "overperformance": -2.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -37832,7 +37579,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.2,
+        "overperformance": 4.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -37885,7 +37632,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.3,
+        "overperformance": 2.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -38012,7 +37759,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.7,
+        "overperformance": 3.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -38325,7 +38072,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.9,
+        "overperformance": 2.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -38362,7 +38109,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.2,
+        "overperformance": -8.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -38493,7 +38240,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.5,
+        "overperformance": -3.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -38579,7 +38326,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.5,
+        "overperformance": -5.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -38614,7 +38361,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.7,
+        "overperformance": 0.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -38715,7 +38462,7 @@
       "liga_slug": "all",
       "equipo_local": {
         "id": "131762",
-        "nombre": "FIJI",
+        "nombre": "Fiji",
         "pais": "",
         "rating": 1500.0,
         "rd": 350.0,
@@ -38745,8 +38492,8 @@
         "vol": 0.06
       },
       "equipo_visitante": {
-        "id": "131554",
-        "nombre": "TBD Away",
+        "id": "133875",
+        "nombre": "Vanuatu",
         "pais": "",
         "rating": 1500.0,
         "rd": 350.0,
@@ -38793,7 +38540,7 @@
       "liga_slug": "all",
       "equipo_local": {
         "id": "131784",
-        "nombre": "NCALEDONIA",
+        "nombre": "New Caledonia",
         "pais": "",
         "rating": 1500.0,
         "rd": 350.0,
@@ -38823,8 +38570,8 @@
         "vol": 0.06
       },
       "equipo_visitante": {
-        "id": "131554",
-        "nombre": "TBD Away",
+        "id": "21824",
+        "nombre": "Papua New Guinea",
         "pais": "",
         "rating": 1500.0,
         "rd": 350.0,
@@ -41609,7 +41356,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.4,
+        "overperformance": 9.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -41693,7 +41440,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 22.2,
+        "overperformance": 20.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -41746,7 +41493,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.4,
+        "overperformance": 6.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -41783,7 +41530,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 10.7,
+        "overperformance": 10.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -41963,7 +41710,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.5,
+        "overperformance": 5.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -42016,7 +41763,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.9,
+        "overperformance": -3.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -42053,7 +41800,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.7,
+        "overperformance": -10.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -42106,7 +41853,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -11.5,
+        "overperformance": -10.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -42143,7 +41890,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.7,
+        "overperformance": -1.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -42320,7 +42067,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -16.0,
+        "overperformance": -16.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -42373,7 +42120,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.4,
+        "overperformance": 0.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -42713,7 +42460,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.9,
+        "overperformance": 2.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -42750,7 +42497,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.2,
+        "overperformance": 4.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -42803,7 +42550,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.2,
+        "overperformance": -1.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -42893,7 +42640,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.5,
+        "overperformance": -4.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -42930,7 +42677,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.0,
+        "overperformance": 2.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -42983,7 +42730,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.1,
+        "overperformance": -1.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -43020,7 +42767,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.9,
+        "overperformance": 6.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -43194,7 +42941,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 11.9,
+        "overperformance": 11.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -43247,7 +42994,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.8,
+        "overperformance": 5.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -43284,7 +43031,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 16.1,
+        "overperformance": 16.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -43374,7 +43121,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.9,
+        "overperformance": -4.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -43424,7 +43171,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.2,
+        "overperformance": -12.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -43671,7 +43418,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -14.7,
+        "overperformance": -14.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -43705,7 +43452,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -28.4,
+        "overperformance": -29.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -43756,7 +43503,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.0,
+        "overperformance": 1.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -43881,7 +43628,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.6,
+        "overperformance": 10.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -44354,7 +44101,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.0,
+        "overperformance": -7.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -44534,7 +44281,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.7,
+        "overperformance": -0.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -44714,7 +44461,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.4,
+        "overperformance": 8.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -44804,7 +44551,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.4,
+        "overperformance": -1.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -44931,7 +44678,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.7,
+        "overperformance": 2.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -45021,7 +44768,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 11.9,
+        "overperformance": 11.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -45164,7 +44911,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.1,
+        "overperformance": -2.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -45426,7 +45173,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.2,
+        "overperformance": -0.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -45463,7 +45210,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.6,
+        "overperformance": -1.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -45516,7 +45263,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.5,
+        "overperformance": 3.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -45553,7 +45300,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.7,
+        "overperformance": 2.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -45606,7 +45353,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.7,
+        "overperformance": 3.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -45784,7 +45531,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.6,
+        "overperformance": 5.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -45874,7 +45621,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.4,
+        "overperformance": 0.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -45964,7 +45711,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.9,
+        "overperformance": -10.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -46001,7 +45748,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.0,
+        "overperformance": -1.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -46177,7 +45924,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 16.3,
+        "overperformance": 14.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -46230,7 +45977,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.3,
+        "overperformance": 3.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -46658,7 +46405,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.2,
+        "overperformance": -5.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -46695,7 +46442,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.0,
+        "overperformance": 0.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -46748,7 +46495,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.2,
+        "overperformance": 10.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -46838,7 +46585,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.8,
+        "overperformance": -4.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -46875,7 +46622,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.5,
+        "overperformance": -3.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -46960,7 +46707,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.1,
+        "overperformance": -5.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -47013,7 +46760,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.9,
+        "overperformance": 5.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -47050,7 +46797,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.8,
+        "overperformance": -2.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -47103,7 +46850,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.0,
+        "overperformance": -1.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -47193,7 +46940,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 10.3,
+        "overperformance": 11.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -47230,7 +46977,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.9,
+        "overperformance": -2.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -47370,7 +47117,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -20.9,
+        "overperformance": -22.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -48450,7 +48197,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.7,
+        "overperformance": -2.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -51106,95 +50853,6 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401900558",
-      "fecha": "2026-09-18T17:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "17:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "18390",
-        "nombre": "UMass Lowell",
-        "pais": "",
-        "rating": 1584.34,
-        "rd": 203.47,
-        "partidos_jugados": 4,
-        "form_score": 78.2,
-        "form_local": 100.0,
-        "form_visitante": 60.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V 1D 1E",
-          "resultados": [
-            "V",
-            "V",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 1.25,
-          "diferencia": 0.75
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -4.1,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "5707",
-        "nombre": "Manhattan",
-        "pais": "",
-        "rating": 1218.57,
-        "rd": 177.28,
-        "partidos_jugados": 5,
-        "form_score": 30.8,
-        "form_local": 37.8,
-        "form_visitante": 15.4,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "D",
-            "V",
-            "D",
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.4,
-          "goles_contra": 2.2,
-          "diferencia": -0.8
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 3.1,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 78.7,
-        "prob_empate": 20.4,
-        "prob_visitante": 0.9
-      },
-      "diff_elo": 365.8,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401900320",
       "fecha": "2026-09-18T17:00:00-05:00",
       "fecha_display": "2026-09-18",
@@ -51281,96 +50939,6 @@
       },
       "diff_elo": 160.6,
       "confianza": 80.3
-    },
-    {
-      "fixture_id": "401883703",
-      "fecha": "2026-09-18T17:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "17:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "20525",
-        "nombre": "Iowa",
-        "pais": "",
-        "rating": 1794.32,
-        "rd": 161.39,
-        "partidos_jugados": 7,
-        "form_score": 74.2,
-        "form_local": 77.2,
-        "form_visitante": 81.4,
-        "momentum": "stable",
-        "momentum_diff": -1.4,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 1D 1E",
-          "resultados": [
-            "E",
-            "V",
-            "V",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 3.14,
-          "goles_contra": 0.43,
-          "diferencia": 2.71
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 8.2,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20497",
-        "nombre": "Illinois",
-        "pais": "",
-        "rating": 1658.6,
-        "rd": 167.65,
-        "partidos_jugados": 6,
-        "form_score": 44.7,
-        "form_local": 33.3,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": -0.2,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 1D 2E",
-          "resultados": [
-            "D",
-            "V",
-            "E",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.67,
-          "goles_contra": 0.67,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 4.3,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 68.6,
-        "prob_empate": 23.1,
-        "prob_visitante": 8.3
-      },
-      "diff_elo": 135.7,
-      "confianza": 67.9
     },
     {
       "fixture_id": "401883913",
@@ -51636,1063 +51204,6 @@
       "confianza": 95.8
     },
     {
-      "fixture_id": "401888666",
-      "fecha": "2026-09-18T16:30:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "16:30",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5584",
-        "nombre": "Nacional",
-        "pais": "",
-        "rating": 1546.26,
-        "rd": 191.25,
-        "partidos_jugados": 5,
-        "form_score": 81.5,
-        "form_local": 81.1,
-        "form_visitante": 66.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V 1D 2E",
-          "resultados": [
-            "V",
-            "V",
-            "E",
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.6,
-          "goles_contra": 0.8,
-          "diferencia": 0.8
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -8.9,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "6097",
-        "nombre": "2 de Mayo",
-        "pais": "",
-        "rating": 1695.64,
-        "rd": 189.31,
-        "partidos_jugados": 5,
-        "form_score": 70.7,
-        "form_local": 59.3,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 2E",
-          "resultados": [
-            "E",
-            "V",
-            "E",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.2,
-          "goles_contra": 0.6,
-          "diferencia": 0.6
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 7.2,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 39.1,
-        "prob_empate": 23.1,
-        "prob_visitante": 37.8
-      },
-      "diff_elo": -149.4,
-      "confianza": 74.7
-    },
-    {
-      "fixture_id": "401891343",
-      "fecha": "2026-09-18T16:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "16:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "20578",
-        "nombre": "Southern Miss",
-        "pais": "",
-        "rating": 1645.49,
-        "rd": 196.09,
-        "partidos_jugados": 4,
-        "form_score": 69.5,
-        "form_local": 81.1,
-        "form_visitante": 37.8,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 1D 1E",
-          "resultados": [
-            "V",
-            "E",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 3.5,
-          "goles_contra": 0.75,
-          "diferencia": 2.75
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -4.1,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20556",
-        "nombre": "James Madison",
-        "pais": "",
-        "rating": 1534.18,
-        "rd": 172.57,
-        "partidos_jugados": 6,
-        "form_score": 54.6,
-        "form_local": 81.4,
-        "form_visitante": 15.4,
-        "momentum": "stable",
-        "momentum_diff": 2.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "V",
-            "D",
-            "E",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.17,
-          "goles_contra": 2.17,
-          "diferencia": -1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 5.4,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 67.6,
-        "prob_empate": 23.1,
-        "prob_visitante": 9.2
-      },
-      "diff_elo": 111.3,
-      "confianza": 55.7
-    },
-    {
-      "fixture_id": "401915256",
-      "fecha": "2026-09-18T16:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "16:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "7243",
-        "nombre": "Platense",
-        "pais": "",
-        "rating": 1392.36,
-        "rd": 205.78,
-        "partidos_jugados": 4,
-        "form_score": 50.6,
-        "form_local": 81.1,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 2D 1E",
-          "resultados": [
-            "V",
-            "D",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.75,
-          "goles_contra": 1.75,
-          "diferencia": -1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -4.9,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "18809",
-        "nombre": "UPNFM",
-        "pais": "",
-        "rating": 1291.84,
-        "rd": 198.23,
-        "partidos_jugados": 4,
-        "form_score": 13.4,
-        "form_local": 50.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2D 2E",
-          "resultados": [
-            "D",
-            "D",
-            "E",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 2.0,
-          "diferencia": -1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 1.1,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 67.8,
-        "prob_empate": 23.1,
-        "prob_visitante": 9.1
-      },
-      "diff_elo": 100.5,
-      "confianza": 50.3
-    },
-    {
-      "fixture_id": "401877947",
-      "fecha": "2026-09-18T16:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "16:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "9762",
-        "nombre": "Águilas Doradas",
-        "pais": "",
-        "rating": 1489.45,
-        "rd": 176.96,
-        "partidos_jugados": 5,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 5
-        },
-        "ultimos5": {
-          "texto": "5E",
-          "resultados": [
-            "E",
-            "E",
-            "E",
-            "E",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.8,
-          "goles_contra": 0.8,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 1.7,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "5486",
-        "nombre": "Pereira",
-        "pais": "",
-        "rating": 1447.15,
-        "rd": 169.74,
-        "partidos_jugados": 5,
-        "form_score": 41.6,
-        "form_local": 18.9,
-        "form_visitante": 75.3,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1D 3E",
-          "resultados": [
-            "D",
-            "V",
-            "E",
-            "E",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.6,
-          "goles_contra": 0.8,
-          "diferencia": -0.2
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -2.1,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 57.8,
-        "prob_empate": 23.1,
-        "prob_visitante": 19.1
-      },
-      "diff_elo": 42.3,
-      "confianza": 21.1
-    },
-    {
-      "fixture_id": "401883737",
-      "fecha": "2026-09-18T16:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "16:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "20341",
-        "nombre": "Maryland",
-        "pais": "",
-        "rating": 1662.56,
-        "rd": 198.32,
-        "partidos_jugados": 4,
-        "form_score": 72.4,
-        "form_local": 100.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 1D",
-          "resultados": [
-            "V",
-            "D",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.25,
-          "goles_contra": 1.0,
-          "diferencia": 0.25
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 9.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20322",
-        "nombre": "Penn State",
-        "pais": "",
-        "rating": 1792.12,
-        "rd": 178.96,
-        "partidos_jugados": 5,
-        "form_score": 87.5,
-        "form_local": 100.0,
-        "form_visitante": 18.9,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "3V 1D 1E",
-          "resultados": [
-            "V",
-            "V",
-            "V",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 3.0,
-          "goles_contra": 0.8,
-          "diferencia": 2.2
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 4.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 42.6,
-        "prob_empate": 23.1,
-        "prob_visitante": 34.3
-      },
-      "diff_elo": -129.6,
-      "confianza": 64.8
-    },
-    {
-      "fixture_id": "401841572",
-      "fecha": "2026-09-18T16:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "16:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "11989",
-        "nombre": "C. Córdoba (SE)",
-        "pais": "",
-        "rating": 1486.86,
-        "rd": 182.84,
-        "partidos_jugados": 5,
-        "form_score": 36.8,
-        "form_local": 37.8,
-        "form_visitante": 44.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "E",
-            "D",
-            "D",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.8,
-          "goles_contra": 0.8,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.8,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "8950",
-        "nombre": "Def. y Jus.",
-        "pais": "",
-        "rating": 1799.3,
-        "rd": 189.23,
-        "partidos_jugados": 4,
-        "form_score": 91.6,
-        "form_local": 100.0,
-        "form_visitante": 81.1,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "3V 1E",
-          "resultados": [
-            "V",
-            "V",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.5,
-          "goles_contra": 0.75,
-          "diferencia": 0.75
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 13.1,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 22.0,
-        "prob_empate": 23.1,
-        "prob_visitante": 54.9
-      },
-      "diff_elo": -312.4,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401886181",
-      "fecha": "2026-09-18T15:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "15:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5267",
-        "nombre": "Alianza Atl",
-        "pais": "",
-        "rating": 1774.81,
-        "rd": 200.06,
-        "partidos_jugados": 4,
-        "form_score": 91.6,
-        "form_local": 100.0,
-        "form_visitante": 81.1,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "3V 1E",
-          "resultados": [
-            "V",
-            "V",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.25,
-          "goles_contra": 0.75,
-          "diferencia": 1.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 3.5,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "18153",
-        "nombre": "Comer Unid",
-        "pais": "",
-        "rating": 1352.7,
-        "rd": 178.92,
-        "partidos_jugados": 5,
-        "form_score": 21.6,
-        "form_local": 18.6,
-        "form_visitante": 62.2,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V 3D",
-          "resultados": [
-            "D",
-            "D",
-            "V",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.6,
-          "goles_contra": 1.4,
-          "diferencia": 0.2
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 2.3,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 79.2,
-        "prob_empate": 19.9,
-        "prob_visitante": 0.9
-      },
-      "diff_elo": 422.1,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401900283",
-      "fecha": "2026-09-18T15:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "15:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "20614",
-        "nombre": "Jackson St",
-        "pais": "",
-        "rating": 1269.14,
-        "rd": 180.52,
-        "partidos_jugados": 7,
-        "form_score": 32.1,
-        "form_local": 66.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 1.8,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "D",
-            "V",
-            "E",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.43,
-          "goles_contra": 2.43,
-          "diferencia": -1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -10.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20598",
-        "nombre": "Austin Peay",
-        "pais": "",
-        "rating": 1175.22,
-        "rd": 186.99,
-        "partidos_jugados": 5,
-        "form_score": 13.0,
-        "form_local": 25.3,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "4D 1E",
-          "resultados": [
-            "D",
-            "E",
-            "D",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.4,
-          "goles_contra": 2.4,
-          "diferencia": -2.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -10.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 66.2,
-        "prob_empate": 23.1,
-        "prob_visitante": 10.7
-      },
-      "diff_elo": 93.9,
-      "confianza": 47.0
-    },
-    {
-      "fixture_id": "401887727",
-      "fecha": "2026-09-18T15:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "15:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5678",
-        "nombre": "DePaul",
-        "pais": "",
-        "rating": 1611.89,
-        "rd": 204.43,
-        "partidos_jugados": 4,
-        "form_score": 55.4,
-        "form_local": 100.0,
-        "form_visitante": 34.6,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1D 2E",
-          "resultados": [
-            "E",
-            "V",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 3.0,
-          "diferencia": -1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.4,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "5712",
-        "nombre": "Xavier",
-        "pais": "",
-        "rating": 1802.66,
-        "rd": 197.28,
-        "partidos_jugados": 4,
-        "form_score": 91.6,
-        "form_local": 68.9,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "3V 1E",
-          "resultados": [
-            "V",
-            "V",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.5,
-          "goles_contra": 0.75,
-          "diferencia": 0.75
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 10.1,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 34.0,
-        "prob_empate": 23.1,
-        "prob_visitante": 42.9
-      },
-      "diff_elo": -190.8,
-      "confianza": 95.4
-    },
-    {
-      "fixture_id": "401913076",
-      "fecha": "2026-09-18T14:30:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "14:30",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "21604",
-        "nombre": "Sport Clube",
-        "pais": "",
-        "rating": 1662.31,
-        "rd": 290.32,
-        "partidos_jugados": 1,
-        "form_score": 100.0,
-        "form_local": 50.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V",
-          "resultados": [
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 0.0,
-          "diferencia": 1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 24.3,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "3698",
-        "nombre": "Académica",
-        "pais": "",
-        "rating": 1500.0,
-        "rd": 350.0,
-        "partidos_jugados": 0,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 68.2,
-        "prob_empate": 23.1,
-        "prob_visitante": 8.6
-      },
-      "diff_elo": 162.3,
-      "confianza": 81.2
-    },
-    {
-      "fixture_id": "401885664",
-      "fecha": "2026-09-18T14:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "14:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "19258",
-        "nombre": "PSG",
-        "pais": "",
-        "rating": 1810.43,
-        "rd": 226.52,
-        "partidos_jugados": 3,
-        "form_score": 90.7,
-        "form_local": 100.0,
-        "form_visitante": 81.1,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V 1E",
-          "resultados": [
-            "V",
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.67,
-          "goles_contra": 0.33,
-          "diferencia": 1.34
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 10.4,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "22328",
-        "nombre": "Nantes",
-        "pais": "",
-        "rating": 1337.69,
-        "rd": 247.46,
-        "partidos_jugados": 2,
-        "form_score": 31.1,
-        "form_local": 50.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1D 1E",
-          "resultados": [
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.5,
-          "goles_contra": 1.5,
-          "diferencia": -1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -16.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 79.5,
-        "prob_empate": 19.7,
-        "prob_visitante": 0.8
-      },
-      "diff_elo": 472.7,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401879275",
-      "fecha": "2026-09-18T14:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "14:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "337",
-        "nombre": "Brentford",
-        "pais": "",
-        "rating": 1845.72,
-        "rd": 155.83,
-        "partidos_jugados": 8,
-        "form_score": 76.0,
-        "form_local": 74.7,
-        "form_visitante": 79.1,
-        "momentum": "stable",
-        "momentum_diff": -1.7,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 3E",
-          "resultados": [
-            "V",
-            "E",
-            "E",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 3.25,
-          "goles_contra": 1.0,
-          "diferencia": 2.25
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 9.4,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "363",
-        "nombre": "Chelsea",
-        "pais": "",
-        "rating": 1762.48,
-        "rd": 136.34,
-        "partidos_jugados": 10,
-        "form_score": 64.6,
-        "form_local": 77.7,
-        "form_visitante": 40.0,
-        "momentum": "stable",
-        "momentum_diff": -1.8,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 1D 1E",
-          "resultados": [
-            "E",
-            "V",
-            "D",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.7,
-          "goles_contra": 1.7,
-          "diferencia": 1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 5.5,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 64.5,
-        "prob_empate": 23.1,
-        "prob_visitante": 12.4
-      },
-      "diff_elo": 83.2,
-      "confianza": 41.6
-    },
-    {
       "fixture_id": "401922272",
       "fecha": "2026-09-18T14:00:00-05:00",
       "fecha_display": "2026-09-18",
@@ -52736,7 +51247,7 @@
       },
       "equipo_visitante": {
         "id": "133873",
-        "nombre": "KAC Kenitra",
+        "nombre": "Kenitra",
         "pais": "",
         "rating": 1500.0,
         "rd": 350.0,
@@ -52772,3727 +51283,6 @@
       },
       "diff_elo": 76.7,
       "confianza": 38.3
-    },
-    {
-      "fixture_id": "401882862",
-      "fecha": "2026-09-18T14:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "14:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "88",
-        "nombre": "Espanyol",
-        "pais": "",
-        "rating": 1408.6,
-        "rd": 162.63,
-        "partidos_jugados": 7,
-        "form_score": 35.4,
-        "form_local": 44.0,
-        "form_visitante": 27.6,
-        "momentum": "stable",
-        "momentum_diff": -1.5,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "D",
-            "V",
-            "E",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.43,
-          "goles_contra": 1.43,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -3.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "3751",
-        "nombre": "Elche",
-        "pais": "",
-        "rating": 1368.72,
-        "rd": 159.01,
-        "partidos_jugados": 7,
-        "form_score": 16.0,
-        "form_local": 10.2,
-        "form_visitante": 34.6,
-        "momentum": "stable",
-        "momentum_diff": -3.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "4D 1E",
-          "resultados": [
-            "D",
-            "E",
-            "D",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.57,
-          "goles_contra": 2.29,
-          "diferencia": -0.72
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -3.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 59.3,
-        "prob_empate": 23.1,
-        "prob_visitante": 17.6
-      },
-      "diff_elo": 39.9,
-      "confianza": 19.9
-    },
-    {
-      "fixture_id": "401880255",
-      "fecha": "2026-09-18T14:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "14:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "333",
-        "nombre": "Bristol City",
-        "pais": "",
-        "rating": 1474.29,
-        "rd": 147.07,
-        "partidos_jugados": 8,
-        "form_score": 30.8,
-        "form_local": 27.6,
-        "form_visitante": 49.4,
-        "momentum": "stable",
-        "momentum_diff": 0.3,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "3V 2D",
-          "resultados": [
-            "D",
-            "D",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.25,
-          "goles_contra": 1.62,
-          "diferencia": -0.37
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -2.8,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "395",
-        "nombre": "Watford",
-        "pais": "",
-        "rating": 1485.92,
-        "rd": 137.81,
-        "partidos_jugados": 9,
-        "form_score": 29.7,
-        "form_local": 41.7,
-        "form_visitante": 9.3,
-        "momentum": "stable",
-        "momentum_diff": -0.8,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "D",
-            "V",
-            "D",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 1.56,
-          "diferencia": -0.56
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.3,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 53.0,
-        "prob_empate": 23.1,
-        "prob_visitante": 23.8
-      },
-      "diff_elo": -11.6,
-      "confianza": 5.8
-    },
-    {
-      "fixture_id": "401888593",
-      "fecha": "2026-09-18T14:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "14:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "7466",
-        "nombre": "Trinidense",
-        "pais": "",
-        "rating": 1386.54,
-        "rd": 169.56,
-        "partidos_jugados": 6,
-        "form_score": 15.6,
-        "form_local": 18.5,
-        "form_visitante": 31.1,
-        "momentum": "stable",
-        "momentum_diff": -2.9,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "3D 2E",
-          "resultados": [
-            "D",
-            "D",
-            "E",
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 1.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -3.4,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "7385",
-        "nombre": "Guaraní",
-        "pais": "",
-        "rating": 1476.77,
-        "rd": 170.64,
-        "partidos_jugados": 6,
-        "form_score": 59.8,
-        "form_local": 58.7,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.3,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1D 3E",
-          "resultados": [
-            "E",
-            "V",
-            "E",
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 0.83,
-          "diferencia": 0.17
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.2,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 41.1,
-        "prob_empate": 23.1,
-        "prob_visitante": 35.7
-      },
-      "diff_elo": -90.2,
-      "confianza": 45.1
-    },
-    {
-      "fixture_id": "401876453",
-      "fecha": "2026-09-18T13:45:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:45",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "174",
-        "nombre": "Monaco",
-        "pais": "",
-        "rating": 1765.11,
-        "rd": 155.34,
-        "partidos_jugados": 9,
-        "form_score": 78.1,
-        "form_local": 100.0,
-        "form_visitante": 73.7,
-        "momentum": "stable",
-        "momentum_diff": 0.5,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "4V 1E",
-          "resultados": [
-            "E",
-            "V",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.89,
-          "goles_contra": 1.0,
-          "diferencia": 0.89
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 2.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "175",
-        "nombre": "Lens",
-        "pais": "",
-        "rating": 1398.12,
-        "rd": 163.49,
-        "partidos_jugados": 7,
-        "form_score": 53.7,
-        "form_local": 44.3,
-        "form_visitante": 56.0,
-        "momentum": "stable",
-        "momentum_diff": -0.5,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "E",
-            "V",
-            "D",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.71,
-          "goles_contra": 1.57,
-          "diferencia": 0.14
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 5.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 78.6,
-        "prob_empate": 20.6,
-        "prob_visitante": 0.9
-      },
-      "diff_elo": 367.0,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401878987",
-      "fecha": "2026-09-18T13:45:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:45",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "3611",
-        "nombre": "KAA Gent",
-        "pais": "",
-        "rating": 1831.16,
-        "rd": 149.43,
-        "partidos_jugados": 10,
-        "form_score": 78.0,
-        "form_local": 87.3,
-        "form_visitante": 78.6,
-        "momentum": "stable",
-        "momentum_diff": 0.6,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "4V 1E",
-          "resultados": [
-            "E",
-            "V",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.6,
-          "goles_contra": 0.6,
-          "diferencia": 1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 2.1,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "559",
-        "nombre": "Standard Liege",
-        "pais": "",
-        "rating": 1531.4,
-        "rd": 173.64,
-        "partidos_jugados": 6,
-        "form_score": 54.1,
-        "form_local": 90.7,
-        "form_visitante": 40.0,
-        "momentum": "stable",
-        "momentum_diff": 0.1,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 1D 1E",
-          "resultados": [
-            "D",
-            "V",
-            "V",
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 1.67,
-          "diferencia": 0.33
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -5.2,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 77.7,
-        "prob_empate": 21.4,
-        "prob_visitante": 0.9
-      },
-      "diff_elo": 299.8,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401889300",
-      "fecha": "2026-09-18T13:45:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:45",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "284",
-        "nombre": "Yeovil",
-        "pais": "",
-        "rating": 1537.1,
-        "rd": 146.9,
-        "partidos_jugados": 8,
-        "form_score": 39.3,
-        "form_local": 49.4,
-        "form_visitante": 44.6,
-        "momentum": "stable",
-        "momentum_diff": -2.5,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "E",
-            "D",
-            "D",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.75,
-          "goles_contra": 1.62,
-          "diferencia": 0.13
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 1.1,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "13061",
-        "nombre": "Solihull",
-        "pais": "",
-        "rating": 1254.13,
-        "rd": 172.5,
-        "partidos_jugados": 8,
-        "form_score": 47.5,
-        "form_local": 42.9,
-        "form_visitante": 25.3,
-        "momentum": "stable",
-        "momentum_diff": 3.3,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "V",
-            "D",
-            "E",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 2.38,
-          "diferencia": -1.38
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -8.4,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 77.0,
-        "prob_empate": 22.1,
-        "prob_visitante": 1.0
-      },
-      "diff_elo": 283.0,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401917298",
-      "fecha": "2026-09-18T13:45:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:45",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "649",
-        "nombre": "Worcester Ci",
-        "pais": "",
-        "rating": 1708.21,
-        "rd": 242.48,
-        "partidos_jugados": 2,
-        "form_score": 81.1,
-        "form_local": 100.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1E",
-          "resultados": [
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 0.5,
-          "diferencia": 0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 5.5,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "21179",
-        "nombre": "Stratford",
-        "pais": "",
-        "rating": 1662.31,
-        "rd": 290.32,
-        "partidos_jugados": 1,
-        "form_score": 100.0,
-        "form_local": 50.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V",
-          "resultados": [
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 0.0,
-          "diferencia": 2.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 24.3,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 56.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 20.2
-      },
-      "diff_elo": 45.9,
-      "confianza": 23.0
-    },
-    {
-      "fixture_id": "401917311",
-      "fecha": "2026-09-18T13:45:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:45",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "21182",
-        "nombre": "Yate Town",
-        "pais": "",
-        "rating": 1500.0,
-        "rd": 350.0,
-        "partidos_jugados": 0,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "3921",
-        "nombre": "Chippenham",
-        "pais": "",
-        "rating": 1629.62,
-        "rd": 247.46,
-        "partidos_jugados": 2,
-        "form_score": 81.1,
-        "form_local": 50.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1E",
-          "resultados": [
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 1.0,
-          "diferencia": 1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 1.9,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 40.6,
-        "prob_empate": 23.1,
-        "prob_visitante": 36.3
-      },
-      "diff_elo": -129.6,
-      "confianza": 64.8
-    },
-    {
-      "fixture_id": "401874756",
-      "fecha": "2026-09-18T13:45:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:45",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "4007",
-        "nombre": "Monza",
-        "pais": "",
-        "rating": 1437.28,
-        "rd": 152.78,
-        "partidos_jugados": 7,
-        "form_score": 31.6,
-        "form_local": 40.0,
-        "form_visitante": 30.5,
-        "momentum": "stable",
-        "momentum_diff": -2.8,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "D",
-            "E",
-            "V",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.86,
-          "goles_contra": 2.0,
-          "diferencia": -0.14
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 3.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "3997",
-        "nombre": "Sassuolo",
-        "pais": "",
-        "rating": 1617.18,
-        "rd": 170.36,
-        "partidos_jugados": 6,
-        "form_score": 74.8,
-        "form_local": 100.0,
-        "form_visitante": 25.3,
-        "momentum": "stable",
-        "momentum_diff": 2.6,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 1D 1E",
-          "resultados": [
-            "V",
-            "E",
-            "V",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.17,
-          "goles_contra": 1.67,
-          "diferencia": 0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.6,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 33.6,
-        "prob_empate": 23.1,
-        "prob_visitante": 43.2
-      },
-      "diff_elo": -179.9,
-      "confianza": 90.0
-    },
-    {
-      "fixture_id": "401884790",
-      "fecha": "2026-09-18T13:30:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:30",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "132",
-        "nombre": "Bayern",
-        "pais": "",
-        "rating": 1976.88,
-        "rd": 155.98,
-        "partidos_jugados": 9,
-        "form_score": 92.7,
-        "form_local": 100.0,
-        "form_visitante": 87.0,
-        "momentum": "stable",
-        "momentum_diff": -0.6,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "4V 1E",
-          "resultados": [
-            "V",
-            "V",
-            "E",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.78,
-          "goles_contra": 0.89,
-          "diferencia": 1.89
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 13.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "598",
-        "nombre": "Union Berlin",
-        "pais": "",
-        "rating": 1474.4,
-        "rd": 160.93,
-        "partidos_jugados": 6,
-        "form_score": 20.3,
-        "form_local": 24.0,
-        "form_visitante": 37.8,
-        "momentum": "stable",
-        "momentum_diff": -2.9,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "D",
-            "D",
-            "E",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.17,
-          "goles_contra": 3.0,
-          "diferencia": -0.83
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 80.1,
-        "prob_empate": 19.0,
-        "prob_visitante": 0.8
-      },
-      "diff_elo": 502.5,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401878563",
-      "fecha": "2026-09-18T13:30:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:30",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "422",
-        "nombre": "Queen's Park",
-        "pais": "",
-        "rating": 1362.44,
-        "rd": 183.43,
-        "partidos_jugados": 5,
-        "form_score": 33.9,
-        "form_local": 50.6,
-        "form_visitante": 18.9,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "D",
-            "V",
-            "E",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.6,
-          "goles_contra": 1.4,
-          "diferencia": -0.8
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -4.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "248",
-        "nombre": "Ayr",
-        "pais": "",
-        "rating": 1175.16,
-        "rd": 169.84,
-        "partidos_jugados": 6,
-        "form_score": 9.3,
-        "form_local": 18.9,
-        "form_visitante": 5.1,
-        "momentum": "stable",
-        "momentum_diff": -1.4,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "4D 1E",
-          "resultados": [
-            "D",
-            "D",
-            "E",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.83,
-          "goles_contra": 1.83,
-          "diferencia": -1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -7.9,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 74.8,
-        "prob_empate": 23.1,
-        "prob_visitante": 2.1
-      },
-      "diff_elo": 187.3,
-      "confianza": 93.6
-    },
-    {
-      "fixture_id": "401883171",
-      "fecha": "2026-09-18T13:30:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:30",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "2737",
-        "nombre": "Albacete",
-        "pais": "",
-        "rating": 1340.16,
-        "rd": 175.1,
-        "partidos_jugados": 7,
-        "form_score": 24.0,
-        "form_local": 18.5,
-        "form_visitante": 25.3,
-        "momentum": "stable",
-        "momentum_diff": -2.6,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "4D 1E",
-          "resultados": [
-            "E",
-            "D",
-            "D",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.71,
-          "goles_contra": 1.29,
-          "diferencia": -0.58
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 6.7,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "8447",
-        "nombre": "Córdoba",
-        "pais": "",
-        "rating": 1417.75,
-        "rd": 157.24,
-        "partidos_jugados": 7,
-        "form_score": 11.1,
-        "form_local": 16.7,
-        "form_visitante": 18.6,
-        "momentum": "stable",
-        "momentum_diff": -1.5,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "1V 4D",
-          "resultados": [
-            "D",
-            "D",
-            "D",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.29,
-          "goles_contra": 2.43,
-          "diferencia": -1.14
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -3.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 46.1,
-        "prob_empate": 23.1,
-        "prob_visitante": 30.7
-      },
-      "diff_elo": -77.6,
-      "confianza": 38.8
-    },
-    {
-      "fixture_id": "401899614",
-      "fecha": "2026-09-18T13:30:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:30",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "3975",
-        "nombre": "Juve Stabia",
-        "pais": "",
-        "rating": 1410.43,
-        "rd": 166.49,
-        "partidos_jugados": 6,
-        "form_score": 39.3,
-        "form_local": 0.0,
-        "form_visitante": 53.2,
-        "momentum": "stable",
-        "momentum_diff": -2.1,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "E",
-            "D",
-            "V",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.83,
-          "goles_contra": 1.67,
-          "diferencia": -0.84
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -2.3,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "3337",
-        "nombre": "Cesena",
-        "pais": "",
-        "rating": 1507.63,
-        "rd": 166.95,
-        "partidos_jugados": 6,
-        "form_score": 54.8,
-        "form_local": 50.0,
-        "form_visitante": 60.0,
-        "momentum": "stable",
-        "momentum_diff": 0.2,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "1V 1D 3E",
-          "resultados": [
-            "E",
-            "E",
-            "V",
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 1.33,
-          "diferencia": -0.33
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.6,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 40.9,
-        "prob_empate": 23.1,
-        "prob_visitante": 35.9
-      },
-      "diff_elo": -97.2,
-      "confianza": 48.6
-    },
-    {
-      "fixture_id": "401875599",
-      "fecha": "2026-09-18T13:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "145",
-        "nombre": "FC Groningen",
-        "pais": "",
-        "rating": 1529.41,
-        "rd": 166.42,
-        "partidos_jugados": 6,
-        "form_score": 42.3,
-        "form_local": 44.0,
-        "form_visitante": 44.0,
-        "momentum": "stable",
-        "momentum_diff": -2.1,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "1V 2D 2E",
-          "resultados": [
-            "E",
-            "E",
-            "D",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 2.17,
-          "diferencia": -0.17
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 4.4,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "2565",
-        "nombre": "PEC Zwolle",
-        "pais": "",
-        "rating": 1356.56,
-        "rd": 167.52,
-        "partidos_jugados": 6,
-        "form_score": 21.8,
-        "form_local": 0.0,
-        "form_visitante": 56.0,
-        "momentum": "stable",
-        "momentum_diff": 0.8,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "D",
-            "E",
-            "D",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 2.83,
-          "diferencia": -1.83
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -6.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 71.9,
-        "prob_empate": 23.1,
-        "prob_visitante": 5.0
-      },
-      "diff_elo": 172.9,
-      "confianza": 86.4
-    },
-    {
-      "fixture_id": "401876745",
-      "fecha": "2026-09-18T13:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "18066",
-        "nombre": "Annecy",
-        "pais": "",
-        "rating": 1556.81,
-        "rd": 169.64,
-        "partidos_jugados": 6,
-        "form_score": 41.7,
-        "form_local": 68.9,
-        "form_visitante": 37.8,
-        "momentum": "stable",
-        "momentum_diff": -2.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "D",
-            "V",
-            "E",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.33,
-          "goles_contra": 1.17,
-          "diferencia": 0.16
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 4.1,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "3170",
-        "nombre": "Dijon FCO",
-        "pais": "",
-        "rating": 1415.55,
-        "rd": 171.49,
-        "partidos_jugados": 6,
-        "form_score": 60.3,
-        "form_local": 50.6,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.3,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 2D 2E",
-          "resultados": [
-            "V",
-            "E",
-            "D",
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.33,
-          "goles_contra": 1.5,
-          "diferencia": -0.17
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -2.3,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 67.8,
-        "prob_empate": 23.1,
-        "prob_visitante": 9.1
-      },
-      "diff_elo": 141.3,
-      "confianza": 70.6
-    },
-    {
-      "fixture_id": "401902914",
-      "fecha": "2026-09-18T13:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "19257",
-        "nombre": "Man City",
-        "pais": "",
-        "rating": 1765.13,
-        "rd": 248.76,
-        "partidos_jugados": 2,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V",
-          "resultados": [
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 3.5,
-          "goles_contra": 1.0,
-          "diferencia": 2.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 19.8,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "19971",
-        "nombre": "Liverpool ",
-        "pais": "",
-        "rating": 1662.31,
-        "rd": 247.46,
-        "partidos_jugados": 2,
-        "form_score": 68.9,
-        "form_local": 50.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1E",
-          "resultados": [
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.5,
-          "goles_contra": 0.5,
-          "diferencia": 2.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 7.4,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 64.3,
-        "prob_empate": 23.1,
-        "prob_visitante": 12.6
-      },
-      "diff_elo": 102.8,
-      "confianza": 51.4
-    },
-    {
-      "fixture_id": "401876743",
-      "fecha": "2026-09-18T13:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "6994",
-        "nombre": "Grenoble",
-        "pais": "",
-        "rating": 1516.47,
-        "rd": 170.13,
-        "partidos_jugados": 6,
-        "form_score": 59.4,
-        "form_local": 18.9,
-        "form_visitante": 73.1,
-        "momentum": "stable",
-        "momentum_diff": 2.1,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "V",
-            "D",
-            "V",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.17,
-          "goles_contra": 1.67,
-          "diferencia": -0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -9.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "3171",
-        "nombre": "Clermont Foot",
-        "pais": "",
-        "rating": 1424.69,
-        "rd": 163.97,
-        "partidos_jugados": 6,
-        "form_score": 47.2,
-        "form_local": 50.0,
-        "form_visitante": 31.1,
-        "momentum": "stable",
-        "momentum_diff": -0.1,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 4
-        },
-        "ultimos5": {
-          "texto": "1D 4E",
-          "resultados": [
-            "E",
-            "E",
-            "E",
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.5,
-          "goles_contra": 0.83,
-          "diferencia": -0.33
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 6.2,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 63.6,
-        "prob_empate": 23.1,
-        "prob_visitante": 13.3
-      },
-      "diff_elo": 91.8,
-      "confianza": 45.9
-    },
-    {
-      "fixture_id": "401876738",
-      "fecha": "2026-09-18T13:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "3243",
-        "nombre": "Reims",
-        "pais": "",
-        "rating": 1737.63,
-        "rd": 181.32,
-        "partidos_jugados": 6,
-        "form_score": 82.9,
-        "form_local": 65.4,
-        "form_visitante": 90.7,
-        "momentum": "stable",
-        "momentum_diff": 1.2,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 2E",
-          "resultados": [
-            "V",
-            "E",
-            "V",
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.33,
-          "goles_contra": 1.33,
-          "diferencia": 1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 2.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "274",
-        "nombre": "Montpellier",
-        "pais": "",
-        "rating": 1656.3,
-        "rd": 171.15,
-        "partidos_jugados": 6,
-        "form_score": 65.6,
-        "form_local": 75.3,
-        "form_visitante": 49.4,
-        "momentum": "stable",
-        "momentum_diff": 0.5,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 1D 1E",
-          "resultados": [
-            "V",
-            "D",
-            "E",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.83,
-          "goles_contra": 0.67,
-          "diferencia": 0.16
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.9,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 63.5,
-        "prob_empate": 23.1,
-        "prob_visitante": 13.4
-      },
-      "diff_elo": 81.3,
-      "confianza": 40.7
-    },
-    {
-      "fixture_id": "401875924",
-      "fecha": "2026-09-18T13:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "155",
-        "nombre": "RKC Waalwijk",
-        "pais": "",
-        "rating": 1642.38,
-        "rd": 164.89,
-        "partidos_jugados": 6,
-        "form_score": 83.3,
-        "form_local": 75.3,
-        "form_visitante": 75.3,
-        "momentum": "stable",
-        "momentum_diff": 1.1,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V 3E",
-          "resultados": [
-            "V",
-            "V",
-            "E",
-            "E",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 1.33,
-          "diferencia": 0.67
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -6.2,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "3730",
-        "nombre": "Maastricht",
-        "pais": "",
-        "rating": 1626.9,
-        "rd": 163.9,
-        "partidos_jugados": 7,
-        "form_score": 38.1,
-        "form_local": 40.7,
-        "form_visitante": 69.3,
-        "momentum": "stable",
-        "momentum_diff": -3.5,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "D",
-            "E",
-            "V",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.29,
-          "goles_contra": 2.14,
-          "diferencia": -0.85
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 7.1,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 57.8,
-        "prob_empate": 23.1,
-        "prob_visitante": 19.0
-      },
-      "diff_elo": 15.5,
-      "confianza": 7.7
-    },
-    {
-      "fixture_id": "401845107",
-      "fecha": "2026-09-18T13:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "14074",
-        "nombre": "Comunicaciones",
-        "pais": "",
-        "rating": 1613.83,
-        "rd": 169.36,
-        "partidos_jugados": 6,
-        "form_score": 78.6,
-        "form_local": 81.4,
-        "form_visitante": 60.0,
-        "momentum": "stable",
-        "momentum_diff": 2.7,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "3V 1D 1E",
-          "resultados": [
-            "V",
-            "V",
-            "D",
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.5,
-          "goles_contra": 0.5,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -5.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "17697",
-        "nombre": "Def. Unidos",
-        "pais": "",
-        "rating": 1629.62,
-        "rd": 166.44,
-        "partidos_jugados": 6,
-        "form_score": 78.4,
-        "form_local": 76.0,
-        "form_visitante": 62.2,
-        "momentum": "stable",
-        "momentum_diff": 2.8,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 1D 1E",
-          "resultados": [
-            "V",
-            "E",
-            "V",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.5,
-          "goles_contra": 0.67,
-          "diferencia": 0.83
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -1.9,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 52.6,
-        "prob_empate": 23.1,
-        "prob_visitante": 24.2
-      },
-      "diff_elo": -15.8,
-      "confianza": 7.9
-    },
-    {
-      "fixture_id": "401875923",
-      "fecha": "2026-09-18T13:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "3728",
-        "nombre": "TOP Oss",
-        "pais": "",
-        "rating": 1211.01,
-        "rd": 179.35,
-        "partidos_jugados": 6,
-        "form_score": 15.2,
-        "form_local": 62.2,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.6,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "1V 4D",
-          "resultados": [
-            "D",
-            "D",
-            "V",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.83,
-          "goles_contra": 2.0,
-          "diferencia": -1.17
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -7.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "4426",
-        "nombre": "Dordrecht",
-        "pais": "",
-        "rating": 1248.71,
-        "rd": 162.77,
-        "partidos_jugados": 6,
-        "form_score": 6.2,
-        "form_local": 18.6,
-        "form_visitante": 9.3,
-        "momentum": "stable",
-        "momentum_diff": -3.3,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 4
-        },
-        "ultimos5": {
-          "texto": "4D 1E",
-          "resultados": [
-            "D",
-            "D",
-            "D",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.5,
-          "goles_contra": 3.0,
-          "diferencia": -1.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 1.2,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 51.8,
-        "prob_empate": 23.1,
-        "prob_visitante": 25.1
-      },
-      "diff_elo": -37.7,
-      "confianza": 18.9
-    },
-    {
-      "fixture_id": "401876737",
-      "fecha": "2026-09-18T13:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "7719",
-        "nombre": "Rodez Aveyron",
-        "pais": "",
-        "rating": 1384.22,
-        "rd": 167.6,
-        "partidos_jugados": 6,
-        "form_score": 20.3,
-        "form_local": 34.0,
-        "form_visitante": 30.7,
-        "momentum": "stable",
-        "momentum_diff": -2.9,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "D",
-            "D",
-            "E",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.83,
-          "goles_contra": 2.0,
-          "diferencia": -0.17
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -3.1,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "3267",
-        "nombre": "Nancy",
-        "pais": "",
-        "rating": 1423.24,
-        "rd": 173.55,
-        "partidos_jugados": 6,
-        "form_score": 26.2,
-        "form_local": 30.7,
-        "form_visitante": 40.0,
-        "momentum": "stable",
-        "momentum_diff": -0.9,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V 3D",
-          "resultados": [
-            "D",
-            "D",
-            "V",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.67,
-          "goles_contra": 0.67,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 49.1,
-        "prob_empate": 23.1,
-        "prob_visitante": 27.7
-      },
-      "diff_elo": -39.0,
-      "confianza": 19.5
-    },
-    {
-      "fixture_id": "401875926",
-      "fecha": "2026-09-18T13:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "18748",
-        "nombre": "Jong AZ",
-        "pais": "",
-        "rating": 1475.79,
-        "rd": 152.43,
-        "partidos_jugados": 8,
-        "form_score": 45.7,
-        "form_local": 50.6,
-        "form_visitante": 43.0,
-        "momentum": "stable",
-        "momentum_diff": 1.1,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "E",
-            "D",
-            "V",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.25,
-          "goles_contra": 2.0,
-          "diferencia": 0.25
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -5.4,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "2727",
-        "nombre": "FC Volendam",
-        "pais": "",
-        "rating": 1528.55,
-        "rd": 166.8,
-        "partidos_jugados": 6,
-        "form_score": 62.2,
-        "form_local": 100.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 2.2,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 2D",
-          "resultados": [
-            "V",
-            "D",
-            "V",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.67,
-          "goles_contra": 1.67,
-          "diferencia": 1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -11.9,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 48.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 28.1
-      },
-      "diff_elo": -52.8,
-      "confianza": 26.4
-    },
-    {
-      "fixture_id": "401875930",
-      "fecha": "2026-09-18T13:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5291",
-        "nombre": "Almere City",
-        "pais": "",
-        "rating": 1709.53,
-        "rd": 180.47,
-        "partidos_jugados": 6,
-        "form_score": 73.2,
-        "form_local": 37.8,
-        "form_visitante": 94.9,
-        "momentum": "stable",
-        "momentum_diff": 0.8,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "4V 1D",
-          "resultados": [
-            "V",
-            "D",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.5,
-          "goles_contra": 0.67,
-          "diferencia": 1.83
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "3708",
-        "nombre": "Heracles",
-        "pais": "",
-        "rating": 1856.34,
-        "rd": 200.08,
-        "partidos_jugados": 6,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 6
-        },
-        "ultimos5": {
-          "texto": "5V",
-          "resultados": [
-            "V",
-            "V",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 4.0,
-          "goles_contra": 1.5,
-          "diferencia": 2.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 13.9,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 36.1,
-        "prob_empate": 23.1,
-        "prob_visitante": 40.7
-      },
-      "diff_elo": -146.8,
-      "confianza": 73.4
-    },
-    {
-      "fixture_id": "401876739",
-      "fecha": "2026-09-18T13:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "10678",
-        "nombre": "Pau",
-        "pais": "",
-        "rating": 1392.25,
-        "rd": 168.85,
-        "partidos_jugados": 6,
-        "form_score": 25.8,
-        "form_local": 25.3,
-        "form_visitante": 34.0,
-        "momentum": "stable",
-        "momentum_diff": 0.9,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 2D 2E",
-          "resultados": [
-            "D",
-            "E",
-            "E",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.67,
-          "goles_contra": 1.0,
-          "diferencia": -0.33
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -5.4,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "7732",
-        "nombre": "Dunkerque",
-        "pais": "",
-        "rating": 1552.27,
-        "rd": 170.75,
-        "partidos_jugados": 6,
-        "form_score": 60.2,
-        "form_local": 69.5,
-        "form_visitante": 18.9,
-        "momentum": "stable",
-        "momentum_diff": -1.4,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 2D 2E",
-          "resultados": [
-            "V",
-            "E",
-            "D",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.67,
-          "goles_contra": 1.67,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 2.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 35.9,
-        "prob_empate": 23.1,
-        "prob_visitante": 40.9
-      },
-      "diff_elo": -160.0,
-      "confianza": 80.0
-    },
-    {
-      "fixture_id": "401875928",
-      "fecha": "2026-09-18T13:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "3732",
-        "nombre": "FC Eindhoven",
-        "pais": "",
-        "rating": 1387.29,
-        "rd": 172.88,
-        "partidos_jugados": 6,
-        "form_score": 57.4,
-        "form_local": 50.6,
-        "form_visitante": 44.0,
-        "momentum": "stable",
-        "momentum_diff": -1.5,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "V",
-            "E",
-            "D",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.33,
-          "goles_contra": 2.0,
-          "diferencia": -0.67
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.5,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "3707",
-        "nombre": "Emmen",
-        "pais": "",
-        "rating": 1572.3,
-        "rd": 180.72,
-        "partidos_jugados": 6,
-        "form_score": 43.4,
-        "form_local": 54.5,
-        "form_visitante": 37.8,
-        "momentum": "stable",
-        "momentum_diff": -2.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 2D",
-          "resultados": [
-            "D",
-            "V",
-            "D",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.67,
-          "goles_contra": 2.33,
-          "diferencia": 0.34
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 10.8,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 36.5,
-        "prob_empate": 23.1,
-        "prob_visitante": 40.3
-      },
-      "diff_elo": -185.0,
-      "confianza": 92.5
-    },
-    {
-      "fixture_id": "401875929",
-      "fecha": "2026-09-18T13:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "271",
-        "nombre": "FC Den Bosch",
-        "pais": "",
-        "rating": 1329.36,
-        "rd": 162.63,
-        "partidos_jugados": 6,
-        "form_score": 10.9,
-        "form_local": 40.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": -1.3,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "1V 4D",
-          "resultados": [
-            "D",
-            "D",
-            "D",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.67,
-          "goles_contra": 2.5,
-          "diferencia": -0.83
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.8,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "3775",
-        "nombre": "Helmond Spor",
-        "pais": "",
-        "rating": 1521.82,
-        "rd": 178.02,
-        "partidos_jugados": 6,
-        "form_score": 72.8,
-        "form_local": 86.6,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.8,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "V",
-            "V",
-            "D",
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 1.67,
-          "diferencia": 0.33
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 1.5,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 32.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 44.2
-      },
-      "diff_elo": -192.5,
-      "confianza": 96.2
-    },
-    {
-      "fixture_id": "401875925",
-      "fecha": "2026-09-18T13:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "18278",
-        "nombre": "Jong Utrecht",
-        "pais": "",
-        "rating": 1345.48,
-        "rd": 162.11,
-        "partidos_jugados": 8,
-        "form_score": 71.8,
-        "form_local": 59.3,
-        "form_visitante": 45.5,
-        "momentum": "stable",
-        "momentum_diff": 4.9,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "V",
-            "V",
-            "E",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.75,
-          "goles_contra": 2.25,
-          "diferencia": -0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -6.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "3731",
-        "nombre": "VVV Venlo",
-        "pais": "",
-        "rating": 1609.48,
-        "rd": 189.59,
-        "partidos_jugados": 6,
-        "form_score": 71.5,
-        "form_local": 89.8,
-        "form_visitante": 37.8,
-        "momentum": "stable",
-        "momentum_diff": 2.5,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "4V 1D",
-          "resultados": [
-            "V",
-            "D",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.67,
-          "goles_contra": 1.67,
-          "diferencia": 1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 4.6,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 29.6,
-        "prob_empate": 23.1,
-        "prob_visitante": 47.2
-      },
-      "diff_elo": -264.0,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401882516",
-      "fecha": "2026-09-18T13:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "21378",
-        "nombre": "Alavés",
-        "pais": "",
-        "rating": 1572.96,
-        "rd": 221.44,
-        "partidos_jugados": 3,
-        "form_score": 69.3,
-        "form_local": 100.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 1D",
-          "resultados": [
-            "V",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 0.33,
-          "diferencia": 0.67
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -1.1,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20091",
-        "nombre": "Barcelona",
-        "pais": "",
-        "rating": 1865.53,
-        "rd": 219.85,
-        "partidos_jugados": 3,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "3V",
-          "resultados": [
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 4.33,
-          "goles_contra": 0.67,
-          "diferencia": 3.66
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 16.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 27.4,
-        "prob_empate": 23.1,
-        "prob_visitante": 49.5
-      },
-      "diff_elo": -292.6,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401876741",
-      "fecha": "2026-09-18T13:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "3266",
-        "nombre": "Stade Laval",
-        "pais": "",
-        "rating": 1256.18,
-        "rd": 163.84,
-        "partidos_jugados": 6,
-        "form_score": 10.2,
-        "form_local": 18.6,
-        "form_visitante": 15.4,
-        "momentum": "stable",
-        "momentum_diff": 0.4,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "D",
-            "D",
-            "D",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.17,
-          "goles_contra": 2.17,
-          "diferencia": -1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -3.4,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "272",
-        "nombre": "Sochaux",
-        "pais": "",
-        "rating": 1551.19,
-        "rd": 169.0,
-        "partidos_jugados": 6,
-        "form_score": 73.6,
-        "form_local": 81.4,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 2.6,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 3E",
-          "resultados": [
-            "V",
-            "E",
-            "E",
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.5,
-          "goles_contra": 0.67,
-          "diferencia": -0.17
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 3.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 22.2,
-        "prob_empate": 23.1,
-        "prob_visitante": 54.7
-      },
-      "diff_elo": -295.0,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401875927",
-      "fecha": "2026-09-18T13:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "10597",
-        "nombre": "Jong Ajax",
-        "pais": "",
-        "rating": 1365.16,
-        "rd": 155.19,
-        "partidos_jugados": 8,
-        "form_score": 24.6,
-        "form_local": 30.7,
-        "form_visitante": 33.9,
-        "momentum": "stable",
-        "momentum_diff": 1.8,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "D",
-            "D",
-            "V",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.62,
-          "goles_contra": 2.75,
-          "diferencia": -1.13
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -7.1,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "149",
-        "nombre": "Roda JC",
-        "pais": "",
-        "rating": 1706.04,
-        "rd": 164.28,
-        "partidos_jugados": 6,
-        "form_score": 76.4,
-        "form_local": 84.6,
-        "form_visitante": 56.0,
-        "momentum": "stable",
-        "momentum_diff": 2.7,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 2E",
-          "resultados": [
-            "V",
-            "E",
-            "E",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.17,
-          "goles_contra": 0.83,
-          "diferencia": 0.34
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -5.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 19.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 57.2
-      },
-      "diff_elo": -340.9,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401881784",
-      "fecha": "2026-09-18T12:30:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "12:30",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "519",
-        "nombre": "Rapid Vienna",
-        "pais": "",
-        "rating": 1828.21,
-        "rd": 163.58,
-        "partidos_jugados": 8,
-        "form_score": 88.2,
-        "form_local": 86.2,
-        "form_visitante": 86.2,
-        "momentum": "stable",
-        "momentum_diff": -0.9,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "3V 2E",
-          "resultados": [
-            "V",
-            "V",
-            "E",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 3.25,
-          "goles_contra": 0.88,
-          "diferencia": 2.37
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 8.8,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "18794",
-        "nombre": "Swarovski Tirol",
-        "pais": "",
-        "rating": 1453.61,
-        "rd": 197.82,
-        "partidos_jugados": 4,
-        "form_score": 50.4,
-        "form_local": 31.1,
-        "form_visitante": 62.2,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 2D 1E",
-          "resultados": [
-            "E",
-            "V",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.75,
-          "goles_contra": 2.0,
-          "diferencia": -0.25
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -15.9,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 78.5,
-        "prob_empate": 20.6,
-        "prob_visitante": 0.9
-      },
-      "diff_elo": 374.6,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401888290",
-      "fecha": "2026-09-18T12:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "12:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "6870",
-        "nombre": "Kasimpasa",
-        "pais": "",
-        "rating": 1651.33,
-        "rd": 173.98,
-        "partidos_jugados": 6,
-        "form_score": 77.0,
-        "form_local": 59.3,
-        "form_visitante": 84.6,
-        "momentum": "stable",
-        "momentum_diff": -0.8,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 3E",
-          "resultados": [
-            "V",
-            "E",
-            "E",
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.67,
-          "goles_contra": 0.83,
-          "diferencia": 0.84
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 3.3,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "7648",
-        "nombre": "Konyaspor",
-        "pais": "",
-        "rating": 1317.09,
-        "rd": 184.44,
-        "partidos_jugados": 5,
-        "form_score": 42.9,
-        "form_local": 50.6,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 4D",
-          "resultados": [
-            "V",
-            "D",
-            "D",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.8,
-          "goles_contra": 1.6,
-          "diferencia": -0.8
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -10.2,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 78.2,
-        "prob_empate": 20.9,
-        "prob_visitante": 0.9
-      },
-      "diff_elo": 334.2,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401885663",
-      "fecha": "2026-09-18T12:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "12:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "22329",
-        "nombre": "Strasbourg",
-        "pais": "",
-        "rating": 1544.4,
-        "rd": 244.32,
-        "partidos_jugados": 2,
-        "form_score": 37.8,
-        "form_local": 100.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1D",
-          "resultados": [
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.5,
-          "goles_contra": 2.0,
-          "diferencia": -0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 13.1,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "21640",
-        "nombre": "Paris FC",
-        "pais": "",
-        "rating": 1532.69,
-        "rd": 247.46,
-        "partidos_jugados": 2,
-        "form_score": 37.8,
-        "form_local": 100.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1D",
-          "resultados": [
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.5,
-          "goles_contra": 3.5,
-          "diferencia": -2.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 2.6,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 57.8,
-        "prob_empate": 23.1,
-        "prob_visitante": 19.1
-      },
-      "diff_elo": 11.7,
-      "confianza": 5.9
-    },
-    {
-      "fixture_id": "401874503",
-      "fecha": "2026-09-18T12:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "12:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "7860",
-        "nombre": "Lyngby",
-        "pais": "",
-        "rating": 1462.28,
-        "rd": 178.89,
-        "partidos_jugados": 6,
-        "form_score": 56.2,
-        "form_local": 50.0,
-        "form_visitante": 50.6,
-        "momentum": "stable",
-        "momentum_diff": 2.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1D 3E",
-          "resultados": [
-            "E",
-            "V",
-            "E",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 1.17,
-          "diferencia": -0.17
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.4,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "607",
-        "nombre": "Silkeborg",
-        "pais": "",
-        "rating": 1542.34,
-        "rd": 171.07,
-        "partidos_jugados": 6,
-        "form_score": 44.3,
-        "form_local": 59.3,
-        "form_visitante": 25.3,
-        "momentum": "stable",
-        "momentum_diff": -2.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "2D 3E",
-          "resultados": [
-            "E",
-            "E",
-            "E",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 1.33,
-          "diferencia": -0.33
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -2.3,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 46.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 30.1
-      },
-      "diff_elo": -80.1,
-      "confianza": 40.0
-    },
-    {
-      "fixture_id": "401873932",
-      "fecha": "2026-09-18T12:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "12:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5002",
-        "nombre": "Sarpsborg FK",
-        "pais": "",
-        "rating": 1367.81,
-        "rd": 191.89,
-        "partidos_jugados": 5,
-        "form_score": 42.3,
-        "form_local": 31.1,
-        "form_visitante": 40.7,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "2D 3E",
-          "resultados": [
-            "E",
-            "E",
-            "E",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 1.4,
-          "diferencia": -0.4
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -5.7,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "22165",
-        "nombre": "KFUM",
-        "pais": "",
-        "rating": 1479.85,
-        "rd": 192.27,
-        "partidos_jugados": 5,
-        "form_score": 53.4,
-        "form_local": 81.1,
-        "form_visitante": 18.6,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "V",
-            "D",
-            "D",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 1.6,
-          "diferencia": -0.6
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 8.2,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 42.4,
-        "prob_empate": 23.1,
-        "prob_visitante": 34.4
-      },
-      "diff_elo": -112.0,
-      "confianza": 56.0
-    },
-    {
-      "fixture_id": "401885666",
-      "fecha": "2026-09-18T12:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "12:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "21635",
-        "nombre": "Le Havre AC",
-        "pais": "",
-        "rating": 1467.31,
-        "rd": 247.46,
-        "partidos_jugados": 2,
-        "form_score": 62.2,
-        "form_local": 50.0,
-        "form_visitante": 62.2,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1D",
-          "resultados": [
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 1.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.2,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "19256",
-        "nombre": "Lyonnes",
-        "pais": "",
-        "rating": 1791.93,
-        "rd": 247.46,
-        "partidos_jugados": 2,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V",
-          "resultados": [
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 7.0,
-          "goles_contra": 1.0,
-          "diferencia": 6.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 20.9,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 24.6,
-        "prob_empate": 23.1,
-        "prob_visitante": 52.2
-      },
-      "diff_elo": -324.6,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401885110",
-      "fecha": "2026-09-18T11:30:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "11:30",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "138",
-        "nombre": "Wolfsburg",
-        "pais": "",
-        "rating": 1497.51,
-        "rd": 180.25,
-        "partidos_jugados": 6,
-        "form_score": 39.7,
-        "form_local": 50.0,
-        "form_visitante": 46.1,
-        "momentum": "stable",
-        "momentum_diff": -0.3,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 1D 2E",
-          "resultados": [
-            "D",
-            "E",
-            "V",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.17,
-          "goles_contra": 1.67,
-          "diferencia": 0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 8.7,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "3812",
-        "nombre": "Darmstadt",
-        "pais": "",
-        "rating": 1419.6,
-        "rd": 174.51,
-        "partidos_jugados": 6,
-        "form_score": 52.3,
-        "form_local": 60.0,
-        "form_visitante": 30.7,
-        "momentum": "stable",
-        "momentum_diff": 0.1,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 3D",
-          "resultados": [
-            "V",
-            "D",
-            "D",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 1.5,
-          "diferencia": -0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -7.3,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 61.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 15.2
-      },
-      "diff_elo": 77.9,
-      "confianza": 39.0
-    },
-    {
-      "fixture_id": "401885103",
-      "fecha": "2026-09-18T11:30:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "11:30",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "3070",
-        "nombre": "Greuther Furth",
-        "pais": "",
-        "rating": 1398.73,
-        "rd": 166.4,
-        "partidos_jugados": 6,
-        "form_score": 37.6,
-        "form_local": 0.0,
-        "form_visitante": 65.4,
-        "momentum": "stable",
-        "momentum_diff": -0.4,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "E",
-            "D",
-            "V",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.5,
-          "goles_contra": 2.0,
-          "diferencia": -0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.5,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "10382",
-        "nombre": "Magdeburg",
-        "pais": "",
-        "rating": 1693.62,
-        "rd": 166.15,
-        "partidos_jugados": 6,
-        "form_score": 71.5,
-        "form_local": 81.4,
-        "form_visitante": 49.4,
-        "momentum": "stable",
-        "momentum_diff": 2.5,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "4V 1D",
-          "resultados": [
-            "V",
-            "D",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.33,
-          "goles_contra": 1.33,
-          "diferencia": 1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.4,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 23.1,
-        "prob_empate": 23.1,
-        "prob_visitante": 53.7
-      },
-      "diff_elo": -294.9,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401922028",
-      "fecha": "2026-09-18T11:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "11:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "21801",
-        "nombre": "AS FAR",
-        "pais": "",
-        "rating": 1703.0,
-        "rd": 234.69,
-        "partidos_jugados": 3,
-        "form_score": 74.7,
-        "form_local": 74.7,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 1E",
-          "resultados": [
-            "E",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.33,
-          "goles_contra": 0.67,
-          "diferencia": 0.66
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 11.8,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "133868",
-        "nombre": "WAF",
-        "pais": "",
-        "rating": 1500.0,
-        "rd": 350.0,
-        "partidos_jugados": 0,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 71.2,
-        "prob_empate": 23.1,
-        "prob_visitante": 5.6
-      },
-      "diff_elo": 203.0,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401861443",
-      "fecha": "2026-09-18T06:35:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "06:35",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "18203",
-        "nombre": "Zhejiang",
-        "pais": "",
-        "rating": 1425.19,
-        "rd": 191.15,
-        "partidos_jugados": 5,
-        "form_score": 36.8,
-        "form_local": 60.0,
-        "form_visitante": 18.9,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 2D 2E",
-          "resultados": [
-            "D",
-            "V",
-            "E",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 1.2,
-          "diferencia": 0.8
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -1.4,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "21506",
-        "nombre": "Wuhan TT",
-        "pais": "",
-        "rating": 1451.31,
-        "rd": 166.45,
-        "partidos_jugados": 6,
-        "form_score": 54.8,
-        "form_local": 44.9,
-        "form_visitante": 81.1,
-        "momentum": "stable",
-        "momentum_diff": 0.2,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "1V 1D 3E",
-          "resultados": [
-            "E",
-            "E",
-            "V",
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.67,
-          "goles_contra": 1.17,
-          "diferencia": 0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 2.4,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 49.5,
-        "prob_empate": 23.1,
-        "prob_visitante": 27.4
-      },
-      "diff_elo": -26.1,
-      "confianza": 13.1
-    },
-    {
-      "fixture_id": "401922313",
-      "fecha": "2026-09-18T02:00:00-05:00",
-      "fecha_display": "2026-09-18",
-      "hora": "02:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "4862",
-        "nombre": "Fiji",
-        "pais": "",
-        "rating": 1500.0,
-        "rd": 350.0,
-        "partidos_jugados": 0,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "4861",
-        "nombre": "Solomon Islands",
-        "pais": "",
-        "rating": 1500.0,
-        "rd": 350.0,
-        "partidos_jugados": 0,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 53.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 23.1
-      },
-      "diff_elo": 0.0,
-      "confianza": 0.0
     },
     {
       "fixture_id": "401903321",
@@ -56676,9 +51466,9 @@
     },
     {
       "fixture_id": "401903320",
-      "fecha": "2026-09-19T18:30:00-05:00",
+      "fecha": "2026-09-19T19:00:00-05:00",
       "fecha_display": "2026-09-19",
-      "hora": "18:30",
+      "hora": "19:00",
       "liga": "Venezuela - Liga FUTVE",
       "liga_pais": "Venezuela",
       "liga_slug": "ven.1",
@@ -58371,7 +53161,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.4,
+        "overperformance": 0.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -59180,7 +53970,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.9,
+        "overperformance": 7.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -59233,7 +54023,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -13.6,
+        "overperformance": -13.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -59269,7 +54059,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -19.4,
+        "overperformance": -19.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -59500,7 +54290,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.1,
+        "overperformance": 9.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -59537,7 +54327,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.7,
+        "overperformance": 0.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -59590,7 +54380,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.3,
+        "overperformance": 2.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -59626,7 +54416,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.1,
+        "overperformance": -0.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -59716,7 +54506,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.9,
+        "overperformance": 2.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -59769,7 +54559,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -14.2,
+        "overperformance": -14.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -59806,7 +54596,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.2,
+        "overperformance": 3.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -59859,7 +54649,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.0,
+        "overperformance": 3.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -59896,7 +54686,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.0,
+        "overperformance": -7.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -59949,7 +54739,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.0,
+        "overperformance": 4.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -59986,7 +54776,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.0,
+        "overperformance": 4.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -60076,7 +54866,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.9,
+        "overperformance": 10.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -60129,7 +54919,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.5,
+        "overperformance": -2.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -60166,7 +54956,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.2,
+        "overperformance": -4.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -60219,7 +55009,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.3,
+        "overperformance": 3.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -60309,7 +55099,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.3,
+        "overperformance": -6.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -60345,7 +55135,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.8,
+        "overperformance": -0.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -60398,7 +55188,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.9,
+        "overperformance": -4.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -60435,7 +55225,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.1,
+        "overperformance": 7.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -60488,7 +55278,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.1,
+        "overperformance": -0.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -60525,7 +55315,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.2,
+        "overperformance": -3.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -61960,7 +56750,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -11.2,
+        "overperformance": -9.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -62013,7 +56803,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.5,
+        "overperformance": -2.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -62140,7 +56930,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.7,
+        "overperformance": -1.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -62193,7 +56983,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.5,
+        "overperformance": -2.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -62230,7 +57020,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -12.5,
+        "overperformance": -12.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -62410,7 +57200,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.5,
+        "overperformance": -2.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -63273,7 +58063,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.9,
+        "overperformance": 6.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -63453,7 +58243,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.7,
+        "overperformance": 3.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -63813,7 +58603,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.7,
+        "overperformance": -1.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -64173,7 +58963,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.5,
+        "overperformance": 4.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -65073,7 +59863,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.8,
+        "overperformance": -1.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -65110,7 +59900,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 13.1,
+        "overperformance": 12.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -65163,7 +59953,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.9,
+        "overperformance": 4.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -65200,7 +59990,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -10.4,
+        "overperformance": -10.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -65253,7 +60043,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.3,
+        "overperformance": -3.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -65290,7 +60080,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.2,
+        "overperformance": 1.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -65380,7 +60170,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.8,
+        "overperformance": -1.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -65433,7 +60223,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.6,
+        "overperformance": 0.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -65523,7 +60313,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -15.7,
+        "overperformance": -16.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -65703,7 +60493,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.7,
+        "overperformance": 5.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -66239,7 +61029,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.5,
+        "overperformance": 4.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -66276,7 +61066,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.0,
+        "overperformance": 5.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -66329,7 +61119,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.7,
+        "overperformance": -1.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -66366,7 +61156,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.2,
+        "overperformance": 4.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -66419,7 +61209,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.8,
+        "overperformance": -6.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -66456,7 +61246,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.6,
+        "overperformance": 3.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -66509,7 +61299,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.3,
+        "overperformance": 3.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -66599,7 +61389,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.0,
+        "overperformance": -2.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -66636,7 +61426,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.2,
+        "overperformance": 4.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -67530,7 +62320,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.5,
+        "overperformance": -2.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -67710,7 +62500,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.7,
+        "overperformance": -3.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -67763,7 +62553,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.3,
+        "overperformance": -7.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -67800,7 +62590,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -10.6,
+        "overperformance": -10.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -69203,7 +63993,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.3,
+        "overperformance": 5.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -69240,7 +64030,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.2,
+        "overperformance": -6.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -69293,7 +64083,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.9,
+        "overperformance": -1.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -69330,7 +64120,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.9,
+        "overperformance": -6.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -69383,7 +64173,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.5,
+        "overperformance": -3.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -69473,7 +64263,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.7,
+        "overperformance": -3.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -69563,7 +64353,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.7,
+        "overperformance": -5.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -69600,7 +64390,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.3,
+        "overperformance": 1.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -71992,7 +66782,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.2,
+        "overperformance": 3.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -72029,7 +66819,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 12.6,
+        "overperformance": 12.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -72082,7 +66872,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.9,
+        "overperformance": 2.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -72119,7 +66909,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.4,
+        "overperformance": 0.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -72172,7 +66962,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.3,
+        "overperformance": -1.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -72209,7 +66999,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.7,
+        "overperformance": 0.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -72262,7 +67052,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.4,
+        "overperformance": 2.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -72299,7 +67089,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.8,
+        "overperformance": 4.2,
         "vol": 0.06
       },
       "prediccion": {
