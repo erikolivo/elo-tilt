@@ -18,6 +18,7 @@ import ligas_nombres
 
 DATA_DIR = Path(__file__).parent / "data"
 ARCHIVO_PREDICCIONES = DATA_DIR / "predicciones_cache.json"
+ARCHIVO_PREDICCIONES_HIST = DATA_DIR / "predicciones_historial.json"
 
 BONUS_LOCALIA = 0.08
 ZONA_HORARIA_ECUADOR = datetime.timezone(datetime.timedelta(hours=-5))
@@ -418,6 +419,24 @@ def predecir_fecha(fecha_iso, ligas=None):
         "predicciones": predicciones,
     }
     ARCHIVO_PREDICCIONES.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    # Guardar predicciones en historial索引adas por fixture_id para uso futuro (Opción B - Acierto real)
+    hist = {}
+    if ARCHIVO_PREDICCIONES_HIST.exists():
+        try:
+            hist = json.loads(ARCHIVO_PREDICCIONES_HIST.read_text(encoding="utf-8"))
+        except Exception:
+            hist = {}
+    for pred in predicciones:
+        fid = pred.get("fixture_id", "")
+        if fid:
+            hist[fid] = {
+                "fecha": pred.get("fecha", ""),
+                "prob_local": pred["prediccion"]["prob_local"],
+                "prob_empate": pred["prediccion"]["prob_empate"],
+                "prob_visitante": pred["prediccion"]["prob_visitante"],
+            }
+    ARCHIVO_PREDICCIONES_HIST.write_text(json.dumps(hist, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print(f"\n{len(predicciones)} prediccione(s) generada(s) para {fecha_iso}.")
     for pred in predicciones[:5]:

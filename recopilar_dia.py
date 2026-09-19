@@ -24,10 +24,25 @@ Uso:
 
 import argparse
 import datetime
+import json
 
 import fetch_data
 import historial_store
 import ratings_store
+
+from pathlib import Path
+
+DATA_DIR = Path(__file__).parent / "data"
+ARCHIVO_PREDICCIONES_HIST = DATA_DIR / "predicciones_historial.json"
+
+
+def _cargar_predicciones_historial():
+    if ARCHIVO_PREDICCIONES_HIST.exists():
+        try:
+            return json.loads(ARCHIVO_PREDICCIONES_HIST.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    return {}
 
 ZONA_HORARIA_ECUADOR = datetime.timezone(datetime.timedelta(hours=-5))
 
@@ -71,6 +86,7 @@ def _alimentar_rating(fx, gh, ga):
 def procesar_fecha(fecha_iso):
     fixtures = fetch_data.obtener_fixtures_por_fecha(fecha_iso)
     ya_guardados = historial_store.fixture_ids_guardados(fecha_iso)
+    predicciones_hist = _cargar_predicciones_historial()
 
     nuevos, saltados_no_terminados, saltados_duplicados = 0, 0, 0
 
@@ -93,6 +109,8 @@ def procesar_fecha(fecha_iso):
         if fx.get("_liga_slug") and fx["_liga_slug"] != "all":
             estadisticas = fetch_data.obtener_boxscore_en_vivo(fx["_liga_slug"], fid)
 
+        prediccion_previa = predicciones_hist.get(fid)
+
         registro = {
             "fixture_id": fid,
             "fecha": fecha_iso,
@@ -105,6 +123,7 @@ def procesar_fecha(fecha_iso):
             "goles_local": gh,
             "goles_visitante": ga,
             "estadisticas": estadisticas,
+            "prediccion_previa": prediccion_previa,
         }
 
         historial_store.guardar_partido(fecha_iso, registro)

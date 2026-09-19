@@ -970,14 +970,20 @@ async function cargarHistorial(cuando) {{
       const diff = (eqLocal && eqVisitante) ? (eqLocal.rating - eqVisitante.rating).toFixed(0) : '-';
       
       let acierto = '';
-      if (gl != null && ga != null && eqLocal && eqVisitante) {{
-        const probLocal = 50 + (eqLocal.rating - eqVisitante.rating) / 40;
-        const probVisitante = 100 - probLocal - 25;
-        const maxProb = Math.max(probLocal, probVisitante);
-        if (maxProb > 69) {{
-          if (probLocal > probVisitante) acierto = gl > ga ? '<span class="acierto-ok">&#10003;</span>' : '<span class="acierto-fail">&#10007;</span>';
-          else acierto = ga > gl ? '<span class="acierto-ok">&#10003;</span>' : '<span class="acierto-fail">&#10007;</span>';
-        }}
+      const pred = p.prediccion_previa;
+      if (gl != null && ga != null && pred) {{
+        const pl = pred.prob_local || 0;
+        const pe = pred.prob_empate || 0;
+        const pv = pred.prob_visitante || 0;
+        let predReal;
+        if (pl >= pe && pl >= pv) predReal = 'local';
+        else if (pv >= pl && pv >= pe) predReal = 'visitante';
+        else predReal = 'empate';
+        let real;
+        if (gl > ga) real = 'local';
+        else if (ga > gl) real = 'visitante';
+        else real = 'empate';
+        acierto = predReal === real ? '<span class="acierto-ok">&#10003;</span>' : '<span class="acierto-fail">&#10007;</span>';
       }}
       
       const pjLocal = eqLocal ? (eqLocal.partidos_jugados || 0) : 0;
