@@ -320,12 +320,12 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
   <td class="ex-fecha">{fecha_d}</td>
   <td class="ex-hora">{hora}</td>
   <td class="ex-local">{f'<a href="{url_espn}" target="_blank">{h["nombre"]}</a>' if url_espn else h['nombre']}{_badge_provisional(h.get('partidos_jugados'))}</td>
-  <td class="ex-elo {_clase_rating(h.get('rating'))}">{h.get('rating', 0):.0f}</td>
+  <td class="ex-elo {_clase_rating(h.get('rating'))}">{h.get('rating', 0):.0f} <span class="pj-count">{h.get('partidos_jugados', 0)}PJ</span></td>
   <td class="ex-forma {_clase_forma(h.get('form_score'))}">{h.get('form_score', 50):.0f}</td>
   <td class="ex-racha">{_ultimos5_html(u5_h)}</td>
   <td class="ex-marcador">{marcador}</td>
   <td class="ex-visitante">{f'<a href="{url_espn}" target="_blank">{a["nombre"]}</a>' if url_espn else a['nombre']}{_badge_provisional(a.get('partidos_jugados'))}</td>
-  <td class="ex-elo {_clase_rating(a.get('rating'))}">{a.get('rating', 0):.0f}</td>
+  <td class="ex-elo {_clase_rating(a.get('rating'))}">{a.get('rating', 0):.0f} <span class="pj-count">{a.get('partidos_jugados', 0)}PJ</span></td>
   <td class="ex-forma {_clase_forma(a.get('form_score'))}">{a.get('form_score', 50):.0f}</td>
   <td class="ex-racha">{_ultimos5_html(u5_a)}</td>
   <td class="ex-diff" style="color:{'#22c55e' if diff > 0 else '#ef4444' if diff < 0 else '#94a3b8'}">{diff_signo}{diff:.0f}</td>
@@ -475,6 +475,7 @@ body {{ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', san
 
 .badge-prov {{ font-size: 0.6em; padding: 1px 5px; background: rgba(234,179,8,0.15);
                color: var(--yellow); border-radius: 4px; font-weight: 700; letter-spacing: 0.04em; }}
+.pj-count {{ font-size: 0.65em; color: var(--text3); font-weight: 500; margin-left: 3px; }}
 
 .tf {{ font-weight: 700; font-size: 0.85em; }}
 .high {{ color: var(--green); }}
@@ -940,7 +941,11 @@ async function cargarHistorial(cuando) {{
       partidos = (dataHistorial.partidos || []).filter(p => p.fecha === fechaIso);
     }}
     
-    function buscarElo(nombre) {{
+    function buscarElo(nombre, teamId) {{
+      if (teamId) {{
+        const key = 'espn:' + teamId;
+        if (equipos[key]) return equipos[key];
+      }}
       const nombreLower = nombre.toLowerCase();
       for (const [key, eq] of Object.entries(equipos)) {{
         if (eq.nombre && eq.nombre.toLowerCase().includes(nombreLower)) return eq;
@@ -952,13 +957,15 @@ async function cargarHistorial(cuando) {{
     partidos.forEach(p => {{
       const nombreLocal = p.equipo_local?.name || 'N/A';
       const nombreVisitante = p.equipo_visitante?.name || 'N/A';
+      const idLocal = p.equipo_local?.id;
+      const idVisitante = p.equipo_visitante?.id;
       const gl = p.goles_local;
       const ga = p.goles_visitante;
       const marcador = gl != null ? gl + ' - ' + ga : '?';
       const hora = p.hora || '-';
       
-      const eqLocal = buscarElo(nombreLocal);
-      const eqVisitante = buscarElo(nombreVisitante);
+      const eqLocal = buscarElo(nombreLocal, idLocal);
+      const eqVisitante = buscarElo(nombreVisitante, idVisitante);
       const eloLocal = eqLocal ? eqLocal.rating.toFixed(0) : '-';
       const eloVisitante = eqVisitante ? eqVisitante.rating.toFixed(0) : '-';
       
@@ -1000,12 +1007,12 @@ async function cargarHistorial(cuando) {{
         <td class="ex-fecha">${{fechaIso}}</td>
         <td class="ex-hora">${{hora}}</td>
         <td class="ex-local">${{nombreLocal}}${{provH}}</td>
-        <td class="ex-elo ${{claseRating(eqLocal?.rating)}}">${{eloLocal}}</td>
+        <td class="ex-elo ${{claseRating(eqLocal?.rating)}}">${{eloLocal}} <span class="pj-count">${{pjLocal}}PJ</span></td>
         <td class="ex-forma ${{claseForma(formaLocal)}}">${{formaLocal}}</td>
         <td class="ex-racha">${{streakHtml(statsLocal.streak)}}</td>
         <td class="ex-marcador">${{marcador}}</td>
         <td class="ex-visitante">${{nombreVisitante}}${{provV}}</td>
-        <td class="ex-elo ${{claseRating(eqVisitante?.rating)}}">${{eloVisitante}}</td>
+        <td class="ex-elo ${{claseRating(eqVisitante?.rating)}}">${{eloVisitante}} <span class="pj-count">${{pjVisitante}}PJ</span></td>
         <td class="ex-forma ${{claseForma(formaVisitante)}}">${{formaVisitante}}</td>
         <td class="ex-racha">${{streakHtml(statsVisitante.streak)}}</td>
         <td class="ex-diff">${{diff}}</td>
@@ -1040,7 +1047,11 @@ async function cargarEnVivo() {{
     ]);
     const equipos = dataRatings.equipos || {{}};
     
-    function buscarElo(nombre) {{
+    function buscarElo(nombre, teamId) {{
+      if (teamId) {{
+        const key = 'espn:' + teamId;
+        if (equipos[key]) return equipos[key];
+      }}
       const nombreLower = nombre.toLowerCase();
       for (const [key, eq] of Object.entries(equipos)) {{
         if (eq.nombre && eq.nombre.toLowerCase().includes(nombreLower)) return eq;
@@ -1065,9 +1076,11 @@ async function cargarEnVivo() {{
             
             const nombreLocal = local.team?.displayName || local.team?.shortDisplayName || 'N/A';
             const nombreVisitante = visitante.team?.displayName || visitante.team?.shortDisplayName || 'N/A';
+            const idLocal = local.team?.id;
+            const idVisitante = visitante.team?.id;
             
-            const eqLocal = buscarElo(nombreLocal);
-            const eqVisitante = buscarElo(nombreVisitante);
+            const eqLocal = buscarElo(nombreLocal, idLocal);
+            const eqVisitante = buscarElo(nombreVisitante, idVisitante);
             const eloLocal = eqLocal ? eqLocal.rating.toFixed(0) : '-';
             const eloVisitante = eqVisitante ? eqVisitante.rating.toFixed(0) : '-';
             
