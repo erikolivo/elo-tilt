@@ -304,14 +304,9 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
             marcador = f"{resultado['goles_local']} - {resultado['goles_visitante']}"
             gl = resultado['goles_local']
             ga = resultado['goles_visitante']
-            max_prob = max(prob_l, prob_v)
-            if max_prob > 69:
-                if prob_l > prob_v:
-                    acierto = "✓" if gl > ga else "✗"
-                else:
-                    acierto = "✓" if ga > gl else "✗"
-            else:
-                acierto = "-"
+            predReal = 'local' if (prob_l >= prob_e and prob_l >= prob_v) else 'visitante' if (prob_v >= prob_l and prob_v >= prob_e) else 'empate'
+            real = 'local' if gl > ga else 'visitante' if ga > gl else 'empate'
+            acierto = "✓" if predReal == real else "✗"
         else:
             marcador = "?"
             acierto = ""
