@@ -631,6 +631,7 @@ tr:hover {{ background: var(--surface2); }}
             <th>Diff</th>
             <th>Pred</th>
             <th>Acierto</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -1013,6 +1014,7 @@ async function cargarHistorial(cuando) {{
         <td class="ex-diff">${{diff}}</td>
         <td class="ex-pred">-</td>
         <td class="ex-acierto">${{acierto}}</td>
+        <td></td>
       </tr>`;
     }});
     
@@ -1110,6 +1112,7 @@ async function cargarEnVivo() {{
               <td class="ex-diff">${{diff}}</td>
               <td class="ex-pred">${{comp.status?.type?.shortDetail || ''}}</td>
               <td class="ex-acierto"></td>
+              <td></td>
             </tr>`;
           }}
         }});
