@@ -985,7 +985,12 @@ async function cargarHistorial(cuando) {{
       const provH = pjLocal > 0 && pjLocal < 10 ? '<span class="badge-prov">PROV</span>' : '';
       const provV = pjVisitante > 0 && pjVisitante < 10 ? '<span class="badge-prov">PROV</span>' : '';
       
-      html += `<tr class="excel-row" data-home="${{nombreLocal.toLowerCase()}}" data-away="${{nombreVisitante.toLowerCase()}}" data-pj-h="${{pjLocal}}" data-pj-a="${{pjVisitante}}">
+      const eloHAttr = eqLocal ? eqLocal.rating.toFixed(0) : 0;
+      const formHAttr = statsLocal.form_score != null ? statsLocal.form_score : 0;
+      const diffAttr = (eqLocal && eqVisitante) ? (eqLocal.rating - eqVisitante.rating).toFixed(0) : 0;
+      const ligaSlug = p.liga_slug || '';
+      
+      html += `<tr class="excel-row" data-home="${{nombreLocal.toLowerCase()}}" data-away="${{nombreVisitante.toLowerCase()}}" data-pj-h="${{pjLocal}}" data-pj-a="${{pjVisitante}}" data-elo-h="${{eloHAttr}}" data-form-h="${{formHAttr}}" data-diff="${{diffAttr}}" data-slug="${{ligaSlug}}" data-fecha="${{fechaIso}}">
         <td class="ex-fecha">${{fechaIso}}</td>
         <td class="ex-hora">${{hora}}</td>
         <td class="ex-local">${{nombreLocal}}${{provH}}</td>
@@ -1072,7 +1077,11 @@ async function cargarEnVivo() {{
             const provH = pjLocal > 0 && pjLocal < 10 ? '<span class="badge-prov">PROV</span>' : '';
             const provV = pjVisitante > 0 && pjVisitante < 10 ? '<span class="badge-prov">PROV</span>' : '';
             
-            html += `<tr class="excel-row live-row" data-home="${{nombreLocal.toLowerCase()}}" data-away="${{nombreVisitante.toLowerCase()}}" data-pj-h="${{pjLocal}}" data-pj-a="${{pjVisitante}}">
+            const eloHAttr = eqLocal ? eqLocal.rating.toFixed(0) : 0;
+            const formHAttr = statsLocal.form_score != null ? statsLocal.form_score : 0;
+            const diffAttr = (eqLocal && eqVisitante) ? (eqLocal.rating - eqVisitante.rating).toFixed(0) : 0;
+            
+            html += `<tr class="excel-row live-row" data-home="${{nombreLocal.toLowerCase()}}" data-away="${{nombreVisitante.toLowerCase()}}" data-pj-h="${{pjLocal}}" data-pj-a="${{pjVisitante}}" data-elo-h="${{eloHAttr}}" data-form-h="${{formHAttr}}" data-diff="${{diffAttr}}">
               <td class="ex-fecha">${{fechaLocal}}</td>
               <td class="ex-hora live-indicator">${{hora}}</td>
               <td class="ex-local">${{nombreLocal}}${{provH}}</td>
