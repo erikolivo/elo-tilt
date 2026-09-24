@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<meta name="build" content="20260924043958">
+<meta name="build" content="20260924065118">
 <title>ELO + Tilt Tracker</title>
 <style>
 :root {
@@ -18478,8 +18478,8 @@ function sortExcel(criterion) {
     if (criterion === 'elo-asc') return parseFloat(a.dataset.eloH || 0) - parseFloat(b.dataset.eloH || 0);
     if (criterion === 'form-desc') return parseFloat(b.dataset.formH || 0) - parseFloat(a.dataset.formH || 0);
     if (criterion === 'form-asc') return parseFloat(a.dataset.formH || 0) - parseFloat(b.dataset.formH || 0);
-    if (criterion === 'diff-desc') return parseFloat(b.dataset.diff || 0) - parseFloat(a.dataset.diff || 0);
-    if (criterion === 'diff-asc') return parseFloat(a.dataset.diff || 0) - parseFloat(b.dataset.diff || 0);
+    if (criterion === 'diff-desc') return Math.abs(parseFloat(b.dataset.diff || 0)) - Math.abs(parseFloat(a.dataset.diff || 0));
+    if (criterion === 'diff-asc') return Math.abs(parseFloat(a.dataset.diff || 0)) - Math.abs(parseFloat(b.dataset.diff || 0));
     return 0;
   });
   rows.forEach(row => tbody.appendChild(row));
@@ -18623,19 +18623,29 @@ async function cargarHistorial(cuando) {
       
       let acierto = '';
       const pred = p.prediccion_previa;
-      if (gl != null && ga != null && pred) {
-        const pl = pred.prob_local || 0;
-        const pe = pred.prob_empate || 0;
-        const pv = pred.prob_visitante || 0;
-        let predReal;
-        if (pl >= pe && pl >= pv) predReal = 'local';
-        else if (pv >= pl && pv >= pe) predReal = 'visitante';
-        else predReal = 'empate';
-        let real;
-        if (gl > ga) real = 'local';
-        else if (ga > gl) real = 'visitante';
-        else real = 'empate';
-        acierto = predReal === real ? '<span class="acierto-ok">&#10003;</span>' : '<span class="acierto-fail">&#10007;</span>';
+      let diffMostrado = diff;
+      if (pred) {
+        if (pred.diff_elo !== undefined) {
+          const signoPre = pred.diff_elo > 0 ? '+' : '';
+          diffMostrado = `${signoPre}${pred.diff_elo.toFixed(0)}`;
+        }
+        const pjSuficiente = (pred.pj_h === undefined || pred.pj_a === undefined)
+          ? false
+          : (pred.pj_h >= 5 && pred.pj_a >= 5);
+        if (gl != null && ga != null && pjSuficiente) {
+          const pl = pred.prob_local || 0;
+          const pe = pred.prob_empate || 0;
+          const pv = pred.prob_visitante || 0;
+          let predReal;
+          if (pl >= pe && pl >= pv) predReal = 'local';
+          else if (pv >= pl && pv >= pe) predReal = 'visitante';
+          else predReal = 'empate';
+          let real;
+          if (gl > ga) real = 'local';
+          else if (ga > gl) real = 'visitante';
+          else real = 'empate';
+          acierto = predReal === real ? '<span class="acierto-ok">&#10003;</span>' : '<span class="acierto-fail">&#10007;</span>';
+        }
       }
       
       const pjLocal = eqLocal ? (eqLocal.partidos_jugados || 0) : 0;
@@ -18660,7 +18670,7 @@ async function cargarHistorial(cuando) {
         <td class="ex-elo ${claseRating(eqVisitante?.rating)}">${eloVisitante} <span class="pj-count">${pjVisitante}PJ</span></td>
         <td class="ex-forma ${claseForma(formaVisitante)}">${formaVisitante}</td>
         <td class="ex-racha">${streakHtml(statsVisitante.streak)}</td>
-        <td class="ex-diff">${diff}</td>
+        <td class="ex-diff">${diffMostrado}</td>
         <td class="ex-pred">-</td>
         <td class="ex-acierto">${acierto}</td>
         <td></td>

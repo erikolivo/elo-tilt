@@ -262,6 +262,34 @@ def _ajustar_por_home_away(pl, pe, pv, ha_l, ha_v):
     return (pl / t, pe / t, pv / t)
 
 
+UMBRAL_PJ_OVERPERFORMANCE = 7
+UMBRAL_SIGNIFICANCIA_OP = 10
+PESO_MAXIMO_AJUSTE_OP = 0.02
+ACTIVAR_AJUSTE_OVERPERFORMANCE = True
+
+
+def _ajustar_por_overperformance(pl, pe, pv, op_h, op_a, pj_h, pj_a):
+    """Ajusta la probabilidad según qué tan por encima/debajo de lo
+    esperado (según su propio ELO) viene rindiendo cada equipo, solo
+    cuando hay suficiente muestra (PJ >= UMBRAL_PJ_OVERPERFORMANCE) y
+    el valor no es marginal (|op| > UMBRAL_SIGNIFICANCIA_OP). Un
+    equipo que no cumple cualquiera de las dos condiciones se trata
+    como neutro (0) para este ajuste puntual."""
+    if not ACTIVAR_AJUSTE_OVERPERFORMANCE:
+        return (pl, pe, pv)
+
+    op_h_efectivo = op_h if (pj_h >= UMBRAL_PJ_OVERPERFORMANCE and abs(op_h) > UMBRAL_SIGNIFICANCIA_OP) else 0.0
+    op_a_efectivo = op_a if (pj_a >= UMBRAL_PJ_OVERPERFORMANCE and abs(op_a) > UMBRAL_SIGNIFICANCIA_OP) else 0.0
+
+    diff_op = op_h_efectivo - op_a_efectivo
+    adj = max(-PESO_MAXIMO_AJUSTE_OP, min(PESO_MAXIMO_AJUSTE_OP, diff_op * 0.001))
+
+    pl += adj
+    pv -= adj
+    t = pl + pe + pv
+    return (pl / t, pe / t, pv / t)
+
+
 def predecir_partido(fx, tilt_home, tilt_away):
     rating_h = tilt_home["rating"]
     rating_a = tilt_away["rating"]
@@ -278,6 +306,11 @@ def predecir_partido(fx, tilt_home, tilt_away):
     prob_local, prob_empate, prob_visitante = _ajustar_por_forma(prob_local, prob_empate, prob_visitante, tilt_home["form_score"], tilt_away["form_score"])
     prob_local, prob_empate, prob_visitante = _ajustar_por_momentum(prob_local, prob_empate, prob_visitante, tilt_home["momentum"]["direccion"], tilt_away["momentum"]["direccion"])
     prob_local, prob_empate, prob_visitante = _ajustar_por_home_away(prob_local, prob_empate, prob_visitante, tilt_home["home_away"], tilt_away["home_away"])
+    prob_local, prob_empate, prob_visitante = _ajustar_por_overperformance(
+        prob_local, prob_empate, prob_visitante,
+        tilt_home.get("overperformance", 0), tilt_away.get("overperformance", 0),
+        tilt_home.get("partidos_jugados", 0), tilt_away.get("partidos_jugados", 0),
+    )
 
     prob_local = max(0.01, min(0.99, prob_local))
     prob_empate = max(0.01, min(0.99, prob_empate))
@@ -452,6 +485,9 @@ def predecir_fecha(fecha_iso, ligas=None):
                 "prob_local": pred["prediccion"]["prob_local"],
                 "prob_empate": pred["prediccion"]["prob_empate"],
                 "prob_visitante": pred["prediccion"]["prob_visitante"],
+                "diff_elo": pred.get("diff_elo", 0),
+                "pj_h": pred["equipo_local"].get("partidos_jugados", 0),
+                "pj_a": pred["equipo_visitante"].get("partidos_jugados", 0),
             }
     ARCHIVO_PREDICCIONES_HIST.write_text(json.dumps(hist, ensure_ascii=False, indent=2), encoding="utf-8")
 

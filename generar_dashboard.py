@@ -303,13 +303,20 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
         resultado = resultados.get(key_fx) if key_fx else None
         if not resultado:
             resultado = resultados.get(key) or resultados.get(key_inv)
-        if resultado:
+        pj_h_pred = h.get('partidos_jugados', 0)
+        pj_a_pred = a.get('partidos_jugados', 0)
+        pj_suficiente = pj_h_pred >= 5 and pj_a_pred >= 5
+
+        if resultado and pj_suficiente:
             marcador = f"{resultado['goles_local']} - {resultado['goles_visitante']}"
             gl = resultado['goles_local']
             ga = resultado['goles_visitante']
             predReal = 'local' if (prob_l >= prob_e and prob_l >= prob_v) else 'visitante' if (prob_v >= prob_l and prob_v >= prob_e) else 'empate'
             real = 'local' if gl > ga else 'visitante' if ga > gl else 'empate'
             acierto = "✓" if predReal == real else "✗"
+        elif resultado:
+            marcador = f"{resultado['goles_local']} - {resultado['goles_visitante']}"
+            acierto = ""
         else:
             marcador = "?"
             acierto = ""
@@ -832,8 +839,8 @@ function sortExcel(criterion) {{
     if (criterion === 'elo-asc') return parseFloat(a.dataset.eloH || 0) - parseFloat(b.dataset.eloH || 0);
     if (criterion === 'form-desc') return parseFloat(b.dataset.formH || 0) - parseFloat(a.dataset.formH || 0);
     if (criterion === 'form-asc') return parseFloat(a.dataset.formH || 0) - parseFloat(b.dataset.formH || 0);
-    if (criterion === 'diff-desc') return parseFloat(b.dataset.diff || 0) - parseFloat(a.dataset.diff || 0);
-    if (criterion === 'diff-asc') return parseFloat(a.dataset.diff || 0) - parseFloat(b.dataset.diff || 0);
+    if (criterion === 'diff-desc') return Math.abs(parseFloat(b.dataset.diff || 0)) - Math.abs(parseFloat(a.dataset.diff || 0));
+    if (criterion === 'diff-asc') return Math.abs(parseFloat(a.dataset.diff || 0)) - Math.abs(parseFloat(b.dataset.diff || 0));
     return 0;
   }});
   rows.forEach(row => tbody.appendChild(row));
@@ -977,19 +984,29 @@ async function cargarHistorial(cuando) {{
       
       let acierto = '';
       const pred = p.prediccion_previa;
-      if (gl != null && ga != null && pred) {{
-        const pl = pred.prob_local || 0;
-        const pe = pred.prob_empate || 0;
-        const pv = pred.prob_visitante || 0;
-        let predReal;
-        if (pl >= pe && pl >= pv) predReal = 'local';
-        else if (pv >= pl && pv >= pe) predReal = 'visitante';
-        else predReal = 'empate';
-        let real;
-        if (gl > ga) real = 'local';
-        else if (ga > gl) real = 'visitante';
-        else real = 'empate';
-        acierto = predReal === real ? '<span class="acierto-ok">&#10003;</span>' : '<span class="acierto-fail">&#10007;</span>';
+      let diffMostrado = diff;
+      if (pred) {{
+        if (pred.diff_elo !== undefined) {{
+          const signoPre = pred.diff_elo > 0 ? '+' : '';
+          diffMostrado = `${{signoPre}}${{pred.diff_elo.toFixed(0)}}`;
+        }}
+        const pjSuficiente = (pred.pj_h === undefined || pred.pj_a === undefined)
+          ? false
+          : (pred.pj_h >= 5 && pred.pj_a >= 5);
+        if (gl != null && ga != null && pjSuficiente) {{
+          const pl = pred.prob_local || 0;
+          const pe = pred.prob_empate || 0;
+          const pv = pred.prob_visitante || 0;
+          let predReal;
+          if (pl >= pe && pl >= pv) predReal = 'local';
+          else if (pv >= pl && pv >= pe) predReal = 'visitante';
+          else predReal = 'empate';
+          let real;
+          if (gl > ga) real = 'local';
+          else if (ga > gl) real = 'visitante';
+          else real = 'empate';
+          acierto = predReal === real ? '<span class="acierto-ok">&#10003;</span>' : '<span class="acierto-fail">&#10007;</span>';
+        }}
       }}
       
       const pjLocal = eqLocal ? (eqLocal.partidos_jugados || 0) : 0;
@@ -1014,7 +1031,7 @@ async function cargarHistorial(cuando) {{
         <td class="ex-elo ${{claseRating(eqVisitante?.rating)}}">${{eloVisitante}} <span class="pj-count">${{pjVisitante}}PJ</span></td>
         <td class="ex-forma ${{claseForma(formaVisitante)}}">${{formaVisitante}}</td>
         <td class="ex-racha">${{streakHtml(statsVisitante.streak)}}</td>
-        <td class="ex-diff">${{diff}}</td>
+        <td class="ex-diff">${{diffMostrado}}</td>
         <td class="ex-pred">-</td>
         <td class="ex-acierto">${{acierto}}</td>
         <td></td>
