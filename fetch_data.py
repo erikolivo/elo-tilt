@@ -67,7 +67,7 @@ def _extraer_evento(evento, liga_slug):
             tid = tid[0] if tid else None
         return str(tid) if tid else "0"
 
-    return {
+    resultado = {
         "fixture": {"id": str(evento["id"]), "date": evento.get("date")},
         "teams": {
             "home": {"id": _safe_team_id(home["team"]), "name": home["team"].get("shortDisplayName") or home["team"].get("displayName")},
@@ -82,6 +82,9 @@ def _extraer_evento(evento, liga_slug):
         "_goles_local": _goles(home),
         "_goles_visitante": _goles(away),
     }
+    # TEMP DEBUG — quitar una vez confirmado el comportamiento (Tarea 1 ticket)
+    print(f"[DEBUG-ID] liga={liga_slug} | {resultado['teams']['home']['name']}={resultado['teams']['home']['id']} vs {resultado['teams']['away']['name']}={resultado['teams']['away']['id']}")
+    return resultado
 
 
 def _consultar_scoreboard(slug, fecha_iso):
@@ -227,6 +230,17 @@ def obtener_fixtures_futuros(fecha_iso, ligas=None):
     return list(fixtures_por_id.values())
 
 
+def _score_int(valor):
+    """Convierte el 'score' de ESPN a int de forma robusta.
+    ESPN a veces devuelve dict (ej. {"value": 0}) o None en schedule."""
+    if isinstance(valor, dict):
+        valor = valor.get("value")
+    try:
+        return int(valor)
+    except (TypeError, ValueError):
+        return 0
+
+
 def obtener_historial_equipo(liga_slug, team_id, limit=20):
     """
     Obtiene el historial reciente de un equipo via el endpoint
@@ -266,12 +280,12 @@ def obtener_historial_equipo(liga_slug, team_id, limit=20):
                 "home": {
                     "id": home["team"]["id"],
                     "name": home["team"].get("shortDisplayName") or home["team"].get("displayName"),
-                    "score": int(home.get("score", 0)),
+                    "score": _score_int(home.get("score")),
                 },
                 "away": {
                     "id": away["team"]["id"],
                     "name": away["team"].get("shortDisplayName") or away["team"].get("displayName"),
-                    "score": int(away.get("score", 0)),
+                    "score": _score_int(away.get("score")),
                 },
             })
         except (KeyError, IndexError, StopIteration):

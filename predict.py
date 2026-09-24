@@ -15,6 +15,7 @@ import ratings_store
 import fetch_data
 import historial_store
 import ligas_nombres
+import bootstrap_equipos
 
 DATA_DIR = Path(__file__).parent / "data"
 ARCHIVO_PREDICCIONES = DATA_DIR / "predicciones_cache.json"
@@ -361,9 +362,25 @@ def predecir_fecha(fecha_iso, ligas=None):
     for fx in fixtures:
         home_id = str(fx["teams"]["home"]["id"])
         away_id = str(fx["teams"]["away"]["id"])
+        home_name = fx["teams"]["home"]["name"]
+        away_name = fx["teams"]["away"]["name"]
+        liga_slug_fx = fx.get("_liga_slug", "")
 
-        home_eq = equipos_ratings.get(f"espn:{home_id}", {})
-        away_eq = equipos_ratings.get(f"espn:{away_id}", {})
+        # Tarea 2: resolver alias/fuzzy en el LADO DE LECTURA también
+        # (para no leer un registro "nuevo en 1500" cuando ya existe uno
+        # con nombre muy similar bajo otro ID).
+        home_llave = ratings_store.resolver_llave(f"espn:{home_id}", nombre=home_name, equipos=equipos_ratings)
+        away_llave = ratings_store.resolver_llave(f"espn:{away_id}", nombre=away_name, equipos=equipos_ratings)
+
+        # Tarea 3: bootstrap automático para equipos con pocos partidos
+        # (PJ < 4, o aún no en ratings) — reset+replay con historial de ESPN.
+        bootstrap_equipos.bootstrap_si_hace_falta(
+            home_llave, home_id, home_name, liga_slug_fx, equipos_ratings)
+        bootstrap_equipos.bootstrap_si_hace_falta(
+            away_llave, away_id, away_name, liga_slug_fx, equipos_ratings)
+
+        home_eq = equipos_ratings.get(home_llave, {})
+        away_eq = equipos_ratings.get(away_llave, {})
 
         rating_h = home_eq.get("rating", glicko2.RATING_BASE)
         rating_a = away_eq.get("rating", glicko2.RATING_BASE)

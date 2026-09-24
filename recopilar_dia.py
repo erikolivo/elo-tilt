@@ -63,6 +63,13 @@ def _alimentar_rating(fx, gh, ga):
     llave_local = ratings_store.llave_equipo(home["id"], nombre=home.get("name"))
     llave_visitante = ratings_store.llave_equipo(away["id"], nombre=away.get("name"))
 
+    # Tarea 2: resolver alias/fuzzy ANTES de crear/actualizar, para no
+    # crear un registro "nuevo en 1500" si ya existe uno con nombre muy
+    # similar bajo otro ID (tanto en el lado de escritura de ratings_store
+    # como aquí al construir las llaves).
+    llave_local = ratings_store.resolver_llave(llave_local, nombre=home.get("name"))
+    llave_visitante = ratings_store.resolver_llave(llave_visitante, nombre=away.get("name"))
+
     eq_local = ratings_store.obtener_o_crear(
         llave_local, nombre=home.get("name"),
         pais=fx["league"].get("country"), liga=fx["league"].get("name"))
