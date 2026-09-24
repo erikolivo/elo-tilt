@@ -169,11 +169,14 @@ def _goal_trend_bar(gt):
 
 
 def _overperformance_badge(op):
-    if op is None or op == 0:
+    if op is None:
+        return ""
+    signo = "+" if op > 0 else ""
+    texto = f"{signo}{op:.0f}"
+    if texto in ("+0", "-0", "0"):
         return ""
     color = "#22c55e" if op > 10 else "#ef4444" if op < -10 else "#94a3b8"
-    signo = "+" if op > 0 else ""
-    return f'<span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:{color}">{signo}{op:.0f}</span>'
+    return f'<span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:{color}">{texto}</span>'
 
 
 def _field_tilt_bar(ft):
@@ -317,12 +320,12 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
   <td class="ex-local">{f'<a href="{url_espn}" target="_blank">{h["nombre"]}</a>' if url_espn else h['nombre']}{_badge_provisional(h.get('partidos_jugados'))}</td>
   <td class="ex-elo {_clase_rating(h.get('rating'))}">{h.get('rating', 0):.0f} <span class="pj-count">{h.get('partidos_jugados', 0)}PJ</span></td>
   <td class="ex-forma {_clase_forma(h.get('form_score'))}">{h.get('form_score', 50):.0f}</td>
-  <td class="ex-racha">{_ultimos5_html(u5_h)}</td>
+  <td class="ex-racha">{_ultimos5_html(u5_h)} {_overperformance_badge(op_h)}</td>
   <td class="ex-marcador">{marcador}</td>
   <td class="ex-visitante">{f'<a href="{url_espn}" target="_blank">{a["nombre"]}</a>' if url_espn else a['nombre']}{_badge_provisional(a.get('partidos_jugados'))}</td>
   <td class="ex-elo {_clase_rating(a.get('rating'))}">{a.get('rating', 0):.0f} <span class="pj-count">{a.get('partidos_jugados', 0)}PJ</span></td>
   <td class="ex-forma {_clase_forma(a.get('form_score'))}">{a.get('form_score', 50):.0f}</td>
-  <td class="ex-racha">{_ultimos5_html(u5_a)}</td>
+  <td class="ex-racha">{_ultimos5_html(u5_a)} {_overperformance_badge(op_a)}</td>
   <td class="ex-diff" style="color:{'#22c55e' if diff > 0 else '#ef4444' if diff < 0 else '#94a3b8'}">{diff_signo}{diff:.0f}</td>
   <td class="ex-pred best">{prob_l:.0f}% | {prob_e:.0f}% | {prob_v:.0f}%</td>
   <td class="ex-acierto {'acierto-ok' if acierto == '✓' else 'acierto-fail' if acierto == '✗' else ''}">{acierto}</td>
