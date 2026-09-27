@@ -179,28 +179,42 @@ def _overperformance_badge(op):
     return f'<span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:{color}">{texto}</span>'
 
 
-UMBRAL_FAVORITO_CLARO = 12  # puntos porcentuales de diferencia entre 1ra y 2da
+UMBRAL_FAVORITO_CLARO = 12  # puntos porcentuales, para el caso {1,2} (empate 3ro)
+TOPE_FAVORITO_EMPATE = 60   # tope absoluto del favorito, para el caso empate 2do
 
 
 def _codigo_prediccion(prob_l, prob_e, prob_v):
     """Devuelve el código de predicción (1/X/2/1X/X2/12) a partir de
-    las tres probabilidades. Usa el umbral de favorito claro para
-    decidir entre código sencillo o doble oportunidad."""
+    las tres probabilidades.
+
+    Regla combinada (calibrada con backtest sobre historial real):
+    - Si el empate queda 2do lugar (compitiendo contra el favorito):
+      se usa un tope ABSOLUTO sobre la probabilidad del favorito
+      (TOPE_FAVORITO_EMPATE) en vez de una brecha relativa, porque el
+      empate real en el futbol rara vez supera ~25% y una regla de
+      brecha nunca se activaria contra un favorito con 30+ puntos de
+      ventaja.
+    - Si el empate queda 3ro lugar (partido decidido entre local y
+      visitante, sin el empate compitiendo): se mantiene la brecha
+      relativa original (UMBRAL_FAVORITO_CLARO) para producir '12'
+      en partidos parejos entre los dos equipos directos.
+    """
     opciones = sorted(
         [('1', prob_l), ('X', prob_e), ('2', prob_v)],
         key=lambda t: t[1], reverse=True
     )
     primera, segunda = opciones[0], opciones[1]
-    if primera[1] - segunda[1] > UMBRAL_FAVORITO_CLARO:
+
+    if segunda[0] == 'X':
+        if primera[1] <= TOPE_FAVORITO_EMPATE:
+            incluidas = {primera[0], segunda[0]}
+            return '1X' if incluidas == {'1', 'X'} else 'X2'
         return primera[0]
-    # Doble oportunidad: combinar las dos más altas, en orden fijo 1/X/2
-    # (no en el orden de probabilidad) para que siempre se lea "1X", "X2" o "12".
-    incluidas = {primera[0], segunda[0]}
-    if incluidas == {'1', 'X'}:
-        return '1X'
-    if incluidas == {'X', '2'}:
-        return 'X2'
-    return '12'  # incluidas == {'1', '2'}
+
+    # El empate quedo 3ro: se decide solo entre local y visitante.
+    if primera[1] - segunda[1] <= UMBRAL_FAVORITO_CLARO:
+        return '12'
+    return primera[0]
 
 
 def _acierto_con_codigo(codigo, gl, ga):
@@ -924,17 +938,24 @@ function streakHtml(s) {{
 }}
 
 const UMBRAL_FAVORITO_CLARO = 12;
+const TOPE_FAVORITO_EMPATE = 60;
 
 function codigoPrediccion(probL, probE, probV) {{
   const opciones = [['1', probL], ['X', probE], ['2', probV]].sort((a, b) => b[1] - a[1]);
   const [primera, segunda] = opciones;
-  if (primera[1] - segunda[1] > UMBRAL_FAVORITO_CLARO) {{
+
+  if (segunda[0] === 'X') {{
+    if (primera[1] <= TOPE_FAVORITO_EMPATE) {{
+      const incluidas = new Set([primera[0], segunda[0]]);
+      return incluidas.has('1') ? '1X' : 'X2';
+    }}
     return primera[0];
   }}
-  const incluidas = new Set([primera[0], segunda[0]]);
-  if (incluidas.has('1') && incluidas.has('X')) return '1X';
-  if (incluidas.has('X') && incluidas.has('2')) return 'X2';
-  return '12';
+
+  if (primera[1] - segunda[1] <= UMBRAL_FAVORITO_CLARO) {{
+    return '12';
+  }}
+  return primera[0];
 }}
 
 function aciertoConCodigo(codigo, gl, ga) {{
