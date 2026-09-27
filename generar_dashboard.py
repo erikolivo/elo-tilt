@@ -179,6 +179,44 @@ def _overperformance_badge(op):
     return f'<span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:{color}">{texto}</span>'
 
 
+UMBRAL_FAVORITO_CLARO = 12  # puntos porcentuales de diferencia entre 1ra y 2da
+
+
+def _codigo_prediccion(prob_l, prob_e, prob_v):
+    """Devuelve el código de predicción (1/X/2/1X/X2/12) a partir de
+    las tres probabilidades. Usa el umbral de favorito claro para
+    decidir entre código sencillo o doble oportunidad."""
+    opciones = sorted(
+        [('1', prob_l), ('X', prob_e), ('2', prob_v)],
+        key=lambda t: t[1], reverse=True
+    )
+    primera, segunda = opciones[0], opciones[1]
+    if primera[1] - segunda[1] > UMBRAL_FAVORITO_CLARO:
+        return primera[0]
+    # Doble oportunidad: combinar las dos más altas, en orden fijo 1/X/2
+    # (no en el orden de probabilidad) para que siempre se lea "1X", "X2" o "12".
+    incluidas = {primera[0], segunda[0]}
+    if incluidas == {'1', 'X'}:
+        return '1X'
+    if incluidas == {'X', '2'}:
+        return 'X2'
+    return '12'  # incluidas == {'1', '2'}
+
+
+def _acierto_con_codigo(codigo, gl, ga):
+    """True/False si el resultado real (gl, ga) está incluido en el
+    código de predicción. Devuelve None si faltan datos."""
+    if gl is None or ga is None:
+        return None
+    if gl > ga:
+        real = '1'
+    elif gl == ga:
+        real = 'X'
+    else:
+        real = '2'
+    return real in codigo
+
+
 def _field_tilt_bar(ft):
     if not ft:
         return ""
@@ -282,6 +320,7 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
         prob_l = pred["prob_local"]
         prob_e = pred["prob_empate"]
         prob_v = pred["prob_visitante"]
+        codigo_pred = _codigo_prediccion(prob_l, prob_e, prob_v)
 
         diff_signo = "+" if diff > 0 else ""
 
@@ -311,9 +350,7 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
             marcador = f"{resultado['goles_local']} - {resultado['goles_visitante']}"
             gl = resultado['goles_local']
             ga = resultado['goles_visitante']
-            predReal = 'local' if (prob_l >= prob_e and prob_l >= prob_v) else 'visitante' if (prob_v >= prob_l and prob_v >= prob_e) else 'empate'
-            real = 'local' if gl > ga else 'visitante' if ga > gl else 'empate'
-            acierto = "✓" if predReal == real else "✗"
+            acierto = "✓" if _acierto_con_codigo(codigo_pred, gl, ga) else "✗"
         elif resultado:
             marcador = f"{resultado['goles_local']} - {resultado['goles_visitante']}"
             acierto = ""
@@ -334,7 +371,7 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
   <td class="ex-forma {_clase_forma(a.get('form_score'))}">{a.get('form_score', 50):.0f}</td>
   <td class="ex-racha">{_ultimos5_html(u5_a)} {_overperformance_badge(op_a)}</td>
   <td class="ex-diff" style="color:{'#22c55e' if diff > 0 else '#ef4444' if diff < 0 else '#94a3b8'}">{diff_signo}{diff:.0f}</td>
-  <td class="ex-pred best">{prob_l:.0f}% | {prob_e:.0f}% | {prob_v:.0f}%</td>
+  <td class="ex-pred best" title="{prob_l:.0f}% | {prob_e:.0f}% | {prob_v:.0f}%">{codigo_pred}</td>
   <td class="ex-acierto {'acierto-ok' if acierto == '✓' else 'acierto-fail' if acierto == '✗' else ''}">{acierto}</td>
   <td><button class="expand-btn" onclick="toggleDetalle('{fixture_id}')">▾</button></td>
 </tr>
@@ -886,6 +923,29 @@ function streakHtml(s) {{
   return '-';
 }}
 
+const UMBRAL_FAVORITO_CLARO = 12;
+
+function codigoPrediccion(probL, probE, probV) {{
+  const opciones = [['1', probL], ['X', probE], ['2', probV]].sort((a, b) => b[1] - a[1]);
+  const [primera, segunda] = opciones;
+  if (primera[1] - segunda[1] > UMBRAL_FAVORITO_CLARO) {{
+    return primera[0];
+  }}
+  const incluidas = new Set([primera[0], segunda[0]]);
+  if (incluidas.has('1') && incluidas.has('X')) return '1X';
+  if (incluidas.has('X') && incluidas.has('2')) return 'X2';
+  return '12';
+}}
+
+function aciertoConCodigo(codigo, gl, ga) {{
+  if (gl == null || ga == null) return null;
+  let real;
+  if (gl > ga) real = '1';
+  else if (gl === ga) real = 'X';
+  else real = '2';
+  return codigo.includes(real);
+}}
+
 function ultimos5Html(u5) {{
   if (!u5 || !u5.resultados || u5.resultados.length === 0) return '<span class="streak-na">—</span>';
   return u5.resultados.map(r => {{
@@ -985,7 +1045,9 @@ async function cargarHistorial(cuando) {{
       let acierto = '';
       const pred = p.prediccion_previa;
       let diffMostrado = diff;
+      let codigoPred = '-';
       if (pred) {{
+        codigoPred = codigoPrediccion(pred.prob_local, pred.prob_empate, pred.prob_visitante);
         if (pred.diff_elo !== undefined) {{
           const signoPre = pred.diff_elo > 0 ? '+' : '';
           diffMostrado = `${{signoPre}}${{pred.diff_elo.toFixed(0)}}`;
@@ -994,18 +1056,10 @@ async function cargarHistorial(cuando) {{
           ? false
           : (pred.pj_h >= 5 && pred.pj_a >= 5);
         if (gl != null && ga != null && pjSuficiente) {{
-          const pl = pred.prob_local || 0;
-          const pe = pred.prob_empate || 0;
-          const pv = pred.prob_visitante || 0;
-          let predReal;
-          if (pl >= pe && pl >= pv) predReal = 'local';
-          else if (pv >= pl && pv >= pe) predReal = 'visitante';
-          else predReal = 'empate';
-          let real;
-          if (gl > ga) real = 'local';
-          else if (ga > gl) real = 'visitante';
-          else real = 'empate';
-          acierto = predReal === real ? '<span class="acierto-ok">&#10003;</span>' : '<span class="acierto-fail">&#10007;</span>';
+          const esAcierto = aciertoConCodigo(codigoPred, gl, ga);
+          acierto = esAcierto
+            ? '<span class="acierto-ok">&#10003;</span>'
+            : '<span class="acierto-fail">&#10007;</span>';
         }}
       }}
       
@@ -1032,7 +1086,7 @@ async function cargarHistorial(cuando) {{
         <td class="ex-forma ${{claseForma(formaVisitante)}}">${{formaVisitante}}</td>
         <td class="ex-racha">${{streakHtml(statsVisitante.streak)}}</td>
         <td class="ex-diff">${{diffMostrado}}</td>
-        <td class="ex-pred">-</td>
+        <td class="ex-pred" title="${{pred ? pred.prob_local.toFixed(0) + '% | ' + pred.prob_empate.toFixed(0) + '% | ' + pred.prob_visitante.toFixed(0) + '%' : ''}}">${{codigoPred}}</td>
         <td class="ex-acierto">${{acierto}}</td>
         <td></td>
       </tr>`;
