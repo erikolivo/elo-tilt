@@ -12,6 +12,7 @@ Uso:
     python actualizar.py                  # pipeline completo
     python actualizar.py --solo-prediccion  # solo predecir + dashboard
     python actualizar.py --solo-dashboard   # solo regenerar HTML
+    python actualizar.py --solo-recopilar   # solo recopilar + dashboard (sin re-predecir)
 """
 
 import argparse
@@ -75,12 +76,19 @@ def main():
                         help="Solo predecir + generar dashboard (sin recopilar)")
     parser.add_argument("--solo-dashboard", action="store_true",
                         help="Solo regenerar el HTML del dashboard")
+    parser.add_argument("--solo-recopilar", action="store_true",
+                        help="Solo recopilar resultados + generar dashboard (sin re-predecir) — para corridas frecuentes durante el dia")
     parser.add_argument("--fecha", help="Fecha YYYY-MM-DD (por defecto, hoy)")
     args = parser.parse_args()
 
     fecha = args.fecha or _hoy_ecuador()
 
     if args.solo_dashboard:
+        paso_dashboard()
+        return
+
+    if args.solo_recopilar:
+        paso_recopilar(fecha)
         paso_dashboard()
         return
 

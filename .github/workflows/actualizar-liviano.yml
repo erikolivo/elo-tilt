@@ -1,0 +1,54 @@
+name: Actualizar liviano (resultados)
+
+# Corridas frecuentes durante horas de partidos: solo recopilan
+# resultados terminados + decaimiento RD y regeneran el dashboard,
+# sin volver a predecir. El workflow principal (actualizar.yml)
+# sigue encargado de las 2 corridas completas diarias.
+
+on:
+  schedule:
+    # Corridas livianas cada hora, 07:00-23:00 Ecuador (horario tipico
+    # de partidos). El cron usa horas UTC — por eso el rango queda
+    # partido en dos lineas (cruza la medianoche UTC). Ambas lineas
+    # juntas cubren 07:00-23:00 Ecuador continuo:
+    #   0 12-23 * * *  -> 07:00-18:00 Ecuador
+    #   0 0-4 * * *    -> 19:00-23:00 Ecuador
+    - cron: '0 12-23 * * *'
+    - cron: '0 0-4 * * *'
+  workflow_dispatch:
+
+jobs:
+  recopilar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline (liviano)
+        run: python actualizar.py --solo-recopilar
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          mkdir -p data/historial_partidos
+          touch data/.gitkeep data/historial_partidos/.gitkeep
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No hay cambios para commitear"
+          else
+            git commit -m "Auto-update liviano: $(date -u +%Y-%m-%d %H:%M)"
+            git push
+          fi
