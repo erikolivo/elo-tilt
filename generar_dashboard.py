@@ -179,42 +179,38 @@ def _overperformance_badge(op):
     return f'<span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:{color}">{texto}</span>'
 
 
-UMBRAL_FAVORITO_CLARO = 12  # puntos porcentuales, para el caso {1,2} (empate 3ro)
-TOPE_FAVORITO_EMPATE = 60   # tope absoluto del favorito, para el caso empate 2do
+# Regla por diferencia de Elo (Glicko-2). Valores calibrados con backtest, no cambiar sin pedirlo.
+VENTAJA_LOCAL_ELO = 80       # puntos de Elo que se suman al local por jugar en casa
+UMBRAL_FAVORITO_ELO = 150    # |d| mayor a esto -> favorito claro (código simple 1 o 2)
+UMBRAL_PAREJO_ELO = 60       # |d| menor o igual a esto -> partido parejo (código 12)
 
 
-def _codigo_prediccion(prob_l, prob_e, prob_v):
-    """Devuelve el código de predicción (1/X/2/1X/X2/12) a partir de
-    las tres probabilidades.
+def _codigo_prediccion(diff_elo):
+    """Devuelve el código de predicción (1/2/1X/X2/12) a partir de la diferencia
+    de Elo (rating_local - rating_visitante).
 
-    Regla combinada (calibrada con backtest sobre historial real):
-    - Si el empate queda 2do lugar (compitiendo contra el favorito):
-      se usa un tope ABSOLUTO sobre la probabilidad del favorito
-      (TOPE_FAVORITO_EMPATE) en vez de una brecha relativa, porque el
-      empate real en el futbol rara vez supera ~25% y una regla de
-      brecha nunca se activaria contra un favorito con 30+ puntos de
-      ventaja.
-    - Si el empate queda 3ro lugar (partido decidido entre local y
-      visitante, sin el empate compitiendo): se mantiene la brecha
-      relativa original (UMBRAL_FAVORITO_CLARO) para producir '12'
-      en partidos parejos entre los dos equipos directos.
+    d = diff_elo + VENTAJA_LOCAL_ELO
+    |d| > UMBRAL_FAVORITO_ELO -> '1' o '2'
+    |d| <= UMBRAL_PAREJO_ELO  -> '12'
+    en medio                  -> '1X' (d > 0) o 'X2' (d < 0)
     """
-    opciones = sorted(
-        [('1', prob_l), ('X', prob_e), ('2', prob_v)],
-        key=lambda t: t[1], reverse=True
-    )
-    primera, segunda = opciones[0], opciones[1]
-
-    if segunda[0] == 'X':
-        if primera[1] <= TOPE_FAVORITO_EMPATE:
-            incluidas = {primera[0], segunda[0]}
-            return '1X' if incluidas == {'1', 'X'} else 'X2'
-        return primera[0]
-
-    # El empate quedo 3ro: se decide solo entre local y visitante.
-    if primera[1] - segunda[1] <= UMBRAL_FAVORITO_CLARO:
+    if diff_elo is None:
+        return '-'
+    d = diff_elo + VENTAJA_LOCAL_ELO
+    if abs(d) > UMBRAL_FAVORITO_ELO:
+        return '1' if d > 0 else '2'
+    if abs(d) <= UMBRAL_PAREJO_ELO:
         return '12'
-    return primera[0]
+    return '1X' if d > 0 else 'X2'
+
+
+def _tooltip_prediccion(diff_elo, prob_l, prob_e, prob_v):
+    """Texto del tooltip de la celda de predicción. Explica de dónde sale el
+    código (Elo) y muestra las probabilidades del modelo, que pueden no
+    coincidir 1 a 1 con el código porque el código NO usa forma/momentum."""
+    d = diff_elo + VENTAJA_LOCAL_ELO
+    return (f"Código por Elo: dif {diff_elo:+.0f} + {VENTAJA_LOCAL_ELO} local = {d:+.0f} | "
+            f"Prob. modelo: {prob_l:.0f}% | {prob_e:.0f}% | {prob_v:.0f}%")
 
 
 def _acierto_con_codigo(codigo, gl, ga):
@@ -334,7 +330,7 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
         prob_l = pred["prob_local"]
         prob_e = pred["prob_empate"]
         prob_v = pred["prob_visitante"]
-        codigo_pred = _codigo_prediccion(prob_l, prob_e, prob_v)
+        codigo_pred = _codigo_prediccion(diff)
 
         diff_signo = "+" if diff > 0 else ""
 
@@ -385,7 +381,7 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
   <td class="ex-forma {_clase_forma(a.get('form_score'))}">{a.get('form_score', 50):.0f}</td>
   <td class="ex-racha">{_ultimos5_html(u5_a)} {_overperformance_badge(op_a)}</td>
   <td class="ex-diff" style="color:{'#22c55e' if diff > 0 else '#ef4444' if diff < 0 else '#94a3b8'}">{diff_signo}{diff:.0f}</td>
-  <td class="ex-pred best" title="{prob_l:.0f}% | {prob_e:.0f}% | {prob_v:.0f}%">{codigo_pred}</td>
+  <td class="ex-pred best" title="{_tooltip_prediccion(diff, prob_l, prob_e, prob_v)}">{codigo_pred}</td>
   <td class="ex-acierto {'acierto-ok' if acierto == '✓' else 'acierto-fail' if acierto == '✗' else ''}">{acierto}</td>
   <td><button class="expand-btn" onclick="toggleDetalle('{fixture_id}')">▾</button></td>
 </tr>
@@ -937,25 +933,36 @@ function streakHtml(s) {{
   return '-';
 }}
 
-const UMBRAL_FAVORITO_CLARO = 12;
-const TOPE_FAVORITO_EMPATE = 60;
+// Regla por diferencia de Elo (Glicko-2). Valores calibrados con backtest, no cambiar sin pedirlo.
+const VENTAJA_LOCAL_ELO = 80;
+const UMBRAL_FAVORITO_ELO = 150;
+const UMBRAL_PAREJO_ELO = 60;
 
-function codigoPrediccion(probL, probE, probV) {{
-  const opciones = [['1', probL], ['X', probE], ['2', probV]].sort((a, b) => b[1] - a[1]);
-  const [primera, segunda] = opciones;
-
-  if (segunda[0] === 'X') {{
-    if (primera[1] <= TOPE_FAVORITO_EMPATE) {{
-      const incluidas = new Set([primera[0], segunda[0]]);
-      return incluidas.has('1') ? '1X' : 'X2';
-    }}
-    return primera[0];
+function codigoPrediccion(diffElo) {{
+  const d = diffElo + VENTAJA_LOCAL_ELO;
+  if (Math.abs(d) > UMBRAL_FAVORITO_ELO) {{
+    return d > 0 ? '1' : '2';
   }}
-
-  if (primera[1] - segunda[1] <= UMBRAL_FAVORITO_CLARO) {{
+  if (Math.abs(d) <= UMBRAL_PAREJO_ELO) {{
     return '12';
   }}
-  return primera[0];
+  return d > 0 ? '1X' : 'X2';
+}}
+
+// Respaldo: regla antigua por probabilidades. Solo se usa si el registro guardado
+// no trae diff_elo (predicciones viejas).
+const UMBRAL_FAVORITO_CLARO = 12;
+
+function codigoPrediccionLegacy(probL, probE, probV) {{
+  const opciones = [['1', probL], ['X', probE], ['2', probV]].sort((a, b) => b[1] - a[1]);
+  const [primera, segunda] = opciones;
+  if (primera[1] - segunda[1] > UMBRAL_FAVORITO_CLARO) {{
+    return primera[0];
+  }}
+  const incluidas = new Set([primera[0], segunda[0]]);
+  if (incluidas.has('1') && incluidas.has('X')) return '1X';
+  if (incluidas.has('X') && incluidas.has('2')) return 'X2';
+  return '12';
 }}
 
 function aciertoConCodigo(codigo, gl, ga) {{
@@ -1067,11 +1074,23 @@ async function cargarHistorial(cuando) {{
       const pred = p.prediccion_previa;
       let diffMostrado = diff;
       let codigoPred = '-';
+      let tooltipPred = '';
       if (pred) {{
-        codigoPred = codigoPrediccion(pred.prob_local, pred.prob_empate, pred.prob_visitante);
+        const tieneDiff = (pred.diff_elo !== undefined && pred.diff_elo !== null);
+        codigoPred = tieneDiff
+          ? codigoPrediccion(pred.diff_elo)
+          : codigoPrediccionLegacy(pred.prob_local, pred.prob_empate, pred.prob_visitante);
         if (pred.diff_elo !== undefined) {{
           const signoPre = pred.diff_elo > 0 ? '+' : '';
           diffMostrado = `${{signoPre}}${{pred.diff_elo.toFixed(0)}}`;
+        }}
+        const probTxt = pred.prob_local.toFixed(0) + '% | ' + pred.prob_empate.toFixed(0) + '% | ' + pred.prob_visitante.toFixed(0) + '%';
+        if (tieneDiff) {{
+          const dAj = pred.diff_elo + VENTAJA_LOCAL_ELO;
+          const sg = (n) => (n > 0 ? '+' : '') + n.toFixed(0);
+          tooltipPred = `Código por Elo: dif ${{sg(pred.diff_elo)}} + ${{VENTAJA_LOCAL_ELO}} local = ${{sg(dAj)}} | Prob. modelo: ${{probTxt}}`;
+        }} else {{
+          tooltipPred = `Prob. modelo: ${{probTxt}}`;
         }}
         const pjSuficiente = (pred.pj_h === undefined || pred.pj_a === undefined)
           ? false
@@ -1107,7 +1126,7 @@ async function cargarHistorial(cuando) {{
         <td class="ex-forma ${{claseForma(formaVisitante)}}">${{formaVisitante}}</td>
         <td class="ex-racha">${{streakHtml(statsVisitante.streak)}}</td>
         <td class="ex-diff">${{diffMostrado}}</td>
-        <td class="ex-pred" title="${{pred ? pred.prob_local.toFixed(0) + '% | ' + pred.prob_empate.toFixed(0) + '% | ' + pred.prob_visitante.toFixed(0) + '%' : ''}}">${{codigoPred}}</td>
+        <td class="ex-pred" title="${{tooltipPred}}">${{codigoPred}}</td>
         <td class="ex-acierto">${{acierto}}</td>
         <td></td>
       </tr>`;
