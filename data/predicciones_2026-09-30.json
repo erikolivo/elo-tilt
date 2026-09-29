@@ -1,7 +1,7 @@
 {
-  "generado": "2026-09-29T11:15:59.797457Z",
+  "generado": "2026-09-29T17:11:57.785854Z",
   "fecha_consulta": "2026-09-30",
-  "total": 98,
+  "total": 121,
   "predicciones": [
     {
       "fixture_id": "401922307",
@@ -341,9 +341,9 @@
         "id": "4245",
         "nombre": "Botswana",
         "pais": "",
-        "rating": 1424.3,
-        "rd": 106.38,
-        "partidos_jugados": 22,
+        "rating": 1443.96,
+        "rd": 104.43,
+        "partidos_jugados": 23,
         "form_score": 50.0,
         "form_local": 50.0,
         "form_visitante": 50.0,
@@ -351,11 +351,12 @@
         "momentum_diff": 0.0,
         "streak": {
           "tipo": "D",
-          "cantidad": 1
+          "cantidad": 2
         },
         "ultimos5": {
-          "texto": "1E",
+          "texto": "2E",
           "resultados": [
+            "E",
             "E"
           ]
         },
@@ -367,7 +368,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 16.7,
+        "overperformance": 21.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -404,12 +405,12 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 47.4,
+        "prob_local": 50.1,
         "prob_empate": 23.1,
-        "prob_visitante": 29.4
+        "prob_visitante": 26.8
       },
-      "diff_elo": -66.5,
-      "confianza": 33.2
+      "diff_elo": -46.8,
+      "confianza": 23.4
     },
     {
       "fixture_id": "401916445",
@@ -1239,7 +1240,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.4,
+        "overperformance": -3.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -1325,7 +1326,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 11.3,
+        "overperformance": 11.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -1555,7 +1556,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.4,
+        "overperformance": -3.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1945,9 +1946,9 @@
         "id": "18414",
         "nombre": "Poland",
         "pais": "",
-        "rating": 1555.46,
-        "rd": 96.49,
-        "partidos_jugados": 23,
+        "rating": 1536.89,
+        "rd": 93.95,
+        "partidos_jugados": 24,
         "form_score": 50.0,
         "form_local": 50.0,
         "form_visitante": 50.0,
@@ -1976,9 +1977,9 @@
         "id": "4365",
         "nombre": "Sweden",
         "pais": "",
-        "rating": 1642.26,
-        "rd": 98.47,
-        "partidos_jugados": 21,
+        "rating": 1661.56,
+        "rd": 95.72,
+        "partidos_jugados": 22,
         "form_score": 50.0,
         "form_local": 50.0,
         "form_visitante": 50.0,
@@ -2004,12 +2005,12 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 43.3,
+        "prob_local": 39.0,
         "prob_empate": 23.1,
-        "prob_visitante": 33.6
+        "prob_visitante": 37.9
       },
-      "diff_elo": -86.8,
-      "confianza": 43.4
+      "diff_elo": -124.7,
+      "confianza": 62.3
     },
     {
       "fixture_id": "732431",
@@ -2023,9 +2024,9 @@
         "id": "19349",
         "nombre": "Romania",
         "pais": "",
-        "rating": 1546.43,
-        "rd": 94.56,
-        "partidos_jugados": 24,
+        "rating": 1518.83,
+        "rd": 92.16,
+        "partidos_jugados": 25,
         "form_score": 100.0,
         "form_local": 50.0,
         "form_visitante": 100.0,
@@ -2049,7 +2050,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 45.6,
+        "overperformance": 48.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -2086,12 +2087,102 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 39.1,
+        "prob_local": 36.3,
         "prob_empate": 23.1,
-        "prob_visitante": 37.8
+        "prob_visitante": 40.5
       },
-      "diff_elo": -114.2,
-      "confianza": 57.1
+      "diff_elo": -141.8,
+      "confianza": 70.9
+    },
+    {
+      "fixture_id": "401886598",
+      "fecha": "2026-09-30T11:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "11:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20339",
+        "nombre": "Creighton",
+        "pais": "EE.UU.",
+        "rating": 1460.59,
+        "rd": 164.85,
+        "partidos_jugados": 6,
+        "form_score": 45.2,
+        "form_local": 49.6,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 1.6,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "E",
+            "D",
+            "V",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.83,
+          "goles_contra": 1.67,
+          "diferencia": -0.84
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -4.1,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20424",
+        "nombre": "Villanova",
+        "pais": "EE.UU.",
+        "rating": 1801.56,
+        "rd": 157.8,
+        "partidos_jugados": 7,
+        "form_score": 91.5,
+        "form_local": 91.6,
+        "form_visitante": 90.7,
+        "momentum": "stable",
+        "momentum_diff": 0.6,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "4V 1E",
+          "resultados": [
+            "V",
+            "V",
+            "E",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 3.71,
+          "goles_contra": 0.14,
+          "diferencia": 3.57
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 5.2,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 19.5,
+        "prob_empate": 23.1,
+        "prob_visitante": 57.3
+      },
+      "diff_elo": -341.0,
+      "confianza": 100.0
     },
     {
       "fixture_id": "401916407",
@@ -2255,7 +2346,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.8,
+        "overperformance": 16.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -2304,7 +2395,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -34.7,
+        "overperformance": -23.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -2452,9 +2543,9 @@
         "id": "21685",
         "nombre": "Roma",
         "pais": "",
-        "rating": 1546.43,
-        "rd": 94.56,
-        "partidos_jugados": 24,
+        "rating": 1518.83,
+        "rd": 92.16,
+        "partidos_jugados": 25,
         "form_score": 50.0,
         "form_local": 50.0,
         "form_visitante": 50.0,
@@ -2478,7 +2569,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 20.6,
+        "overperformance": 23.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -2519,11 +2610,11 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 16.6,
+        "prob_local": 15.4,
         "prob_empate": 23.1,
-        "prob_visitante": 60.2
+        "prob_visitante": 61.5
       },
-      "diff_elo": -410.8,
+      "diff_elo": -438.4,
       "confianza": 100.0
     },
     {
@@ -2998,9 +3089,9 @@
         "id": "20927",
         "nombre": "Cyprus",
         "pais": "",
-        "rating": 1281.85,
-        "rd": 102.95,
-        "partidos_jugados": 22,
+        "rating": 1280.85,
+        "rd": 99.64,
+        "partidos_jugados": 23,
         "form_score": 0.0,
         "form_local": 0.0,
         "form_visitante": 50.0,
@@ -3024,15 +3115,15 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -30.6,
+        "overperformance": -30.5,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 79.6,
+        "prob_local": 79.7,
         "prob_empate": 19.5,
         "prob_visitante": 0.8
       },
-      "diff_elo": 355.7,
+      "diff_elo": 356.7,
       "confianza": 100.0
     },
     {
@@ -3077,7 +3168,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.1,
+        "overperformance": 1.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3124,6 +3215,96 @@
       },
       "diff_elo": -176.2,
       "confianza": 88.1
+    },
+    {
+      "fixture_id": "401898778",
+      "fecha": "2026-09-30T12:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "12:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20631",
+        "nombre": "SC State",
+        "pais": "EE.UU.",
+        "rating": 990.89,
+        "rd": 166.71,
+        "partidos_jugados": 8,
+        "form_score": 0.0,
+        "form_local": 0.0,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 8
+        },
+        "ultimos5": {
+          "texto": "5D",
+          "resultados": [
+            "D",
+            "D",
+            "D",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.25,
+          "goles_contra": 4.25,
+          "diferencia": -4.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -11.1,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "21548",
+        "nombre": "Hampton",
+        "pais": "EE.UU.",
+        "rating": 1129.94,
+        "rd": 169.16,
+        "partidos_jugados": 7,
+        "form_score": 2.7,
+        "form_local": 4.8,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.2,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 4
+        },
+        "ultimos5": {
+          "texto": "4D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "D",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.57,
+          "goles_contra": 2.86,
+          "diferencia": -2.29
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -12.5,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 39.4,
+        "prob_empate": 23.1,
+        "prob_visitante": 37.5
+      },
+      "diff_elo": -139.1,
+      "confianza": 69.5
     },
     {
       "fixture_id": "401919569",
@@ -3452,88 +3633,6 @@
       },
       "diff_elo": 68.5,
       "confianza": 34.2
-    },
-    {
-      "fixture_id": "401922274",
-      "fecha": "2026-09-30T13:00:00-05:00",
-      "fecha_display": "2026-09-30",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "20916",
-        "nombre": "Botswana",
-        "pais": "",
-        "rating": 1424.3,
-        "rd": 106.38,
-        "partidos_jugados": 22,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1E",
-          "resultados": [
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 1.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 7.1,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "133877",
-        "nombre": "Namibia",
-        "pais": "",
-        "rating": 1492.95,
-        "rd": 106.94,
-        "partidos_jugados": 22,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1E",
-          "resultados": [
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 1.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 45.5,
-        "prob_empate": 23.1,
-        "prob_visitante": 31.3
-      },
-      "diff_elo": -68.7,
-      "confianza": 34.3
     },
     {
       "fixture_id": "401923363",
@@ -5388,7 +5487,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.6,
+        "overperformance": -3.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5515,7 +5614,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.3,
+        "overperformance": -7.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -5658,7 +5757,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.8,
+        "overperformance": -3.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5695,7 +5794,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.4,
+        "overperformance": -5.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -5791,6 +5890,95 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401890029",
+      "fecha": "2026-09-30T15:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "15:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20649",
+        "nombre": "Merrimack",
+        "pais": "EE.UU.",
+        "rating": 1350.01,
+        "rd": 154.12,
+        "partidos_jugados": 8,
+        "form_score": 16.7,
+        "form_local": 56.0,
+        "form_visitante": 12.5,
+        "momentum": "stable",
+        "momentum_diff": -3.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "1V 3D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "E",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 1.38,
+          "diferencia": -0.38
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -1.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20575",
+        "nombre": "Rider",
+        "pais": "EE.UU.",
+        "rating": 1427.62,
+        "rd": 191.35,
+        "partidos_jugados": 4,
+        "form_score": 18.5,
+        "form_local": 0.0,
+        "form_visitante": 34.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "1V 2D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.5,
+          "goles_contra": 2.0,
+          "diferencia": -1.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -3.8,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 46.2,
+        "prob_empate": 23.1,
+        "prob_visitante": 30.7
+      },
+      "diff_elo": -77.6,
+      "confianza": 38.8
+    },
+    {
       "fixture_id": "401899667",
       "fecha": "2026-09-30T16:00:00-05:00",
       "fecha_display": "2026-09-30",
@@ -5803,7 +5991,7 @@
         "nombre": "Águila",
         "pais": "",
         "rating": 1339.74,
-        "rd": 205.19,
+        "rd": 206.246276226681,
         "partidos_jugados": 4,
         "form_score": 45.5,
         "form_local": 62.2,
@@ -5839,7 +6027,7 @@
         "nombre": "Inter ST",
         "pais": "",
         "rating": 1870.21,
-        "rd": 217.40165116916265,
+        "rd": 218.89553405150983,
         "partidos_jugados": 4,
         "form_score": 100.0,
         "form_local": 100.0,
@@ -5867,13 +6055,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 16.6,
+        "overperformance": 16.7,
         "vol": 0.06
       },
       "prediccion": {
         "prob_local": 12.7,
         "prob_empate": 23.1,
-        "prob_visitante": 64.2
+        "prob_visitante": 64.1
       },
       "diff_elo": -530.5,
       "confianza": 100.0
@@ -5969,6 +6157,636 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401900225",
+      "fecha": "2026-09-30T17:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "17:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20348",
+        "nombre": "Boston U",
+        "pais": "EE.UU.",
+        "rating": 1665.65,
+        "rd": 139.88,
+        "partidos_jugados": 9,
+        "form_score": 85.7,
+        "form_local": 76.0,
+        "form_visitante": 74.7,
+        "momentum": "stable",
+        "momentum_diff": 1.8,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.78,
+          "goles_contra": 1.67,
+          "diferencia": 0.11
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -2.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20363",
+        "nombre": "Army",
+        "pais": "EE.UU.",
+        "rating": 1448.59,
+        "rd": 151.76,
+        "partidos_jugados": 9,
+        "form_score": 69.2,
+        "form_local": 70.5,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": -0.3,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V 3D",
+          "resultados": [
+            "V",
+            "V",
+            "D",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.56,
+          "goles_contra": 2.11,
+          "diferencia": -0.55
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.6,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 76.6,
+        "prob_empate": 22.4,
+        "prob_visitante": 1.0
+      },
+      "diff_elo": 217.1,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401900211",
+      "fecha": "2026-09-30T17:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "17:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20326",
+        "nombre": "Holy Cross",
+        "pais": "EE.UU.",
+        "rating": 1368.82,
+        "rd": 158.3,
+        "partidos_jugados": 7,
+        "form_score": 35.8,
+        "form_local": 21.8,
+        "form_visitante": 56.0,
+        "momentum": "stable",
+        "momentum_diff": 1.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "E",
+            "D",
+            "D",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.29,
+          "goles_contra": 1.43,
+          "diferencia": -0.14
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 3.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20512",
+        "nombre": "Colgate",
+        "pais": "EE.UU.",
+        "rating": 1233.71,
+        "rd": 153.46,
+        "partidos_jugados": 8,
+        "form_score": 7.8,
+        "form_local": 15.4,
+        "form_visitante": 15.8,
+        "momentum": "stable",
+        "momentum_diff": -3.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "4D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "D",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.5,
+          "goles_contra": 1.75,
+          "diferencia": -1.25
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.2,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 69.6,
+        "prob_empate": 23.1,
+        "prob_visitante": 7.3
+      },
+      "diff_elo": 135.1,
+      "confianza": 67.6
+    },
+    {
+      "fixture_id": "401900181",
+      "fecha": "2026-09-30T17:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "17:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20399",
+        "nombre": "Lehigh",
+        "pais": "EE.UU.",
+        "rating": 1171.0,
+        "rd": 171.04,
+        "partidos_jugados": 7,
+        "form_score": 4.5,
+        "form_local": 0.0,
+        "form_visitante": 8.4,
+        "momentum": "stable",
+        "momentum_diff": 0.3,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "4D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "D",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.57,
+          "goles_contra": 3.43,
+          "diferencia": -2.86
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -8.9,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20543",
+        "nombre": "Navy",
+        "pais": "EE.UU.",
+        "rating": 1612.2,
+        "rd": 153.19,
+        "partidos_jugados": 11,
+        "form_score": 74.3,
+        "form_local": 91.2,
+        "form_visitante": 49.4,
+        "momentum": "stable",
+        "momentum_diff": -0.2,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "4V 1D",
+          "resultados": [
+            "V",
+            "D",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.09,
+          "goles_contra": 1.18,
+          "diferencia": 0.91
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 3.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 13.0,
+        "prob_empate": 23.1,
+        "prob_visitante": 63.9
+      },
+      "diff_elo": -441.2,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401900190",
+      "fecha": "2026-09-30T17:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "17:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20390",
+        "nombre": "Loyola MD",
+        "pais": "EE.UU.",
+        "rating": 1425.48,
+        "rd": 179.48,
+        "partidos_jugados": 5,
+        "form_score": 33.7,
+        "form_local": 24.7,
+        "form_visitante": 62.2,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 2D 2E",
+          "resultados": [
+            "D",
+            "V",
+            "D",
+            "E",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.8,
+          "goles_contra": 1.4,
+          "diferencia": -0.6
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.5,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20454",
+        "nombre": "American",
+        "pais": "EE.UU.",
+        "rating": 1100.53,
+        "rd": 146.84,
+        "partidos_jugados": 10,
+        "form_score": 3.3,
+        "form_local": 7.9,
+        "form_visitante": 7.9,
+        "momentum": "stable",
+        "momentum_diff": -0.4,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 4
+        },
+        "ultimos5": {
+          "texto": "4D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "D",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.6,
+          "goles_contra": 2.4,
+          "diferencia": -1.8
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -5.9,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 77.9,
+        "prob_empate": 21.2,
+        "prob_visitante": 0.9
+      },
+      "diff_elo": 325.0,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401897503",
+      "fecha": "2026-09-30T17:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "17:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20466",
+        "nombre": "Sacramento St",
+        "pais": "EE.UU.",
+        "rating": 1748.62,
+        "rd": 209.37,
+        "partidos_jugados": 4,
+        "form_score": 54.2,
+        "form_local": 74.7,
+        "form_visitante": 49.4,
+        "momentum": "stable",
+        "momentum_diff": -1.6,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "E",
+            "D",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.83,
+          "goles_contra": 1.17,
+          "diferencia": 0.66
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -7.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20335",
+        "nombre": "UC Riverside",
+        "pais": "EE.UU.",
+        "rating": 1560.48,
+        "rd": 202.03,
+        "partidos_jugados": 4,
+        "form_score": 34.4,
+        "form_local": 62.2,
+        "form_visitante": 16.7,
+        "momentum": "stable",
+        "momentum_diff": 1.2,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 3D",
+          "resultados": [
+            "D",
+            "V",
+            "D",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.83,
+          "goles_contra": 1.33,
+          "diferencia": -0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -18.5,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 73.9,
+        "prob_empate": 23.1,
+        "prob_visitante": 2.9
+      },
+      "diff_elo": 188.1,
+      "confianza": 94.1
+    },
+    {
+      "fixture_id": "401886641",
+      "fecha": "2026-09-30T17:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "17:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20355",
+        "nombre": "Seton Hall",
+        "pais": "EE.UU.",
+        "rating": 1728.37,
+        "rd": 184.88,
+        "partidos_jugados": 5,
+        "form_score": 70.7,
+        "form_local": 100.0,
+        "form_visitante": 65.4,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 2E",
+          "resultados": [
+            "E",
+            "V",
+            "E",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.6,
+          "goles_contra": 0.2,
+          "diferencia": 1.4
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 4.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20472",
+        "nombre": "Butler",
+        "pais": "EE.UU.",
+        "rating": 1519.55,
+        "rd": 166.32,
+        "partidos_jugados": 6,
+        "form_score": 87.3,
+        "form_local": 78.2,
+        "form_visitante": 81.4,
+        "momentum": "stable",
+        "momentum_diff": 3.1,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "4V 1D",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.14,
+          "goles_contra": 0.86,
+          "diferencia": 1.28
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.6,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 73.8,
+        "prob_empate": 23.1,
+        "prob_visitante": 3.1
+      },
+      "diff_elo": 208.8,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401897335",
+      "fecha": "2026-09-30T17:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "17:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20574",
+        "nombre": "Winthrop",
+        "pais": "EE.UU.",
+        "rating": 1403.12,
+        "rd": 169.6,
+        "partidos_jugados": 6,
+        "form_score": 65.9,
+        "form_local": 81.4,
+        "form_visitante": 30.7,
+        "momentum": "stable",
+        "momentum_diff": 2.3,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 2D",
+          "resultados": [
+            "V",
+            "D",
+            "V",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.67,
+          "goles_contra": 1.67,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -3.7,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20354",
+        "nombre": "Longwood",
+        "pais": "EE.UU.",
+        "rating": 1247.14,
+        "rd": 149.88,
+        "partidos_jugados": 8,
+        "form_score": 8.7,
+        "form_local": 0.0,
+        "form_visitante": 81.4,
+        "momentum": "stable",
+        "momentum_diff": -2.9,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 4
+        },
+        "ultimos5": {
+          "texto": "1V 4D",
+          "resultados": [
+            "D",
+            "D",
+            "D",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.75,
+          "goles_contra": 1.62,
+          "diferencia": -0.87
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -9.4,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 72.7,
+        "prob_empate": 23.1,
+        "prob_visitante": 4.1
+      },
+      "diff_elo": 156.0,
+      "confianza": 78.0
+    },
+    {
       "fixture_id": "401907807",
       "fecha": "2026-09-30T17:30:00-05:00",
       "fecha_display": "2026-09-30",
@@ -6059,6 +6877,96 @@
       "confianza": 58.8
     },
     {
+      "fixture_id": "401886612",
+      "fecha": "2026-09-30T17:30:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "17:30",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20436",
+        "nombre": "Xavier",
+        "pais": "EE.UU.",
+        "rating": 1699.07,
+        "rd": 177.87,
+        "partidos_jugados": 6,
+        "form_score": 92.5,
+        "form_local": 100.0,
+        "form_visitante": 73.1,
+        "momentum": "stable",
+        "momentum_diff": 1.7,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 4
+        },
+        "ultimos5": {
+          "texto": "4V 1D",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.86,
+          "goles_contra": 1.57,
+          "diferencia": 0.29
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 8.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20402",
+        "nombre": "DePaul",
+        "pais": "EE.UU.",
+        "rating": 1633.35,
+        "rd": 155.55,
+        "partidos_jugados": 7,
+        "form_score": 46.6,
+        "form_local": 44.6,
+        "form_visitante": 74.7,
+        "momentum": "stable",
+        "momentum_diff": -1.9,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "E",
+            "D",
+            "E",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.86,
+          "goles_contra": 0.57,
+          "diferencia": 0.29
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 6.1,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 63.7,
+        "prob_empate": 23.1,
+        "prob_visitante": 13.1
+      },
+      "diff_elo": 65.7,
+      "confianza": 32.9
+    },
+    {
       "fixture_id": "401842261",
       "fecha": "2026-09-30T18:00:00-05:00",
       "fecha_display": "2026-09-30",
@@ -6108,7 +7016,7 @@
         "nombre": "Detroit",
         "pais": "",
         "rating": 1722.23,
-        "rd": 205.22,
+        "rd": 206.27601727023836,
         "partidos_jugados": 4,
         "form_score": 72.3,
         "form_local": 81.1,
@@ -6251,7 +7159,7 @@
         "nombre": "Chattanooga",
         "pais": "",
         "rating": 1327.78,
-        "rd": 195.46475232346032,
+        "rd": 197.1250611976549,
         "partidos_jugados": 5,
         "form_score": 26.7,
         "form_local": 28.4,
@@ -6323,7 +7231,7 @@
       "prediccion": {
         "prob_local": 33.7,
         "prob_empate": 23.1,
-        "prob_visitante": 43.2
+        "prob_visitante": 43.1
       },
       "diff_elo": -200.7,
       "confianza": 100.0
@@ -6407,7 +7315,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.4,
+        "overperformance": -4.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -6468,7 +7376,7 @@
         "nombre": "West Florida",
         "pais": "",
         "rating": 1210.13,
-        "rd": 212.7,
+        "rd": 213.719094575404,
         "partidos_jugados": 4,
         "form_score": 22.8,
         "form_local": 0.0,
@@ -6549,7 +7457,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.5,
+        "overperformance": -0.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -6586,7 +7494,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -14.2,
+        "overperformance": -13.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -6596,6 +7504,454 @@
       },
       "diff_elo": -178.0,
       "confianza": 89.0
+    },
+    {
+      "fixture_id": "401886788",
+      "fecha": "2026-09-30T18:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "18:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20369",
+        "nombre": "Georgetown",
+        "pais": "EE.UU.",
+        "rating": 1578.6,
+        "rd": 183.6,
+        "partidos_jugados": 5,
+        "form_score": 35.1,
+        "form_local": 44.0,
+        "form_visitante": 31.1,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 2D 2E",
+          "resultados": [
+            "E",
+            "D",
+            "E",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 1.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.1,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20332",
+        "nombre": "Marquette",
+        "pais": "EE.UU.",
+        "rating": 1613.85,
+        "rd": 185.2,
+        "partidos_jugados": 6,
+        "form_score": 43.1,
+        "form_local": 55.1,
+        "form_visitante": 49.4,
+        "momentum": "stable",
+        "momentum_diff": -3.2,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1D 3E",
+          "resultados": [
+            "E",
+            "D",
+            "E",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.57,
+          "goles_contra": 0.43,
+          "diferencia": 1.14
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 3.2,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 49.5,
+        "prob_empate": 23.1,
+        "prob_visitante": 27.3
+      },
+      "diff_elo": -35.2,
+      "confianza": 17.6
+    },
+    {
+      "fixture_id": "401900205",
+      "fecha": "2026-09-30T18:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "18:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20489",
+        "nombre": "Lafayette",
+        "pais": "EE.UU.",
+        "rating": 1441.53,
+        "rd": 163.8,
+        "partidos_jugados": 7,
+        "form_score": 59.9,
+        "form_local": 81.1,
+        "form_visitante": 47.6,
+        "momentum": "stable",
+        "momentum_diff": 1.6,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "V",
+            "D",
+            "V",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.71,
+          "goles_contra": 1.0,
+          "diferencia": -0.29
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -6.8,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20432",
+        "nombre": "Bucknell",
+        "pais": "EE.UU.",
+        "rating": 1480.17,
+        "rd": 139.83,
+        "partidos_jugados": 10,
+        "form_score": 54.7,
+        "form_local": 62.8,
+        "form_visitante": 27.2,
+        "momentum": "stable",
+        "momentum_diff": 0.6,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 2D 2E",
+          "resultados": [
+            "E",
+            "V",
+            "E",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.7,
+          "goles_contra": 1.2,
+          "diferencia": 0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 51.3,
+        "prob_empate": 23.1,
+        "prob_visitante": 25.5
+      },
+      "diff_elo": -38.6,
+      "confianza": 19.3
+    },
+    {
+      "fixture_id": "401897355",
+      "fecha": "2026-09-30T18:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "18:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20477",
+        "nombre": "Radford",
+        "pais": "EE.UU.",
+        "rating": 1500.53,
+        "rd": 196.57,
+        "partidos_jugados": 4,
+        "form_score": 37.8,
+        "form_local": 37.8,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D",
+          "resultados": [
+            "D",
+            "V",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.75,
+          "goles_contra": 1.5,
+          "diferencia": 1.25
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20562",
+        "nombre": "UNC Asheville",
+        "pais": "EE.UU.",
+        "rating": 1510.61,
+        "rd": 165.09,
+        "partidos_jugados": 6,
+        "form_score": 55.1,
+        "form_local": 66.3,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.2,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "V",
+            "D",
+            "D",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.0,
+          "goles_contra": 1.33,
+          "diferencia": 0.67
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.9,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 52.9,
+        "prob_empate": 23.1,
+        "prob_visitante": 23.9
+      },
+      "diff_elo": -10.1,
+      "confianza": 5.0
+    },
+    {
+      "fixture_id": "401897345",
+      "fecha": "2026-09-30T18:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "18:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20632",
+        "nombre": "SC Upstate",
+        "pais": "EE.UU.",
+        "rating": 1574.96,
+        "rd": 156.13,
+        "partidos_jugados": 7,
+        "form_score": 84.4,
+        "form_local": 100.0,
+        "form_visitante": 83.5,
+        "momentum": "stable",
+        "momentum_diff": 0.2,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "3V 2D",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.71,
+          "goles_contra": 1.14,
+          "diferencia": 0.57
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.5,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20626",
+        "nombre": "Presbyterian",
+        "pais": "EE.UU.",
+        "rating": 1456.28,
+        "rd": 207.43014676302602,
+        "partidos_jugados": 4,
+        "form_score": 49.6,
+        "form_local": 100.0,
+        "form_visitante": 44.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 1E",
+          "resultados": [
+            "E",
+            "D",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.5,
+          "goles_contra": 0.75,
+          "diferencia": 0.75
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 7.6,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 69.1,
+        "prob_empate": 23.1,
+        "prob_visitante": 7.8
+      },
+      "diff_elo": 118.7,
+      "confianza": 59.3
+    },
+    {
+      "fixture_id": "401886541",
+      "fecha": "2026-09-30T18:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "18:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20325",
+        "nombre": "St John's",
+        "pais": "EE.UU.",
+        "rating": 1494.08,
+        "rd": 166.44,
+        "partidos_jugados": 7,
+        "form_score": 24.9,
+        "form_local": 62.2,
+        "form_visitante": 20.6,
+        "momentum": "stable",
+        "momentum_diff": 1.5,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "V",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.86,
+          "goles_contra": 1.14,
+          "diferencia": -0.28
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20329",
+        "nombre": "UConn",
+        "pais": "EE.UU.",
+        "rating": 1434.62,
+        "rd": 176.84,
+        "partidos_jugados": 6,
+        "form_score": 32.3,
+        "form_local": 81.1,
+        "form_visitante": 18.9,
+        "momentum": "stable",
+        "momentum_diff": -0.6,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 2D 2E",
+          "resultados": [
+            "D",
+            "E",
+            "V",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.33,
+          "goles_contra": 1.17,
+          "diferencia": 0.16
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 9.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 60.9,
+        "prob_empate": 23.1,
+        "prob_visitante": 16.0
+      },
+      "diff_elo": 59.5,
+      "confianza": 29.7
     },
     {
       "fixture_id": "761833",
@@ -6700,7 +8056,7 @@
         "nombre": "Rhode Island",
         "pais": "",
         "rating": 1461.21,
-        "rd": 194.26,
+        "rd": 195.37526583698275,
         "partidos_jugados": 4,
         "form_score": 41.4,
         "form_local": 100.0,
@@ -6737,7 +8093,7 @@
         "nombre": "Indy XI",
         "pais": "",
         "rating": 1597.34,
-        "rd": 197.88,
+        "rd": 198.9750129692935,
         "partidos_jugados": 4,
         "form_score": 51.2,
         "form_local": 84.6,
@@ -6772,7 +8128,7 @@
       "prediccion": {
         "prob_local": 41.8,
         "prob_empate": 23.1,
-        "prob_visitante": 35.1
+        "prob_visitante": 35.0
       },
       "diff_elo": -136.1,
       "confianza": 68.1
@@ -6790,7 +8146,7 @@
         "nombre": "D.C. United",
         "pais": "",
         "rating": 1294.61,
-        "rd": 207.60920138777968,
+        "rd": 209.1731360671804,
         "partidos_jugados": 4,
         "form_score": 27.8,
         "form_local": 31.1,
@@ -6818,7 +8174,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.9,
+        "overperformance": -4.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -6855,7 +8211,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.6,
+        "overperformance": 3.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -6908,7 +8264,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 24.0,
+        "overperformance": 24.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -6965,7 +8321,7 @@
         "nombre": "Tulsa ",
         "pais": "",
         "rating": 1576.63,
-        "rd": 185.21,
+        "rd": 186.37942751514097,
         "partidos_jugados": 5,
         "form_score": 74.7,
         "form_local": 69.3,
@@ -7002,7 +8358,7 @@
         "nombre": "New Mexico",
         "pais": "",
         "rating": 1596.51,
-        "rd": 187.12,
+        "rd": 188.27760298593805,
         "partidos_jugados": 5,
         "form_score": 49.2,
         "form_local": 49.4,
@@ -7031,7 +8387,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.3,
+        "overperformance": 6.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -7041,6 +8397,96 @@
       },
       "diff_elo": -19.9,
       "confianza": 9.9
+    },
+    {
+      "fixture_id": "401899666",
+      "fecha": "2026-09-30T19:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "19:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "7225",
+        "nombre": "Alianza FC",
+        "pais": "",
+        "rating": 1568.15,
+        "rd": 138.61,
+        "partidos_jugados": 10,
+        "form_score": 55.5,
+        "form_local": 68.9,
+        "form_visitante": 42.5,
+        "momentum": "stable",
+        "momentum_diff": -0.5,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "1V 1D 3E",
+          "resultados": [
+            "E",
+            "E",
+            "V",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.8,
+          "goles_contra": 1.0,
+          "diferencia": -0.2
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -4.7,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "21092",
+        "nombre": "Platense ",
+        "pais": "",
+        "rating": 1521.22,
+        "rd": 165.7,
+        "partidos_jugados": 6,
+        "form_score": 37.3,
+        "form_local": 44.7,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": -2.2,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 2D 2E",
+          "resultados": [
+            "E",
+            "D",
+            "E",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 1.17,
+          "diferencia": -0.17
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 4.6,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 61.8,
+        "prob_empate": 23.1,
+        "prob_visitante": 15.0
+      },
+      "diff_elo": 46.9,
+      "confianza": 23.5
     },
     {
       "fixture_id": "401901550",
@@ -7145,7 +8591,7 @@
         "nombre": "Oriente",
         "pais": "",
         "rating": 1546.66,
-        "rd": 153.02,
+        "rd": 154.43337495784928,
         "partidos_jugados": 7,
         "form_score": 76.6,
         "form_local": 100.0,
@@ -7174,7 +8620,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.5,
+        "overperformance": 1.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7182,7 +8628,7 @@
         "nombre": "Strongest",
         "pais": "",
         "rating": 1564.54,
-        "rd": 154.39,
+        "rd": 155.79080700267173,
         "partidos_jugados": 8,
         "form_score": 50.2,
         "form_local": 81.4,
@@ -7235,7 +8681,7 @@
         "nombre": "Atl. Nacional",
         "pais": "",
         "rating": 1692.71,
-        "rd": 173.03,
+        "rd": 174.28100832348485,
         "partidos_jugados": 6,
         "form_score": 89.2,
         "form_local": 81.1,
@@ -7311,96 +8757,6 @@
       },
       "diff_elo": 208.7,
       "confianza": 100.0
-    },
-    {
-      "fixture_id": "401899666",
-      "fecha": "2026-09-30T20:00:00-05:00",
-      "fecha_display": "2026-09-30",
-      "hora": "20:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "7225",
-        "nombre": "Alianza FC",
-        "pais": "",
-        "rating": 1568.15,
-        "rd": 138.61,
-        "partidos_jugados": 10,
-        "form_score": 55.5,
-        "form_local": 68.9,
-        "form_visitante": 42.5,
-        "momentum": "stable",
-        "momentum_diff": -0.5,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "1V 1D 3E",
-          "resultados": [
-            "E",
-            "E",
-            "V",
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.8,
-          "goles_contra": 1.0,
-          "diferencia": -0.2
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -4.7,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "21092",
-        "nombre": "Platense ",
-        "pais": "",
-        "rating": 1521.22,
-        "rd": 165.7,
-        "partidos_jugados": 6,
-        "form_score": 37.3,
-        "form_local": 44.7,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": -2.2,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 2D 2E",
-          "resultados": [
-            "E",
-            "D",
-            "E",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 1.17,
-          "diferencia": -0.17
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 4.6,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 61.8,
-        "prob_empate": 23.1,
-        "prob_visitante": 15.0
-      },
-      "diff_elo": 46.9,
-      "confianza": 23.5
     },
     {
       "fixture_id": "401898975",
@@ -7583,6 +8939,186 @@
       "confianza": 60.0
     },
     {
+      "fixture_id": "401897434",
+      "fecha": "2026-09-30T20:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "20:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20340",
+        "nombre": "Fullerton",
+        "pais": "EE.UU.",
+        "rating": 1587.49,
+        "rd": 132.86,
+        "partidos_jugados": 9,
+        "form_score": 79.3,
+        "form_local": 87.0,
+        "form_visitante": 18.9,
+        "momentum": "stable",
+        "momentum_diff": 1.9,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "V",
+            "E",
+            "V",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.78,
+          "goles_contra": 1.67,
+          "diferencia": 0.11
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 3.1,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20475",
+        "nombre": "Cal Poly",
+        "pais": "EE.UU.",
+        "rating": 1581.82,
+        "rd": 207.21497365557997,
+        "partidos_jugados": 4,
+        "form_score": 62.0,
+        "form_local": 77.4,
+        "form_visitante": 30.7,
+        "momentum": "stable",
+        "momentum_diff": -0.5,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "V",
+            "D",
+            "V",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.38,
+          "goles_contra": 1.0,
+          "diferencia": 0.38
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 4.8,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 56.9,
+        "prob_empate": 23.1,
+        "prob_visitante": 20.0
+      },
+      "diff_elo": 5.7,
+      "confianza": 2.8
+    },
+    {
+      "fixture_id": "401897509",
+      "fecha": "2026-09-30T20:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "20:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20391",
+        "nombre": "UC Irvine",
+        "pais": "EE.UU.",
+        "rating": 1563.16,
+        "rd": 214.54,
+        "partidos_jugados": 4,
+        "form_score": 37.3,
+        "form_local": 50.0,
+        "form_visitante": 25.3,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2D 3E",
+          "resultados": [
+            "E",
+            "E",
+            "D",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.6,
+          "goles_contra": 2.2,
+          "diferencia": -1.6
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -11.9,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20641",
+        "nombre": "Utah Valley",
+        "pais": "EE.UU.",
+        "rating": 1588.36,
+        "rd": 134.46,
+        "partidos_jugados": 10,
+        "form_score": 74.4,
+        "form_local": 81.8,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.3,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3V 2D",
+          "resultados": [
+            "V",
+            "V",
+            "D",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.0,
+          "goles_contra": 1.0,
+          "diferencia": 1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 4.9,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 50.7,
+        "prob_empate": 23.1,
+        "prob_visitante": 26.1
+      },
+      "diff_elo": -25.2,
+      "confianza": 12.6
+    },
+    {
       "fixture_id": "401924629",
       "fecha": "2026-09-30T21:00:00-05:00",
       "fecha_display": "2026-09-30",
@@ -7677,7 +9213,7 @@
         "nombre": "Sacramento",
         "pais": "",
         "rating": 1491.65,
-        "rd": 192.9,
+        "rd": 194.02304609466958,
         "partidos_jugados": 5,
         "form_score": 55.0,
         "form_local": 68.9,
@@ -7714,7 +9250,7 @@
         "nombre": "Las Vegas",
         "pais": "",
         "rating": 1460.38,
-        "rd": 189.21,
+        "rd": 190.35489351768842,
         "partidos_jugados": 5,
         "form_score": 28.2,
         "form_local": 40.0,
@@ -7804,7 +9340,7 @@
         "nombre": "Isidro Metapán",
         "pais": "",
         "rating": 1496.84,
-        "rd": 199.39730639492078,
+        "rd": 201.02535427796954,
         "partidos_jugados": 4,
         "form_score": 37.8,
         "form_local": 100.0,
@@ -7920,7 +9456,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.9,
+        "overperformance": 2.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -8469,6 +10005,546 @@
       },
       "diff_elo": -121.8,
       "confianza": 60.9
+    },
+    {
+      "fixture_id": "401891295",
+      "fecha": "2026-09-30T21:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "21:00",
+      "liga": "usa.ncaa.m.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.m.1",
+      "equipo_local": {
+        "id": "21110",
+        "nombre": "UC San Diego",
+        "pais": "EE.UU.",
+        "rating": 1528.51,
+        "rd": 146.92,
+        "partidos_jugados": 8,
+        "form_score": 26.7,
+        "form_local": 26.9,
+        "form_visitante": 72.4,
+        "momentum": "down",
+        "momentum_diff": -5.1,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V 3D",
+          "resultados": [
+            "D",
+            "D",
+            "V",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.62,
+          "goles_contra": 0.62,
+          "diferencia": 1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 3.5,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "5752",
+        "nombre": "Cal Poly",
+        "pais": "EE.UU.",
+        "rating": 1520.52,
+        "rd": 198.76,
+        "partidos_jugados": 4,
+        "form_score": 79.3,
+        "form_local": 68.9,
+        "form_visitante": 75.3,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 3E",
+          "resultados": [
+            "V",
+            "E",
+            "V",
+            "E",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.8,
+          "goles_contra": 1.0,
+          "diferencia": 0.8
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 8.3,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 47.5,
+        "prob_empate": 23.1,
+        "prob_visitante": 29.4
+      },
+      "diff_elo": 8.0,
+      "confianza": 4.0
+    },
+    {
+      "fixture_id": "401891123",
+      "fecha": "2026-09-30T21:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "21:00",
+      "liga": "usa.ncaa.m.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.m.1",
+      "equipo_local": {
+        "id": "5618",
+        "nombre": "Santa Barbara",
+        "pais": "EE.UU.",
+        "rating": 1649.64,
+        "rd": 142.55,
+        "partidos_jugados": 8,
+        "form_score": 51.9,
+        "form_local": 44.5,
+        "form_visitante": 81.4,
+        "momentum": "stable",
+        "momentum_diff": -0.6,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 2D",
+          "resultados": [
+            "D",
+            "V",
+            "V",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.5,
+          "goles_contra": 1.0,
+          "diferencia": 0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 7.1,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "5742",
+        "nombre": "Sacramento St",
+        "pais": "EE.UU.",
+        "rating": 1295.45,
+        "rd": 195.59,
+        "partidos_jugados": 5,
+        "form_score": 44.8,
+        "form_local": 69.3,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": -1.9,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 4D",
+          "resultados": [
+            "V",
+            "D",
+            "D",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.33,
+          "goles_contra": 1.33,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -6.5,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 78.1,
+        "prob_empate": 20.9,
+        "prob_visitante": 0.9
+      },
+      "diff_elo": 354.2,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401899002",
+      "fecha": "2026-09-30T21:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "21:00",
+      "liga": "usa.ncaa.m.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.m.1",
+      "equipo_local": {
+        "id": "5653",
+        "nombre": "UNLV",
+        "pais": "EE.UU.",
+        "rating": 1667.06,
+        "rd": 146.47,
+        "partidos_jugados": 8,
+        "form_score": 68.1,
+        "form_local": 74.7,
+        "form_visitante": 65.4,
+        "momentum": "stable",
+        "momentum_diff": -0.1,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "E",
+            "V",
+            "V",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.12,
+          "goles_contra": 0.75,
+          "diferencia": 0.37
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -2.5,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "18009",
+        "nombre": "San José St",
+        "pais": "EE.UU.",
+        "rating": 1473.34,
+        "rd": 142.52,
+        "partidos_jugados": 8,
+        "form_score": 43.9,
+        "form_local": 60.5,
+        "form_visitante": 27.6,
+        "momentum": "stable",
+        "momentum_diff": -0.5,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "D",
+            "V",
+            "E",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.25,
+          "goles_contra": 1.75,
+          "diferencia": -0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -3.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 76.0,
+        "prob_empate": 23.0,
+        "prob_visitante": 1.0
+      },
+      "diff_elo": 193.7,
+      "confianza": 96.9
+    },
+    {
+      "fixture_id": "401897445",
+      "fecha": "2026-09-30T21:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "21:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20586",
+        "nombre": "Bakersfield",
+        "pais": "EE.UU.",
+        "rating": 1184.22,
+        "rd": 198.58,
+        "partidos_jugados": 5,
+        "form_score": 12.3,
+        "form_local": 0.0,
+        "form_visitante": 13.0,
+        "momentum": "stable",
+        "momentum_diff": 0.7,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "4D 1E",
+          "resultados": [
+            "D",
+            "E",
+            "D",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.43,
+          "goles_contra": 2.86,
+          "diferencia": -2.43
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -17.6,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20342",
+        "nombre": "Santa Barbara",
+        "pais": "EE.UU.",
+        "rating": 1712.23,
+        "rd": 206.98,
+        "partidos_jugados": 4,
+        "form_score": 62.7,
+        "form_local": 65.6,
+        "form_visitante": 66.0,
+        "momentum": "stable",
+        "momentum_diff": -2.6,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1D 3E",
+          "resultados": [
+            "E",
+            "V",
+            "E",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.75,
+          "goles_contra": 1.12,
+          "diferencia": 0.63
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -3.4,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 11.8,
+        "prob_empate": 23.1,
+        "prob_visitante": 65.1
+      },
+      "diff_elo": -528.0,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401897482",
+      "fecha": "2026-09-30T21:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "21:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "21551",
+        "nombre": "CA Baptist",
+        "pais": "EE.UU.",
+        "rating": 1708.53,
+        "rd": 151.55,
+        "partidos_jugados": 7,
+        "form_score": 58.4,
+        "form_local": 100.0,
+        "form_visitante": 18.9,
+        "momentum": "stable",
+        "momentum_diff": -1.3,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "4V 1D",
+          "resultados": [
+            "D",
+            "V",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.43,
+          "goles_contra": 0.29,
+          "diferencia": 1.14
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 8.5,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "21815",
+        "nombre": "UC San Diego",
+        "pais": "EE.UU.",
+        "rating": 1613.22,
+        "rd": 184.89,
+        "partidos_jugados": 5,
+        "form_score": 69.2,
+        "form_local": 81.2,
+        "form_visitante": 34.0,
+        "momentum": "stable",
+        "momentum_diff": -0.9,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "V",
+            "E",
+            "D",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.25,
+          "goles_contra": 0.88,
+          "diferencia": 0.37
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.6,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 65.1,
+        "prob_empate": 23.1,
+        "prob_visitante": 11.7
+      },
+      "diff_elo": 95.3,
+      "confianza": 47.7
+    },
+    {
+      "fixture_id": "401897471",
+      "fecha": "2026-09-30T21:00:00-05:00",
+      "fecha_display": "2026-09-30",
+      "hora": "21:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20534",
+        "nombre": "Long Beach St",
+        "pais": "EE.UU.",
+        "rating": 1730.46,
+        "rd": 138.8,
+        "partidos_jugados": 10,
+        "form_score": 61.0,
+        "form_local": 54.2,
+        "form_visitante": 70.7,
+        "momentum": "stable",
+        "momentum_diff": -3.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "E",
+            "V",
+            "D",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.0,
+          "goles_contra": 0.9,
+          "diferencia": 1.1
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 4.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20388",
+        "nombre": "CSU Northridge",
+        "pais": "EE.UU.",
+        "rating": 1252.34,
+        "rd": 211.61,
+        "partidos_jugados": 4,
+        "form_score": 40.9,
+        "form_local": 50.0,
+        "form_visitante": 22.8,
+        "momentum": "stable",
+        "momentum_diff": 1.4,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "2D 3E",
+          "resultados": [
+            "E",
+            "E",
+            "E",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 1.83,
+          "diferencia": -0.83
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -2.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 79.3,
+        "prob_empate": 19.9,
+        "prob_visitante": 0.9
+      },
+      "diff_elo": 478.1,
+      "confianza": 100.0
     }
   ]
 }
