@@ -51,7 +51,7 @@ def _cargar_resultados_fecha(fecha_iso):
         if gl is None or ga is None:
             continue
         fixture_id = fx["fixture"]["id"]
-        entrada = {"goles_local": gl, "goles_visitante": ga, "estado": estado}
+        entrada = {"goles_local": gl, "goles_visitante": ga, "estado": estado, "minuto": fx.get("_minuto", "")}
         resultados[f"fx:{fixture_id}"] = entrada
         nombre_l = fx["teams"]["home"]["name"].lower()
         nombre_v = fx["teams"]["away"]["name"].lower()
@@ -379,6 +379,13 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
             marcador = "?"
             acierto = ""
 
+        if resultado and resultado.get("estado") == "post":
+            minuto_col = "FIN"
+        elif resultado and resultado.get("estado") == "in":
+            minuto_col = resultado.get("minuto") or "EN VIVO"
+        else:
+            minuto_col = ""
+
         excel_rows += f'''<tr class="excel-row" data-slug="{slug}" data-fecha="{fecha_d}" data-elo-h="{h.get('rating', 0):.0f}" data-form-h="{h.get('form_score', 50):.0f}" data-home="{h['nombre'].lower()}" data-away="{a['nombre'].lower()}" data-diff="{diff:.0f}" data-pj-h="{h.get('partidos_jugados', 0)}" data-pj-a="{a.get('partidos_jugados', 0)}">
   <td class="ex-fecha">{fecha_d}</td>
   <td class="ex-hora">{hora}</td>
@@ -387,6 +394,7 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
   <td class="ex-forma {_clase_forma(h.get('form_score'))}">{h.get('form_score', 50):.0f}</td>
   <td class="ex-racha">{_ultimos5_html(u5_h)} {_overperformance_badge(op_h)}</td>
   <td class="ex-marcador {clase_marcador}">{marcador}</td>
+  <td class="ex-minuto {clase_marcador}">{minuto_col}</td>
   <td class="ex-visitante">{f'<a href="{url_espn}" target="_blank">{a["nombre"]}</a>' if url_espn else a['nombre']}{_badge_provisional(a.get('partidos_jugados'))}</td>
   <td class="ex-elo {_clase_rating(a.get('rating'))}">{a.get('rating', 0):.0f} <span class="pj-count">{a.get('partidos_jugados', 0)}PJ</span></td>
   <td class="ex-forma {_clase_forma(a.get('form_score'))}">{a.get('form_score', 50):.0f}</td>
@@ -397,7 +405,7 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
   <td><button class="expand-btn" onclick="toggleDetalle('{fixture_id}')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-{fixture_id}" style="display:none">
-  <td colspan="15">
+  <td colspan="16">
     <div class="detail-panel">
       <div class="detail-team">
         <strong>{h["nombre"]}</strong>
@@ -696,6 +704,7 @@ tr:hover {{ background: var(--surface2); }}
             <th>Forma</th>
             <th>Racha</th>
             <th>Marcador</th>
+            <th>Minuto</th>
             <th>Visitante</th>
             <th>ELO</th>
             <th>Forma</th>
@@ -1037,7 +1046,7 @@ function fechaEcuadorISO(offsetDias = 0) {{
 
 async function cargarHistorial(cuando) {{
   const tbody = document.querySelector('.excel-table tbody');
-  tbody.innerHTML = '<tr><td colspan="15" style="text-align:center; padding:20px;">Cargando...</td></tr>';
+  tbody.innerHTML = '<tr><td colspan="16" style="text-align:center; padding:20px;">Cargando...</td></tr>';
   
   const offset = cuando === 'ayer' ? -1 : (cuando === 'manana' ? 1 : 0);
   const fechaIso = fechaEcuadorISO(offset);
@@ -1161,8 +1170,8 @@ async function cargarHistorial(cuando) {{
       
       let acierto = '';
       const pred = p.prediccion_previa;
-      const eloLocalPre = pred?.rating_local != null ? pred.rating_local.toFixed(0) : null;
-      const eloVisitantePre = pred?.rating_visitante != null ? pred.rating_visitante.toFixed(0) : null;
+      const eloLocalPre = (cuando === 'ayer' && pred?.rating_local != null) ? pred.rating_local.toFixed(0) : null;
+      const eloVisitantePre = (cuando === 'ayer' && pred?.rating_visitante != null) ? pred.rating_visitante.toFixed(0) : null;
       const opHPre = pred?.overperformance_h;
       const opAPre = pred?.overperformance_a;
       let diffMostrado = diff;
@@ -1201,6 +1210,10 @@ async function cargarHistorial(cuando) {{
       const provH = pjLocal > 0 && pjLocal < 10 ? '<span class="badge-prov">PROV</span>' : '';
       const provV = pjVisitante > 0 && pjVisitante < 10 ? '<span class="badge-prov">PROV</span>' : '';
       
+      // Ayer siempre trae marcador (partidos terminados) -> FIN; Manana
+      // nunca (aun no se juegan) -> vacio.
+      const minutoCol = gl != null ? 'FIN' : '';
+      
       const eloHAttr = eqLocal ? eqLocal.rating.toFixed(0) : 0;
       const formHAttr = statsLocal.form_score != null ? statsLocal.form_score : 0;
       const diffAttr = (eqLocal && eqVisitante) ? (eqLocal.rating - eqVisitante.rating).toFixed(0) : 0;
@@ -1212,12 +1225,13 @@ async function cargarHistorial(cuando) {{
         <td class="ex-local">${{nombreLocal}}${{provH}}</td>
         <td class="ex-elo ${{claseRating(eqLocal?.rating)}}">${{eloLocal}} <span class="pj-count">${{pjLocal}}PJ</span>${{eloLocalPre ? `<br><span class="elo-pre">antes: ${{eloLocalPre}}</span>` : ''}}</td>
         <td class="ex-forma ${{claseForma(formaLocal)}}">${{formaLocal}}</td>
-        <td class="ex-racha">${{streakHtml(statsLocal.streak)}}${{opHPre != null ? overperformanceBadgeJs(opHPre) : ''}}</td>
+        <td class="ex-racha">${{ultimos5Html(statsLocal.ultimos5)}}${{opHPre != null ? overperformanceBadgeJs(opHPre) : ''}}</td>
         <td class="ex-marcador marcador-finalizado">${{marcador}}</td>
+        <td class="ex-minuto marcador-finalizado">${{minutoCol}}</td>
         <td class="ex-visitante">${{nombreVisitante}}${{provV}}</td>
         <td class="ex-elo ${{claseRating(eqVisitante?.rating)}}">${{eloVisitante}} <span class="pj-count">${{pjVisitante}}PJ</span>${{eloVisitantePre ? `<br><span class="elo-pre">antes: ${{eloVisitantePre}}</span>` : ''}}</td>
         <td class="ex-forma ${{claseForma(formaVisitante)}}">${{formaVisitante}}</td>
-        <td class="ex-racha">${{streakHtml(statsVisitante.streak)}}${{opAPre != null ? overperformanceBadgeJs(opAPre) : ''}}</td>
+        <td class="ex-racha">${{ultimos5Html(statsVisitante.ultimos5)}}${{opAPre != null ? overperformanceBadgeJs(opAPre) : ''}}</td>
         <td class="ex-diff">${{diffMostrado}}</td>
         <td class="ex-pred" title="${{tooltipPred}}">${{codigoPred}}</td>
         <td class="ex-acierto">${{acierto}}</td>
@@ -1226,22 +1240,36 @@ async function cargarHistorial(cuando) {{
     }});
     
     if (html === '') {{
-      html = '<tr><td colspan="15" style="text-align:center; padding:20px;">No hay partidos para esta fecha</td></tr>';
+      html = '<tr><td colspan="16" style="text-align:center; padding:20px;">No hay partidos para esta fecha</td></tr>';
     }}
     
     tbody.innerHTML = html;
     aplicarFiltros();
   }} catch (error) {{
     console.error('[Ayer/Manana] Error:', error);
-    tbody.innerHTML = `<tr><td colspan="15" style="text-align:center; padding:20px; color:#ef4444;">Error: ${{error.message}}</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="16" style="text-align:center; padding:20px; color:#ef4444;">Error: ${{error.message}}</td></tr>`;
   }}
 }}
 
 async function cargarEnVivo() {{
   const tbody = document.querySelector('.excel-table tbody');
-  tbody.innerHTML = '<tr><td colspan="15" style="text-align:center; padding:20px;">Cargando partidos en vivo...</td></tr>';
+  tbody.innerHTML = '<tr><td colspan="16" style="text-align:center; padding:20px;">Cargando partidos en vivo...</td></tr>';
   
   try {{
+    const fechaHoyIso = fechaEcuadorISO(0);
+    let prediccionesHoy = {{}};
+    try {{
+      const resPred = await fetch('data/predicciones_' + fechaHoyIso + '.json');
+      if (resPred.ok) {{
+        const dataPred = await resPred.json();
+        (dataPred.predicciones || []).forEach(p => {{
+          if (p.fixture_id) prediccionesHoy[p.fixture_id] = p;
+        }});
+      }}
+    }} catch (e) {{
+      console.warn('[EnVivo] No se pudo cargar predicciones de hoy:', e);
+    }}
+
     const [dataESPN, dataRatings, allMatches] = await Promise.all([
       fetch('https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard').then(r => {{
         if (!r.ok) throw new Error('Error ESPN: ' + r.status);
@@ -1283,6 +1311,17 @@ async function cargarEnVivo() {{
             const nombreVisitante = visitante.team?.displayName || visitante.team?.shortDisplayName || 'N/A';
             const idLocal = local.team?.id;
             const idVisitante = visitante.team?.id;
+            const fixtureId = String(event.id);
+            const predVivo = prediccionesHoy[fixtureId];
+            let codigoPredVivo = '-';
+            let tooltipPredVivo = '';
+            if (predVivo) {{
+              codigoPredVivo = codigoPrediccion(predVivo.diff_elo);
+              const probTxt = predVivo.prediccion.prob_local.toFixed(0) + '% | ' + predVivo.prediccion.prob_empate.toFixed(0) + '% | ' + predVivo.prediccion.prob_visitante.toFixed(0) + '%';
+              const dAj = predVivo.diff_elo + VENTAJA_LOCAL_ELO;
+              const sg = (n) => (n > 0 ? '+' : '') + n.toFixed(0);
+              tooltipPredVivo = `Código por Elo: dif ${{sg(predVivo.diff_elo)}} + ${{VENTAJA_LOCAL_ELO}} local = ${{sg(dAj)}} | Prob. modelo: ${{probTxt}}`;
+            }}
             
             const eqLocal = buscarElo(nombreLocal, idLocal);
             const eqVisitante = buscarElo(nombreVisitante, idVisitante);
@@ -1311,14 +1350,15 @@ async function cargarEnVivo() {{
               <td class="ex-local">${{nombreLocal}}${{provH}}</td>
               <td class="ex-elo ${{claseRating(eqLocal?.rating)}}">${{eloLocal}}</td>
               <td class="ex-forma ${{claseForma(formaLocal)}}">${{formaLocal}}</td>
-              <td class="ex-racha">${{streakHtml(statsLocal.streak)}}</td>
+              <td class="ex-racha">${{ultimos5Html(statsLocal.ultimos5)}}</td>
               <td class="ex-marcador marcador-vivo">${{marcador}}</td>
+              <td class="ex-minuto marcador-vivo">${{comp.status?.type?.shortDetail || ''}}</td>
               <td class="ex-visitante">${{nombreVisitante}}${{provV}}</td>
               <td class="ex-elo ${{claseRating(eqVisitante?.rating)}}">${{eloVisitante}}</td>
               <td class="ex-forma ${{claseForma(formaVisitante)}}">${{formaVisitante}}</td>
-              <td class="ex-racha">${{streakHtml(statsVisitante.streak)}}</td>
+              <td class="ex-racha">${{ultimos5Html(statsVisitante.ultimos5)}}</td>
               <td class="ex-diff">${{diff}}</td>
-              <td class="ex-pred">${{comp.status?.type?.shortDetail || ''}}</td>
+              <td class="ex-pred" title="${{tooltipPredVivo}}">${{codigoPredVivo}}</td>
               <td class="ex-acierto"></td>
               <td></td>
             </tr>`;
@@ -1328,14 +1368,14 @@ async function cargarEnVivo() {{
     }}
     
     if (html === '') {{
-      html = '<tr><td colspan="15" style="text-align:center; padding:20px;">No hay partidos en vivo ahora</td></tr>';
+      html = '<tr><td colspan="16" style="text-align:center; padding:20px;">No hay partidos en vivo ahora</td></tr>';
     }}
     
     tbody.innerHTML = html;
     aplicarFiltros();
   }} catch (error) {{
     console.error('[EnVivo] Error:', error);
-    tbody.innerHTML = `<tr><td colspan="15" style="text-align:center; padding:20px; color:#ef4444;">Error: ${{error.message}}</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="16" style="text-align:center; padding:20px; color:#ef4444;">Error: ${{error.message}}</td></tr>`;
   }}
 }}
 </script>

@@ -54,6 +54,7 @@ def _extraer_evento(evento, liga_slug):
     liga = evento.get("league", {})
     status = comp.get("status", {}) or evento.get("status", {})
     estado = status.get("type", {}).get("state")  # "pre" | "in" | "post"
+    minuto_texto = status.get("type", {}).get("shortDetail", "")
 
     def _goles(competitor):
         try:
@@ -79,6 +80,7 @@ def _extraer_evento(evento, liga_slug):
         },
         "_liga_slug": liga_slug,
         "_estado": estado,
+        "_minuto": minuto_texto,
         "_goles_local": _goles(home),
         "_goles_visitante": _goles(away),
     }
