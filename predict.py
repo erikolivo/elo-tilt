@@ -25,6 +25,10 @@ BONUS_LOCALIA = 0.08
 ZONA_HORARIA_ECUADOR = datetime.timezone(datetime.timedelta(hours=-5))
 
 
+def _hoy_ecuador():
+    return datetime.datetime.now(ZONA_HORARIA_ECUADOR).date().isoformat()
+
+
 def _hora_ecuador(fecha_iso):
     if not fecha_iso:
         return None
@@ -388,6 +392,19 @@ def predecir_fecha(fecha_iso, ligas=None):
         print(f"No se encontraron fixtures futuros para {fecha_iso}")
         return []
 
+    # obtener_fixtures_futuros trae fecha_iso + 2 dias mas (ventana UTC a
+    # proposito, para cubrir findes). Aqui nos quedamos SOLO con los que,
+    # en hora de Ecuador, caen exactamente en fecha_iso -- si no, un
+    # partido de las 8pm Ecuador (1am UTC del dia siguiente) se cuela en
+    # el dia equivocado.
+    fixtures = [
+        fx for fx in fixtures
+        if (_hora_ecuador(fx["fixture"].get("date", "")) or "")[:10] == fecha_iso
+    ]
+    if not fixtures:
+        print(f"No se encontraron fixtures para {fecha_iso} (tras filtrar por hora de Ecuador)")
+        return []
+
     ratings_data = ratings_store._cargar()
     equipos_ratings = ratings_data.get("equipos", {})
 
@@ -459,7 +476,7 @@ def predecir_fecha(fecha_iso, ligas=None):
         except Exception as e:
             print(f"[AVISO] Error prediciendo {fx['teams']['home']['name']} vs {fx['teams']['away']['name']}: {e}")
 
-    predicciones.sort(key=lambda x: (x["liga"], x["fecha"], x["diff_elo"]), reverse=True)
+    predicciones.sort(key=lambda x: x.get("fecha", ""))
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     cache = {
@@ -470,7 +487,13 @@ def predecir_fecha(fecha_iso, ligas=None):
     }
     ARCHIVO_PREDICCIONES.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    # Guardar predicciones en historial索引adas por fixture_id para uso futuro (Opción B - Acierto real)
+    # Ademas del cache fijo, guardar una copia por fecha para que la
+    # pestana Manana (y generar_dashboard.py --fecha) puedan leer
+    # predicciones de un dia especifico, no solo "hoy".
+    archivo_por_fecha = DATA_DIR / f"predicciones_{fecha_iso}.json"
+    archivo_por_fecha.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    # Guardar predicciones en historial indexadas por fixture_id para uso futuro (Opcion B - Acierto real)
     hist = {}
     if ARCHIVO_PREDICCIONES_HIST.exists():
         try:
@@ -488,6 +511,10 @@ def predecir_fecha(fecha_iso, ligas=None):
                 "diff_elo": pred.get("diff_elo", 0),
                 "pj_h": pred["equipo_local"].get("partidos_jugados", 0),
                 "pj_a": pred["equipo_visitante"].get("partidos_jugados", 0),
+                "rating_local": pred["equipo_local"].get("rating", 0),
+                "rating_visitante": pred["equipo_visitante"].get("rating", 0),
+                "overperformance_h": pred["equipo_local"].get("overperformance", 0),
+                "overperformance_a": pred["equipo_visitante"].get("overperformance", 0),
             }
     ARCHIVO_PREDICCIONES_HIST.write_text(json.dumps(hist, ensure_ascii=False, indent=2), encoding="utf-8")
 
@@ -505,5 +532,5 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Predice partidos a jugarse usando ELO + tilt.")
     parser.add_argument("--fecha", help="Fecha YYYY-MM-DD (por defecto, hoy)")
     args = parser.parse_args()
-    fecha = args.fecha or datetime.date.today().isoformat()
+    fecha = args.fecha or _hoy_ecuador()
     predecir_fecha(fecha)

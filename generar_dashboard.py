@@ -15,6 +15,8 @@ import argparse
 import json
 from pathlib import Path
 
+import fetch_data
+
 DATA_DIR = Path(__file__).parent / "data"
 ARCHIVO_PREDICCIONES = DATA_DIR / "predicciones_cache.json"
 ARCHIVO_SALIDA = Path(__file__).parent / "dashboard.html"
@@ -27,33 +29,35 @@ ZONA_ECUADOR = timezone(timedelta(hours=-5))
 
 
 def _cargar_resultados_fecha(fecha_iso):
+    """Devuelve, para cada fixture de 'fecha_iso', su estado ('in'/'post')
+    y marcador, consultando ESPN en vivo (no depende de que
+    recopilar_dia.py ya lo haya guardado localmente -- por eso el
+    marcador de Hoy se actualiza cada regeneracion del dashboard,
+    en vez de esperar a la siguiente corrida de recopilar_dia.py)."""
     if not fecha_iso:
         return {}
-    aaaa_mm = fecha_iso[:7]
-    archivo = DIR_HISTORIAL / f"{aaaa_mm}.json"
-    if not archivo.exists():
-        return {}
     try:
-        datos = json.loads(archivo.read_text(encoding="utf-8"))
-        resultados = {}
-        for p in datos.get("partidos", []):
-            if p.get("fecha") == fecha_iso:
-                fixture_id = p.get("fixture_id", "")
-                if fixture_id:
-                    resultados[f"fx:{fixture_id}"] = {
-                        "goles_local": p.get("goles_local", 0),
-                        "goles_visitante": p.get("goles_visitante", 0)
-                    }
-                nombre_l = p.get("equipo_local", {}).get("name", "").lower()
-                nombre_v = p.get("equipo_visitante", {}).get("name", "").lower()
-                if nombre_l and nombre_v:
-                    resultados[f"{nombre_l}_{nombre_v}"] = {
-                        "goles_local": p.get("goles_local", 0),
-                        "goles_visitante": p.get("goles_visitante", 0)
-                    }
-        return resultados
-    except Exception:
-        return {}
+        fixtures = fetch_data.obtener_fixtures_por_fecha(fecha_iso)
+    except Exception as e:
+        print(f"[AVISO] No se pudo consultar ESPN en vivo para {fecha_iso}: {e}")
+        fixtures = []
+
+    resultados = {}
+    for fx in fixtures:
+        estado = fx.get("_estado")
+        if estado not in ("in", "post"):
+            continue
+        gl, ga = fx.get("_goles_local"), fx.get("_goles_visitante")
+        if gl is None or ga is None:
+            continue
+        fixture_id = fx["fixture"]["id"]
+        entrada = {"goles_local": gl, "goles_visitante": ga, "estado": estado}
+        resultados[f"fx:{fixture_id}"] = entrada
+        nombre_l = fx["teams"]["home"]["name"].lower()
+        nombre_v = fx["teams"]["away"]["name"].lower()
+        resultados[f"{nombre_l}_{nombre_v}"] = entrada
+
+    return resultados
 
 
 def _clase_forma(score):
@@ -356,14 +360,21 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
         pj_a_pred = a.get('partidos_jugados', 0)
         pj_suficiente = pj_h_pred >= 5 and pj_a_pred >= 5
 
-        if resultado and pj_suficiente:
+        clase_marcador = ""
+        if resultado and resultado.get("estado") == "post" and pj_suficiente:
             marcador = f"{resultado['goles_local']} - {resultado['goles_visitante']}"
             gl = resultado['goles_local']
             ga = resultado['goles_visitante']
             acierto = "✓" if _acierto_con_codigo(codigo_pred, gl, ga) else "✗"
-        elif resultado:
+            clase_marcador = "marcador-finalizado"
+        elif resultado and resultado.get("estado") == "post":
             marcador = f"{resultado['goles_local']} - {resultado['goles_visitante']}"
             acierto = ""
+            clase_marcador = "marcador-finalizado"
+        elif resultado and resultado.get("estado") == "in":
+            marcador = f"{resultado['goles_local']} - {resultado['goles_visitante']}"
+            acierto = ""
+            clase_marcador = "marcador-vivo"
         else:
             marcador = "?"
             acierto = ""
@@ -375,7 +386,7 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
   <td class="ex-elo {_clase_rating(h.get('rating'))}">{h.get('rating', 0):.0f} <span class="pj-count">{h.get('partidos_jugados', 0)}PJ</span></td>
   <td class="ex-forma {_clase_forma(h.get('form_score'))}">{h.get('form_score', 50):.0f}</td>
   <td class="ex-racha">{_ultimos5_html(u5_h)} {_overperformance_badge(op_h)}</td>
-  <td class="ex-marcador">{marcador}</td>
+  <td class="ex-marcador {clase_marcador}">{marcador}</td>
   <td class="ex-visitante">{f'<a href="{url_espn}" target="_blank">{a["nombre"]}</a>' if url_espn else a['nombre']}{_badge_provisional(a.get('partidos_jugados'))}</td>
   <td class="ex-elo {_clase_rating(a.get('rating'))}">{a.get('rating', 0):.0f} <span class="pj-count">{a.get('partidos_jugados', 0)}PJ</span></td>
   <td class="ex-forma {_clase_forma(a.get('form_score'))}">{a.get('form_score', 50):.0f}</td>
@@ -528,6 +539,7 @@ body {{ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', san
 .badge-prov {{ font-size: 0.6em; padding: 1px 5px; background: rgba(234,179,8,0.15);
                color: var(--yellow); border-radius: 4px; font-weight: 700; letter-spacing: 0.04em; }}
 .pj-count {{ font-size: 0.65em; color: var(--text3); font-weight: 500; margin-left: 3px; }}
+.elo-pre {{ font-size: 0.7em; color: var(--text2); }}
 
 .tf {{ font-weight: 700; font-size: 0.85em; }}
 .high {{ color: var(--green); }}
@@ -601,6 +613,8 @@ tr:hover {{ background: var(--surface2); }}
 .ex-racha {{ font-size: 0.9em; }}
 .ex-goles {{ color: var(--text2); font-size: 0.9em; }}
 .ex-marcador {{ font-weight: 700; color: var(--accent); font-size: 1.1em; text-align: center; }}
+.marcador-vivo {{ color: var(--green); }}
+.marcador-finalizado {{ color: var(--accent); }}
 .ex-diff {{ font-weight: 700; }}
 .ex-pred {{ font-size: 0.9em; color: var(--text2); }}
 .ex-pred.best {{ color: var(--accent); font-weight: 600; }}
@@ -644,6 +658,7 @@ tr:hover {{ background: var(--surface2); }}
   <div class="stats">
     <div class="stat"><div class="stat-val">{len(predicciones)}</div><div class="stat-label">Partidos</div></div>
     <div class="stat"><div class="stat-val">{len(ligas)}</div><div class="stat-label">Ligas</div></div>
+    <div class="stat"><div class="stat-val" id="statAciertos">-</div><div class="stat-label">% Aciertos</div></div>
   </div>
 
   <div class="controls">
@@ -865,6 +880,20 @@ function aplicarFiltros() {{
     }}
     row.style.display = show ? '' : 'none';
   }});
+  actualizarPorcentajeAciertos();
+}}
+
+function actualizarPorcentajeAciertos() {{
+  const filasVisibles = Array.from(document.querySelectorAll('.excel-row'))
+    .filter(row => row.style.display !== 'none');
+  let ok = 0, total = 0;
+  filasVisibles.forEach(row => {{
+    if (row.querySelector('.acierto-ok')) {{ ok++; total++; }}
+    else if (row.querySelector('.acierto-fail')) {{ total++; }}
+  }});
+  const el = document.getElementById('statAciertos');
+  if (!el) return;
+  el.textContent = total > 0 ? `${{Math.round(100 * ok / total)}}%` : '-';
 }}
 
 function toggleDetalle(fixtureId) {{
@@ -895,6 +924,7 @@ function sortExcel(criterion) {{
 
 initLeagueButtons();
 initCountryButtons();
+aplicarFiltros();
 
 function cambiarFecha(valor) {{
   if (valor === 'hoy') {{
@@ -921,6 +951,16 @@ function claseForma(f) {{
   if (f >= 70) return 'high';
   if (f >= 40) return 'mid';
   return 'low';
+}}
+
+// Traduccion JS de _overperformance_badge (Python): positivo >10 verde,
+// negativo <-10 rojo, cerca de cero gris; sin badge en 0.
+function overperformanceBadgeJs(op) {{
+  if (op == null) return '';
+  const texto = (op > 0 ? '+' : '') + Math.round(op);
+  if (texto === '+0' || texto === '-0' || texto === '0') return '';
+  const color = op > 10 ? '#22c55e' : (op < -10 ? '#ef4444' : '#94a3b8');
+  return `<span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:${{color}}">${{texto}}</span>`;
 }}
 
 function streakHtml(s) {{
@@ -984,17 +1024,24 @@ function ultimos5Html(u5) {{
   }}).join('');
 }}
 
+function fechaEcuadorISO(offsetDias = 0) {{
+  const ahora = new Date();
+  // Hora de Ecuador via Intl, para no depender de la zona horaria del navegador.
+  const partes = new Intl.DateTimeFormat('en-CA', {{
+    timeZone: 'America/Guayaquil', year: 'numeric', month: '2-digit', day: '2-digit'
+  }}).formatToParts(ahora).reduce((acc, p) => {{ acc[p.type] = p.value; return acc; }}, {{}});
+  const base = new Date(`${{partes.year}}-${{partes.month}}-${{partes.day}}T00:00:00-05:00`);
+  base.setDate(base.getDate() + offsetDias);
+  return base.toISOString().slice(0, 10);
+}}
+
 async function cargarHistorial(cuando) {{
   const tbody = document.querySelector('.excel-table tbody');
   tbody.innerHTML = '<tr><td colspan="15" style="text-align:center; padding:20px;">Cargando...</td></tr>';
   
-  const fecha = new Date();
-  if (cuando === 'ayer') fecha.setDate(fecha.getDate() - 1);
-  if (cuando === 'manana') fecha.setDate(fecha.getDate() + 1);
-  const yyyy = fecha.getFullYear();
-  const mm = String(fecha.getMonth() + 1).padStart(2, '0');
-  const dd = String(fecha.getDate()).padStart(2, '0');
-  const fechaIso = yyyy + '-' + mm + '-' + dd;
+  const offset = cuando === 'ayer' ? -1 : (cuando === 'manana' ? 1 : 0);
+  const fechaIso = fechaEcuadorISO(offset);
+  const [yyyy, mm, dd] = fechaIso.split('-');
   
   try {{
     const [dataRatings, allMatches] = await Promise.all([
@@ -1006,6 +1053,19 @@ async function cargarHistorial(cuando) {{
     let partidos = [];
     
     if (cuando === 'manana') {{
+      let prediccionesDelDia = {{}};
+      try {{
+        const resPred = await fetch('data/predicciones_' + fechaIso + '.json');
+        if (resPred.ok) {{
+          const dataPred = await resPred.json();
+          (dataPred.predicciones || []).forEach(p => {{
+            if (p.fixture_id) prediccionesDelDia[p.fixture_id] = p;
+          }});
+        }}
+      }} catch (e) {{
+        console.warn('[Manana] No se pudo cargar predicciones del dia:', e);
+      }}
+
       const resESPN = await fetch('https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard?dates=' + yyyy + mm + dd);
       if (!resESPN.ok) throw new Error('Error ESPN: ' + resESPN.status);
       const dataESPN = await resESPN.json();
@@ -1015,15 +1075,38 @@ async function cargarHistorial(cuando) {{
           if (!comp) return;
           const equiposComp = comp.competitors || [];
           if (equiposComp.length < 2) return;
+
+          // Descartar eventos cuya fecha real en Ecuador no coincide con fechaIso.
+          const fechaEventoEc = new Intl.DateTimeFormat('en-CA', {{
+            timeZone: 'America/Guayaquil', year: 'numeric', month: '2-digit', day: '2-digit'
+          }}).format(new Date(event.date));
+          if (fechaEventoEc !== fechaIso) return;
+
           const local = equiposComp.find(e => e.homeAway === 'home') || equiposComp[0];
           const visitante = equiposComp.find(e => e.homeAway === 'away') || equiposComp[1];
+          const fixtureId = String(event.id);
+          const pred = prediccionesDelDia[fixtureId];
+
           partidos.push({{
             fecha: fechaIso,
+            fecha_hora_utc: event.date,
             equipo_local: {{ name: local.team?.displayName || 'N/A' }},
             equipo_visitante: {{ name: visitante.team?.displayName || 'N/A' }},
             goles_local: null,
             goles_visitante: null,
-            hora: new Date(event.date).toLocaleTimeString('es-EC', {{ hour: '2-digit', minute: '2-digit', timeZone: 'America/Guayaquil' }})
+            hora: new Date(event.date).toLocaleTimeString('es-EC', {{ hour: '2-digit', minute: '2-digit', timeZone: 'America/Guayaquil' }}),
+            prediccion_previa: pred ? {{
+              prob_local: pred.prediccion.prob_local,
+              prob_empate: pred.prediccion.prob_empate,
+              prob_visitante: pred.prediccion.prob_visitante,
+              diff_elo: pred.diff_elo,
+              pj_h: pred.equipo_local.partidos_jugados,
+              pj_a: pred.equipo_visitante.partidos_jugados,
+              rating_local: pred.equipo_local.rating,
+              rating_visitante: pred.equipo_visitante.rating,
+              overperformance_h: pred.equipo_local.overperformance,
+              overperformance_a: pred.equipo_visitante.overperformance,
+            }} : null,
           }});
         }});
       }}
@@ -1047,6 +1130,12 @@ async function cargarHistorial(cuando) {{
       return null;
     }}
     
+    partidos.sort((a, b) => {{
+      const ta = a.fecha_hora_utc || a.fecha_hora_espn || '';
+      const tb = b.fecha_hora_utc || b.fecha_hora_espn || '';
+      return ta.localeCompare(tb);
+    }});
+
     let html = '';
     partidos.forEach(p => {{
       const nombreLocal = p.equipo_local?.name || 'N/A';
@@ -1072,6 +1161,10 @@ async function cargarHistorial(cuando) {{
       
       let acierto = '';
       const pred = p.prediccion_previa;
+      const eloLocalPre = pred?.rating_local != null ? pred.rating_local.toFixed(0) : null;
+      const eloVisitantePre = pred?.rating_visitante != null ? pred.rating_visitante.toFixed(0) : null;
+      const opHPre = pred?.overperformance_h;
+      const opAPre = pred?.overperformance_a;
       let diffMostrado = diff;
       let codigoPred = '-';
       let tooltipPred = '';
@@ -1117,14 +1210,14 @@ async function cargarHistorial(cuando) {{
         <td class="ex-fecha">${{fechaIso}}</td>
         <td class="ex-hora">${{hora}}</td>
         <td class="ex-local">${{nombreLocal}}${{provH}}</td>
-        <td class="ex-elo ${{claseRating(eqLocal?.rating)}}">${{eloLocal}} <span class="pj-count">${{pjLocal}}PJ</span></td>
+        <td class="ex-elo ${{claseRating(eqLocal?.rating)}}">${{eloLocal}} <span class="pj-count">${{pjLocal}}PJ</span>${{eloLocalPre ? `<br><span class="elo-pre">antes: ${{eloLocalPre}}</span>` : ''}}</td>
         <td class="ex-forma ${{claseForma(formaLocal)}}">${{formaLocal}}</td>
-        <td class="ex-racha">${{streakHtml(statsLocal.streak)}}</td>
-        <td class="ex-marcador">${{marcador}}</td>
+        <td class="ex-racha">${{streakHtml(statsLocal.streak)}}${{opHPre != null ? overperformanceBadgeJs(opHPre) : ''}}</td>
+        <td class="ex-marcador marcador-finalizado">${{marcador}}</td>
         <td class="ex-visitante">${{nombreVisitante}}${{provV}}</td>
-        <td class="ex-elo ${{claseRating(eqVisitante?.rating)}}">${{eloVisitante}} <span class="pj-count">${{pjVisitante}}PJ</span></td>
+        <td class="ex-elo ${{claseRating(eqVisitante?.rating)}}">${{eloVisitante}} <span class="pj-count">${{pjVisitante}}PJ</span>${{eloVisitantePre ? `<br><span class="elo-pre">antes: ${{eloVisitantePre}}</span>` : ''}}</td>
         <td class="ex-forma ${{claseForma(formaVisitante)}}">${{formaVisitante}}</td>
-        <td class="ex-racha">${{streakHtml(statsVisitante.streak)}}</td>
+        <td class="ex-racha">${{streakHtml(statsVisitante.streak)}}${{opAPre != null ? overperformanceBadgeJs(opAPre) : ''}}</td>
         <td class="ex-diff">${{diffMostrado}}</td>
         <td class="ex-pred" title="${{tooltipPred}}">${{codigoPred}}</td>
         <td class="ex-acierto">${{acierto}}</td>
@@ -1137,6 +1230,7 @@ async function cargarHistorial(cuando) {{
     }}
     
     tbody.innerHTML = html;
+    aplicarFiltros();
   }} catch (error) {{
     console.error('[Ayer/Manana] Error:', error);
     tbody.innerHTML = `<tr><td colspan="15" style="text-align:center; padding:20px; color:#ef4444;">Error: ${{error.message}}</td></tr>`;
@@ -1218,7 +1312,7 @@ async function cargarEnVivo() {{
               <td class="ex-elo ${{claseRating(eqLocal?.rating)}}">${{eloLocal}}</td>
               <td class="ex-forma ${{claseForma(formaLocal)}}">${{formaLocal}}</td>
               <td class="ex-racha">${{streakHtml(statsLocal.streak)}}</td>
-              <td class="ex-marcador">${{marcador}}</td>
+              <td class="ex-marcador marcador-vivo">${{marcador}}</td>
               <td class="ex-visitante">${{nombreVisitante}}${{provV}}</td>
               <td class="ex-elo ${{claseRating(eqVisitante?.rating)}}">${{eloVisitante}}</td>
               <td class="ex-forma ${{claseForma(formaVisitante)}}">${{formaVisitante}}</td>
@@ -1238,6 +1332,7 @@ async function cargarEnVivo() {{
     }}
     
     tbody.innerHTML = html;
+    aplicarFiltros();
   }} catch (error) {{
     console.error('[EnVivo] Error:', error);
     tbody.innerHTML = `<tr><td colspan="15" style="text-align:center; padding:20px; color:#ef4444;">Error: ${{error.message}}</td></tr>`;

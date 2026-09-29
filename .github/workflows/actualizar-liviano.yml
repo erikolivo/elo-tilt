@@ -1,24 +1,34 @@
-name: Actualizar liviano (resultados)
+name: Actualizar cada 30 min (pipeline completo)
 
-# Corridas frecuentes durante horas de partidos: solo recopilan
-# resultados terminados + decaimiento RD y regeneran el dashboard,
-# sin volver a predecir. El workflow principal (actualizar.yml)
-# sigue encargado de las 2 corridas completas diarias.
+# El dashboard se regenera cada 30 minutos con pipeline completo:
+# recopilar resultados -> predecir hoy -> generar dashboard (que
+# consulta ESPN en vivo para el marcador de la pestana Hoy, con
+# color verde/azul segun estado).
+#
+# Antes del pipeline del dia tambien se corre la prediccion de
+# MANANA (predict.py --fecha manana) para que exista
+# data/predicciones_{manana}.json y la pestana Manana pueda
+# mostrar prediccion + overperformance. Se corre primero para que
+# el cache fijo (predicciones_cache.json) quede con los partidos
+# de HOY al final de la corrida.
+#
+# El workflow principal (actualizar.yml) sigue encargado de sus
+# 2 corridas completas diarias.
 
 on:
   schedule:
-    # Corridas livianas cada hora, 07:00-23:00 Ecuador (horario tipico
-    # de partidos). El cron usa horas UTC — por eso el rango queda
-    # partido en dos lineas (cruza la medianoche UTC). Ambas lineas
-    # juntas cubren 07:00-23:00 Ecuador continuo:
-    #   0 12-23 * * *  -> 07:00-18:00 Ecuador
-    #   0 0-4 * * *    -> 19:00-23:00 Ecuador
-    - cron: '0 12-23 * * *'
-    - cron: '0 0-4 * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
+# Serializa las corridas: si una tarda mas de 30 min (predict consulta
+# ~660 endpoints de ESPN), la siguiente espera en cola en vez de
+# correr en paralelo (evita carreras de git push y picos de trafico).
+concurrency:
+  group: actualizar-30min
+  cancel-in-progress: false
+
 jobs:
-  recopilar:
+  actualizar:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -36,8 +46,10 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run pipeline (liviano)
-        run: python actualizar.py --solo-recopilar
+      - name: Run pipeline (cada 30 min)
+        run: |
+          python predict.py --fecha $(TZ=America/Guayaquil date -d tomorrow +%F)
+          python actualizar.py
 
       - name: Commit changes
         run: |
@@ -49,6 +61,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No hay cambios para commitear"
           else
-            git commit -m "Auto-update liviano: $(date -u +%Y-%m-%d %H:%M)"
+            git commit -m "Auto-update 30min: $(date -u +%Y-%m-%d %H:%M)"
             git push
           fi
