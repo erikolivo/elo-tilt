@@ -346,6 +346,7 @@ def predecir_partido(fx, tilt_home, tilt_away):
             "pais": pais_liga,
             "rating": rating_h, "rd": rd_h,
             "partidos_jugados": tilt_home["partidos_jugados"],
+            "pj_reales": tilt_home.get("pj_reales", tilt_home["partidos_jugados"]),
             "form_score": tilt_home["form_score"],
             "form_local": tilt_home["home_away"]["form_local"],
             "form_visitante": tilt_home["home_away"]["form_visitante"],
@@ -364,6 +365,7 @@ def predecir_partido(fx, tilt_home, tilt_away):
             "pais": pais_liga,
             "rating": rating_a, "rd": rd_a,
             "partidos_jugados": tilt_away["partidos_jugados"],
+            "pj_reales": tilt_away.get("pj_reales", tilt_away["partidos_jugados"]),
             "form_score": tilt_away["form_score"],
             "form_local": tilt_away["home_away"]["form_local"],
             "form_visitante": tilt_away["home_away"]["form_visitante"],
@@ -438,6 +440,8 @@ def predecir_fecha(fecha_iso, ligas=None):
         rd_a = away_eq.get("rd", glicko2.RD_INICIAL)
         pj_h = home_eq.get("partidos_jugados", 0)
         pj_a = away_eq.get("partidos_jugados", 0)
+        pj_h_real = home_eq.get("pj_reales", pj_h)
+        pj_a_real = away_eq.get("pj_reales", pj_a)
 
         hist_h = _obtener_historial(home_id)
         hist_a = _obtener_historial(away_id)
@@ -458,13 +462,13 @@ def predecir_fecha(fecha_iso, ligas=None):
         op_a = _calcular_overperformance(hist_a, away_id, rating_a, rd_a, ratings_data)
 
         tilt_home = {
-            "rating": rating_h, "rd": rd_h, "partidos_jugados": pj_h,
+            "rating": rating_h, "rd": rd_h, "partidos_jugados": pj_h, "pj_reales": pj_h_real,
             "form_score": form_h, "streak": streak_h, "ultimos5": ultimos5_h,
             "momentum": mom_h, "goal_trend": gt_h, "home_away": ha_h,
             "overperformance": op_h, "field_tilt": {"overall": 50.0},
         }
         tilt_away = {
-            "rating": rating_a, "rd": rd_a, "partidos_jugados": pj_a,
+            "rating": rating_a, "rd": rd_a, "partidos_jugados": pj_a, "pj_reales": pj_a_real,
             "form_score": form_a, "streak": streak_a, "ultimos5": ultimos5_a,
             "momentum": mom_a, "goal_trend": gt_a, "home_away": ha_a,
             "overperformance": op_a, "field_tilt": {"overall": 50.0},

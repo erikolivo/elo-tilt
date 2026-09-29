@@ -386,16 +386,16 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
         else:
             minuto_col = ""
 
-        excel_rows += f'''<tr class="excel-row" data-slug="{slug}" data-fecha="{fecha_d}" data-elo-h="{h.get('rating', 0):.0f}" data-form-h="{h.get('form_score', 50):.0f}" data-home="{h['nombre'].lower()}" data-away="{a['nombre'].lower()}" data-diff="{diff:.0f}" data-pj-h="{h.get('partidos_jugados', 0)}" data-pj-a="{a.get('partidos_jugados', 0)}">
+        excel_rows += f'''<tr class="excel-row" data-slug="{slug}" data-fecha="{fecha_d}" data-elo-h="{h.get('rating', 0):.0f}" data-form-h="{h.get('form_score', 50):.0f}" data-home="{h['nombre'].lower()}" data-away="{a['nombre'].lower()}" data-diff="{diff:.0f}" data-pj-h="{h.get('pj_reales', h.get('partidos_jugados', 0))}" data-pj-a="{a.get('pj_reales', a.get('partidos_jugados', 0))}">
   <td class="ex-fecha">{fecha_d}</td>
   <td class="ex-hora">{hora}</td>
-  <td class="ex-local">{f'<a href="{url_espn}" target="_blank">{h["nombre"]}</a>' if url_espn else h['nombre']}{_badge_provisional(h.get('partidos_jugados'))}</td>
+  <td class="ex-local">{f'<a href="{url_espn}" target="_blank">{h["nombre"]}</a>' if url_espn else h['nombre']}{_badge_provisional(h.get('pj_reales', h.get('partidos_jugados')))}</td>
   <td class="ex-elo {_clase_rating(h.get('rating'))}">{h.get('rating', 0):.0f} <span class="pj-count">{h.get('partidos_jugados', 0)}PJ</span></td>
   <td class="ex-forma {_clase_forma(h.get('form_score'))}">{h.get('form_score', 50):.0f}</td>
   <td class="ex-racha">{_ultimos5_html(u5_h)} {_overperformance_badge(op_h)}</td>
   <td class="ex-marcador {clase_marcador}">{marcador}</td>
   <td class="ex-minuto {clase_marcador}">{minuto_col}</td>
-  <td class="ex-visitante">{f'<a href="{url_espn}" target="_blank">{a["nombre"]}</a>' if url_espn else a['nombre']}{_badge_provisional(a.get('partidos_jugados'))}</td>
+  <td class="ex-visitante">{f'<a href="{url_espn}" target="_blank">{a["nombre"]}</a>' if url_espn else a['nombre']}{_badge_provisional(a.get('pj_reales', a.get('partidos_jugados')))}</td>
   <td class="ex-elo {_clase_rating(a.get('rating'))}">{a.get('rating', 0):.0f} <span class="pj-count">{a.get('partidos_jugados', 0)}PJ</span></td>
   <td class="ex-forma {_clase_forma(a.get('form_score'))}">{a.get('form_score', 50):.0f}</td>
   <td class="ex-racha">{_ultimos5_html(u5_a)} {_overperformance_badge(op_a)}</td>
@@ -685,6 +685,7 @@ tr:hover {{ background: var(--surface2); }}
       <button class="sort-btn" onclick="sortExcel('diff-desc')" title="Mayor diff ELO">Diff ↓</button>
       <button class="sort-btn" onclick="sortExcel('diff-asc')" title="Menor diff ELO">Diff ↑</button>
       <label class="toggle-label"><input type="checkbox" id="confiableToggle" onchange="aplicarFiltros()"> Solo confiables (10+PJ)</label>
+<label class="toggle-label"><input type="checkbox" id="mostrarTodosToggle" onchange="aplicarFiltros()"> Mostrar todos</label>
     </div>
   </div>
 
@@ -877,16 +878,18 @@ function renumberVisible(sectionId) {{
 function aplicarFiltros() {{
   const q = document.getElementById('searchBox').value.toLowerCase().trim();
   const soloConfiables = document.getElementById('confiableToggle')?.checked || false;
+  const mostrarTodos = document.getElementById('mostrarTodosToggle')?.checked || false;
   document.querySelectorAll('.excel-row').forEach(row => {{
     const local = row.dataset.home || '';
     const away = row.dataset.away || '';
+    const pjH = parseInt(row.dataset.pjH || '0');
+    const pjA = parseInt(row.dataset.pjA || '0');
     let show = true;
     if (q && !local.includes(q) && !away.includes(q)) show = false;
-    if (soloConfiables) {{
-      const pjH = parseInt(row.dataset.pjH || '0');
-      const pjA = parseInt(row.dataset.pjA || '0');
-      if (pjH < 10 || pjA < 10) show = false;
-    }}
+    // Por defecto (mostrarTodos sin marcar) se ocultan equipos con menos
+    // de 5 partidos reales (sin contar bootstrap) -- ver README pj_reales.
+    if (!mostrarTodos && (pjH < 5 || pjA < 5)) show = false;
+    if (soloConfiables && (pjH < 10 || pjA < 10)) show = false;
     row.style.display = show ? '' : 'none';
   }});
   actualizarPorcentajeAciertos();
@@ -1207,8 +1210,10 @@ async function cargarHistorial(cuando) {{
       
       const pjLocal = eqLocal ? (eqLocal.partidos_jugados || 0) : 0;
       const pjVisitante = eqVisitante ? (eqVisitante.partidos_jugados || 0) : 0;
-      const provH = pjLocal > 0 && pjLocal < 10 ? '<span class="badge-prov">PROV</span>' : '';
-      const provV = pjVisitante > 0 && pjVisitante < 10 ? '<span class="badge-prov">PROV</span>' : '';
+      const pjLocalReal = eqLocal ? (eqLocal.pj_reales ?? eqLocal.partidos_jugados ?? 0) : 0;
+      const pjVisitanteReal = eqVisitante ? (eqVisitante.pj_reales ?? eqVisitante.partidos_jugados ?? 0) : 0;
+      const provH = eqLocal && pjLocalReal < 10 ? '<span class="badge-prov">PROV</span>' : '';
+      const provV = eqVisitante && pjVisitanteReal < 10 ? '<span class="badge-prov">PROV</span>' : '';
       
       // Ayer siempre trae marcador (partidos terminados) -> FIN; Manana
       // nunca (aun no se juegan) -> vacio.
@@ -1219,7 +1224,7 @@ async function cargarHistorial(cuando) {{
       const diffAttr = (eqLocal && eqVisitante) ? (eqLocal.rating - eqVisitante.rating).toFixed(0) : 0;
       const ligaSlug = p.liga_slug || '';
       
-      html += `<tr class="excel-row" data-home="${{nombreLocal.toLowerCase()}}" data-away="${{nombreVisitante.toLowerCase()}}" data-pj-h="${{pjLocal}}" data-pj-a="${{pjVisitante}}" data-elo-h="${{eloHAttr}}" data-form-h="${{formHAttr}}" data-diff="${{diffAttr}}" data-slug="${{ligaSlug}}" data-fecha="${{fechaIso}}">
+      html += `<tr class="excel-row" data-home="${{nombreLocal.toLowerCase()}}" data-away="${{nombreVisitante.toLowerCase()}}" data-pj-h="${{pjLocalReal}}" data-pj-a="${{pjVisitanteReal}}" data-elo-h="${{eloHAttr}}" data-form-h="${{formHAttr}}" data-diff="${{diffAttr}}" data-slug="${{ligaSlug}}" data-fecha="${{fechaIso}}">
         <td class="ex-fecha">${{fechaIso}}</td>
         <td class="ex-hora">${{hora}}</td>
         <td class="ex-local">${{nombreLocal}}${{provH}}</td>
@@ -1337,14 +1342,16 @@ async function cargarEnVivo() {{
             
             const pjLocal = eqLocal ? (eqLocal.partidos_jugados || 0) : 0;
             const pjVisitante = eqVisitante ? (eqVisitante.partidos_jugados || 0) : 0;
-            const provH = pjLocal > 0 && pjLocal < 10 ? '<span class="badge-prov">PROV</span>' : '';
-            const provV = pjVisitante > 0 && pjVisitante < 10 ? '<span class="badge-prov">PROV</span>' : '';
+            const pjLocalReal = eqLocal ? (eqLocal.pj_reales ?? eqLocal.partidos_jugados ?? 0) : 0;
+            const pjVisitanteReal = eqVisitante ? (eqVisitante.pj_reales ?? eqVisitante.partidos_jugados ?? 0) : 0;
+            const provH = eqLocal && pjLocalReal < 10 ? '<span class="badge-prov">PROV</span>' : '';
+            const provV = eqVisitante && pjVisitanteReal < 10 ? '<span class="badge-prov">PROV</span>' : '';
             
             const eloHAttr = eqLocal ? eqLocal.rating.toFixed(0) : 0;
             const formHAttr = statsLocal.form_score != null ? statsLocal.form_score : 0;
             const diffAttr = (eqLocal && eqVisitante) ? (eqLocal.rating - eqVisitante.rating).toFixed(0) : 0;
             
-            html += `<tr class="excel-row live-row" data-home="${{nombreLocal.toLowerCase()}}" data-away="${{nombreVisitante.toLowerCase()}}" data-pj-h="${{pjLocal}}" data-pj-a="${{pjVisitante}}" data-elo-h="${{eloHAttr}}" data-form-h="${{formHAttr}}" data-diff="${{diffAttr}}">
+            html += `<tr class="excel-row live-row" data-home="${{nombreLocal.toLowerCase()}}" data-away="${{nombreVisitante.toLowerCase()}}" data-pj-h="${{pjLocalReal}}" data-pj-a="${{pjVisitanteReal}}" data-elo-h="${{eloHAttr}}" data-form-h="${{formHAttr}}" data-diff="${{diffAttr}}">
               <td class="ex-fecha">${{fechaLocal}}</td>
               <td class="ex-hora live-indicator">${{hora}}</td>
               <td class="ex-local">${{nombreLocal}}${{provH}}</td>

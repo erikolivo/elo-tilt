@@ -201,7 +201,7 @@ def obtener_o_crear(llave, nombre=None, pais=None, liga=None):
         equipo = {
             "nombre": nombre, "pais": pais, "liga": liga,
             "rating": glicko2.RATING_BASE, "rd": glicko2.RD_INICIAL, "vol": glicko2.VOL_INICIAL,
-            "partidos_jugados": 0, "ultima_actualizacion": None,
+            "partidos_jugados": 0, "pj_reales": 0, "ultima_actualizacion": None,
         }
         datos["equipos"][llave] = equipo
         _guardar(datos)
@@ -261,6 +261,7 @@ def actualizar_tras_partido(llave, rating_rival, rd_rival, resultado, fecha=None
     )
     eq["rating"], eq["rd"], eq["vol"] = nuevo_rating, nuevo_rd, nuevo_vol
     eq["partidos_jugados"] = eq.get("partidos_jugados", 0) + 1
+    eq["pj_reales"] = eq.get("pj_reales", 0) + 1
     eq["ultima_actualizacion"] = (fecha or datetime.date.today().isoformat())
 
     datos["equipos"][llave] = eq
