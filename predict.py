@@ -388,6 +388,30 @@ def predecir_partido(fx, tilt_home, tilt_away):
     }
 
 
+def _fusionar_con_anteriores(predicciones_nuevas, fecha_iso):
+    """Combina las predicciones recien calculadas (solo fixtures 'pre'
+    en este momento) con las que ya estaban guardadas para ese mismo
+    dia. Un partido que ya empezo o termino deja de venir de
+    obtener_fixtures_futuros (que solo trae 'pre'), pero su prediccion
+    ORIGINAL (calculada cuando todavia era 'pre') se preserva -- no
+    tiene sentido recalcularla con datos de forma/momentum que ya
+    cambiaron a mitad de un partido en curso."""
+    archivo_fecha = DATA_DIR / f"predicciones_{fecha_iso}.json"
+    anteriores = []
+    if archivo_fecha.exists():
+        try:
+            anteriores = json.loads(archivo_fecha.read_text(encoding="utf-8")).get("predicciones", [])
+        except Exception:
+            anteriores = []
+
+    fids_nuevos = {p.get("fixture_id") for p in predicciones_nuevas if p.get("fixture_id")}
+    preservados = [p for p in anteriores if p.get("fixture_id") not in fids_nuevos]
+
+    fusionadas = predicciones_nuevas + preservados
+    fusionadas.sort(key=lambda x: x.get("fecha", ""))
+    return fusionadas
+
+
 def predecir_fecha(fecha_iso, ligas=None):
     fixtures = fetch_data.obtener_fixtures_futuros(fecha_iso, ligas=ligas)
     if not fixtures:
@@ -482,14 +506,25 @@ def predecir_fecha(fecha_iso, ligas=None):
 
     predicciones.sort(key=lambda x: x.get("fecha", ""))
 
+    # NUEVO: fusionar con lo que ya estaba guardado para este mismo dia,
+    # para no perder partidos que ya empezaron/terminaron y por eso
+    # dejaron de venir en 'predicciones' (ver _fusionar_con_anteriores).
+    predicciones_finales = _fusionar_con_anteriores(predicciones, fecha_iso)
+
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     cache = {
         "generado": datetime.datetime.utcnow().isoformat() + "Z",
         "fecha_consulta": fecha_iso,
-        "total": len(predicciones),
-        "predicciones": predicciones,
+        "total": len(predicciones_finales),
+        "predicciones": predicciones_finales,
     }
-    ARCHIVO_PREDICCIONES.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    # El cache FIJO (predicciones_cache.json, el que lee la pestana Hoy
+    # por defecto) solo se sobrescribe si fecha_iso es HOY en Ecuador.
+    # Si predict.py corre para otra fecha (ej. manana), no debe tocar el
+    # archivo que usa Hoy.
+    if fecha_iso == _hoy_ecuador():
+        ARCHIVO_PREDICCIONES.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
 
     # Ademas del cache fijo, guardar una copia por fecha para que la
     # pestana Manana (y generar_dashboard.py --fecha) puedan leer
@@ -504,7 +539,7 @@ def predecir_fecha(fecha_iso, ligas=None):
             hist = json.loads(ARCHIVO_PREDICCIONES_HIST.read_text(encoding="utf-8"))
         except Exception:
             hist = {}
-    for pred in predicciones:
+    for pred in predicciones_finales:
         fid = pred.get("fixture_id", "")
         if fid:
             hist[fid] = {
@@ -522,14 +557,15 @@ def predecir_fecha(fecha_iso, ligas=None):
             }
     ARCHIVO_PREDICCIONES_HIST.write_text(json.dumps(hist, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    print(f"\n{len(predicciones)} prediccione(s) generada(s) para {fecha_iso}.")
-    for pred in predicciones[:5]:
+    print(f"\n{len(predicciones_finales)} prediccion(es) totales para {fecha_iso} "
+          f"({len(predicciones)} nueva(s)/actualizada(s), {len(predicciones_finales) - len(predicciones)} preservada(s)).")
+    for pred in predicciones_finales[:5]:
         h = pred["equipo_local"]
         a = pred["equipo_visitante"]
         p = pred["prediccion"]
         print(f"  {h['nombre']} ({h['rating']:.0f}, F:{h['form_score']:.0f}) vs {a['nombre']} ({a['rating']:.0f}, F:{a['form_score']:.0f}): {p['prob_local']:.0f}% - {p['prob_empate']:.0f}% - {p['prob_visitante']:.0f}%")
 
-    return predicciones
+    return predicciones_finales
 
 
 if __name__ == "__main__":

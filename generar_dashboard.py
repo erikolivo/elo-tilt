@@ -361,6 +361,7 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
         pj_suficiente = pj_h_pred >= 5 and pj_a_pred >= 5
 
         clase_marcador = ""
+        acierto_parcial = False
         if resultado and resultado.get("estado") == "post" and pj_suficiente:
             marcador = f"{resultado['goles_local']} - {resultado['goles_visitante']}"
             gl = resultado['goles_local']
@@ -371,6 +372,13 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
             marcador = f"{resultado['goles_local']} - {resultado['goles_visitante']}"
             acierto = ""
             clase_marcador = "marcador-finalizado"
+        elif resultado and resultado.get("estado") == "in" and pj_suficiente:
+            marcador = f"{resultado['goles_local']} - {resultado['goles_visitante']}"
+            gl = resultado['goles_local']
+            ga = resultado['goles_visitante']
+            acierto = "✓" if _acierto_con_codigo(codigo_pred, gl, ga) else "✗"
+            acierto_parcial = True
+            clase_marcador = "marcador-vivo"
         elif resultado and resultado.get("estado") == "in":
             marcador = f"{resultado['goles_local']} - {resultado['goles_visitante']}"
             acierto = ""
@@ -379,6 +387,13 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
             marcador = "?"
             acierto = ""
 
+        if acierto == '✓':
+            clase_acierto = 'acierto-parcial-ok' if acierto_parcial else 'acierto-ok'
+        elif acierto == '✗':
+            clase_acierto = 'acierto-parcial-fail' if acierto_parcial else 'acierto-fail'
+        else:
+            clase_acierto = ''
+
         if resultado and resultado.get("estado") == "post":
             minuto_col = "FIN"
         elif resultado and resultado.get("estado") == "in":
@@ -386,7 +401,7 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
         else:
             minuto_col = ""
 
-        excel_rows += f'''<tr class="excel-row" data-slug="{slug}" data-fecha="{fecha_d}" data-elo-h="{h.get('rating', 0):.0f}" data-form-h="{h.get('form_score', 50):.0f}" data-home="{h['nombre'].lower()}" data-away="{a['nombre'].lower()}" data-diff="{diff:.0f}" data-pj-h="{h.get('pj_reales', h.get('partidos_jugados', 0))}" data-pj-a="{a.get('pj_reales', a.get('partidos_jugados', 0))}">
+        excel_rows += f'''<tr class="excel-row" data-fixture-id="{fixture_id}" data-slug="{slug}" data-fecha="{fecha_d}" data-elo-h="{h.get('rating', 0):.0f}" data-form-h="{h.get('form_score', 50):.0f}" data-home="{h['nombre'].lower()}" data-away="{a['nombre'].lower()}" data-diff="{diff:.0f}" data-pj-h="{h.get('pj_reales', h.get('partidos_jugados', 0))}" data-pj-a="{a.get('pj_reales', a.get('partidos_jugados', 0))}" data-pj-h-total="{pj_h_pred}" data-pj-a-total="{pj_a_pred}">
   <td class="ex-fecha">{fecha_d}</td>
   <td class="ex-hora">{hora}</td>
   <td class="ex-local">{f'<a href="{url_espn}" target="_blank">{h["nombre"]}</a>' if url_espn else h['nombre']}{_badge_provisional(h.get('pj_reales', h.get('partidos_jugados')))}</td>
@@ -401,7 +416,7 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
   <td class="ex-racha">{_ultimos5_html(u5_a)} {_overperformance_badge(op_a)}</td>
   <td class="ex-diff" style="color:{'#22c55e' if diff > 0 else '#ef4444' if diff < 0 else '#94a3b8'}">{diff_signo}{diff:.0f}</td>
   <td class="ex-pred best" title="{_tooltip_prediccion(diff, prob_l, prob_e, prob_v)}">{codigo_pred}</td>
-  <td class="ex-acierto {'acierto-ok' if acierto == '✓' else 'acierto-fail' if acierto == '✗' else ''}">{acierto}</td>
+  <td class="ex-acierto {clase_acierto}" title="{'Provisional -- puede cambiar mientras el partido siga en curso' if acierto_parcial else ''}">{acierto}</td>
   <td><button class="expand-btn" onclick="toggleDetalle('{fixture_id}')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-{fixture_id}" style="display:none">
@@ -636,6 +651,8 @@ tr:hover {{ background: var(--surface2); }}
 .ex-acierto {{ text-align: center; font-weight: 700; font-size: 1.1em; }}
 .acierto-ok {{ color: var(--green); }}
 .acierto-fail {{ color: var(--red); }}
+.acierto-parcial-ok {{ color: var(--green); opacity: 0.55; border-bottom: 1px dashed var(--green); }}
+.acierto-parcial-fail {{ color: var(--red); opacity: 0.55; border-bottom: 1px dashed var(--red); }}
 
 .expand-btn {{ background: none; border: none; cursor: pointer; font-size: 14px; color: var(--accent, #888); transition: transform 0.2s ease; padding: 2px 6px; }}
 .expand-btn.open {{ transform: rotate(180deg); }}
@@ -937,15 +954,19 @@ function sortExcel(criterion) {{
 initLeagueButtons();
 initCountryButtons();
 aplicarFiltros();
+iniciarRefrescoMarcadoresHoy();  // Hoy es la vista con la que carga la pagina
 
 function cambiarFecha(valor) {{
   if (valor === 'hoy') {{
     window.location.href = window.location.href.split('?')[0];
   }} else if (valor === 'ayer') {{
+    detenerRefrescoMarcadoresHoy();
     cargarHistorial('ayer');
   }} else if (valor === 'manana') {{
+    detenerRefrescoMarcadoresHoy();
     cargarHistorial('manana');
   }} else if (valor === 'en-vivo') {{
+    detenerRefrescoMarcadoresHoy();
     cargarEnVivo();
   }}
 }}
@@ -1256,6 +1277,96 @@ async function cargarHistorial(cuando) {{
   }}
 }}
 
+let intervaloMarcadoresHoy = null;
+
+async function refrescarMarcadoresHoy() {{
+  try {{
+    const fechaHoyIso = fechaEcuadorISO(0);
+    const yyyymmdd = fechaHoyIso.replace(/-/g, '');
+    const resESPN = await fetch('https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard?dates=' + yyyymmdd);
+    if (!resESPN.ok) return;
+    const dataESPN = await resESPN.json();
+
+    const porFixture = {{}};
+    (dataESPN.events || []).forEach(event => {{
+      const comp = event.competitions?.[0];
+      if (!comp) return;
+      const status = comp.status?.type || {{}};
+      const equipos = comp.competitors || [];
+      const local = equipos.find(e => e.homeAway === 'home');
+      const visitante = equipos.find(e => e.homeAway === 'away');
+      porFixture[String(event.id)] = {{
+        estado: status.state,  // 'pre' | 'in' | 'post'
+        minuto: status.shortDetail || '',
+        gl: local ? parseInt(local.score || 0) : null,
+        ga: visitante ? parseInt(visitante.score || 0) : null,
+      }};
+    }});
+
+    document.querySelectorAll('.excel-row[data-fixture-id]').forEach(row => {{
+      const fid = row.dataset.fixtureId;
+      if (!fid) return;
+      const info = porFixture[fid];
+      if (!info || info.estado === 'pre' || info.gl == null || info.ga == null) return;
+
+      const claseMarcador = info.estado === 'post' ? 'marcador-finalizado' : 'marcador-vivo';
+      const marcadorTxt = `${{info.gl}} - ${{info.ga}}`;
+
+      const celdaMarcador = row.querySelector('.ex-marcador');
+      if (celdaMarcador) {{
+        celdaMarcador.textContent = marcadorTxt;
+        celdaMarcador.className = 'ex-marcador ' + claseMarcador;
+      }}
+
+      const celdaMinuto = row.querySelector('.ex-minuto');
+      if (celdaMinuto) {{
+        celdaMinuto.textContent = info.estado === 'post' ? 'FIN' : (info.minuto || 'EN VIVO');
+        celdaMinuto.className = 'ex-minuto ' + claseMarcador;
+      }}
+
+      const celdaAcierto = row.querySelector('.ex-acierto');
+      const celdaPred = row.querySelector('.ex-pred');
+      if (celdaAcierto && celdaPred) {{
+        const codigo = celdaPred.textContent.trim();
+        const pjHTotal = parseInt(row.dataset.pjHTotal || '0');
+        const pjATotal = parseInt(row.dataset.pjATotal || '0');
+        if (codigo && codigo !== '-' && pjHTotal >= 5 && pjATotal >= 5) {{
+          const esAcierto = aciertoConCodigo(codigo, info.gl, info.ga);
+          const esParcial = info.estado === 'in';
+          const claseAcierto = esAcierto
+            ? (esParcial ? 'acierto-parcial-ok' : 'acierto-ok')
+            : (esParcial ? 'acierto-parcial-fail' : 'acierto-fail');
+          const simbolo = esAcierto ? '&#10003;' : '&#10007;';
+          // Limpia la clase que pudo poner Python en el <td> para que
+          // el span recien escrito quede como unica fuente de verdad
+          // (evita doble conteo en el % y heredar el opacity 0.55
+          // cuando un parcial se vuelve definitivo sin recargar).
+          celdaAcierto.className = 'ex-acierto';
+          celdaAcierto.innerHTML = `<span class="${{claseAcierto}}">${{simbolo}}</span>`;
+          celdaAcierto.title = esParcial ? 'Provisional -- puede cambiar mientras el partido siga en curso' : '';
+        }}
+      }}
+    }});
+
+    actualizarPorcentajeAciertos();
+  }} catch (e) {{
+    console.warn('[Hoy] No se pudo refrescar marcadores en vivo:', e);
+  }}
+}}
+
+function iniciarRefrescoMarcadoresHoy() {{
+  refrescarMarcadoresHoy();
+  if (intervaloMarcadoresHoy) clearInterval(intervaloMarcadoresHoy);
+  intervaloMarcadoresHoy = setInterval(refrescarMarcadoresHoy, 60000);
+}}
+
+function detenerRefrescoMarcadoresHoy() {{
+  if (intervaloMarcadoresHoy) {{
+    clearInterval(intervaloMarcadoresHoy);
+    intervaloMarcadoresHoy = null;
+  }}
+}}
+
 async function cargarEnVivo() {{
   const tbody = document.querySelector('.excel-table tbody');
   tbody.innerHTML = '<tr><td colspan="16" style="text-align:center; padding:20px;">Cargando partidos en vivo...</td></tr>';
@@ -1327,6 +1438,20 @@ async function cargarEnVivo() {{
               const sg = (n) => (n > 0 ? '+' : '') + n.toFixed(0);
               tooltipPredVivo = `Código por Elo: dif ${{sg(predVivo.diff_elo)}} + ${{VENTAJA_LOCAL_ELO}} local = ${{sg(dAj)}} | Prob. modelo: ${{probTxt}}`;
             }}
+            let aciertoVivo = '';
+            if (predVivo) {{
+              const pjHVivo = predVivo.equipo_local?.partidos_jugados;
+              const pjAVivo = predVivo.equipo_visitante?.partidos_jugados;
+              const pjSuficienteVivo = (pjHVivo != null && pjAVivo != null) && pjHVivo >= 5 && pjAVivo >= 5;
+              const glVivo = parseInt(local.score || 0);
+              const gaVivo = parseInt(visitante.score || 0);
+              if (pjSuficienteVivo) {{
+                const esAciertoVivo = aciertoConCodigo(codigoPredVivo, glVivo, gaVivo);
+                aciertoVivo = esAciertoVivo
+                  ? '<span class="acierto-parcial-ok">&#10003;</span>'
+                  : '<span class="acierto-parcial-fail">&#10007;</span>';
+              }}
+            }}
             
             const eqLocal = buscarElo(nombreLocal, idLocal);
             const eqVisitante = buscarElo(nombreVisitante, idVisitante);
@@ -1366,7 +1491,7 @@ async function cargarEnVivo() {{
               <td class="ex-racha">${{ultimos5Html(statsVisitante.ultimos5)}}</td>
               <td class="ex-diff">${{diff}}</td>
               <td class="ex-pred" title="${{tooltipPredVivo}}">${{codigoPredVivo}}</td>
-              <td class="ex-acierto"></td>
+              <td class="ex-acierto" title="Provisional -- puede cambiar mientras el partido siga en curso">${{aciertoVivo}}</td>
               <td></td>
             </tr>`;
           }}

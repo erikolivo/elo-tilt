@@ -1,23 +1,27 @@
-name: Actualizar cada 30 min (pipeline completo)
+name: Actualizar cada 3 horas (pipeline completo)
 
-# El dashboard se regenera cada 30 minutos con pipeline completo:
+# El dashboard se regenera cada 3 horas con pipeline completo:
 # recopilar resultados -> predecir hoy -> generar dashboard (que
 # consulta ESPN en vivo para el marcador de la pestana Hoy, con
 # color verde/azul segun estado).
 #
+# El marcador/minuto/acierto de Hoy ya se refresca desde el navegador
+# (JS cada 60 s mientras la pestana esta abierta), asi que el cron no
+# necesita ser tan seguido.
+#
 # Antes del pipeline del dia tambien se corre la prediccion de
 # MANANA (predict.py --fecha manana) para que exista
 # data/predicciones_{manana}.json y la pestana Manana pueda
-# mostrar prediccion + overperformance. Se corre primero para que
-# el cache fijo (predicciones_cache.json) quede con los partidos
-# de HOY al final de la corrida.
+# mostrar prediccion + overperformance. Esa corrida NO toca el cache
+# fijo (predicciones_cache.json): predict.py solo lo escribe cuando
+# --fecha es hoy en Ecuador.
 #
 # El workflow principal (actualizar.yml) sigue encargado de sus
 # 2 corridas completas diarias.
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '0 */3 * * *'
   workflow_dispatch:
 
 # Serializa las corridas: si una tarda mas de 30 min (predict consulta
@@ -46,7 +50,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run pipeline (cada 30 min)
+      - name: Run pipeline (cada 3 horas)
         run: |
           python predict.py --fecha $(TZ=America/Guayaquil date -d tomorrow +%F)
           python actualizar.py
@@ -61,6 +65,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No hay cambios para commitear"
           else
-            git commit -m "Auto-update 30min: $(date -u +%Y-%m-%d %H:%M)"
+            git commit -m "Auto-update 3h: $(date -u +%Y-%m-%d %H:%M)"
             git push
           fi
