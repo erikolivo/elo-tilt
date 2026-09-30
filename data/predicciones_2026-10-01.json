@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-30T17:27:59.475587Z",
+  "generado": "2026-09-30T21:47:19.483255Z",
   "fecha_consulta": "2026-10-01",
   "total": 114,
   "predicciones": [
@@ -1477,7 +1477,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.1,
+        "overperformance": 3.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1606,7 +1606,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.1,
+        "overperformance": 15.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -3271,13 +3271,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 13.2,
+        "overperformance": 10.9,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 44.4,
+        "prob_local": 44.6,
         "prob_empate": 23.1,
-        "prob_visitante": 32.5
+        "prob_visitante": 32.3
       },
       "diff_elo": -82.7,
       "confianza": 41.3
@@ -3373,92 +3373,6 @@
       },
       "diff_elo": 111.6,
       "confianza": 55.8
-    },
-    {
-      "fixture_id": "401900601",
-      "fecha": "2026-10-01T14:00:00-05:00",
-      "fecha_display": "2026-10-01",
-      "hora": "14:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "2644",
-        "nombre": "Br Virgin Isl",
-        "pais": "",
-        "rating": 1182.95,
-        "rd": 95.74,
-        "partidos_jugados": 22,
-        "pj_reales": 2,
-        "form_score": 0.0,
-        "form_local": 0.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2D",
-          "resultados": [
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 3.0,
-          "diferencia": -3.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -33.7,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "2655",
-        "nombre": "Montserrat",
-        "pais": "",
-        "rating": 1394.14,
-        "rd": 90.07,
-        "partidos_jugados": 23,
-        "pj_reales": 1,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V",
-          "resultados": [
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.5,
-          "goles_contra": 0.0,
-          "diferencia": 2.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 27.3,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 20.2,
-        "prob_empate": 23.1,
-        "prob_visitante": 56.7
-      },
-      "diff_elo": -211.2,
-      "confianza": 100.0
     },
     {
       "fixture_id": "401886704",
@@ -3643,6 +3557,92 @@
       },
       "diff_elo": 153.9,
       "confianza": 77.0
+    },
+    {
+      "fixture_id": "401900601",
+      "fecha": "2026-10-01T15:00:00-05:00",
+      "fecha_display": "2026-10-01",
+      "hora": "15:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "2644",
+        "nombre": "Br Virgin Isl",
+        "pais": "",
+        "rating": 1182.95,
+        "rd": 95.74,
+        "partidos_jugados": 22,
+        "pj_reales": 2,
+        "form_score": 0.0,
+        "form_local": 0.0,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2D",
+          "resultados": [
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 3.0,
+          "diferencia": -3.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -33.7,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "2655",
+        "nombre": "Montserrat",
+        "pais": "",
+        "rating": 1394.14,
+        "rd": 90.07,
+        "partidos_jugados": 23,
+        "pj_reales": 1,
+        "form_score": 100.0,
+        "form_local": 100.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V",
+          "resultados": [
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.5,
+          "goles_contra": 0.0,
+          "diferencia": 2.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 27.3,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 20.2,
+        "prob_empate": 23.1,
+        "prob_visitante": 56.7
+      },
+      "diff_elo": -211.2,
+      "confianza": 100.0
     },
     {
       "fixture_id": "401900597",
@@ -5019,7 +5019,7 @@
         "nombre": "Kennesaw St",
         "pais": "",
         "rating": 1395.69,
-        "rd": 174.6418556501452,
+        "rd": 174.9525856559306,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 41.4,
@@ -7309,7 +7309,7 @@
         "nombre": "Samford",
         "pais": "",
         "rating": 1633.93,
-        "rd": 211.90621601830975,
+        "rd": 212.16238472255662,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 44.1,
@@ -7469,7 +7469,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -15.0,
+        "overperformance": -15.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -8582,7 +8582,7 @@
         "nombre": "Lindenwood",
         "pais": "",
         "rating": 1503.41,
-        "rd": 212.2460850314305,
+        "rd": 212.50186958960364,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 35.6,
@@ -9410,7 +9410,7 @@
         "nombre": "Inter Bogotá",
         "pais": "",
         "rating": 1489.91,
-        "rd": 158.2004234379525,
+        "rd": 158.54334610918616,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 49.9,
@@ -9686,7 +9686,7 @@
         "nombre": "Seattle",
         "pais": "",
         "rating": 1333.69,
-        "rd": 173.1415830419392,
+        "rd": 173.45502155742463,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 43.7,
@@ -9724,7 +9724,7 @@
         "nombre": "Kansas City",
         "pais": "",
         "rating": 1312.2,
-        "rd": 211.118283066451,
+        "rd": 211.37539811363033,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 4.4,
