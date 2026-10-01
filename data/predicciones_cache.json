@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-01T12:17:39.928256Z",
+  "generado": "2026-10-01T20:06:25.912287Z",
   "fecha_consulta": "2026-10-01",
   "total": 116,
   "predicciones": [
@@ -1868,6 +1868,88 @@
       "confianza": 96.6
     },
     {
+      "fixture_id": "401923754",
+      "fecha": "2026-10-01T12:00:00-05:00",
+      "fecha_display": "2026-10-01",
+      "hora": "12:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "21173",
+        "nombre": "Liefering",
+        "pais": "",
+        "rating": 1337.3,
+        "rd": 237.1,
+        "partidos_jugados": 2,
+        "pj_reales": 0,
+        "form_score": 0.0,
+        "form_local": 0.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1D",
+          "resultados": [
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 1.0,
+          "diferencia": -1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -28.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "133962",
+        "nombre": "TSV St. Johann",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 350.0,
+        "partidos_jugados": 0,
+        "pj_reales": 0,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 37.1,
+        "prob_empate": 23.1,
+        "prob_visitante": 39.8
+      },
+      "diff_elo": -162.7,
+      "confianza": 81.4
+    },
+    {
       "fixture_id": "401927451",
       "fecha": "2026-10-01T12:00:00-05:00",
       "fecha_display": "2026-10-01",
@@ -1953,88 +2035,6 @@
       },
       "diff_elo": -373.1,
       "confianza": 100.0
-    },
-    {
-      "fixture_id": "401923754",
-      "fecha": "2026-10-01T12:00:00-05:00",
-      "fecha_display": "2026-10-01",
-      "hora": "12:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "21173",
-        "nombre": "Liefering",
-        "pais": "",
-        "rating": 1337.3,
-        "rd": 237.1,
-        "partidos_jugados": 2,
-        "pj_reales": 0,
-        "form_score": 0.0,
-        "form_local": 0.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1D",
-          "resultados": [
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 1.0,
-          "diferencia": -1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -33.1,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "133962",
-        "nombre": "TSV St. Johann",
-        "pais": "",
-        "rating": 1500.0,
-        "rd": 350.0,
-        "partidos_jugados": 0,
-        "pj_reales": 0,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 37.1,
-        "prob_empate": 23.1,
-        "prob_visitante": 39.8
-      },
-      "diff_elo": -162.7,
-      "confianza": 81.4
     },
     {
       "fixture_id": "732439",
@@ -3813,178 +3813,6 @@
       "confianza": 77.0
     },
     {
-      "fixture_id": "401900601",
-      "fecha": "2026-10-01T15:00:00-05:00",
-      "fecha_display": "2026-10-01",
-      "hora": "15:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "2644",
-        "nombre": "Br Virgin Isl",
-        "pais": "",
-        "rating": 1182.95,
-        "rd": 95.74,
-        "partidos_jugados": 22,
-        "pj_reales": 2,
-        "form_score": 0.0,
-        "form_local": 0.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2D",
-          "resultados": [
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 3.0,
-          "diferencia": -3.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -33.7,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "2655",
-        "nombre": "Montserrat",
-        "pais": "",
-        "rating": 1394.14,
-        "rd": 90.07,
-        "partidos_jugados": 23,
-        "pj_reales": 1,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V",
-          "resultados": [
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.5,
-          "goles_contra": 0.0,
-          "diferencia": 2.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 27.3,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 20.2,
-        "prob_empate": 23.1,
-        "prob_visitante": 56.7
-      },
-      "diff_elo": -211.2,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401900597",
-      "fecha": "2026-10-01T15:00:00-05:00",
-      "fecha_display": "2026-10-01",
-      "hora": "15:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "2645",
-        "nombre": "US Virgin Isl",
-        "pais": "",
-        "rating": 1180.75,
-        "rd": 96.9,
-        "partidos_jugados": 24,
-        "pj_reales": 2,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V",
-          "resultados": [
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.5,
-          "goles_contra": 0.5,
-          "diferencia": 2.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 57.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "10596",
-        "nombre": "St. Martin",
-        "pais": "",
-        "rating": 1384.79,
-        "rd": 94.81,
-        "partidos_jugados": 22,
-        "pj_reales": 1,
-        "form_score": 37.8,
-        "form_local": 0.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1D",
-          "resultados": [
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 4.0,
-          "goles_contra": 1.0,
-          "diferencia": 3.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -28.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 36.0,
-        "prob_empate": 23.1,
-        "prob_visitante": 40.8
-      },
-      "diff_elo": -204.0,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401886690",
       "fecha": "2026-10-01T15:00:00-05:00",
       "fecha_display": "2026-10-01",
@@ -4351,6 +4179,178 @@
       },
       "diff_elo": 196.6,
       "confianza": 98.3
+    },
+    {
+      "fixture_id": "401900601",
+      "fecha": "2026-10-01T15:00:00-05:00",
+      "fecha_display": "2026-10-01",
+      "hora": "15:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "2644",
+        "nombre": "Br Virgin Isl",
+        "pais": "",
+        "rating": 1182.95,
+        "rd": 95.74,
+        "partidos_jugados": 22,
+        "pj_reales": 2,
+        "form_score": 0.0,
+        "form_local": 0.0,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2D",
+          "resultados": [
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 3.0,
+          "diferencia": -3.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -33.7,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "2655",
+        "nombre": "Montserrat",
+        "pais": "",
+        "rating": 1394.14,
+        "rd": 90.07,
+        "partidos_jugados": 23,
+        "pj_reales": 1,
+        "form_score": 100.0,
+        "form_local": 100.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V",
+          "resultados": [
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.5,
+          "goles_contra": 0.0,
+          "diferencia": 2.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 27.3,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 20.2,
+        "prob_empate": 23.1,
+        "prob_visitante": 56.7
+      },
+      "diff_elo": -211.2,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401900597",
+      "fecha": "2026-10-01T15:00:00-05:00",
+      "fecha_display": "2026-10-01",
+      "hora": "15:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "2645",
+        "nombre": "US Virgin Isl",
+        "pais": "",
+        "rating": 1180.75,
+        "rd": 96.9,
+        "partidos_jugados": 24,
+        "pj_reales": 2,
+        "form_score": 100.0,
+        "form_local": 100.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V",
+          "resultados": [
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.5,
+          "goles_contra": 0.5,
+          "diferencia": 2.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 57.6,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "10596",
+        "nombre": "St. Martin",
+        "pais": "",
+        "rating": 1384.79,
+        "rd": 94.81,
+        "partidos_jugados": 22,
+        "pj_reales": 1,
+        "form_score": 37.8,
+        "form_local": 0.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1D",
+          "resultados": [
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 4.0,
+          "goles_contra": 1.0,
+          "diferencia": 3.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -28.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 36.0,
+        "prob_empate": 23.1,
+        "prob_visitante": 40.8
+      },
+      "diff_elo": -204.0,
+      "confianza": 100.0
     },
     {
       "fixture_id": "401889490",
@@ -5065,7 +5065,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -12.3,
+        "overperformance": -12.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -5119,7 +5119,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.0,
+        "overperformance": 0.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5181,7 +5181,7 @@
         "nombre": "Kennesaw St",
         "pais": "",
         "rating": 1395.69,
-        "rd": 176.49803013502324,
+        "rd": 176.80549800363434,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 41.5,
@@ -5341,7 +5341,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.1,
+        "overperformance": -9.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -5395,7 +5395,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.8,
+        "overperformance": -7.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5946,7 +5946,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.8,
+        "overperformance": -6.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -6672,7 +6672,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.2,
+        "overperformance": 3.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7562,7 +7562,7 @@
         "nombre": "Samford",
         "pais": "",
         "rating": 1633.93,
-        "rd": 213.43861649425108,
+        "rd": 213.69294821061257,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 41.6,
@@ -7922,13 +7922,13 @@
       "fecha": "2026-10-01T18:00:00-05:00",
       "fecha_display": "2026-10-01",
       "hora": "18:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
       "equipo_local": {
         "id": "20545",
         "nombre": "W Carolina",
-        "pais": "",
+        "pais": "EE.UU.",
         "rating": 1470.51,
         "rd": 177.37,
         "partidos_jugados": 5,
@@ -7966,7 +7966,7 @@
       "equipo_visitante": {
         "id": "20606",
         "nombre": "ETSU",
-        "pais": "",
+        "pais": "EE.UU.",
         "rating": 1782.01,
         "rd": 183.28,
         "partidos_jugados": 5,
@@ -8014,13 +8014,13 @@
       "fecha": "2026-10-01T18:00:00-05:00",
       "fecha_display": "2026-10-01",
       "hora": "18:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
       "equipo_local": {
         "id": "20324",
         "nombre": "Western KY",
-        "pais": "",
+        "pais": "EE.UU.",
         "rating": 1652.39,
         "rd": 171.66,
         "partidos_jugados": 6,
@@ -8058,7 +8058,7 @@
       "equipo_visitante": {
         "id": "20567",
         "nombre": "Sam Houston",
-        "pais": "",
+        "pais": "EE.UU.",
         "rating": 1606.09,
         "rd": 133.67,
         "partidos_jugados": 9,
@@ -8336,7 +8336,7 @@
         "nombre": "Hou Christian",
         "pais": "",
         "rating": 1411.2,
-        "rd": 211.53176540570385,
+        "rd": 211.7883955765085,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 59.6,
@@ -8743,7 +8743,7 @@
         "nombre": "Lindenwood",
         "pais": "",
         "rating": 1503.41,
-        "rd": 213.77620171248097,
+        "rd": 214.03015765663267,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 34.6,
@@ -9571,7 +9571,7 @@
         "nombre": "Inter Bogotá",
         "pais": "",
         "rating": 1489.91,
-        "rd": 160.24695221203365,
+        "rd": 160.58550467833487,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 49.6,
@@ -9846,7 +9846,7 @@
         "nombre": "Seattle",
         "pais": "",
         "rating": 1333.69,
-        "rd": 175.01379411228194,
+        "rd": 175.3238855797867,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 35.9,
@@ -9884,7 +9884,7 @@
         "nombre": "Kansas City",
         "pais": "",
         "rating": 1312.2,
-        "rd": 212.65631037320182,
+        "rd": 212.91156808476404,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 8.4,
@@ -9913,7 +9913,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.2,
+        "overperformance": -7.3,
         "vol": 0.06
       },
       "prediccion": {
