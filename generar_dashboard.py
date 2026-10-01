@@ -300,8 +300,11 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
             eq = p[lado]
             todos_equipos[eq["id"]] = eq
 
-    ranking_forma = sorted(todos_equipos.values(), key=lambda x: x.get("form_score", 50), reverse=True)[:30]
-    ranking_elo = sorted(todos_equipos.values(), key=lambda x: x.get("rating", 1500), reverse=True)[:30]
+    # Rankings solo con equipos de mas de 10 partidos reales jugados (sin contar
+    # bootstrap) -- temprano en la temporada casi ninguno pasa, a proposito.
+    elegibles = [eq for eq in todos_equipos.values() if eq.get("pj_reales", 0) > 10]
+    ranking_forma = sorted(elegibles, key=lambda x: x.get("form_score", 50), reverse=True)[:30]
+    ranking_elo = sorted(elegibles, key=lambda x: x.get("rating", 1500), reverse=True)[:30]
 
     liga_counts = {}
     for p in predicciones:
