@@ -951,6 +951,8 @@ function sortExcel(criterion) {{
   rows.forEach(row => tbody.appendChild(row));
 }}
 
+let intervaloMarcadoresHoy = null;
+
 initLeagueButtons();
 initCountryButtons();
 aplicarFiltros();
@@ -1276,8 +1278,6 @@ async function cargarHistorial(cuando) {{
     tbody.innerHTML = `<tr><td colspan="16" style="text-align:center; padding:20px; color:#ef4444;">Error: ${{error.message}}</td></tr>`;
   }}
 }}
-
-let intervaloMarcadoresHoy = null;
 
 async function refrescarMarcadoresHoy() {{
   try {{
