@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-01T20:06:25.912287Z",
+  "generado": "2026-10-01T23:36:48.931093Z",
   "fecha_consulta": "2026-10-01",
   "total": 116,
   "predicciones": [
@@ -5996,6 +5996,98 @@
       "confianza": 88.3
     },
     {
+      "fixture_id": "401898742",
+      "fecha": "2026-10-01T18:00:00-05:00",
+      "fecha_display": "2026-10-01",
+      "hora": "18:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "21165",
+        "nombre": "Chicago St",
+        "pais": "",
+        "rating": 1102.8,
+        "rd": 194.2,
+        "partidos_jugados": 6,
+        "pj_reales": 6,
+        "form_score": 0.0,
+        "form_local": 0.0,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 7
+        },
+        "ultimos5": {
+          "texto": "5D",
+          "resultados": [
+            "D",
+            "D",
+            "D",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.43,
+          "goles_contra": 4.29,
+          "diferencia": -3.86
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -15.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "17393",
+        "nombre": "Howard",
+        "pais": "",
+        "rating": 1306.61,
+        "rd": 164.42,
+        "partidos_jugados": 7,
+        "pj_reales": 7,
+        "form_score": 39.5,
+        "form_local": 49.4,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 2.3,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 3D",
+          "resultados": [
+            "D",
+            "V",
+            "V",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.71,
+          "goles_contra": 2.43,
+          "diferencia": -1.72
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -7.8,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 32.0,
+        "prob_empate": 23.1,
+        "prob_visitante": 44.9
+      },
+      "diff_elo": -203.8,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401900599",
       "fecha": "2026-10-01T18:00:00-05:00",
       "fecha_display": "2026-10-01",
@@ -6076,98 +6168,6 @@
       },
       "diff_elo": -52.2,
       "confianza": 26.1
-    },
-    {
-      "fixture_id": "401898742",
-      "fecha": "2026-10-01T18:00:00-05:00",
-      "fecha_display": "2026-10-01",
-      "hora": "18:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "21165",
-        "nombre": "Chicago St",
-        "pais": "",
-        "rating": 1102.8,
-        "rd": 194.2,
-        "partidos_jugados": 6,
-        "pj_reales": 6,
-        "form_score": 0.0,
-        "form_local": 0.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 7
-        },
-        "ultimos5": {
-          "texto": "5D",
-          "resultados": [
-            "D",
-            "D",
-            "D",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.43,
-          "goles_contra": 4.29,
-          "diferencia": -3.86
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -15.5,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "17393",
-        "nombre": "Howard",
-        "pais": "",
-        "rating": 1306.61,
-        "rd": 164.42,
-        "partidos_jugados": 7,
-        "pj_reales": 7,
-        "form_score": 39.5,
-        "form_local": 49.4,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 2.3,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 3D",
-          "resultados": [
-            "D",
-            "V",
-            "V",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.71,
-          "goles_contra": 2.43,
-          "diferencia": -1.72
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -7.8,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 32.0,
-        "prob_empate": 23.1,
-        "prob_visitante": 44.9
-      },
-      "diff_elo": -203.8,
-      "confianza": 100.0
     },
     {
       "fixture_id": "401898734",
@@ -8416,7 +8416,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -21.4,
+        "overperformance": -18.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8456,9 +8456,9 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 21.1,
+        "prob_local": 21.2,
         "prob_empate": 23.1,
-        "prob_visitante": 55.8
+        "prob_visitante": 55.7
       },
       "diff_elo": -271.7,
       "confianza": 100.0
@@ -8475,10 +8475,10 @@
         "id": "2649",
         "nombre": "Dominican Rep",
         "pais": "",
-        "rating": 1557.93,
-        "rd": 108.69,
-        "partidos_jugados": 21,
-        "pj_reales": 1,
+        "rating": 1529.72,
+        "rd": 104.69,
+        "partidos_jugados": 22,
+        "pj_reales": 2,
         "form_score": 50.0,
         "form_local": 50.0,
         "form_visitante": 50.0,
@@ -8539,12 +8539,12 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 34.2,
+        "prob_local": 31.2,
         "prob_empate": 23.1,
-        "prob_visitante": 42.7
+        "prob_visitante": 45.7
       },
-      "diff_elo": -130.8,
-      "confianza": 65.4
+      "diff_elo": -159.1,
+      "confianza": 79.5
     },
     {
       "fixture_id": "401860365",
@@ -8681,7 +8681,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.2,
+        "overperformance": -3.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8719,7 +8719,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.7,
+        "overperformance": -0.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -8729,98 +8729,6 @@
       },
       "diff_elo": -65.4,
       "confianza": 32.7
-    },
-    {
-      "fixture_id": "401898571",
-      "fecha": "2026-10-01T19:00:00-05:00",
-      "fecha_display": "2026-10-01",
-      "hora": "19:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "21653",
-        "nombre": "Lindenwood",
-        "pais": "",
-        "rating": 1503.41,
-        "rd": 214.03015765663267,
-        "partidos_jugados": 4,
-        "pj_reales": 4,
-        "form_score": 34.6,
-        "form_local": 49.4,
-        "form_visitante": 31.1,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "D",
-            "E",
-            "V",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.2,
-          "goles_contra": 1.0,
-          "diferencia": 1.2
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -19.3,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "18032",
-        "nombre": "Incarnate Word",
-        "pais": "",
-        "rating": 1384.77,
-        "rd": 166.87,
-        "partidos_jugados": 6,
-        "pj_reales": 0,
-        "form_score": 16.9,
-        "form_local": 32.7,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": -1.1,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "1V 4D",
-          "resultados": [
-            "D",
-            "D",
-            "V",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 2.5,
-          "diferencia": -1.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -2.1,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 67.8,
-        "prob_empate": 23.1,
-        "prob_visitante": 9.1
-      },
-      "diff_elo": 118.6,
-      "confianza": 59.3
     },
     {
       "fixture_id": "401889664",
@@ -8995,7 +8903,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.0,
+        "overperformance": 5.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -9179,7 +9087,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.7,
+        "overperformance": -8.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -9189,6 +9097,98 @@
       },
       "diff_elo": -282.4,
       "confianza": 100.0
+    },
+    {
+      "fixture_id": "401898571",
+      "fecha": "2026-10-01T19:00:00-05:00",
+      "fecha_display": "2026-10-01",
+      "hora": "19:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "21653",
+        "nombre": "Lindenwood",
+        "pais": "",
+        "rating": 1503.41,
+        "rd": 214.03015765663267,
+        "partidos_jugados": 4,
+        "pj_reales": 4,
+        "form_score": 34.6,
+        "form_local": 49.4,
+        "form_visitante": 31.1,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "D",
+            "E",
+            "V",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.2,
+          "goles_contra": 1.0,
+          "diferencia": 1.2
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -19.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "18032",
+        "nombre": "Incarnate Word",
+        "pais": "",
+        "rating": 1384.77,
+        "rd": 166.87,
+        "partidos_jugados": 6,
+        "pj_reales": 0,
+        "form_score": 16.9,
+        "form_local": 32.7,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": -1.1,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "1V 4D",
+          "resultados": [
+            "D",
+            "D",
+            "V",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 2.5,
+          "diferencia": -1.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -2.1,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 67.8,
+        "prob_empate": 23.1,
+        "prob_visitante": 9.1
+      },
+      "diff_elo": 118.6,
+      "confianza": 59.3
     },
     {
       "fixture_id": "401889681",
@@ -9571,7 +9571,7 @@
         "nombre": "Inter Bogotá",
         "pais": "",
         "rating": 1489.91,
-        "rd": 160.58550467833487,
+        "rd": 160.92334489546639,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 49.6,
@@ -9846,7 +9846,7 @@
         "nombre": "Seattle",
         "pais": "",
         "rating": 1333.69,
-        "rd": 175.3238855797867,
+        "rd": 175.63342956285987,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 35.9,
@@ -9884,7 +9884,7 @@
         "nombre": "Kansas City",
         "pais": "",
         "rating": 1312.2,
-        "rd": 212.91156808476404,
+        "rd": 213.16652013644796,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 8.4,
