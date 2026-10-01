@@ -184,9 +184,9 @@ def _overperformance_badge(op):
 
 
 # Regla por diferencia de Elo (Glicko-2). Valores calibrados con backtest, no cambiar sin pedirlo.
-VENTAJA_LOCAL_ELO = 80       # puntos de Elo que se suman al local por jugar en casa
-UMBRAL_FAVORITO_ELO = 150    # |d| mayor a esto -> favorito claro (código simple 1 o 2)
-UMBRAL_PAREJO_ELO = 60       # |d| menor o igual a esto -> partido parejo (código 12)
+VENTAJA_LOCAL_ELO = 50       # puntos de Elo que se suman al local por jugar en casa
+UMBRAL_FAVORITO_ELO = 200    # |d| mayor a esto -> favorito claro (código simple 1 o 2)
+UMBRAL_PAREJO_ELO = 30       # |d| menor o igual a esto -> partido parejo (código 12)
 
 
 def _codigo_prediccion(diff_elo):
@@ -1009,9 +1009,9 @@ function streakHtml(s) {{
 }}
 
 // Regla por diferencia de Elo (Glicko-2). Valores calibrados con backtest, no cambiar sin pedirlo.
-const VENTAJA_LOCAL_ELO = 80;
-const UMBRAL_FAVORITO_ELO = 150;
-const UMBRAL_PAREJO_ELO = 60;
+const VENTAJA_LOCAL_ELO = 50;
+const UMBRAL_FAVORITO_ELO = 200;
+const UMBRAL_PAREJO_ELO = 30;
 
 function codigoPrediccion(diffElo) {{
   const d = diffElo + VENTAJA_LOCAL_ELO;
