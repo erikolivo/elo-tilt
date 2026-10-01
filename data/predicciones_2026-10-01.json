@@ -1,7 +1,7 @@
 {
-  "generado": "2026-10-01T03:39:13.653922Z",
+  "generado": "2026-10-01T11:14:50.403821Z",
   "fecha_consulta": "2026-10-01",
-  "total": 114,
+  "total": 116,
   "predicciones": [
     {
       "fixture_id": "401924284",
@@ -82,6 +82,93 @@
       },
       "diff_elo": -162.3,
       "confianza": 81.2
+    },
+    {
+      "fixture_id": "401927913",
+      "fecha": "2026-10-01T04:00:00-05:00",
+      "fecha_display": "2026-10-01",
+      "hora": "04:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "8091",
+        "nombre": "U. Cluj",
+        "pais": "",
+        "rating": 1499.2,
+        "rd": 165.22,
+        "partidos_jugados": 5,
+        "pj_reales": 5,
+        "form_score": 27.2,
+        "form_local": 50.0,
+        "form_visitante": 18.9,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1D 3E",
+          "resultados": [
+            "D",
+            "E",
+            "E",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.75,
+          "goles_contra": 1.25,
+          "diferencia": -0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -8.9,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "132691",
+        "nombre": "Gloria Bistrita",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 290.32,
+        "partidos_jugados": 1,
+        "pj_reales": 1,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1E",
+          "resultados": [
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 1.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 52.5,
+        "prob_empate": 23.1,
+        "prob_visitante": 24.4
+      },
+      "diff_elo": -0.8,
+      "confianza": 0.4
     },
     {
       "fixture_id": "401927446",
@@ -328,6 +415,179 @@
       "confianza": 58.3
     },
     {
+      "fixture_id": "401920509",
+      "fecha": "2026-10-01T06:30:00-05:00",
+      "fecha_display": "2026-10-01",
+      "hora": "06:30",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "134",
+        "nombre": "Stuttgart",
+        "pais": "",
+        "rating": 1644.03,
+        "rd": 145.51,
+        "partidos_jugados": 9,
+        "pj_reales": 9,
+        "form_score": 56.8,
+        "form_local": 74.0,
+        "form_visitante": 16.7,
+        "momentum": "stable",
+        "momentum_diff": 1.4,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 2D",
+          "resultados": [
+            "V",
+            "D",
+            "D",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.11,
+          "goles_contra": 1.33,
+          "diferencia": 0.78
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 3.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "17491",
+        "nombre": "Würzburger K",
+        "pais": "",
+        "rating": 1326.63,
+        "rd": 262.7,
+        "partidos_jugados": 1,
+        "pj_reales": 1,
+        "form_score": 0.0,
+        "form_local": 0.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1D",
+          "resultados": [
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 2.0,
+          "diferencia": -1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -33.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 77.7,
+        "prob_empate": 21.4,
+        "prob_visitante": 0.9
+      },
+      "diff_elo": 317.4,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401927899",
+      "fecha": "2026-10-01T07:00:00-05:00",
+      "fecha_display": "2026-10-01",
+      "hora": "07:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5260",
+        "nombre": "CFR Cluj",
+        "pais": "",
+        "rating": 1317.83,
+        "rd": 185.12,
+        "partidos_jugados": 4,
+        "pj_reales": 2,
+        "form_score": 21.8,
+        "form_local": 37.8,
+        "form_visitante": 18.9,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "1V 2D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.25,
+          "goles_contra": 2.0,
+          "diferencia": -0.75
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -4.9,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "131554",
+        "nombre": "TBD Away",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 350.0,
+        "partidos_jugados": 0,
+        "pj_reales": 0,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 37.3,
+        "prob_empate": 23.1,
+        "prob_visitante": 39.5
+      },
+      "diff_elo": -182.2,
+      "confianza": 91.1
+    },
+    {
       "fixture_id": "401923771",
       "fecha": "2026-10-01T07:00:00-05:00",
       "fecha_display": "2026-10-01",
@@ -412,6 +672,92 @@
       },
       "diff_elo": -4.7,
       "confianza": 2.3
+    },
+    {
+      "fixture_id": "401927457",
+      "fecha": "2026-10-01T07:30:00-05:00",
+      "fecha_display": "2026-10-01",
+      "hora": "07:30",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "4405",
+        "nombre": "SC Rheindorf",
+        "pais": "",
+        "rating": 1128.78,
+        "rd": 178.21,
+        "partidos_jugados": 6,
+        "pj_reales": 6,
+        "form_score": 3.4,
+        "form_local": 18.6,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": -3.4,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 5
+        },
+        "ultimos5": {
+          "texto": "5D",
+          "resultados": [
+            "D",
+            "D",
+            "D",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.83,
+          "goles_contra": 1.83,
+          "diferencia": -1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.6,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "2992",
+        "nombre": "FC Wil 1900",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 350.0,
+        "partidos_jugados": 0,
+        "pj_reales": 0,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 23.4,
+        "prob_empate": 23.1,
+        "prob_visitante": 53.5
+      },
+      "diff_elo": -371.2,
+      "confianza": 100.0
     },
     {
       "fixture_id": "401926842",
@@ -920,98 +1266,6 @@
         "prob_visitante": 0.8
       },
       "diff_elo": 441.5,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401920509",
-      "fecha": "2026-10-01T10:30:00-05:00",
-      "fecha_display": "2026-10-01",
-      "hora": "10:30",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "134",
-        "nombre": "Stuttgart",
-        "pais": "",
-        "rating": 1644.03,
-        "rd": 145.51,
-        "partidos_jugados": 9,
-        "pj_reales": 9,
-        "form_score": 56.8,
-        "form_local": 74.0,
-        "form_visitante": 16.7,
-        "momentum": "stable",
-        "momentum_diff": 1.4,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 2D",
-          "resultados": [
-            "V",
-            "D",
-            "D",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.11,
-          "goles_contra": 1.33,
-          "diferencia": 0.78
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 3.2,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "3070",
-        "nombre": "Greuther Furth",
-        "pais": "",
-        "rating": 1439.35,
-        "rd": 158.44,
-        "partidos_jugados": 7,
-        "pj_reales": 7,
-        "form_score": 42.7,
-        "form_local": 22.8,
-        "form_visitante": 65.4,
-        "momentum": "stable",
-        "momentum_diff": 1.3,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "1V 2D 2E",
-          "resultados": [
-            "E",
-            "E",
-            "D",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.43,
-          "goles_contra": 1.86,
-          "diferencia": -0.43
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -2.9,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 75.6,
-        "prob_empate": 23.1,
-        "prob_visitante": 1.3
-      },
-      "diff_elo": 204.7,
       "confianza": 100.0
     },
     {
@@ -2037,7 +2291,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -10.6,
+        "overperformance": -11.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -2129,7 +2383,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.5,
+        "overperformance": 4.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -2139,92 +2393,6 @@
       },
       "diff_elo": -138.7,
       "confianza": 69.3
-    },
-    {
-      "fixture_id": "401927457",
-      "fecha": "2026-10-01T13:00:00-05:00",
-      "fecha_display": "2026-10-01",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "2992",
-        "nombre": "FC Wil 1900",
-        "pais": "",
-        "rating": 1500.0,
-        "rd": 350.0,
-        "partidos_jugados": 0,
-        "pj_reales": 0,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "4405",
-        "nombre": "SC Rheindorf",
-        "pais": "",
-        "rating": 1128.78,
-        "rd": 178.21,
-        "partidos_jugados": 6,
-        "pj_reales": 6,
-        "form_score": 3.4,
-        "form_local": 18.6,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": -3.4,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 5
-        },
-        "ultimos5": {
-          "texto": "5D",
-          "resultados": [
-            "D",
-            "D",
-            "D",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.83,
-          "goles_contra": 1.83,
-          "diferencia": -1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 2.6,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 77.8,
-        "prob_empate": 21.3,
-        "prob_visitante": 0.9
-      },
-      "diff_elo": 371.2,
-      "confianza": 100.0
     },
     {
       "fixture_id": "401927453",
@@ -3093,7 +3261,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 23.6,
+        "overperformance": 24.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -3541,7 +3709,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 12.1,
+        "overperformance": 12.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -3595,7 +3763,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.7,
+        "overperformance": -5.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3859,7 +4027,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.9,
+        "overperformance": 1.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3989,7 +4157,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.5,
+        "overperformance": -7.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -4081,7 +4249,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.1,
+        "overperformance": -1.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -4227,7 +4395,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.1,
+        "overperformance": -9.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4265,7 +4433,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.0,
+        "overperformance": -2.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -4405,7 +4573,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.0,
+        "overperformance": -6.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4497,7 +4665,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.5,
+        "overperformance": -1.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4535,7 +4703,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.2,
+        "overperformance": 1.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -4675,7 +4843,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -25.6,
+        "overperformance": -25.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4859,7 +5027,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.8,
+        "overperformance": 0.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4989,7 +5157,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.7,
+        "overperformance": 1.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -5013,7 +5181,7 @@
         "nombre": "Kennesaw St",
         "pais": "",
         "rating": 1395.69,
-        "rd": 175.5723958748495,
+        "rd": 176.19002570739926,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 41.5,
@@ -5081,7 +5249,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.7,
+        "overperformance": -4.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -5173,7 +5341,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.4,
+        "overperformance": -9.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -5227,7 +5395,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.7,
+        "overperformance": -7.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5265,7 +5433,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.7,
+        "overperformance": -0.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -5319,7 +5487,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.6,
+        "overperformance": -7.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5357,7 +5525,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.0,
+        "overperformance": -8.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -5449,7 +5617,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.2,
+        "overperformance": -7.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -5503,7 +5671,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.9,
+        "overperformance": -3.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5563,10 +5731,10 @@
         "id": "2681",
         "nombre": "Bolívar",
         "pais": "",
-        "rating": 1706.59,
-        "rd": 126.56,
-        "partidos_jugados": 12,
-        "pj_reales": 12,
+        "rating": 1677.26,
+        "rd": 120.33,
+        "partidos_jugados": 13,
+        "pj_reales": 13,
         "form_score": 96.0,
         "form_local": 93.8,
         "form_visitante": 83.3,
@@ -5594,7 +5762,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.9,
+        "overperformance": 11.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5632,7 +5800,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.5,
+        "overperformance": -0.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -5640,7 +5808,7 @@
         "prob_empate": 19.1,
         "prob_visitante": 0.8
       },
-      "diff_elo": 437.9,
+      "diff_elo": 408.6,
       "confianza": 100.0
     },
     {
@@ -5686,7 +5854,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.8,
+        "overperformance": 1.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5778,7 +5946,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.1,
+        "overperformance": -5.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5816,7 +5984,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.2,
+        "overperformance": 1.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -5990,7 +6158,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.6,
+        "overperformance": -7.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -6450,7 +6618,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.5,
+        "overperformance": -0.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -6634,7 +6802,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.6,
+        "overperformance": -1.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -6818,7 +6986,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.4,
+        "overperformance": -2.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -7002,7 +7170,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.4,
+        "overperformance": -4.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -7056,7 +7224,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.9,
+        "overperformance": 1.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7148,7 +7316,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.4,
+        "overperformance": -1.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7186,7 +7354,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.3,
+        "overperformance": 3.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -7278,7 +7446,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.9,
+        "overperformance": 0.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -7370,7 +7538,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.8,
+        "overperformance": -7.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -7394,7 +7562,7 @@
         "nombre": "Samford",
         "pais": "",
         "rating": 1633.93,
-        "rd": 212.6737964561908,
+        "rd": 213.18398135651847,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 41.6,
@@ -7462,7 +7630,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.9,
+        "overperformance": -2.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -7792,7 +7960,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.0,
+        "overperformance": -7.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7830,7 +7998,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.1,
+        "overperformance": -3.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -7938,13 +8106,13 @@
       "fecha": "2026-10-01T18:00:00-05:00",
       "fecha_display": "2026-10-01",
       "hora": "18:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
       "equipo_local": {
         "id": "20386",
         "nombre": "Wright St",
-        "pais": "",
+        "pais": "EE.UU.",
         "rating": 1363.05,
         "rd": 169.78,
         "partidos_jugados": 6,
@@ -7976,13 +8144,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.8,
+        "overperformance": 1.3,
         "vol": 0.06
       },
       "equipo_visitante": {
         "id": "20591",
         "nombre": "Green Bay",
-        "pais": "",
+        "pais": "EE.UU.",
         "rating": 1710.28,
         "rd": 162.21,
         "partidos_jugados": 9,
@@ -8160,7 +8328,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.4,
+        "overperformance": -2.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8168,7 +8336,7 @@
         "nombre": "Hou Christian",
         "pais": "",
         "rating": 1411.2,
-        "rd": 210.76,
+        "rd": 211.2748235129681,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 59.6,
@@ -8198,7 +8366,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.7,
+        "overperformance": 9.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -8513,7 +8681,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.4,
+        "overperformance": -4.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8551,7 +8719,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.3,
+        "overperformance": -0.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -8575,7 +8743,7 @@
         "nombre": "Lindenwood",
         "pais": "",
         "rating": 1503.41,
-        "rd": 213.01251727279387,
+        "rd": 213.52194372173477,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 34.6,
@@ -8649,7 +8817,7 @@
       "prediccion": {
         "prob_local": 67.8,
         "prob_empate": 23.1,
-        "prob_visitante": 9.0
+        "prob_visitante": 9.1
       },
       "diff_elo": 118.6,
       "confianza": 59.3
@@ -8659,13 +8827,13 @@
       "fecha": "2026-10-01T19:00:00-05:00",
       "fecha_display": "2026-10-01",
       "hora": "19:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
       "equipo_local": {
         "id": "20611",
         "nombre": "Hou Christian",
-        "pais": "",
+        "pais": "EE.UU.",
         "rating": 1532.62,
         "rd": 194.23,
         "partidos_jugados": 5,
@@ -8703,7 +8871,7 @@
       "equipo_visitante": {
         "id": "20593",
         "nombre": "SF Austin",
-        "pais": "",
+        "pais": "EE.UU.",
         "rating": 1287.14,
         "rd": 125.52,
         "partidos_jugados": 11,
@@ -9011,7 +9179,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.8,
+        "overperformance": -7.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -9249,7 +9417,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.4,
+        "overperformance": -5.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9287,7 +9455,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.1,
+        "overperformance": -2.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -9403,7 +9571,7 @@
         "nombre": "Inter Bogotá",
         "pais": "",
         "rating": 1489.91,
-        "rd": 159.22697583825624,
+        "rd": 159.90768297269545,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 49.6,
@@ -9471,13 +9639,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.4,
+        "overperformance": 0.8,
         "vol": 0.06
       },
       "prediccion": {
         "prob_local": 57.1,
         "prob_empate": 23.1,
-        "prob_visitante": 19.7
+        "prob_visitante": 19.8
       },
       "diff_elo": 45.3,
       "confianza": 22.6
@@ -9524,7 +9692,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.7,
+        "overperformance": -1.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9616,7 +9784,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.1,
+        "overperformance": -0.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9678,7 +9846,7 @@
         "nombre": "Seattle",
         "pais": "",
         "rating": 1333.69,
-        "rd": 174.08020552010638,
+        "rd": 174.7031522450534,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 35.9,
@@ -9716,7 +9884,7 @@
         "nombre": "Kansas City",
         "pais": "",
         "rating": 1312.2,
-        "rd": 211.88869222597708,
+        "rd": 212.40074589975896,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 8.4,
@@ -9799,7 +9967,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 18.4,
+        "overperformance": 19.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10108,7 +10276,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.5,
+        "overperformance": 2.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -10162,7 +10330,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.0,
+        "overperformance": 5.5,
         "vol": 0.06
       },
       "equipo_visitante": {
