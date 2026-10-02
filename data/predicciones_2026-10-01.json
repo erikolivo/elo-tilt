@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-01T23:36:48.931093Z",
+  "generado": "2026-10-02T00:30:47.422617Z",
   "fecha_consulta": "2026-10-01",
   "total": 116,
   "predicciones": [
@@ -9375,98 +9375,6 @@
       "confianza": 48.5
     },
     {
-      "fixture_id": "401907806",
-      "fecha": "2026-10-01T19:30:00-05:00",
-      "fecha_display": "2026-10-01",
-      "hora": "19:30",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "6047",
-        "nombre": "Blooming",
-        "pais": "",
-        "rating": 1396.93,
-        "rd": 152.84,
-        "partidos_jugados": 8,
-        "pj_reales": 8,
-        "form_score": 15.7,
-        "form_local": 35.6,
-        "form_visitante": 13.8,
-        "momentum": "stable",
-        "momentum_diff": -3.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "3D 2E",
-          "resultados": [
-            "D",
-            "D",
-            "E",
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.88,
-          "goles_contra": 1.88,
-          "diferencia": -1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -5.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20889",
-        "nombre": "CI Petrolero",
-        "pais": "",
-        "rating": 1604.04,
-        "rd": 146.9,
-        "partidos_jugados": 9,
-        "pj_reales": 9,
-        "form_score": 55.5,
-        "form_local": 54.2,
-        "form_visitante": 55.7,
-        "momentum": "stable",
-        "momentum_diff": -3.1,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 3D",
-          "resultados": [
-            "V",
-            "D",
-            "D",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.67,
-          "goles_contra": 1.78,
-          "diferencia": -0.11
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -2.5,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 29.9,
-        "prob_empate": 23.1,
-        "prob_visitante": 46.9
-      },
-      "diff_elo": -207.1,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401889625",
       "fecha": "2026-10-01T19:30:00-05:00",
       "fecha_display": "2026-10-01",
@@ -9559,6 +9467,98 @@
       "confianza": 77.5
     },
     {
+      "fixture_id": "401907806",
+      "fecha": "2026-10-01T19:30:00-05:00",
+      "fecha_display": "2026-10-01",
+      "hora": "19:30",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "6047",
+        "nombre": "Blooming",
+        "pais": "",
+        "rating": 1396.93,
+        "rd": 152.84,
+        "partidos_jugados": 8,
+        "pj_reales": 8,
+        "form_score": 15.7,
+        "form_local": 35.6,
+        "form_visitante": 13.8,
+        "momentum": "stable",
+        "momentum_diff": -3.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3D 2E",
+          "resultados": [
+            "D",
+            "D",
+            "E",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.88,
+          "goles_contra": 1.88,
+          "diferencia": -1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -5.6,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20889",
+        "nombre": "CI Petrolero",
+        "pais": "",
+        "rating": 1604.04,
+        "rd": 146.9,
+        "partidos_jugados": 9,
+        "pj_reales": 9,
+        "form_score": 55.5,
+        "form_local": 54.2,
+        "form_visitante": 55.7,
+        "momentum": "stable",
+        "momentum_diff": -3.1,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 3D",
+          "resultados": [
+            "V",
+            "D",
+            "D",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.67,
+          "goles_contra": 1.78,
+          "diferencia": -0.11
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -2.5,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 29.9,
+        "prob_empate": 23.1,
+        "prob_visitante": 46.9
+      },
+      "diff_elo": -207.1,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401877909",
       "fecha": "2026-10-01T20:00:00-05:00",
       "fecha_display": "2026-10-01",
@@ -9571,7 +9571,7 @@
         "nombre": "Inter Bogotá",
         "pais": "",
         "rating": 1489.91,
-        "rd": 160.92334489546639,
+        "rd": 161.26047733990788,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 49.6,
@@ -9609,7 +9609,7 @@
         "nombre": "Once Caldas",
         "pais": "",
         "rating": 1444.62,
-        "rd": 154.23,
+        "rd": 154.58171916044,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 69.3,
@@ -9846,7 +9846,7 @@
         "nombre": "Seattle",
         "pais": "",
         "rating": 1333.69,
-        "rd": 175.63342956285987,
+        "rd": 175.9424289511486,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 35.9,
@@ -9876,7 +9876,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.5,
+        "overperformance": 2.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9884,7 +9884,7 @@
         "nombre": "Kansas City",
         "pais": "",
         "rating": 1312.2,
-        "rd": 213.16652013644796,
+        "rd": 213.4211676236737,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 8.4,
@@ -10057,7 +10057,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -19.0,
+        "overperformance": -17.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10368,7 +10368,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.2,
+        "overperformance": 7.5,
         "vol": 0.06
       },
       "prediccion": {
