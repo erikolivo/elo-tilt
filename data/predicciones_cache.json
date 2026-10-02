@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-02T21:46:18.896745Z",
+  "generado": "2026-10-02T23:28:42.295948Z",
   "fecha_consulta": "2026-10-02",
   "total": 194,
   "predicciones": [
@@ -13117,98 +13117,6 @@
       "confianza": 10.6
     },
     {
-      "fixture_id": "401885845",
-      "fecha": "2026-10-02T18:00:00-05:00",
-      "fecha_display": "2026-10-02",
-      "hora": "18:00",
-      "liga": "usa.ncaa.w.1",
-      "liga_pais": "EE.UU.",
-      "liga_slug": "usa.ncaa.w.1",
-      "equipo_local": {
-        "id": "20370",
-        "nombre": "Vanderbilt",
-        "pais": "EE.UU.",
-        "rating": 1944.03,
-        "rd": 178.82,
-        "partidos_jugados": 5,
-        "pj_reales": 5,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 6
-        },
-        "ultimos5": {
-          "texto": "5V",
-          "resultados": [
-            "V",
-            "V",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 3.5,
-          "goles_contra": 1.17,
-          "diferencia": 2.33
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 20.8,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20427",
-        "nombre": "Kentucky",
-        "pais": "EE.UU.",
-        "rating": 1592.84,
-        "rd": 169.11,
-        "partidos_jugados": 6,
-        "pj_reales": 6,
-        "form_score": 55.7,
-        "form_local": 62.8,
-        "form_visitante": 37.8,
-        "momentum": "stable",
-        "momentum_diff": -2.5,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "E",
-            "V",
-            "D",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 3.0,
-          "goles_contra": 1.14,
-          "diferencia": 1.86
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 11.6,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 78.6,
-        "prob_empate": 20.6,
-        "prob_visitante": 0.9
-      },
-      "diff_elo": 351.2,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401887398",
       "fecha": "2026-10-02T18:00:00-05:00",
       "fecha_display": "2026-10-02",
@@ -13713,7 +13621,7 @@
         "nombre": "San Diego",
         "pais": "",
         "rating": 1623.37,
-        "rd": 202.51505944722595,
+        "rd": 202.7831098722132,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 81.5,
@@ -13877,7 +13785,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -36.5,
+        "overperformance": -36.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -13912,11 +13820,11 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -38.8,
+        "overperformance": -38.7,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 55.1,
+        "prob_local": 55.0,
         "prob_empate": 23.1,
         "prob_visitante": 21.8
       },
@@ -14241,7 +14149,7 @@
         "nombre": "Tulsa",
         "pais": "EE.UU.",
         "rating": 1563.91,
-        "rd": 204.44419220827888,
+        "rd": 204.70969007466465,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 46.1,
@@ -15202,6 +15110,98 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401885845",
+      "fecha": "2026-10-02T19:00:00-05:00",
+      "fecha_display": "2026-10-02",
+      "hora": "19:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20370",
+        "nombre": "Vanderbilt",
+        "pais": "EE.UU.",
+        "rating": 1944.03,
+        "rd": 178.82,
+        "partidos_jugados": 5,
+        "pj_reales": 5,
+        "form_score": 100.0,
+        "form_local": 100.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 6
+        },
+        "ultimos5": {
+          "texto": "5V",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 3.5,
+          "goles_contra": 1.17,
+          "diferencia": 2.33
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 20.8,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20427",
+        "nombre": "Kentucky",
+        "pais": "EE.UU.",
+        "rating": 1592.84,
+        "rd": 169.11,
+        "partidos_jugados": 6,
+        "pj_reales": 6,
+        "form_score": 55.7,
+        "form_local": 62.8,
+        "form_visitante": 37.8,
+        "momentum": "stable",
+        "momentum_diff": -2.5,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "E",
+            "V",
+            "D",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 3.0,
+          "goles_contra": 1.14,
+          "diferencia": 1.86
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 11.6,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 78.6,
+        "prob_empate": 20.6,
+        "prob_visitante": 0.9
+      },
+      "diff_elo": 351.2,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401841594",
       "fecha": "2026-10-02T19:30:00-05:00",
       "fecha_display": "2026-10-02",
@@ -15398,7 +15398,7 @@
         "nombre": "Creighton",
         "pais": "EE.UU.",
         "rating": 1769.5,
-        "rd": 201.63199455368115,
+        "rd": 201.9011904632196,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 95.2,
@@ -15582,7 +15582,7 @@
         "nombre": "Cali",
         "pais": "Colombia",
         "rating": 1470.32,
-        "rd": 179.060268003693,
+        "rd": 179.3633033152309,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 39.9,
@@ -15650,7 +15650,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.3,
+        "overperformance": -2.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -15674,7 +15674,7 @@
         "nombre": "Correcaminos",
         "pais": "",
         "rating": 1533.83,
-        "rd": 229.72983133903247,
+        "rd": 229.9661936882361,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 60.5,
@@ -15747,7 +15747,7 @@
       "prediccion": {
         "prob_local": 64.2,
         "prob_empate": 23.1,
-        "prob_visitante": 12.6
+        "prob_visitante": 12.7
       },
       "diff_elo": 93.7,
       "confianza": 46.8
@@ -15765,7 +15765,7 @@
         "nombre": "Tepatitlán",
         "pais": "",
         "rating": 1323.09,
-        "rd": 209.0756255666875,
+        "rd": 209.33526681216338,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 27.6,
@@ -15802,7 +15802,7 @@
         "nombre": "Jaiba Brava",
         "pais": "",
         "rating": 1505.01,
-        "rd": 212.47173744451342,
+        "rd": 212.7272762131957,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 37.8,
@@ -16397,7 +16397,7 @@
         "nombre": "Seattle",
         "pais": "",
         "rating": 1603.23,
-        "rd": 186.0764902424015,
+        "rd": 186.36815635644442,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 68.3,
@@ -16469,7 +16469,7 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 69.4,
+        "prob_local": 69.3,
         "prob_empate": 23.1,
         "prob_visitante": 7.5
       },
@@ -16571,7 +16571,7 @@
         "nombre": "Marquense",
         "pais": "Guatemala",
         "rating": 1621.19,
-        "rd": 201.60063246671604,
+        "rd": 201.86987916710973,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 89.8,
@@ -16662,7 +16662,7 @@
         "nombre": "Washington",
         "pais": "EE.UU.",
         "rating": 1529.15,
-        "rd": 203.24239195237539,
+        "rd": 203.50949327839885,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 68.8,
@@ -16700,7 +16700,7 @@
         "nombre": "Wisconsin",
         "pais": "EE.UU.",
         "rating": 1861.35,
-        "rd": 209.75561334013375,
+        "rd": 210.0143966742882,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 47.1,
@@ -16792,7 +16792,7 @@
         "nombre": "Venados",
         "pais": "",
         "rating": 1422.14,
-        "rd": 211.66307615420382,
+        "rd": 211.91959003229337,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 37.8,
@@ -16845,7 +16845,7 @@
         "nombre": "Monterrey",
         "pais": "",
         "rating": 1645.61,
-        "rd": 169.00472628766727,
+        "rd": 169.32591894566056,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 50.0,

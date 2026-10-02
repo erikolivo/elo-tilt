@@ -6112,6 +6112,70 @@
         "overperformance_h": 1.4,
         "overperformance_a": 5.7
       }
+    },
+    {
+      "fixture_id": "401900591",
+      "fecha": "2026-10-02",
+      "fecha_hora_espn": "2026-10-02T21:00Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "2662",
+        "name": "St Kitts & Nevis"
+      },
+      "equipo_visitante": {
+        "id": "2647",
+        "name": "Cuba"
+      },
+      "goles_local": 3,
+      "goles_visitante": 3,
+      "estadisticas": null,
+      "prediccion_previa": {
+        "fecha": "2026-10-02T16:00:00-05:00",
+        "prob_local": 51.6,
+        "prob_empate": 23.1,
+        "prob_visitante": 25.2,
+        "diff_elo": -25.6,
+        "pj_h": 21,
+        "pj_a": 24,
+        "rating_local": 1442.34,
+        "rating_visitante": 1467.96,
+        "overperformance_h": 55.4,
+        "overperformance_a": 44.8
+      }
+    },
+    {
+      "fixture_id": "401890751",
+      "fecha": "2026-10-02",
+      "fecha_hora_espn": "2026-10-02T20:00Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "usa.ncaa.m.1",
+      "equipo_local": {
+        "id": "5678",
+        "name": "DePaul"
+      },
+      "equipo_visitante": {
+        "id": "5640",
+        "name": "Akron"
+      },
+      "goles_local": 0,
+      "goles_visitante": 2,
+      "estadisticas": null,
+      "prediccion_previa": {
+        "fecha": "2026-10-02T15:00:00-05:00",
+        "prob_local": 33.3,
+        "prob_empate": 23.1,
+        "prob_visitante": 43.6,
+        "diff_elo": -198.0,
+        "pj_h": 4,
+        "pj_a": 7,
+        "rating_local": 1611.89,
+        "rating_visitante": 1809.87,
+        "overperformance_h": -4.5,
+        "overperformance_a": 8.9
+      }
     }
   ]
 }
