@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-02T23:28:42.295948Z",
+  "generado": "2026-10-03T03:24:35.579556Z",
   "fecha_consulta": "2026-10-02",
   "total": 194,
   "predicciones": [
@@ -13485,6 +13485,96 @@
       "confianza": 75.7
     },
     {
+      "fixture_id": "401928085",
+      "fecha": "2026-10-02T19:00:00-05:00",
+      "fecha_display": "2026-10-02",
+      "hora": "19:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "21824",
+        "nombre": "Papua New Guinea",
+        "pais": "",
+        "rating": 1417.43,
+        "rd": 91.83,
+        "partidos_jugados": 27,
+        "pj_reales": 4,
+        "form_score": 100.0,
+        "form_local": 100.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 4
+        },
+        "ultimos5": {
+          "texto": "4V",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 3.75,
+          "goles_contra": 0.5,
+          "diferencia": 3.25
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 38.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "133875",
+        "nombre": "Vanuatu",
+        "pais": "",
+        "rating": 1437.21,
+        "rd": 211.96,
+        "partidos_jugados": 4,
+        "pj_reales": 1,
+        "form_score": 49.4,
+        "form_local": 100.0,
+        "form_visitante": 40.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 1E",
+          "resultados": [
+            "D",
+            "V",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.75,
+          "goles_contra": 0.75,
+          "diferencia": 1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.6,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 57.9,
+        "prob_empate": 23.1,
+        "prob_visitante": 18.9
+      },
+      "diff_elo": -19.8,
+      "confianza": 9.9
+    },
+    {
       "fixture_id": "401913267",
       "fecha": "2026-10-02T19:00:00-05:00",
       "fecha_display": "2026-10-02",
@@ -13915,96 +14005,6 @@
       },
       "diff_elo": -146.9,
       "confianza": 73.4
-    },
-    {
-      "fixture_id": "401928085",
-      "fecha": "2026-10-02T19:00:00-05:00",
-      "fecha_display": "2026-10-02",
-      "hora": "19:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "21824",
-        "nombre": "Papua New Guinea",
-        "pais": "",
-        "rating": 1417.43,
-        "rd": 91.83,
-        "partidos_jugados": 27,
-        "pj_reales": 4,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 4
-        },
-        "ultimos5": {
-          "texto": "4V",
-          "resultados": [
-            "V",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 3.75,
-          "goles_contra": 0.5,
-          "diferencia": 3.25
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 38.4,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "133875",
-        "nombre": "Vanuatu",
-        "pais": "",
-        "rating": 1437.21,
-        "rd": 211.96,
-        "partidos_jugados": 4,
-        "pj_reales": 1,
-        "form_score": 49.4,
-        "form_local": 100.0,
-        "form_visitante": 40.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 1D 1E",
-          "resultados": [
-            "D",
-            "V",
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.75,
-          "goles_contra": 0.75,
-          "diferencia": 1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.6,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 57.9,
-        "prob_empate": 23.1,
-        "prob_visitante": 18.9
-      },
-      "diff_elo": -19.8,
-      "confianza": 9.9
     },
     {
       "fixture_id": "401907804",
