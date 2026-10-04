@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-04T22:39:30.039882Z",
+  "generado": "2026-10-04T23:48:48.453128Z",
   "fecha_consulta": "2026-10-04",
   "total": 194,
   "predicciones": [
@@ -15916,6 +15916,98 @@
       "confianza": 84.7
     },
     {
+      "fixture_id": "401899717",
+      "fecha": "2026-10-04T18:00:00-05:00",
+      "fecha_display": "2026-10-04",
+      "hora": "18:00",
+      "liga": "slv.1",
+      "liga_pais": "El Salvador",
+      "liga_slug": "slv.1",
+      "equipo_local": {
+        "id": "131295",
+        "nombre": "Inter ST",
+        "pais": "El Salvador",
+        "rating": 1667.85,
+        "rd": 213.17,
+        "partidos_jugados": 5,
+        "pj_reales": 5,
+        "form_score": 57.1,
+        "form_local": 100.0,
+        "form_visitante": 49.4,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "4V 1D",
+          "resultados": [
+            "D",
+            "V",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.2,
+          "goles_contra": 0.6,
+          "diferencia": 1.6
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 13.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "21987",
+        "nombre": "Fuerte SF",
+        "pais": "El Salvador",
+        "rating": 1360.42,
+        "rd": 172.62,
+        "partidos_jugados": 6,
+        "pj_reales": 6,
+        "form_score": 19.9,
+        "form_local": 37.8,
+        "form_visitante": 27.8,
+        "momentum": "stable",
+        "momentum_diff": -1.1,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 3D 1E",
+          "resultados": [
+            "D",
+            "E",
+            "D",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.33,
+          "goles_contra": 1.33,
+          "diferencia": -1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.6,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 77.8,
+        "prob_empate": 21.3,
+        "prob_visitante": 0.9
+      },
+      "diff_elo": 307.4,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401854020",
       "fecha": "2026-10-04T18:00:00-05:00",
       "fecha_display": "2026-10-04",
@@ -16264,98 +16356,6 @@
       },
       "diff_elo": 19.2,
       "confianza": 9.6
-    },
-    {
-      "fixture_id": "401899717",
-      "fecha": "2026-10-04T18:00:00-05:00",
-      "fecha_display": "2026-10-04",
-      "hora": "18:00",
-      "liga": "slv.1",
-      "liga_pais": "El Salvador",
-      "liga_slug": "slv.1",
-      "equipo_local": {
-        "id": "131295",
-        "nombre": "Inter ST",
-        "pais": "El Salvador",
-        "rating": 1667.85,
-        "rd": 213.17,
-        "partidos_jugados": 5,
-        "pj_reales": 5,
-        "form_score": 57.1,
-        "form_local": 100.0,
-        "form_visitante": 49.4,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "4V 1D",
-          "resultados": [
-            "D",
-            "V",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.2,
-          "goles_contra": 0.6,
-          "diferencia": 1.6
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 13.8,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "21987",
-        "nombre": "Fuerte SF",
-        "pais": "El Salvador",
-        "rating": 1360.42,
-        "rd": 172.62,
-        "partidos_jugados": 6,
-        "pj_reales": 6,
-        "form_score": 19.9,
-        "form_local": 37.8,
-        "form_visitante": 27.8,
-        "momentum": "stable",
-        "momentum_diff": -1.1,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "D",
-            "E",
-            "D",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.33,
-          "goles_contra": 1.33,
-          "diferencia": -1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -1.6,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 77.8,
-        "prob_empate": 21.3,
-        "prob_visitante": 0.9
-      },
-      "diff_elo": 307.4,
-      "confianza": 100.0
     },
     {
       "fixture_id": "401898572",
@@ -16916,7 +16916,7 @@
         "nombre": "Estudiantes RC",
         "pais": "",
         "rating": 1280.06,
-        "rd": 193.76914504073034,
+        "rd": 194.04923970851192,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 20.9,
@@ -17008,7 +17008,7 @@
         "nombre": "Guadalajara",
         "pais": "",
         "rating": 1594.55,
-        "rd": 185.99778544033546,
+        "rd": 186.28956506027114,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 72.0,
@@ -17046,7 +17046,7 @@
         "nombre": "América",
         "pais": "",
         "rating": 1865.93,
-        "rd": 189.95788364860047,
+        "rd": 190.2435801829273,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 97.3,
@@ -17080,7 +17080,7 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 26.5,
+        "prob_local": 26.6,
         "prob_empate": 23.1,
         "prob_visitante": 50.3
       },
@@ -17138,7 +17138,7 @@
         "nombre": "Suchitepeque",
         "pais": "Guatemala",
         "rating": 1288.96,
-        "rd": 210.15243670279648,
+        "rd": 210.4107664071175,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 45.5,
@@ -17221,7 +17221,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.0,
+        "overperformance": -0.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -17259,7 +17259,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.9,
+        "overperformance": -3.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -17283,7 +17283,7 @@
         "nombre": "Pachuca",
         "pais": "",
         "rating": 1369.77,
-        "rd": 197.71842443381558,
+        "rd": 197.993005414296,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 0.0,
@@ -17317,7 +17317,7 @@
         "nombre": "Toluca",
         "pais": "",
         "rating": 1737.21,
-        "rd": 173.79391317459178,
+        "rd": 174.10617732221755,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 100.0,
@@ -17343,7 +17343,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 37.6,
+        "overperformance": 37.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -17367,7 +17367,7 @@
         "nombre": "Llaneros FC",
         "pais": "",
         "rating": 1460.55,
-        "rd": 180.03988625493074,
+        "rd": 180.34132567620756,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 26.1,
@@ -17405,7 +17405,7 @@
         "nombre": "América Cali",
         "pais": "",
         "rating": 1674.17,
-        "rd": 185.74542503407264,
+        "rd": 186.03758099007314,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 67.1,
@@ -17435,7 +17435,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.5,
+        "overperformance": 6.6,
         "vol": 0.06
       },
       "prediccion": {
