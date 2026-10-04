@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-04T20:48:34.221316Z",
+  "generado": "2026-10-04T22:39:30.039882Z",
   "fecha_consulta": "2026-10-04",
   "total": 194,
   "predicciones": [
@@ -15738,6 +15738,98 @@
       "confianza": 0.4
     },
     {
+      "fixture_id": "401923691",
+      "fecha": "2026-10-04T17:30:00-05:00",
+      "fecha_display": "2026-10-04",
+      "hora": "17:30",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "9903",
+        "nombre": "Racing (M)",
+        "pais": "",
+        "rating": 1476.34,
+        "rd": 159.16,
+        "partidos_jugados": 7,
+        "pj_reales": 7,
+        "form_score": 40.7,
+        "form_local": 100.0,
+        "form_visitante": 13.4,
+        "momentum": "stable",
+        "momentum_diff": -2.2,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "D",
+            "V",
+            "D",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.29,
+          "goles_contra": 1.0,
+          "diferencia": 0.29
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 3.7,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "2683",
+        "nombre": "Peñarol",
+        "pais": "",
+        "rating": 1716.61,
+        "rd": 163.82,
+        "partidos_jugados": 7,
+        "pj_reales": 7,
+        "form_score": 67.9,
+        "form_local": 49.4,
+        "form_visitante": 72.2,
+        "momentum": "stable",
+        "momentum_diff": -1.8,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "E",
+            "V",
+            "V",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.86,
+          "goles_contra": 0.57,
+          "diferencia": 1.29
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 3.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 29.7,
+        "prob_empate": 23.1,
+        "prob_visitante": 47.2
+      },
+      "diff_elo": -240.3,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401925303",
       "fecha": "2026-10-04T17:30:00-05:00",
       "fecha_display": "2026-10-04",
@@ -15824,98 +15916,6 @@
       "confianza": 84.7
     },
     {
-      "fixture_id": "401923691",
-      "fecha": "2026-10-04T17:30:00-05:00",
-      "fecha_display": "2026-10-04",
-      "hora": "17:30",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "9903",
-        "nombre": "Racing (M)",
-        "pais": "",
-        "rating": 1476.34,
-        "rd": 159.16,
-        "partidos_jugados": 7,
-        "pj_reales": 7,
-        "form_score": 40.7,
-        "form_local": 100.0,
-        "form_visitante": 13.4,
-        "momentum": "stable",
-        "momentum_diff": -2.2,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "D",
-            "V",
-            "D",
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.29,
-          "goles_contra": 1.0,
-          "diferencia": 0.29
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 4.5,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "2683",
-        "nombre": "Peñarol",
-        "pais": "",
-        "rating": 1716.61,
-        "rd": 163.82,
-        "partidos_jugados": 7,
-        "pj_reales": 7,
-        "form_score": 67.9,
-        "form_local": 49.4,
-        "form_visitante": 72.2,
-        "momentum": "stable",
-        "momentum_diff": -1.8,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 1D 2E",
-          "resultados": [
-            "E",
-            "V",
-            "V",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.86,
-          "goles_contra": 0.57,
-          "diferencia": 1.29
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 3.5,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 29.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 47.2
-      },
-      "diff_elo": -240.3,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401854020",
       "fecha": "2026-10-04T18:00:00-05:00",
       "fecha_display": "2026-10-04",
@@ -15958,7 +15958,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.5,
+        "overperformance": 3.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16080,7 +16080,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -15.1,
+        "overperformance": -16.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -16104,7 +16104,7 @@
         "nombre": "Guadalajara",
         "pais": "",
         "rating": 1594.55,
-        "rd": 185.70554737829758,
+        "rd": 185.99778544033546,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 100.0,
@@ -16138,7 +16138,7 @@
         "nombre": "Juárez",
         "pais": "",
         "rating": 1443.65,
-        "rd": 181.97186592284527,
+        "rd": 182.27009038533424,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 50.0,
@@ -16166,7 +16166,7 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 72.7,
+        "prob_local": 72.6,
         "prob_empate": 23.1,
         "prob_visitante": 4.2
       },
@@ -16438,7 +16438,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.6,
+        "overperformance": -2.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -16676,7 +16676,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.8,
+        "overperformance": -0.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16775,10 +16775,10 @@
         "id": "2681",
         "nombre": "Bolívar",
         "pais": "Bolivia",
-        "rating": 1677.26,
-        "rd": 120.33,
-        "partidos_jugados": 13,
-        "pj_reales": 13,
+        "rating": 1661.38,
+        "rd": 115.75,
+        "partidos_jugados": 14,
+        "pj_reales": 14,
         "form_score": 96.0,
         "form_local": 93.8,
         "form_visitante": 83.3,
@@ -16806,16 +16806,16 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 10.6,
+        "overperformance": 11.7,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 41.5,
+        "prob_local": 43.1,
         "prob_empate": 23.1,
-        "prob_visitante": 35.4
+        "prob_visitante": 33.7
       },
-      "diff_elo": -73.2,
-      "confianza": 36.6
+      "diff_elo": -57.3,
+      "confianza": 28.7
     },
     {
       "fixture_id": "401900575",
@@ -16916,7 +16916,7 @@
         "nombre": "Estudiantes RC",
         "pais": "",
         "rating": 1280.06,
-        "rd": 193.48864490760087,
+        "rd": 193.76914504073034,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 20.9,
@@ -16984,7 +16984,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.8,
+        "overperformance": -8.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -17008,7 +17008,7 @@
         "nombre": "Guadalajara",
         "pais": "",
         "rating": 1594.55,
-        "rd": 185.70554737829758,
+        "rd": 185.99778544033546,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 72.0,
@@ -17046,7 +17046,7 @@
         "nombre": "América",
         "pais": "",
         "rating": 1865.93,
-        "rd": 189.67175677915938,
+        "rd": 189.95788364860047,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 97.3,
@@ -17138,7 +17138,7 @@
         "nombre": "Suchitepeque",
         "pais": "Guatemala",
         "rating": 1288.96,
-        "rd": 209.89378905583462,
+        "rd": 210.15243670279648,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 45.5,
@@ -17283,7 +17283,7 @@
         "nombre": "Pachuca",
         "pais": "",
         "rating": 1369.77,
-        "rd": 197.4434615989991,
+        "rd": 197.71842443381558,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 0.0,
@@ -17317,7 +17317,7 @@
         "nombre": "Toluca",
         "pais": "",
         "rating": 1737.21,
-        "rd": 173.4810869556668,
+        "rd": 173.79391317459178,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 100.0,
@@ -17347,7 +17347,7 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 14.1,
+        "prob_local": 14.2,
         "prob_empate": 23.1,
         "prob_visitante": 62.7
       },
@@ -17367,7 +17367,7 @@
         "nombre": "Llaneros FC",
         "pais": "",
         "rating": 1460.55,
-        "rd": 179.7379412887686,
+        "rd": 180.03988625493074,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 26.1,
@@ -17405,7 +17405,7 @@
         "nombre": "América Cali",
         "pais": "",
         "rating": 1674.17,
-        "rd": 185.45280882623095,
+        "rd": 185.74542503407264,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 67.1,
@@ -17435,13 +17435,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.6,
+        "overperformance": 6.5,
         "vol": 0.06
       },
       "prediccion": {
         "prob_local": 30.4,
         "prob_empate": 23.1,
-        "prob_visitante": 46.5
+        "prob_visitante": 46.4
       },
       "diff_elo": -213.6,
       "confianza": 100.0
@@ -17494,10 +17494,10 @@
         "id": "2649",
         "nombre": "Dominican Rep",
         "pais": "",
-        "rating": 1529.72,
-        "rd": 104.69,
-        "partidos_jugados": 22,
-        "pj_reales": 2,
+        "rating": 1507.48,
+        "rd": 101.29,
+        "partidos_jugados": 23,
+        "pj_reales": 3,
         "form_score": 50.0,
         "form_local": 50.0,
         "form_visitante": 50.0,
@@ -17523,12 +17523,12 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 37.7,
+        "prob_local": 40.2,
         "prob_empate": 23.1,
-        "prob_visitante": 39.2
+        "prob_visitante": 36.7
       },
-      "diff_elo": -105.2,
-      "confianza": 52.6
+      "diff_elo": -82.9,
+      "confianza": 41.5
     },
     {
       "fixture_id": "401898976",
@@ -17573,7 +17573,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.3,
+        "overperformance": -2.7,
         "vol": 0.06
       },
       "equipo_visitante": {
