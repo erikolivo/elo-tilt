@@ -1,7 +1,7 @@
 {
-  "generado": "2026-10-04T10:48:39.032069Z",
+  "generado": "2026-10-04T11:42:27.460592Z",
   "fecha_consulta": "2026-10-04",
-  "total": 193,
+  "total": 194,
   "predicciones": [
     {
       "fixture_id": "401927901",
@@ -3386,6 +3386,92 @@
       "confianza": 36.9
     },
     {
+      "fixture_id": "401918759",
+      "fecha": "2026-10-04T11:00:00-05:00",
+      "fecha_display": "2026-10-04",
+      "hora": "11:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "131419",
+        "nombre": "Melilla",
+        "pais": "",
+        "rating": 1423.31,
+        "rd": 260.49,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 31.1,
+        "form_local": 50.0,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1D 1E",
+          "resultados": [
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 4.0,
+          "diferencia": -4.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -11.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "133832",
+        "nombre": "Pinatarens",
+        "pais": "",
+        "rating": 1576.69,
+        "rd": 260.49,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 68.9,
+        "form_local": 100.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1E",
+          "resultados": [
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 4.0,
+          "goles_contra": 0.0,
+          "diferencia": 4.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 11.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 38.9,
+        "prob_empate": 23.1,
+        "prob_visitante": 38.0
+      },
+      "diff_elo": -153.4,
+      "confianza": 76.7
+    },
+    {
       "fixture_id": "401918761",
       "fecha": "2026-10-04T11:00:00-05:00",
       "fecha_display": "2026-10-04",
@@ -3968,7 +4054,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.5,
+        "overperformance": -2.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4344,7 +4430,7 @@
         "nombre": "Angel City",
         "pais": "",
         "rating": 1498.87,
-        "rd": 191.71219682444027,
+        "rd": 191.99528288949074,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 58.4,
@@ -5632,7 +5718,7 @@
         "nombre": "Samford",
         "pais": "EE.UU.",
         "rating": 1633.93,
-        "rd": 217.7218541588341,
+        "rd": 217.97118819312843,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 41.6,
@@ -7685,7 +7771,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -11.1,
+        "overperformance": -11.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -8353,7 +8439,7 @@
         "nombre": "Huracán ",
         "pais": "",
         "rating": 1451.9,
-        "rd": 195.39403379553198,
+        "rd": 195.6717840222223,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 46.9,
@@ -8660,7 +8746,7 @@
         "nombre": "Dorados",
         "pais": "",
         "rating": 1298.5,
-        "rd": 208.71463566833384,
+        "rd": 208.9746994346475,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 13.4,
@@ -9119,7 +9205,7 @@
         "nombre": "Hou Christian",
         "pais": "EE.UU.",
         "rating": 1411.2,
-        "rd": 215.8529872490958,
+        "rd": 216.10448590803531,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 59.6,
@@ -10184,7 +10270,7 @@
         "nombre": "Little Rock",
         "pais": "EE.UU.",
         "rating": 1328.52,
-        "rd": 206.71716907176338,
+        "rd": 206.9797776005584,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 12.5,
@@ -12008,7 +12094,7 @@
         "nombre": "Hartford",
         "pais": "",
         "rating": 1727.34,
-        "rd": 235.25363769900707,
+        "rd": 235.4844095785945,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 94.9,
@@ -12045,7 +12131,7 @@
         "nombre": "Louisville",
         "pais": "",
         "rating": 1564.59,
-        "rd": 196.9325711312118,
+        "rd": 197.208172837704,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 44.9,
@@ -12375,7 +12461,7 @@
         "nombre": "Pasto",
         "pais": "",
         "rating": 1317.74,
-        "rd": 172.76618942458828,
+        "rd": 173.08025545348158,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 19.6,
@@ -13295,7 +13381,7 @@
         "nombre": "Chicago",
         "pais": "",
         "rating": 1415.88,
-        "rd": 203.6054248703614,
+        "rd": 203.87207721764005,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 28.9,
@@ -13561,7 +13647,7 @@
         "nombre": "Talleres ",
         "pais": "",
         "rating": 1398.01,
-        "rd": 199.09093602415302,
+        "rd": 199.36358125844177,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 40.2,
@@ -14059,7 +14145,7 @@
         "nombre": "UC Davis",
         "pais": "EE.UU.",
         "rating": 1382.11,
-        "rd": 216.53307981001163,
+        "rd": 216.78377276627148,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 22.2,
@@ -14847,7 +14933,7 @@
         "nombre": "Cúcuta",
         "pais": "",
         "rating": 1472.85,
-        "rd": 164.8474109725668,
+        "rd": 165.17658922975812,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 47.8,
@@ -14939,7 +15025,7 @@
         "nombre": "Inter Bogotá",
         "pais": "",
         "rating": 1489.91,
-        "rd": 165.9084151741285,
+        "rd": 166.2354379942517,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 49.6,
@@ -14977,7 +15063,7 @@
         "nombre": "Once Caldas",
         "pais": "",
         "rating": 1444.62,
-        "rd": 159.4243327693649,
+        "rd": 159.76461710139182,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 69.3,
@@ -15023,13 +15109,13 @@
       "fecha": "2026-10-04T16:15:00-05:00",
       "fecha_display": "2026-10-04",
       "hora": "16:15",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
+      "liga": "bol.copa",
+      "liga_pais": "Bolivia",
+      "liga_slug": "bol.copa",
       "equipo_local": {
         "id": "9497",
         "nombre": "Guabirá",
-        "pais": "",
+        "pais": "Bolivia",
         "rating": 1459.24,
         "rd": 136.67,
         "partidos_jugados": 11,
@@ -15067,7 +15153,7 @@
       "equipo_visitante": {
         "id": "2682",
         "nombre": "Oriente",
-        "pais": "",
+        "pais": "Bolivia",
         "rating": 1549.18,
         "rd": 146.06,
         "partidos_jugados": 8,
@@ -15427,7 +15513,7 @@
         "nombre": "Phoenix",
         "pais": "",
         "rating": 1664.32,
-        "rd": 203.6620008078239,
+        "rd": 203.9285525397406,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 76.0,
@@ -15480,7 +15566,7 @@
         "nombre": "Cal Poly",
         "pais": "EE.UU.",
         "rating": 1520.52,
-        "rd": 205.74186704370305,
+        "rd": 206.00567491016218,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 79.3,
@@ -16018,7 +16104,7 @@
         "nombre": "Guadalajara",
         "pais": "",
         "rating": 1594.55,
-        "rd": 184.8260607765186,
+        "rd": 185.1196872399078,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 100.0,
@@ -16052,7 +16138,7 @@
         "nombre": "Juárez",
         "pais": "",
         "rating": 1443.65,
-        "rd": 181.074245552851,
+        "rd": 181.3739459353799,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 50.0,
@@ -16168,7 +16254,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.0,
+        "overperformance": -1.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -16830,7 +16916,7 @@
         "nombre": "Estudiantes RC",
         "pais": "",
         "rating": 1280.06,
-        "rd": 192.6446939920014,
+        "rd": 192.92642116855794,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 20.9,
@@ -16922,7 +17008,7 @@
         "nombre": "Guadalajara",
         "pais": "",
         "rating": 1594.55,
-        "rd": 184.8260607765186,
+        "rd": 185.1196872399078,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 72.0,
@@ -16960,7 +17046,7 @@
         "nombre": "América",
         "pais": "",
         "rating": 1865.93,
-        "rd": 188.81077458133754,
+        "rd": 189.09820421825086,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 97.3,
@@ -16996,7 +17082,7 @@
       "prediccion": {
         "prob_local": 26.5,
         "prob_empate": 23.1,
-        "prob_visitante": 50.4
+        "prob_visitante": 50.3
       },
       "diff_elo": -271.4,
       "confianza": 100.0
@@ -17052,7 +17138,7 @@
         "nombre": "Suchitepeque",
         "pais": "Guatemala",
         "rating": 1288.96,
-        "rd": 209.1159266543133,
+        "rd": 209.3755352193752,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 45.5,
@@ -17197,7 +17283,7 @@
         "nombre": "Pachuca",
         "pais": "",
         "rating": 1369.77,
-        "rd": 196.61626593700333,
+        "rd": 196.8923839649605,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 0.0,
@@ -17231,7 +17317,7 @@
         "nombre": "Toluca",
         "pais": "",
         "rating": 1737.21,
-        "rd": 172.5392052713408,
+        "rd": 172.8537360917715,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 100.0,
@@ -17281,7 +17367,7 @@
         "nombre": "Llaneros FC",
         "pais": "",
         "rating": 1460.55,
-        "rd": 178.82904749182703,
+        "rd": 179.1325244917787,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 26.1,
@@ -17319,7 +17405,7 @@
         "nombre": "América Cali",
         "pais": "",
         "rating": 1674.17,
-        "rd": 184.57217678428512,
+        "rd": 184.86618690944843,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 67.1,
