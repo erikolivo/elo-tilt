@@ -1,7 +1,7 @@
 {
-  "generado": "2026-10-03T23:29:13.324416Z",
+  "generado": "2026-10-04T03:50:50.253815Z",
   "fecha_consulta": "2026-10-04",
-  "total": 191,
+  "total": 192,
   "predicciones": [
     {
       "fixture_id": "401927901",
@@ -50,7 +50,7 @@
         "nombre": "CSU Craiova",
         "pais": "",
         "rating": 1472.38,
-        "rd": 209.36556370728675,
+        "rd": 209.62483719834708,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 35.6,
@@ -3641,7 +3641,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.5,
+        "overperformance": 0.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -3695,7 +3695,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.3,
+        "overperformance": 2.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3825,7 +3825,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.3,
+        "overperformance": 2.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -3834,6 +3834,95 @@
         "prob_visitante": 51.0
       },
       "diff_elo": -270.5,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401928356",
+      "fecha": "2026-10-04T11:00:00-05:00",
+      "fecha_display": "2026-10-04",
+      "hora": "11:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20420",
+        "nombre": "Temple",
+        "pais": "EE.UU.",
+        "rating": 1599.0,
+        "rd": 154.98,
+        "partidos_jugados": 9,
+        "pj_reales": 9,
+        "form_score": 66.1,
+        "form_local": 78.6,
+        "form_visitante": 64.9,
+        "momentum": "stable",
+        "momentum_diff": -0.5,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3V 2E",
+          "resultados": [
+            "E",
+            "E",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.7,
+          "goles_contra": 0.7,
+          "diferencia": 1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.7,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "132330",
+        "nombre": "Holy Family",
+        "pais": "EE.UU.",
+        "rating": 1382.08,
+        "rd": 230.62,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 31.1,
+        "form_local": 50.0,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1D 1E",
+          "resultados": [
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 2.5,
+          "diferencia": -2.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -11.3,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 76.4,
+        "prob_empate": 22.7,
+        "prob_visitante": 1.0
+      },
+      "diff_elo": 216.9,
       "confianza": 100.0
     },
     {
@@ -4155,7 +4244,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.5,
+        "overperformance": -9.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4255,7 +4344,7 @@
         "nombre": "Angel City",
         "pais": "",
         "rating": 1498.87,
-        "rd": 190.8604193895764,
+        "rd": 191.1447669441349,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 58.4,
@@ -4929,7 +5018,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.1,
+        "overperformance": -1.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -5443,7 +5532,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.7,
+        "overperformance": -4.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5481,7 +5570,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.5,
+        "overperformance": -1.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -5543,7 +5632,7 @@
         "nombre": "Samford",
         "pais": "EE.UU.",
         "rating": 1633.93,
-        "rd": 216.9721329260279,
+        "rd": 217.22232751361793,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 41.6,
@@ -5579,7 +5668,7 @@
       "prediccion": {
         "prob_local": 70.4,
         "prob_empate": 23.1,
-        "prob_visitante": 6.4
+        "prob_visitante": 6.5
       },
       "diff_elo": 148.1,
       "confianza": 74.0
@@ -5811,7 +5900,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.6,
+        "overperformance": -1.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5995,7 +6084,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.6,
+        "overperformance": -5.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -6401,7 +6490,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.7,
+        "overperformance": 1.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -6585,13 +6674,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -11.4,
+        "overperformance": -11.0,
         "vol": 0.06
       },
       "prediccion": {
         "prob_local": 69.6,
         "prob_empate": 23.1,
-        "prob_visitante": 7.2
+        "prob_visitante": 7.3
       },
       "diff_elo": 146.5,
       "confianza": 73.2
@@ -6677,7 +6766,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.3,
+        "overperformance": 4.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -7007,7 +7096,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.8,
+        "overperformance": -2.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7137,7 +7226,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -16.4,
+        "overperformance": -16.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -7191,7 +7280,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.3,
+        "overperformance": -1.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7650,7 +7739,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.5,
+        "overperformance": 0.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8240,7 +8329,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.2,
+        "overperformance": 6.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -8264,7 +8353,7 @@
         "nombre": "Huracán ",
         "pais": "",
         "rating": 1451.9,
-        "rd": 194.55840404423634,
+        "rd": 194.8373455059118,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 46.9,
@@ -8571,7 +8660,7 @@
         "nombre": "Dorados",
         "pais": "",
         "rating": 1298.5,
-        "rd": 207.93249278854313,
+        "rd": 208.19353356647142,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 13.4,
@@ -9030,7 +9119,7 @@
         "nombre": "Hou Christian",
         "pais": "EE.UU.",
         "rating": 1411.2,
-        "rd": 215.09672691304388,
+        "rd": 215.3491087836736,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 59.6,
@@ -9573,7 +9662,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.8,
+        "overperformance": -5.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9757,7 +9846,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.4,
+        "overperformance": 3.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9795,7 +9884,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.8,
+        "overperformance": -8.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -9849,7 +9938,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.9,
+        "overperformance": 9.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9941,7 +10030,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.6,
+        "overperformance": -6.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10095,7 +10184,7 @@
         "nombre": "Little Rock",
         "pais": "EE.UU.",
         "rating": 1328.52,
-        "rd": 205.92733414834981,
+        "rd": 206.19094862767074,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 12.5,
@@ -11919,7 +12008,7 @@
         "nombre": "Hartford",
         "pais": "",
         "rating": 1727.34,
-        "rd": 234.5599597943455,
+        "rd": 234.79141347734276,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 94.9,
@@ -11956,7 +12045,7 @@
         "nombre": "Louisville",
         "pais": "",
         "rating": 1564.59,
-        "rd": 196.10344205913879,
+        "rd": 196.38020737609466,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 44.9,
@@ -11992,7 +12081,7 @@
       "prediccion": {
         "prob_local": 73.0,
         "prob_empate": 23.1,
-        "prob_visitante": 3.8
+        "prob_visitante": 3.9
       },
       "diff_elo": 162.8,
       "confianza": 81.4
@@ -12170,7 +12259,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.4,
+        "overperformance": -0.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -12194,7 +12283,7 @@
         "nombre": "Pasto",
         "pais": "",
         "rating": 1317.74,
-        "rd": 171.820546936749,
+        "rd": 172.13633831702498,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 19.6,
@@ -12262,7 +12351,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.1,
+        "overperformance": -0.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -12316,7 +12405,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.5,
+        "overperformance": 0.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -12354,7 +12443,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.8,
+        "overperformance": -5.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -12630,7 +12719,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.6,
+        "overperformance": 6.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -12722,7 +12811,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.9,
+        "overperformance": 7.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -12776,7 +12865,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.4,
+        "overperformance": -5.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -13052,7 +13141,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 17.6,
+        "overperformance": 17.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -13114,7 +13203,7 @@
         "nombre": "Chicago",
         "pais": "",
         "rating": 1415.88,
-        "rd": 202.80336422124597,
+        "rd": 203.0710697560102,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 28.9,
@@ -13380,7 +13469,7 @@
         "nombre": "Talleres ",
         "pais": "",
         "rating": 1398.01,
-        "rd": 198.27075082149574,
+        "rd": 198.54452235339448,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 40.2,
@@ -13878,7 +13967,7 @@
         "nombre": "UC Davis",
         "pais": "EE.UU.",
         "rating": 1382.11,
-        "rd": 215.7792534135294,
+        "rd": 216.03082114936683,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 22.2,
@@ -14458,7 +14547,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.1,
+        "overperformance": -1.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -14512,7 +14601,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -18.0,
+        "overperformance": -18.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -14556,7 +14645,7 @@
       "prediccion": {
         "prob_local": 26.6,
         "prob_empate": 23.1,
-        "prob_visitante": 50.2
+        "prob_visitante": 50.3
       },
       "diff_elo": -222.3,
       "confianza": 100.0
@@ -14642,7 +14731,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 15.5,
+        "overperformance": 15.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -14666,7 +14755,7 @@
         "nombre": "Cúcuta",
         "pais": "",
         "rating": 1472.85,
-        "rd": 163.8559084339182,
+        "rd": 164.18707456411573,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 47.8,
@@ -14696,7 +14785,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.3,
+        "overperformance": 1.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -14758,7 +14847,7 @@
         "nombre": "Inter Bogotá",
         "pais": "",
         "rating": 1489.91,
-        "rd": 164.92345608476023,
+        "rd": 165.25242808047196,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 49.6,
@@ -14788,7 +14877,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.1,
+        "overperformance": -1.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -14796,7 +14885,7 @@
         "nombre": "Once Caldas",
         "pais": "",
         "rating": 1444.62,
-        "rd": 158.39909369426883,
+        "rd": 158.74157578203292,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 69.3,
@@ -14826,7 +14915,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.0,
+        "overperformance": -0.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -14918,7 +15007,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.6,
+        "overperformance": 1.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -15246,7 +15335,7 @@
         "nombre": "Phoenix",
         "pais": "",
         "rating": 1664.32,
-        "rd": 202.86024418136486,
+        "rd": 203.12784801014033,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 76.0,
@@ -15299,7 +15388,7 @@
         "nombre": "Cal Poly",
         "pais": "EE.UU.",
         "rating": 1520.52,
-        "rd": 204.94840602683604,
+        "rd": 205.21323391414964,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 79.3,
@@ -15599,7 +15688,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.9,
+        "overperformance": 2.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -15637,7 +15726,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.7,
+        "overperformance": 2.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -15837,7 +15926,7 @@
         "nombre": "Guadalajara",
         "pais": "",
         "rating": 1594.55,
-        "rd": 183.9423691193999,
+        "rd": 184.23740396264137,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 100.0,
@@ -15871,7 +15960,7 @@
         "nombre": "Juárez",
         "pais": "",
         "rating": 1443.65,
-        "rd": 180.17215328020694,
+        "rd": 180.47335171504497,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 50.0,
@@ -15949,7 +16038,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.1,
+        "overperformance": 2.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -15987,7 +16076,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.1,
+        "overperformance": -1.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -16041,7 +16130,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 12.4,
+        "overperformance": 13.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16355,7 +16444,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.0,
+        "overperformance": -2.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -16409,7 +16498,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.4,
+        "overperformance": -0.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16447,7 +16536,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.1,
+        "overperformance": 0.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -16501,7 +16590,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.3,
+        "overperformance": -2.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16539,13 +16628,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 10.1,
+        "overperformance": 10.0,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 41.5,
+        "prob_local": 42.5,
         "prob_empate": 23.1,
-        "prob_visitante": 35.3
+        "prob_visitante": 34.3
       },
       "diff_elo": -73.2,
       "confianza": 36.6
@@ -16741,7 +16830,7 @@
         "nombre": "Guadalajara",
         "pais": "",
         "rating": 1594.55,
-        "rd": 183.9423691193999,
+        "rd": 184.23740396264137,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 72.0,
@@ -16779,7 +16868,7 @@
         "nombre": "América",
         "pais": "",
         "rating": 1865.93,
-        "rd": 187.94584825506715,
+        "rd": 188.2345986179995,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 97.3,
@@ -16863,7 +16952,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.2,
+        "overperformance": -8.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16871,7 +16960,7 @@
         "nombre": "Suchitepeque",
         "pais": "Guatemala",
         "rating": 1288.96,
-        "rd": 208.33515996290467,
+        "rd": 208.59574023617253,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 45.5,
@@ -16900,7 +16989,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.8,
+        "overperformance": -5.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -16954,7 +17043,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.7,
+        "overperformance": 0.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16992,7 +17081,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.7,
+        "overperformance": -5.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -17016,7 +17105,7 @@
         "nombre": "Pachuca",
         "pais": "",
         "rating": 1369.77,
-        "rd": 195.7855753977432,
+        "rd": 196.06286330210625,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 0.0,
@@ -17050,7 +17139,7 @@
         "nombre": "Toluca",
         "pais": "",
         "rating": 1737.21,
-        "rd": 171.59215360852642,
+        "rd": 171.908417202969,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 100.0,
@@ -17100,7 +17189,7 @@
         "nombre": "Llaneros FC",
         "pais": "",
         "rating": 1460.55,
-        "rd": 177.91551060810696,
+        "rd": 178.22054320113324,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 26.1,
@@ -17138,7 +17227,7 @@
         "nombre": "América Cali",
         "pais": "",
         "rating": 1674.17,
-        "rd": 183.6873228729741,
+        "rd": 183.98274702751328,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 67.1,
@@ -17168,7 +17257,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.5,
+        "overperformance": 6.6,
         "vol": 0.06
       },
       "prediccion": {
