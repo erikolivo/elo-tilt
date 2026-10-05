@@ -85,8 +85,6 @@ def _extraer_evento(evento, liga_slug):
         "_goles_visitante": _goles(away),
         "_neutral": bool(comp.get("neutralSite", False)),
     }
-    # TEMP DEBUG — quitar una vez confirmado el comportamiento (Tarea 1 ticket)
-    print(f"[DEBUG-ID] liga={liga_slug} | {resultado['teams']['home']['name']}={resultado['teams']['home']['id']} vs {resultado['teams']['away']['name']}={resultado['teams']['away']['id']}")
     return resultado
 
 
