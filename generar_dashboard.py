@@ -23,7 +23,7 @@ ARCHIVO_SALIDA = Path(__file__).parent / "dashboard.html"
 DIR_HISTORIAL = DATA_DIR / "historial_partidos"
 
 
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone, timedelta, date
 
 ZONA_ECUADOR = timezone(timedelta(hours=-5))
 
@@ -292,6 +292,71 @@ def _score_ajuste_forma(p):
     return diff_elo * (1 - favorito_prob / 100)
 
 
+VENTANA_DIAS_ACIERTO_GLOBAL = 90
+
+
+def _calcular_porcentaje_aciertos_global():
+    """Recorre historial_partidos/*.json de los ultimos
+    VENTANA_DIAS_ACIERTO_GLOBAL dias, cuenta aciertos/calificados usando
+    el mismo criterio que ya se usa fila por fila (umbral de 5 PJ,
+    codigo 1/X/2/1X/X2/12). Devuelve (calificados, aciertos, porcentaje)
+    o (0, 0, None) si no hay datos suficientes."""
+    if not DIR_HISTORIAL.exists():
+        return (0, 0, None)
+
+    hoy = date.today()
+    limite = hoy - timedelta(days=VENTANA_DIAS_ACIERTO_GLOBAL)
+
+    calificados = 0
+    aciertos = 0
+
+    for archivo in sorted(DIR_HISTORIAL.glob("*.json"), reverse=True):
+        try:
+            aaaa_mm = archivo.stem  # "YYYY-MM"
+            anio, mes = int(aaaa_mm[:4]), int(aaaa_mm[5:7])
+        except (ValueError, IndexError):
+            continue
+        # Si el mes completo del archivo es anterior al limite, se puede
+        # dejar de escanear archivos mas viejos (estan ordenados desc).
+        if date(anio, mes, 1) < date(limite.year, limite.month, 1):
+            break
+
+        try:
+            datos = json.loads(archivo.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            continue
+
+        for p in datos.get("partidos", []):
+            fecha_p = p.get("fecha", "")
+            if not fecha_p or fecha_p < limite.isoformat():
+                continue
+            pred = p.get("prediccion_previa")
+            if not pred:
+                continue
+            pj_h = pred.get("pj_h")
+            pj_a = pred.get("pj_a")
+            if pj_h is None or pj_a is None or pj_h < 5 or pj_a < 5:
+                continue
+            gl, ga = p.get("goles_local"), p.get("goles_visitante")
+            if gl is None or ga is None:
+                continue
+            diff = pred.get("diff_elo")
+            if diff is None:
+                continue
+            codigo = _codigo_prediccion(diff)
+            es_acierto = _acierto_con_codigo(codigo, gl, ga)
+            if es_acierto is None:
+                continue
+            calificados += 1
+            if es_acierto:
+                aciertos += 1
+
+    if calificados == 0:
+        return (0, 0, None)
+    porcentaje = round(100 * aciertos / calificados, 1)
+    return (calificados, aciertos, porcentaje)
+
+
 def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None, build_ts=None):
     ligas = _agrupar_por_liga(predicciones)
     todos_equipos = {}
@@ -323,6 +388,11 @@ def generar_html(predicciones, titulo="ELO + Tilt Tracker", fecha_consulta=None,
 
     historial_months = sorted(f.stem for f in DIR_HISTORIAL.glob("*.json"))
     historial_months_json = json.dumps(historial_months)
+
+    calificados, aciertos, porcentaje = _calcular_porcentaje_aciertos_global()
+    texto_aciertos = f"{porcentaje}%" if porcentaje is not None else "–"
+    tooltip_aciertos = (f"{aciertos}/{calificados} calificados (últimos {VENTANA_DIAS_ACIERTO_GLOBAL} días)"
+                        if calificados else "Sin suficientes datos todavía")
 
     excel_rows = ""
     for p in predicciones:
@@ -686,7 +756,7 @@ tr:hover {{ background: var(--surface2); }}
   <div class="stats">
     <div class="stat"><div class="stat-val">{len(predicciones)}</div><div class="stat-label">Partidos</div></div>
     <div class="stat"><div class="stat-val">{len(ligas)}</div><div class="stat-label">Ligas</div></div>
-    <div class="stat"><div class="stat-val" id="statAciertos">-</div><div class="stat-label">% Aciertos</div></div>
+    <div class="stat"><div class="stat-val" id="statAciertos" data-global="{texto_aciertos}" data-global-title="{tooltip_aciertos}" title="{tooltip_aciertos}">{texto_aciertos}</div><div class="stat-label">% Aciertos</div></div>
   </div>
 
   <div class="controls">
@@ -745,6 +815,9 @@ tr:hover {{ background: var(--surface2); }}
 
   <div class="ranking-section">
     <div class="ranking-title">Rankings ELO</div>
+    <p class="ranking-disclaimer" style="font-size:11px;color:#888;margin-top:4px;">
+      El ranking global mezcla ligas y competiciones que no siempre se enfrentan entre sí — comparar el ELO de dos equipos de ligas distintas no es una comparación directa de su nivel real.
+    </p>
     <div class="ranking-tabs">
       <div class="rtab active" data-rtab="global" onclick="showRanking('global')">Global</div>
       <div class="rtab" data-rtab="forma" onclick="showRanking('forma')">Por Forma</div>
@@ -925,7 +998,11 @@ function actualizarPorcentajeAciertos() {{
   }});
   const el = document.getElementById('statAciertos');
   if (!el) return;
-  el.textContent = total > 0 ? `${{Math.round(100 * ok / total)}}%` : '-';
+  // Si hoy hay partidos ya finalizados calificados, muestra el % de hoy;
+  // si no, muestra el % global de los ultimos 90 dias (data-global) para
+  // no dejar nunca el guion fijo "-".
+  el.textContent = total > 0 ? `${{Math.round(100 * ok / total)}}%` : (el.dataset.global || '–');
+  el.title = total > 0 ? `${{ok}}/${{total}} partidos calificados hoy` : (el.dataset.globalTitle || '');
 }}
 
 function toggleDetalle(fixtureId) {{

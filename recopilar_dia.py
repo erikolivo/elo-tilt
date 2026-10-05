@@ -130,6 +130,7 @@ def procesar_fecha(fecha_iso):
             "goles_local": gh,
             "goles_visitante": ga,
             "estadisticas": estadisticas,
+            "neutral": fx.get("_neutral", False),
             "prediccion_previa": prediccion_previa,
         }
 

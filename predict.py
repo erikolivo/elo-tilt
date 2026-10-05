@@ -233,7 +233,10 @@ def _calcular_overperformance(partidos, team_id, rating_actual, rd_actual=None, 
     return round(sum(scores) / len(scores), 1) if scores else 0.0
 
 
-def _ajustar_por_localia(pl, pe, pv):
+def _ajustar_por_localia(pl, pe, pv, es_neutral=False):
+    if es_neutral:
+        # Sede neutral (ESPN neutralSite): no hay ventaja de local real.
+        return (pl, pe, pv)
     pl += BONUS_LOCALIA
     t = pl + pe + pv
     return (pl / t, pe / t, pv / t)
@@ -294,19 +297,91 @@ def _ajustar_por_overperformance(pl, pe, pv, op_h, op_a, pj_h, pj_a):
     return (pl / t, pe / t, pv / t)
 
 
+EMPATE_BASE_MAXIMO = 25.0   # % de empate cuando los equipos estan parejos (diff ~ 0)
+EMPATE_BASE_MINIMO = 12.0   # % de empate piso, para partidos muy desparejos
+EMPATE_DECAY = 40.0         # cuantos puntos de diff ELO equivalen a 1 punto menos de empate
+
+
+def _prob_empate_base(diff_elo):
+    """Probabilidad base de empate (antes de los demas ajustes),
+    decreciendo linealmente con la diferencia de ELO entre los dos
+    equipos, con un piso para no llegar a valores irreales.
+    Devuelve un PORCENTAJE (0-100): diff=0 -> 25, diff=400 -> 15, diff>=520 -> 12."""
+    valor = EMPATE_BASE_MAXIMO - abs(diff_elo) / EMPATE_DECAY
+    return max(EMPATE_BASE_MINIMO, valor)
+
+
+MESES_H2H = 24
+MIN_PARTIDOS_H2H = 2
+PESO_MAXIMO_AJUSTE_H2H = 0.015  # tope conservador, mas chico que overperformance (0.02)
+
+
+def _historial_h2h(team_h_id, team_a_id):
+    """Busca enfrentamientos directos previos entre estos dos equipos
+    especificos (en cualquier orden de local/visitante) en los ultimos
+    MESES_H2H meses. Devuelve (n_partidos, resultado_promedio_h) donde
+    resultado_promedio_h es el promedio de resultado (1.0/0.5/0.0) desde
+    la perspectiva de team_h_id, o (0, None) si no hay suficientes."""
+    team_h_id, team_a_id = str(team_h_id), str(team_a_id)
+    hoy = datetime.date.today()
+    resultados = []
+
+    for i in range(MESES_H2H):
+        fecha_mes = (hoy.replace(day=1) - datetime.timedelta(days=30 * i))
+        fecha_iso = fecha_mes.isoformat()
+        datos = historial_store._cargar_mes(fecha_iso)
+        for p in datos.get("partidos", []):
+            h_id = str(p.get("equipo_local", {}).get("id", ""))
+            a_id = str(p.get("equipo_visitante", {}).get("id", ""))
+            ids_partido = {h_id, a_id}
+            if ids_partido != {team_h_id, team_a_id}:
+                continue
+            gl, ga = p.get("goles_local"), p.get("goles_visitante")
+            if gl is None or ga is None:
+                continue
+            team_h_era_local = (h_id == team_h_id)
+            if gl == ga:
+                resultados.append(0.5)
+            elif (gl > ga) == team_h_era_local:
+                resultados.append(1.0)
+            else:
+                resultados.append(0.0)
+
+    if len(resultados) < MIN_PARTIDOS_H2H:
+        return (len(resultados), None)
+    return (len(resultados), sum(resultados) / len(resultados))
+
+
+def _ajustar_por_h2h(pl, pe, pv, team_h_id, team_a_id):
+    n, promedio = _historial_h2h(team_h_id, team_a_id)
+    if promedio is None:
+        return (pl, pe, pv)
+    # promedio > 0.5 -> el equipo local de HOY historicamente le gana a este rival
+    # promedio < 0.5 -> historicamente le cuesta contra este rival especifico
+    desviacion = promedio - 0.5  # rango -0.5 a +0.5
+    adj = desviacion * 2 * PESO_MAXIMO_AJUSTE_H2H  # escala al tope conservador
+    pl += adj
+    pv -= adj
+    t = pl + pe + pv
+    return (pl / t, pe / t, pv / t)
+
+
 def predecir_partido(fx, tilt_home, tilt_away):
     rating_h = tilt_home["rating"]
     rating_a = tilt_away["rating"]
     rd_h = tilt_home["rd"]
     rd_a = tilt_away["rd"]
+    diff_elo = rating_h - rating_a
 
     prob_base = glicko2.probabilidad_victoria(rating_h, rd_h, rating_a, rd_a)
-    prob_empate_base = 0.25
+    # _prob_empate_base devuelve % (0-100); aca se trabaja con fracciones.
+    prob_empate_base = _prob_empate_base(diff_elo) / 100.0
     prob_local = prob_base
     prob_visitante = 1.0 - prob_base - prob_empate_base
     prob_empate = prob_empate_base
 
-    prob_local, prob_empate, prob_visitante = _ajustar_por_localia(prob_local, prob_empate, prob_visitante)
+    es_neutral = fx.get("_neutral", False)
+    prob_local, prob_empate, prob_visitante = _ajustar_por_localia(prob_local, prob_empate, prob_visitante, es_neutral=es_neutral)
     prob_local, prob_empate, prob_visitante = _ajustar_por_forma(prob_local, prob_empate, prob_visitante, tilt_home["form_score"], tilt_away["form_score"])
     prob_local, prob_empate, prob_visitante = _ajustar_por_momentum(prob_local, prob_empate, prob_visitante, tilt_home["momentum"]["direccion"], tilt_away["momentum"]["direccion"])
     prob_local, prob_empate, prob_visitante = _ajustar_por_home_away(prob_local, prob_empate, prob_visitante, tilt_home["home_away"], tilt_away["home_away"])
@@ -315,6 +390,10 @@ def predecir_partido(fx, tilt_home, tilt_away):
         tilt_home.get("overperformance", 0), tilt_away.get("overperformance", 0),
         tilt_home.get("partidos_jugados", 0), tilt_away.get("partidos_jugados", 0),
     )
+    prob_local, prob_empate, prob_visitante = _ajustar_por_h2h(
+        prob_local, prob_empate, prob_visitante,
+        fx["teams"]["home"]["id"], fx["teams"]["away"]["id"],
+    )
 
     prob_local = max(0.01, min(0.99, prob_local))
     prob_empate = max(0.01, min(0.99, prob_empate))
@@ -322,7 +401,6 @@ def predecir_partido(fx, tilt_home, tilt_away):
     total = prob_local + prob_empate + prob_visitante
     prob_local, prob_empate, prob_visitante = prob_local / total, prob_empate / total, prob_visitante / total
 
-    diff_elo = rating_h - rating_a
     confianza = min(abs(diff_elo) / 200, 1.0) * 100
 
     fecha_raw = fx["fixture"].get("date", "")

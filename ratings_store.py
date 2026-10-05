@@ -11,6 +11,14 @@ No mezcla el rating con ninguna fuente externa (ClubElo u otra semilla)
 glicko2.py) y su valor se ajusta unicamente con resultados reales
 observados por este sistema. TRAMOS_PESO queda definido por si en el
 futuro se decide introducir una semilla externa, pero no se usa hoy.
+
+NOTA: el rating Glicko-2 de un equipo es comparable directamente solo
+contra equipos con los que comparte historial (directo o a traves de
+rivales en comun). El sistema mezcla pools muy distintos entre si
+(futbol universitario de EE.UU., selecciones nacionales, ligas
+profesionales de distintos paises) que rara vez se enfrentan entre
+ellos -- comparar el ELO absoluto de dos equipos de pools distintos
+NO es una comparacion valida de su nivel real.
 """
 
 import json
