@@ -1,8 +1,96 @@
 {
-  "generado": "2026-10-05T03:35:29.774986Z",
+  "generado": "2026-10-05T11:54:49.928872Z",
   "fecha_consulta": "2026-10-05",
   "total": 37,
   "predicciones": [
+    {
+      "fixture_id": "401912454",
+      "fecha": "2026-10-05T07:00:00-05:00",
+      "fecha_display": "2026-10-05",
+      "hora": "07:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5534",
+        "nombre": "Mauritius",
+        "pais": "",
+        "rating": 1370.39,
+        "rd": 92.26,
+        "partidos_jugados": 25,
+        "pj_reales": 2,
+        "form_score": 81.1,
+        "form_local": 81.1,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1E",
+          "resultados": [
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.5,
+          "goles_contra": 0.0,
+          "diferencia": 1.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 28.6,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "5782",
+        "nombre": "Sri Lanka",
+        "pais": "",
+        "rating": 1334.33,
+        "rd": 90.87,
+        "partidos_jugados": 25,
+        "pj_reales": 4,
+        "form_score": 49.6,
+        "form_local": 50.0,
+        "form_visitante": 49.4,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 1E",
+          "resultados": [
+            "E",
+            "D",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.25,
+          "goles_contra": 0.75,
+          "diferencia": 0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 62.7,
+        "prob_empate": 22.3,
+        "prob_visitante": 15.0
+      },
+      "diff_elo": 36.1,
+      "confianza": 18.0
+    },
     {
       "fixture_id": "401918508",
       "fecha": "2026-10-05T08:00:00-05:00",
@@ -84,9 +172,9 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 77.0,
-        "prob_empate": 22.1,
-        "prob_visitante": 1.0
+        "prob_local": 80.7,
+        "prob_empate": 17.4,
+        "prob_visitante": 1.8
       },
       "diff_elo": 246.3,
       "confianza": 100.0
@@ -168,8 +256,8 @@
       },
       "prediccion": {
         "prob_local": 59.9,
-        "prob_empate": 23.1,
-        "prob_visitante": 17.0
+        "prob_empate": 22.8,
+        "prob_visitante": 17.4
       },
       "diff_elo": 16.9,
       "confianza": 8.4
@@ -252,99 +340,11 @@
       },
       "prediccion": {
         "prob_local": 65.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 11.1
+        "prob_empate": 21.7,
+        "prob_visitante": 12.6
       },
       "diff_elo": 63.4,
       "confianza": 31.7
-    },
-    {
-      "fixture_id": "401912454",
-      "fecha": "2026-10-05T10:00:00-05:00",
-      "fecha_display": "2026-10-05",
-      "hora": "10:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5534",
-        "nombre": "Mauritius",
-        "pais": "",
-        "rating": 1370.39,
-        "rd": 92.26,
-        "partidos_jugados": 25,
-        "pj_reales": 2,
-        "form_score": 81.1,
-        "form_local": 81.1,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1E",
-          "resultados": [
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.5,
-          "goles_contra": 0.0,
-          "diferencia": 1.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 28.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "5782",
-        "nombre": "Sri Lanka",
-        "pais": "",
-        "rating": 1334.33,
-        "rd": 90.87,
-        "partidos_jugados": 25,
-        "pj_reales": 4,
-        "form_score": 49.6,
-        "form_local": 50.0,
-        "form_visitante": 49.4,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 1D 1E",
-          "resultados": [
-            "E",
-            "D",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.25,
-          "goles_contra": 0.75,
-          "diferencia": 0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 62.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 14.2
-      },
-      "diff_elo": 36.1,
-      "confianza": 18.0
     },
     {
       "fixture_id": "401861127",
@@ -428,8 +428,8 @@
       },
       "prediccion": {
         "prob_local": 68.2,
-        "prob_empate": 23.1,
-        "prob_visitante": 8.6
+        "prob_empate": 21.7,
+        "prob_visitante": 10.1
       },
       "diff_elo": 62.1,
       "confianza": 31.1
@@ -514,8 +514,8 @@
       },
       "prediccion": {
         "prob_local": 66.9,
-        "prob_empate": 23.1,
-        "prob_visitante": 10.0
+        "prob_empate": 22.4,
+        "prob_visitante": 10.8
       },
       "diff_elo": 33.5,
       "confianza": 16.7
@@ -599,8 +599,8 @@
       },
       "prediccion": {
         "prob_local": 32.9,
-        "prob_empate": 23.1,
-        "prob_visitante": 43.9
+        "prob_empate": 20.8,
+        "prob_visitante": 46.2
       },
       "diff_elo": -101.0,
       "confianza": 50.5
@@ -683,8 +683,8 @@
       },
       "prediccion": {
         "prob_local": 64.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 12.2
+        "prob_empate": 20.9,
+        "prob_visitante": 14.4
       },
       "diff_elo": 98.3,
       "confianza": 49.2
@@ -767,9 +767,9 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 76.5,
-        "prob_empate": 22.5,
-        "prob_visitante": 1.0
+        "prob_local": 78.7,
+        "prob_empate": 16.4,
+        "prob_visitante": 5.0
       },
       "diff_elo": 293.3,
       "confianza": 100.0
@@ -860,8 +860,8 @@
       },
       "prediccion": {
         "prob_local": 64.1,
-        "prob_empate": 23.1,
-        "prob_visitante": 12.7
+        "prob_empate": 21.3,
+        "prob_visitante": 14.6
       },
       "diff_elo": 81.5,
       "confianza": 40.7
@@ -952,8 +952,8 @@
       },
       "prediccion": {
         "prob_local": 30.9,
-        "prob_empate": 23.1,
-        "prob_visitante": 46.0
+        "prob_empate": 18.4,
+        "prob_visitante": 50.8
       },
       "diff_elo": -206.8,
       "confianza": 100.0
@@ -1041,8 +1041,8 @@
       },
       "prediccion": {
         "prob_local": 47.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 29.2
+        "prob_empate": 21.4,
+        "prob_visitante": 31.0
       },
       "diff_elo": -77.5,
       "confianza": 38.7
@@ -1132,8 +1132,8 @@
       },
       "prediccion": {
         "prob_local": 68.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 8.1
+        "prob_empate": 19.7,
+        "prob_visitante": 11.6
       },
       "diff_elo": 150.2,
       "confianza": 75.1
@@ -1220,8 +1220,8 @@
       },
       "prediccion": {
         "prob_local": 68.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 8.1
+        "prob_empate": 21.2,
+        "prob_visitante": 10.1
       },
       "diff_elo": 84.5,
       "confianza": 42.3
@@ -1307,9 +1307,9 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 70.3,
-        "prob_empate": 23.1,
-        "prob_visitante": 6.6
+        "prob_local": 71.0,
+        "prob_empate": 21.7,
+        "prob_visitante": 7.3
       },
       "diff_elo": 63.4,
       "confianza": 31.7
@@ -1397,8 +1397,8 @@
       },
       "prediccion": {
         "prob_local": 69.6,
-        "prob_empate": 23.1,
-        "prob_visitante": 7.2
+        "prob_empate": 21.3,
+        "prob_visitante": 9.1
       },
       "diff_elo": 78.1,
       "confianza": 39.0
@@ -1486,8 +1486,8 @@
       },
       "prediccion": {
         "prob_local": 30.9,
-        "prob_empate": 23.1,
-        "prob_visitante": 45.9
+        "prob_empate": 19.9,
+        "prob_visitante": 49.1
       },
       "diff_elo": -139.4,
       "confianza": 69.7
@@ -1574,8 +1574,8 @@
       },
       "prediccion": {
         "prob_local": 59.0,
-        "prob_empate": 23.1,
-        "prob_visitante": 17.8
+        "prob_empate": 21.5,
+        "prob_visitante": 19.4
       },
       "diff_elo": 69.1,
       "confianza": 34.5
@@ -1662,8 +1662,8 @@
       },
       "prediccion": {
         "prob_local": 44.8,
-        "prob_empate": 23.1,
-        "prob_visitante": 32.1
+        "prob_empate": 22.3,
+        "prob_visitante": 32.9
       },
       "diff_elo": -35.0,
       "confianza": 17.5
@@ -1806,7 +1806,7 @@
         "nombre": "C. Córdoba (SE)",
         "pais": "",
         "rating": 1486.86,
-        "rd": 193.52078031204925,
+        "rd": 194.08137558354179,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 36.8,
@@ -1836,13 +1836,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.6,
+        "overperformance": -4.6,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 56.2,
-        "prob_empate": 23.1,
-        "prob_visitante": 20.7
+        "prob_local": 56.1,
+        "prob_empate": 22.8,
+        "prob_visitante": 21.0
       },
       "diff_elo": 13.4,
       "confianza": 6.7
@@ -1933,8 +1933,8 @@
       },
       "prediccion": {
         "prob_local": 29.1,
-        "prob_empate": 23.1,
-        "prob_visitante": 47.7
+        "prob_empate": 17.4,
+        "prob_visitante": 53.5
       },
       "diff_elo": -248.0,
       "confianza": 100.0
@@ -2025,8 +2025,8 @@
       },
       "prediccion": {
         "prob_local": 43.0,
-        "prob_empate": 23.1,
-        "prob_visitante": 33.9
+        "prob_empate": 21.0,
+        "prob_visitante": 36.0
       },
       "diff_elo": -91.2,
       "confianza": 45.6
@@ -2112,8 +2112,8 @@
       },
       "prediccion": {
         "prob_local": 58.1,
-        "prob_empate": 23.1,
-        "prob_visitante": 18.7
+        "prob_empate": 22.6,
+        "prob_visitante": 19.3
       },
       "diff_elo": 22.3,
       "confianza": 11.1
@@ -2195,8 +2195,8 @@
       },
       "prediccion": {
         "prob_local": 63.1,
-        "prob_empate": 23.1,
-        "prob_visitante": 13.8
+        "prob_empate": 22.0,
+        "prob_visitante": 15.0
       },
       "diff_elo": 50.6,
       "confianza": 25.3
@@ -2287,8 +2287,8 @@
       },
       "prediccion": {
         "prob_local": 47.9,
-        "prob_empate": 23.1,
-        "prob_visitante": 29.0
+        "prob_empate": 22.3,
+        "prob_visitante": 29.8
       },
       "diff_elo": -36.5,
       "confianza": 18.2
@@ -2379,8 +2379,8 @@
       },
       "prediccion": {
         "prob_local": 69.2,
-        "prob_empate": 23.1,
-        "prob_visitante": 7.7
+        "prob_empate": 20.5,
+        "prob_visitante": 10.3
       },
       "diff_elo": 114.0,
       "confianza": 57.0
@@ -2471,8 +2471,8 @@
       },
       "prediccion": {
         "prob_local": 37.2,
-        "prob_empate": 23.1,
-        "prob_visitante": 39.7
+        "prob_empate": 19.8,
+        "prob_visitante": 43.0
       },
       "diff_elo": -142.8,
       "confianza": 71.4
@@ -2563,8 +2563,8 @@
       },
       "prediccion": {
         "prob_local": 23.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 53.1
+        "prob_empate": 16.1,
+        "prob_visitante": 60.2
       },
       "diff_elo": -305.4,
       "confianza": 100.0
@@ -2612,7 +2612,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.2,
+        "overperformance": -4.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -2650,13 +2650,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 10.5,
+        "overperformance": 10.3,
         "vol": 0.06
       },
       "prediccion": {
         "prob_local": 33.2,
-        "prob_empate": 23.1,
-        "prob_visitante": 43.7
+        "prob_empate": 18.5,
+        "prob_visitante": 48.4
       },
       "diff_elo": -202.1,
       "confianza": 100.0
@@ -2742,8 +2742,8 @@
       },
       "prediccion": {
         "prob_local": 49.0,
-        "prob_empate": 23.1,
-        "prob_visitante": 27.9
+        "prob_empate": 22.6,
+        "prob_visitante": 28.4
       },
       "diff_elo": 23.0,
       "confianza": 11.5
@@ -2829,8 +2829,8 @@
       },
       "prediccion": {
         "prob_local": 70.6,
-        "prob_empate": 23.1,
-        "prob_visitante": 6.3
+        "prob_empate": 20.6,
+        "prob_visitante": 8.9
       },
       "diff_elo": 112.1,
       "confianza": 56.0
@@ -2914,8 +2914,8 @@
       },
       "prediccion": {
         "prob_local": 47.2,
-        "prob_empate": 23.1,
-        "prob_visitante": 29.7
+        "prob_empate": 22.5,
+        "prob_visitante": 30.3
       },
       "diff_elo": -29.7,
       "confianza": 14.8
@@ -2933,7 +2933,7 @@
         "nombre": "Ind. Medellín",
         "pais": "",
         "rating": 1530.95,
-        "rd": 182.26226497293104,
+        "rd": 182.8573397036574,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 59.8,
@@ -2963,7 +2963,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.7,
+        "overperformance": 3.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3001,13 +3001,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.4,
+        "overperformance": 4.5,
         "vol": 0.06
       },
       "prediccion": {
         "prob_local": 44.9,
-        "prob_empate": 23.1,
-        "prob_visitante": 32.0
+        "prob_empate": 21.4,
+        "prob_visitante": 33.7
       },
       "diff_elo": -74.4,
       "confianza": 37.2
@@ -3055,7 +3055,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.9,
+        "overperformance": -0.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3093,13 +3093,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.8,
+        "overperformance": -3.6,
         "vol": 0.06
       },
       "prediccion": {
         "prob_local": 18.5,
-        "prob_empate": 23.1,
-        "prob_visitante": 58.4
+        "prob_empate": 15.7,
+        "prob_visitante": 65.8
       },
       "diff_elo": -323.5,
       "confianza": 100.0
@@ -3184,8 +3184,8 @@
       },
       "prediccion": {
         "prob_local": 62.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 14.1
+        "prob_empate": 22.1,
+        "prob_visitante": 15.1
       },
       "diff_elo": 44.4,
       "confianza": 22.2
@@ -3266,8 +3266,8 @@
       },
       "prediccion": {
         "prob_local": 50.4,
-        "prob_empate": 23.1,
-        "prob_visitante": 26.5
+        "prob_empate": 22.8,
+        "prob_visitante": 26.9
       },
       "diff_elo": -17.0,
       "confianza": 8.5
