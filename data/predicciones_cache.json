@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-06T12:39:03.253449Z",
+  "generado": "2026-10-06T19:59:18.072327Z",
   "fecha_consulta": "2026-10-06",
   "total": 122,
   "predicciones": [
@@ -4234,6 +4234,450 @@
       "confianza": 43.0
     },
     {
+      "fixture_id": "401928244",
+      "fecha": "2026-10-06T13:45:00-05:00",
+      "fecha_display": "2026-10-06",
+      "hora": "13:45",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "131959",
+        "nombre": "Atherton",
+        "pais": "",
+        "rating": 1885.49,
+        "rd": 162.91,
+        "partidos_jugados": 6,
+        "pj_reales": 6,
+        "form_score": 77.6,
+        "form_local": 100.0,
+        "form_visitante": 65.4,
+        "momentum": "stable",
+        "momentum_diff": 1.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "4V 1E",
+          "resultados": [
+            "E",
+            "V",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.33,
+          "goles_contra": 1.0,
+          "diferencia": 1.33
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 7.1,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "131929",
+        "nombre": "Trafford",
+        "pais": "",
+        "rating": 1893.64,
+        "rd": 183.1,
+        "partidos_jugados": 5,
+        "pj_reales": 5,
+        "form_score": 78.6,
+        "form_local": 50.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "4V 1E",
+          "resultados": [
+            "E",
+            "V",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.4,
+          "goles_contra": 1.2,
+          "diferencia": 1.2
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 12.6,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 52.8,
+        "prob_empate": 23.0,
+        "prob_visitante": 24.2
+      },
+      "diff_elo": -8.2,
+      "confianza": 4.1
+    },
+    {
+      "fixture_id": "401928245",
+      "fecha": "2026-10-06T13:45:00-05:00",
+      "fecha_display": "2026-10-06",
+      "hora": "13:45",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "132982",
+        "nombre": "Halesown",
+        "pais": "",
+        "rating": 1816.19,
+        "rd": 203.96,
+        "partidos_jugados": 3,
+        "pj_reales": 3,
+        "form_score": 74.7,
+        "form_local": 100.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1E",
+          "resultados": [
+            "E",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.0,
+          "goles_contra": 0.67,
+          "diferencia": 1.33
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 20.7,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "2589",
+        "nombre": "Stafford",
+        "pais": "",
+        "rating": 1845.49,
+        "rd": 191.27,
+        "partidos_jugados": 5,
+        "pj_reales": 3,
+        "form_score": 78.6,
+        "form_local": 78.6,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "4V 1E",
+          "resultados": [
+            "E",
+            "V",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.8,
+          "goles_contra": 0.8,
+          "diferencia": 2.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 16.9,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 52.1,
+        "prob_empate": 22.5,
+        "prob_visitante": 25.4
+      },
+      "diff_elo": -29.3,
+      "confianza": 14.6
+    },
+    {
+      "fixture_id": "401928214",
+      "fecha": "2026-10-06T13:45:00-05:00",
+      "fecha_display": "2026-10-06",
+      "hora": "13:45",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "22090",
+        "nombre": "Scarborough",
+        "pais": "",
+        "rating": 1716.31,
+        "rd": 238.94,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 68.9,
+        "form_local": 50.0,
+        "form_visitante": 68.9,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1E",
+          "resultados": [
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.0,
+          "goles_contra": 1.0,
+          "diferencia": 1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 19.8,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "131494",
+        "nombre": "Macclesfield",
+        "pais": "",
+        "rating": 1685.82,
+        "rd": 237.76,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 68.9,
+        "form_local": 50.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1E",
+          "resultados": [
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.0,
+          "goles_contra": 1.5,
+          "diferencia": 0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 17.8,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 55.0,
+        "prob_empate": 22.4,
+        "prob_visitante": 22.6
+      },
+      "diff_elo": 30.5,
+      "confianza": 15.2
+    },
+    {
+      "fixture_id": "401928243",
+      "fecha": "2026-10-06T13:45:00-05:00",
+      "fecha_display": "2026-10-06",
+      "hora": "13:45",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "132829",
+        "nombre": "Spalding Utd",
+        "pais": "",
+        "rating": 1760.04,
+        "rd": 232.12,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 68.9,
+        "form_local": 100.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1E",
+          "resultados": [
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.5,
+          "goles_contra": 0.5,
+          "diferencia": 1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 20.8,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "133361",
+        "nombre": "Bury Town",
+        "pais": "",
+        "rating": 1787.23,
+        "rd": 207.61,
+        "partidos_jugados": 3,
+        "pj_reales": 3,
+        "form_score": 74.7,
+        "form_local": 50.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1E",
+          "resultados": [
+            "E",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 3.0,
+          "goles_contra": 2.0,
+          "diferencia": 1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 20.1,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 50.8,
+        "prob_empate": 22.5,
+        "prob_visitante": 26.6
+      },
+      "diff_elo": -27.2,
+      "confianza": 13.6
+    },
+    {
+      "fixture_id": "401928213",
+      "fecha": "2026-10-06T13:45:00-05:00",
+      "fecha_display": "2026-10-06",
+      "hora": "13:45",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "133363",
+        "nombre": "Wingate",
+        "pais": "",
+        "rating": 1723.0,
+        "rd": 186.81,
+        "partidos_jugados": 5,
+        "pj_reales": 5,
+        "form_score": 67.8,
+        "form_local": 81.1,
+        "form_visitante": 59.3,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 3E",
+          "resultados": [
+            "E",
+            "V",
+            "E",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.4,
+          "goles_contra": 0.8,
+          "diferencia": 0.6
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.5,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "133883",
+        "nombre": "Bedford Town",
+        "pais": "",
+        "rating": 1657.6,
+        "rd": 239.13,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 68.9,
+        "form_local": 68.9,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1E",
+          "resultados": [
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.0,
+          "goles_contra": 1.5,
+          "diferencia": 0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 15.1,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 60.8,
+        "prob_empate": 21.6,
+        "prob_visitante": 17.5
+      },
+      "diff_elo": 65.4,
+      "confianza": 32.7
+    },
+    {
       "fixture_id": "401861140",
       "fecha": "2026-10-06T13:45:00-05:00",
       "fecha_display": "2026-10-06",
@@ -5122,450 +5566,6 @@
       },
       "diff_elo": -198.2,
       "confianza": 99.1
-    },
-    {
-      "fixture_id": "401928244",
-      "fecha": "2026-10-06T13:45:00-05:00",
-      "fecha_display": "2026-10-06",
-      "hora": "13:45",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "131959",
-        "nombre": "Atherton",
-        "pais": "",
-        "rating": 1885.49,
-        "rd": 162.91,
-        "partidos_jugados": 6,
-        "pj_reales": 6,
-        "form_score": 77.6,
-        "form_local": 100.0,
-        "form_visitante": 65.4,
-        "momentum": "stable",
-        "momentum_diff": 1.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "4V 1E",
-          "resultados": [
-            "E",
-            "V",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.33,
-          "goles_contra": 1.0,
-          "diferencia": 1.33
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 7.1,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "131929",
-        "nombre": "Trafford",
-        "pais": "",
-        "rating": 1893.64,
-        "rd": 183.1,
-        "partidos_jugados": 5,
-        "pj_reales": 5,
-        "form_score": 78.6,
-        "form_local": 50.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "4V 1E",
-          "resultados": [
-            "E",
-            "V",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.4,
-          "goles_contra": 1.2,
-          "diferencia": 1.2
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 12.6,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 52.8,
-        "prob_empate": 23.0,
-        "prob_visitante": 24.2
-      },
-      "diff_elo": -8.2,
-      "confianza": 4.1
-    },
-    {
-      "fixture_id": "401928245",
-      "fecha": "2026-10-06T13:45:00-05:00",
-      "fecha_display": "2026-10-06",
-      "hora": "13:45",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "132982",
-        "nombre": "Halesown",
-        "pais": "",
-        "rating": 1816.19,
-        "rd": 203.96,
-        "partidos_jugados": 3,
-        "pj_reales": 3,
-        "form_score": 74.7,
-        "form_local": 100.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 1E",
-          "resultados": [
-            "E",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 0.67,
-          "diferencia": 1.33
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 20.7,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "2589",
-        "nombre": "Stafford",
-        "pais": "",
-        "rating": 1845.49,
-        "rd": 191.27,
-        "partidos_jugados": 5,
-        "pj_reales": 3,
-        "form_score": 78.6,
-        "form_local": 78.6,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "4V 1E",
-          "resultados": [
-            "E",
-            "V",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.8,
-          "goles_contra": 0.8,
-          "diferencia": 2.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 16.9,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 52.1,
-        "prob_empate": 22.5,
-        "prob_visitante": 25.4
-      },
-      "diff_elo": -29.3,
-      "confianza": 14.6
-    },
-    {
-      "fixture_id": "401928214",
-      "fecha": "2026-10-06T13:45:00-05:00",
-      "fecha_display": "2026-10-06",
-      "hora": "13:45",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "22090",
-        "nombre": "Scarborough",
-        "pais": "",
-        "rating": 1716.31,
-        "rd": 238.94,
-        "partidos_jugados": 2,
-        "pj_reales": 2,
-        "form_score": 68.9,
-        "form_local": 50.0,
-        "form_visitante": 68.9,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1E",
-          "resultados": [
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 1.0,
-          "diferencia": 1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 19.8,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "131494",
-        "nombre": "Macclesfield",
-        "pais": "",
-        "rating": 1685.82,
-        "rd": 237.76,
-        "partidos_jugados": 2,
-        "pj_reales": 2,
-        "form_score": 68.9,
-        "form_local": 50.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1E",
-          "resultados": [
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 1.5,
-          "diferencia": 0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 17.8,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 55.0,
-        "prob_empate": 22.4,
-        "prob_visitante": 22.6
-      },
-      "diff_elo": 30.5,
-      "confianza": 15.2
-    },
-    {
-      "fixture_id": "401928243",
-      "fecha": "2026-10-06T13:45:00-05:00",
-      "fecha_display": "2026-10-06",
-      "hora": "13:45",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "132829",
-        "nombre": "Spalding Utd",
-        "pais": "",
-        "rating": 1760.04,
-        "rd": 232.12,
-        "partidos_jugados": 2,
-        "pj_reales": 2,
-        "form_score": 68.9,
-        "form_local": 100.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1E",
-          "resultados": [
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.5,
-          "goles_contra": 0.5,
-          "diferencia": 1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 20.8,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "133361",
-        "nombre": "Bury Town",
-        "pais": "",
-        "rating": 1787.23,
-        "rd": 207.61,
-        "partidos_jugados": 3,
-        "pj_reales": 3,
-        "form_score": 74.7,
-        "form_local": 50.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 1E",
-          "resultados": [
-            "E",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 3.0,
-          "goles_contra": 2.0,
-          "diferencia": 1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 20.1,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 50.8,
-        "prob_empate": 22.5,
-        "prob_visitante": 26.6
-      },
-      "diff_elo": -27.2,
-      "confianza": 13.6
-    },
-    {
-      "fixture_id": "401928213",
-      "fecha": "2026-10-06T13:45:00-05:00",
-      "fecha_display": "2026-10-06",
-      "hora": "13:45",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "133363",
-        "nombre": "Wingate",
-        "pais": "",
-        "rating": 1723.0,
-        "rd": 186.81,
-        "partidos_jugados": 5,
-        "pj_reales": 5,
-        "form_score": 67.8,
-        "form_local": 81.1,
-        "form_visitante": 59.3,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 3E",
-          "resultados": [
-            "E",
-            "V",
-            "E",
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.4,
-          "goles_contra": 0.8,
-          "diferencia": 0.6
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.5,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "133883",
-        "nombre": "Bedford Town",
-        "pais": "",
-        "rating": 1657.6,
-        "rd": 239.13,
-        "partidos_jugados": 2,
-        "pj_reales": 2,
-        "form_score": 68.9,
-        "form_local": 68.9,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1E",
-          "resultados": [
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 1.5,
-          "diferencia": 0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 15.1,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 60.8,
-        "prob_empate": 21.6,
-        "prob_visitante": 17.5
-      },
-      "diff_elo": 65.4,
-      "confianza": 32.7
     },
     {
       "fixture_id": "401919990",
@@ -6792,7 +6792,7 @@
         "nombre": "Jacksonville",
         "pais": "",
         "rating": 1654.26,
-        "rd": 215.12107135507156,
+        "rd": 215.37344151232173,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 36.8,
@@ -7490,7 +7490,7 @@
         "nombre": "Wisconsin",
         "pais": "",
         "rating": 1861.35,
-        "rd": 215.62906907788621,
+        "rd": 215.88081182487107,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 47.1,
@@ -7614,7 +7614,7 @@
         "nombre": "Nacional",
         "pais": "",
         "rating": 1546.26,
-        "rd": 206.54301324895962,
+        "rd": 206.80582541583175,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 81.5,
@@ -9546,7 +9546,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.6,
+        "overperformance": -0.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -9966,7 +9966,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 17.6,
+        "overperformance": 17.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10086,7 +10086,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 13.2,
+        "overperformance": 12.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -10478,7 +10478,7 @@
         "nombre": "Chicago",
         "pais": "",
         "rating": 1666.03,
-        "rd": 187.9762071733869,
+        "rd": 188.26496867765857,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 48.3,
@@ -10516,7 +10516,7 @@
         "nombre": "Vancouver",
         "pais": "",
         "rating": 1583.05,
-        "rd": 183.59629386357383,
+        "rd": 183.8919430257423,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 77.0,
@@ -10860,7 +10860,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 47.7,
+        "overperformance": 48.6,
         "vol": 0.06
       },
       "equipo_visitante": {
