@@ -1,8 +1,94 @@
 {
-  "generado": "2026-10-06T04:23:36.695234Z",
+  "generado": "2026-10-06T11:35:45.776517Z",
   "fecha_consulta": "2026-10-06",
   "total": 122,
   "predicciones": [
+    {
+      "fixture_id": "401928131",
+      "fecha": "2026-10-06T06:00:00-05:00",
+      "fecha_display": "2026-10-06",
+      "hora": "06:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "8544",
+        "nombre": "Norrköping",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 350.0,
+        "partidos_jugados": 0,
+        "pj_reales": 0,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "3052",
+        "nombre": "Kalmar FF",
+        "pais": "",
+        "rating": 1124.44,
+        "rd": 168.56,
+        "partidos_jugados": 8,
+        "pj_reales": 8,
+        "form_score": 21.7,
+        "form_local": 0.0,
+        "form_visitante": 26.2,
+        "momentum": "stable",
+        "momentum_diff": -0.3,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "4D 1E",
+          "resultados": [
+            "E",
+            "D",
+            "D",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.25,
+          "goles_contra": 1.88,
+          "diferencia": -1.63
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -1.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 83.2,
+        "prob_empate": 14.5,
+        "prob_visitante": 2.3
+      },
+      "diff_elo": 375.6,
+      "confianza": 100.0
+    },
     {
       "fixture_id": "401902245",
       "fecha": "2026-10-06T06:00:00-05:00",
@@ -90,92 +176,6 @@
       },
       "diff_elo": -92.2,
       "confianza": 46.1
-    },
-    {
-      "fixture_id": "401928131",
-      "fecha": "2026-10-06T06:00:00-05:00",
-      "fecha_display": "2026-10-06",
-      "hora": "06:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "8544",
-        "nombre": "Norrköping",
-        "pais": "",
-        "rating": 1500.0,
-        "rd": 350.0,
-        "partidos_jugados": 0,
-        "pj_reales": 0,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "3052",
-        "nombre": "Kalmar FF",
-        "pais": "",
-        "rating": 1124.44,
-        "rd": 168.56,
-        "partidos_jugados": 8,
-        "pj_reales": 8,
-        "form_score": 21.7,
-        "form_local": 0.0,
-        "form_visitante": 26.2,
-        "momentum": "stable",
-        "momentum_diff": -0.3,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "4D 1E",
-          "resultados": [
-            "E",
-            "D",
-            "D",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.25,
-          "goles_contra": 1.88,
-          "diferencia": -1.63
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -1.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 83.2,
-        "prob_empate": 14.5,
-        "prob_visitante": 2.3
-      },
-      "diff_elo": 375.6,
-      "confianza": 100.0
     },
     {
       "fixture_id": "401914140",
@@ -4311,7 +4311,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.8,
+        "overperformance": 3.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -6792,7 +6792,7 @@
         "nombre": "Jacksonville",
         "pais": "",
         "rating": 1654.26,
-        "rd": 214.3621781873629,
+        "rd": 214.8684047808009,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 36.8,
@@ -7490,7 +7490,7 @@
         "nombre": "Wisconsin",
         "pais": "",
         "rating": 1861.35,
-        "rd": 214.87207120304657,
+        "rd": 215.37703208240717,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 47.1,
@@ -7614,7 +7614,7 @@
         "nombre": "Nacional",
         "pais": "",
         "rating": 1546.26,
-        "rd": 205.75256258445287,
+        "rd": 206.2798662448576,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 81.5,
@@ -7644,7 +7644,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.7,
+        "overperformance": -8.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -10478,7 +10478,7 @@
         "nombre": "Chicago",
         "pais": "",
         "rating": 1666.03,
-        "rd": 187.10724881620433,
+        "rd": 187.6870014022931,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 48.3,
@@ -10516,7 +10516,7 @@
         "nombre": "Vancouver",
         "pais": "",
         "rating": 1583.05,
-        "rd": 182.7064759454641,
+        "rd": 183.30016784252177,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 77.0,
