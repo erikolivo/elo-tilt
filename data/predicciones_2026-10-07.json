@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-07T00:19:42.958606Z",
+  "generado": "2026-10-07T09:41:42.778176Z",
   "fecha_consulta": "2026-10-07",
   "total": 64,
   "predicciones": [
@@ -164,7 +164,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.8,
+        "overperformance": 2.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -360,86 +360,6 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401914265",
-      "fecha": "2026-10-07T13:00:00-05:00",
-      "fecha_display": "2026-10-07",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "21706",
-        "nombre": "Liechtenstein",
-        "pais": "",
-        "rating": 1085.93,
-        "rd": 104.13,
-        "partidos_jugados": 24,
-        "pj_reales": 3,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "22488",
-        "nombre": "Gibraltar",
-        "pais": "",
-        "rating": 1150.95,
-        "rd": 98.55,
-        "partidos_jugados": 26,
-        "pj_reales": 5,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 45.9,
-        "prob_empate": 21.6,
-        "prob_visitante": 32.5
-      },
-      "diff_elo": -65.0,
-      "confianza": 32.5
-    },
-    {
       "fixture_id": "401901604",
       "fecha": "2026-10-07T13:00:00-05:00",
       "fecha_display": "2026-10-07",
@@ -482,7 +402,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.2,
+        "overperformance": -5.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -574,7 +494,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.2,
+        "overperformance": -2.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -612,7 +532,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.4,
+        "overperformance": -2.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -622,6 +542,86 @@
       },
       "diff_elo": -213.2,
       "confianza": 100.0
+    },
+    {
+      "fixture_id": "401914265",
+      "fecha": "2026-10-07T13:00:00-05:00",
+      "fecha_display": "2026-10-07",
+      "hora": "13:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "21706",
+        "nombre": "Liechtenstein",
+        "pais": "",
+        "rating": 1085.93,
+        "rd": 104.13,
+        "partidos_jugados": 24,
+        "pj_reales": 3,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "22488",
+        "nombre": "Gibraltar",
+        "pais": "",
+        "rating": 1150.95,
+        "rd": 98.55,
+        "partidos_jugados": 26,
+        "pj_reales": 5,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 45.9,
+        "prob_empate": 21.6,
+        "prob_visitante": 32.5
+      },
+      "diff_elo": -65.0,
+      "confianza": 32.5
     },
     {
       "fixture_id": "401901613",
@@ -1280,7 +1280,7 @@
         "nombre": "Wyoming",
         "pais": "",
         "rating": 1687.79,
-        "rd": 188.82430676178564,
+        "rd": 189.39887996525195,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 74.7,
@@ -1440,7 +1440,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.1,
+        "overperformance": -5.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -1678,7 +1678,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.4,
+        "overperformance": -1.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1716,7 +1716,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.6,
+        "overperformance": 0.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -1832,7 +1832,7 @@
         "nombre": "Internacional",
         "pais": "",
         "rating": 1358.71,
-        "rd": 160.49334633341758,
+        "rd": 161.16870495352927,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 16.4,
@@ -2016,7 +2016,7 @@
         "nombre": "Remo",
         "pais": "",
         "rating": 1284.85,
-        "rd": 184.2472098659187,
+        "rd": 184.83581585964657,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 7.4,
@@ -2090,7 +2090,7 @@
       "prediccion": {
         "prob_local": 30.3,
         "prob_empate": 18.2,
-        "prob_visitante": 51.5
+        "prob_visitante": 51.4
       },
       "diff_elo": -212.9,
       "confianza": 100.0
@@ -2636,7 +2636,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.3,
+        "overperformance": 0.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -2690,7 +2690,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -16.9,
+        "overperformance": -16.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -2732,9 +2732,9 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 56.5,
+        "prob_local": 56.6,
         "prob_empate": 22.4,
-        "prob_visitante": 21.1
+        "prob_visitante": 21.0
       },
       "diff_elo": 33.8,
       "confianza": 16.9
@@ -2974,7 +2974,7 @@
         "nombre": "Wright St",
         "pais": "",
         "rating": 1381.88,
-        "rd": 213.68200833723301,
+        "rd": 214.1898255755828,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 28.8,
@@ -3150,7 +3150,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.0,
+        "overperformance": -3.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3188,7 +3188,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.4,
+        "overperformance": 4.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -3250,7 +3250,7 @@
         "nombre": "Gonzaga",
         "pais": "",
         "rating": 1460.47,
-        "rd": 188.03,
+        "rd": 188.6068585919588,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 46.9,
@@ -3832,13 +3832,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 11.0,
+        "overperformance": 10.6,
         "vol": 0.06
       },
       "prediccion": {
         "prob_local": 14.3,
         "prob_empate": 14.1,
-        "prob_visitante": 71.6
+        "prob_visitante": 71.5
       },
       "diff_elo": -389.2,
       "confianza": 100.0
@@ -4530,7 +4530,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.0,
+        "overperformance": 2.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4568,7 +4568,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.2,
+        "overperformance": 0.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -4622,7 +4622,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.4,
+        "overperformance": 3.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4660,7 +4660,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.3,
+        "overperformance": -5.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -5040,98 +5040,6 @@
       "confianza": 41.4
     },
     {
-      "fixture_id": "401900964",
-      "fecha": "2026-10-07T20:00:00-05:00",
-      "fecha_display": "2026-10-07",
-      "hora": "20:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "20469",
-        "nombre": "UC Davis",
-        "pais": "",
-        "rating": 1325.69,
-        "rd": 132.19,
-        "partidos_jugados": 10,
-        "pj_reales": 1,
-        "form_score": 11.8,
-        "form_local": 36.0,
-        "form_visitante": 11.0,
-        "momentum": "stable",
-        "momentum_diff": -1.2,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "D",
-            "D",
-            "D",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.5,
-          "goles_contra": 1.2,
-          "diferencia": -0.7
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -2.2,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20646",
-        "nombre": "Grand Canyon",
-        "pais": "",
-        "rating": 1656.85,
-        "rd": 203.34,
-        "partidos_jugados": 4,
-        "pj_reales": 4,
-        "form_score": 61.5,
-        "form_local": 46.7,
-        "form_visitante": 81.1,
-        "momentum": "stable",
-        "momentum_diff": -1.4,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1D 3E",
-          "resultados": [
-            "E",
-            "V",
-            "E",
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.17,
-          "goles_contra": 0.67,
-          "diferencia": 0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.2,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 20.3,
-        "prob_empate": 15.5,
-        "prob_visitante": 64.2
-      },
-      "diff_elo": -331.2,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401891045",
       "fecha": "2026-10-07T21:00:00-05:00",
       "fecha_display": "2026-10-07",
@@ -5211,7 +5119,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.0,
+        "overperformance": 7.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -5357,7 +5265,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.8,
+        "overperformance": 4.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5395,7 +5303,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.3,
+        "overperformance": 5.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -5419,7 +5327,7 @@
         "nombre": "San Diego St",
         "pais": "",
         "rating": 1480.62,
-        "rd": 210.8790147513648,
+        "rd": 211.393531288054,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 33.6,
@@ -5772,6 +5680,98 @@
         "prob_visitante": 1.0
       },
       "diff_elo": 322.0,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401900964",
+      "fecha": "2026-10-07T21:00:00-05:00",
+      "fecha_display": "2026-10-07",
+      "hora": "21:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20469",
+        "nombre": "UC Davis",
+        "pais": "",
+        "rating": 1325.69,
+        "rd": 132.19,
+        "partidos_jugados": 10,
+        "pj_reales": 1,
+        "form_score": 11.8,
+        "form_local": 36.0,
+        "form_visitante": 11.0,
+        "momentum": "stable",
+        "momentum_diff": -1.2,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "1V 3D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "D",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.5,
+          "goles_contra": 1.2,
+          "diferencia": -0.7
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -2.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20646",
+        "nombre": "Grand Canyon",
+        "pais": "",
+        "rating": 1656.85,
+        "rd": 203.34,
+        "partidos_jugados": 4,
+        "pj_reales": 4,
+        "form_score": 61.5,
+        "form_local": 46.7,
+        "form_visitante": 81.1,
+        "momentum": "stable",
+        "momentum_diff": -1.4,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1D 3E",
+          "resultados": [
+            "E",
+            "V",
+            "E",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.17,
+          "goles_contra": 0.67,
+          "diferencia": 0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.2,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 20.3,
+        "prob_empate": 15.5,
+        "prob_visitante": 64.2
+      },
+      "diff_elo": -331.2,
       "confianza": 100.0
     },
     {
