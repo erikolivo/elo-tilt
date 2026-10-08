@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-07T18:18:33.933973Z",
+  "generado": "2026-10-08T00:41:11.758597Z",
   "fecha_consulta": "2026-10-08",
   "total": 101,
   "predicciones": [
@@ -82,6 +82,98 @@
       },
       "diff_elo": -272.5,
       "confianza": 100.0
+    },
+    {
+      "fixture_id": "401885557",
+      "fecha": "2026-10-08T10:00:00-05:00",
+      "fecha_display": "2026-10-08",
+      "hora": "10:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "131300",
+        "nombre": "West Florida",
+        "pais": "",
+        "rating": 1679.94,
+        "rd": 157.28,
+        "partidos_jugados": 8,
+        "pj_reales": 1,
+        "form_score": 66.4,
+        "form_local": 90.7,
+        "form_visitante": 63.4,
+        "momentum": "stable",
+        "momentum_diff": -0.8,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3V 2E",
+          "resultados": [
+            "E",
+            "E",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.57,
+          "goles_contra": 0.43,
+          "diferencia": 1.14
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.8,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20594",
+        "nombre": "Lipscomb",
+        "pais": "",
+        "rating": 1506.43,
+        "rd": 170.45,
+        "partidos_jugados": 6,
+        "pj_reales": 6,
+        "form_score": 58.0,
+        "form_local": 71.2,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": -1.4,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "V",
+            "D",
+            "E",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 0.67,
+          "diferencia": 0.33
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 11.5,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 74.5,
+        "prob_empate": 19.1,
+        "prob_visitante": 6.3
+      },
+      "diff_elo": 173.5,
+      "confianza": 86.8
     },
     {
       "fixture_id": "401898895",
@@ -401,7 +493,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.4,
+        "overperformance": -1.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -439,7 +531,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.3,
+        "overperformance": -7.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -623,7 +715,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.9,
+        "overperformance": 1.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -677,7 +769,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.7,
+        "overperformance": -3.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -715,7 +807,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.9,
+        "overperformance": 2.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -769,7 +861,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.4,
+        "overperformance": -5.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -807,7 +899,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.4,
+        "overperformance": -9.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -923,7 +1015,7 @@
         "nombre": "Atlético Grau",
         "pais": "",
         "rating": 1711.22,
-        "rd": 184.15397996153146,
+        "rd": 184.7429417964304,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 54.2,
@@ -1045,7 +1137,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.0,
+        "overperformance": 5.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1083,7 +1175,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.7,
+        "overperformance": -5.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -1137,7 +1229,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -16.9,
+        "overperformance": -16.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1181,7 +1273,7 @@
       "prediccion": {
         "prob_local": 6.5,
         "prob_empate": 11.1,
-        "prob_visitante": 82.4
+        "prob_visitante": 82.3
       },
       "diff_elo": -538.6,
       "confianza": 100.0
@@ -1229,7 +1321,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.5,
+        "overperformance": 6.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1656,7 +1748,7 @@
       "liga_slug": "all",
       "equipo_local": {
         "id": "20604",
-        "nombre": "Colorado St",
+        "nombre": "Colorado State",
         "pais": "",
         "rating": 1272.02,
         "rd": 186.14,
@@ -1786,7 +1878,7 @@
       },
       "equipo_visitante": {
         "id": "20373",
-        "nombre": "College of Charlesto",
+        "nombre": "Charleston",
         "pais": "",
         "rating": 1452.47,
         "rd": 143.47,
@@ -2095,7 +2187,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.2,
+        "overperformance": -1.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -2149,7 +2241,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.1,
+        "overperformance": 1.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -2241,12 +2333,12 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 13.7,
+        "overperformance": 14.2,
         "vol": 0.06
       },
       "equipo_visitante": {
         "id": "20468",
-        "nombre": "Pitt",
+        "nombre": "Pittsburgh",
         "pais": "",
         "rating": 1748.9,
         "rd": 141.91,
@@ -2283,7 +2375,7 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 55.6,
+        "prob_local": 55.7,
         "prob_empate": 22.7,
         "prob_visitante": 21.6
       },
@@ -2463,7 +2555,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.2,
+        "overperformance": -3.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -2555,7 +2647,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.5,
+        "overperformance": -9.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -2609,7 +2701,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.2,
+        "overperformance": -1.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -2793,7 +2885,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.0,
+        "overperformance": 4.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3015,7 +3107,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.4,
+        "overperformance": -3.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -3077,7 +3169,7 @@
         "nombre": "Flamengo",
         "pais": "",
         "rating": 1772.96,
-        "rd": 169.44980656503026,
+        "rd": 170.0896702050578,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 83.4,
@@ -3111,7 +3203,7 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 43.7,
+        "prob_local": 43.8,
         "prob_empate": 21.1,
         "prob_visitante": 35.2
       },
@@ -3261,7 +3353,7 @@
         "nombre": "Novorizontino",
         "pais": "",
         "rating": 1708.66,
-        "rd": 172.0932129734533,
+        "rd": 172.72330520069804,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 93.8,
@@ -3315,7 +3407,7 @@
         "nombre": "Athletico-PR",
         "pais": "",
         "rating": 1526.03,
-        "rd": 162.44767168436763,
+        "rd": 163.1150276449084,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 39.3,
@@ -4081,7 +4173,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.3,
+        "overperformance": 5.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4173,7 +4265,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.1,
+        "overperformance": -9.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4357,7 +4449,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 16.6,
+        "overperformance": 16.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4579,7 +4671,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.9,
+        "overperformance": 9.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -4671,13 +4763,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 13.3,
+        "overperformance": 13.5,
         "vol": 0.06
       },
       "prediccion": {
         "prob_local": 60.4,
         "prob_empate": 21.4,
-        "prob_visitante": 18.1
+        "prob_visitante": 18.2
       },
       "diff_elo": 74.4,
       "confianza": 37.2
@@ -5093,7 +5185,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.9,
+        "overperformance": 3.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5603,98 +5695,6 @@
       "confianza": 76.4
     },
     {
-      "fixture_id": "401885557",
-      "fecha": "2026-10-08T18:00:00-05:00",
-      "fecha_display": "2026-10-08",
-      "hora": "18:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "131300",
-        "nombre": "West Florida",
-        "pais": "",
-        "rating": 1679.94,
-        "rd": 157.28,
-        "partidos_jugados": 8,
-        "pj_reales": 1,
-        "form_score": 66.4,
-        "form_local": 90.7,
-        "form_visitante": 63.4,
-        "momentum": "stable",
-        "momentum_diff": -0.8,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "3V 2E",
-          "resultados": [
-            "E",
-            "E",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.57,
-          "goles_contra": 0.43,
-          "diferencia": 1.14
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 2.8,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20594",
-        "nombre": "Lipscomb",
-        "pais": "",
-        "rating": 1506.43,
-        "rd": 170.45,
-        "partidos_jugados": 6,
-        "pj_reales": 6,
-        "form_score": 58.0,
-        "form_local": 71.2,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": -1.4,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "V",
-            "D",
-            "E",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 0.67,
-          "diferencia": 0.33
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 12.3,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 74.5,
-        "prob_empate": 19.1,
-        "prob_visitante": 6.3
-      },
-      "diff_elo": 173.5,
-      "confianza": 86.8
-    },
-    {
       "fixture_id": "401886858",
       "fecha": "2026-10-08T18:00:00-05:00",
       "fecha_display": "2026-10-08",
@@ -6105,7 +6105,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.8,
+        "overperformance": -2.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -6143,13 +6143,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 10.2,
+        "overperformance": 10.7,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 13.8,
+        "prob_local": 13.7,
         "prob_empate": 14.9,
-        "prob_visitante": 71.3
+        "prob_visitante": 71.4
       },
       "diff_elo": -355.2,
       "confianza": 100.0
@@ -6197,12 +6197,12 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -14.0,
+        "overperformance": -13.8,
         "vol": 0.06
       },
       "equipo_visitante": {
         "id": "18023",
-        "nombre": "UT Rio Grande",
+        "nombre": "Rio Grande",
         "pais": "",
         "rating": 1285.41,
         "rd": 162.3,
@@ -6443,7 +6443,7 @@
         "nombre": "Memphis",
         "pais": "",
         "rating": 1636.24,
-        "rd": 224.18474340618198,
+        "rd": 224.66888712255127,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 55.7,
@@ -6602,7 +6602,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.4,
+        "overperformance": -1.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -7208,7 +7208,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.4,
+        "overperformance": 6.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7246,7 +7246,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 12.8,
+        "overperformance": 12.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -7400,7 +7400,7 @@
         "nombre": "Coritiba",
         "pais": "",
         "rating": 1604.27,
-        "rd": 191.6680419477591,
+        "rd": 192.23405911225552,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 52.4,
@@ -7492,7 +7492,7 @@
         "nombre": "Bahia",
         "pais": "",
         "rating": 1703.31,
-        "rd": 182.02127952870535,
+        "rd": 182.61708004603224,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 92.3,
@@ -7528,7 +7528,7 @@
       "prediccion": {
         "prob_local": 34.1,
         "prob_empate": 19.1,
-        "prob_visitante": 46.9
+        "prob_visitante": 46.8
       },
       "diff_elo": -176.2,
       "confianza": 88.1
@@ -7614,7 +7614,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.1,
+        "overperformance": -4.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -7860,7 +7860,7 @@
         "nombre": "Municipal",
         "pais": "",
         "rating": 1625.54,
-        "rd": 177.74903009068237,
+        "rd": 178.3591430403988,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 77.7,
@@ -7911,7 +7911,7 @@
       "liga_slug": "all",
       "equipo_local": {
         "id": "21556",
-        "nombre": "Chicago St",
+        "nombre": "Chicago State",
         "pais": "",
         "rating": 1066.57,
         "rd": 138.36,
@@ -8279,10 +8279,10 @@
       "liga_slug": "all",
       "equipo_local": {
         "id": "20398",
-        "nombre": "Oregon St",
+        "nombre": "Oregon State",
         "pais": "",
         "rating": 1421.13,
-        "rd": 197.07631601913033,
+        "rd": 197.6267708171119,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 25.4,
@@ -8404,7 +8404,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.6,
+        "overperformance": -0.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8994,7 +8994,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.3,
+        "overperformance": 1.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -9086,7 +9086,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.2,
+        "overperformance": 3.3,
         "vol": 0.06
       },
       "prediccion": {
