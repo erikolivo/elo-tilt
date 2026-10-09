@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-09T09:59:00.095027Z",
+  "generado": "2026-10-09T11:33:53.200942Z",
   "fecha_consulta": "2026-10-09",
   "total": 126,
   "predicciones": [
@@ -268,86 +268,6 @@
       "confianza": 53.9
     },
     {
-      "fixture_id": "401878167",
-      "fecha": "2026-10-09T06:00:00-05:00",
-      "fecha_display": "2026-10-09",
-      "hora": "06:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "21485",
-        "nombre": "Kazakhstan",
-        "pais": "",
-        "rating": 1233.72,
-        "rd": 99.61,
-        "partidos_jugados": 27,
-        "pj_reales": 5,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "4178",
-        "nombre": "Rep Ireland",
-        "pais": "",
-        "rating": 1568.69,
-        "rd": 93.72,
-        "partidos_jugados": 27,
-        "pj_reales": 4,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 20.9,
-        "prob_empate": 15.4,
-        "prob_visitante": 63.7
-      },
-      "diff_elo": -335.0,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401928210",
       "fecha": "2026-10-09T06:00:00-05:00",
       "fecha_display": "2026-10-09",
@@ -428,6 +348,86 @@
       "confianza": 38.4
     },
     {
+      "fixture_id": "401878167",
+      "fecha": "2026-10-09T06:00:00-05:00",
+      "fecha_display": "2026-10-09",
+      "hora": "06:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "21485",
+        "nombre": "Kazakhstan",
+        "pais": "",
+        "rating": 1233.72,
+        "rd": 99.61,
+        "partidos_jugados": 27,
+        "pj_reales": 5,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "4178",
+        "nombre": "Rep Ireland",
+        "pais": "",
+        "rating": 1568.69,
+        "rd": 93.72,
+        "partidos_jugados": 27,
+        "pj_reales": 4,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 20.9,
+        "prob_empate": 15.4,
+        "prob_visitante": 63.7
+      },
+      "diff_elo": -335.0,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401861475",
       "fecha": "2026-10-09T06:35:00-05:00",
       "fecha_display": "2026-10-09",
@@ -440,7 +440,7 @@
         "nombre": "Qingdao Hainiu",
         "pais": "",
         "rating": 1155.86,
-        "rd": 210.8745737541405,
+        "rd": 211.13197701349353,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 0.0,
@@ -532,7 +532,7 @@
         "nombre": "Shenzhen",
         "pais": "",
         "rating": 1445.21,
-        "rd": 194.79405078423332,
+        "rd": 195.07268313041692,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 38.9,
@@ -6382,7 +6382,7 @@
         "nombre": "Mushuc Runa",
         "pais": "",
         "rating": 1546.36,
-        "rd": 199.6620602135245,
+        "rd": 199.93389945265665,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 65.9,
@@ -6528,7 +6528,7 @@
         "nombre": "Platense",
         "pais": "",
         "rating": 1392.36,
-        "rd": 222.27904198478922,
+        "rd": 222.52331863890288,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 50.6,
@@ -6565,7 +6565,7 @@
         "nombre": "Juticalpa",
         "pais": "",
         "rating": 1386.99,
-        "rd": 222.1184905802125,
+        "rd": 222.36289474999086,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 45.5,
@@ -11078,7 +11078,7 @@
         "nombre": "Spr. San José",
         "pais": "",
         "rating": 1679.75,
-        "rd": 215.76013976345783,
+        "rd": 216.0117968185033,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 84.6,
@@ -11116,7 +11116,7 @@
         "nombre": "Cartaginés",
         "pais": "",
         "rating": 1642.84,
-        "rd": 173.51912694925494,
+        "rd": 173.83182221857078,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 91.7,
@@ -11170,7 +11170,7 @@
         "nombre": "Tigres",
         "pais": "",
         "rating": 1410.86,
-        "rd": 185.0696035372465,
+        "rd": 185.3628246790152,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 54.9,
