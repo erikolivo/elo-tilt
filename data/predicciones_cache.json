@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-09T23:45:30.470263Z",
+  "generado": "2026-10-10T03:55:31.901376Z",
   "fecha_consulta": "2026-10-09",
   "total": 126,
   "predicciones": [
@@ -10454,6 +10454,90 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401929641",
+      "fecha": "2026-10-09T20:00:00-05:00",
+      "fecha_display": "2026-10-09",
+      "hora": "20:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5325",
+        "nombre": "CC Mariners",
+        "pais": "",
+        "rating": 1298.1,
+        "rd": 235.28,
+        "partidos_jugados": 3,
+        "pj_reales": 1,
+        "form_score": 0.0,
+        "form_local": 50.0,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "3D",
+          "resultados": [
+            "D",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 3.0,
+          "diferencia": -2.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -16.1,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "134009",
+        "nombre": "APIA Leichhardt Tigers FC",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 350.0,
+        "partidos_jugados": 0,
+        "pj_reales": 0,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 35.7,
+        "prob_empate": 18.5,
+        "prob_visitante": 45.8
+      },
+      "diff_elo": -201.9,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401876954",
       "fecha": "2026-10-09T20:00:00-05:00",
       "fecha_display": "2026-10-09",
@@ -10716,90 +10800,6 @@
       },
       "diff_elo": -110.0,
       "confianza": 55.0
-    },
-    {
-      "fixture_id": "401929641",
-      "fecha": "2026-10-09T20:00:00-05:00",
-      "fecha_display": "2026-10-09",
-      "hora": "20:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5325",
-        "nombre": "CC Mariners",
-        "pais": "",
-        "rating": 1298.1,
-        "rd": 235.28,
-        "partidos_jugados": 3,
-        "pj_reales": 1,
-        "form_score": 0.0,
-        "form_local": 50.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "3D",
-          "resultados": [
-            "D",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 3.0,
-          "diferencia": -2.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -16.1,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "134009",
-        "nombre": "APIA Leichhardt Tigers FC",
-        "pais": "",
-        "rating": 1500.0,
-        "rd": 350.0,
-        "partidos_jugados": 0,
-        "pj_reales": 0,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 35.7,
-        "prob_empate": 18.5,
-        "prob_visitante": 45.8
-      },
-      "diff_elo": -201.9,
-      "confianza": 100.0
     },
     {
       "fixture_id": "401886178",
