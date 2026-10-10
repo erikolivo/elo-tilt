@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-10T11:48:40.423980Z",
+  "generado": "2026-10-10T16:53:05.082672Z",
   "fecha_consulta": "2026-10-10",
   "total": 343,
   "predicciones": [
@@ -11563,7 +11563,7 @@
         "nombre": "Toronto",
         "pais": "",
         "rating": 1576.43,
-        "rd": 223.84092328657647,
+        "rd": 224.08343267502607,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 68.9,
@@ -11600,7 +11600,7 @@
         "nombre": "CF Montréal",
         "pais": "",
         "rating": 1437.97,
-        "rd": 216.4083311459,
+        "rd": 216.6592018753443,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 35.6,
@@ -12191,6 +12191,98 @@
       },
       "diff_elo": 77.0,
       "confianza": 38.5
+    },
+    {
+      "fixture_id": "401898499",
+      "fecha": "2026-10-10T12:00:00-05:00",
+      "fecha_display": "2026-10-10",
+      "hora": "12:00",
+      "liga": "usa.ncaa.m.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.m.1",
+      "equipo_local": {
+        "id": "5766",
+        "nombre": "Lafayette",
+        "pais": "EE.UU.",
+        "rating": 1407.29,
+        "rd": 151.85,
+        "partidos_jugados": 8,
+        "pj_reales": 8,
+        "form_score": 59.3,
+        "form_local": 32.9,
+        "form_visitante": 59.0,
+        "momentum": "stable",
+        "momentum_diff": 1.3,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 2D 2E",
+          "resultados": [
+            "V",
+            "E",
+            "D",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.62,
+          "goles_contra": 1.25,
+          "diferencia": -0.63
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 3.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "5666",
+        "nombre": "Loyola MD",
+        "pais": "EE.UU.",
+        "rating": 1227.79,
+        "rd": 153.25,
+        "partidos_jugados": 9,
+        "pj_reales": 9,
+        "form_score": 42.1,
+        "form_local": 31.0,
+        "form_visitante": 55.9,
+        "momentum": "stable",
+        "momentum_diff": -0.1,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 2D 2E",
+          "resultados": [
+            "E",
+            "D",
+            "V",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.1,
+          "goles_contra": 1.8,
+          "diferencia": -0.7
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 72.5,
+        "prob_empate": 19.0,
+        "prob_visitante": 8.5
+      },
+      "diff_elo": 179.5,
+      "confianza": 89.8
     },
     {
       "fixture_id": "401901667",
@@ -13561,7 +13653,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.0,
+        "overperformance": -1.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -13707,7 +13799,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.8,
+        "overperformance": 6.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -13745,7 +13837,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.1,
+        "overperformance": 6.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -14443,7 +14535,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.4,
+        "overperformance": 8.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -14481,7 +14573,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.1,
+        "overperformance": 1.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -14627,7 +14719,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.9,
+        "overperformance": -0.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -14665,7 +14757,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.8,
+        "overperformance": 7.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -14675,98 +14767,6 @@
       },
       "diff_elo": 196.3,
       "confianza": 98.2
-    },
-    {
-      "fixture_id": "401898499",
-      "fecha": "2026-10-10T13:00:00-05:00",
-      "fecha_display": "2026-10-10",
-      "hora": "13:00",
-      "liga": "usa.ncaa.m.1",
-      "liga_pais": "EE.UU.",
-      "liga_slug": "usa.ncaa.m.1",
-      "equipo_local": {
-        "id": "5766",
-        "nombre": "Lafayette",
-        "pais": "EE.UU.",
-        "rating": 1407.29,
-        "rd": 151.85,
-        "partidos_jugados": 8,
-        "pj_reales": 8,
-        "form_score": 59.3,
-        "form_local": 32.9,
-        "form_visitante": 59.0,
-        "momentum": "stable",
-        "momentum_diff": 1.3,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 2D 2E",
-          "resultados": [
-            "V",
-            "E",
-            "D",
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.62,
-          "goles_contra": 1.25,
-          "diferencia": -0.63
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 3.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "5666",
-        "nombre": "Loyola MD",
-        "pais": "EE.UU.",
-        "rating": 1227.79,
-        "rd": 153.25,
-        "partidos_jugados": 9,
-        "pj_reales": 9,
-        "form_score": 42.1,
-        "form_local": 31.0,
-        "form_visitante": 55.9,
-        "momentum": "stable",
-        "momentum_diff": -0.1,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 2D 2E",
-          "resultados": [
-            "E",
-            "D",
-            "V",
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.1,
-          "goles_contra": 1.8,
-          "diferencia": -0.7
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 2.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 72.5,
-        "prob_empate": 19.0,
-        "prob_visitante": 8.5
-      },
-      "diff_elo": 179.5,
-      "confianza": 89.8
     },
     {
       "fixture_id": "401891681",
@@ -15701,7 +15701,7 @@
         "nombre": "Chicago",
         "pais": "",
         "rating": 1666.03,
-        "rd": 193.9499362963378,
+        "rd": 194.22981685946468,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 48.3,
@@ -15739,7 +15739,7 @@
         "nombre": "NYCFC",
         "pais": "",
         "rating": 1286.15,
-        "rd": 189.9561470164983,
+        "rd": 190.24190326334838,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 34.6,
@@ -16087,7 +16087,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.5,
+        "overperformance": 5.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16125,7 +16125,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.3,
+        "overperformance": 6.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -16179,7 +16179,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.1,
+        "overperformance": 4.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16217,7 +16217,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.3,
+        "overperformance": 0.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -16309,7 +16309,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.2,
+        "overperformance": -4.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -16493,7 +16493,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.9,
+        "overperformance": -5.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -16547,7 +16547,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.6,
+        "overperformance": 1.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16731,7 +16731,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.7,
+        "overperformance": -1.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16823,7 +16823,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 12.0,
+        "overperformance": 12.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16861,11 +16861,11 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.9,
+        "overperformance": 1.3,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 16.2,
+        "prob_local": 16.3,
         "prob_empate": 14.0,
         "prob_visitante": 69.8
       },
@@ -16915,7 +16915,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 10.3,
+        "overperformance": 10.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16953,7 +16953,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.4,
+        "overperformance": -0.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -17045,7 +17045,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.0,
+        "overperformance": -1.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -17455,7 +17455,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.4,
+        "overperformance": 0.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -17493,7 +17493,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.0,
+        "overperformance": -1.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -18831,7 +18831,7 @@
         "nombre": "Pacific",
         "pais": "EE.UU.",
         "rating": 1393.02,
-        "rd": 213.9473840405955,
+        "rd": 214.20111167259992,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 11.0,
@@ -19413,7 +19413,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.1,
+        "overperformance": -4.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -19475,7 +19475,7 @@
         "nombre": "Cali",
         "pais": "Colombia",
         "rating": 1470.32,
-        "rd": 191.94176073962873,
+        "rd": 192.22448989248488,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 39.9,
@@ -19567,7 +19567,7 @@
         "nombre": "Juan Pablo II",
         "pais": "Perú",
         "rating": 1541.77,
-        "rd": 222.20978418907112,
+        "rd": 222.4541124754974,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 78.2,
@@ -20148,7 +20148,7 @@
         "nombre": "San Carlos",
         "pais": "Costa Rica",
         "rating": 1745.76,
-        "rd": 219.56336108841296,
+        "rd": 219.81065571267428,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 54.5,
@@ -20185,7 +20185,7 @@
         "nombre": "Pérez Zeledón",
         "pais": "Costa Rica",
         "rating": 1435.59,
-        "rd": 205.97960278722374,
+        "rd": 206.24314167894258,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 32.0,
@@ -20277,7 +20277,7 @@
         "nombre": "Xelajú MC",
         "pais": "Guatemala",
         "rating": 1597.3,
-        "rd": 180.09932353513702,
+        "rd": 180.4006636400696,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 65.6,
@@ -20311,7 +20311,7 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 28.6,
+        "prob_local": 28.7,
         "prob_empate": 17.0,
         "prob_visitante": 54.4
       },
@@ -20331,7 +20331,7 @@
         "nombre": "Génesis",
         "pais": "Honduras",
         "rating": 1465.49,
-        "rd": 212.11653279595396,
+        "rd": 212.37244781124645,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 30.5,
@@ -20368,7 +20368,7 @@
         "nombre": "Olimpia",
         "pais": "Honduras",
         "rating": 1849.68,
-        "rd": 186.239102473894,
+        "rd": 186.53048520236933,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 72.3,
@@ -20398,7 +20398,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.9,
+        "overperformance": 7.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -20644,7 +20644,7 @@
         "nombre": "San Francisco",
         "pais": "EE.UU.",
         "rating": 1423.64,
-        "rd": 201.42141372242108,
+        "rd": 201.69094455819675,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 30.8,
@@ -20974,7 +20974,7 @@
         "nombre": "Portuguesa",
         "pais": "Venezuela",
         "rating": 1581.88,
-        "rd": 182.34528968207346,
+        "rd": 182.64291432193272,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 55.7,
@@ -21012,7 +21012,7 @@
         "nombre": "La Guaira",
         "pais": "Venezuela",
         "rating": 1508.48,
-        "rd": 172.41420930201585,
+        "rd": 172.72894676923408,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 50.8,
@@ -21066,7 +21066,7 @@
         "nombre": "Guayaquil",
         "pais": "Ecuador",
         "rating": 1695.66,
-        "rd": 217.30985426208585,
+        "rd": 217.55965214666656,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 86.6,
@@ -21103,7 +21103,7 @@
         "nombre": "Emelec",
         "pais": "Ecuador",
         "rating": 1555.79,
-        "rd": 210.62944822981316,
+        "rd": 210.88716785418478,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 67.3,
@@ -21186,7 +21186,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.5,
+        "overperformance": 3.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -21224,7 +21224,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.3,
+        "overperformance": -4.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -21340,7 +21340,7 @@
         "nombre": "Charleston",
         "pais": "",
         "rating": 1624.17,
-        "rd": 216.8372829361991,
+        "rd": 217.0876496203455,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 84.8,
@@ -21562,7 +21562,7 @@
         "nombre": "Wright St",
         "pais": "EE.UU.",
         "rating": 1381.88,
-        "rd": 218.45861683887233,
+        "rd": 218.70712749630692,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 28.8,
@@ -22260,7 +22260,7 @@
         "nombre": "Táchira",
         "pais": "Venezuela",
         "rating": 1624.82,
-        "rd": 178.4392688542499,
+        "rd": 178.7433975060585,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 51.5,
@@ -22298,7 +22298,7 @@
         "nombre": "UCV FC",
         "pais": "Venezuela",
         "rating": 1375.88,
-        "rd": 177.561365194896,
+        "rd": 177.8670662103309,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 49.2,
@@ -22658,7 +22658,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.1,
+        "overperformance": 7.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -22758,7 +22758,7 @@
         "nombre": "Atlante",
         "pais": "",
         "rating": 1389.86,
-        "rd": 200.9321828113992,
+        "rd": 201.20235102319563,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 31.7,
@@ -22788,7 +22788,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.9,
+        "overperformance": 0.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -23088,7 +23088,7 @@
         "nombre": "Pittsburgh",
         "pais": "",
         "rating": 1565.9,
-        "rd": 184.52175256386238,
+        "rd": 184.81587229458626,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 48.8,
@@ -23364,7 +23364,7 @@
         "nombre": "Venados",
         "pais": "",
         "rating": 1422.14,
-        "rd": 222.6703178073826,
+        "rd": 222.91416568902878,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 37.8,
@@ -23455,7 +23455,7 @@
         "nombre": "Puntarenas",
         "pais": "Costa Rica",
         "rating": 1618.68,
-        "rd": 217.81296165376045,
+        "rd": 218.06219981830975,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 73.1,
@@ -23492,7 +23492,7 @@
         "nombre": "Alajuelense",
         "pais": "Costa Rica",
         "rating": 1574.74,
-        "rd": 191.24053130904537,
+        "rd": 191.52439016011732,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 55.7,
@@ -26122,7 +26122,7 @@
         "nombre": "Motagua",
         "pais": "Honduras",
         "rating": 1632.93,
-        "rd": 180.28158936173085,
+        "rd": 180.58261529162027,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 72.6,
@@ -26160,7 +26160,7 @@
         "nombre": "Choloma",
         "pais": "Honduras",
         "rating": 1331.56,
-        "rd": 223.9825740194591,
+        "rd": 224.22495443103645,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 27.6,
@@ -26213,7 +26213,7 @@
         "nombre": "Atlanta",
         "pais": "",
         "rating": 1676.43,
-        "rd": 216.86356152127087,
+        "rd": 217.113889562386,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 54.5,
@@ -26250,7 +26250,7 @@
         "nombre": "Cincinnati",
         "pais": "",
         "rating": 1419.79,
-        "rd": 186.50892005905635,
+        "rd": 186.7999206786744,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 37.1,
@@ -26284,7 +26284,7 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 78.6,
+        "prob_local": 78.5,
         "prob_empate": 17.2,
         "prob_visitante": 4.2
       },
@@ -26304,7 +26304,7 @@
         "nombre": "Charlotte",
         "pais": "",
         "rating": 1746.7,
-        "rd": 193.72814982006017,
+        "rd": 194.0083596705224,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 87.0,
@@ -26342,7 +26342,7 @@
         "nombre": "Dallas",
         "pais": "",
         "rating": 1674.07,
-        "rd": 184.11183656885956,
+        "rd": 184.40668864976112,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 49.6,
@@ -26464,7 +26464,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.4,
+        "overperformance": -2.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -26526,7 +26526,7 @@
         "nombre": "Seattle",
         "pais": "",
         "rating": 1333.69,
-        "rd": 190.1849129549712,
+        "rd": 190.47030697961267,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 35.9,
@@ -26580,7 +26580,7 @@
         "nombre": "Orlando",
         "pais": "",
         "rating": 1552.67,
-        "rd": 182.79307117057652,
+        "rd": 183.0899580250304,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 54.2,
@@ -26672,7 +26672,7 @@
         "nombre": "Philadelphia",
         "pais": "",
         "rating": 1475.97,
-        "rd": 180.61360181173836,
+        "rd": 180.91407530145008,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 72.7,
@@ -26702,7 +26702,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.2,
+        "overperformance": -3.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -26710,7 +26710,7 @@
         "nombre": "Salt Lake",
         "pais": "",
         "rating": 1476.63,
-        "rd": 173.87203186361674,
+        "rd": 174.18415596603631,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 8.6,
@@ -26802,7 +26802,7 @@
         "nombre": "San Diego",
         "pais": "",
         "rating": 1674.71,
-        "rd": 178.89091168057504,
+        "rd": 179.1943142228988,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 83.1,
@@ -27224,7 +27224,7 @@
         "nombre": "Universitario",
         "pais": "Perú",
         "rating": 1744.72,
-        "rd": 235.8866801779553,
+        "rd": 236.11683334599533,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 94.9,
@@ -27261,7 +27261,7 @@
         "nombre": "Melgar",
         "pais": "Perú",
         "rating": 1490.66,
-        "rd": 214.12702949830378,
+        "rd": 214.3805529589505,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 30.5,
@@ -27584,7 +27584,7 @@
         "nombre": "Austin",
         "pais": "",
         "rating": 1601.06,
-        "rd": 173.59927813205738,
+        "rd": 173.9118605202283,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 61.2,
@@ -27622,7 +27622,7 @@
         "nombre": "Nashville",
         "pais": "",
         "rating": 1617.62,
-        "rd": 176.90877809755926,
+        "rd": 177.215523105645,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 92.5,
@@ -27676,7 +27676,7 @@
         "nombre": "Minnesota",
         "pais": "",
         "rating": 1543.92,
-        "rd": 182.91585084481218,
+        "rd": 183.21251897681913,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 56.6,
@@ -27714,7 +27714,7 @@
         "nombre": "Houston",
         "pais": "",
         "rating": 1573.6,
-        "rd": 219.93495011459072,
+        "rd": 220.18180272178532,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 52.6,
@@ -27768,7 +27768,7 @@
         "nombre": "Kansas City",
         "pais": "",
         "rating": 1312.2,
-        "rd": 225.30603623248004,
+        "rd": 225.546978356087,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 8.4,
@@ -27805,7 +27805,7 @@
         "nombre": "Portland",
         "pais": "",
         "rating": 1525.32,
-        "rd": 180.5648228797499,
+        "rd": 180.86538741715898,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 34.7,
@@ -27951,7 +27951,7 @@
         "nombre": "River Plate",
         "pais": "Argentina",
         "rating": 1628.6,
-        "rd": 183.91889728120591,
+        "rd": 184.21395988821646,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 71.8,
@@ -27981,7 +27981,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.1,
+        "overperformance": -4.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -28043,7 +28043,7 @@
         "nombre": "Atlas",
         "pais": "",
         "rating": 1517.52,
-        "rd": 202.47223599683986,
+        "rd": 202.7403966289115,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 49.6,
@@ -28173,7 +28173,7 @@
         "nombre": "Orange County",
         "pais": "",
         "rating": 1249.23,
-        "rd": 220.38562966217995,
+        "rd": 220.6319534101058,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 22.8,
@@ -28264,7 +28264,7 @@
         "nombre": "Monterey Bay",
         "pais": "",
         "rating": 1294.92,
-        "rd": 210.13397932740784,
+        "rd": 210.39228866478783,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 31.7,
@@ -29330,7 +29330,7 @@
         "nombre": "Colorado",
         "pais": "",
         "rating": 1652.19,
-        "rd": 207.96025214245478,
+        "rd": 208.22129290177313,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 72.4,
@@ -29367,7 +29367,7 @@
         "nombre": "San Jose",
         "pais": "",
         "rating": 1261.88,
-        "rd": 229.6042688287448,
+        "rd": 229.84072091254941,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 22.8,
@@ -29504,7 +29504,7 @@
         "nombre": "UPNFM",
         "pais": "Honduras",
         "rating": 1291.84,
-        "rd": 217.06445382809687,
+        "rd": 217.3145504583343,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 13.4,
@@ -29541,7 +29541,7 @@
         "nombre": "Marathón",
         "pais": "Honduras",
         "rating": 1683.23,
-        "rd": 180.15094931136787,
+        "rd": 180.45218313842304,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 82.7,
@@ -29577,7 +29577,7 @@
       "prediccion": {
         "prob_local": 17.2,
         "prob_empate": 14.1,
-        "prob_visitante": 68.8
+        "prob_visitante": 68.7
       },
       "diff_elo": -391.4,
       "confianza": 100.0
@@ -29633,7 +29633,7 @@
         "nombre": "San Antonio ",
         "pais": "",
         "rating": 1538.6,
-        "rd": 206.282211779506,
+        "rd": 206.5453908611569,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 55.1,
@@ -29725,7 +29725,7 @@
         "nombre": "Las Vegas",
         "pais": "",
         "rating": 1460.38,
-        "rd": 207.2937214947748,
+        "rd": 207.55560054521752,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 28.2,
@@ -29951,7 +29951,7 @@
         "nombre": "Herediano",
         "pais": "Costa Rica",
         "rating": 1399.73,
-        "rd": 189.92550380459716,
+        "rd": 190.2113536861519,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 33.7,
@@ -29989,7 +29989,7 @@
         "nombre": "San Carlos",
         "pais": "Costa Rica",
         "rating": 1493.14,
-        "rd": 210.8869898100716,
+        "rd": 211.14441223410546,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 44.3,
@@ -30409,7 +30409,7 @@
         "nombre": "San Diego St",
         "pais": "EE.UU.",
         "rating": 1480.62,
-        "rd": 215.71737954512184,
+        "rd": 215.96902773726077,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 33.6,
@@ -30447,7 +30447,7 @@
         "nombre": "Gonzaga",
         "pais": "EE.UU.",
         "rating": 1460.47,
-        "rd": 193.44071410979603,
+        "rd": 193.7213023373305,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 46.9,
@@ -30477,7 +30477,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.5,
+        "overperformance": 4.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -30593,7 +30593,7 @@
         "nombre": "Santa Clara",
         "pais": "EE.UU.",
         "rating": 1476.63,
-        "rd": 197.6826320338866,
+        "rd": 197.9572169259381,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 15.4,
@@ -30807,7 +30807,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.7,
+        "overperformance": 7.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -30869,7 +30869,7 @@
         "nombre": "Washington",
         "pais": "EE.UU.",
         "rating": 1529.15,
-        "rd": 214.68070354473238,
+        "rd": 214.9335907725197,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 68.8,
@@ -31145,7 +31145,7 @@
         "nombre": "LAFC",
         "pais": "",
         "rating": 1426.91,
-        "rd": 189.47566508501572,
+        "rd": 189.76210670778983,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 39.7,
@@ -31183,7 +31183,7 @@
         "nombre": "Vancouver",
         "pais": "",
         "rating": 1583.05,
-        "rd": 189.70819301402085,
+        "rd": 189.99433172068078,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 77.0,
@@ -31329,7 +31329,7 @@
         "nombre": "América",
         "pais": "",
         "rating": 1865.93,
-        "rd": 198.34985449234543,
+        "rd": 198.62348052961224,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 97.3,
@@ -31367,7 +31367,7 @@
         "nombre": "Monterrey",
         "pais": "",
         "rating": 1645.61,
-        "rd": 182.60352557764304,
+        "rd": 182.90083890624453,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 42.5,
@@ -31397,13 +31397,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.6,
+        "overperformance": -5.5,
         "vol": 0.06
       },
       "prediccion": {
         "prob_local": 79.9,
         "prob_empate": 18.0,
-        "prob_visitante": 2.0
+        "prob_visitante": 2.1
       },
       "diff_elo": 220.3,
       "confianza": 100.0
