@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-11T03:28:27.665854Z",
+  "generado": "2026-10-11T11:05:28.725318Z",
   "fecha_consulta": "2026-10-11",
   "total": 272,
   "predicciones": [
@@ -906,6 +906,98 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401928124",
+      "fecha": "2026-10-11T06:00:00-05:00",
+      "fecha_display": "2026-10-11",
+      "hora": "06:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "8547",
+        "nombre": "Sirius",
+        "pais": "",
+        "rating": 1549.05,
+        "rd": 137.02,
+        "partidos_jugados": 10,
+        "pj_reales": 10,
+        "form_score": 81.2,
+        "form_local": 50.6,
+        "form_visitante": 81.8,
+        "momentum": "up",
+        "momentum_diff": 5.8,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "4V 1E",
+          "resultados": [
+            "V",
+            "E",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.4,
+          "goles_contra": 1.2,
+          "diferencia": 0.2
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -1.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "8221",
+        "nombre": "Brommapojkar",
+        "pais": "",
+        "rating": 1572.14,
+        "rd": 149.99,
+        "partidos_jugados": 8,
+        "pj_reales": 8,
+        "form_score": 54.9,
+        "form_local": 54.5,
+        "form_visitante": 50.6,
+        "momentum": "stable",
+        "momentum_diff": -2.5,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 3D",
+          "resultados": [
+            "V",
+            "D",
+            "D",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.0,
+          "goles_contra": 2.12,
+          "diferencia": -0.12
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -2.2,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 55.4,
+        "prob_empate": 22.6,
+        "prob_visitante": 22.0
+      },
+      "diff_elo": -23.1,
+      "confianza": 11.5
+    },
+    {
       "fixture_id": "401880237",
       "fecha": "2026-10-11T06:00:00-05:00",
       "fecha_display": "2026-10-11",
@@ -1088,98 +1180,6 @@
       },
       "diff_elo": -334.8,
       "confianza": 100.0
-    },
-    {
-      "fixture_id": "401928124",
-      "fecha": "2026-10-11T06:00:00-05:00",
-      "fecha_display": "2026-10-11",
-      "hora": "06:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "8547",
-        "nombre": "Sirius",
-        "pais": "",
-        "rating": 1549.05,
-        "rd": 137.02,
-        "partidos_jugados": 10,
-        "pj_reales": 10,
-        "form_score": 81.2,
-        "form_local": 50.6,
-        "form_visitante": 81.8,
-        "momentum": "up",
-        "momentum_diff": 5.8,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "4V 1E",
-          "resultados": [
-            "V",
-            "E",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.4,
-          "goles_contra": 1.2,
-          "diferencia": 0.2
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -1.4,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "8221",
-        "nombre": "Brommapojkar",
-        "pais": "",
-        "rating": 1572.14,
-        "rd": 149.99,
-        "partidos_jugados": 8,
-        "pj_reales": 8,
-        "form_score": 54.9,
-        "form_local": 54.5,
-        "form_visitante": 50.6,
-        "momentum": "stable",
-        "momentum_diff": -2.5,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 3D",
-          "resultados": [
-            "V",
-            "D",
-            "D",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 2.12,
-          "diferencia": -0.12
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -2.2,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 55.4,
-        "prob_empate": 22.6,
-        "prob_visitante": 22.0
-      },
-      "diff_elo": -23.1,
-      "confianza": 11.5
     },
     {
       "fixture_id": "401879843",
@@ -1734,7 +1734,7 @@
         "nombre": "Chongqing",
         "pais": "",
         "rating": 1291.85,
-        "rd": 191.665584640942,
+        "rd": 192.2314771749918,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 17.8,
@@ -1772,7 +1772,7 @@
         "nombre": "Shandong",
         "pais": "",
         "rating": 1624.21,
-        "rd": 201.11739202029744,
+        "rd": 201.65687022479887,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 62.8,
@@ -4536,7 +4536,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.2,
+        "overperformance": 6.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -5418,7 +5418,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.2,
+        "overperformance": 1.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5702,7 +5702,7 @@
         "nombre": "Al Faisaly",
         "pais": "",
         "rating": 1279.27,
-        "rd": 171.69,
+        "rd": 172.32146151073087,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 22.2,
@@ -5732,7 +5732,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.2,
+        "overperformance": -2.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -6430,7 +6430,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.0,
+        "overperformance": -0.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -6468,7 +6468,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.3,
+        "overperformance": -2.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -6706,7 +6706,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.8,
+        "overperformance": -2.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -6928,7 +6928,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.8,
+        "overperformance": -2.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -6952,7 +6952,7 @@
         "nombre": "Memphis",
         "pais": "EE.UU.",
         "rating": 1636.24,
-        "rd": 228.74273975713604,
+        "rd": 229.21725645420082,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 55.7,
@@ -7073,7 +7073,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.2,
+        "overperformance": -1.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7165,7 +7165,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 13.6,
+        "overperformance": 12.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7203,13 +7203,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.5,
+        "overperformance": -0.0,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 63.1,
+        "prob_local": 63.0,
         "prob_empate": 21.8,
-        "prob_visitante": 15.1
+        "prob_visitante": 15.2
       },
       "diff_elo": 58.9,
       "confianza": 29.4
@@ -7595,7 +7595,7 @@
         "nombre": "U. Católica",
         "pais": "Ecuador",
         "rating": 1588.59,
-        "rd": 197.82116622697433,
+        "rd": 198.36953589938992,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 55.0,
@@ -7633,7 +7633,7 @@
         "nombre": "Macará",
         "pais": "Ecuador",
         "rating": 1498.47,
-        "rd": 191.6592399898482,
+        "rd": 192.22520771588037,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 57.0,
@@ -7939,7 +7939,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.6,
+        "overperformance": -5.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -7993,7 +7993,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.6,
+        "overperformance": -7.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8031,7 +8031,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.2,
+        "overperformance": -7.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -8085,7 +8085,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.9,
+        "overperformance": -8.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8123,7 +8123,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.0,
+        "overperformance": 8.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -8399,7 +8399,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 14.4,
+        "overperformance": 14.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -8545,7 +8545,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.4,
+        "overperformance": 4.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8583,7 +8583,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.9,
+        "overperformance": 0.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -8767,7 +8767,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.5,
+        "overperformance": 3.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -8859,7 +8859,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.4,
+        "overperformance": 5.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -8913,7 +8913,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.4,
+        "overperformance": 1.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9189,7 +9189,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.7,
+        "overperformance": 3.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9227,7 +9227,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.5,
+        "overperformance": -3.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -9319,7 +9319,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.5,
+        "overperformance": 2.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -9465,7 +9465,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.9,
+        "overperformance": 7.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9503,7 +9503,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.3,
+        "overperformance": -4.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -9557,7 +9557,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 12.1,
+        "overperformance": 12.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9649,7 +9649,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.7,
+        "overperformance": 2.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9779,7 +9779,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.5,
+        "overperformance": 2.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -9871,7 +9871,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.3,
+        "overperformance": -4.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -9925,7 +9925,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.5,
+        "overperformance": -0.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10017,7 +10017,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.2,
+        "overperformance": -6.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10055,7 +10055,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.4,
+        "overperformance": 9.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -10109,7 +10109,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.1,
+        "overperformance": -2.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10293,7 +10293,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.7,
+        "overperformance": 9.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10331,7 +10331,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.8,
+        "overperformance": 5.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -10423,7 +10423,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.9,
+        "overperformance": 7.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -10477,7 +10477,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.2,
+        "overperformance": 4.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10515,7 +10515,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.3,
+        "overperformance": 9.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -10569,7 +10569,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.0,
+        "overperformance": -4.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10661,7 +10661,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.5,
+        "overperformance": -9.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10753,7 +10753,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.4,
+        "overperformance": 6.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10937,7 +10937,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.8,
+        "overperformance": 5.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -11159,7 +11159,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.3,
+        "overperformance": 2.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -11581,7 +11581,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.4,
+        "overperformance": -6.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -12225,7 +12225,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -13.9,
+        "overperformance": -14.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -12263,7 +12263,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 11.3,
+        "overperformance": 10.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -12355,7 +12355,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.6,
+        "overperformance": -7.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -12409,7 +12409,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -19.6,
+        "overperformance": -19.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -12447,7 +12447,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.7,
+        "overperformance": -3.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -12501,7 +12501,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.8,
+        "overperformance": 2.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -12539,7 +12539,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.9,
+        "overperformance": -2.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -12593,7 +12593,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.1,
+        "overperformance": -4.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -12631,7 +12631,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.4,
+        "overperformance": -5.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -12685,7 +12685,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.6,
+        "overperformance": -2.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -12869,7 +12869,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.1,
+        "overperformance": -0.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -12961,7 +12961,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -10.3,
+        "overperformance": -10.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -13091,7 +13091,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.1,
+        "overperformance": -0.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -13237,7 +13237,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.8,
+        "overperformance": 2.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -13329,7 +13329,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.6,
+        "overperformance": 0.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -13421,7 +13421,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.6,
+        "overperformance": -8.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -13551,7 +13551,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.4,
+        "overperformance": -1.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -13605,7 +13605,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.7,
+        "overperformance": -1.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -13643,7 +13643,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.0,
+        "overperformance": 0.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -13697,7 +13697,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.7,
+        "overperformance": -7.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -14065,7 +14065,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.4,
+        "overperformance": -3.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -14195,7 +14195,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.2,
+        "overperformance": 2.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -14249,7 +14249,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.4,
+        "overperformance": -8.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -14287,7 +14287,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.5,
+        "overperformance": -5.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -14379,7 +14379,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.6,
+        "overperformance": -4.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -14433,7 +14433,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.1,
+        "overperformance": -1.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -14563,7 +14563,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.5,
+        "overperformance": 6.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -14709,7 +14709,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.0,
+        "overperformance": -0.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -14747,7 +14747,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.0,
+        "overperformance": -3.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -14801,7 +14801,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.3,
+        "overperformance": -4.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -14893,7 +14893,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.0,
+        "overperformance": -6.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -14931,7 +14931,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.1,
+        "overperformance": -5.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -15023,7 +15023,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.8,
+        "overperformance": -2.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -15207,7 +15207,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 12.1,
+        "overperformance": 12.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -15445,7 +15445,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.5,
+        "overperformance": 9.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16189,7 +16189,7 @@
         "nombre": "Cuenca",
         "pais": "Ecuador",
         "rating": 1188.37,
-        "rd": 222.8682096889256,
+        "rd": 223.35514228020847,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 13.8,
@@ -16364,7 +16364,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 13.3,
+        "overperformance": 14.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16402,7 +16402,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.7,
+        "overperformance": -4.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -16596,6 +16596,98 @@
       },
       "diff_elo": 36.9,
       "confianza": 18.4
+    },
+    {
+      "fixture_id": "401844194",
+      "fecha": "2026-10-11T14:00:00-05:00",
+      "fecha_display": "2026-10-11",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "11990",
+        "nombre": "Mitre (SE)",
+        "pais": "",
+        "rating": 1350.43,
+        "rd": 146.76,
+        "partidos_jugados": 8,
+        "pj_reales": 8,
+        "form_score": 49.5,
+        "form_local": 31.5,
+        "form_visitante": 50.6,
+        "momentum": "stable",
+        "momentum_diff": 1.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 2D 2E",
+          "resultados": [
+            "V",
+            "D",
+            "D",
+            "E",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.88,
+          "goles_contra": 1.5,
+          "diferencia": -0.62
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.5,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "7",
+        "nombre": "Colón SF",
+        "pais": "",
+        "rating": 1674.66,
+        "rd": 167.1,
+        "partidos_jugados": 7,
+        "pj_reales": 7,
+        "form_score": 78.6,
+        "form_local": 100.0,
+        "form_visitante": 44.0,
+        "momentum": "stable",
+        "momentum_diff": -1.2,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "V",
+            "E",
+            "V",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.43,
+          "goles_contra": 0.29,
+          "diferencia": 1.14
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.9,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 22.1,
+        "prob_empate": 15.6,
+        "prob_visitante": 62.2
+      },
+      "diff_elo": -324.2,
+      "confianza": 100.0
     },
     {
       "fixture_id": "401844195",
@@ -16824,7 +16916,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.6,
+        "overperformance": 1.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16862,7 +16954,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.9,
+        "overperformance": 1.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -16916,7 +17008,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.3,
+        "overperformance": 2.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16954,7 +17046,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.5,
+        "overperformance": -0.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -17100,7 +17192,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.6,
+        "overperformance": 4.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -17138,7 +17230,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.1,
+        "overperformance": 0.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -17192,7 +17284,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -11.1,
+        "overperformance": -11.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -17322,7 +17414,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.2,
+        "overperformance": -2.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -17376,7 +17468,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.1,
+        "overperformance": 4.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -17468,7 +17560,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.2,
+        "overperformance": 6.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -17506,13 +17598,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 13.2,
+        "overperformance": 13.7,
         "vol": 0.06
       },
       "prediccion": {
         "prob_local": 67.4,
         "prob_empate": 20.3,
-        "prob_visitante": 12.3
+        "prob_visitante": 12.4
       },
       "diff_elo": 124.3,
       "confianza": 62.1
@@ -17560,7 +17652,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 16.8,
+        "overperformance": 17.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -17598,11 +17690,11 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.7,
+        "overperformance": 7.2,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 38.7,
+        "prob_local": 38.8,
         "prob_empate": 19.9,
         "prob_visitante": 41.4
       },
@@ -17652,7 +17744,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.3,
+        "overperformance": 1.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -17690,7 +17782,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.6,
+        "overperformance": -4.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -17744,7 +17836,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.8,
+        "overperformance": -4.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -17836,7 +17928,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.4,
+        "overperformance": 2.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -17874,7 +17966,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.5,
+        "overperformance": -3.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -17928,7 +18020,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.5,
+        "overperformance": 5.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -18020,7 +18112,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.6,
+        "overperformance": 0.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -18112,7 +18204,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.6,
+        "overperformance": -3.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -18204,7 +18296,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.3,
+        "overperformance": -1.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -18242,7 +18334,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.6,
+        "overperformance": -4.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -18518,7 +18610,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.0,
+        "overperformance": 4.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -18572,7 +18664,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.4,
+        "overperformance": -3.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -18610,7 +18702,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.7,
+        "overperformance": 1.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -18848,7 +18940,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.3,
+        "overperformance": -9.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -18940,7 +19032,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -14.0,
+        "overperformance": -12.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -18978,7 +19070,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.4,
+        "overperformance": 2.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -19124,7 +19216,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.3,
+        "overperformance": 7.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19162,7 +19254,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -10.3,
+        "overperformance": -11.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -19254,13 +19346,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 10.8,
+        "overperformance": 12.5,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 69.2,
+        "prob_local": 69.0,
         "prob_empate": 19.6,
-        "prob_visitante": 11.2
+        "prob_visitante": 11.4
       },
       "diff_elo": 154.0,
       "confianza": 77.0
@@ -19308,7 +19400,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.9,
+        "overperformance": 2.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19346,7 +19438,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.1,
+        "overperformance": 9.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -19370,7 +19462,7 @@
         "nombre": "Oregon State",
         "pais": "EE.UU.",
         "rating": 1421.13,
-        "rd": 202.24515645864037,
+        "rd": 202.78158081765483,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 25.4,
@@ -19438,7 +19530,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.3,
+        "overperformance": 6.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -19530,7 +19622,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -10.2,
+        "overperformance": -10.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -19584,7 +19676,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.0,
+        "overperformance": 7.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19676,7 +19768,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.6,
+        "overperformance": 7.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19714,7 +19806,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.6,
+        "overperformance": 3.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -19768,7 +19860,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 20.1,
+        "overperformance": 19.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19868,7 +19960,7 @@
         "nombre": "Carabobo",
         "pais": "Venezuela",
         "rating": 1463.29,
-        "rd": 182.31442899362992,
+        "rd": 182.90947261049655,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 39.8,
@@ -19902,7 +19994,7 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 38.6,
+        "prob_local": 38.7,
         "prob_empate": 19.7,
         "prob_visitante": 41.6
       },
@@ -19922,7 +20014,7 @@
         "nombre": "Trujillanos",
         "pais": "Venezuela",
         "rating": 1387.21,
-        "rd": 182.10224605300166,
+        "rd": 182.69780234881617,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 53.4,
@@ -19952,7 +20044,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.8,
+        "overperformance": -8.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19960,7 +20052,7 @@
         "nombre": "Puerto Cabello",
         "pais": "Venezuela",
         "rating": 1700.68,
-        "rd": 193.16039585227108,
+        "rd": 193.72194054643865,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 71.7,
@@ -19990,7 +20082,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.5,
+        "overperformance": 8.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -20044,7 +20136,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.8,
+        "overperformance": 3.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -20136,7 +20228,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.3,
+        "overperformance": 5.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -20228,7 +20320,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.7,
+        "overperformance": 5.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -20420,7 +20512,7 @@
         "nombre": "Unión La Calera",
         "pais": "Chile",
         "rating": 1309.63,
-        "rd": 177.40055698206808,
+        "rd": 178.0118439404725,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 11.0,
@@ -20646,7 +20738,7 @@
         "nombre": "San Pedro",
         "pais": "Guatemala",
         "rating": 1632.52,
-        "rd": 218.81865840159588,
+        "rd": 219.31461520692258,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 72.4,
@@ -20675,7 +20767,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.6,
+        "overperformance": 1.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -20713,7 +20805,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.1,
+        "overperformance": -1.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -20737,7 +20829,7 @@
         "nombre": "Estrella Roja",
         "pais": "Honduras",
         "rating": 1749.25,
-        "rd": 223.55483982929186,
+        "rd": 224.04023160280715,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 68.9,
@@ -20766,7 +20858,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.7,
+        "overperformance": 7.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -20774,7 +20866,7 @@
         "nombre": "Real España",
         "pais": "Honduras",
         "rating": 1652.6,
-        "rd": 213.50084321350877,
+        "rd": 214.00902265126842,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 77.8,
@@ -20803,7 +20895,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.3,
+        "overperformance": 6.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -20895,7 +20987,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.6,
+        "overperformance": 0.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -20987,7 +21079,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.1,
+        "overperformance": 0.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -21041,7 +21133,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -15.5,
+        "overperformance": -15.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -21079,7 +21171,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.1,
+        "overperformance": -4.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -21133,7 +21225,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -10.2,
+        "overperformance": -9.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -21171,7 +21263,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.8,
+        "overperformance": -1.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -21225,7 +21317,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.1,
+        "overperformance": -2.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -21311,7 +21403,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.2,
+        "overperformance": 0.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -21349,7 +21441,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.3,
+        "overperformance": 0.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -21441,7 +21533,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.0,
+        "overperformance": -7.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -21649,7 +21741,7 @@
         "nombre": "LDU",
         "pais": "Ecuador",
         "rating": 1543.27,
-        "rd": 171.37039768880075,
+        "rd": 172.00311674372904,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 47.5,
@@ -21679,7 +21771,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.2,
+        "overperformance": 8.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -21771,7 +21863,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.3,
+        "overperformance": -1.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -21809,7 +21901,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.0,
+        "overperformance": -4.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -21901,7 +21993,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.9,
+        "overperformance": -3.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -21955,7 +22047,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.2,
+        "overperformance": 8.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -21993,7 +22085,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 12.3,
+        "overperformance": 9.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -22047,7 +22139,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.2,
+        "overperformance": 3.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -22085,7 +22177,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -15.9,
+        "overperformance": -15.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -22227,7 +22319,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.9,
+        "overperformance": 2.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -22265,7 +22357,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.9,
+        "overperformance": 7.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -22319,7 +22411,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.0,
+        "overperformance": 3.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -22357,7 +22449,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.7,
+        "overperformance": 1.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -22411,7 +22503,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.3,
+        "overperformance": -5.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -22419,7 +22511,7 @@
         "nombre": "Estudiantes ",
         "pais": "Venezuela",
         "rating": 1658.15,
-        "rd": 169.02124070950327,
+        "rd": 169.66274198805988,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 65.8,
@@ -22449,7 +22541,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.4,
+        "overperformance": -3.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -22503,7 +22595,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.1,
+        "overperformance": -4.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -22541,7 +22633,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.5,
+        "overperformance": -1.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -22633,7 +22725,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.2,
+        "overperformance": 0.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -22749,7 +22841,7 @@
         "nombre": "Bahia",
         "pais": "Brasil",
         "rating": 1703.31,
-        "rd": 187.60500412395658,
+        "rd": 188.183127021584,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 92.3,
@@ -22779,7 +22871,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.0,
+        "overperformance": 5.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -22817,7 +22909,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.3,
+        "overperformance": -3.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -22871,7 +22963,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.4,
+        "overperformance": 1.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -22879,7 +22971,7 @@
         "nombre": "LA Galaxy",
         "pais": "",
         "rating": 1460.43,
-        "rd": 209.94183016464163,
+        "rd": 210.45860347382117,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 30.5,
@@ -22908,7 +23000,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -11.2,
+        "overperformance": -14.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -22962,7 +23054,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.6,
+        "overperformance": -3.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -22970,7 +23062,7 @@
         "nombre": "Santos",
         "pais": "",
         "rating": 1314.19,
-        "rd": 189.14698837438684,
+        "rd": 189.72043162674802,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 29.9,
@@ -23000,11 +23092,11 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.3,
+        "overperformance": -7.3,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 73.6,
+        "prob_local": 73.5,
         "prob_empate": 19.2,
         "prob_visitante": 7.3
       },
@@ -23054,7 +23146,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.2,
+        "overperformance": -5.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -23092,7 +23184,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.6,
+        "overperformance": 7.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -23116,7 +23208,7 @@
         "nombre": "Limache",
         "pais": "Chile",
         "rating": 1443.33,
-        "rd": 211.12733316109905,
+        "rd": 211.64122890698036,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 34.4,
@@ -23208,7 +23300,7 @@
         "nombre": "Belén",
         "pais": "Costa Rica",
         "rating": 1227.99,
-        "rd": 228.68833308397856,
+        "rd": 229.16288342391874,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 5.1,
@@ -23245,7 +23337,7 @@
         "nombre": "Saprissa",
         "pais": "Costa Rica",
         "rating": 1720.04,
-        "rd": 187.54054829675323,
+        "rd": 188.11885002990027,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 60.5,
@@ -23275,7 +23367,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.6,
+        "overperformance": 7.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -23299,7 +23391,7 @@
         "nombre": "Municipal",
         "pais": "Guatemala",
         "rating": 1625.54,
-        "rd": 183.4632025052602,
+        "rd": 184.0543747956382,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 77.7,
@@ -23329,7 +23421,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.6,
+        "overperformance": 2.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -23337,7 +23429,7 @@
         "nombre": "Marquense",
         "pais": "Guatemala",
         "rating": 1621.19,
-        "rd": 213.8891556326959,
+        "rd": 214.39644844351957,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 89.8,
@@ -23366,7 +23458,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.6,
+        "overperformance": 3.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -23420,7 +23512,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.2,
+        "overperformance": -1.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -23458,7 +23550,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.9,
+        "overperformance": 1.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -23512,7 +23604,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.6,
+        "overperformance": -9.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -23550,7 +23642,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.8,
+        "overperformance": 0.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -23642,7 +23734,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.7,
+        "overperformance": 0.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -23696,7 +23788,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.5,
+        "overperformance": -0.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -23734,7 +23826,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.1,
+        "overperformance": -3.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -23788,7 +23880,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.3,
+        "overperformance": 1.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -23796,7 +23888,7 @@
         "nombre": "Necaxa",
         "pais": "",
         "rating": 1302.54,
-        "rd": 194.60976977362614,
+        "rd": 195.16719996397856,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 21.8,
@@ -23826,7 +23918,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -10.5,
+        "overperformance": -9.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -23880,7 +23972,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.4,
+        "overperformance": -7.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -23918,7 +24010,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.6,
+        "overperformance": -0.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -23942,7 +24034,7 @@
         "nombre": "Olancho FC",
         "pais": "Honduras",
         "rating": 1540.52,
-        "rd": 213.8402793523388,
+        "rd": 214.34768783780578,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 35.6,
@@ -23971,7 +24063,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.7,
+        "overperformance": -1.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -23979,7 +24071,7 @@
         "nombre": "CA Indep",
         "pais": "Honduras",
         "rating": 1398.44,
-        "rd": 211.07502455275684,
+        "rd": 211.58909868661038,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 30.4,
@@ -24009,7 +24101,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.6,
+        "overperformance": 0.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -24063,7 +24155,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 11.0,
+        "overperformance": 11.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -24101,7 +24193,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.8,
+        "overperformance": -2.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -24193,7 +24285,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.5,
+        "overperformance": -0.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -24247,7 +24339,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.2,
+        "overperformance": -5.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -24285,7 +24377,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 14.4,
+        "overperformance": 13.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -24389,98 +24481,6 @@
       "confianza": 27.7
     },
     {
-      "fixture_id": "401844194",
-      "fecha": "2026-10-11T20:00:00-05:00",
-      "fecha_display": "2026-10-11",
-      "hora": "20:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "11990",
-        "nombre": "Mitre (SE)",
-        "pais": "",
-        "rating": 1350.43,
-        "rd": 146.76,
-        "partidos_jugados": 8,
-        "pj_reales": 8,
-        "form_score": 49.5,
-        "form_local": 31.5,
-        "form_visitante": 50.6,
-        "momentum": "stable",
-        "momentum_diff": 1.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 2D 2E",
-          "resultados": [
-            "V",
-            "D",
-            "D",
-            "E",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.88,
-          "goles_contra": 1.5,
-          "diferencia": -0.62
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 2.5,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "7",
-        "nombre": "Colón SF",
-        "pais": "",
-        "rating": 1674.66,
-        "rd": 167.1,
-        "partidos_jugados": 7,
-        "pj_reales": 7,
-        "form_score": 78.6,
-        "form_local": 100.0,
-        "form_visitante": 44.0,
-        "momentum": "stable",
-        "momentum_diff": -1.2,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 1D 1E",
-          "resultados": [
-            "V",
-            "E",
-            "V",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.43,
-          "goles_contra": 0.29,
-          "diferencia": 1.14
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.9,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 22.1,
-        "prob_empate": 15.6,
-        "prob_visitante": 62.2
-      },
-      "diff_elo": -324.2,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401884176",
       "fecha": "2026-10-11T20:00:00-05:00",
       "fecha_display": "2026-10-11",
@@ -24523,7 +24523,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.1,
+        "overperformance": 9.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -24561,7 +24561,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 12.2,
+        "overperformance": 13.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -24707,7 +24707,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.5,
+        "overperformance": -4.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -24745,7 +24745,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.1,
+        "overperformance": -0.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -24799,7 +24799,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.9,
+        "overperformance": -1.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -24807,7 +24807,7 @@
         "nombre": "Cruz Azul",
         "pais": "",
         "rating": 1482.76,
-        "rd": 194.00224439326936,
+        "rd": 194.56150825488538,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 50.4,
@@ -24837,7 +24837,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.0,
+        "overperformance": -0.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -24891,7 +24891,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.6,
+        "overperformance": 5.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -24929,7 +24929,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.8,
+        "overperformance": 2.6,
         "vol": 0.06
       },
       "prediccion": {
