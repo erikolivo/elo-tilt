@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-10T23:08:28.567076Z",
+  "generado": "2026-10-11T03:30:59.217040Z",
   "fecha_consulta": "2026-10-10",
   "total": 343,
   "predicciones": [
@@ -29318,6 +29318,90 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401929256",
+      "fecha": "2026-10-10T20:30:00-05:00",
+      "fecha_display": "2026-10-10",
+      "hora": "20:30",
+      "liga": "club.friendly",
+      "liga_pais": "",
+      "liga_slug": "club.friendly",
+      "equipo_local": {
+        "id": "5326",
+        "nombre": "Brisbane",
+        "pais": "",
+        "rating": 1395.36,
+        "rd": 225.45,
+        "partidos_jugados": 3,
+        "pj_reales": 3,
+        "form_score": 50.6,
+        "form_local": 50.0,
+        "form_visitante": 50.6,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 2D",
+          "resultados": [
+            "V",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.33,
+          "goles_contra": 3.67,
+          "diferencia": -2.34
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -8.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "134005",
+        "nombre": "Broadmeadow Magic FC",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 350.0,
+        "partidos_jugados": 0,
+        "pj_reales": 0,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 45.4,
+        "prob_empate": 20.7,
+        "prob_visitante": 33.9
+      },
+      "diff_elo": -104.6,
+      "confianza": 52.3
+    },
+    {
       "fixture_id": "761857",
       "fecha": "2026-10-10T20:30:00-05:00",
       "fecha_display": "2026-10-10",
@@ -29406,90 +29490,6 @@
       },
       "diff_elo": 390.3,
       "confianza": 100.0
-    },
-    {
-      "fixture_id": "401929256",
-      "fecha": "2026-10-10T20:30:00-05:00",
-      "fecha_display": "2026-10-10",
-      "hora": "20:30",
-      "liga": "club.friendly",
-      "liga_pais": "",
-      "liga_slug": "club.friendly",
-      "equipo_local": {
-        "id": "5326",
-        "nombre": "Brisbane",
-        "pais": "",
-        "rating": 1395.36,
-        "rd": 225.45,
-        "partidos_jugados": 3,
-        "pj_reales": 3,
-        "form_score": 50.6,
-        "form_local": 50.0,
-        "form_visitante": 50.6,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 2D",
-          "resultados": [
-            "V",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.33,
-          "goles_contra": 3.67,
-          "diferencia": -2.34
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -8.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "134005",
-        "nombre": "Broadmeadow Magic FC",
-        "pais": "",
-        "rating": 1500.0,
-        "rd": 350.0,
-        "partidos_jugados": 0,
-        "pj_reales": 0,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 45.4,
-        "prob_empate": 20.7,
-        "prob_visitante": 33.9
-      },
-      "diff_elo": -104.6,
-      "confianza": 52.3
     },
     {
       "fixture_id": "401915420",
@@ -29625,7 +29625,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.1,
+        "overperformance": 0.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -29633,7 +29633,7 @@
         "nombre": "San Antonio ",
         "pais": "",
         "rating": 1538.6,
-        "rd": 207.07074555492937,
+        "rd": 207.33292370971236,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 55.1,
@@ -29663,7 +29663,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.1,
+        "overperformance": -1.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -29717,7 +29717,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.8,
+        "overperformance": -3.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -29725,7 +29725,7 @@
         "nombre": "Las Vegas",
         "pais": "",
         "rating": 1460.38,
-        "rd": 208.07836987719585,
+        "rd": 208.33926263977165,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 28.2,
@@ -29755,7 +29755,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.3,
+        "overperformance": -1.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -29809,7 +29809,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.4,
+        "overperformance": 3.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -29847,7 +29847,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.4,
+        "overperformance": 0.9,
         "vol": 0.06
       },
       "prediccion": {
