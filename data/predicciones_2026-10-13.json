@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-13T13:24:44.829815Z",
+  "generado": "2026-10-13T20:31:50.102719Z",
   "fecha_consulta": "2026-10-13",
   "total": 120,
   "predicciones": [
@@ -8886,7 +8886,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.3,
+        "overperformance": 0.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10208,7 +10208,7 @@
         "nombre": "Cartaginés",
         "pais": "",
         "rating": 1642.84,
-        "rd": 180.87467314016962,
+        "rd": 181.17467367753235,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 91.7,
@@ -10286,90 +10286,6 @@
       },
       "diff_elo": 34.0,
       "confianza": 17.0
-    },
-    {
-      "fixture_id": "401914138",
-      "fecha": "2026-10-13T19:30:00-05:00",
-      "fecha_display": "2026-10-13",
-      "hora": "19:30",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "2895",
-        "nombre": "Panama",
-        "pais": "",
-        "rating": 1670.95,
-        "rd": 99.19,
-        "partidos_jugados": 25,
-        "pj_reales": 2,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1E",
-          "resultados": [
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -15.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "4153",
-        "nombre": "New Zealand",
-        "pais": "",
-        "rating": 1579.49,
-        "rd": 91.89,
-        "partidos_jugados": 26,
-        "pj_reales": 2,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1E",
-          "resultados": [
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -7.5,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 63.1,
-        "prob_empate": 21.0,
-        "prob_visitante": 15.8
-      },
-      "diff_elo": 91.5,
-      "confianza": 45.7
     },
     {
       "fixture_id": "401913958",
@@ -10462,6 +10378,90 @@
       },
       "diff_elo": 159.3,
       "confianza": 79.6
+    },
+    {
+      "fixture_id": "401914138",
+      "fecha": "2026-10-13T19:30:00-05:00",
+      "fecha_display": "2026-10-13",
+      "hora": "19:30",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "2895",
+        "nombre": "Panama",
+        "pais": "",
+        "rating": 1670.95,
+        "rd": 99.19,
+        "partidos_jugados": 25,
+        "pj_reales": 2,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1E",
+          "resultados": [
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -15.6,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "4153",
+        "nombre": "New Zealand",
+        "pais": "",
+        "rating": 1579.49,
+        "rd": 91.89,
+        "partidos_jugados": 26,
+        "pj_reales": 2,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1E",
+          "resultados": [
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -7.5,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 63.1,
+        "prob_empate": 21.0,
+        "prob_visitante": 15.8
+      },
+      "diff_elo": 91.5,
+      "confianza": 45.7
     },
     {
       "fixture_id": "401916245",
@@ -10652,7 +10652,7 @@
         "nombre": "San Carlos",
         "pais": "",
         "rating": 1493.14,
-        "rd": 215.22130090260083,
+        "rd": 215.47354526424,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 44.3,
