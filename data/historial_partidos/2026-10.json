@@ -74026,6 +74026,72 @@
         "overperformance_h": -13.6,
         "overperformance_a": -1.2
       }
+    },
+    {
+      "fixture_id": "401917264",
+      "fecha": "2026-10-13",
+      "fecha_hora_espn": "2026-10-13T21:00Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20914",
+        "name": "Venezuela"
+      },
+      "equipo_visitante": {
+        "id": "11337",
+        "name": "Colombia"
+      },
+      "goles_local": 1,
+      "goles_visitante": 2,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-10-13T16:00:00-05:00",
+        "prob_local": 28.5,
+        "prob_empate": 20.2,
+        "prob_visitante": 51.3,
+        "diff_elo": -127.9,
+        "pj_h": 26,
+        "pj_a": 23,
+        "rating_local": 1490.51,
+        "rating_visitante": 1618.41,
+        "overperformance_h": -49.1,
+        "overperformance_a": 39.0
+      }
+    },
+    {
+      "fixture_id": "401892207",
+      "fecha": "2026-10-13",
+      "fecha_hora_espn": "2026-10-13T22:00Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "usa.ncaa.m.1",
+      "equipo_local": {
+        "id": "21667",
+        "name": "Queens"
+      },
+      "equipo_visitante": {
+        "id": "17409",
+        "name": "Presbyterian"
+      },
+      "goles_local": 2,
+      "goles_visitante": 1,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-10-13T17:00:00-05:00",
+        "prob_local": 74.1,
+        "prob_empate": 19.1,
+        "prob_visitante": 6.8,
+        "diff_elo": 176.8,
+        "pj_h": 11,
+        "pj_a": 6,
+        "rating_local": 1318.25,
+        "rating_visitante": 1141.5,
+        "overperformance_h": 0.1,
+        "overperformance_a": -17.3
+      }
     }
   ]
 }
