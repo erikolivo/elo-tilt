@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-15T13:52:50.539712Z",
+  "generado": "2026-10-15T18:51:44.032749Z",
   "fecha_consulta": "2026-10-16",
   "total": 104,
   "predicciones": [
@@ -6566,7 +6566,7 @@
         "nombre": "Sporting Jax",
         "pais": "",
         "rating": 1564.33,
-        "rd": 229.53878466216526,
+        "rd": 229.7753514156716,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 31.1,
@@ -7934,98 +7934,6 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401889755",
-      "fecha": "2026-10-16T19:30:00-05:00",
-      "fecha_display": "2026-10-16",
-      "hora": "19:30",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "20327",
-        "nombre": "SMU",
-        "pais": "",
-        "rating": 1691.4,
-        "rd": 128.31,
-        "partidos_jugados": 12,
-        "pj_reales": 2,
-        "form_score": 11.3,
-        "form_local": 51.5,
-        "form_visitante": 0.0,
-        "momentum": "down",
-        "momentum_diff": -5.3,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 4
-        },
-        "ultimos5": {
-          "texto": "1V 4D",
-          "resultados": [
-            "D",
-            "D",
-            "D",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.33,
-          "goles_contra": 1.67,
-          "diferencia": 0.66
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 4.2,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20317",
-        "nombre": "Duke",
-        "pais": "",
-        "rating": 1914.85,
-        "rd": 152.06,
-        "partidos_jugados": 9,
-        "pj_reales": 9,
-        "form_score": 80.3,
-        "form_local": 78.6,
-        "form_visitante": 82.2,
-        "momentum": "stable",
-        "momentum_diff": -1.2,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 2E",
-          "resultados": [
-            "V",
-            "E",
-            "E",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 3.0,
-          "goles_contra": 0.6,
-          "diferencia": 2.4
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 8.4,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 23.4,
-        "prob_empate": 18.0,
-        "prob_visitante": 58.6
-      },
-      "diff_elo": -223.4,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401876946",
       "fecha": "2026-10-16T20:00:00-05:00",
       "fecha_display": "2026-10-16",
@@ -8576,6 +8484,98 @@
       },
       "diff_elo": -177.5,
       "confianza": 88.7
+    },
+    {
+      "fixture_id": "401889755",
+      "fecha": "2026-10-16T20:00:00-05:00",
+      "fecha_display": "2026-10-16",
+      "hora": "20:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20327",
+        "nombre": "SMU",
+        "pais": "",
+        "rating": 1691.4,
+        "rd": 128.31,
+        "partidos_jugados": 12,
+        "pj_reales": 2,
+        "form_score": 11.3,
+        "form_local": 51.5,
+        "form_visitante": 0.0,
+        "momentum": "down",
+        "momentum_diff": -5.3,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 4
+        },
+        "ultimos5": {
+          "texto": "1V 4D",
+          "resultados": [
+            "D",
+            "D",
+            "D",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.33,
+          "goles_contra": 1.67,
+          "diferencia": 0.66
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 4.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20317",
+        "nombre": "Duke",
+        "pais": "",
+        "rating": 1914.85,
+        "rd": 152.06,
+        "partidos_jugados": 9,
+        "pj_reales": 9,
+        "form_score": 80.3,
+        "form_local": 78.6,
+        "form_visitante": 82.2,
+        "momentum": "stable",
+        "momentum_diff": -1.2,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 2E",
+          "resultados": [
+            "V",
+            "E",
+            "E",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 3.0,
+          "goles_contra": 0.6,
+          "diferencia": 2.4
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 8.4,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 23.4,
+        "prob_empate": 18.0,
+        "prob_visitante": 58.6
+      },
+      "diff_elo": -223.4,
+      "confianza": 100.0
     },
     {
       "fixture_id": "401886884",
@@ -9457,7 +9457,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.8,
+        "overperformance": 2.4,
         "vol": 0.06
       },
       "prediccion": {
