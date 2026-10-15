@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-15T07:56:38.209871Z",
+  "generado": "2026-10-15T13:52:50.539712Z",
   "fecha_consulta": "2026-10-16",
   "total": 104,
   "predicciones": [
@@ -76,7 +76,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 17.9,
+        "overperformance": 15.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -962,7 +962,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.6,
+        "overperformance": -1.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -6566,7 +6566,7 @@
         "nombre": "Sporting Jax",
         "pais": "",
         "rating": 1564.33,
-        "rd": 229.06491821350753,
+        "rd": 229.53878466216526,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 31.1,
@@ -8854,98 +8854,6 @@
       "confianza": 36.0
     },
     {
-      "fixture_id": "401876944",
-      "fecha": "2026-10-16T22:00:00-05:00",
-      "fecha_display": "2026-10-16",
-      "hora": "22:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "10125",
-        "nombre": "Tijuana",
-        "pais": "",
-        "rating": 1507.53,
-        "rd": 160.78,
-        "partidos_jugados": 8,
-        "pj_reales": 8,
-        "form_score": 53.9,
-        "form_local": 100.0,
-        "form_visitante": 21.4,
-        "momentum": "stable",
-        "momentum_diff": 3.1,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "E",
-            "V",
-            "D",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.14,
-          "goles_contra": 1.86,
-          "diferencia": -0.72
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -18.1,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "231",
-        "nombre": "Puebla",
-        "pais": "",
-        "rating": 1432.76,
-        "rd": 161.52,
-        "partidos_jugados": 8,
-        "pj_reales": 8,
-        "form_score": 44.3,
-        "form_local": 68.9,
-        "form_visitante": 26.0,
-        "momentum": "stable",
-        "momentum_diff": 2.5,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "E",
-            "D",
-            "V",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.57,
-          "goles_contra": 2.57,
-          "diferencia": -1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -3.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 62.6,
-        "prob_empate": 21.4,
-        "prob_visitante": 16.0
-      },
-      "diff_elo": 74.8,
-      "confianza": 37.4
-    },
-    {
       "fixture_id": "401886340",
       "fecha": "2026-10-16T22:00:00-05:00",
       "fecha_display": "2026-10-16",
@@ -9128,6 +9036,98 @@
       },
       "diff_elo": 77.0,
       "confianza": 38.5
+    },
+    {
+      "fixture_id": "401876944",
+      "fecha": "2026-10-16T22:05:00-05:00",
+      "fecha_display": "2026-10-16",
+      "hora": "22:05",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "10125",
+        "nombre": "Tijuana",
+        "pais": "",
+        "rating": 1507.53,
+        "rd": 160.78,
+        "partidos_jugados": 8,
+        "pj_reales": 8,
+        "form_score": 53.9,
+        "form_local": 100.0,
+        "form_visitante": 21.4,
+        "momentum": "stable",
+        "momentum_diff": 3.1,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "E",
+            "V",
+            "D",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.14,
+          "goles_contra": 1.86,
+          "diferencia": -0.72
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -18.1,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "231",
+        "nombre": "Puebla",
+        "pais": "",
+        "rating": 1432.76,
+        "rd": 161.52,
+        "partidos_jugados": 8,
+        "pj_reales": 8,
+        "form_score": 44.3,
+        "form_local": 68.9,
+        "form_visitante": 26.0,
+        "momentum": "stable",
+        "momentum_diff": 2.5,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "E",
+            "D",
+            "V",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.57,
+          "goles_contra": 2.57,
+          "diferencia": -1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -3.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 62.6,
+        "prob_empate": 21.4,
+        "prob_visitante": 16.0
+      },
+      "diff_elo": 74.8,
+      "confianza": 37.4
     },
     {
       "fixture_id": "401892161",

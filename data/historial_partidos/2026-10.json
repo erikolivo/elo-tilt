@@ -76105,6 +76105,72 @@
         "overperformance_h": 0.0,
         "overperformance_a": -7.1
       }
+    },
+    {
+      "fixture_id": "401912792",
+      "fecha": "2026-10-15",
+      "fecha_hora_espn": "2026-10-15T10:00Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "131373",
+        "name": "Gangwon"
+      },
+      "equipo_visitante": {
+        "id": "21432",
+        "name": "Phnom Penh"
+      },
+      "goles_local": 1,
+      "goles_visitante": 2,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-10-15T05:00:00-05:00",
+        "prob_local": 26.4,
+        "prob_empate": 16.6,
+        "prob_visitante": 57.0,
+        "diff_elo": -281.8,
+        "pj_h": 2,
+        "pj_a": 1,
+        "rating_local": 1334.8,
+        "rating_visitante": 1616.64,
+        "overperformance_h": -14.7,
+        "overperformance_a": 29.5
+      }
+    },
+    {
+      "fixture_id": "401912793",
+      "fecha": "2026-10-15",
+      "fecha_hora_espn": "2026-10-15T10:00Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "131377",
+        "name": "Tai Po"
+      },
+      "equipo_visitante": {
+        "id": "8040",
+        "name": "LC Sailors"
+      },
+      "goles_local": 0,
+      "goles_visitante": 1,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-10-15T05:00:00-05:00",
+        "prob_local": 43.2,
+        "prob_empate": 21.0,
+        "prob_visitante": 35.8,
+        "diff_elo": -92.5,
+        "pj_h": 1,
+        "pj_a": 2,
+        "rating_local": 1345.12,
+        "rating_visitante": 1437.6,
+        "overperformance_h": -31.6,
+        "overperformance_a": -4.8
+      }
     }
   ]
 }
