@@ -80296,6 +80296,72 @@
         "overperformance_h": 9.3,
         "overperformance_a": -11.9
       }
+    },
+    {
+      "fixture_id": "401892162",
+      "fecha": "2026-10-16",
+      "fecha_hora_espn": "2026-10-16T09:00Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5327",
+        "name": "Sydney FC"
+      },
+      "equipo_visitante": {
+        "id": "13696",
+        "name": "Western Sydney"
+      },
+      "goles_local": 0,
+      "goles_visitante": 0,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-10-16T04:00:00-05:00",
+        "prob_local": 49.7,
+        "prob_empate": 23.1,
+        "prob_visitante": 27.1,
+        "diff_elo": 0.0,
+        "pj_h": 3,
+        "pj_a": 3,
+        "rating_local": 1725.37,
+        "rating_visitante": 1725.37,
+        "overperformance_h": 0.0,
+        "overperformance_a": 17.0
+      }
+    },
+    {
+      "fixture_id": "401861477",
+      "fecha": "2026-10-16",
+      "fecha_hora_espn": "2026-10-16T11:35Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "8240",
+        "name": "Henan"
+      },
+      "equipo_visitante": {
+        "id": "8239",
+        "name": "Tianjin"
+      },
+      "goles_local": 0,
+      "goles_visitante": 1,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-10-16T06:35:00-05:00",
+        "prob_local": 32.6,
+        "prob_empate": 18.9,
+        "prob_visitante": 48.5,
+        "diff_elo": -183.0,
+        "pj_h": 7,
+        "pj_a": 7,
+        "rating_local": 1400.15,
+        "rating_visitante": 1583.17,
+        "overperformance_h": -5.7,
+        "overperformance_a": -3.7
+      }
     }
   ]
 }

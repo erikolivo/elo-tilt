@@ -1,7 +1,7 @@
 {
-  "generado": "2026-10-16T07:51:01.133123Z",
+  "generado": "2026-10-16T13:43:49.902834Z",
   "fecha_consulta": "2026-10-17",
-  "total": 425,
+  "total": 426,
   "predicciones": [
     {
       "fixture_id": "401877573",
@@ -4684,7 +4684,7 @@
         "nombre": "Red Arrows",
         "pais": "",
         "rating": 1610.83,
-        "rd": 221.57921411896072,
+        "rd": 222.06895681299554,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 81.5,
@@ -4713,7 +4713,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.7,
+        "overperformance": -8.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10133,7 +10133,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.3,
+        "overperformance": 9.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -11840,7 +11840,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 15.1,
+        "overperformance": 15.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -14275,92 +14275,6 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401914221",
-      "fecha": "2026-10-17T10:00:00-05:00",
-      "fecha_display": "2026-10-17",
-      "hora": "10:00",
-      "liga": "CAF Champions League",
-      "liga_pais": "",
-      "liga_slug": "caf.champions",
-      "equipo_local": {
-        "id": "132932",
-        "nombre": "Agosto",
-        "pais": "",
-        "rating": 1623.69,
-        "rd": 240.02,
-        "partidos_jugados": 2,
-        "pj_reales": 2,
-        "form_score": 81.1,
-        "form_local": 50.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1E",
-          "resultados": [
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.5,
-          "goles_contra": 0.0,
-          "diferencia": 0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 2.4,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "19414",
-        "nombre": "Simba",
-        "pais": "",
-        "rating": 1657.87,
-        "rd": 257.65,
-        "partidos_jugados": 2,
-        "pj_reales": 2,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V",
-          "resultados": [
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 3.5,
-          "goles_contra": 0.5,
-          "diferencia": 3.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 19.6,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 48.2,
-        "prob_empate": 22.4,
-        "prob_visitante": 29.4
-      },
-      "diff_elo": -34.2,
-      "confianza": 17.1
-    },
-    {
       "fixture_id": "401874057",
       "fecha": "2026-10-17T10:00:00-05:00",
       "fecha_display": "2026-10-17",
@@ -14601,6 +14515,92 @@
       },
       "diff_elo": 168.6,
       "confianza": 84.3
+    },
+    {
+      "fixture_id": "401914221",
+      "fecha": "2026-10-17T10:00:00-05:00",
+      "fecha_display": "2026-10-17",
+      "hora": "10:00",
+      "liga": "CAF Champions League",
+      "liga_pais": "",
+      "liga_slug": "caf.champions",
+      "equipo_local": {
+        "id": "132932",
+        "nombre": "Agosto",
+        "pais": "",
+        "rating": 1623.69,
+        "rd": 240.02,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 81.1,
+        "form_local": 50.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1E",
+          "resultados": [
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.5,
+          "goles_contra": 0.0,
+          "diferencia": 0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "19414",
+        "nombre": "Simba",
+        "pais": "",
+        "rating": 1657.87,
+        "rd": 257.65,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 100.0,
+        "form_local": 100.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V",
+          "resultados": [
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 3.5,
+          "goles_contra": 0.5,
+          "diferencia": 3.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 19.6,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 48.2,
+        "prob_empate": 22.4,
+        "prob_visitante": 29.4
+      },
+      "diff_elo": -34.2,
+      "confianza": 17.1
     },
     {
       "fixture_id": "401876432",
@@ -15051,7 +15051,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.2,
+        "overperformance": 9.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -15737,7 +15737,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.1,
+        "overperformance": -9.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -15782,6 +15782,89 @@
       },
       "diff_elo": -98.3,
       "confianza": 49.1
+    },
+    {
+      "fixture_id": "401914242",
+      "fecha": "2026-10-17T11:00:00-05:00",
+      "fecha_display": "2026-10-17",
+      "hora": "11:00",
+      "liga": "CAF Champions League",
+      "liga_pais": "",
+      "liga_slug": "caf.champions",
+      "equipo_local": {
+        "id": "132935",
+        "nombre": "Star Sport",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 234.01,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2E",
+          "resultados": [
+            "E",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.5,
+          "goles_contra": 0.5,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "19221",
+        "nombre": "RSB Berkane",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 350.0,
+        "partidos_jugados": 0,
+        "pj_reales": 0,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 53.7,
+        "prob_empate": 23.1,
+        "prob_visitante": 23.1
+      },
+      "diff_elo": 0.0,
+      "confianza": 0.0
     },
     {
       "fixture_id": "401912245",
@@ -18232,7 +18315,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.4,
+        "overperformance": 0.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -18286,7 +18369,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.4,
+        "overperformance": -1.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -18930,7 +19013,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.7,
+        "overperformance": 2.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19114,7 +19197,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.8,
+        "overperformance": -4.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -23584,7 +23667,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.0,
+        "overperformance": -1.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -24902,7 +24985,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.2,
+        "overperformance": 5.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -27716,7 +27799,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.0,
+        "overperformance": 3.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -31212,7 +31295,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.3,
+        "overperformance": -0.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -31764,7 +31847,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.7,
+        "overperformance": 5.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -32416,7 +32499,7 @@
         "nombre": "Tigres",
         "pais": "",
         "rating": 1410.86,
-        "rd": 196.73363097084413,
+        "rd": 197.2849684949964,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 54.9,
@@ -32864,7 +32947,7 @@
         "nombre": "LAFC",
         "pais": "",
         "rating": 1426.91,
-        "rd": 198.98349196246014,
+        "rd": 199.52866721128964,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 39.7,
@@ -34574,7 +34657,7 @@
         "nombre": "San Antonio ",
         "pais": "EE.UU.",
         "rating": 1538.6,
-        "rd": 215.04968945411335,
+        "rd": 215.5543182425182,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 55.1,
@@ -34796,7 +34879,7 @@
         "nombre": "América",
         "pais": "",
         "rating": 1865.93,
-        "rd": 207.45076754802466,
+        "rd": 207.97371333269462,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 97.3,
@@ -34830,7 +34913,7 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 30.8,
+        "prob_local": 30.9,
         "prob_empate": 17.4,
         "prob_visitante": 51.7
       },
@@ -35218,7 +35301,7 @@
         "nombre": "Monterrey",
         "pais": "México",
         "rating": 1645.61,
-        "rd": 192.45468143687668,
+        "rd": 193.0185044119238,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 50.0,
@@ -35428,7 +35511,7 @@
         "nombre": "Seattle U",
         "pais": "EE.UU.",
         "rating": 1490.0,
-        "rd": 206.73314872858435,
+        "rd": 207.25795760636575,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 41.8,
@@ -36256,7 +36339,7 @@
         "nombre": "UPNFM",
         "pais": "Honduras",
         "rating": 1291.84,
-        "rd": 225.4121242815017,
+        "rd": 225.89355728646845,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 13.4,
@@ -36982,7 +37065,7 @@
         "nombre": "San Diego St",
         "pais": "EE.UU.",
         "rating": 1480.62,
-        "rd": 224.11495570928656,
+        "rd": 224.59915311617408,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 33.6,
@@ -37220,7 +37303,7 @@
         "nombre": "Santa Clara",
         "pais": "EE.UU.",
         "rating": 1476.63,
-        "rd": 206.8140992902906,
+        "rd": 207.338720734189,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 15.4,
@@ -37250,7 +37333,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.6,
+        "overperformance": 2.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -37350,7 +37433,7 @@
         "nombre": "Gonzaga",
         "pais": "EE.UU.",
         "rating": 1460.47,
-        "rd": 202.76300306039354,
+        "rd": 203.2980610286195,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 46.9,
@@ -38085,7 +38168,7 @@
         "nombre": "Colorado",
         "pais": "",
         "rating": 1652.19,
-        "rd": 216.65926763760348,
+        "rd": 217.1601228272077,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 72.4,
@@ -38138,7 +38221,7 @@
         "nombre": "San Jose",
         "pais": "",
         "rating": 1261.88,
-        "rd": 237.51161849853096,
+        "rd": 237.96857433751106,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 22.8,
@@ -38321,7 +38404,7 @@
         "nombre": "Las Vegas",
         "pais": "EE.UU.",
         "rating": 1460.38,
-        "rd": 216.01957955996153,
+        "rd": 216.52191447132506,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 28.2,

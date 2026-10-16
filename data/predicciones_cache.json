@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-16T09:23:37.193354Z",
+  "generado": "2026-10-16T13:45:07.911921Z",
   "fecha_consulta": "2026-10-16",
   "total": 104,
   "predicciones": [
@@ -178,92 +178,6 @@
       },
       "diff_elo": -183.0,
       "confianza": 91.5
-    },
-    {
-      "fixture_id": "401912479",
-      "fecha": "2026-10-16T08:00:00-05:00",
-      "fecha_display": "2026-10-16",
-      "hora": "08:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "133114",
-        "nombre": "Welwalo",
-        "pais": "",
-        "rating": 1592.26,
-        "rd": 256.98,
-        "partidos_jugados": 2,
-        "pj_reales": 1,
-        "form_score": 62.2,
-        "form_local": 100.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1D",
-          "resultados": [
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.5,
-          "goles_contra": 1.5,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 6.2,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "18827",
-        "nombre": "Al Ahli Tripoli",
-        "pais": "",
-        "rating": 1657.81,
-        "rd": 257.57,
-        "partidos_jugados": 2,
-        "pj_reales": 2,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V",
-          "resultados": [
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 3.5,
-          "goles_contra": 0.0,
-          "diferencia": 3.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 19.6,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 46.1,
-        "prob_empate": 21.6,
-        "prob_visitante": 32.2
-      },
-      "diff_elo": -65.5,
-      "confianza": 32.8
     },
     {
       "fixture_id": "401900901",
@@ -1156,6 +1070,92 @@
       },
       "diff_elo": 201.9,
       "confianza": 100.0
+    },
+    {
+      "fixture_id": "401912479",
+      "fecha": "2026-10-16T12:00:00-05:00",
+      "fecha_display": "2026-10-16",
+      "hora": "12:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "133114",
+        "nombre": "Welwalo",
+        "pais": "",
+        "rating": 1592.26,
+        "rd": 256.98,
+        "partidos_jugados": 2,
+        "pj_reales": 1,
+        "form_score": 62.2,
+        "form_local": 100.0,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1D",
+          "resultados": [
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.5,
+          "goles_contra": 1.5,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 6.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "18827",
+        "nombre": "Al Ahli Tripoli",
+        "pais": "",
+        "rating": 1657.81,
+        "rd": 257.57,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 100.0,
+        "form_local": 100.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V",
+          "resultados": [
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 3.5,
+          "goles_contra": 0.0,
+          "diferencia": 3.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 19.6,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 46.1,
+        "prob_empate": 21.6,
+        "prob_visitante": 32.2
+      },
+      "diff_elo": -65.5,
+      "confianza": 32.8
     },
     {
       "fixture_id": "401912492",
@@ -6566,7 +6566,7 @@
         "nombre": "Sporting Jax",
         "pais": "",
         "rating": 1564.33,
-        "rd": 231.18966854568635,
+        "rd": 231.4245477391623,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 31.1,
@@ -9170,7 +9170,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -17.7,
+        "overperformance": -17.4,
         "vol": 0.06
       },
       "equipo_visitante": {
