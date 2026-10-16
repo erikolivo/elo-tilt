@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-16T13:45:07.911921Z",
+  "generado": "2026-10-16T18:38:26.457862Z",
   "fecha_consulta": "2026-10-16",
   "total": 104,
   "predicciones": [
@@ -796,6 +796,175 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401912479",
+      "fecha": "2026-10-16T12:00:00-05:00",
+      "fecha_display": "2026-10-16",
+      "hora": "12:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "133114",
+        "nombre": "Welwalo",
+        "pais": "",
+        "rating": 1592.26,
+        "rd": 256.98,
+        "partidos_jugados": 2,
+        "pj_reales": 1,
+        "form_score": 62.2,
+        "form_local": 100.0,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1D",
+          "resultados": [
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.5,
+          "goles_contra": 1.5,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 6.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "18827",
+        "nombre": "Al Ahli Tripoli",
+        "pais": "",
+        "rating": 1657.81,
+        "rd": 257.57,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 100.0,
+        "form_local": 100.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V",
+          "resultados": [
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 3.5,
+          "goles_contra": 0.0,
+          "diferencia": 3.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 19.6,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 46.1,
+        "prob_empate": 21.6,
+        "prob_visitante": 32.2
+      },
+      "diff_elo": -65.5,
+      "confianza": 32.8
+    },
+    {
+      "fixture_id": "401912492",
+      "fecha": "2026-10-16T12:00:00-05:00",
+      "fecha_display": "2026-10-16",
+      "hora": "12:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "132883",
+        "nombre": "ZED FC",
+        "pais": "",
+        "rating": 1487.19,
+        "rd": 237.54,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 68.9,
+        "form_local": 100.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1E",
+          "resultados": [
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.5,
+          "goles_contra": 0.5,
+          "diferencia": 2.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 4.1,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "131551",
+        "nombre": "Azam",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 350.0,
+        "partidos_jugados": 0,
+        "pj_reales": 0,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 55.1,
+        "prob_empate": 22.9,
+        "prob_visitante": 22.0
+      },
+      "diff_elo": -12.8,
+      "confianza": 6.4
+    },
+    {
       "fixture_id": "401888377",
       "fecha": "2026-10-16T12:00:00-05:00",
       "fecha_display": "2026-10-16",
@@ -1072,175 +1241,6 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401912479",
-      "fecha": "2026-10-16T12:00:00-05:00",
-      "fecha_display": "2026-10-16",
-      "hora": "12:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "133114",
-        "nombre": "Welwalo",
-        "pais": "",
-        "rating": 1592.26,
-        "rd": 256.98,
-        "partidos_jugados": 2,
-        "pj_reales": 1,
-        "form_score": 62.2,
-        "form_local": 100.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1D",
-          "resultados": [
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.5,
-          "goles_contra": 1.5,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 6.2,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "18827",
-        "nombre": "Al Ahli Tripoli",
-        "pais": "",
-        "rating": 1657.81,
-        "rd": 257.57,
-        "partidos_jugados": 2,
-        "pj_reales": 2,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V",
-          "resultados": [
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 3.5,
-          "goles_contra": 0.0,
-          "diferencia": 3.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 19.6,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 46.1,
-        "prob_empate": 21.6,
-        "prob_visitante": 32.2
-      },
-      "diff_elo": -65.5,
-      "confianza": 32.8
-    },
-    {
-      "fixture_id": "401912492",
-      "fecha": "2026-10-16T12:00:00-05:00",
-      "fecha_display": "2026-10-16",
-      "hora": "12:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "132883",
-        "nombre": "ZED FC",
-        "pais": "",
-        "rating": 1487.19,
-        "rd": 237.54,
-        "partidos_jugados": 2,
-        "pj_reales": 2,
-        "form_score": 68.9,
-        "form_local": 100.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1E",
-          "resultados": [
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.5,
-          "goles_contra": 0.5,
-          "diferencia": 2.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 4.1,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "131551",
-        "nombre": "Azam",
-        "pais": "",
-        "rating": 1500.0,
-        "rd": 350.0,
-        "partidos_jugados": 0,
-        "pj_reales": 0,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 55.1,
-        "prob_empate": 22.9,
-        "prob_visitante": 22.0
-      },
-      "diff_elo": -12.8,
-      "confianza": 6.4
-    },
-    {
       "fixture_id": "401889852",
       "fecha": "2026-10-16T12:00:00-05:00",
       "fecha_display": "2026-10-16",
@@ -1413,98 +1413,6 @@
       "confianza": 40.6
     },
     {
-      "fixture_id": "401881771",
-      "fecha": "2026-10-16T12:30:00-05:00",
-      "fecha_display": "2026-10-16",
-      "hora": "12:30",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "519",
-        "nombre": "Rapid Vienna",
-        "pais": "",
-        "rating": 1877.63,
-        "rd": 148.4,
-        "partidos_jugados": 10,
-        "pj_reales": 10,
-        "form_score": 95.7,
-        "form_local": 92.1,
-        "form_visitante": 92.1,
-        "momentum": "stable",
-        "momentum_diff": 1.4,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 4
-        },
-        "ultimos5": {
-          "texto": "4V 1E",
-          "resultados": [
-            "V",
-            "V",
-            "V",
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 3.1,
-          "goles_contra": 0.7,
-          "diferencia": 2.4
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 7.7,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "6907",
-        "nombre": "TSV Hartberg",
-        "pais": "",
-        "rating": 1578.32,
-        "rd": 149.3,
-        "partidos_jugados": 8,
-        "pj_reales": 8,
-        "form_score": 84.9,
-        "form_local": 83.4,
-        "form_visitante": 68.9,
-        "momentum": "stable",
-        "momentum_diff": 2.4,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "3V 2E",
-          "resultados": [
-            "V",
-            "V",
-            "E",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.38,
-          "goles_contra": 1.88,
-          "diferencia": 0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 1.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 82.9,
-        "prob_empate": 16.1,
-        "prob_visitante": 1.0
-      },
-      "diff_elo": 299.3,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401922301",
       "fecha": "2026-10-16T12:30:00-05:00",
       "fecha_display": "2026-10-16",
@@ -1594,6 +1502,98 @@
         "prob_visitante": 1.0
       },
       "diff_elo": 416.3,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401881771",
+      "fecha": "2026-10-16T12:30:00-05:00",
+      "fecha_display": "2026-10-16",
+      "hora": "12:30",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "519",
+        "nombre": "Rapid Vienna",
+        "pais": "",
+        "rating": 1877.63,
+        "rd": 148.4,
+        "partidos_jugados": 10,
+        "pj_reales": 10,
+        "form_score": 95.7,
+        "form_local": 92.1,
+        "form_visitante": 92.1,
+        "momentum": "stable",
+        "momentum_diff": 1.4,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 4
+        },
+        "ultimos5": {
+          "texto": "4V 1E",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 3.1,
+          "goles_contra": 0.7,
+          "diferencia": 2.4
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 7.7,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "6907",
+        "nombre": "TSV Hartberg",
+        "pais": "",
+        "rating": 1578.32,
+        "rd": 149.3,
+        "partidos_jugados": 8,
+        "pj_reales": 8,
+        "form_score": 84.9,
+        "form_local": 83.4,
+        "form_visitante": 68.9,
+        "momentum": "stable",
+        "momentum_diff": 2.4,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3V 2E",
+          "resultados": [
+            "V",
+            "V",
+            "E",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.38,
+          "goles_contra": 1.88,
+          "diferencia": 0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 82.9,
+        "prob_empate": 16.1,
+        "prob_visitante": 1.0
+      },
+      "diff_elo": 299.3,
       "confianza": 100.0
     },
     {
@@ -6566,7 +6566,7 @@
         "nombre": "Sporting Jax",
         "pais": "",
         "rating": 1564.33,
-        "rd": 231.4245477391623,
+        "rd": 231.6591887888052,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 31.1,
