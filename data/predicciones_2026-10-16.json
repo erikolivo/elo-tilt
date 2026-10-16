@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-15T23:31:35.321840Z",
+  "generado": "2026-10-16T02:45:47.562669Z",
   "fecha_consulta": "2026-10-16",
   "total": 104,
   "predicciones": [
@@ -3890,6 +3890,98 @@
       "confianza": 39.0
     },
     {
+      "fixture_id": "401887782",
+      "fecha": "2026-10-16T16:00:00-05:00",
+      "fecha_display": "2026-10-16",
+      "hora": "16:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5645",
+        "nombre": "Georgetown",
+        "pais": "",
+        "rating": 1879.82,
+        "rd": 176.94,
+        "partidos_jugados": 6,
+        "pj_reales": 6,
+        "form_score": 94.4,
+        "form_local": 99.0,
+        "form_visitante": 69.3,
+        "momentum": "stable",
+        "momentum_diff": -0.2,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 4
+        },
+        "ultimos5": {
+          "texto": "4V 1D",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.9,
+          "goles_contra": 0.9,
+          "diferencia": 2.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 9.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "5631",
+        "nombre": "Seton Hall",
+        "pais": "",
+        "rating": 1546.2,
+        "rd": 134.94,
+        "partidos_jugados": 10,
+        "pj_reales": 2,
+        "form_score": 52.9,
+        "form_local": 50.0,
+        "form_visitante": 56.3,
+        "momentum": "stable",
+        "momentum_diff": -1.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "1V 1D 3E",
+          "resultados": [
+            "E",
+            "E",
+            "E",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.8,
+          "goles_contra": 0.7,
+          "diferencia": 0.1
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -1.2,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 84.2,
+        "prob_empate": 14.9,
+        "prob_visitante": 1.0
+      },
+      "diff_elo": 333.6,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401890298",
       "fecha": "2026-10-16T16:00:00-05:00",
       "fecha_display": "2026-10-16",
@@ -4062,7 +4154,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.5,
+        "overperformance": -3.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -5174,98 +5266,6 @@
       "confianza": 18.7
     },
     {
-      "fixture_id": "401887782",
-      "fecha": "2026-10-16T18:00:00-05:00",
-      "fecha_display": "2026-10-16",
-      "hora": "18:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5645",
-        "nombre": "Georgetown",
-        "pais": "",
-        "rating": 1879.82,
-        "rd": 176.94,
-        "partidos_jugados": 6,
-        "pj_reales": 6,
-        "form_score": 94.4,
-        "form_local": 99.0,
-        "form_visitante": 69.3,
-        "momentum": "stable",
-        "momentum_diff": -0.2,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 4
-        },
-        "ultimos5": {
-          "texto": "4V 1D",
-          "resultados": [
-            "V",
-            "V",
-            "V",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.9,
-          "goles_contra": 0.9,
-          "diferencia": 2.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 9.4,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "5631",
-        "nombre": "Seton Hall",
-        "pais": "",
-        "rating": 1546.2,
-        "rd": 134.94,
-        "partidos_jugados": 10,
-        "pj_reales": 2,
-        "form_score": 52.9,
-        "form_local": 50.0,
-        "form_visitante": 56.3,
-        "momentum": "stable",
-        "momentum_diff": -1.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "1V 1D 3E",
-          "resultados": [
-            "E",
-            "E",
-            "E",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.8,
-          "goles_contra": 0.7,
-          "diferencia": 0.1
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -1.2,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 84.2,
-        "prob_empate": 14.9,
-        "prob_visitante": 1.0
-      },
-      "diff_elo": 333.6,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401887558",
       "fecha": "2026-10-16T18:00:00-05:00",
       "fecha_display": "2026-10-16",
@@ -5990,7 +5990,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -12.0,
+        "overperformance": -11.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -6044,7 +6044,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.2,
+        "overperformance": 3.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -6266,7 +6266,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.6,
+        "overperformance": -0.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -6566,7 +6566,7 @@
         "nombre": "Sporting Jax",
         "pais": "",
         "rating": 1564.33,
-        "rd": 230.24775574632284,
+        "rd": 230.48359481800398,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 31.1,
@@ -6964,7 +6964,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.1,
+        "overperformance": 2.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8528,7 +8528,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.2,
+        "overperformance": 4.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8620,7 +8620,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.4,
+        "overperformance": 1.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9026,13 +9026,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 15.2,
+        "overperformance": 14.7,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 63.2,
+        "prob_local": 63.3,
         "prob_empate": 21.4,
-        "prob_visitante": 15.4
+        "prob_visitante": 15.3
       },
       "diff_elo": 77.0,
       "confianza": 38.5
