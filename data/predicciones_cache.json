@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-16T18:38:26.457862Z",
+  "generado": "2026-10-16T22:23:28.631111Z",
   "fecha_consulta": "2026-10-16",
   "total": 104,
   "predicciones": [
@@ -1333,86 +1333,6 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401930320",
-      "fecha": "2026-10-16T12:30:00-05:00",
-      "fecha_display": "2026-10-16",
-      "hora": "12:30",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "7690",
-        "nombre": "Bellinzona",
-        "pais": "",
-        "rating": 1418.78,
-        "rd": 102.05,
-        "partidos_jugados": 20,
-        "pj_reales": 20,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "133414",
-        "nombre": "FCCOLLINA",
-        "pais": "",
-        "rating": 1500.0,
-        "rd": 350.0,
-        "partidos_jugados": 0,
-        "pj_reales": 0,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 46.7,
-        "prob_empate": 21.3,
-        "prob_visitante": 32.1
-      },
-      "diff_elo": -81.2,
-      "confianza": 40.6
-    },
-    {
       "fixture_id": "401922301",
       "fecha": "2026-10-16T12:30:00-05:00",
       "fecha_display": "2026-10-16",
@@ -1503,6 +1423,86 @@
       },
       "diff_elo": 416.3,
       "confianza": 100.0
+    },
+    {
+      "fixture_id": "401930320",
+      "fecha": "2026-10-16T12:30:00-05:00",
+      "fecha_display": "2026-10-16",
+      "hora": "12:30",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "7690",
+        "nombre": "Bellinzona",
+        "pais": "",
+        "rating": 1418.78,
+        "rd": 102.05,
+        "partidos_jugados": 20,
+        "pj_reales": 20,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "133414",
+        "nombre": "FCCOLLINA",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 350.0,
+        "partidos_jugados": 0,
+        "pj_reales": 0,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 46.7,
+        "prob_empate": 21.3,
+        "prob_visitante": 32.1
+      },
+      "diff_elo": -81.2,
+      "confianza": 40.6
     },
     {
       "fixture_id": "401881771",
@@ -5254,7 +5254,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.2,
+        "overperformance": -3.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -5806,7 +5806,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.0,
+        "overperformance": 6.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -6082,13 +6082,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 12.5,
+        "overperformance": 11.5,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 21.9,
+        "prob_local": 22.0,
         "prob_empate": 17.0,
-        "prob_visitante": 61.1
+        "prob_visitante": 61.0
       },
       "diff_elo": -267.2,
       "confianza": 100.0
@@ -6566,7 +6566,7 @@
         "nombre": "Sporting Jax",
         "pais": "",
         "rating": 1564.33,
-        "rd": 231.6591887888052,
+        "rd": 231.89359241751114,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 31.1,
@@ -7094,13 +7094,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 17.8,
+        "overperformance": 18.6,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 68.7,
+        "prob_local": 68.6,
         "prob_empate": 19.5,
-        "prob_visitante": 11.8
+        "prob_visitante": 11.9
       },
       "diff_elo": 157.7,
       "confianza": 78.8
@@ -7332,7 +7332,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.2,
+        "overperformance": 0.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7370,7 +7370,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.7,
+        "overperformance": -4.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -7608,7 +7608,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 10.9,
+        "overperformance": 10.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7651,7 +7651,7 @@
       },
       "prediccion": {
         "prob_local": 82.9,
-        "prob_empate": 16.1,
+        "prob_empate": 16.2,
         "prob_visitante": 1.0
       },
       "diff_elo": 270.1,
@@ -7700,7 +7700,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 12.8,
+        "overperformance": 13.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7744,7 +7744,7 @@
       "prediccion": {
         "prob_local": 29.2,
         "prob_empate": 17.1,
-        "prob_visitante": 53.8
+        "prob_visitante": 53.7
       },
       "diff_elo": -262.7,
       "confianza": 100.0
@@ -8382,13 +8382,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 11.1,
+        "overperformance": 11.8,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 39.7,
+        "prob_local": 39.6,
         "prob_empate": 20.5,
-        "prob_visitante": 39.8
+        "prob_visitante": 39.9
       },
       "diff_elo": -113.2,
       "confianza": 56.6
@@ -8620,7 +8620,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.6,
+        "overperformance": 1.8,
         "vol": 0.06
       },
       "equipo_visitante": {
