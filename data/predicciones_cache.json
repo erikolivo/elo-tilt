@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-16T22:23:28.631111Z",
+  "generado": "2026-10-16T23:16:11.053570Z",
   "fecha_consulta": "2026-10-16",
   "total": 104,
   "predicciones": [
@@ -5082,6 +5082,98 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401891000",
+      "fecha": "2026-10-16T18:00:00-05:00",
+      "fecha_display": "2026-10-16",
+      "hora": "18:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5650",
+        "nombre": "Rutgers",
+        "pais": "",
+        "rating": 1630.44,
+        "rd": 130.21,
+        "partidos_jugados": 11,
+        "pj_reales": 3,
+        "form_score": 32.8,
+        "form_local": 50.6,
+        "form_visitante": 32.7,
+        "momentum": "stable",
+        "momentum_diff": -1.7,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3V 2D",
+          "resultados": [
+            "D",
+            "D",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.55,
+          "goles_contra": 0.91,
+          "diferencia": 0.64
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "5585",
+        "nombre": "Indiana",
+        "pais": "",
+        "rating": 1916.96,
+        "rd": 169.82,
+        "partidos_jugados": 7,
+        "pj_reales": 7,
+        "form_score": 95.5,
+        "form_local": 100.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": -0.3,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "4V 1E",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.86,
+          "goles_contra": 0.57,
+          "diferencia": 2.29
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 12.1,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 21.9,
+        "prob_empate": 16.5,
+        "prob_visitante": 61.6
+      },
+      "diff_elo": -286.5,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401841275",
       "fecha": "2026-10-16T18:00:00-05:00",
       "fecha_display": "2026-10-16",
@@ -5818,98 +5910,6 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401891000",
-      "fecha": "2026-10-16T18:00:00-05:00",
-      "fecha_display": "2026-10-16",
-      "hora": "18:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5650",
-        "nombre": "Rutgers",
-        "pais": "",
-        "rating": 1630.44,
-        "rd": 130.21,
-        "partidos_jugados": 11,
-        "pj_reales": 3,
-        "form_score": 32.8,
-        "form_local": 50.6,
-        "form_visitante": 32.7,
-        "momentum": "stable",
-        "momentum_diff": -1.7,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "3V 2D",
-          "resultados": [
-            "D",
-            "D",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.55,
-          "goles_contra": 0.91,
-          "diferencia": 0.64
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 1.9,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "5585",
-        "nombre": "Indiana",
-        "pais": "",
-        "rating": 1916.96,
-        "rd": 169.82,
-        "partidos_jugados": 7,
-        "pj_reales": 7,
-        "form_score": 95.5,
-        "form_local": 100.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": -0.3,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "4V 1E",
-          "resultados": [
-            "V",
-            "V",
-            "V",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.86,
-          "goles_contra": 0.57,
-          "diferencia": 2.29
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 12.1,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 21.9,
-        "prob_empate": 16.5,
-        "prob_visitante": 61.6
-      },
-      "diff_elo": -286.5,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401901750",
       "fecha": "2026-10-16T18:00:00-05:00",
       "fecha_display": "2026-10-16",
@@ -6566,7 +6566,7 @@
         "nombre": "Sporting Jax",
         "pais": "",
         "rating": 1564.33,
-        "rd": 231.89359241751114,
+        "rd": 232.12775934452623,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 31.1,
@@ -6640,7 +6640,7 @@
       "prediccion": {
         "prob_local": 74.4,
         "prob_empate": 18.3,
-        "prob_visitante": 7.3
+        "prob_visitante": 7.4
       },
       "diff_elo": 210.3,
       "confianza": 100.0

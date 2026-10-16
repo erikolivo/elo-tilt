@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<meta name="build" content="20261016172328">
+<meta name="build" content="20261016181611">
 <title>ELO + Tilt Tracker</title>
 <style>
 :root {
@@ -214,7 +214,7 @@ tr:hover { background: var(--surface2); }
   <div class="stats">
     <div class="stat"><div class="stat-val">104</div><div class="stat-label">Partidos</div></div>
     <div class="stat"><div class="stat-val">2</div><div class="stat-label">Ligas</div></div>
-    <div class="stat"><div class="stat-val" id="statAciertos" data-global="66.8%" data-global-title="1407/2107 calificados (últimos 90 días)" title="1407/2107 calificados (últimos 90 días)">66.8%</div><div class="stat-label">% Aciertos</div></div>
+    <div class="stat"><div class="stat-val" id="statAciertos" data-global="66.8%" data-global-title="1410/2112 calificados (últimos 90 días)" title="1410/2112 calificados (últimos 90 días)">66.8%</div><div class="stat-label">% Aciertos</div></div>
   </div>
 
   <div class="controls">
@@ -782,15 +782,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo above">1609 <span class="pj-count">7PJ</span></td>
   <td class="ex-forma low">20</td>
   <td class="ex-racha"><span class="ultimos5" title="2V 3D"><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+1</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-finalizado">1 - 0</td>
+  <td class="ex-minuto marcador-finalizado">FIN</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401922301" target="_blank">FC Utrecht</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo below">1193 <span class="pj-count">7PJ</span></td>
   <td class="ex-forma low">2</td>
   <td class="ex-racha"><span class="ultimos5" title="5D"><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-9</span></td>
   <td class="ex-diff" style="color:#22c55e">+416</td>
   <td class="ex-pred best" title="Código por Elo: dif +416 + 50 local = +466 | Prob. modelo: 86% | 13% | 1%">1</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-ok" title="">✓</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401922301')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401922301" style="display:none">
@@ -1666,15 +1666,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo below">1221 <span class="pj-count">8PJ</span></td>
   <td class="ex-forma low">33</td>
   <td class="ex-racha"><span class="ultimos5" title="3D 2E"><span class="u5-e">E</span><span class="u5-e">E</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-2</span></td>
-  <td class="ex-marcador marcador-vivo">2 - 1</td>
-  <td class="ex-minuto marcador-vivo">88'</td>
+  <td class="ex-marcador marcador-finalizado">2 - 1</td>
+  <td class="ex-minuto marcador-finalizado">FIN</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401886168" target="_blank">ADT</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo below">1366 <span class="pj-count">6PJ</span></td>
   <td class="ex-forma mid">50</td>
   <td class="ex-racha"><span class="ultimos5" title="1V 2D 2E"><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-e">E</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+1</span></td>
   <td class="ex-diff" style="color:#ef4444">-145</td>
   <td class="ex-pred best" title="Código por Elo: dif -145 + 50 local = -95 | Prob. modelo: 37% | 20% | 43%">X2</td>
-  <td class="ex-acierto acierto-parcial-fail" title="Provisional -- puede cambiar mientras el partido siga en curso">✗</td>
+  <td class="ex-acierto acierto-fail" title="">✗</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401886168')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401886168" style="display:none">
@@ -1700,15 +1700,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo below">1210 <span class="pj-count">5PJ</span></td>
   <td class="ex-forma low">29</td>
   <td class="ex-racha"><span class="ultimos5" title="3D 2E"><span class="u5-e">E</span><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-d">D</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#ef4444">-15</span></td>
-  <td class="ex-marcador marcador-vivo">2 - 1</td>
-  <td class="ex-minuto marcador-vivo">90'+3'</td>
+  <td class="ex-marcador marcador-finalizado">2 - 1</td>
+  <td class="ex-minuto marcador-finalizado">FIN</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401921380" target="_blank">Tecnico U.</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo below">1288 <span class="pj-count">8PJ</span></td>
   <td class="ex-forma low">32</td>
   <td class="ex-racha"><span class="ultimos5" title="2V 2D 1E"><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-4</span></td>
   <td class="ex-diff" style="color:#ef4444">-78</td>
   <td class="ex-pred best" title="Código por Elo: dif -78 + 50 local = -28 | Prob. modelo: 46% | 21% | 33%">12</td>
-  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
+  <td class="ex-acierto acierto-ok" title="">✓</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401921380')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401921380" style="display:none">
@@ -1734,15 +1734,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo elite">1880 <span class="pj-count">6PJ</span></td>
   <td class="ex-forma high">94</td>
   <td class="ex-racha"><span class="ultimos5" title="4V 1D"><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+9</span></td>
-  <td class="ex-marcador marcador-vivo">4 - 0</td>
-  <td class="ex-minuto marcador-vivo">52'</td>
+  <td class="ex-marcador marcador-finalizado">4 - 0</td>
+  <td class="ex-minuto marcador-finalizado">FIN</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401887782" target="_blank">Seton Hall</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo average">1546 <span class="pj-count">10PJ</span></td>
   <td class="ex-forma mid">53</td>
   <td class="ex-racha"><span class="ultimos5" title="1V 1D 3E"><span class="u5-e">E</span><span class="u5-e">E</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-1</span></td>
   <td class="ex-diff" style="color:#22c55e">+334</td>
   <td class="ex-pred best" title="Código por Elo: dif +334 + 50 local = +384 | Prob. modelo: 84% | 15% | 1%">1</td>
-  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
+  <td class="ex-acierto acierto-ok" title="">✓</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401887782')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401887782" style="display:none">
@@ -1768,15 +1768,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo below">1302 <span class="pj-count">11PJ</span></td>
   <td class="ex-forma low">13</td>
   <td class="ex-racha"><span class="ultimos5" title="1V 4D"><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-5</span></td>
-  <td class="ex-marcador marcador-vivo">1 - 0</td>
-  <td class="ex-minuto marcador-vivo">HT</td>
+  <td class="ex-marcador marcador-finalizado">1 - 1</td>
+  <td class="ex-minuto marcador-finalizado">FIN</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401890298" target="_blank">App State</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo above">1683 <span class="pj-count">9PJ</span></td>
   <td class="ex-forma mid">52</td>
   <td class="ex-racha"><span class="ultimos5" title="3V 1D 1E"><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+4</span></td>
   <td class="ex-diff" style="color:#ef4444">-381</td>
   <td class="ex-pred best" title="Código por Elo: dif -381 + 50 local = -331 | Prob. modelo: 16% | 14% | 70%">2</td>
-  <td class="ex-acierto acierto-parcial-fail" title="Provisional -- puede cambiar mientras el partido siga en curso">✗</td>
+  <td class="ex-acierto acierto-fail" title="">✗</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401890298')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401890298" style="display:none">
@@ -1802,8 +1802,8 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo above">1590 <span class="pj-count">7PJ</span></td>
   <td class="ex-forma mid">49</td>
   <td class="ex-racha"><span class="ultimos5" title="2V 3D"><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-v">V</span></span> </td>
-  <td class="ex-marcador marcador-vivo">0 - 2</td>
-  <td class="ex-minuto marcador-vivo">55'</td>
+  <td class="ex-marcador marcador-vivo">1 - 3</td>
+  <td class="ex-minuto marcador-vivo">85'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401883709" target="_blank">Iowa</a></td>
   <td class="ex-elo elite">1766 <span class="pj-count">10PJ</span></td>
   <td class="ex-forma mid">60</td>
@@ -1836,8 +1836,8 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo below">1133 <span class="pj-count">9PJ</span></td>
   <td class="ex-forma low">17</td>
   <td class="ex-racha"><span class="ultimos5" title="1V 3D 1E"><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-e">E</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-10</span></td>
-  <td class="ex-marcador marcador-vivo">0 - 2</td>
-  <td class="ex-minuto marcador-vivo">47'</td>
+  <td class="ex-marcador marcador-vivo">0 - 3</td>
+  <td class="ex-minuto marcador-vivo">90'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401900295" target="_blank">Grambling</a></td>
   <td class="ex-elo below">1303 <span class="pj-count">10PJ</span></td>
   <td class="ex-forma mid">52</td>
@@ -1871,7 +1871,7 @@ tr:hover { background: var(--surface2); }
   <td class="ex-forma high">97</td>
   <td class="ex-racha"><span class="ultimos5" title="4V 1E"><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-e">E</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+10</span></td>
   <td class="ex-marcador marcador-vivo">0 - 1</td>
-  <td class="ex-minuto marcador-vivo">23'</td>
+  <td class="ex-minuto marcador-vivo">57'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401841626" target="_blank">Instituto</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo elite">1777 <span class="pj-count">7PJ</span></td>
   <td class="ex-forma high">72</td>
@@ -1904,15 +1904,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo above">1555 <span class="pj-count">11PJ</span></td>
   <td class="ex-forma mid">58</td>
   <td class="ex-racha"><span class="ultimos5" title="2V 2D 1E"><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-d">D</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-3</span></td>
-  <td class="ex-marcador marcador-vivo">0 - 0</td>
-  <td class="ex-minuto marcador-vivo">23'</td>
+  <td class="ex-marcador marcador-vivo">1 - 0</td>
+  <td class="ex-minuto marcador-vivo">59'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401929245" target="_blank">Cerro Largo</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo below">1287 <span class="pj-count">7PJ</span></td>
   <td class="ex-forma low">10</td>
   <td class="ex-racha"><span class="ultimos5" title="3D 2E"><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-e">E</span></span> </td>
   <td class="ex-diff" style="color:#22c55e">+268</td>
   <td class="ex-pred best" title="Código por Elo: dif +268 + 50 local = +318 | Prob. modelo: 82% | 17% | 1%">1</td>
-  <td class="ex-acierto acierto-parcial-fail" title="Provisional -- puede cambiar mientras el partido siga en curso">✗</td>
+  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401929245')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401929245" style="display:none">
@@ -1938,15 +1938,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo above">1597 <span class="pj-count">8PJ</span></td>
   <td class="ex-forma mid">65</td>
   <td class="ex-racha"><span class="ultimos5" title="3V 1D 1E"><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+7</span></td>
-  <td class="ex-marcador marcador-vivo">0 - 1</td>
-  <td class="ex-minuto marcador-vivo">10'</td>
+  <td class="ex-marcador marcador-vivo">1 - 1</td>
+  <td class="ex-minuto marcador-vivo">HT</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401898872" target="_blank">Virginia Tech</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo above">1580 <span class="pj-count">11PJ</span></td>
   <td class="ex-forma mid">43</td>
   <td class="ex-racha"><span class="ultimos5" title="3V 2D"><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+5</span></td>
   <td class="ex-diff" style="color:#22c55e">+17</td>
   <td class="ex-pred best" title="Código por Elo: dif +17 + 50 local = +67 | Prob. modelo: 58% | 23% | 19%">1X</td>
-  <td class="ex-acierto acierto-parcial-fail" title="Provisional -- puede cambiar mientras el partido siga en curso">✗</td>
+  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401898872')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401898872" style="display:none">
@@ -1973,7 +1973,7 @@ tr:hover { background: var(--surface2); }
   <td class="ex-forma high">98</td>
   <td class="ex-racha"><span class="ultimos5" title="5V"><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+12</span></td>
   <td class="ex-marcador marcador-vivo">0 - 0</td>
-  <td class="ex-minuto marcador-vivo">15'</td>
+  <td class="ex-minuto marcador-vivo">48'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401901530" target="_blank">Stanford</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo elite">1827 <span class="pj-count">6PJ</span></td>
   <td class="ex-forma mid">53</td>
@@ -2006,8 +2006,8 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo average">1547 <span class="pj-count">6PJ</span></td>
   <td class="ex-forma mid">67</td>
   <td class="ex-racha"><span class="ultimos5" title="2V 3D"><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#ef4444">-17</span></td>
-  <td class="ex-marcador marcador-vivo">0 - 0</td>
-  <td class="ex-minuto marcador-vivo">15'</td>
+  <td class="ex-marcador marcador-vivo">3 - 0</td>
+  <td class="ex-minuto marcador-vivo">HT</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401930087" target="_blank">Florida Poly</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo below">1356 <span class="pj-count">1PJ</span></td>
   <td class="ex-forma low">0</td>
@@ -2040,8 +2040,8 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo below">1362 <span class="pj-count">8PJ</span></td>
   <td class="ex-forma mid">66</td>
   <td class="ex-racha"><span class="ultimos5" title="1V 1D 3E"><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-e">E</span><span class="u5-d">D</span><span class="u5-e">E</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-6</span></td>
-  <td class="ex-marcador marcador-vivo">0 - 0</td>
-  <td class="ex-minuto marcador-vivo">21'</td>
+  <td class="ex-marcador marcador-vivo">3 - 0</td>
+  <td class="ex-minuto marcador-vivo">52'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401900276" target="_blank">Southern</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo below">1302 <span class="pj-count">10PJ</span></td>
   <td class="ex-forma mid">48</td>
@@ -2075,7 +2075,7 @@ tr:hover { background: var(--surface2); }
   <td class="ex-forma mid">68</td>
   <td class="ex-racha"><span class="ultimos5" title="3V 2D"><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+8</span></td>
   <td class="ex-marcador marcador-vivo">0 - 0</td>
-  <td class="ex-minuto marcador-vivo">17'</td>
+  <td class="ex-minuto marcador-vivo">52'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401887042" target="_blank">Iowa State</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo below">1348 <span class="pj-count">6PJ</span></td>
   <td class="ex-forma low">9</td>
@@ -2109,7 +2109,7 @@ tr:hover { background: var(--surface2); }
   <td class="ex-forma low">20</td>
   <td class="ex-racha"><span class="ultimos5" title="3D 2E"><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-e">E</span><span class="u5-d">D</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+5</span></td>
   <td class="ex-marcador marcador-vivo">0 - 0</td>
-  <td class="ex-minuto marcador-vivo">3'</td>
+  <td class="ex-minuto marcador-vivo">HT</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401888582" target="_blank">Rubio Ñú</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo average">1545 <span class="pj-count">9PJ</span></td>
   <td class="ex-forma mid">59</td>
@@ -2142,15 +2142,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo below">1244 <span class="pj-count">9PJ</span></td>
   <td class="ex-forma low">10</td>
   <td class="ex-racha"><span class="ultimos5" title="1V 4D"><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-6</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">1 - 0</td>
+  <td class="ex-minuto marcador-vivo">45'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401860398" target="_blank">Atlético-GO</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo above">1653 <span class="pj-count">8PJ</span></td>
   <td class="ex-forma high">76</td>
   <td class="ex-racha"><span class="ultimos5" title="4V 1E"><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-1</span></td>
   <td class="ex-diff" style="color:#ef4444">-410</td>
   <td class="ex-pred best" title="Código por Elo: dif -410 + 50 local = -360 | Prob. modelo: 15% | 14% | 71%">2</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-fail" title="Provisional -- puede cambiar mientras el partido siga en curso">✗</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401860398')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401860398" style="display:none">
@@ -2165,278 +2165,6 @@ tr:hover { background: var(--surface2); }
         <strong>Atlético-GO</strong>
         <span class="mom-stable">— Momentum (+2.9)</span>
         <span class="op-neg">Overperf: -0.6</span>
-      </div>
-    </div>
-  </td>
-</tr>
-<tr class="excel-row" data-fixture-id="401841275" data-slug="all" data-fecha="2026-10-16" data-elo-h="1501" data-form-h="40" data-home="mirassol" data-away="internacional" data-diff="57" data-pj-h="12" data-pj-a="9" data-pj-h-total="12" data-pj-a-total="9">
-  <td class="ex-fecha">2026-10-16</td>
-  <td class="ex-hora">18:00</td>
-  <td class="ex-local"><a href="https://www.espn.com/soccer/match/_/gameId/401841275" target="_blank">Mirassol</a></td>
-  <td class="ex-elo average">1501 <span class="pj-count">12PJ</span></td>
-  <td class="ex-forma low">40</td>
-  <td class="ex-racha"><span class="ultimos5" title="2V 1D 2E"><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-1</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
-  <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401841275" target="_blank">Internacional</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-  <td class="ex-elo average">1444 <span class="pj-count">9PJ</span></td>
-  <td class="ex-forma mid">50</td>
-  <td class="ex-racha"><span class="ultimos5" title="1V 2D 2E"><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-e">E</span></span> </td>
-  <td class="ex-diff" style="color:#22c55e">+57</td>
-  <td class="ex-pred best" title="Código por Elo: dif +57 + 50 local = +107 | Prob. modelo: 61% | 22% | 18%">1X</td>
-  <td class="ex-acierto " title=""></td>
-  <td><button class="expand-btn" onclick="toggleDetalle('401841275')">▾</button></td>
-</tr>
-<tr class="detail-row" id="detail-401841275" style="display:none">
-  <td colspan="16">
-    <div class="detail-panel">
-      <div class="detail-team">
-        <strong>Mirassol</strong>
-        <span class="mom-stable">— Momentum (-0.4)</span>
-        <span class="op-neg">Overperf: -1.4</span>
-      </div>
-      <div class="detail-team">
-        <strong>Internacional</strong>
-        <span class="mom-stable">— Momentum (+0.4)</span>
-        <span class="op-neg">Overperf: -0.2</span>
-      </div>
-    </div>
-  </td>
-</tr>
-<tr class="excel-row" data-fixture-id="401887573" data-slug="all" data-fecha="2026-10-16" data-elo-h="1230" data-form-h="20" data-home="butler" data-away="villanova" data-diff="-355" data-pj-h="7" data-pj-a="10" data-pj-h-total="7" data-pj-a-total="10">
-  <td class="ex-fecha">2026-10-16</td>
-  <td class="ex-hora">18:00</td>
-  <td class="ex-local"><a href="https://www.espn.com/soccer/match/_/gameId/401887573" target="_blank">Butler</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-  <td class="ex-elo below">1230 <span class="pj-count">7PJ</span></td>
-  <td class="ex-forma low">20</td>
-  <td class="ex-racha"><span class="ultimos5" title="3D 2E"><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-e">E</span><span class="u5-d">D</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-1</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
-  <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401887573" target="_blank">Villanova</a></td>
-  <td class="ex-elo above">1584 <span class="pj-count">10PJ</span></td>
-  <td class="ex-forma mid">55</td>
-  <td class="ex-racha"><span class="ultimos5" title="2V 2D 1E"><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-3</span></td>
-  <td class="ex-diff" style="color:#ef4444">-355</td>
-  <td class="ex-pred best" title="Código por Elo: dif -355 + 50 local = -305 | Prob. modelo: 21% | 15% | 64%">2</td>
-  <td class="ex-acierto " title=""></td>
-  <td><button class="expand-btn" onclick="toggleDetalle('401887573')">▾</button></td>
-</tr>
-<tr class="detail-row" id="detail-401887573" style="display:none">
-  <td colspan="16">
-    <div class="detail-panel">
-      <div class="detail-team">
-        <strong>Butler</strong>
-        <span class="mom-stable">— Momentum (+0.4)</span>
-        <span class="op-neg">Overperf: -0.7</span>
-      </div>
-      <div class="detail-team">
-        <strong>Villanova</strong>
-        <span class="mom-stable">— Momentum (+2.3)</span>
-        <span class="op-neg">Overperf: -3.1</span>
-      </div>
-    </div>
-  </td>
-</tr>
-<tr class="excel-row" data-fixture-id="401891737" data-slug="all" data-fecha="2026-10-16" data-elo-h="1484" data-form-h="12" data-home="duke" data-away="virginia" data-diff="-37" data-pj-h="6" data-pj-a="8" data-pj-h-total="6" data-pj-a-total="8">
-  <td class="ex-fecha">2026-10-16</td>
-  <td class="ex-hora">18:00</td>
-  <td class="ex-local"><a href="https://www.espn.com/soccer/match/_/gameId/401891737" target="_blank">Duke</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-  <td class="ex-elo average">1484 <span class="pj-count">6PJ</span></td>
-  <td class="ex-forma low">12</td>
-  <td class="ex-racha"><span class="ultimos5" title="1V 4D"><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+4</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
-  <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401891737" target="_blank">Virginia</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-  <td class="ex-elo average">1522 <span class="pj-count">8PJ</span></td>
-  <td class="ex-forma high">78</td>
-  <td class="ex-racha"><span class="ultimos5" title="3V 1D 1E"><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-e">E</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+4</span></td>
-  <td class="ex-diff" style="color:#ef4444">-37</td>
-  <td class="ex-pred best" title="Código por Elo: dif -37 + 50 local = +13 | Prob. modelo: 46% | 22% | 32%">12</td>
-  <td class="ex-acierto " title=""></td>
-  <td><button class="expand-btn" onclick="toggleDetalle('401891737')">▾</button></td>
-</tr>
-<tr class="detail-row" id="detail-401891737" style="display:none">
-  <td colspan="16">
-    <div class="detail-panel">
-      <div class="detail-team">
-        <strong>Duke</strong>
-        <span class="mom-stable">— Momentum (-2.5)</span>
-        <span class="op-pos">Overperf: +4.5</span>
-      </div>
-      <div class="detail-team">
-        <strong>Virginia</strong>
-        <span class="mom-stable">— Momentum (+3.8)</span>
-        <span class="op-pos">Overperf: +4.0</span>
-      </div>
-    </div>
-  </td>
-</tr>
-<tr class="excel-row" data-fixture-id="401887558" data-slug="all" data-fecha="2026-10-16" data-elo-h="1678" data-form-h="70" data-home="marquette" data-away="uconn" data-diff="262" data-pj-h="8" data-pj-a="9" data-pj-h-total="8" data-pj-a-total="9">
-  <td class="ex-fecha">2026-10-16</td>
-  <td class="ex-hora">18:00</td>
-  <td class="ex-local"><a href="https://www.espn.com/soccer/match/_/gameId/401887558" target="_blank">Marquette</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-  <td class="ex-elo above">1678 <span class="pj-count">8PJ</span></td>
-  <td class="ex-forma mid">70</td>
-  <td class="ex-racha"><span class="ultimos5" title="3V 2D"><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+3</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
-  <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401887558" target="_blank">UConn</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-  <td class="ex-elo average">1416 <span class="pj-count">9PJ</span></td>
-  <td class="ex-forma low">24</td>
-  <td class="ex-racha"><span class="ultimos5" title="1V 3D 1E"><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+1</span></td>
-  <td class="ex-diff" style="color:#22c55e">+262</td>
-  <td class="ex-pred best" title="Código por Elo: dif +262 + 50 local = +312 | Prob. modelo: 82% | 17% | 1%">1</td>
-  <td class="ex-acierto " title=""></td>
-  <td><button class="expand-btn" onclick="toggleDetalle('401887558')">▾</button></td>
-</tr>
-<tr class="detail-row" id="detail-401887558" style="display:none">
-  <td colspan="16">
-    <div class="detail-panel">
-      <div class="detail-team">
-        <strong>Marquette</strong>
-        <span class="mom-stable">— Momentum (-1.5)</span>
-        <span class="op-pos">Overperf: +2.8</span>
-      </div>
-      <div class="detail-team">
-        <strong>UConn</strong>
-        <span class="mom-stable">— Momentum (-3.2)</span>
-        <span class="op-pos">Overperf: +0.7</span>
-      </div>
-    </div>
-  </td>
-</tr>
-<tr class="excel-row" data-fixture-id="401891014" data-slug="all" data-fecha="2026-10-16" data-elo-h="1440" data-form-h="37" data-home="michigan" data-away="maryland" data-diff="-332" data-pj-h="6" data-pj-a="3" data-pj-h-total="6" data-pj-a-total="10">
-  <td class="ex-fecha">2026-10-16</td>
-  <td class="ex-hora">18:00</td>
-  <td class="ex-local"><a href="https://www.espn.com/soccer/match/_/gameId/401891014" target="_blank">Michigan</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-  <td class="ex-elo average">1440 <span class="pj-count">6PJ</span></td>
-  <td class="ex-forma low">37</td>
-  <td class="ex-racha"><span class="ultimos5" title="2V 2D 1E"><span class="u5-e">E</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+1</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
-  <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401891014" target="_blank">Maryland</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-  <td class="ex-elo elite">1772 <span class="pj-count">10PJ</span></td>
-  <td class="ex-forma mid">40</td>
-  <td class="ex-racha"><span class="ultimos5" title="2V 3D"><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+14</span></td>
-  <td class="ex-diff" style="color:#ef4444">-332</td>
-  <td class="ex-pred best" title="Código por Elo: dif -332 + 50 local = -282 | Prob. modelo: 22% | 16% | 63%">2</td>
-  <td class="ex-acierto " title=""></td>
-  <td><button class="expand-btn" onclick="toggleDetalle('401891014')">▾</button></td>
-</tr>
-<tr class="detail-row" id="detail-401891014" style="display:none">
-  <td colspan="16">
-    <div class="detail-panel">
-      <div class="detail-team">
-        <strong>Michigan</strong>
-        <span class="mom-stable">— Momentum (-0.4)</span>
-        <span class="op-pos">Overperf: +1.2</span>
-      </div>
-      <div class="detail-team">
-        <strong>Maryland</strong>
-        <span class="mom-stable">— Momentum (-4.9)</span>
-        <span class="op-pos">Overperf: +14.2</span>
-      </div>
-    </div>
-  </td>
-</tr>
-<tr class="excel-row" data-fixture-id="401898792" data-slug="all" data-fecha="2026-10-16" data-elo-h="1653" data-form-h="34" data-home="ohio state" data-away="michigan st" data-diff="-141" data-pj-h="2" data-pj-a="6" data-pj-h-total="10" data-pj-a-total="6">
-  <td class="ex-fecha">2026-10-16</td>
-  <td class="ex-hora">18:00</td>
-  <td class="ex-local"><a href="https://www.espn.com/soccer/match/_/gameId/401898792" target="_blank">Ohio State</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-  <td class="ex-elo above">1653 <span class="pj-count">10PJ</span></td>
-  <td class="ex-forma low">34</td>
-  <td class="ex-racha"><span class="ultimos5" title="1V 3D 1E"><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-e">E</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+8</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
-  <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401898792" target="_blank">Michigan St</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-  <td class="ex-elo elite">1794 <span class="pj-count">6PJ</span></td>
-  <td class="ex-forma mid">56</td>
-  <td class="ex-racha"><span class="ultimos5" title="2V 2D 1E"><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+4</span></td>
-  <td class="ex-diff" style="color:#ef4444">-141</td>
-  <td class="ex-pred best" title="Código por Elo: dif -141 + 50 local = -91 | Prob. modelo: 34% | 20% | 46%">X2</td>
-  <td class="ex-acierto " title=""></td>
-  <td><button class="expand-btn" onclick="toggleDetalle('401898792')">▾</button></td>
-</tr>
-<tr class="detail-row" id="detail-401898792" style="display:none">
-  <td colspan="16">
-    <div class="detail-panel">
-      <div class="detail-team">
-        <strong>Ohio State</strong>
-        <span class="mom-down">▼ Momentum (-5.4)</span>
-        <span class="op-pos">Overperf: +7.9</span>
-      </div>
-      <div class="detail-team">
-        <strong>Michigan St</strong>
-        <span class="mom-stable">— Momentum (-3.1)</span>
-        <span class="op-pos">Overperf: +4.0</span>
-      </div>
-    </div>
-  </td>
-</tr>
-<tr class="excel-row" data-fixture-id="401891952" data-slug="all" data-fecha="2026-10-16" data-elo-h="1784" data-form-h="81" data-home="pittsburgh" data-away="north carolina" data-diff="48" data-pj-h="2" data-pj-a="3" data-pj-h-total="10" data-pj-a-total="10">
-  <td class="ex-fecha">2026-10-16</td>
-  <td class="ex-hora">18:00</td>
-  <td class="ex-local"><a href="https://www.espn.com/soccer/match/_/gameId/401891952" target="_blank">Pittsburgh</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-  <td class="ex-elo elite">1784 <span class="pj-count">10PJ</span></td>
-  <td class="ex-forma high">81</td>
-  <td class="ex-racha"><span class="ultimos5" title="3V 1D 1E"><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+6</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
-  <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401891952" target="_blank">North Carolina</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-  <td class="ex-elo elite">1736 <span class="pj-count">10PJ</span></td>
-  <td class="ex-forma high">88</td>
-  <td class="ex-racha"><span class="ultimos5" title="4V 1D"><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+4</span></td>
-  <td class="ex-diff" style="color:#22c55e">+48</td>
-  <td class="ex-pred best" title="Código por Elo: dif +48 + 50 local = +98 | Prob. modelo: 59% | 22% | 19%">1X</td>
-  <td class="ex-acierto " title=""></td>
-  <td><button class="expand-btn" onclick="toggleDetalle('401891952')">▾</button></td>
-</tr>
-<tr class="detail-row" id="detail-401891952" style="display:none">
-  <td colspan="16">
-    <div class="detail-panel">
-      <div class="detail-team">
-        <strong>Pittsburgh</strong>
-        <span class="mom-stable">— Momentum (+0.0)</span>
-        <span class="op-pos">Overperf: +5.6</span>
-      </div>
-      <div class="detail-team">
-        <strong>North Carolina</strong>
-        <span class="mom-stable">— Momentum (+2.8)</span>
-        <span class="op-pos">Overperf: +4.0</span>
-      </div>
-    </div>
-  </td>
-</tr>
-<tr class="excel-row" data-fixture-id="401887823" data-slug="all" data-fecha="2026-10-16" data-elo-h="1472" data-form-h="53" data-home="providence" data-away="akron" data-diff="-356" data-pj-h="6" data-pj-a="2" data-pj-h-total="6" data-pj-a-total="9">
-  <td class="ex-fecha">2026-10-16</td>
-  <td class="ex-hora">18:00</td>
-  <td class="ex-local"><a href="https://www.espn.com/soccer/match/_/gameId/401887823" target="_blank">Providence</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-  <td class="ex-elo average">1472 <span class="pj-count">6PJ</span></td>
-  <td class="ex-forma mid">53</td>
-  <td class="ex-racha"><span class="ultimos5" title="3V 1D 1E"><span class="u5-e">E</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+21</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
-  <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401887823" target="_blank">Akron</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
-  <td class="ex-elo elite">1828 <span class="pj-count">9PJ</span></td>
-  <td class="ex-forma high">75</td>
-  <td class="ex-racha"><span class="ultimos5" title="3V 2E"><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+7</span></td>
-  <td class="ex-diff" style="color:#ef4444">-356</td>
-  <td class="ex-pred best" title="Código por Elo: dif -356 + 50 local = -306 | Prob. modelo: 21% | 15% | 64%">2</td>
-  <td class="ex-acierto " title=""></td>
-  <td><button class="expand-btn" onclick="toggleDetalle('401887823')">▾</button></td>
-</tr>
-<tr class="detail-row" id="detail-401887823" style="display:none">
-  <td colspan="16">
-    <div class="detail-panel">
-      <div class="detail-team">
-        <strong>Providence</strong>
-        <span class="mom-stable">— Momentum (-0.5)</span>
-        <span class="op-pos">Overperf: +20.6</span>
-      </div>
-      <div class="detail-team">
-        <strong>Akron</strong>
-        <span class="mom-stable">— Momentum (-1.3)</span>
-        <span class="op-pos">Overperf: +6.9</span>
       </div>
     </div>
   </td>
@@ -2465,12 +2193,284 @@ tr:hover { background: var(--surface2); }
       <div class="detail-team">
         <strong>Rutgers</strong>
         <span class="mom-stable">— Momentum (-1.7)</span>
-        <span class="op-pos">Overperf: +1.9</span>
+        <span class="op-pos">Overperf: +2.0</span>
       </div>
       <div class="detail-team">
         <strong>Indiana</strong>
         <span class="mom-stable">— Momentum (-0.3)</span>
         <span class="op-pos">Overperf: +12.1</span>
+      </div>
+    </div>
+  </td>
+</tr>
+<tr class="excel-row" data-fixture-id="401841275" data-slug="all" data-fecha="2026-10-16" data-elo-h="1501" data-form-h="40" data-home="mirassol" data-away="internacional" data-diff="57" data-pj-h="12" data-pj-a="9" data-pj-h-total="12" data-pj-a-total="9">
+  <td class="ex-fecha">2026-10-16</td>
+  <td class="ex-hora">18:00</td>
+  <td class="ex-local"><a href="https://www.espn.com/soccer/match/_/gameId/401841275" target="_blank">Mirassol</a></td>
+  <td class="ex-elo average">1501 <span class="pj-count">12PJ</span></td>
+  <td class="ex-forma low">40</td>
+  <td class="ex-racha"><span class="ultimos5" title="2V 1D 2E"><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-1</span></td>
+  <td class="ex-marcador marcador-vivo">0 - 0</td>
+  <td class="ex-minuto marcador-vivo">15'</td>
+  <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401841275" target="_blank">Internacional</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+  <td class="ex-elo average">1444 <span class="pj-count">9PJ</span></td>
+  <td class="ex-forma mid">50</td>
+  <td class="ex-racha"><span class="ultimos5" title="1V 2D 2E"><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-e">E</span></span> </td>
+  <td class="ex-diff" style="color:#22c55e">+57</td>
+  <td class="ex-pred best" title="Código por Elo: dif +57 + 50 local = +107 | Prob. modelo: 61% | 22% | 18%">1X</td>
+  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
+  <td><button class="expand-btn" onclick="toggleDetalle('401841275')">▾</button></td>
+</tr>
+<tr class="detail-row" id="detail-401841275" style="display:none">
+  <td colspan="16">
+    <div class="detail-panel">
+      <div class="detail-team">
+        <strong>Mirassol</strong>
+        <span class="mom-stable">— Momentum (-0.4)</span>
+        <span class="op-neg">Overperf: -1.4</span>
+      </div>
+      <div class="detail-team">
+        <strong>Internacional</strong>
+        <span class="mom-stable">— Momentum (+0.4)</span>
+        <span class="op-neg">Overperf: -0.2</span>
+      </div>
+    </div>
+  </td>
+</tr>
+<tr class="excel-row" data-fixture-id="401887573" data-slug="all" data-fecha="2026-10-16" data-elo-h="1230" data-form-h="20" data-home="butler" data-away="villanova" data-diff="-355" data-pj-h="7" data-pj-a="10" data-pj-h-total="7" data-pj-a-total="10">
+  <td class="ex-fecha">2026-10-16</td>
+  <td class="ex-hora">18:00</td>
+  <td class="ex-local"><a href="https://www.espn.com/soccer/match/_/gameId/401887573" target="_blank">Butler</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+  <td class="ex-elo below">1230 <span class="pj-count">7PJ</span></td>
+  <td class="ex-forma low">20</td>
+  <td class="ex-racha"><span class="ultimos5" title="3D 2E"><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-e">E</span><span class="u5-d">D</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-1</span></td>
+  <td class="ex-marcador marcador-vivo">1 - 0</td>
+  <td class="ex-minuto marcador-vivo">10'</td>
+  <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401887573" target="_blank">Villanova</a></td>
+  <td class="ex-elo above">1584 <span class="pj-count">10PJ</span></td>
+  <td class="ex-forma mid">55</td>
+  <td class="ex-racha"><span class="ultimos5" title="2V 2D 1E"><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-3</span></td>
+  <td class="ex-diff" style="color:#ef4444">-355</td>
+  <td class="ex-pred best" title="Código por Elo: dif -355 + 50 local = -305 | Prob. modelo: 21% | 15% | 64%">2</td>
+  <td class="ex-acierto acierto-parcial-fail" title="Provisional -- puede cambiar mientras el partido siga en curso">✗</td>
+  <td><button class="expand-btn" onclick="toggleDetalle('401887573')">▾</button></td>
+</tr>
+<tr class="detail-row" id="detail-401887573" style="display:none">
+  <td colspan="16">
+    <div class="detail-panel">
+      <div class="detail-team">
+        <strong>Butler</strong>
+        <span class="mom-stable">— Momentum (+0.4)</span>
+        <span class="op-neg">Overperf: -0.7</span>
+      </div>
+      <div class="detail-team">
+        <strong>Villanova</strong>
+        <span class="mom-stable">— Momentum (+2.3)</span>
+        <span class="op-neg">Overperf: -3.1</span>
+      </div>
+    </div>
+  </td>
+</tr>
+<tr class="excel-row" data-fixture-id="401891737" data-slug="all" data-fecha="2026-10-16" data-elo-h="1484" data-form-h="12" data-home="duke" data-away="virginia" data-diff="-37" data-pj-h="6" data-pj-a="8" data-pj-h-total="6" data-pj-a-total="8">
+  <td class="ex-fecha">2026-10-16</td>
+  <td class="ex-hora">18:00</td>
+  <td class="ex-local"><a href="https://www.espn.com/soccer/match/_/gameId/401891737" target="_blank">Duke</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+  <td class="ex-elo average">1484 <span class="pj-count">6PJ</span></td>
+  <td class="ex-forma low">12</td>
+  <td class="ex-racha"><span class="ultimos5" title="1V 4D"><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+4</span></td>
+  <td class="ex-marcador marcador-vivo">0 - 0</td>
+  <td class="ex-minuto marcador-vivo">14'</td>
+  <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401891737" target="_blank">Virginia</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+  <td class="ex-elo average">1522 <span class="pj-count">8PJ</span></td>
+  <td class="ex-forma high">78</td>
+  <td class="ex-racha"><span class="ultimos5" title="3V 1D 1E"><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-e">E</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+4</span></td>
+  <td class="ex-diff" style="color:#ef4444">-37</td>
+  <td class="ex-pred best" title="Código por Elo: dif -37 + 50 local = +13 | Prob. modelo: 46% | 22% | 32%">12</td>
+  <td class="ex-acierto acierto-parcial-fail" title="Provisional -- puede cambiar mientras el partido siga en curso">✗</td>
+  <td><button class="expand-btn" onclick="toggleDetalle('401891737')">▾</button></td>
+</tr>
+<tr class="detail-row" id="detail-401891737" style="display:none">
+  <td colspan="16">
+    <div class="detail-panel">
+      <div class="detail-team">
+        <strong>Duke</strong>
+        <span class="mom-stable">— Momentum (-2.5)</span>
+        <span class="op-pos">Overperf: +4.5</span>
+      </div>
+      <div class="detail-team">
+        <strong>Virginia</strong>
+        <span class="mom-stable">— Momentum (+3.8)</span>
+        <span class="op-pos">Overperf: +4.0</span>
+      </div>
+    </div>
+  </td>
+</tr>
+<tr class="excel-row" data-fixture-id="401887558" data-slug="all" data-fecha="2026-10-16" data-elo-h="1678" data-form-h="70" data-home="marquette" data-away="uconn" data-diff="262" data-pj-h="8" data-pj-a="9" data-pj-h-total="8" data-pj-a-total="9">
+  <td class="ex-fecha">2026-10-16</td>
+  <td class="ex-hora">18:00</td>
+  <td class="ex-local"><a href="https://www.espn.com/soccer/match/_/gameId/401887558" target="_blank">Marquette</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+  <td class="ex-elo above">1678 <span class="pj-count">8PJ</span></td>
+  <td class="ex-forma mid">70</td>
+  <td class="ex-racha"><span class="ultimos5" title="3V 2D"><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+3</span></td>
+  <td class="ex-marcador marcador-vivo">0 - 0</td>
+  <td class="ex-minuto marcador-vivo">10'</td>
+  <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401887558" target="_blank">UConn</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+  <td class="ex-elo average">1416 <span class="pj-count">9PJ</span></td>
+  <td class="ex-forma low">24</td>
+  <td class="ex-racha"><span class="ultimos5" title="1V 3D 1E"><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+1</span></td>
+  <td class="ex-diff" style="color:#22c55e">+262</td>
+  <td class="ex-pred best" title="Código por Elo: dif +262 + 50 local = +312 | Prob. modelo: 82% | 17% | 1%">1</td>
+  <td class="ex-acierto acierto-parcial-fail" title="Provisional -- puede cambiar mientras el partido siga en curso">✗</td>
+  <td><button class="expand-btn" onclick="toggleDetalle('401887558')">▾</button></td>
+</tr>
+<tr class="detail-row" id="detail-401887558" style="display:none">
+  <td colspan="16">
+    <div class="detail-panel">
+      <div class="detail-team">
+        <strong>Marquette</strong>
+        <span class="mom-stable">— Momentum (-1.5)</span>
+        <span class="op-pos">Overperf: +2.8</span>
+      </div>
+      <div class="detail-team">
+        <strong>UConn</strong>
+        <span class="mom-stable">— Momentum (-3.2)</span>
+        <span class="op-pos">Overperf: +0.7</span>
+      </div>
+    </div>
+  </td>
+</tr>
+<tr class="excel-row" data-fixture-id="401891014" data-slug="all" data-fecha="2026-10-16" data-elo-h="1440" data-form-h="37" data-home="michigan" data-away="maryland" data-diff="-332" data-pj-h="6" data-pj-a="3" data-pj-h-total="6" data-pj-a-total="10">
+  <td class="ex-fecha">2026-10-16</td>
+  <td class="ex-hora">18:00</td>
+  <td class="ex-local"><a href="https://www.espn.com/soccer/match/_/gameId/401891014" target="_blank">Michigan</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+  <td class="ex-elo average">1440 <span class="pj-count">6PJ</span></td>
+  <td class="ex-forma low">37</td>
+  <td class="ex-racha"><span class="ultimos5" title="2V 2D 1E"><span class="u5-e">E</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+1</span></td>
+  <td class="ex-marcador marcador-vivo">0 - 1</td>
+  <td class="ex-minuto marcador-vivo">8'</td>
+  <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401891014" target="_blank">Maryland</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+  <td class="ex-elo elite">1772 <span class="pj-count">10PJ</span></td>
+  <td class="ex-forma mid">40</td>
+  <td class="ex-racha"><span class="ultimos5" title="2V 3D"><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+14</span></td>
+  <td class="ex-diff" style="color:#ef4444">-332</td>
+  <td class="ex-pred best" title="Código por Elo: dif -332 + 50 local = -282 | Prob. modelo: 22% | 16% | 63%">2</td>
+  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
+  <td><button class="expand-btn" onclick="toggleDetalle('401891014')">▾</button></td>
+</tr>
+<tr class="detail-row" id="detail-401891014" style="display:none">
+  <td colspan="16">
+    <div class="detail-panel">
+      <div class="detail-team">
+        <strong>Michigan</strong>
+        <span class="mom-stable">— Momentum (-0.4)</span>
+        <span class="op-pos">Overperf: +1.2</span>
+      </div>
+      <div class="detail-team">
+        <strong>Maryland</strong>
+        <span class="mom-stable">— Momentum (-4.9)</span>
+        <span class="op-pos">Overperf: +14.2</span>
+      </div>
+    </div>
+  </td>
+</tr>
+<tr class="excel-row" data-fixture-id="401898792" data-slug="all" data-fecha="2026-10-16" data-elo-h="1653" data-form-h="34" data-home="ohio state" data-away="michigan st" data-diff="-141" data-pj-h="2" data-pj-a="6" data-pj-h-total="10" data-pj-a-total="6">
+  <td class="ex-fecha">2026-10-16</td>
+  <td class="ex-hora">18:00</td>
+  <td class="ex-local"><a href="https://www.espn.com/soccer/match/_/gameId/401898792" target="_blank">Ohio State</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+  <td class="ex-elo above">1653 <span class="pj-count">10PJ</span></td>
+  <td class="ex-forma low">34</td>
+  <td class="ex-racha"><span class="ultimos5" title="1V 3D 1E"><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-e">E</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+8</span></td>
+  <td class="ex-marcador marcador-vivo">0 - 2</td>
+  <td class="ex-minuto marcador-vivo">10'</td>
+  <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401898792" target="_blank">Michigan St</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+  <td class="ex-elo elite">1794 <span class="pj-count">6PJ</span></td>
+  <td class="ex-forma mid">56</td>
+  <td class="ex-racha"><span class="ultimos5" title="2V 2D 1E"><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+4</span></td>
+  <td class="ex-diff" style="color:#ef4444">-141</td>
+  <td class="ex-pred best" title="Código por Elo: dif -141 + 50 local = -91 | Prob. modelo: 34% | 20% | 46%">X2</td>
+  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
+  <td><button class="expand-btn" onclick="toggleDetalle('401898792')">▾</button></td>
+</tr>
+<tr class="detail-row" id="detail-401898792" style="display:none">
+  <td colspan="16">
+    <div class="detail-panel">
+      <div class="detail-team">
+        <strong>Ohio State</strong>
+        <span class="mom-down">▼ Momentum (-5.4)</span>
+        <span class="op-pos">Overperf: +7.9</span>
+      </div>
+      <div class="detail-team">
+        <strong>Michigan St</strong>
+        <span class="mom-stable">— Momentum (-3.1)</span>
+        <span class="op-pos">Overperf: +4.0</span>
+      </div>
+    </div>
+  </td>
+</tr>
+<tr class="excel-row" data-fixture-id="401891952" data-slug="all" data-fecha="2026-10-16" data-elo-h="1784" data-form-h="81" data-home="pittsburgh" data-away="north carolina" data-diff="48" data-pj-h="2" data-pj-a="3" data-pj-h-total="10" data-pj-a-total="10">
+  <td class="ex-fecha">2026-10-16</td>
+  <td class="ex-hora">18:00</td>
+  <td class="ex-local"><a href="https://www.espn.com/soccer/match/_/gameId/401891952" target="_blank">Pittsburgh</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+  <td class="ex-elo elite">1784 <span class="pj-count">10PJ</span></td>
+  <td class="ex-forma high">81</td>
+  <td class="ex-racha"><span class="ultimos5" title="3V 1D 1E"><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+6</span></td>
+  <td class="ex-marcador marcador-vivo">0 - 0</td>
+  <td class="ex-minuto marcador-vivo">10'</td>
+  <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401891952" target="_blank">North Carolina</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+  <td class="ex-elo elite">1736 <span class="pj-count">10PJ</span></td>
+  <td class="ex-forma high">88</td>
+  <td class="ex-racha"><span class="ultimos5" title="4V 1D"><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+4</span></td>
+  <td class="ex-diff" style="color:#22c55e">+48</td>
+  <td class="ex-pred best" title="Código por Elo: dif +48 + 50 local = +98 | Prob. modelo: 59% | 22% | 19%">1X</td>
+  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
+  <td><button class="expand-btn" onclick="toggleDetalle('401891952')">▾</button></td>
+</tr>
+<tr class="detail-row" id="detail-401891952" style="display:none">
+  <td colspan="16">
+    <div class="detail-panel">
+      <div class="detail-team">
+        <strong>Pittsburgh</strong>
+        <span class="mom-stable">— Momentum (+0.0)</span>
+        <span class="op-pos">Overperf: +5.6</span>
+      </div>
+      <div class="detail-team">
+        <strong>North Carolina</strong>
+        <span class="mom-stable">— Momentum (+2.8)</span>
+        <span class="op-pos">Overperf: +4.0</span>
+      </div>
+    </div>
+  </td>
+</tr>
+<tr class="excel-row" data-fixture-id="401887823" data-slug="all" data-fecha="2026-10-16" data-elo-h="1472" data-form-h="53" data-home="providence" data-away="akron" data-diff="-356" data-pj-h="6" data-pj-a="2" data-pj-h-total="6" data-pj-a-total="9">
+  <td class="ex-fecha">2026-10-16</td>
+  <td class="ex-hora">18:00</td>
+  <td class="ex-local"><a href="https://www.espn.com/soccer/match/_/gameId/401887823" target="_blank">Providence</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+  <td class="ex-elo average">1472 <span class="pj-count">6PJ</span></td>
+  <td class="ex-forma mid">53</td>
+  <td class="ex-racha"><span class="ultimos5" title="3V 1D 1E"><span class="u5-e">E</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+21</span></td>
+  <td class="ex-marcador marcador-vivo">0 - 0</td>
+  <td class="ex-minuto marcador-vivo">9'</td>
+  <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401887823" target="_blank">Akron</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
+  <td class="ex-elo elite">1828 <span class="pj-count">9PJ</span></td>
+  <td class="ex-forma high">75</td>
+  <td class="ex-racha"><span class="ultimos5" title="3V 2E"><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+7</span></td>
+  <td class="ex-diff" style="color:#ef4444">-356</td>
+  <td class="ex-pred best" title="Código por Elo: dif -356 + 50 local = -306 | Prob. modelo: 21% | 15% | 64%">2</td>
+  <td class="ex-acierto acierto-parcial-fail" title="Provisional -- puede cambiar mientras el partido siga en curso">✗</td>
+  <td><button class="expand-btn" onclick="toggleDetalle('401887823')">▾</button></td>
+</tr>
+<tr class="detail-row" id="detail-401887823" style="display:none">
+  <td colspan="16">
+    <div class="detail-panel">
+      <div class="detail-team">
+        <strong>Providence</strong>
+        <span class="mom-stable">— Momentum (-0.5)</span>
+        <span class="op-pos">Overperf: +20.6</span>
+      </div>
+      <div class="detail-team">
+        <strong>Akron</strong>
+        <span class="mom-stable">— Momentum (-1.3)</span>
+        <span class="op-pos">Overperf: +6.9</span>
       </div>
     </div>
   </td>
@@ -2482,15 +2482,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo above">1674 <span class="pj-count">11PJ</span></td>
   <td class="ex-forma mid">44</td>
   <td class="ex-racha"><span class="ultimos5" title="1V 1D 3E"><span class="u5-e">E</span><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-e">E</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+8</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">0 - 0</td>
+  <td class="ex-minuto marcador-vivo">10'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401901750" target="_blank">Kentucky</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo below">1366 <span class="pj-count">10PJ</span></td>
   <td class="ex-forma low">32</td>
   <td class="ex-racha"><span class="ultimos5" title="1V 3D 1E"><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-d">D</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-4</span></td>
   <td class="ex-diff" style="color:#22c55e">+308</td>
   <td class="ex-pred best" title="Código por Elo: dif +308 + 50 local = +358 | Prob. modelo: 83% | 16% | 1%">1</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-fail" title="Provisional -- puede cambiar mientras el partido siga en curso">✗</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401901750')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401901750" style="display:none">
@@ -2516,15 +2516,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo average">1441 <span class="pj-count">9PJ</span></td>
   <td class="ex-forma low">12</td>
   <td class="ex-racha"><span class="ultimos5" title="1V 3D 1E"><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+3</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">0 - 1</td>
+  <td class="ex-minuto marcador-vivo">9'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401887032" target="_blank">Houston</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo elite">1709 <span class="pj-count">7PJ</span></td>
   <td class="ex-forma mid">70</td>
   <td class="ex-racha"><span class="ultimos5" title="3V 2D"><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+12</span></td>
   <td class="ex-diff" style="color:#ef4444">-267</td>
   <td class="ex-pred best" title="Código por Elo: dif -267 + 50 local = -217 | Prob. modelo: 22% | 17% | 61%">2</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401887032')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401887032" style="display:none">
@@ -2550,15 +2550,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo above">1636 <span class="pj-count">14PJ</span></td>
   <td class="ex-forma high">75</td>
   <td class="ex-racha"><span class="ultimos5" title="3V 1D 1E"><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+2</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">0 - 0</td>
+  <td class="ex-minuto marcador-vivo">48'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401900184" target="_blank">Bucknell</a></td>
   <td class="ex-elo average">1547 <span class="pj-count">13PJ</span></td>
   <td class="ex-forma high">78</td>
   <td class="ex-racha"><span class="ultimos5" title="3V 2E"><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-v">V</span></span> </td>
   <td class="ex-diff" style="color:#22c55e">+89</td>
   <td class="ex-pred best" title="Código por Elo: dif +89 + 50 local = +139 | Prob. modelo: 64% | 21% | 15%">1X</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401900184')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401900184" style="display:none">
@@ -2584,15 +2584,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo below">1280 <span class="pj-count">7PJ</span></td>
   <td class="ex-forma low">10</td>
   <td class="ex-racha"><span class="ultimos5" title="3D 2E"><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-d">D</span><span class="u5-e">E</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-2</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">0 - 1</td>
+  <td class="ex-minuto marcador-vivo">8'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401891380" target="_blank">Southern Miss</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo average">1505 <span class="pj-count">8PJ</span></td>
   <td class="ex-forma low">37</td>
   <td class="ex-racha"><span class="ultimos5" title="2V 2D 1E"><span class="u5-e">E</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-5</span></td>
   <td class="ex-diff" style="color:#ef4444">-225</td>
   <td class="ex-pred best" title="Código por Elo: dif -225 + 50 local = -175 | Prob. modelo: 30% | 18% | 52%">X2</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401891380')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401891380" style="display:none">
@@ -2618,15 +2618,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo above">1658 <span class="pj-count">8PJ</span></td>
   <td class="ex-forma mid">44</td>
   <td class="ex-racha"><span class="ultimos5" title="3V 2D"><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+7</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">0 - 0</td>
+  <td class="ex-minuto marcador-vivo">10'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401901460" target="_blank">Virginia</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo elite">1871 <span class="pj-count">8PJ</span></td>
   <td class="ex-forma high">90</td>
   <td class="ex-racha"><span class="ultimos5" title="3V 2E"><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-e">E</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+9</span></td>
   <td class="ex-diff" style="color:#ef4444">-213</td>
   <td class="ex-pred best" title="Código por Elo: dif -213 + 50 local = -163 | Prob. modelo: 28% | 18% | 54%">X2</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401901460')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401901460" style="display:none">
