@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-17T07:27:48.257561Z",
+  "generado": "2026-10-17T12:40:35.254168Z",
   "fecha_consulta": "2026-10-18",
   "total": 295,
   "predicciones": [
@@ -126,7 +126,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.6,
+        "overperformance": 9.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -164,7 +164,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.6,
+        "overperformance": -2.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -3420,7 +3420,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.1,
+        "overperformance": 3.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3458,7 +3458,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.5,
+        "overperformance": 2.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -3550,7 +3550,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.3,
+        "overperformance": 4.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -4212,7 +4212,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.4,
+        "overperformance": -4.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4250,7 +4250,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.6,
+        "overperformance": 1.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -4990,7 +4990,7 @@
         "nombre": "Siwelele",
         "pais": "Sudáfrica",
         "rating": 1290.62,
-        "rd": 196.51750537178089,
+        "rd": 197.0695026712329,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 25.3,
@@ -6374,7 +6374,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.0,
+        "overperformance": -2.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -6912,7 +6912,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.5,
+        "overperformance": 2.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -9336,7 +9336,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 21.1,
+        "overperformance": 21.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -10672,7 +10672,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.7,
+        "overperformance": 2.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10710,7 +10710,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.4,
+        "overperformance": -1.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -10903,7 +10903,7 @@
         "nombre": "Cartaginés",
         "pais": "Costa Rica",
         "rating": 1642.84,
-        "rd": 187.94256396541675,
+        "rd": 188.5195940667417,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 91.7,
@@ -10981,98 +10981,6 @@
       },
       "diff_elo": 65.2,
       "confianza": 32.6
-    },
-    {
-      "fixture_id": "401879637",
-      "fecha": "2026-10-18T12:00:00-05:00",
-      "fecha_display": "2026-10-18",
-      "hora": "12:00",
-      "liga": "gua.1",
-      "liga_pais": "Guatemala",
-      "liga_slug": "gua.1",
-      "equipo_local": {
-        "id": "131213",
-        "nombre": "Aurora",
-        "pais": "Guatemala",
-        "rating": 1451.43,
-        "rd": 135.25,
-        "partidos_jugados": 10,
-        "pj_reales": 10,
-        "form_score": 69.6,
-        "form_local": 100.0,
-        "form_visitante": 41.4,
-        "momentum": "stable",
-        "momentum_diff": -0.7,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V 3D",
-          "resultados": [
-            "V",
-            "V",
-            "D",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.8,
-          "goles_contra": 1.8,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -2.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "131835",
-        "nombre": "San Pedro",
-        "pais": "Guatemala",
-        "rating": 1674.66,
-        "rd": 200.59,
-        "partidos_jugados": 5,
-        "pj_reales": 5,
-        "form_score": 84.2,
-        "form_local": 100.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "4V 1D",
-          "resultados": [
-            "V",
-            "V",
-            "D",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.2,
-          "goles_contra": 1.4,
-          "diferencia": 0.8
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 1.6,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 34.2,
-        "prob_empate": 18.0,
-        "prob_visitante": 47.8
-      },
-      "diff_elo": -223.2,
-      "confianza": 100.0
     },
     {
       "fixture_id": "401898421",
@@ -14111,6 +14019,98 @@
       "confianza": 53.0
     },
     {
+      "fixture_id": "401879637",
+      "fecha": "2026-10-18T12:30:00-05:00",
+      "fecha_display": "2026-10-18",
+      "hora": "12:30",
+      "liga": "gua.1",
+      "liga_pais": "Guatemala",
+      "liga_slug": "gua.1",
+      "equipo_local": {
+        "id": "131213",
+        "nombre": "Aurora",
+        "pais": "Guatemala",
+        "rating": 1451.43,
+        "rd": 135.25,
+        "partidos_jugados": 10,
+        "pj_reales": 10,
+        "form_score": 69.6,
+        "form_local": 100.0,
+        "form_visitante": 41.4,
+        "momentum": "stable",
+        "momentum_diff": -0.7,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V 3D",
+          "resultados": [
+            "V",
+            "V",
+            "D",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.8,
+          "goles_contra": 1.8,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -2.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "131835",
+        "nombre": "San Pedro",
+        "pais": "Guatemala",
+        "rating": 1674.66,
+        "rd": 200.59,
+        "partidos_jugados": 5,
+        "pj_reales": 5,
+        "form_score": 84.2,
+        "form_local": 100.0,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "4V 1D",
+          "resultados": [
+            "V",
+            "V",
+            "D",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.2,
+          "goles_contra": 1.4,
+          "diferencia": 0.8
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.6,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 34.2,
+        "prob_empate": 18.0,
+        "prob_visitante": 47.8
+      },
+      "diff_elo": -223.2,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401841618",
       "fecha": "2026-10-18T12:45:00-05:00",
       "fecha_display": "2026-10-18",
@@ -14789,7 +14789,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.5,
+        "overperformance": 0.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -14827,7 +14827,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.4,
+        "overperformance": 4.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -21139,7 +21139,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.9,
+        "overperformance": 9.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -23677,7 +23677,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.6,
+        "overperformance": -1.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -24697,7 +24697,7 @@
         "nombre": "Herediano",
         "pais": "Costa Rica",
         "rating": 1399.73,
-        "rd": 201.31279665895997,
+        "rd": 201.85184232507868,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 33.7,
@@ -24727,7 +24727,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.9,
+        "overperformance": -6.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -25341,7 +25341,7 @@
         "nombre": "Seattle",
         "pais": "",
         "rating": 1603.23,
-        "rd": 209.4229363186943,
+        "rd": 209.94100414612444,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 68.3,
@@ -25469,98 +25469,6 @@
       },
       "diff_elo": 210.9,
       "confianza": 100.0
-    },
-    {
-      "fixture_id": "401879584",
-      "fecha": "2026-10-18T18:00:00-05:00",
-      "fecha_display": "2026-10-18",
-      "hora": "18:00",
-      "liga": "gua.1",
-      "liga_pais": "Guatemala",
-      "liga_slug": "gua.1",
-      "equipo_local": {
-        "id": "7258",
-        "nombre": "Municipal",
-        "pais": "Guatemala",
-        "rating": 1509.76,
-        "rd": 161.27,
-        "partidos_jugados": 9,
-        "pj_reales": 9,
-        "form_score": 40.1,
-        "form_local": 63.4,
-        "form_visitante": 39.7,
-        "momentum": "stable",
-        "momentum_diff": -0.7,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 1D 2E",
-          "resultados": [
-            "D",
-            "E",
-            "V",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.11,
-          "goles_contra": 0.67,
-          "diferencia": 0.44
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 4.8,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "17516",
-        "nombre": "Guastatoya",
-        "pais": "Guatemala",
-        "rating": 1389.47,
-        "rd": 154.73,
-        "partidos_jugados": 7,
-        "pj_reales": 7,
-        "form_score": 42.9,
-        "form_local": 69.3,
-        "form_visitante": 27.6,
-        "momentum": "stable",
-        "momentum_diff": -1.1,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 3D",
-          "resultados": [
-            "D",
-            "V",
-            "V",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 1.57,
-          "diferencia": -0.57
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 2.3,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 67.4,
-        "prob_empate": 20.4,
-        "prob_visitante": 12.3
-      },
-      "diff_elo": 120.3,
-      "confianza": 60.1
     },
     {
       "fixture_id": "401900936",
@@ -26207,6 +26115,98 @@
       "confianza": 10.0
     },
     {
+      "fixture_id": "401879584",
+      "fecha": "2026-10-18T19:00:00-05:00",
+      "fecha_display": "2026-10-18",
+      "hora": "19:00",
+      "liga": "gua.1",
+      "liga_pais": "Guatemala",
+      "liga_slug": "gua.1",
+      "equipo_local": {
+        "id": "7258",
+        "nombre": "Municipal",
+        "pais": "Guatemala",
+        "rating": 1509.76,
+        "rd": 161.27,
+        "partidos_jugados": 9,
+        "pj_reales": 9,
+        "form_score": 40.1,
+        "form_local": 63.4,
+        "form_visitante": 39.7,
+        "momentum": "stable",
+        "momentum_diff": -0.7,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "D",
+            "E",
+            "V",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.11,
+          "goles_contra": 0.67,
+          "diferencia": 0.44
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 4.8,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "17516",
+        "nombre": "Guastatoya",
+        "pais": "Guatemala",
+        "rating": 1389.47,
+        "rd": 154.73,
+        "partidos_jugados": 7,
+        "pj_reales": 7,
+        "form_score": 42.9,
+        "form_local": 69.3,
+        "form_visitante": 27.6,
+        "momentum": "stable",
+        "momentum_diff": -1.1,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 3D",
+          "resultados": [
+            "D",
+            "V",
+            "V",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 1.57,
+          "diferencia": -0.57
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.3,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 67.4,
+        "prob_empate": 20.4,
+        "prob_visitante": 12.3
+      },
+      "diff_elo": 120.3,
+      "confianza": 60.1
+    },
+    {
       "fixture_id": "401900946",
       "fecha": "2026-10-18T19:00:00-05:00",
       "fecha_display": "2026-10-18",
@@ -26396,7 +26396,7 @@
         "nombre": "Monterrey",
         "pais": "",
         "rating": 1645.61,
-        "rd": 194.4209084474488,
+        "rd": 194.97904574588887,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 42.5,
@@ -26651,98 +26651,6 @@
       "confianza": 15.2
     },
     {
-      "fixture_id": "401879582",
-      "fecha": "2026-10-18T20:10:00-05:00",
-      "fecha_display": "2026-10-18",
-      "hora": "20:10",
-      "liga": "gua.1",
-      "liga_pais": "Guatemala",
-      "liga_slug": "gua.1",
-      "equipo_local": {
-        "id": "7252",
-        "nombre": "Marquense",
-        "pais": "Guatemala",
-        "rating": 1622.16,
-        "rd": 190.15,
-        "partidos_jugados": 5,
-        "pj_reales": 5,
-        "form_score": 72.8,
-        "form_local": 100.0,
-        "form_visitante": 67.1,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 1D 1E",
-          "resultados": [
-            "E",
-            "V",
-            "V",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.4,
-          "goles_contra": 1.0,
-          "diferencia": 0.4
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.5,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "7251",
-        "nombre": "Suchitepeque",
-        "pais": "Guatemala",
-        "rating": 1356.87,
-        "rd": 178.92,
-        "partidos_jugados": 6,
-        "pj_reales": 6,
-        "form_score": 56.6,
-        "form_local": 81.4,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 2.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 3D",
-          "resultados": [
-            "V",
-            "D",
-            "V",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.17,
-          "goles_contra": 2.17,
-          "diferencia": -1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -2.6,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 82.0,
-        "prob_empate": 17.0,
-        "prob_visitante": 1.0
-      },
-      "diff_elo": 265.3,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401898978",
       "fecha": "2026-10-18T21:00:00-05:00",
       "fecha_display": "2026-10-18",
@@ -26832,6 +26740,98 @@
         "prob_visitante": 0.9
       },
       "diff_elo": 350.1,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401879582",
+      "fecha": "2026-10-18T21:10:00-05:00",
+      "fecha_display": "2026-10-18",
+      "hora": "21:10",
+      "liga": "gua.1",
+      "liga_pais": "Guatemala",
+      "liga_slug": "gua.1",
+      "equipo_local": {
+        "id": "7252",
+        "nombre": "Marquense",
+        "pais": "Guatemala",
+        "rating": 1622.16,
+        "rd": 190.15,
+        "partidos_jugados": 5,
+        "pj_reales": 5,
+        "form_score": 72.8,
+        "form_local": 100.0,
+        "form_visitante": 67.1,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "E",
+            "V",
+            "V",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.4,
+          "goles_contra": 1.0,
+          "diferencia": 0.4
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.5,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "7251",
+        "nombre": "Suchitepeque",
+        "pais": "Guatemala",
+        "rating": 1356.87,
+        "rd": 178.92,
+        "partidos_jugados": 6,
+        "pj_reales": 6,
+        "form_score": 56.6,
+        "form_local": 81.4,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 2.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 3D",
+          "resultados": [
+            "V",
+            "D",
+            "V",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.17,
+          "goles_contra": 2.17,
+          "diferencia": -1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -2.6,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 82.0,
+        "prob_empate": 17.0,
+        "prob_visitante": 1.0
+      },
+      "diff_elo": 265.3,
       "confianza": 100.0
     }
   ]

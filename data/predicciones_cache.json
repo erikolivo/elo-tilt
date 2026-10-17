@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-17T08:55:33.126225Z",
+  "generado": "2026-10-17T12:43:27.926049Z",
   "fecha_consulta": "2026-10-17",
   "total": 426,
   "predicciones": [
@@ -807,6 +807,88 @@
       "confianza": 16.8
     },
     {
+      "fixture_id": "401922300",
+      "fecha": "2026-10-17T05:00:00-05:00",
+      "fecha_display": "2026-10-17",
+      "hora": "05:00",
+      "liga": "ned.w.knvb_cup",
+      "liga_pais": "Países Bajos",
+      "liga_slug": "ned.w.knvb_cup",
+      "equipo_local": {
+        "id": "22539",
+        "nombre": "Ter Leede",
+        "pais": "Países Bajos",
+        "rating": 1668.61,
+        "rd": 276.71,
+        "partidos_jugados": 1,
+        "pj_reales": 1,
+        "form_score": 100.0,
+        "form_local": 50.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V",
+          "resultados": [
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.0,
+          "goles_contra": 0.0,
+          "diferencia": 2.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 34.8,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "131429",
+        "nombre": "Groningen",
+        "pais": "Países Bajos",
+        "rating": 1615.39,
+        "rd": 144.89,
+        "partidos_jugados": 8,
+        "pj_reales": 8,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 61.2,
+        "prob_empate": 21.9,
+        "prob_visitante": 16.9
+      },
+      "diff_elo": 53.2,
+      "confianza": 26.6
+    },
+    {
       "fixture_id": "401882489",
       "fecha": "2026-10-17T05:00:00-05:00",
       "fecha_display": "2026-10-17",
@@ -1083,55 +1165,56 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401922300",
-      "fecha": "2026-10-17T05:00:00-05:00",
+      "fixture_id": "401922305",
+      "fecha": "2026-10-17T05:30:00-05:00",
       "fecha_display": "2026-10-17",
-      "hora": "05:00",
+      "hora": "05:30",
       "liga": "ned.w.knvb_cup",
       "liga_pais": "Países Bajos",
       "liga_slug": "ned.w.knvb_cup",
       "equipo_local": {
-        "id": "22539",
-        "nombre": "Ter Leede",
+        "id": "133128",
+        "nombre": "Berkel",
         "pais": "Países Bajos",
-        "rating": 1668.61,
-        "rd": 276.71,
-        "partidos_jugados": 1,
-        "pj_reales": 1,
+        "rating": 1724.99,
+        "rd": 243.49,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
         "form_score": 100.0,
-        "form_local": 50.0,
+        "form_local": 100.0,
         "form_visitante": 100.0,
         "momentum": "stable",
         "momentum_diff": 0.0,
         "streak": {
           "tipo": "W",
-          "cantidad": 1
+          "cantidad": 2
         },
         "ultimos5": {
-          "texto": "1V",
+          "texto": "2V",
           "resultados": [
+            "V",
             "V"
           ]
         },
         "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 0.0,
-          "diferencia": 2.0
+          "goles_favor": 3.5,
+          "goles_contra": 1.0,
+          "diferencia": 2.5
         },
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 34.8,
+        "overperformance": 26.0,
         "vol": 0.06
       },
       "equipo_visitante": {
-        "id": "131429",
-        "nombre": "Groningen",
+        "id": "22197",
+        "nombre": "Jong Ajax",
         "pais": "Países Bajos",
-        "rating": 1615.39,
-        "rd": 144.89,
-        "partidos_jugados": 8,
-        "pj_reales": 8,
+        "rating": 1380.28,
+        "rd": 142.44,
+        "partidos_jugados": 10,
+        "pj_reales": 10,
         "form_score": 50.0,
         "form_local": 50.0,
         "form_visitante": 50.0,
@@ -1157,12 +1240,12 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 61.2,
-        "prob_empate": 21.9,
-        "prob_visitante": 16.9
+        "prob_local": 84.3,
+        "prob_empate": 14.7,
+        "prob_visitante": 1.0
       },
-      "diff_elo": 53.2,
-      "confianza": 26.6
+      "diff_elo": 344.7,
+      "confianza": 100.0
     },
     {
       "fixture_id": "401888271",
@@ -1257,56 +1340,53 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401922305",
-      "fecha": "2026-10-17T05:30:00-05:00",
+      "fixture_id": "401922299",
+      "fecha": "2026-10-17T06:00:00-05:00",
       "fecha_display": "2026-10-17",
-      "hora": "05:30",
+      "hora": "06:00",
       "liga": "ned.w.knvb_cup",
       "liga_pais": "Países Bajos",
       "liga_slug": "ned.w.knvb_cup",
       "equipo_local": {
-        "id": "133128",
-        "nombre": "Berkel",
+        "id": "21356",
+        "nombre": "Saestum",
         "pais": "Países Bajos",
-        "rating": 1724.99,
-        "rd": 243.49,
-        "partidos_jugados": 2,
-        "pj_reales": 2,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 100.0,
+        "rating": 1500.0,
+        "rd": 350.0,
+        "partidos_jugados": 0,
+        "pj_reales": 0,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
         "momentum": "stable",
         "momentum_diff": 0.0,
         "streak": {
-          "tipo": "W",
-          "cantidad": 2
+          "tipo": "N/A",
+          "cantidad": 0
         },
         "ultimos5": {
-          "texto": "2V",
-          "resultados": [
-            "V",
-            "V"
-          ]
+          "texto": "N/A",
+          "resultados": []
         },
         "goal_trend": {
-          "goles_favor": 3.5,
-          "goles_contra": 1.0,
-          "diferencia": 2.5
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
         },
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 26.0,
+        "overperformance": 0.0,
         "vol": 0.06
       },
       "equipo_visitante": {
-        "id": "22197",
-        "nombre": "Jong Ajax",
+        "id": "20799",
+        "nombre": "Excelsior",
         "pais": "Países Bajos",
-        "rating": 1380.28,
-        "rd": 142.44,
-        "partidos_jugados": 10,
-        "pj_reales": 10,
+        "rating": 1427.47,
+        "rd": 141.15,
+        "partidos_jugados": 9,
+        "pj_reales": 9,
         "form_score": 50.0,
         "form_local": 50.0,
         "form_visitante": 50.0,
@@ -1332,12 +1412,12 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 84.3,
-        "prob_empate": 14.7,
-        "prob_visitante": 1.0
+        "prob_local": 59.9,
+        "prob_empate": 21.5,
+        "prob_visitante": 18.7
       },
-      "diff_elo": 344.7,
-      "confianza": 100.0
+      "diff_elo": 72.5,
+      "confianza": 36.3
     },
     {
       "fixture_id": "401861478",
@@ -1708,86 +1788,6 @@
       "confianza": 22.9
     },
     {
-      "fixture_id": "401922299",
-      "fecha": "2026-10-17T06:00:00-05:00",
-      "fecha_display": "2026-10-17",
-      "hora": "06:00",
-      "liga": "ned.w.knvb_cup",
-      "liga_pais": "Países Bajos",
-      "liga_slug": "ned.w.knvb_cup",
-      "equipo_local": {
-        "id": "21356",
-        "nombre": "Saestum",
-        "pais": "Países Bajos",
-        "rating": 1500.0,
-        "rd": 350.0,
-        "partidos_jugados": 0,
-        "pj_reales": 0,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20799",
-        "nombre": "Excelsior",
-        "pais": "Países Bajos",
-        "rating": 1427.47,
-        "rd": 141.15,
-        "partidos_jugados": 9,
-        "pj_reales": 9,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 59.9,
-        "prob_empate": 21.5,
-        "prob_visitante": 18.7
-      },
-      "diff_elo": 72.5,
-      "confianza": 36.3
-    },
-    {
       "fixture_id": "401879837",
       "fecha": "2026-10-17T06:00:00-05:00",
       "fecha_display": "2026-10-17",
@@ -1961,6 +1961,96 @@
       },
       "diff_elo": 412.5,
       "confianza": 100.0
+    },
+    {
+      "fixture_id": "401928586",
+      "fecha": "2026-10-17T06:30:00-05:00",
+      "fecha_display": "2026-10-17",
+      "hora": "06:30",
+      "liga": "eng.fa_qual",
+      "liga_pais": "Inglaterra",
+      "liga_slug": "eng.fa_qual",
+      "equipo_local": {
+        "id": "354",
+        "nombre": "Bury",
+        "pais": "Inglaterra",
+        "rating": 1822.55,
+        "rd": 219.21,
+        "partidos_jugados": 3,
+        "pj_reales": 3,
+        "form_score": 100.0,
+        "form_local": 100.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "3V",
+          "resultados": [
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 5.0,
+          "goles_contra": 0.67,
+          "diferencia": 4.33
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 21.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "19262",
+        "nombre": "Harrogate",
+        "pais": "Inglaterra",
+        "rating": 1673.19,
+        "rd": 120.81,
+        "partidos_jugados": 13,
+        "pj_reales": 13,
+        "form_score": 90.9,
+        "form_local": 83.4,
+        "form_visitante": 79.2,
+        "momentum": "stable",
+        "momentum_diff": 3.3,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 4
+        },
+        "ultimos5": {
+          "texto": "4V 1D",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.23,
+          "goles_contra": 1.31,
+          "diferencia": 0.92
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.5,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 69.8,
+        "prob_empate": 19.7,
+        "prob_visitante": 10.5
+      },
+      "diff_elo": 149.4,
+      "confianza": 74.7
     },
     {
       "fixture_id": "401878771",
@@ -2699,96 +2789,6 @@
       "confianza": 52.5
     },
     {
-      "fixture_id": "401928586",
-      "fecha": "2026-10-17T06:30:00-05:00",
-      "fecha_display": "2026-10-17",
-      "hora": "06:30",
-      "liga": "eng.fa_qual",
-      "liga_pais": "Inglaterra",
-      "liga_slug": "eng.fa_qual",
-      "equipo_local": {
-        "id": "354",
-        "nombre": "Bury",
-        "pais": "Inglaterra",
-        "rating": 1822.55,
-        "rd": 219.21,
-        "partidos_jugados": 3,
-        "pj_reales": 3,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "3V",
-          "resultados": [
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 5.0,
-          "goles_contra": 0.67,
-          "diferencia": 4.33
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 21.3,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "19262",
-        "nombre": "Harrogate",
-        "pais": "Inglaterra",
-        "rating": 1673.19,
-        "rd": 120.81,
-        "partidos_jugados": 13,
-        "pj_reales": 13,
-        "form_score": 90.9,
-        "form_local": 83.4,
-        "form_visitante": 79.2,
-        "momentum": "stable",
-        "momentum_diff": 3.3,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 4
-        },
-        "ultimos5": {
-          "texto": "4V 1D",
-          "resultados": [
-            "V",
-            "V",
-            "V",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.23,
-          "goles_contra": 1.31,
-          "diferencia": 0.92
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.5,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 69.8,
-        "prob_empate": 19.7,
-        "prob_visitante": 10.5
-      },
-      "diff_elo": 149.4,
-      "confianza": 74.7
-    },
-    {
       "fixture_id": "401925433",
       "fecha": "2026-10-17T06:30:00-05:00",
       "fecha_display": "2026-10-17",
@@ -3149,6 +3149,181 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401914239",
+      "fecha": "2026-10-17T07:00:00-05:00",
+      "fecha_display": "2026-10-17",
+      "hora": "07:00",
+      "liga": "CAF Champions League",
+      "liga_pais": "",
+      "liga_slug": "caf.champions",
+      "equipo_local": {
+        "id": "133219",
+        "nombre": "CFFA",
+        "pais": "",
+        "rating": 1583.49,
+        "rd": 244.59,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 68.9,
+        "form_local": 100.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1E",
+          "resultados": [
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.5,
+          "goles_contra": 0.5,
+          "diferencia": 1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 10.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "19223",
+        "nombre": "Young Africans",
+        "pais": "",
+        "rating": 1554.91,
+        "rd": 238.01,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 81.1,
+        "form_local": 100.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1E",
+          "resultados": [
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.5,
+          "goles_contra": 1.0,
+          "diferencia": 0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 7.9,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 57.2,
+        "prob_empate": 22.5,
+        "prob_visitante": 20.3
+      },
+      "diff_elo": 28.6,
+      "confianza": 14.3
+    },
+    {
+      "fixture_id": "401922297",
+      "fecha": "2026-10-17T07:00:00-05:00",
+      "fecha_display": "2026-10-17",
+      "hora": "07:00",
+      "liga": "ned.w.knvb_cup",
+      "liga_pais": "Países Bajos",
+      "liga_slug": "ned.w.knvb_cup",
+      "equipo_local": {
+        "id": "133023",
+        "nombre": "Sparta",
+        "pais": "Países Bajos",
+        "rating": 1724.99,
+        "rd": 243.49,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 100.0,
+        "form_local": 50.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V",
+          "resultados": [
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 3.5,
+          "goles_contra": 1.0,
+          "diferencia": 2.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 26.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20114",
+        "nombre": "FC Twente",
+        "pais": "Países Bajos",
+        "rating": 1925.08,
+        "rd": 177.7,
+        "partidos_jugados": 7,
+        "pj_reales": 7,
+        "form_score": 100.0,
+        "form_local": 100.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 7
+        },
+        "ultimos5": {
+          "texto": "5V",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 4.14,
+          "goles_contra": 0.43,
+          "diferencia": 3.71
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 12.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 32.7,
+        "prob_empate": 18.5,
+        "prob_visitante": 48.8
+      },
+      "diff_elo": -200.1,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401882843",
       "fecha": "2026-10-17T07:00:00-05:00",
       "fecha_display": "2026-10-17",
@@ -3239,92 +3414,6 @@
       },
       "diff_elo": -389.6,
       "confianza": 100.0
-    },
-    {
-      "fixture_id": "401914239",
-      "fecha": "2026-10-17T07:00:00-05:00",
-      "fecha_display": "2026-10-17",
-      "hora": "07:00",
-      "liga": "CAF Champions League",
-      "liga_pais": "",
-      "liga_slug": "caf.champions",
-      "equipo_local": {
-        "id": "133219",
-        "nombre": "CFFA",
-        "pais": "",
-        "rating": 1583.49,
-        "rd": 244.59,
-        "partidos_jugados": 2,
-        "pj_reales": 2,
-        "form_score": 68.9,
-        "form_local": 100.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1E",
-          "resultados": [
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.5,
-          "goles_contra": 0.5,
-          "diferencia": 1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 10.3,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "19223",
-        "nombre": "Young Africans",
-        "pais": "",
-        "rating": 1554.91,
-        "rd": 238.01,
-        "partidos_jugados": 2,
-        "pj_reales": 2,
-        "form_score": 81.1,
-        "form_local": 100.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1E",
-          "resultados": [
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.5,
-          "goles_contra": 1.0,
-          "diferencia": 0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 7.9,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 57.2,
-        "prob_empate": 22.5,
-        "prob_visitante": 20.3
-      },
-      "diff_elo": 28.6,
-      "confianza": 14.3
     },
     {
       "fixture_id": "401861479",
@@ -3693,95 +3782,6 @@
       },
       "diff_elo": 16.7,
       "confianza": 8.3
-    },
-    {
-      "fixture_id": "401922297",
-      "fecha": "2026-10-17T07:00:00-05:00",
-      "fecha_display": "2026-10-17",
-      "hora": "07:00",
-      "liga": "ned.w.knvb_cup",
-      "liga_pais": "Países Bajos",
-      "liga_slug": "ned.w.knvb_cup",
-      "equipo_local": {
-        "id": "133023",
-        "nombre": "Sparta",
-        "pais": "Países Bajos",
-        "rating": 1724.99,
-        "rd": 243.49,
-        "partidos_jugados": 2,
-        "pj_reales": 2,
-        "form_score": 100.0,
-        "form_local": 50.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V",
-          "resultados": [
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 3.5,
-          "goles_contra": 1.0,
-          "diferencia": 2.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 26.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20114",
-        "nombre": "FC Twente",
-        "pais": "Países Bajos",
-        "rating": 1925.08,
-        "rd": 177.7,
-        "partidos_jugados": 7,
-        "pj_reales": 7,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 7
-        },
-        "ultimos5": {
-          "texto": "5V",
-          "resultados": [
-            "V",
-            "V",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 4.14,
-          "goles_contra": 0.43,
-          "diferencia": 3.71
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 12.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 32.7,
-        "prob_empate": 18.5,
-        "prob_visitante": 48.8
-      },
-      "diff_elo": -200.1,
-      "confianza": 100.0
     },
     {
       "fixture_id": "401843465",
@@ -4270,7 +4270,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.6,
+        "overperformance": 7.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4308,7 +4308,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.4,
+        "overperformance": -3.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -4362,7 +4362,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.4,
+        "overperformance": 8.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4400,7 +4400,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.1,
+        "overperformance": 2.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -4626,7 +4626,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 19.6,
+        "overperformance": 19.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4684,7 +4684,7 @@
         "nombre": "Red Arrows",
         "pais": "",
         "rating": 1610.83,
-        "rd": 223.77461575553536,
+        "rd": 224.01722117229158,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 81.5,
@@ -7550,7 +7550,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 23.3,
+        "overperformance": 23.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -13693,7 +13693,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.9,
+        "overperformance": 4.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -13731,7 +13731,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -14.9,
+        "overperformance": -14.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -16354,7 +16354,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.2,
+        "overperformance": 2.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16392,7 +16392,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.3,
+        "overperformance": 0.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -21965,7 +21965,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.8,
+        "overperformance": -5.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -32407,7 +32407,7 @@
         "nombre": "Tigres",
         "pais": "",
         "rating": 1410.86,
-        "rd": 199.20263334333654,
+        "rd": 199.47508052503574,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 54.9,
@@ -32855,7 +32855,7 @@
         "nombre": "LAFC",
         "pais": "",
         "rating": 1426.91,
-        "rd": 201.42516083771795,
+        "rd": 201.69463280233836,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 39.7,
@@ -34657,7 +34657,7 @@
         "nombre": "San Antonio ",
         "pais": "EE.UU.",
         "rating": 1538.6,
-        "rd": 217.3112910973531,
+        "rd": 217.56112894481322,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 55.1,
@@ -34879,7 +34879,7 @@
         "nombre": "América",
         "pais": "",
         "rating": 1865.93,
-        "rd": 209.79375853758938,
+        "rd": 210.05247763806787,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 97.3,
@@ -35301,7 +35301,7 @@
         "nombre": "Monterrey",
         "pais": "México",
         "rating": 1645.61,
-        "rd": 194.97904574588887,
+        "rd": 195.25751611449047,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 50.0,
@@ -35511,7 +35511,7 @@
         "nombre": "Seattle U",
         "pais": "EE.UU.",
         "rating": 1490.0,
-        "rd": 209.08441529417513,
+        "rd": 209.34403698904504,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 41.8,
@@ -36339,7 +36339,7 @@
         "nombre": "UPNFM",
         "pais": "Honduras",
         "rating": 1291.84,
-        "rd": 227.57055235697877,
+        "rd": 227.8091153252616,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 13.4,
@@ -37065,7 +37065,7 @@
         "nombre": "San Diego St",
         "pais": "EE.UU.",
         "rating": 1480.62,
-        "rd": 226.2856851598164,
+        "rd": 226.52559328299117,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 33.6,
@@ -37303,7 +37303,7 @@
         "nombre": "Santa Clara",
         "pais": "EE.UU.",
         "rating": 1476.63,
-        "rd": 209.16453378193785,
+        "rd": 209.424064800188,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 15.4,
@@ -37433,7 +37433,7 @@
         "nombre": "Gonzaga",
         "pais": "EE.UU.",
         "rating": 1460.47,
-        "rd": 205.15977516497054,
+        "rd": 205.4243570020479,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 46.9,
@@ -38168,7 +38168,7 @@
         "nombre": "Colorado",
         "pais": "",
         "rating": 1652.19,
-        "rd": 218.90409172068104,
+        "rd": 219.1520972260794,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 72.4,
@@ -38221,7 +38221,7 @@
         "nombre": "San Jose",
         "pais": "",
         "rating": 1261.88,
-        "rd": 239.56105578485196,
+        "rd": 239.78768978821842,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 22.8,
@@ -38404,7 +38404,7 @@
         "nombre": "Las Vegas",
         "pais": "EE.UU.",
         "rating": 1460.38,
-        "rd": 218.27098266159015,
+        "rd": 218.51970670534232,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 28.2,
@@ -38710,7 +38710,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.0,
+        "overperformance": -2.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -38748,7 +38748,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.5,
+        "overperformance": 8.5,
         "vol": 0.06
       },
       "prediccion": {
