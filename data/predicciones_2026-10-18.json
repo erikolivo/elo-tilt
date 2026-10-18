@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-18T02:39:46.139323Z",
+  "generado": "2026-10-18T07:45:48.422113Z",
   "fecha_consulta": "2026-10-18",
   "total": 295,
   "predicciones": [
@@ -586,7 +586,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.7,
+        "overperformance": -4.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -2316,7 +2316,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 34.8,
+        "overperformance": 34.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4690,7 +4690,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.7,
+        "overperformance": 3.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -4990,7 +4990,7 @@
         "nombre": "Siwelele",
         "pais": "Sudáfrica",
         "rating": 1290.62,
-        "rd": 198.44277839451584,
+        "rd": 198.9894350524019,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 25.3,
@@ -5375,7 +5375,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 25.9,
+        "overperformance": 26.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -6071,7 +6071,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 23.3,
+        "overperformance": 23.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -6282,7 +6282,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 23.3,
+        "overperformance": 23.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -7983,89 +7983,6 @@
       "confianza": 79.0
     },
     {
-      "fixture_id": "401912248",
-      "fecha": "2026-10-18T10:00:00-05:00",
-      "fecha_display": "2026-10-18",
-      "hora": "10:00",
-      "liga": "CAF Confederation Cup",
-      "liga_pais": "",
-      "liga_slug": "caf.confed",
-      "equipo_local": {
-        "id": "132884",
-        "nombre": "Panthers",
-        "pais": "",
-        "rating": 1554.5,
-        "rd": 237.31,
-        "partidos_jugados": 2,
-        "pj_reales": 2,
-        "form_score": 81.1,
-        "form_local": 50.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1E",
-          "resultados": [
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 1.0,
-          "diferencia": 1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 7.9,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "7517",
-        "nombre": "USM Alger",
-        "pais": "",
-        "rating": 1500.0,
-        "rd": 350.0,
-        "partidos_jugados": 0,
-        "pj_reales": 0,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 59.6,
-        "prob_empate": 21.9,
-        "prob_visitante": 18.5
-      },
-      "diff_elo": 54.5,
-      "confianza": 27.3
-    },
-    {
       "fixture_id": "401843463",
       "fecha": "2026-10-18T10:00:00-05:00",
       "fecha_display": "2026-10-18",
@@ -8340,6 +8257,89 @@
       },
       "diff_elo": -219.0,
       "confianza": 100.0
+    },
+    {
+      "fixture_id": "401912248",
+      "fecha": "2026-10-18T10:00:00-05:00",
+      "fecha_display": "2026-10-18",
+      "hora": "10:00",
+      "liga": "CAF Confederation Cup",
+      "liga_pais": "",
+      "liga_slug": "caf.confed",
+      "equipo_local": {
+        "id": "132884",
+        "nombre": "Panthers",
+        "pais": "",
+        "rating": 1554.5,
+        "rd": 237.31,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 81.1,
+        "form_local": 50.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1E",
+          "resultados": [
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.0,
+          "goles_contra": 1.0,
+          "diferencia": 1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 7.9,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "7517",
+        "nombre": "USM Alger",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 350.0,
+        "partidos_jugados": 0,
+        "pj_reales": 0,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 59.6,
+        "prob_empate": 21.9,
+        "prob_visitante": 18.5
+      },
+      "diff_elo": 54.5,
+      "confianza": 27.3
     },
     {
       "fixture_id": "401876438",
@@ -9574,7 +9574,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.3,
+        "overperformance": -5.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9612,7 +9612,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.5,
+        "overperformance": -6.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -9666,7 +9666,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.4,
+        "overperformance": 4.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9704,7 +9704,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.6,
+        "overperformance": 2.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -9850,7 +9850,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.5,
+        "overperformance": 0.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9888,7 +9888,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.6,
+        "overperformance": 0.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -9942,7 +9942,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.4,
+        "overperformance": 4.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9980,7 +9980,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.7,
+        "overperformance": -5.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -10396,7 +10396,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.4,
+        "overperformance": -9.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10434,7 +10434,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.9,
+        "overperformance": -6.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -10488,7 +10488,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.2,
+        "overperformance": 6.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10903,7 +10903,7 @@
         "nombre": "Cartaginés",
         "pais": "Costa Rica",
         "rating": 1642.84,
-        "rd": 189.95450071023535,
+        "rd": 190.5254375070927,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 91.7,
@@ -10933,7 +10933,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.7,
+        "overperformance": 6.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -11025,7 +11025,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.8,
+        "overperformance": 3.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -11063,7 +11063,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.0,
+        "overperformance": 2.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -11117,7 +11117,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.4,
+        "overperformance": -5.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -11155,7 +11155,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.1,
+        "overperformance": -6.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -11247,7 +11247,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -15.5,
+        "overperformance": -14.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -11339,7 +11339,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.7,
+        "overperformance": -1.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -11431,7 +11431,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.5,
+        "overperformance": -1.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -11577,7 +11577,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.2,
+        "overperformance": -3.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -11669,7 +11669,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.2,
+        "overperformance": 3.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -11853,7 +11853,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.2,
+        "overperformance": -3.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -11891,7 +11891,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.1,
+        "overperformance": -3.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -11983,7 +11983,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.9,
+        "overperformance": -9.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -12037,7 +12037,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.0,
+        "overperformance": 2.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -12075,7 +12075,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.1,
+        "overperformance": -0.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -12129,7 +12129,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.9,
+        "overperformance": 4.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -12167,7 +12167,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.0,
+        "overperformance": -1.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -12313,7 +12313,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.5,
+        "overperformance": -7.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -12589,7 +12589,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.2,
+        "overperformance": -7.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -12681,7 +12681,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.4,
+        "overperformance": 6.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -12719,7 +12719,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.3,
+        "overperformance": 1.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -12811,7 +12811,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.8,
+        "overperformance": -4.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -12865,7 +12865,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.9,
+        "overperformance": -0.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -13049,7 +13049,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.2,
+        "overperformance": -6.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -13417,7 +13417,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.5,
+        "overperformance": 6.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -13639,7 +13639,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.9,
+        "overperformance": 8.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -13693,7 +13693,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.0,
+        "overperformance": -6.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -13731,7 +13731,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.2,
+        "overperformance": 0.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -13823,7 +13823,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.1,
+        "overperformance": -5.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -14191,7 +14191,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.5,
+        "overperformance": -3.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -14919,7 +14919,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.1,
+        "overperformance": 1.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -15311,7 +15311,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.8,
+        "overperformance": -4.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -15349,7 +15349,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.9,
+        "overperformance": -10.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -15403,7 +15403,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.9,
+        "overperformance": -0.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -15441,7 +15441,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.4,
+        "overperformance": 3.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -15495,7 +15495,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.2,
+        "overperformance": -1.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -15533,7 +15533,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.0,
+        "overperformance": -0.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -15717,7 +15717,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.1,
+        "overperformance": 0.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -15771,7 +15771,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.4,
+        "overperformance": 3.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -15901,7 +15901,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.7,
+        "overperformance": -4.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -15955,7 +15955,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.4,
+        "overperformance": -0.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16139,7 +16139,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -13.3,
+        "overperformance": -13.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16231,7 +16231,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.9,
+        "overperformance": -4.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16269,7 +16269,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.3,
+        "overperformance": -4.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -16323,7 +16323,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.9,
+        "overperformance": 8.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16415,7 +16415,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.9,
+        "overperformance": -2.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16507,7 +16507,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.3,
+        "overperformance": 7.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16545,7 +16545,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.8,
+        "overperformance": -4.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -16599,7 +16599,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.2,
+        "overperformance": 3.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16875,7 +16875,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.9,
+        "overperformance": 3.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16913,7 +16913,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.0,
+        "overperformance": -7.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -17005,7 +17005,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.8,
+        "overperformance": -5.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -17059,7 +17059,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.6,
+        "overperformance": 3.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -17335,7 +17335,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.0,
+        "overperformance": 5.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -17373,7 +17373,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.8,
+        "overperformance": 1.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -17427,7 +17427,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.9,
+        "overperformance": -3.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -17465,7 +17465,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.2,
+        "overperformance": -0.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -17557,7 +17557,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.7,
+        "overperformance": 2.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -17611,7 +17611,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.1,
+        "overperformance": -3.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -17741,7 +17741,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.5,
+        "overperformance": -8.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -17833,7 +17833,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.6,
+        "overperformance": 6.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -17887,7 +17887,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.1,
+        "overperformance": -8.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -17925,7 +17925,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.0,
+        "overperformance": -9.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -17979,7 +17979,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.6,
+        "overperformance": -3.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -18017,7 +18017,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.4,
+        "overperformance": -6.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -18255,7 +18255,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.0,
+        "overperformance": 1.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -18293,7 +18293,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.8,
+        "overperformance": 4.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -18436,7 +18436,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.5,
+        "overperformance": 3.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -18474,7 +18474,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.8,
+        "overperformance": 2.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -18620,7 +18620,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.7,
+        "overperformance": 9.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19169,7 +19169,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.1,
+        "overperformance": 0.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19207,7 +19207,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.4,
+        "overperformance": 1.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -19261,7 +19261,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.5,
+        "overperformance": -6.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19299,13 +19299,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 11.2,
+        "overperformance": 12.0,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 45.3,
+        "prob_local": 45.2,
         "prob_empate": 22.0,
-        "prob_visitante": 32.8
+        "prob_visitante": 32.9
       },
       "diff_elo": -51.4,
       "confianza": 25.7
@@ -19353,7 +19353,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.6,
+        "overperformance": 1.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19445,7 +19445,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.1,
+        "overperformance": 4.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19483,7 +19483,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.3,
+        "overperformance": 5.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -19537,7 +19537,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.9,
+        "overperformance": 1.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19575,7 +19575,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.0,
+        "overperformance": 3.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -19721,7 +19721,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.7,
+        "overperformance": -3.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19759,7 +19759,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.4,
+        "overperformance": -3.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -19813,7 +19813,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.5,
+        "overperformance": 1.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19851,7 +19851,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.6,
+        "overperformance": 1.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -19905,7 +19905,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.8,
+        "overperformance": -5.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -20035,7 +20035,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.0,
+        "overperformance": -6.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -20089,7 +20089,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.5,
+        "overperformance": -2.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -20127,7 +20127,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.4,
+        "overperformance": 2.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -20181,7 +20181,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.0,
+        "overperformance": -0.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -20219,7 +20219,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.0,
+        "overperformance": 6.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -20311,7 +20311,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.3,
+        "overperformance": 0.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -20495,7 +20495,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.2,
+        "overperformance": -0.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -20549,7 +20549,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.6,
+        "overperformance": -5.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -20641,7 +20641,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.2,
+        "overperformance": 3.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -20771,7 +20771,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.9,
+        "overperformance": -5.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -20825,7 +20825,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -10.3,
+        "overperformance": -10.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -20867,9 +20867,9 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 12.5,
+        "prob_local": 13.6,
         "prob_empate": 14.1,
-        "prob_visitante": 73.4
+        "prob_visitante": 72.4
       },
       "diff_elo": -392.7,
       "confianza": 100.0
@@ -20955,7 +20955,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.2,
+        "overperformance": 3.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -21009,7 +21009,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.8,
+        "overperformance": -1.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -21285,7 +21285,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.5,
+        "overperformance": -3.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -21323,7 +21323,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.1,
+        "overperformance": -1.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -21377,7 +21377,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.8,
+        "overperformance": 7.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -21469,7 +21469,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.2,
+        "overperformance": -2.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -21507,7 +21507,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.0,
+        "overperformance": -1.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -21561,7 +21561,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.0,
+        "overperformance": -4.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -21599,7 +21599,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.1,
+        "overperformance": -1.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -21653,7 +21653,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.4,
+        "overperformance": 1.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -21691,7 +21691,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.2,
+        "overperformance": -0.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -21837,7 +21837,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.0,
+        "overperformance": -3.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -22021,7 +22021,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.4,
+        "overperformance": 4.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -22059,7 +22059,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.4,
+        "overperformance": 2.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -22151,7 +22151,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.5,
+        "overperformance": 4.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -22205,7 +22205,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.5,
+        "overperformance": -3.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -22243,7 +22243,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.2,
+        "overperformance": -3.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -22297,7 +22297,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.5,
+        "overperformance": -5.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -22335,7 +22335,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.7,
+        "overperformance": -9.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -22427,7 +22427,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.7,
+        "overperformance": 0.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -22481,7 +22481,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.9,
+        "overperformance": 7.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -22573,7 +22573,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -16.1,
+        "overperformance": -16.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -22611,7 +22611,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.3,
+        "overperformance": -0.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -22665,7 +22665,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.0,
+        "overperformance": -2.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -22795,7 +22795,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.6,
+        "overperformance": 5.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -22849,7 +22849,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.5,
+        "overperformance": 4.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -22887,7 +22887,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.5,
+        "overperformance": 4.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -22941,7 +22941,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.0,
+        "overperformance": -2.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -23033,7 +23033,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -14.2,
+        "overperformance": -14.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -23071,7 +23071,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.2,
+        "overperformance": -9.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -23125,7 +23125,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.5,
+        "overperformance": -2.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -23217,7 +23217,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.7,
+        "overperformance": -9.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -23255,7 +23255,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.4,
+        "overperformance": -5.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -23347,7 +23347,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.6,
+        "overperformance": 1.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -23493,7 +23493,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.0,
+        "overperformance": 3.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -23531,7 +23531,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.1,
+        "overperformance": 0.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -23623,7 +23623,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.6,
+        "overperformance": 6.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -23769,7 +23769,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.4,
+        "overperformance": -1.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -23807,7 +23807,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.8,
+        "overperformance": 5.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -23861,7 +23861,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.5,
+        "overperformance": 6.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -23899,13 +23899,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -11.4,
+        "overperformance": -11.0,
         "vol": 0.06
       },
       "prediccion": {
         "prob_local": 22.5,
         "prob_empate": 15.9,
-        "prob_visitante": 61.6
+        "prob_visitante": 61.7
       },
       "diff_elo": -313.6,
       "confianza": 100.0
@@ -23953,7 +23953,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.1,
+        "overperformance": 3.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -23991,7 +23991,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.8,
+        "overperformance": -1.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -24229,7 +24229,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.1,
+        "overperformance": 1.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -24413,7 +24413,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.6,
+        "overperformance": 2.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -24451,7 +24451,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.5,
+        "overperformance": 2.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -24543,7 +24543,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.8,
+        "overperformance": 8.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -24697,7 +24697,7 @@
         "nombre": "Herediano",
         "pais": "Costa Rica",
         "rating": 1399.73,
-        "rd": 203.19320025155884,
+        "rd": 203.72727058459003,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 33.7,
@@ -24727,7 +24727,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.0,
+        "overperformance": -6.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -24781,7 +24781,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 11.4,
+        "overperformance": 13.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -24819,7 +24819,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 13.7,
+        "overperformance": 14.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -24873,7 +24873,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.7,
+        "overperformance": 4.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -24965,7 +24965,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.9,
+        "overperformance": 4.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -25057,7 +25057,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.5,
+        "overperformance": -2.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -25095,7 +25095,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.2,
+        "overperformance": -9.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -25149,7 +25149,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.8,
+        "overperformance": -0.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -25187,7 +25187,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.2,
+        "overperformance": 0.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -25241,7 +25241,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.3,
+        "overperformance": -3.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -25279,7 +25279,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.9,
+        "overperformance": -1.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -25341,7 +25341,7 @@
         "nombre": "Seattle",
         "pais": "",
         "rating": 1603.23,
-        "rd": 211.23061481643907,
+        "rd": 211.74425990158505,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 68.3,
@@ -25371,7 +25371,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.5,
+        "overperformance": 0.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -25513,7 +25513,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -11.3,
+        "overperformance": -7.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -25551,13 +25551,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.7,
+        "overperformance": -9.3,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 42.9,
+        "prob_local": 44.0,
         "prob_empate": 21.2,
-        "prob_visitante": 35.9
+        "prob_visitante": 34.8
       },
       "diff_elo": -83.6,
       "confianza": 41.8
@@ -25605,7 +25605,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 14.6,
+        "overperformance": 14.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -25647,9 +25647,9 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 61.3,
+        "prob_local": 61.2,
         "prob_empate": 21.5,
-        "prob_visitante": 17.2
+        "prob_visitante": 17.3
       },
       "diff_elo": 71.2,
       "confianza": 35.6
@@ -25697,7 +25697,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.9,
+        "overperformance": 3.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -25735,7 +25735,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.5,
+        "overperformance": 4.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -25789,7 +25789,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.8,
+        "overperformance": -4.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -25827,7 +25827,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.0,
+        "overperformance": -4.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -25881,7 +25881,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.2,
+        "overperformance": 2.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -25919,7 +25919,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.4,
+        "overperformance": 0.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -25973,7 +25973,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.5,
+        "overperformance": 1.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -26065,7 +26065,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.3,
+        "overperformance": -1.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -26103,7 +26103,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.5,
+        "overperformance": 1.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -26157,7 +26157,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.8,
+        "overperformance": 5.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -26207,98 +26207,6 @@
       "confianza": 60.1
     },
     {
-      "fixture_id": "401900946",
-      "fecha": "2026-10-18T19:00:00-05:00",
-      "fecha_display": "2026-10-18",
-      "hora": "19:00",
-      "liga": "usa.ncaa.w.1",
-      "liga_pais": "EE.UU.",
-      "liga_slug": "usa.ncaa.w.1",
-      "equipo_local": {
-        "id": "20585",
-        "nombre": "Nevada",
-        "pais": "EE.UU.",
-        "rating": 1362.68,
-        "rd": 163.78,
-        "partidos_jugados": 6,
-        "pj_reales": 6,
-        "form_score": 32.8,
-        "form_local": 25.3,
-        "form_visitante": 37.8,
-        "momentum": "stable",
-        "momentum_diff": -1.8,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "E",
-            "D",
-            "D",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.44,
-          "goles_contra": 2.22,
-          "diferencia": 0.22
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.3,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20442",
-        "nombre": "Air Force",
-        "pais": "EE.UU.",
-        "rating": 1650.12,
-        "rd": 160.52,
-        "partidos_jugados": 7,
-        "pj_reales": 7,
-        "form_score": 51.0,
-        "form_local": 66.1,
-        "form_visitante": 18.6,
-        "momentum": "stable",
-        "momentum_diff": -3.4,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "V",
-            "D",
-            "D",
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 1.25,
-          "diferencia": 0.75
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 25.9,
-        "prob_empate": 16.5,
-        "prob_visitante": 57.6
-      },
-      "diff_elo": -287.4,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401924368",
       "fecha": "2026-10-18T19:06:00-05:00",
       "fecha_display": "2026-10-18",
@@ -26345,10 +26253,10 @@
         "id": "133987",
         "nombre": "Querétaro",
         "pais": "",
-        "rating": 1444.87,
-        "rd": 162.5,
-        "partidos_jugados": 8,
-        "pj_reales": 8,
+        "rating": 1384.56,
+        "rd": 150.71,
+        "partidos_jugados": 9,
+        "pj_reales": 9,
         "form_score": 0.0,
         "form_local": 0.0,
         "form_visitante": 50.0,
@@ -26372,16 +26280,16 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -29.6,
+        "overperformance": -23.7,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 48.6,
-        "prob_empate": 20.8,
-        "prob_visitante": 30.6
+        "prob_local": 55.1,
+        "prob_empate": 22.2,
+        "prob_visitante": 22.7
       },
-      "diff_elo": -101.7,
-      "confianza": 50.9
+      "diff_elo": -41.4,
+      "confianza": 20.7
     },
     {
       "fixture_id": "401876938",
@@ -26396,7 +26304,7 @@
         "nombre": "Monterrey",
         "pais": "",
         "rating": 1645.61,
-        "rd": 196.36744861634486,
+        "rd": 196.92006884657286,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 42.5,
@@ -26426,7 +26334,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.7,
+        "overperformance": -4.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -26464,13 +26372,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.1,
+        "overperformance": -0.1,
         "vol": 0.06
       },
       "prediccion": {
         "prob_local": 81.0,
         "prob_empate": 16.0,
-        "prob_visitante": 2.9
+        "prob_visitante": 3.0
       },
       "diff_elo": 307.4,
       "confianza": 100.0
@@ -26556,6 +26464,98 @@
         "prob_visitante": 0.9
       },
       "diff_elo": 467.8,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401900946",
+      "fecha": "2026-10-18T20:00:00-05:00",
+      "fecha_display": "2026-10-18",
+      "hora": "20:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20585",
+        "nombre": "Nevada",
+        "pais": "EE.UU.",
+        "rating": 1362.68,
+        "rd": 163.78,
+        "partidos_jugados": 6,
+        "pj_reales": 6,
+        "form_score": 32.8,
+        "form_local": 25.3,
+        "form_visitante": 37.8,
+        "momentum": "stable",
+        "momentum_diff": -1.8,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 3D 1E",
+          "resultados": [
+            "E",
+            "D",
+            "D",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.44,
+          "goles_contra": 2.22,
+          "diferencia": 0.22
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20442",
+        "nombre": "Air Force",
+        "pais": "EE.UU.",
+        "rating": 1650.12,
+        "rd": 160.52,
+        "partidos_jugados": 7,
+        "pj_reales": 7,
+        "form_score": 51.0,
+        "form_local": 66.1,
+        "form_visitante": 18.6,
+        "momentum": "stable",
+        "momentum_diff": -3.4,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 3D 1E",
+          "resultados": [
+            "V",
+            "D",
+            "D",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.0,
+          "goles_contra": 1.25,
+          "diferencia": 0.75
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.3,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 25.9,
+        "prob_empate": 16.5,
+        "prob_visitante": 57.6
+      },
+      "diff_elo": -287.4,
       "confianza": 100.0
     },
     {
@@ -26693,7 +26693,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.0,
+        "overperformance": -3.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -26731,7 +26731,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.3,
+        "overperformance": -0.6,
         "vol": 0.06
       },
       "prediccion": {

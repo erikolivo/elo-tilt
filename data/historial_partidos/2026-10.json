@@ -103370,6 +103370,133 @@
         "overperformance_h": 2.4,
         "overperformance_a": 5.7
       }
+    },
+    {
+      "fixture_id": "401913250",
+      "fecha": "2026-10-18",
+      "fecha_hora_espn": "2026-10-18T05:30Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20285",
+        "name": "Sydney FC"
+      },
+      "equipo_visitante": {
+        "id": "20286",
+        "name": "Adelaide Utd"
+      },
+      "goles_local": 2,
+      "goles_visitante": 2,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-10-18T00:30:00-05:00",
+        "prob_local": 64.7,
+        "prob_empate": 20.6,
+        "prob_visitante": 14.7,
+        "diff_elo": 110.4,
+        "pj_h": 5,
+        "pj_a": 4,
+        "rating_local": 1725.37,
+        "rating_visitante": 1615.0,
+        "overperformance_h": 0.0,
+        "overperformance_a": 0.0
+      }
+    },
+    {
+      "fixture_id": "401877598",
+      "fecha": "2026-10-18",
+      "fecha_hora_espn": "2026-10-18T04:55Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "jpn.1",
+      "equipo_local": {
+        "id": "22522",
+        "name": "Okayama"
+      },
+      "equipo_visitante": {
+        "id": "7477",
+        "name": "Vissel Kobe"
+      },
+      "goles_local": 0,
+      "goles_visitante": 3,
+      "estadisticas": {
+        "home": {
+          "foulsCommitted": "12",
+          "yellowCards": "4",
+          "redCards": "0",
+          "offsides": "1",
+          "wonCorners": "10",
+          "saves": "5",
+          "possessionPct": "44",
+          "totalShots": "14",
+          "shotsOnTarget": "4",
+          "shotPct": "0.3",
+          "penaltyKickGoals": "0",
+          "penaltyKickShots": "0",
+          "accuratePasses": "214",
+          "totalPasses": "308",
+          "passPct": "0.7",
+          "accurateCrosses": "0",
+          "totalCrosses": "0",
+          "crossPct": "0.0",
+          "totalLongBalls": "0",
+          "accurateLongBalls": "0",
+          "longballPct": "0.0",
+          "blockedShots": "3",
+          "effectiveTackles": "6",
+          "totalTackles": "7",
+          "tacklePct": "0.9",
+          "interceptions": "0",
+          "effectiveClearance": "0",
+          "totalClearance": "59"
+        },
+        "away": {
+          "foulsCommitted": "7",
+          "yellowCards": "0",
+          "redCards": "0",
+          "offsides": "3",
+          "wonCorners": "8",
+          "saves": "3",
+          "possessionPct": "56",
+          "totalShots": "21",
+          "shotsOnTarget": "8",
+          "shotPct": "0.4",
+          "penaltyKickGoals": "0",
+          "penaltyKickShots": "0",
+          "accuratePasses": "312",
+          "totalPasses": "405",
+          "passPct": "0.8",
+          "accurateCrosses": "0",
+          "totalCrosses": "0",
+          "crossPct": "0.0",
+          "totalLongBalls": "0",
+          "accurateLongBalls": "0",
+          "longballPct": "0.0",
+          "blockedShots": "4",
+          "effectiveTackles": "10",
+          "totalTackles": "14",
+          "tacklePct": "0.7",
+          "interceptions": "0",
+          "effectiveClearance": "0",
+          "totalClearance": "41"
+        }
+      },
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-10-17T23:55:00-05:00",
+        "prob_local": 21.2,
+        "prob_empate": 15.7,
+        "prob_visitante": 63.1,
+        "diff_elo": -323.3,
+        "pj_h": 8,
+        "pj_a": 10,
+        "rating_local": 1425.16,
+        "rating_visitante": 1748.44,
+        "overperformance_h": -2.1,
+        "overperformance_a": 8.5
+      }
     }
   ]
 }
