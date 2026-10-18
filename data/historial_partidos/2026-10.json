@@ -103497,6 +103497,100 @@
         "overperformance_h": -2.1,
         "overperformance_a": 8.5
       }
+    },
+    {
+      "fixture_id": "401877601",
+      "fecha": "2026-10-18",
+      "fecha_hora_espn": "2026-10-18T07:00Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "jpn.1",
+      "equipo_local": {
+        "id": "22167",
+        "name": "Machida Zelvia"
+      },
+      "equipo_visitante": {
+        "id": "7107",
+        "name": "A Fukuoka"
+      },
+      "goles_local": 3,
+      "goles_visitante": 0,
+      "estadisticas": {
+        "home": {
+          "foulsCommitted": "15",
+          "yellowCards": "2",
+          "redCards": "0",
+          "offsides": "1",
+          "wonCorners": "2",
+          "saves": "1",
+          "possessionPct": "52.2",
+          "totalShots": "8",
+          "shotsOnTarget": "7",
+          "shotPct": "0.9",
+          "penaltyKickGoals": "0",
+          "penaltyKickShots": "0",
+          "accuratePasses": "394",
+          "totalPasses": "478",
+          "passPct": "0.8",
+          "accurateCrosses": "0",
+          "totalCrosses": "0",
+          "crossPct": "0.0",
+          "totalLongBalls": "0",
+          "accurateLongBalls": "0",
+          "longballPct": "0.0",
+          "blockedShots": "0",
+          "effectiveTackles": "8",
+          "totalTackles": "15",
+          "tacklePct": "0.5",
+          "interceptions": "0",
+          "effectiveClearance": "0",
+          "totalClearance": "37"
+        },
+        "away": {
+          "foulsCommitted": "9",
+          "yellowCards": "0",
+          "redCards": "0",
+          "offsides": "1",
+          "wonCorners": "5",
+          "saves": "4",
+          "possessionPct": "47.8",
+          "totalShots": "9",
+          "shotsOnTarget": "1",
+          "shotPct": "0.1",
+          "penaltyKickGoals": "0",
+          "penaltyKickShots": "0",
+          "accuratePasses": "330",
+          "totalPasses": "429",
+          "passPct": "0.8",
+          "accurateCrosses": "0",
+          "totalCrosses": "0",
+          "crossPct": "0.0",
+          "totalLongBalls": "0",
+          "accurateLongBalls": "0",
+          "longballPct": "0.0",
+          "blockedShots": "4",
+          "effectiveTackles": "10",
+          "totalTackles": "16",
+          "tacklePct": "0.6",
+          "interceptions": "0",
+          "effectiveClearance": "0",
+          "totalClearance": "15"
+        }
+      },
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-10-18T02:00:00-05:00",
+        "prob_local": 85.2,
+        "prob_empate": 13.9,
+        "prob_visitante": 1.0,
+        "diff_elo": 368.8,
+        "pj_h": 10,
+        "pj_a": 8,
+        "rating_local": 1741.28,
+        "rating_visitante": 1372.43,
+        "overperformance_h": 9.3,
+        "overperformance_a": -2.6
+      }
     }
   ]
 }
