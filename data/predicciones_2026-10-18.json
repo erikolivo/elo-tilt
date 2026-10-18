@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-18T09:13:09.498599Z",
+  "generado": "2026-10-18T12:58:19.094527Z",
   "fecha_consulta": "2026-10-18",
   "total": 295,
   "predicciones": [
@@ -1732,6 +1732,180 @@
       "confianza": 96.6
     },
     {
+      "fixture_id": "401912487",
+      "fecha": "2026-10-18T07:00:00-05:00",
+      "fecha_display": "2026-10-18",
+      "hora": "07:00",
+      "liga": "CAF Confederation Cup",
+      "liga_pais": "",
+      "liga_slug": "caf.confed",
+      "equipo_local": {
+        "id": "8534",
+        "nombre": "Tusker FC",
+        "pais": "",
+        "rating": 1555.07,
+        "rd": 238.29,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 81.1,
+        "form_local": 100.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1E",
+          "resultados": [
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.5,
+          "goles_contra": 1.0,
+          "diferencia": 0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 7.9,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "131549",
+        "nombre": "Singida",
+        "pais": "",
+        "rating": 1658.0,
+        "rd": 257.84,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 100.0,
+        "form_local": 100.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V",
+          "resultados": [
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 5.0,
+          "goles_contra": 0.5,
+          "diferencia": 4.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 19.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 43.7,
+        "prob_empate": 20.8,
+        "prob_visitante": 35.5
+      },
+      "diff_elo": -102.9,
+      "confianza": 51.5
+    },
+    {
+      "fixture_id": "401922279",
+      "fecha": "2026-10-18T07:00:00-05:00",
+      "fecha_display": "2026-10-18",
+      "hora": "07:00",
+      "liga": "ned.w.knvb_cup",
+      "liga_pais": "Países Bajos",
+      "liga_slug": "ned.w.knvb_cup",
+      "equipo_local": {
+        "id": "133137",
+        "nombre": "VDZ Arnhem",
+        "pais": "Países Bajos",
+        "rating": 1668.51,
+        "rd": 276.95,
+        "partidos_jugados": 1,
+        "pj_reales": 1,
+        "form_score": 100.0,
+        "form_local": 100.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V",
+          "resultados": [
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 4.0,
+          "goles_contra": 0.0,
+          "diferencia": 4.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 34.9,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20797",
+        "nombre": "PEC Zwolle",
+        "pais": "Países Bajos",
+        "rating": 1418.73,
+        "rd": 160.88,
+        "partidos_jugados": 7,
+        "pj_reales": 7,
+        "form_score": 53.9,
+        "form_local": 22.8,
+        "form_visitante": 81.4,
+        "momentum": "stable",
+        "momentum_diff": 3.1,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "E",
+            "V",
+            "D",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.86,
+          "goles_contra": 2.43,
+          "diferencia": -0.57
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -5.6,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 78.1,
+        "prob_empate": 17.4,
+        "prob_visitante": 4.5
+      },
+      "diff_elo": 249.8,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401882840",
       "fecha": "2026-10-18T07:00:00-05:00",
       "fecha_display": "2026-10-18",
@@ -2008,92 +2182,6 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401912487",
-      "fecha": "2026-10-18T07:00:00-05:00",
-      "fecha_display": "2026-10-18",
-      "hora": "07:00",
-      "liga": "CAF Confederation Cup",
-      "liga_pais": "",
-      "liga_slug": "caf.confed",
-      "equipo_local": {
-        "id": "8534",
-        "nombre": "Tusker FC",
-        "pais": "",
-        "rating": 1555.07,
-        "rd": 238.29,
-        "partidos_jugados": 2,
-        "pj_reales": 2,
-        "form_score": 81.1,
-        "form_local": 100.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1E",
-          "resultados": [
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.5,
-          "goles_contra": 1.0,
-          "diferencia": 0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 7.9,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "131549",
-        "nombre": "Singida",
-        "pais": "",
-        "rating": 1658.0,
-        "rd": 257.84,
-        "partidos_jugados": 2,
-        "pj_reales": 2,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V",
-          "resultados": [
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 5.0,
-          "goles_contra": 0.5,
-          "diferencia": 4.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 19.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 43.7,
-        "prob_empate": 20.8,
-        "prob_visitante": 35.5
-      },
-      "diff_elo": -102.9,
-      "confianza": 51.5
-    },
-    {
       "fixture_id": "401874542",
       "fecha": "2026-10-18T07:00:00-05:00",
       "fecha_display": "2026-10-18",
@@ -2275,94 +2363,6 @@
         "prob_visitante": 59.9
       },
       "diff_elo": -286.3,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401922279",
-      "fecha": "2026-10-18T07:00:00-05:00",
-      "fecha_display": "2026-10-18",
-      "hora": "07:00",
-      "liga": "ned.w.knvb_cup",
-      "liga_pais": "Países Bajos",
-      "liga_slug": "ned.w.knvb_cup",
-      "equipo_local": {
-        "id": "133137",
-        "nombre": "VDZ Arnhem",
-        "pais": "Países Bajos",
-        "rating": 1668.51,
-        "rd": 276.95,
-        "partidos_jugados": 1,
-        "pj_reales": 1,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V",
-          "resultados": [
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 4.0,
-          "goles_contra": 0.0,
-          "diferencia": 4.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 34.9,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20797",
-        "nombre": "PEC Zwolle",
-        "pais": "Países Bajos",
-        "rating": 1418.73,
-        "rd": 160.88,
-        "partidos_jugados": 7,
-        "pj_reales": 7,
-        "form_score": 53.9,
-        "form_local": 22.8,
-        "form_visitante": 81.4,
-        "momentum": "stable",
-        "momentum_diff": 3.1,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "E",
-            "V",
-            "D",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.86,
-          "goles_contra": 2.43,
-          "diferencia": -0.57
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -5.5,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 78.1,
-        "prob_empate": 17.4,
-        "prob_visitante": 4.5
-      },
-      "diff_elo": 249.8,
       "confianza": 100.0
     },
     {
@@ -3274,13 +3274,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 11.6,
+        "overperformance": 11.1,
         "vol": 0.06
       },
       "prediccion": {
         "prob_local": 42.3,
         "prob_empate": 20.7,
-        "prob_visitante": 37.1
+        "prob_visitante": 37.0
       },
       "diff_elo": -107.5,
       "confianza": 53.8
@@ -3420,7 +3420,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.7,
+        "overperformance": 2.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3458,7 +3458,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.2,
+        "overperformance": 2.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -3512,7 +3512,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.0,
+        "overperformance": -9.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3550,7 +3550,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.8,
+        "overperformance": 5.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -3604,7 +3604,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.5,
+        "overperformance": 9.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3642,7 +3642,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.4,
+        "overperformance": 0.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -4028,7 +4028,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.8,
+        "overperformance": -3.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4066,7 +4066,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.1,
+        "overperformance": -8.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -4966,7 +4966,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.0,
+        "overperformance": -1.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -4990,7 +4990,7 @@
         "nombre": "Siwelele",
         "pais": "Sudáfrica",
         "rating": 1290.62,
-        "rd": 199.2622009946785,
+        "rd": 199.5345940633183,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 25.3,
@@ -5140,7 +5140,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -63.7,
+        "overperformance": -55.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -5194,7 +5194,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.8,
+        "overperformance": 4.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5232,7 +5232,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.9,
+        "overperformance": 0.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -7242,7 +7242,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.2,
+        "overperformance": 5.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7280,7 +7280,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.7,
+        "overperformance": -0.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -7334,7 +7334,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.7,
+        "overperformance": 4.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7372,7 +7372,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.2,
+        "overperformance": 2.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -7426,7 +7426,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.1,
+        "overperformance": 7.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7464,7 +7464,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.8,
+        "overperformance": 1.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -9028,7 +9028,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.3,
+        "overperformance": 3.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9120,7 +9120,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.1,
+        "overperformance": -2.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9158,7 +9158,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.9,
+        "overperformance": 3.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -9212,7 +9212,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.3,
+        "overperformance": 4.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10903,7 +10903,7 @@
         "nombre": "Cartaginés",
         "pais": "Costa Rica",
         "rating": 1642.84,
-        "rd": 190.81026527906255,
+        "rd": 191.09466851396814,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 91.7,
@@ -14245,7 +14245,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.8,
+        "overperformance": 2.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -14283,12 +14283,12 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.4,
+        "overperformance": -10.7,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 82.2,
-        "prob_empate": 16.8,
+        "prob_local": 82.4,
+        "prob_empate": 16.6,
         "prob_visitante": 1.0
       },
       "diff_elo": 266.3,
@@ -14337,7 +14337,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.3,
+        "overperformance": -0.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -18750,7 +18750,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.2,
+        "overperformance": 4.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -24697,7 +24697,7 @@
         "nombre": "Herediano",
         "pais": "Costa Rica",
         "rating": 1399.73,
-        "rd": 203.99378141388306,
+        "rd": 204.25994450998817,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 33.7,
@@ -25341,7 +25341,7 @@
         "nombre": "Seattle",
         "pais": "",
         "rating": 1603.23,
-        "rd": 212.00061576335003,
+        "rd": 212.2566620080725,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 68.3,
@@ -26304,7 +26304,7 @@
         "nombre": "Monterrey",
         "pais": "",
         "rating": 1645.61,
-        "rd": 197.19579821528166,
+        "rd": 197.47114258287252,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 42.5,
