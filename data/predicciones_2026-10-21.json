@@ -1,7 +1,7 @@
 {
-  "generado": "2026-10-20T16:12:59.836076Z",
+  "generado": "2026-10-20T21:10:06.945584Z",
   "fecha_consulta": "2026-10-21",
-  "total": 105,
+  "total": 106,
   "predicciones": [
     {
       "fixture_id": "401877589",
@@ -7013,6 +7013,98 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401931035",
+      "fecha": "2026-10-21T18:30:00-05:00",
+      "fecha_display": "2026-10-21",
+      "hora": "18:30",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "18023",
+        "nombre": "Rio Grande",
+        "pais": "",
+        "rating": 1298.71,
+        "rd": 131.09,
+        "partidos_jugados": 9,
+        "pj_reales": 4,
+        "form_score": 34.8,
+        "form_local": 50.0,
+        "form_visitante": 30.0,
+        "momentum": "stable",
+        "momentum_diff": -0.9,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 3D 1E",
+          "resultados": [
+            "D",
+            "V",
+            "E",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.78,
+          "goles_contra": 1.89,
+          "diferencia": -0.11
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 6.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "17392",
+        "nombre": "Hou Christian",
+        "pais": "",
+        "rating": 1350.9,
+        "rd": 147.5,
+        "partidos_jugados": 8,
+        "pj_reales": 8,
+        "form_score": 36.2,
+        "form_local": 16.7,
+        "form_visitante": 44.8,
+        "momentum": "stable",
+        "momentum_diff": 0.4,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "D",
+            "V",
+            "D",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 1.7,
+          "diferencia": -0.7
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 3.8,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 47.9,
+        "prob_empate": 21.9,
+        "prob_visitante": 30.1
+      },
+      "diff_elo": -52.2,
+      "confianza": 26.1
+    },
+    {
       "fixture_id": "401916449",
       "fecha": "2026-10-21T19:00:00-05:00",
       "fecha_display": "2026-10-21",
@@ -7109,13 +7201,13 @@
       "fecha": "2026-10-21T19:00:00-05:00",
       "fecha_display": "2026-10-21",
       "hora": "19:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
       "equipo_local": {
         "id": "20641",
         "nombre": "Utah Valley",
-        "pais": "",
+        "pais": "EE.UU.",
         "rating": 1683.18,
         "rd": 112.74,
         "partidos_jugados": 14,
@@ -7153,7 +7245,7 @@
       "equipo_visitante": {
         "id": "20466",
         "nombre": "Sacramento St",
-        "pais": "",
+        "pais": "EE.UU.",
         "rating": 1636.55,
         "rd": 166.51,
         "partidos_jugados": 7,
@@ -7614,7 +7706,7 @@
         "nombre": "América",
         "pais": "",
         "rating": 1865.93,
-        "rd": 215.41381203095256,
+        "rd": 215.6657892533473,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 97.3,
@@ -7644,7 +7736,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.4,
+        "overperformance": 8.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -7706,7 +7798,7 @@
         "nombre": "Monterrey",
         "pais": "",
         "rating": 1645.61,
-        "rd": 201.01630108746215,
+        "rd": 201.28641936829297,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 42.5,
@@ -7852,7 +7944,7 @@
         "nombre": "Gonzaga",
         "pais": "",
         "rating": 1460.47,
-        "rd": 210.90391564155422,
+        "rd": 211.1613002822804,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 46.9,
@@ -8626,7 +8718,7 @@
         "nombre": "Santa Clara",
         "pais": "",
         "rating": 1476.63,
-        "rd": 214.80179269971094,
+        "rd": 215.05452069702585,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 15.4,
@@ -8680,7 +8772,7 @@
         "nombre": "San Diego St",
         "pais": "",
         "rating": 1480.62,
-        "rd": 231.50624094275744,
+        "rd": 231.74074458197813,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 33.6,
@@ -8864,7 +8956,7 @@
         "nombre": "Seattle U",
         "pais": "",
         "rating": 1490.0,
-        "rd": 214.7235921041412,
+        "rd": 214.9764036122783,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 41.8,
