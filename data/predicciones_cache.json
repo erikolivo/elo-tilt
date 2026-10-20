@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-20T10:51:28.540233Z",
+  "generado": "2026-10-20T16:14:20.808823Z",
   "fecha_consulta": "2026-10-20",
   "total": 93,
   "predicciones": [
@@ -8314,98 +8314,6 @@
       "confianza": 33.6
     },
     {
-      "fixture_id": "401876935",
-      "fecha": "2026-10-20T22:00:00-05:00",
-      "fecha_display": "2026-10-20",
-      "hora": "22:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "232",
-        "nombre": "Tigres",
-        "pais": "",
-        "rating": 1453.8,
-        "rd": 183.32,
-        "partidos_jugados": 7,
-        "pj_reales": 7,
-        "form_score": 52.9,
-        "form_local": 72.8,
-        "form_visitante": 40.7,
-        "momentum": "stable",
-        "momentum_diff": 0.2,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "1V 1D 3E",
-          "resultados": [
-            "E",
-            "E",
-            "V",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.86,
-          "goles_contra": 0.71,
-          "diferencia": 0.15
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 5.9,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "228",
-        "nombre": "León",
-        "pais": "",
-        "rating": 1667.83,
-        "rd": 134.3,
-        "partidos_jugados": 12,
-        "pj_reales": 12,
-        "form_score": 67.4,
-        "form_local": 100.0,
-        "form_visitante": 65.7,
-        "momentum": "stable",
-        "momentum_diff": -1.8,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "3V 2E",
-          "resultados": [
-            "E",
-            "E",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.67,
-          "goles_contra": 0.67,
-          "diferencia": 1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 16.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 30.2,
-        "prob_empate": 18.2,
-        "prob_visitante": 51.6
-      },
-      "diff_elo": -214.0,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401924374",
       "fecha": "2026-10-20T22:07:00-05:00",
       "fecha_display": "2026-10-20",
@@ -8488,6 +8396,98 @@
         "prob_visitante": 0.9
       },
       "diff_elo": 286.3,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401876935",
+      "fecha": "2026-10-20T22:10:00-05:00",
+      "fecha_display": "2026-10-20",
+      "hora": "22:10",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "232",
+        "nombre": "Tigres",
+        "pais": "",
+        "rating": 1453.8,
+        "rd": 183.32,
+        "partidos_jugados": 7,
+        "pj_reales": 7,
+        "form_score": 52.9,
+        "form_local": 72.8,
+        "form_visitante": 40.7,
+        "momentum": "stable",
+        "momentum_diff": 0.2,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "1V 1D 3E",
+          "resultados": [
+            "E",
+            "E",
+            "V",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.86,
+          "goles_contra": 0.71,
+          "diferencia": 0.15
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 5.9,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "228",
+        "nombre": "León",
+        "pais": "",
+        "rating": 1667.83,
+        "rd": 134.3,
+        "partidos_jugados": 12,
+        "pj_reales": 12,
+        "form_score": 67.4,
+        "form_local": 100.0,
+        "form_visitante": 65.7,
+        "momentum": "stable",
+        "momentum_diff": -1.8,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3V 2E",
+          "resultados": [
+            "E",
+            "E",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.67,
+          "goles_contra": 0.67,
+          "diferencia": 1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 16.1,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 30.2,
+        "prob_empate": 18.2,
+        "prob_visitante": 51.6
+      },
+      "diff_elo": -214.0,
       "confianza": 100.0
     }
   ]

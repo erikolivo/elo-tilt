@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-20T10:49:47.180845Z",
+  "generado": "2026-10-20T16:12:59.836076Z",
   "fecha_consulta": "2026-10-21",
   "total": 105,
   "predicciones": [
@@ -4253,98 +4253,6 @@
       "confianza": 7.5
     },
     {
-      "fixture_id": "401898326",
-      "fecha": "2026-10-21T17:00:00-05:00",
-      "fecha_display": "2026-10-21",
-      "hora": "17:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5709",
-        "nombre": "Sacred Heart",
-        "pais": "",
-        "rating": 1314.77,
-        "rd": 144.99,
-        "partidos_jugados": 8,
-        "pj_reales": 8,
-        "form_score": 25.9,
-        "form_local": 44.6,
-        "form_visitante": 20.9,
-        "momentum": "stable",
-        "momentum_diff": -2.1,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2D 3E",
-          "resultados": [
-            "D",
-            "E",
-            "E",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 1.67,
-          "diferencia": -0.67
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 6.7,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "5606",
-        "nombre": "Saint Peter's",
-        "pais": "",
-        "rating": 1481.1,
-        "rd": 135.49,
-        "partidos_jugados": 10,
-        "pj_reales": 10,
-        "form_score": 56.6,
-        "form_local": 30.8,
-        "form_visitante": 63.3,
-        "momentum": "stable",
-        "momentum_diff": -1.2,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 2D 2E",
-          "resultados": [
-            "V",
-            "D",
-            "E",
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.33,
-          "goles_contra": 1.33,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 33.8,
-        "prob_empate": 19.3,
-        "prob_visitante": 46.9
-      },
-      "diff_elo": -166.3,
-      "confianza": 83.2
-    },
-    {
       "fixture_id": "401892387",
       "fecha": "2026-10-21T17:00:00-05:00",
       "fecha_display": "2026-10-21",
@@ -5907,6 +5815,98 @@
       },
       "diff_elo": -69.1,
       "confianza": 34.5
+    },
+    {
+      "fixture_id": "401898326",
+      "fecha": "2026-10-21T18:00:00-05:00",
+      "fecha_display": "2026-10-21",
+      "hora": "18:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5709",
+        "nombre": "Sacred Heart",
+        "pais": "",
+        "rating": 1314.77,
+        "rd": 144.99,
+        "partidos_jugados": 8,
+        "pj_reales": 8,
+        "form_score": 25.9,
+        "form_local": 44.6,
+        "form_visitante": 20.9,
+        "momentum": "stable",
+        "momentum_diff": -2.1,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2D 3E",
+          "resultados": [
+            "D",
+            "E",
+            "E",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 1.67,
+          "diferencia": -0.67
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 6.7,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "5606",
+        "nombre": "Saint Peter's",
+        "pais": "",
+        "rating": 1481.1,
+        "rd": 135.49,
+        "partidos_jugados": 10,
+        "pj_reales": 10,
+        "form_score": 56.6,
+        "form_local": 30.8,
+        "form_visitante": 63.3,
+        "momentum": "stable",
+        "momentum_diff": -1.2,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 2D 2E",
+          "resultados": [
+            "V",
+            "D",
+            "E",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.33,
+          "goles_contra": 1.33,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 33.8,
+        "prob_empate": 19.3,
+        "prob_visitante": 46.9
+      },
+      "diff_elo": -166.3,
+      "confianza": 83.2
     },
     {
       "fixture_id": "401899250",
@@ -7614,7 +7614,7 @@
         "nombre": "América",
         "pais": "",
         "rating": 1865.93,
-        "rd": 215.16153971642777,
+        "rd": 215.41381203095256,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 97.3,
@@ -7650,7 +7650,7 @@
       "prediccion": {
         "prob_local": 14.8,
         "prob_empate": 12.7,
-        "prob_visitante": 72.6
+        "prob_visitante": 72.5
       },
       "diff_elo": -452.7,
       "confianza": 100.0
@@ -7706,7 +7706,7 @@
         "nombre": "Monterrey",
         "pais": "",
         "rating": 1645.61,
-        "rd": 200.74581934292468,
+        "rd": 201.01630108746215,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 42.5,
@@ -7852,7 +7852,7 @@
         "nombre": "Gonzaga",
         "pais": "",
         "rating": 1460.47,
-        "rd": 210.64621650762268,
+        "rd": 210.90391564155422,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 46.9,
@@ -8626,7 +8626,7 @@
         "nombre": "Santa Clara",
         "pais": "",
         "rating": 1476.63,
-        "rd": 214.54876700133158,
+        "rd": 214.80179269971094,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 15.4,
@@ -8680,7 +8680,7 @@
         "nombre": "San Diego St",
         "pais": "",
         "rating": 1480.62,
-        "rd": 231.27149952270923,
+        "rd": 231.50624094275744,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 33.6,
@@ -8864,7 +8864,7 @@
         "nombre": "Seattle U",
         "pais": "",
         "rating": 1490.0,
-        "rd": 214.47048258942777,
+        "rd": 214.7235921041412,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 41.8,
@@ -9405,9 +9405,9 @@
     },
     {
       "fixture_id": "401876930",
-      "fecha": "2026-10-21T22:00:00-05:00",
+      "fecha": "2026-10-21T22:10:00-05:00",
       "fecha_display": "2026-10-21",
-      "hora": "22:00",
+      "hora": "22:10",
       "liga": "all",
       "liga_pais": "",
       "liga_slug": "all",
