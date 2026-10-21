@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-21T02:56:25.570073Z",
+  "generado": "2026-10-21T08:15:59.442159Z",
   "fecha_consulta": "2026-10-21",
   "total": 106,
   "predicciones": [
@@ -1618,7 +1618,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.5,
+        "overperformance": 1.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -3523,6 +3523,98 @@
       "confianza": 7.8
     },
     {
+      "fixture_id": "401899990",
+      "fecha": "2026-10-21T14:00:00-05:00",
+      "fecha_display": "2026-10-21",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20330",
+        "nombre": "St Peter's",
+        "pais": "",
+        "rating": 1226.67,
+        "rd": 144.71,
+        "partidos_jugados": 11,
+        "pj_reales": 11,
+        "form_score": 41.2,
+        "form_local": 5.8,
+        "form_visitante": 46.0,
+        "momentum": "stable",
+        "momentum_diff": 1.6,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 4D",
+          "resultados": [
+            "V",
+            "D",
+            "D",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.91,
+          "goles_contra": 2.0,
+          "diferencia": -1.09
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -8.9,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20431",
+        "nombre": "Manhattan",
+        "pais": "",
+        "rating": 1678.3,
+        "rd": 127.88,
+        "partidos_jugados": 12,
+        "pj_reales": 12,
+        "form_score": 73.5,
+        "form_local": 79.3,
+        "form_visitante": 64.2,
+        "momentum": "stable",
+        "momentum_diff": 0.2,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 2E",
+          "resultados": [
+            "E",
+            "V",
+            "V",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.33,
+          "goles_contra": 0.5,
+          "diferencia": 0.83
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.1,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 13.1,
+        "prob_empate": 12.7,
+        "prob_visitante": 74.2
+      },
+      "diff_elo": -451.6,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401929987",
       "fecha": "2026-10-21T14:00:00-05:00",
       "fecha_display": "2026-10-21",
@@ -3705,98 +3797,6 @@
       },
       "diff_elo": -45.5,
       "confianza": 22.8
-    },
-    {
-      "fixture_id": "401899990",
-      "fecha": "2026-10-21T15:00:00-05:00",
-      "fecha_display": "2026-10-21",
-      "hora": "15:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "20330",
-        "nombre": "St Peter's",
-        "pais": "",
-        "rating": 1226.67,
-        "rd": 144.71,
-        "partidos_jugados": 11,
-        "pj_reales": 11,
-        "form_score": 41.2,
-        "form_local": 5.8,
-        "form_visitante": 46.0,
-        "momentum": "stable",
-        "momentum_diff": 1.6,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 4D",
-          "resultados": [
-            "V",
-            "D",
-            "D",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.91,
-          "goles_contra": 2.0,
-          "diferencia": -1.09
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -8.9,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20431",
-        "nombre": "Manhattan",
-        "pais": "",
-        "rating": 1678.3,
-        "rd": 127.88,
-        "partidos_jugados": 12,
-        "pj_reales": 12,
-        "form_score": 73.5,
-        "form_local": 79.3,
-        "form_visitante": 64.2,
-        "momentum": "stable",
-        "momentum_diff": 0.2,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 2E",
-          "resultados": [
-            "E",
-            "V",
-            "V",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.33,
-          "goles_contra": 0.5,
-          "diferencia": 0.83
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.1,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 13.1,
-        "prob_empate": 12.7,
-        "prob_visitante": 74.2
-      },
-      "diff_elo": -451.6,
-      "confianza": 100.0
     },
     {
       "fixture_id": "401879570",
@@ -4117,7 +4117,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.8,
+        "overperformance": 7.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4295,7 +4295,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.0,
+        "overperformance": 5.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4425,7 +4425,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.6,
+        "overperformance": -3.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -4479,7 +4479,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.1,
+        "overperformance": 4.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5123,7 +5123,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.2,
+        "overperformance": -0.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5161,11 +5161,11 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 12.4,
+        "overperformance": 12.6,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 40.3,
+        "prob_local": 40.2,
         "prob_empate": 20.9,
         "prob_visitante": 38.9
       },
@@ -5399,7 +5399,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.0,
+        "overperformance": 7.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5437,7 +5437,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.2,
+        "overperformance": -7.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -5491,7 +5491,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.3,
+        "overperformance": -3.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5583,7 +5583,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.5,
+        "overperformance": -5.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5621,7 +5621,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.1,
+        "overperformance": 8.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -5675,7 +5675,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.3,
+        "overperformance": -1.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5767,7 +5767,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.6,
+        "overperformance": -4.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5805,7 +5805,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.5,
+        "overperformance": 3.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -5859,7 +5859,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.7,
+        "overperformance": 6.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5897,7 +5897,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.0,
+        "overperformance": -0.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -5951,7 +5951,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 11.4,
+        "overperformance": 11.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5989,7 +5989,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.2,
+        "overperformance": 3.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -6043,7 +6043,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.1,
+        "overperformance": 7.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -6779,7 +6779,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.6,
+        "overperformance": 3.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -6909,7 +6909,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.6,
+        "overperformance": 8.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -7201,13 +7201,13 @@
       "fecha": "2026-10-21T19:00:00-05:00",
       "fecha_display": "2026-10-21",
       "hora": "19:00",
-      "liga": "usa.ncaa.w.1",
-      "liga_pais": "EE.UU.",
-      "liga_slug": "usa.ncaa.w.1",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
       "equipo_local": {
         "id": "20641",
         "nombre": "Utah Valley",
-        "pais": "EE.UU.",
+        "pais": "",
         "rating": 1683.18,
         "rd": 112.74,
         "partidos_jugados": 14,
@@ -7245,7 +7245,7 @@
       "equipo_visitante": {
         "id": "20466",
         "nombre": "Sacramento St",
-        "pais": "EE.UU.",
+        "pais": "",
         "rating": 1636.55,
         "rd": 166.51,
         "partidos_jugados": 7,
@@ -7331,7 +7331,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.8,
+        "overperformance": 0.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7369,7 +7369,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.4,
+        "overperformance": 1.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -7460,7 +7460,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.3,
+        "overperformance": 4.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -7698,7 +7698,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.9,
+        "overperformance": 6.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7706,7 +7706,7 @@
         "nombre": "América",
         "pais": "",
         "rating": 1865.93,
-        "rd": 216.16886254822754,
+        "rd": 216.67076779418073,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 97.3,
@@ -7736,7 +7736,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.5,
+        "overperformance": 8.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -7798,7 +7798,7 @@
         "nombre": "Monterrey",
         "pais": "",
         "rating": 1645.61,
-        "rd": 201.82557137427972,
+        "rd": 202.3632869346627,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 42.5,
@@ -7828,7 +7828,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.5,
+        "overperformance": -1.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -7882,7 +7882,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.6,
+        "overperformance": -0.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7920,7 +7920,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -15.7,
+        "overperformance": -15.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -7944,7 +7944,7 @@
         "nombre": "Gonzaga",
         "pais": "",
         "rating": 1460.47,
-        "rd": 211.67513067158015,
+        "rd": 212.18771678105608,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 46.9,
@@ -8120,13 +8120,13 @@
       "fecha": "2026-10-21T20:00:00-05:00",
       "fecha_display": "2026-10-21",
       "hora": "20:00",
-      "liga": "usa.ncaa.w.1",
-      "liga_pais": "EE.UU.",
-      "liga_slug": "usa.ncaa.w.1",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
       "equipo_local": {
         "id": "20475",
         "nombre": "Cal Poly",
-        "pais": "EE.UU.",
+        "pais": "",
         "rating": 1528.05,
         "rd": 153.67,
         "partidos_jugados": 7,
@@ -8164,7 +8164,7 @@
       "equipo_visitante": {
         "id": "20342",
         "nombre": "Santa Barbara",
-        "pais": "EE.UU.",
+        "pais": "",
         "rating": 1602.6,
         "rd": 182.18,
         "partidos_jugados": 5,
@@ -8342,7 +8342,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.4,
+        "overperformance": 5.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8380,7 +8380,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.9,
+        "overperformance": -1.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -8710,7 +8710,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.6,
+        "overperformance": 7.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8718,7 +8718,7 @@
         "nombre": "Santa Clara",
         "pais": "",
         "rating": 1476.63,
-        "rd": 215.55908777563366,
+        "rd": 216.06247655041625,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 15.4,
@@ -8748,7 +8748,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.2,
+        "overperformance": 1.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -8772,7 +8772,7 @@
         "nombre": "San Diego St",
         "pais": "",
         "rating": 1480.62,
-        "rd": 232.20904139877237,
+        "rd": 232.67639569854077,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 33.6,
@@ -8802,7 +8802,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -17.9,
+        "overperformance": -18.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8840,13 +8840,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.8,
+        "overperformance": 9.9,
         "vol": 0.06
       },
       "prediccion": {
         "prob_local": 22.0,
         "prob_empate": 15.4,
-        "prob_visitante": 62.6
+        "prob_visitante": 62.5
       },
       "diff_elo": -334.4,
       "confianza": 100.0
@@ -8894,7 +8894,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.2,
+        "overperformance": 4.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8956,7 +8956,7 @@
         "nombre": "Seattle U",
         "pais": "",
         "rating": 1490.0,
-        "rd": 215.48113680319287,
+        "rd": 215.98469048968138,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 41.8,
@@ -8986,7 +8986,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.4,
+        "overperformance": -1.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9078,7 +9078,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 11.6,
+        "overperformance": 11.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9116,7 +9116,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.9,
+        "overperformance": 7.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -9538,7 +9538,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.3,
+        "overperformance": 0.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9576,7 +9576,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.1,
+        "overperformance": -1.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -9630,7 +9630,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -10.5,
+        "overperformance": -10.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9668,13 +9668,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -11.4,
+        "overperformance": -11.7,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 76.3,
+        "prob_local": 77.3,
         "prob_empate": 19.0,
-        "prob_visitante": 4.7
+        "prob_visitante": 3.6
       },
       "diff_elo": 178.1,
       "confianza": 89.1
