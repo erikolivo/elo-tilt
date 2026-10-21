@@ -1,7 +1,7 @@
 {
-  "generado": "2026-10-21T09:43:57.692884Z",
+  "generado": "2026-10-21T14:22:02.010363Z",
   "fecha_consulta": "2026-10-21",
-  "total": 106,
+  "total": 107,
   "predicciones": [
     {
       "fixture_id": "401877589",
@@ -1264,6 +1264,98 @@
       },
       "diff_elo": -15.4,
       "confianza": 7.7
+    },
+    {
+      "fixture_id": "401879586",
+      "fecha": "2026-10-21T11:00:00-05:00",
+      "fecha_display": "2026-10-21",
+      "hora": "11:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "7870",
+        "nombre": "Malacateco",
+        "pais": "",
+        "rating": 1363.54,
+        "rd": 159.9,
+        "partidos_jugados": 7,
+        "pj_reales": 7,
+        "form_score": 31.1,
+        "form_local": 90.7,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.7,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 3D",
+          "resultados": [
+            "D",
+            "V",
+            "D",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.29,
+          "goles_contra": 1.57,
+          "diferencia": -0.28
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -4.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "7257",
+        "nombre": "Comunicaciones",
+        "pais": "",
+        "rating": 1296.28,
+        "rd": 145.53,
+        "partidos_jugados": 8,
+        "pj_reales": 8,
+        "form_score": 21.2,
+        "form_local": 37.8,
+        "form_visitante": 13.8,
+        "momentum": "stable",
+        "momentum_diff": -0.6,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "1V 3D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "V",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.5,
+          "goles_contra": 1.75,
+          "diferencia": -0.25
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -1.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 63.8,
+        "prob_empate": 21.6,
+        "prob_visitante": 14.6
+      },
+      "diff_elo": 67.3,
+      "confianza": 33.6
     },
     {
       "fixture_id": "401914215",
@@ -4939,7 +5031,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.2,
+        "overperformance": -9.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7706,7 +7798,7 @@
         "nombre": "América",
         "pais": "",
         "rating": 1865.93,
-        "rd": 216.9212849332274,
+        "rd": 217.17151308964324,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 97.3,
@@ -7798,7 +7890,7 @@
         "nombre": "Monterrey",
         "pais": "",
         "rating": 1645.61,
-        "rd": 202.6316096225456,
+        "rd": 202.89957746985772,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 42.5,
@@ -7832,7 +7924,7 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 35.0,
+        "prob_local": 35.1,
         "prob_empate": 18.5,
         "prob_visitante": 46.5
       },
@@ -7944,7 +8036,7 @@
         "nombre": "Gonzaga",
         "pais": "",
         "rating": 1460.47,
-        "rd": 212.4435460462879,
+        "rd": 212.69906760652435,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 46.9,
@@ -8120,13 +8212,13 @@
       "fecha": "2026-10-21T20:00:00-05:00",
       "fecha_display": "2026-10-21",
       "hora": "20:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
       "equipo_local": {
         "id": "20475",
         "nombre": "Cal Poly",
-        "pais": "",
+        "pais": "EE.UU.",
         "rating": 1528.05,
         "rd": 153.67,
         "partidos_jugados": 7,
@@ -8164,7 +8256,7 @@
       "equipo_visitante": {
         "id": "20342",
         "nombre": "Santa Barbara",
-        "pais": "",
+        "pais": "EE.UU.",
         "rating": 1602.6,
         "rd": 182.18,
         "partidos_jugados": 5,
@@ -8718,7 +8810,7 @@
         "nombre": "Santa Clara",
         "pais": "",
         "rating": 1476.63,
-        "rd": 216.31373164530513,
+        "rd": 216.56469523801655,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 15.4,
@@ -8772,7 +8864,7 @@
         "nombre": "San Diego St",
         "pais": "",
         "rating": 1480.62,
-        "rd": 232.9097211780296,
+        "rd": 233.14281314934644,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 33.6,
@@ -8956,7 +9048,7 @@
         "nombre": "Seattle U",
         "pais": "",
         "rating": 1490.0,
-        "rd": 216.23602759458709,
+        "rd": 216.48707290240355,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 41.8,
