@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-23T14:03:45.147617Z",
+  "generado": "2026-10-23T18:52:31.789914Z",
   "fecha_consulta": "2026-10-24",
   "total": 409,
   "predicciones": [
@@ -142,7 +142,7 @@
       },
       "equipo_visitante": {
         "id": "22344",
-        "nombre": "AUCKLANDFC",
+        "nombre": "Auckland",
         "pais": "",
         "rating": 1399.32,
         "rd": 208.17,
@@ -231,10 +231,10 @@
         "id": "20282",
         "nombre": "Perth Glory",
         "pais": "",
-        "rating": 1348.97,
-        "rd": 218.04,
-        "partidos_jugados": 3,
-        "pj_reales": 3,
+        "rating": 1243.41,
+        "rd": 193.47,
+        "partidos_jugados": 4,
+        "pj_reales": 4,
         "form_score": 100.0,
         "form_local": 50.0,
         "form_visitante": 100.0,
@@ -258,15 +258,15 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 40.7,
+        "overperformance": 50.6,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 75.1,
-        "prob_empate": 16.5,
-        "prob_visitante": 8.4
+        "prob_local": 82.1,
+        "prob_empate": 14.1,
+        "prob_visitante": 3.8
       },
-      "diff_elo": 286.9,
+      "diff_elo": 392.5,
       "confianza": 100.0
     },
     {
@@ -1383,7 +1383,7 @@
       "liga_slug": "all",
       "equipo_local": {
         "id": "5328",
-        "nombre": "MELB VICT",
+        "nombre": "Melbourne V",
         "pais": "",
         "rating": 1682.45,
         "rd": 221.53,
@@ -1418,7 +1418,7 @@
       },
       "equipo_visitante": {
         "id": "11143",
-        "nombre": "MELB CITY",
+        "nombre": "Melbourne C",
         "pais": "",
         "rating": 1542.99,
         "rd": 213.86,
@@ -9553,7 +9553,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.1,
+        "overperformance": -4.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -10892,7 +10892,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -15.2,
+        "overperformance": -17.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -13859,6 +13859,98 @@
       },
       "diff_elo": -432.2,
       "confianza": 100.0
+    },
+    {
+      "fixture_id": "401886265",
+      "fecha": "2026-10-24T11:00:00-05:00",
+      "fecha_display": "2026-10-24",
+      "hora": "11:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "19344",
+        "nombre": "Cornell",
+        "pais": "EE.UU.",
+        "rating": 1566.86,
+        "rd": 120.44,
+        "partidos_jugados": 11,
+        "pj_reales": 11,
+        "form_score": 34.5,
+        "form_local": 47.0,
+        "form_visitante": 21.8,
+        "momentum": "stable",
+        "momentum_diff": -2.6,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 3D",
+          "resultados": [
+            "D",
+            "V",
+            "D",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.45,
+          "goles_contra": 1.64,
+          "diferencia": -0.19
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20428",
+        "nombre": "Pennsylvania",
+        "pais": "EE.UU.",
+        "rating": 1522.21,
+        "rd": 137.63,
+        "partidos_jugados": 9,
+        "pj_reales": 9,
+        "form_score": 39.4,
+        "form_local": 35.6,
+        "form_visitante": 58.6,
+        "momentum": "stable",
+        "momentum_diff": 0.3,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "D",
+            "V",
+            "E",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 1.44,
+          "diferencia": -0.44
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 4.2,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 58.2,
+        "prob_empate": 22.1,
+        "prob_visitante": 19.7
+      },
+      "diff_elo": 44.6,
+      "confianza": 22.3
     },
     {
       "fixture_id": "401886761",
@@ -17415,98 +17507,6 @@
       "confianza": 45.3
     },
     {
-      "fixture_id": "401886265",
-      "fecha": "2026-10-24T12:00:00-05:00",
-      "fecha_display": "2026-10-24",
-      "hora": "12:00",
-      "liga": "usa.ncaa.w.1",
-      "liga_pais": "EE.UU.",
-      "liga_slug": "usa.ncaa.w.1",
-      "equipo_local": {
-        "id": "19344",
-        "nombre": "Cornell",
-        "pais": "EE.UU.",
-        "rating": 1566.86,
-        "rd": 120.44,
-        "partidos_jugados": 11,
-        "pj_reales": 11,
-        "form_score": 34.5,
-        "form_local": 47.0,
-        "form_visitante": 21.8,
-        "momentum": "stable",
-        "momentum_diff": -2.6,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 3D",
-          "resultados": [
-            "D",
-            "V",
-            "D",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.45,
-          "goles_contra": 1.64,
-          "diferencia": -0.19
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.3,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20428",
-        "nombre": "Pennsylvania",
-        "pais": "EE.UU.",
-        "rating": 1522.21,
-        "rd": 137.63,
-        "partidos_jugados": 9,
-        "pj_reales": 9,
-        "form_score": 39.4,
-        "form_local": 35.6,
-        "form_visitante": 58.6,
-        "momentum": "stable",
-        "momentum_diff": 0.3,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "D",
-            "V",
-            "E",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 1.44,
-          "diferencia": -0.44
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 4.2,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 58.2,
-        "prob_empate": 22.1,
-        "prob_visitante": 19.7
-      },
-      "diff_elo": 44.6,
-      "confianza": 22.3
-    },
-    {
       "fixture_id": "401886775",
       "fecha": "2026-10-24T12:00:00-05:00",
       "fecha_display": "2026-10-24",
@@ -19561,7 +19561,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.9,
+        "overperformance": 5.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -21629,6 +21629,98 @@
       "confianza": 77.9
     },
     {
+      "fixture_id": "401898095",
+      "fecha": "2026-10-24T14:00:00-05:00",
+      "fecha_display": "2026-10-24",
+      "hora": "14:00",
+      "liga": "usa.ncaa.m.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.m.1",
+      "equipo_local": {
+        "id": "5717",
+        "nombre": "Cornell",
+        "pais": "EE.UU.",
+        "rating": 1814.66,
+        "rd": 127.95,
+        "partidos_jugados": 11,
+        "pj_reales": 5,
+        "form_score": 98.1,
+        "form_local": 100.0,
+        "form_visitante": 91.2,
+        "momentum": "stable",
+        "momentum_diff": 1.9,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 7
+        },
+        "ultimos5": {
+          "texto": "5V",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.73,
+          "goles_contra": 1.18,
+          "diferencia": 1.55
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 4.6,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "5737",
+        "nombre": "Dartmouth",
+        "pais": "EE.UU.",
+        "rating": 1551.31,
+        "rd": 126.27,
+        "partidos_jugados": 11,
+        "pj_reales": 5,
+        "form_score": 66.0,
+        "form_local": 76.4,
+        "form_visitante": 17.8,
+        "momentum": "stable",
+        "momentum_diff": 0.5,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1D 3E",
+          "resultados": [
+            "V",
+            "E",
+            "E",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.91,
+          "goles_contra": 0.64,
+          "diferencia": 0.27
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -4.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 82.4,
+        "prob_empate": 16.6,
+        "prob_visitante": 1.0
+      },
+      "diff_elo": 263.4,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401887836",
       "fecha": "2026-10-24T14:00:00-05:00",
       "fecha_display": "2026-10-24",
@@ -23374,98 +23466,6 @@
         "prob_visitante": 3.1
       },
       "diff_elo": 222.1,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401898095",
-      "fecha": "2026-10-24T15:00:00-05:00",
-      "fecha_display": "2026-10-24",
-      "hora": "15:00",
-      "liga": "usa.ncaa.m.1",
-      "liga_pais": "EE.UU.",
-      "liga_slug": "usa.ncaa.m.1",
-      "equipo_local": {
-        "id": "5717",
-        "nombre": "Cornell",
-        "pais": "EE.UU.",
-        "rating": 1814.66,
-        "rd": 127.95,
-        "partidos_jugados": 11,
-        "pj_reales": 5,
-        "form_score": 98.1,
-        "form_local": 100.0,
-        "form_visitante": 91.2,
-        "momentum": "stable",
-        "momentum_diff": 1.9,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 7
-        },
-        "ultimos5": {
-          "texto": "5V",
-          "resultados": [
-            "V",
-            "V",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.73,
-          "goles_contra": 1.18,
-          "diferencia": 1.55
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 4.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "5737",
-        "nombre": "Dartmouth",
-        "pais": "EE.UU.",
-        "rating": 1551.31,
-        "rd": 126.27,
-        "partidos_jugados": 11,
-        "pj_reales": 5,
-        "form_score": 66.0,
-        "form_local": 76.4,
-        "form_visitante": 17.8,
-        "momentum": "stable",
-        "momentum_diff": 0.5,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1D 3E",
-          "resultados": [
-            "V",
-            "E",
-            "E",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.91,
-          "goles_contra": 0.64,
-          "diferencia": 0.27
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -4.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 82.4,
-        "prob_empate": 16.6,
-        "prob_visitante": 1.0
-      },
-      "diff_elo": 263.4,
       "confianza": 100.0
     },
     {
@@ -33512,7 +33512,7 @@
         "nombre": "San Jose",
         "pais": "",
         "rating": 1261.88,
-        "rd": 248.90207292810044,
+        "rd": 249.12020920255213,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 22.8,
@@ -33541,7 +33541,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -11.0,
+        "overperformance": -11.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -34209,7 +34209,7 @@
         "nombre": "Monterrey",
         "pais": "",
         "rating": 1645.61,
-        "rd": 206.35149548124636,
+        "rd": 206.61463889707792,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 42.5,
@@ -34393,7 +34393,7 @@
         "nombre": "Gonzaga",
         "pais": "EE.UU.",
         "rating": 1460.47,
-        "rd": 215.9933418237961,
+        "rd": 216.24466887341939,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 46.9,
@@ -35221,7 +35221,7 @@
         "nombre": "Colorado",
         "pais": "",
         "rating": 1652.19,
-        "rd": 229.0892750139705,
+        "rd": 229.3262659900938,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 72.4,
@@ -35401,7 +35401,7 @@
       "liga_slug": "all",
       "equipo_local": {
         "id": "8352",
-        "nombre": "WELLINGTON",
+        "nombre": "Wellington",
         "pais": "",
         "rating": 1542.38,
         "rd": 200.7,
@@ -35803,7 +35803,7 @@
         "nombre": "Santa Clara",
         "pais": "EE.UU.",
         "rating": 1476.63,
-        "rd": 219.80114797554617,
+        "rd": 220.0481342265502,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 15.4,
@@ -35895,7 +35895,7 @@
         "nombre": "Seattle U",
         "pais": "EE.UU.",
         "rating": 1490.0,
-        "rd": 219.7245618618388,
+        "rd": 219.97162587329439,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 41.8,
@@ -35987,7 +35987,7 @@
         "nombre": "San Diego St",
         "pais": "EE.UU.",
         "rating": 1480.62,
-        "rd": 236.152073195891,
+        "rd": 236.38196796431203,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 33.6,
@@ -36017,7 +36017,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -18.3,
+        "overperformance": -18.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -36631,7 +36631,7 @@
         "nombre": "Las Vegas",
         "pais": "EE.UU.",
         "rating": 1460.38,
-        "rd": 228.48438989661074,
+        "rd": 228.72200762707345,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 28.2,
@@ -36667,7 +36667,7 @@
       "prediccion": {
         "prob_local": 34.6,
         "prob_empate": 18.4,
-        "prob_visitante": 47.1
+        "prob_visitante": 47.0
       },
       "diff_elo": -206.8,
       "confianza": 100.0
@@ -37392,7 +37392,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.6,
+        "overperformance": -2.5,
         "vol": 0.06
       },
       "prediccion": {

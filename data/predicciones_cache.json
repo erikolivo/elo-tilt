@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-23T14:05:36.631759Z",
+  "generado": "2026-10-23T18:53:42.796112Z",
   "fecha_consulta": "2026-10-23",
   "total": 111,
   "predicciones": [
@@ -1541,6 +1541,186 @@
         "prob_visitante": 51.3
       },
       "diff_elo": -237.3,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401914243",
+      "fecha": "2026-10-23T13:00:00-05:00",
+      "fecha_display": "2026-10-23",
+      "hora": "13:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "7084",
+        "nombre": "M Sundowns",
+        "pais": "",
+        "rating": 1820.72,
+        "rd": 150.04,
+        "partidos_jugados": 10,
+        "pj_reales": 10,
+        "form_score": 75.4,
+        "form_local": 100.0,
+        "form_visitante": 68.9,
+        "momentum": "stable",
+        "momentum_diff": -1.6,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 2E",
+          "resultados": [
+            "E",
+            "V",
+            "V",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.3,
+          "goles_contra": 0.9,
+          "diferencia": 1.4
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 5.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "132914",
+        "nombre": "Wiliete",
+        "pais": "",
+        "rating": 1713.55,
+        "rd": 221.74,
+        "partidos_jugados": 3,
+        "pj_reales": 3,
+        "form_score": 74.7,
+        "form_local": 68.9,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1E",
+          "resultados": [
+            "E",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.67,
+          "goles_contra": 0.0,
+          "diferencia": 1.67
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 14.5,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 64.4,
+        "prob_empate": 20.7,
+        "prob_visitante": 14.9
+      },
+      "diff_elo": 107.2,
+      "confianza": 53.6
+    },
+    {
+      "fixture_id": "401914240",
+      "fecha": "2026-10-23T13:00:00-05:00",
+      "fecha_display": "2026-10-23",
+      "hora": "13:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "7085",
+        "nombre": "O Pirates",
+        "pais": "",
+        "rating": 1840.76,
+        "rd": 154.65,
+        "partidos_jugados": 10,
+        "pj_reales": 10,
+        "form_score": 98.2,
+        "form_local": 100.0,
+        "form_visitante": 90.7,
+        "momentum": "stable",
+        "momentum_diff": 1.8,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 5
+        },
+        "ultimos5": {
+          "texto": "5V",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.1,
+          "goles_contra": 0.2,
+          "diferencia": 1.9
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 7.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "132919",
+        "nombre": "African Stars",
+        "pais": "",
+        "rating": 1431.54,
+        "rd": 221.1,
+        "partidos_jugados": 3,
+        "pj_reales": 3,
+        "form_score": 30.7,
+        "form_local": 37.8,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 2D",
+          "resultados": [
+            "D",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 1.33,
+          "diferencia": -0.33
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -4.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 86.4,
+        "prob_empate": 12.7,
+        "prob_visitante": 0.9
+      },
+      "diff_elo": 409.2,
       "confianza": 100.0
     },
     {
@@ -3369,186 +3549,6 @@
         "prob_visitante": 77.8
       },
       "diff_elo": -497.2,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401914243",
-      "fecha": "2026-10-23T13:00:00-05:00",
-      "fecha_display": "2026-10-23",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "7084",
-        "nombre": "M Sundowns",
-        "pais": "",
-        "rating": 1820.72,
-        "rd": 150.04,
-        "partidos_jugados": 10,
-        "pj_reales": 10,
-        "form_score": 75.4,
-        "form_local": 100.0,
-        "form_visitante": 68.9,
-        "momentum": "stable",
-        "momentum_diff": -1.6,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 2E",
-          "resultados": [
-            "E",
-            "V",
-            "V",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.3,
-          "goles_contra": 0.9,
-          "diferencia": 1.4
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 4.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "132914",
-        "nombre": "Wiliete",
-        "pais": "",
-        "rating": 1713.55,
-        "rd": 221.74,
-        "partidos_jugados": 3,
-        "pj_reales": 3,
-        "form_score": 74.7,
-        "form_local": 68.9,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 1E",
-          "resultados": [
-            "E",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.67,
-          "goles_contra": 0.0,
-          "diferencia": 1.67
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 14.5,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 64.4,
-        "prob_empate": 20.7,
-        "prob_visitante": 14.9
-      },
-      "diff_elo": 107.2,
-      "confianza": 53.6
-    },
-    {
-      "fixture_id": "401914240",
-      "fecha": "2026-10-23T13:00:00-05:00",
-      "fecha_display": "2026-10-23",
-      "hora": "13:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "7085",
-        "nombre": "O Pirates",
-        "pais": "",
-        "rating": 1840.76,
-        "rd": 154.65,
-        "partidos_jugados": 10,
-        "pj_reales": 10,
-        "form_score": 98.2,
-        "form_local": 100.0,
-        "form_visitante": 90.7,
-        "momentum": "stable",
-        "momentum_diff": 1.8,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 5
-        },
-        "ultimos5": {
-          "texto": "5V",
-          "resultados": [
-            "V",
-            "V",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.1,
-          "goles_contra": 0.2,
-          "diferencia": 1.9
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 7.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "132919",
-        "nombre": "African Stars",
-        "pais": "",
-        "rating": 1431.54,
-        "rd": 221.1,
-        "partidos_jugados": 3,
-        "pj_reales": 3,
-        "form_score": 30.7,
-        "form_local": 37.8,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 2D",
-          "resultados": [
-            "D",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 1.33,
-          "diferencia": -0.33
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -4.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 86.4,
-        "prob_empate": 12.7,
-        "prob_visitante": 0.9
-      },
-      "diff_elo": 409.2,
       "confianza": 100.0
     },
     {
@@ -5887,7 +5887,7 @@
         "nombre": "Stanford",
         "pais": "",
         "rating": 1917.47,
-        "rd": 182.72926395416252,
+        "rd": 183.02628398797782,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 75.4,
@@ -6899,7 +6899,7 @@
         "nombre": "Washington",
         "pais": "",
         "rating": 1529.15,
-        "rd": 235.43828430083863,
+        "rd": 235.66889841985983,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 68.8,
@@ -7313,13 +7313,13 @@
       "fecha": "2026-10-23T18:00:00-05:00",
       "fecha_display": "2026-10-23",
       "hora": "18:00",
-      "liga": "usa.ncaa.w.1",
-      "liga_pais": "EE.UU.",
-      "liga_slug": "usa.ncaa.w.1",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
       "equipo_local": {
         "id": "20543",
         "nombre": "Navy",
-        "pais": "EE.UU.",
+        "pais": "",
         "rating": 1669.52,
         "rd": 126.87,
         "partidos_jugados": 15,
@@ -7357,7 +7357,7 @@
       "equipo_visitante": {
         "id": "20454",
         "nombre": "American",
-        "pais": "EE.UU.",
+        "pais": "",
         "rating": 1090.78,
         "rd": 124.34,
         "partidos_jugados": 14,
