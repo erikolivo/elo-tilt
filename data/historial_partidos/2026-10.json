@@ -127636,6 +127636,72 @@
         "overperformance_h": 4.5,
         "overperformance_a": -0.2
       }
+    },
+    {
+      "fixture_id": "401892156",
+      "fecha": "2026-10-23",
+      "fecha_hora_espn": "2026-10-23T09:00Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5326",
+        "name": "Brisbane"
+      },
+      "equipo_visitante": {
+        "id": "5322",
+        "name": "Perth Glory"
+      },
+      "goles_local": 2,
+      "goles_visitante": 1,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-10-23T04:00:00-05:00",
+        "prob_local": 51.2,
+        "prob_empate": 21.6,
+        "prob_visitante": 27.2,
+        "diff_elo": -67.6,
+        "pj_h": 4,
+        "pj_a": 3,
+        "rating_local": 1281.36,
+        "rating_visitante": 1348.97,
+        "overperformance_h": 0.6,
+        "overperformance_a": -26.7
+      }
+    },
+    {
+      "fixture_id": "401925428",
+      "fecha": "2026-10-23",
+      "fecha_hora_espn": "2026-10-23T11:30Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "22069",
+        "name": "Inter Kashi"
+      },
+      "equipo_visitante": {
+        "id": "8897",
+        "name": "East Bengal"
+      },
+      "goles_local": 1,
+      "goles_visitante": 5,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-10-23T06:30:00-05:00",
+        "prob_local": 27.6,
+        "prob_empate": 16.9,
+        "prob_visitante": 55.5,
+        "diff_elo": -269.6,
+        "pj_h": 2,
+        "pj_a": 4,
+        "rating_local": 1320.93,
+        "rating_visitante": 1590.5,
+        "overperformance_h": -20.8,
+        "overperformance_a": 5.5
+      }
     }
   ]
 }
