@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-23T18:53:42.796112Z",
+  "generado": "2026-10-23T22:48:14.397122Z",
   "fecha_consulta": "2026-10-23",
   "total": 111,
   "predicciones": [
@@ -5015,6 +5015,92 @@
       "confianza": 39.5
     },
     {
+      "fixture_id": "401912476",
+      "fecha": "2026-10-23T15:00:00-05:00",
+      "fecha_display": "2026-10-23",
+      "hora": "15:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "8618",
+        "nombre": "Raja",
+        "pais": "",
+        "rating": 1513.22,
+        "rd": 273.54,
+        "partidos_jugados": 1,
+        "pj_reales": 1,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1E",
+          "resultados": [
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.0,
+          "goles_contra": 2.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "17796",
+        "nombre": "El Kanemi",
+        "pais": "",
+        "rating": 1527.82,
+        "rd": 218.25,
+        "partidos_jugados": 3,
+        "pj_reales": 3,
+        "form_score": 44.0,
+        "form_local": 68.9,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1D 1E",
+          "resultados": [
+            "E",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.67,
+          "goles_contra": 1.0,
+          "diferencia": 0.67
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 54.2,
+        "prob_empate": 22.8,
+        "prob_visitante": 23.0
+      },
+      "diff_elo": -14.6,
+      "confianza": 7.3
+    },
+    {
       "fixture_id": "401888575",
       "fecha": "2026-10-23T15:00:00-05:00",
       "fecha_display": "2026-10-23",
@@ -5105,92 +5191,6 @@
       },
       "diff_elo": -34.7,
       "confianza": 17.4
-    },
-    {
-      "fixture_id": "401912476",
-      "fecha": "2026-10-23T15:00:00-05:00",
-      "fecha_display": "2026-10-23",
-      "hora": "15:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "8618",
-        "nombre": "Raja",
-        "pais": "",
-        "rating": 1513.22,
-        "rd": 273.54,
-        "partidos_jugados": 1,
-        "pj_reales": 1,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1E",
-          "resultados": [
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 2.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 1.4,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "17796",
-        "nombre": "El Kanemi",
-        "pais": "",
-        "rating": 1527.82,
-        "rd": 218.25,
-        "partidos_jugados": 3,
-        "pj_reales": 3,
-        "form_score": 44.0,
-        "form_local": 68.9,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1D 1E",
-          "resultados": [
-            "E",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.67,
-          "goles_contra": 1.0,
-          "diferencia": 0.67
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 2.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 54.2,
-        "prob_empate": 22.8,
-        "prob_visitante": 23.0
-      },
-      "diff_elo": -14.6,
-      "confianza": 7.3
     },
     {
       "fixture_id": "401900212",
@@ -6899,7 +6899,7 @@
         "nombre": "Washington",
         "pais": "",
         "rating": 1529.15,
-        "rd": 235.66889841985983,
+        "rd": 235.89928709162712,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 68.8,
@@ -7297,7 +7297,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 12.5,
+        "overperformance": 12.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -7405,13 +7405,13 @@
       "fecha": "2026-10-23T18:00:00-05:00",
       "fecha_display": "2026-10-23",
       "hora": "18:00",
-      "liga": "usa.ncaa.w.1",
-      "liga_pais": "EE.UU.",
-      "liga_slug": "usa.ncaa.w.1",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
       "equipo_local": {
         "id": "20368",
         "nombre": "South Carolina",
-        "pais": "EE.UU.",
+        "pais": "",
         "rating": 1750.61,
         "rd": 135.91,
         "partidos_jugados": 10,
@@ -7449,7 +7449,7 @@
       "equipo_visitante": {
         "id": "20532",
         "nombre": "Georgia",
-        "pais": "EE.UU.",
+        "pais": "",
         "rating": 1795.02,
         "rd": 154.99,
         "partidos_jugados": 8,
@@ -7535,7 +7535,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.4,
+        "overperformance": -3.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8585,7 +8585,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.0,
+        "overperformance": 8.9,
         "vol": 0.06
       },
       "prediccion": {
