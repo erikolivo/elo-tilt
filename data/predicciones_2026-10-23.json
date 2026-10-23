@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-22T23:50:38.667438Z",
+  "generado": "2026-10-23T02:59:34.008024Z",
   "fecha_consulta": "2026-10-23",
   "total": 111,
   "predicciones": [
@@ -4739,6 +4739,98 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401889554",
+      "fecha": "2026-10-23T14:00:00-05:00",
+      "fecha_display": "2026-10-23",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20541",
+        "nombre": "The Citadel",
+        "pais": "",
+        "rating": 1543.72,
+        "rd": 123.15,
+        "partidos_jugados": 12,
+        "pj_reales": 12,
+        "form_score": 61.6,
+        "form_local": 73.4,
+        "form_visitante": 38.5,
+        "momentum": "stable",
+        "momentum_diff": -3.2,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 3D",
+          "resultados": [
+            "V",
+            "D",
+            "V",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.58,
+          "goles_contra": 1.5,
+          "diferencia": 1.08
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -4.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20550",
+        "nombre": "Samford",
+        "pais": "",
+        "rating": 1838.57,
+        "rd": 149.86,
+        "partidos_jugados": 8,
+        "pj_reales": 8,
+        "form_score": 85.0,
+        "form_local": 68.2,
+        "form_visitante": 86.6,
+        "momentum": "stable",
+        "momentum_diff": 1.2,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "V",
+            "V",
+            "E",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.27,
+          "goles_contra": 0.45,
+          "diferencia": 0.82
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -4.2,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 23.5,
+        "prob_empate": 16.3,
+        "prob_visitante": 60.2
+      },
+      "diff_elo": -294.8,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401885655",
       "fecha": "2026-10-23T14:05:00-05:00",
       "fecha_display": "2026-10-23",
@@ -5191,98 +5283,6 @@
       },
       "diff_elo": -72.3,
       "confianza": 36.1
-    },
-    {
-      "fixture_id": "401889554",
-      "fecha": "2026-10-23T15:00:00-05:00",
-      "fecha_display": "2026-10-23",
-      "hora": "15:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "20541",
-        "nombre": "The Citadel",
-        "pais": "",
-        "rating": 1543.72,
-        "rd": 123.15,
-        "partidos_jugados": 12,
-        "pj_reales": 12,
-        "form_score": 61.6,
-        "form_local": 73.4,
-        "form_visitante": 38.5,
-        "momentum": "stable",
-        "momentum_diff": -3.2,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 3D",
-          "resultados": [
-            "V",
-            "D",
-            "V",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.58,
-          "goles_contra": 1.5,
-          "diferencia": 1.08
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -4.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20550",
-        "nombre": "Samford",
-        "pais": "",
-        "rating": 1838.57,
-        "rd": 149.86,
-        "partidos_jugados": 8,
-        "pj_reales": 8,
-        "form_score": 85.0,
-        "form_local": 68.2,
-        "form_visitante": 86.6,
-        "momentum": "stable",
-        "momentum_diff": 1.2,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "3V 1D 1E",
-          "resultados": [
-            "V",
-            "V",
-            "E",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.27,
-          "goles_contra": 0.45,
-          "diferencia": 0.82
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -4.2,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 23.5,
-        "prob_empate": 16.3,
-        "prob_visitante": 60.2
-      },
-      "diff_elo": -294.8,
-      "confianza": 100.0
     },
     {
       "fixture_id": "401886161",
@@ -5887,7 +5887,7 @@
         "nombre": "Stanford",
         "pais": "",
         "rating": 1917.47,
-        "rd": 181.23686236287693,
+        "rd": 181.5363242008561,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 75.4,
@@ -6757,98 +6757,6 @@
       "confianza": 82.4
     },
     {
-      "fixture_id": "401898563",
-      "fecha": "2026-10-23T18:00:00-05:00",
-      "fecha_display": "2026-10-23",
-      "hora": "18:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "18032",
-        "nombre": "Incarnate Word",
-        "pais": "",
-        "rating": 1483.68,
-        "rd": 118.03,
-        "partidos_jugados": 12,
-        "pj_reales": 6,
-        "form_score": 88.4,
-        "form_local": 74.3,
-        "form_visitante": 68.9,
-        "momentum": "up",
-        "momentum_diff": 6.5,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "4V 1E",
-          "resultados": [
-            "V",
-            "V",
-            "V",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.33,
-          "goles_contra": 1.83,
-          "diferencia": -0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.3,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "17392",
-        "nombre": "Hou Christian",
-        "pais": "",
-        "rating": 1293.49,
-        "rd": 137.8,
-        "partidos_jugados": 9,
-        "pj_reales": 9,
-        "form_score": 21.9,
-        "form_local": 16.7,
-        "form_visitante": 26.6,
-        "momentum": "stable",
-        "momentum_diff": -3.2,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "D",
-            "D",
-            "V",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.91,
-          "goles_contra": 1.64,
-          "diferencia": -0.73
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 5.1,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 80.6,
-        "prob_empate": 18.4,
-        "prob_visitante": 1.0
-      },
-      "diff_elo": 190.2,
-      "confianza": 95.1
-    },
-    {
       "fixture_id": "401891002",
       "fecha": "2026-10-23T18:00:00-05:00",
       "fecha_display": "2026-10-23",
@@ -6991,7 +6899,7 @@
         "nombre": "Washington",
         "pais": "",
         "rating": 1529.15,
-        "rd": 234.2818086727693,
+        "rd": 234.5135600405481,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 68.8,
@@ -7313,13 +7221,13 @@
       "fecha": "2026-10-23T18:00:00-05:00",
       "fecha_display": "2026-10-23",
       "hora": "18:00",
-      "liga": "usa.ncaa.w.1",
-      "liga_pais": "EE.UU.",
-      "liga_slug": "usa.ncaa.w.1",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
       "equipo_local": {
         "id": "20405",
         "nombre": "Louisville",
-        "pais": "EE.UU.",
+        "pais": "",
         "rating": 1705.82,
         "rd": 146.68,
         "partidos_jugados": 8,
@@ -7357,7 +7265,7 @@
       "equipo_visitante": {
         "id": "20400",
         "nombre": "Syracuse",
-        "pais": "EE.UU.",
+        "pais": "",
         "rating": 1497.13,
         "rd": 144.32,
         "partidos_jugados": 9,
@@ -7443,7 +7351,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.4,
+        "overperformance": 0.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7675,6 +7583,98 @@
       },
       "diff_elo": -88.1,
       "confianza": 44.0
+    },
+    {
+      "fixture_id": "401898563",
+      "fecha": "2026-10-23T18:00:00-05:00",
+      "fecha_display": "2026-10-23",
+      "hora": "18:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "18032",
+        "nombre": "Incarnate Word",
+        "pais": "",
+        "rating": 1483.68,
+        "rd": 118.03,
+        "partidos_jugados": 12,
+        "pj_reales": 6,
+        "form_score": 88.4,
+        "form_local": 74.3,
+        "form_visitante": 68.9,
+        "momentum": "up",
+        "momentum_diff": 6.5,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "4V 1E",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.33,
+          "goles_contra": 1.83,
+          "diferencia": -0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "17392",
+        "nombre": "Hou Christian",
+        "pais": "",
+        "rating": 1293.49,
+        "rd": 137.8,
+        "partidos_jugados": 9,
+        "pj_reales": 9,
+        "form_score": 21.9,
+        "form_local": 16.7,
+        "form_visitante": 26.6,
+        "momentum": "stable",
+        "momentum_diff": -3.2,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "1V 3D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "V",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.91,
+          "goles_contra": 1.64,
+          "diferencia": -0.73
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 5.1,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 80.6,
+        "prob_empate": 18.4,
+        "prob_visitante": 1.0
+      },
+      "diff_elo": 190.2,
+      "confianza": 95.1
     },
     {
       "fixture_id": "401878620",
@@ -8493,7 +8493,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 10.5,
+        "overperformance": 10.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -8547,7 +8547,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.4,
+        "overperformance": 2.3,
         "vol": 0.06
       },
       "equipo_visitante": {
