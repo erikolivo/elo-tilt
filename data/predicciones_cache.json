@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-24T13:07:19.251756Z",
+  "generado": "2026-10-24T17:50:32.648855Z",
   "fecha_consulta": "2026-10-24",
   "total": 409,
   "predicciones": [
@@ -12951,6 +12951,180 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401913120",
+      "fecha": "2026-10-24T11:00:00-05:00",
+      "fecha_display": "2026-10-24",
+      "hora": "11:00",
+      "liga": "CAF Champions League",
+      "liga_pais": "",
+      "liga_slug": "caf.champions",
+      "equipo_local": {
+        "id": "8377",
+        "nombre": "ES Tunis",
+        "pais": "",
+        "rating": 1382.52,
+        "rd": 282.27,
+        "partidos_jugados": 1,
+        "pj_reales": 1,
+        "form_score": 0.0,
+        "form_local": 50.0,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1D",
+          "resultados": [
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 1.0,
+          "diferencia": -1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -21.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "133222",
+        "nombre": "Asswehly",
+        "pais": "",
+        "rating": 1731.75,
+        "rd": 233.11,
+        "partidos_jugados": 3,
+        "pj_reales": 3,
+        "form_score": 100.0,
+        "form_local": 100.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "3V",
+          "resultados": [
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.67,
+          "goles_contra": 0.0,
+          "diferencia": 1.67
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 17.3,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 20.6,
+        "prob_empate": 15.1,
+        "prob_visitante": 64.4
+      },
+      "diff_elo": -349.2,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401912474",
+      "fecha": "2026-10-24T11:00:00-05:00",
+      "fecha_display": "2026-10-24",
+      "hora": "11:00",
+      "liga": "CAF Confederation Cup",
+      "liga_pais": "",
+      "liga_slug": "caf.confed",
+      "equipo_local": {
+        "id": "21800",
+        "nombre": "Réal Bamako",
+        "pais": "",
+        "rating": 1676.55,
+        "rd": 214.03,
+        "partidos_jugados": 3,
+        "pj_reales": 3,
+        "form_score": 84.6,
+        "form_local": 50.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1E",
+          "resultados": [
+            "V",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.67,
+          "goles_contra": 0.67,
+          "diferencia": 1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 10.8,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "133107",
+        "nombre": "Zarzis",
+        "pais": "",
+        "rating": 1443.84,
+        "rd": 211.2,
+        "partidos_jugados": 3,
+        "pj_reales": 3,
+        "form_score": 18.6,
+        "form_local": 37.8,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "1V 2D",
+          "resultados": [
+            "D",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.33,
+          "goles_contra": 1.67,
+          "diferencia": -0.34
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -1.4,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 79.3,
+        "prob_empate": 17.8,
+        "prob_visitante": 2.9
+      },
+      "diff_elo": 232.7,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401874948",
       "fecha": "2026-10-24T11:00:00-05:00",
       "fecha_display": "2026-10-24",
@@ -13317,180 +13491,6 @@
       },
       "diff_elo": -82.5,
       "confianza": 41.3
-    },
-    {
-      "fixture_id": "401913120",
-      "fecha": "2026-10-24T11:00:00-05:00",
-      "fecha_display": "2026-10-24",
-      "hora": "11:00",
-      "liga": "CAF Champions League",
-      "liga_pais": "",
-      "liga_slug": "caf.champions",
-      "equipo_local": {
-        "id": "8377",
-        "nombre": "ES Tunis",
-        "pais": "",
-        "rating": 1382.52,
-        "rd": 282.27,
-        "partidos_jugados": 1,
-        "pj_reales": 1,
-        "form_score": 0.0,
-        "form_local": 50.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1D",
-          "resultados": [
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 1.0,
-          "diferencia": -1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -21.2,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "133222",
-        "nombre": "Asswehly",
-        "pais": "",
-        "rating": 1731.75,
-        "rd": 233.11,
-        "partidos_jugados": 3,
-        "pj_reales": 3,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "3V",
-          "resultados": [
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.67,
-          "goles_contra": 0.0,
-          "diferencia": 1.67
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 17.3,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 20.6,
-        "prob_empate": 15.1,
-        "prob_visitante": 64.4
-      },
-      "diff_elo": -349.2,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401912474",
-      "fecha": "2026-10-24T11:00:00-05:00",
-      "fecha_display": "2026-10-24",
-      "hora": "11:00",
-      "liga": "CAF Confederation Cup",
-      "liga_pais": "",
-      "liga_slug": "caf.confed",
-      "equipo_local": {
-        "id": "21800",
-        "nombre": "Réal Bamako",
-        "pais": "",
-        "rating": 1676.55,
-        "rd": 214.03,
-        "partidos_jugados": 3,
-        "pj_reales": 3,
-        "form_score": 84.6,
-        "form_local": 50.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 1E",
-          "resultados": [
-            "V",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.67,
-          "goles_contra": 0.67,
-          "diferencia": 1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 10.8,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "133107",
-        "nombre": "Zarzis",
-        "pais": "",
-        "rating": 1443.84,
-        "rd": 211.2,
-        "partidos_jugados": 3,
-        "pj_reales": 3,
-        "form_score": 18.6,
-        "form_local": 37.8,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "1V 2D",
-          "resultados": [
-            "D",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.33,
-          "goles_contra": 1.67,
-          "diferencia": -0.34
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -1.4,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 79.3,
-        "prob_empate": 17.8,
-        "prob_visitante": 2.9
-      },
-      "diff_elo": 232.7,
-      "confianza": 100.0
     },
     {
       "fixture_id": "401896814",
@@ -14505,6 +14505,86 @@
       "confianza": 72.0
     },
     {
+      "fixture_id": "401928634",
+      "fecha": "2026-10-24T11:30:00-05:00",
+      "fecha_display": "2026-10-24",
+      "hora": "11:30",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "21247",
+        "nombre": "Harrogate Town",
+        "pais": "",
+        "rating": 1738.95,
+        "rd": 109.98,
+        "partidos_jugados": 16,
+        "pj_reales": 16,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "131477",
+        "nombre": "Bolton",
+        "pais": "",
+        "rating": 1527.48,
+        "rd": 118.66,
+        "partidos_jugados": 13,
+        "pj_reales": 13,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 76.6,
+        "prob_empate": 18.3,
+        "prob_visitante": 5.2
+      },
+      "diff_elo": 211.5,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401878767",
       "fecha": "2026-10-24T11:30:00-05:00",
       "fecha_display": "2026-10-24",
@@ -14779,86 +14859,6 @@
       },
       "diff_elo": 100.2,
       "confianza": 50.1
-    },
-    {
-      "fixture_id": "401928634",
-      "fecha": "2026-10-24T11:30:00-05:00",
-      "fecha_display": "2026-10-24",
-      "hora": "11:30",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "21247",
-        "nombre": "Harrogate Town",
-        "pais": "",
-        "rating": 1723.23,
-        "rd": 113.19,
-        "partidos_jugados": 15,
-        "pj_reales": 15,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "131477",
-        "nombre": "Bolton",
-        "pais": "",
-        "rating": 1527.48,
-        "rd": 118.66,
-        "partidos_jugados": 13,
-        "pj_reales": 13,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 75.1,
-        "prob_empate": 18.6,
-        "prob_visitante": 6.3
-      },
-      "diff_elo": 195.8,
-      "confianza": 97.9
     },
     {
       "fixture_id": "401921376",
@@ -18469,7 +18469,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.8,
+        "overperformance": -0.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -18507,7 +18507,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.5,
+        "overperformance": -5.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -19745,7 +19745,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.1,
+        "overperformance": -1.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19837,7 +19837,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.3,
+        "overperformance": 6.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -20205,7 +20205,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.0,
+        "overperformance": 6.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -20243,7 +20243,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.4,
+        "overperformance": -6.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -20335,7 +20335,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.2,
+        "overperformance": -5.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -20389,7 +20389,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.3,
+        "overperformance": -5.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -20427,7 +20427,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.4,
+        "overperformance": -2.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -20519,7 +20519,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.8,
+        "overperformance": 8.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -20573,7 +20573,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.1,
+        "overperformance": 5.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -20611,7 +20611,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.3,
+        "overperformance": -0.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -20665,7 +20665,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.3,
+        "overperformance": 0.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -20703,7 +20703,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.8,
+        "overperformance": 1.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -20795,7 +20795,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.5,
+        "overperformance": -0.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -20849,7 +20849,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 12.0,
+        "overperformance": 11.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -20887,7 +20887,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.7,
+        "overperformance": 5.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -21395,7 +21395,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.5,
+        "overperformance": 6.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -21433,7 +21433,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.3,
+        "overperformance": -1.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -21525,7 +21525,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.7,
+        "overperformance": 7.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -22867,7 +22867,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.0,
+        "overperformance": 4.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -25811,7 +25811,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.1,
+        "overperformance": -0.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -25849,7 +25849,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.5,
+        "overperformance": -3.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -28203,7 +28203,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.0,
+        "overperformance": -6.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -30122,7 +30122,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -11.5,
+        "overperformance": -11.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -30160,7 +30160,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.3,
+        "overperformance": -2.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -31218,7 +31218,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.2,
+        "overperformance": -1.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -33512,7 +33512,7 @@
         "nombre": "San Jose",
         "pais": "",
         "rating": 1261.88,
-        "rd": 250.64184748291487,
+        "rd": 250.85847092507495,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 22.8,
@@ -34209,7 +34209,7 @@
         "nombre": "Monterrey",
         "pais": "",
         "rating": 1645.61,
-        "rd": 208.44734165043087,
+        "rd": 208.70784259426986,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 42.5,
@@ -34393,7 +34393,7 @@
         "nombre": "Gonzaga",
         "pais": "EE.UU.",
         "rating": 1460.47,
-        "rd": 217.99584524462796,
+        "rd": 218.2448662577962,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 46.9,
@@ -34523,7 +34523,7 @@
         "nombre": "Santa Barbara",
         "pais": "EE.UU.",
         "rating": 1649.64,
-        "rd": 144.06567614947804,
+        "rd": 144.44211013588748,
         "partidos_jugados": 8,
         "pj_reales": 0,
         "form_score": 51.9,
@@ -35221,7 +35221,7 @@
         "nombre": "Colorado",
         "pais": "",
         "rating": 1652.19,
-        "rd": 230.97839444131486,
+        "rd": 231.21344910108553,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 72.4,
@@ -35803,7 +35803,7 @@
         "nombre": "Santa Clara",
         "pais": "EE.UU.",
         "rating": 1476.63,
-        "rd": 221.76933614255884,
+        "rd": 222.014132834667,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 15.4,
@@ -35895,7 +35895,7 @@
         "nombre": "Seattle U",
         "pais": "EE.UU.",
         "rating": 1490.0,
-        "rd": 221.6933646212389,
+        "rd": 221.93823695129495,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 41.8,
@@ -35987,7 +35987,7 @@
         "nombre": "San Diego St",
         "pais": "EE.UU.",
         "rating": 1480.62,
-        "rd": 237.98501319710454,
+        "rd": 238.2131390381093,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 33.6,
@@ -36133,7 +36133,7 @@
         "nombre": "CA Baptist",
         "pais": "EE.UU.",
         "rating": 1708.53,
-        "rd": 152.9769097473676,
+        "rd": 153.33156237323686,
         "partidos_jugados": 7,
         "pj_reales": 0,
         "form_score": 58.4,
@@ -36225,7 +36225,7 @@
         "nombre": "Long Beach St",
         "pais": "EE.UU.",
         "rating": 1730.46,
-        "rd": 140.35617743585874,
+        "rd": 140.74253330286416,
         "partidos_jugados": 10,
         "pj_reales": 0,
         "form_score": 61.0,
@@ -36631,7 +36631,7 @@
         "nombre": "Las Vegas",
         "pais": "EE.UU.",
         "rating": 1460.38,
-        "rd": 230.3784694772657,
+        "rd": 230.61413561449365,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 28.2,
