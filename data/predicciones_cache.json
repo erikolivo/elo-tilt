@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-25T22:13:39.336426Z",
+  "generado": "2026-10-25T23:03:24.551285Z",
   "fecha_consulta": "2026-10-25",
   "total": 338,
   "predicciones": [
@@ -28498,98 +28498,6 @@
       "confianza": 15.2
     },
     {
-      "fixture_id": "401886333",
-      "fecha": "2026-10-25T18:00:00-05:00",
-      "fecha_display": "2026-10-25",
-      "hora": "18:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "20720",
-        "nombre": "Tapatío",
-        "pais": "",
-        "rating": 1505.07,
-        "rd": 177.86,
-        "partidos_jugados": 6,
-        "pj_reales": 6,
-        "form_score": 22.5,
-        "form_local": 37.8,
-        "form_visitante": 30.5,
-        "momentum": "stable",
-        "momentum_diff": 0.8,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "D",
-            "D",
-            "E",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 2.17,
-          "diferencia": -0.17
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -1.4,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "221",
-        "nombre": "Morelia",
-        "pais": "",
-        "rating": 1534.36,
-        "rd": 179.01,
-        "partidos_jugados": 6,
-        "pj_reales": 6,
-        "form_score": 57.5,
-        "form_local": 44.0,
-        "form_visitante": 74.7,
-        "momentum": "stable",
-        "momentum_diff": -1.5,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V 1D 2E",
-          "resultados": [
-            "E",
-            "E",
-            "V",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.67,
-          "goles_contra": 1.17,
-          "diferencia": 0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 11.5,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 47.8,
-        "prob_empate": 22.5,
-        "prob_visitante": 29.7
-      },
-      "diff_elo": -29.3,
-      "confianza": 14.6
-    },
-    {
       "fixture_id": "401850670",
       "fecha": "2026-10-25T18:00:00-05:00",
       "fecha_display": "2026-10-25",
@@ -28670,7 +28578,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.1,
+        "overperformance": -0.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -28724,7 +28632,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.9,
+        "overperformance": 1.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -28762,7 +28670,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.5,
+        "overperformance": 0.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -28866,6 +28774,98 @@
       "confianza": 95.1
     },
     {
+      "fixture_id": "401886333",
+      "fecha": "2026-10-25T18:00:00-05:00",
+      "fecha_display": "2026-10-25",
+      "hora": "18:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20720",
+        "nombre": "Tapatío",
+        "pais": "",
+        "rating": 1505.07,
+        "rd": 177.86,
+        "partidos_jugados": 6,
+        "pj_reales": 6,
+        "form_score": 22.5,
+        "form_local": 37.8,
+        "form_visitante": 30.5,
+        "momentum": "stable",
+        "momentum_diff": 0.8,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "E",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.0,
+          "goles_contra": 2.17,
+          "diferencia": -0.17
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -1.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "221",
+        "nombre": "Morelia",
+        "pais": "",
+        "rating": 1534.36,
+        "rd": 179.01,
+        "partidos_jugados": 6,
+        "pj_reales": 6,
+        "form_score": 57.5,
+        "form_local": 44.0,
+        "form_visitante": 74.7,
+        "momentum": "stable",
+        "momentum_diff": -1.5,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "E",
+            "E",
+            "V",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.67,
+          "goles_contra": 1.17,
+          "diferencia": 0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 11.5,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 47.8,
+        "prob_empate": 22.5,
+        "prob_visitante": 29.7
+      },
+      "diff_elo": -29.3,
+      "confianza": 14.6
+    },
+    {
       "fixture_id": "401878052",
       "fecha": "2026-10-25T18:10:00-05:00",
       "fecha_display": "2026-10-25",
@@ -28908,7 +28908,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.0,
+        "overperformance": -1.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -28946,7 +28946,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.0,
+        "overperformance": -0.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -28970,7 +28970,7 @@
         "nombre": "UPNFM",
         "pais": "Honduras",
         "rating": 1291.84,
-        "rd": 241.46751295595746,
+        "rd": 241.69235928831804,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 13.4,
@@ -28999,7 +28999,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.4,
+        "overperformance": -5.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -29037,7 +29037,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.2,
+        "overperformance": 2.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -29367,7 +29367,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.8,
+        "overperformance": 5.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -29649,7 +29649,7 @@
         "nombre": "Monterrey",
         "pais": "México",
         "rating": 1645.61,
-        "rd": 211.0378815126854,
+        "rd": 211.2951886640709,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 50.0,
@@ -30133,7 +30133,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.5,
+        "overperformance": 8.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -30157,7 +30157,7 @@
         "nombre": "América",
         "pais": "",
         "rating": 1865.93,
-        "rd": 224.79047033868486,
+        "rd": 225.03194838877835,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 97.3,
@@ -30279,7 +30279,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.3,
+        "overperformance": 0.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -30317,7 +30317,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.9,
+        "overperformance": -4.8,
         "vol": 0.06
       },
       "prediccion": {
