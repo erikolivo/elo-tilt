@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-27T11:27:26.283509Z",
+  "generado": "2026-10-27T17:17:31.352744Z",
   "fecha_consulta": "2026-10-28",
   "total": 180,
   "predicciones": [
@@ -2595,7 +2595,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.8,
+        "overperformance": -1.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -2990,7 +2990,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 36.1,
+        "overperformance": 38.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4229,7 +4229,7 @@
         "nombre": "Regent",
         "pais": "EE.UU.",
         "rating": 1337.69,
-        "rd": 349.8835006583641,
+        "rd": 349.88,
         "partidos_jugados": 1,
         "pj_reales": 1,
         "form_score": 50.0,
@@ -4673,7 +4673,7 @@
         "nombre": "Alcoyano",
         "pais": "",
         "rating": 1579.81,
-        "rd": 260.9549129224999,
+        "rd": 261.37088596250607,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 49.6,
@@ -4799,7 +4799,7 @@
         "nombre": "UD Logroñés",
         "pais": "",
         "rating": 1500.0,
-        "rd": 337.23323521571245,
+        "rd": 337.23,
         "partidos_jugados": 1,
         "pj_reales": 1,
         "form_score": 50.0,
@@ -7079,7 +7079,7 @@
         "nombre": "Gim. Torrelavega",
         "pais": "",
         "rating": 1549.35,
-        "rd": 256.137559288734,
+        "rd": 256.56134301337283,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 47.8,
@@ -7147,9 +7147,9 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 75.8,
+        "prob_local": 75.7,
         "prob_empate": 18.0,
-        "prob_visitante": 6.2
+        "prob_visitante": 6.3
       },
       "diff_elo": 222.6,
       "confianza": 100.0
@@ -7564,7 +7564,7 @@
         "nombre": "American Int'l",
         "pais": "EE.UU.",
         "rating": 1865.93,
-        "rd": 226.9545234626333,
+        "rd": 227.19370141074248,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 50.0,
@@ -10159,98 +10159,6 @@
       "confianza": 17.5
     },
     {
-      "fixture_id": "401930993",
-      "fecha": "2026-10-28T16:30:00-05:00",
-      "fecha_display": "2026-10-28",
-      "hora": "16:30",
-      "liga": "Venezuela - Liga FUTVE",
-      "liga_pais": "Venezuela",
-      "liga_slug": "ven.1",
-      "equipo_local": {
-        "id": "6037",
-        "nombre": "Carabobo",
-        "pais": "Venezuela",
-        "rating": 1587.16,
-        "rd": 145.58,
-        "partidos_jugados": 10,
-        "pj_reales": 10,
-        "form_score": 74.9,
-        "form_local": 63.4,
-        "form_visitante": 76.9,
-        "momentum": "stable",
-        "momentum_diff": 1.5,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 1D 2E",
-          "resultados": [
-            "V",
-            "E",
-            "V",
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.3,
-          "goles_contra": 0.9,
-          "diferencia": 0.4
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.3,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "17090",
-        "nombre": "La Guaira",
-        "pais": "Venezuela",
-        "rating": 1471.31,
-        "rd": 142.87,
-        "partidos_jugados": 9,
-        "pj_reales": 9,
-        "form_score": 38.1,
-        "form_local": 33.9,
-        "form_visitante": 74.7,
-        "momentum": "stable",
-        "momentum_diff": -4.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2D 3E",
-          "resultados": [
-            "E",
-            "D",
-            "E",
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.89,
-          "goles_contra": 1.22,
-          "diferencia": 0.67
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 1.1,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 67.8,
-        "prob_empate": 20.5,
-        "prob_visitante": 11.7
-      },
-      "diff_elo": 115.9,
-      "confianza": 57.9
-    },
-    {
       "fixture_id": "401898328",
       "fecha": "2026-10-28T17:00:00-05:00",
       "fecha_display": "2026-10-28",
@@ -10485,7 +10393,7 @@
         "nombre": "CA Baptist",
         "pais": "EE.UU.",
         "rating": 1708.53,
-        "rd": 159.58058745086134,
+        "rd": 159.92059590661103,
         "partidos_jugados": 7,
         "pj_reales": 0,
         "form_score": 58.4,
@@ -12809,6 +12717,98 @@
       "confianza": 35.9
     },
     {
+      "fixture_id": "401930993",
+      "fecha": "2026-10-28T18:30:00-05:00",
+      "fecha_display": "2026-10-28",
+      "hora": "18:30",
+      "liga": "Venezuela - Liga FUTVE",
+      "liga_pais": "Venezuela",
+      "liga_slug": "ven.1",
+      "equipo_local": {
+        "id": "6037",
+        "nombre": "Carabobo",
+        "pais": "Venezuela",
+        "rating": 1587.16,
+        "rd": 145.58,
+        "partidos_jugados": 10,
+        "pj_reales": 10,
+        "form_score": 74.9,
+        "form_local": 63.4,
+        "form_visitante": 76.9,
+        "momentum": "stable",
+        "momentum_diff": 1.5,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "V",
+            "E",
+            "V",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.3,
+          "goles_contra": 0.9,
+          "diferencia": 0.4
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "17090",
+        "nombre": "La Guaira",
+        "pais": "Venezuela",
+        "rating": 1471.31,
+        "rd": 142.87,
+        "partidos_jugados": 9,
+        "pj_reales": 9,
+        "form_score": 38.1,
+        "form_local": 33.9,
+        "form_visitante": 74.7,
+        "momentum": "stable",
+        "momentum_diff": -4.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2D 3E",
+          "resultados": [
+            "E",
+            "D",
+            "E",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.89,
+          "goles_contra": 1.22,
+          "diferencia": 0.67
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.1,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 67.8,
+        "prob_empate": 20.5,
+        "prob_visitante": 11.7
+      },
+      "diff_elo": 115.9,
+      "confianza": 57.9
+    },
+    {
       "fixture_id": "401930969",
       "fecha": "2026-10-28T18:30:00-05:00",
       "fecha_display": "2026-10-28",
@@ -13503,7 +13503,7 @@
         "nombre": "Long Beach St",
         "pais": "EE.UU.",
         "rating": 1730.46,
-        "rd": 147.52401543591486,
+        "rd": 147.89164704755174,
         "partidos_jugados": 10,
         "pj_reales": 0,
         "form_score": 61.0,
@@ -15895,7 +15895,7 @@
         "nombre": "Colorado",
         "pais": "",
         "rating": 1652.19,
-        "rd": 235.40430175085487,
+        "rd": 235.63494144404848,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 72.4,
@@ -16132,7 +16132,7 @@
         "nombre": "América",
         "pais": "",
         "rating": 1865.93,
-        "rd": 226.9545234626333,
+        "rd": 227.19370141074248,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 97.3,
