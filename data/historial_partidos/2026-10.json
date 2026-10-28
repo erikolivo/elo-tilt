@@ -176841,6 +176841,169 @@
         "overperformance_h": 5.0,
         "overperformance_a": 0.8
       }
+    },
+    {
+      "fixture_id": "401917034",
+      "fecha": "2026-10-28",
+      "fecha_hora_espn": "2026-10-28T19:45Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "7884",
+        "name": "Holstein Kiel"
+      },
+      "equipo_visitante": {
+        "id": "7911",
+        "name": "Hoffenheim"
+      },
+      "goles_local": 1,
+      "goles_visitante": 1,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-10-28T14:45:00-05:00",
+        "prob_local": 51.2,
+        "prob_empate": 23.1,
+        "prob_visitante": 25.7,
+        "diff_elo": 2.7,
+        "pj_h": 11,
+        "pj_a": 14,
+        "rating_local": 1560.41,
+        "rating_visitante": 1557.72,
+        "overperformance_h": -3.9,
+        "overperformance_a": -5.3
+      }
+    },
+    {
+      "fixture_id": "401879592",
+      "fecha": "2026-10-28",
+      "fecha_hora_espn": "2026-10-28T21:00Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "gua.1",
+      "equipo_local": {
+        "id": "7254",
+        "name": "Cobán Imperial"
+      },
+      "equipo_visitante": {
+        "id": "7251",
+        "name": "Suchitepeque"
+      },
+      "goles_local": 2,
+      "goles_visitante": 1,
+      "estadisticas": {
+        "home": {},
+        "away": {}
+      },
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-10-28T16:00:00-05:00",
+        "prob_local": 60.8,
+        "prob_empate": 22.3,
+        "prob_visitante": 16.8,
+        "diff_elo": 34.9,
+        "pj_h": 13,
+        "pj_a": 7,
+        "rating_local": 1419.97,
+        "rating_visitante": 1385.05,
+        "overperformance_h": -4.5,
+        "overperformance_a": -4.4
+      }
+    },
+    {
+      "fixture_id": "401886130",
+      "fecha": "2026-10-28",
+      "fecha_hora_espn": "2026-10-28T20:30Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "per.1",
+      "equipo_local": {
+        "id": "5267",
+        "name": "Alianza Atl"
+      },
+      "equipo_visitante": {
+        "id": "21819",
+        "name": "Garcilaso"
+      },
+      "goles_local": 3,
+      "goles_visitante": 2,
+      "estadisticas": {
+        "home": {
+          "foulsCommitted": "9",
+          "yellowCards": "0",
+          "redCards": "0",
+          "offsides": "3",
+          "wonCorners": "6",
+          "saves": "4",
+          "possessionPct": "53.1",
+          "totalShots": "16",
+          "shotsOnTarget": "6",
+          "shotPct": "0.4",
+          "penaltyKickGoals": "0",
+          "penaltyKickShots": "0",
+          "accuratePasses": "251",
+          "totalPasses": "334",
+          "passPct": "0.8",
+          "accurateCrosses": "0",
+          "totalCrosses": "0",
+          "crossPct": "0.0",
+          "totalLongBalls": "0",
+          "accurateLongBalls": "0",
+          "longballPct": "0.0",
+          "blockedShots": "4",
+          "effectiveTackles": "6",
+          "totalTackles": "10",
+          "tacklePct": "0.6",
+          "interceptions": "0",
+          "effectiveClearance": "0",
+          "totalClearance": "25"
+        },
+        "away": {
+          "foulsCommitted": "10",
+          "yellowCards": "2",
+          "redCards": "0",
+          "offsides": "2",
+          "wonCorners": "5",
+          "saves": "3",
+          "possessionPct": "46.9",
+          "totalShots": "17",
+          "shotsOnTarget": "6",
+          "shotPct": "0.4",
+          "penaltyKickGoals": "0",
+          "penaltyKickShots": "0",
+          "accuratePasses": "201",
+          "totalPasses": "296",
+          "passPct": "0.7",
+          "accurateCrosses": "0",
+          "totalCrosses": "0",
+          "crossPct": "0.0",
+          "totalLongBalls": "0",
+          "accurateLongBalls": "0",
+          "longballPct": "0.0",
+          "blockedShots": "3",
+          "effectiveTackles": "11",
+          "totalTackles": "14",
+          "tacklePct": "0.8",
+          "interceptions": "0",
+          "effectiveClearance": "0",
+          "totalClearance": "30"
+        }
+      },
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-10-28T15:30:00-05:00",
+        "prob_local": 63.8,
+        "prob_empate": 21.1,
+        "prob_visitante": 15.2,
+        "diff_elo": 90.6,
+        "pj_h": 8,
+        "pj_a": 9,
+        "rating_local": 1694.03,
+        "rating_visitante": 1603.4,
+        "overperformance_h": -1.0,
+        "overperformance_a": 0.0
+      }
     }
   ]
 }
