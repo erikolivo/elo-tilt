@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-28T10:53:48.343611Z",
+  "generado": "2026-10-28T12:00:37.161065Z",
   "fecha_consulta": "2026-10-28",
   "total": 180,
   "predicciones": [
@@ -710,7 +710,7 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401916270",
+      "fixture_id": "401916254",
       "fecha": "2026-10-28T10:00:00-05:00",
       "fecha_display": "2026-10-28",
       "hora": "10:00",
@@ -718,84 +718,84 @@
       "liga_pais": "",
       "liga_slug": "fifa.wworld.u17",
       "equipo_local": {
-        "id": "22303",
-        "nombre": "North Korea",
+        "id": "131750",
+        "nombre": "Argentina",
         "pais": "",
-        "rating": 1618.98,
-        "rd": 203.47,
-        "partidos_jugados": 3,
-        "pj_reales": 3,
-        "form_score": 49.4,
+        "rating": 1806.46,
+        "rd": 84.95,
+        "partidos_jugados": 28,
+        "pj_reales": 6,
+        "form_score": 81.4,
         "form_local": 100.0,
         "form_visitante": 0.0,
         "momentum": "stable",
         "momentum_diff": 0.0,
         "streak": {
-          "tipo": "L",
-          "cantidad": 1
+          "tipo": "W",
+          "cantidad": 2
         },
         "ultimos5": {
           "texto": "2V 1D",
           "resultados": [
-            "D",
             "V",
-            "V"
+            "V",
+            "D"
           ]
         },
         "goal_trend": {
-          "goles_favor": 4.33,
-          "goles_contra": 1.33,
-          "diferencia": 3.0
+          "goles_favor": 2.67,
+          "goles_contra": 1.0,
+          "diferencia": 1.67
         },
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.3,
+        "overperformance": -9.5,
         "vol": 0.06
       },
       "equipo_visitante": {
-        "id": "21560",
-        "nombre": "Morocco",
+        "id": "132376",
+        "nombre": "Ghana",
         "pais": "",
-        "rating": 1696.03,
-        "rd": 118.7,
-        "partidos_jugados": 12,
-        "pj_reales": 12,
-        "form_score": 18.6,
-        "form_local": 37.8,
+        "rating": 1491.87,
+        "rd": 97.2,
+        "partidos_jugados": 25,
+        "pj_reales": 3,
+        "form_score": 66.0,
+        "form_local": 81.1,
         "form_visitante": 0.0,
         "momentum": "stable",
         "momentum_diff": 0.0,
         "streak": {
-          "tipo": "L",
-          "cantidad": 2
+          "tipo": "W",
+          "cantidad": 1
         },
         "ultimos5": {
-          "texto": "1V 2D",
+          "texto": "1V 1D 1E",
           "resultados": [
-            "D",
-            "D",
-            "V"
+            "V",
+            "E",
+            "D"
           ]
         },
         "goal_trend": {
-          "goles_favor": 2.33,
-          "goles_contra": 3.0,
-          "diferencia": -0.67
+          "goles_favor": 1.67,
+          "goles_contra": 2.0,
+          "diferencia": -0.33
         },
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -34.2,
+        "overperformance": 0.8,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 52.1,
-        "prob_empate": 21.4,
-        "prob_visitante": 26.5
+        "prob_local": 84.1,
+        "prob_empate": 15.0,
+        "prob_visitante": 0.9
       },
-      "diff_elo": -77.0,
-      "confianza": 38.5
+      "diff_elo": 314.6,
+      "confianza": 100.0
     },
     {
       "fixture_id": "401898246",
@@ -2902,7 +2902,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 42.6,
+        "overperformance": 37.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3397,7 +3397,7 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401916254",
+      "fixture_id": "401916270",
       "fecha": "2026-10-28T13:00:00-05:00",
       "fecha_display": "2026-10-28",
       "hora": "13:00",
@@ -3405,84 +3405,84 @@
       "liga_pais": "",
       "liga_slug": "fifa.wworld.u17",
       "equipo_local": {
-        "id": "131750",
-        "nombre": "Argentina",
+        "id": "22303",
+        "nombre": "North Korea",
         "pais": "",
-        "rating": 1806.46,
-        "rd": 84.95,
-        "partidos_jugados": 28,
-        "pj_reales": 6,
-        "form_score": 81.4,
+        "rating": 1618.98,
+        "rd": 203.47,
+        "partidos_jugados": 3,
+        "pj_reales": 3,
+        "form_score": 49.4,
         "form_local": 100.0,
         "form_visitante": 0.0,
         "momentum": "stable",
         "momentum_diff": 0.0,
         "streak": {
-          "tipo": "W",
-          "cantidad": 2
+          "tipo": "L",
+          "cantidad": 1
         },
         "ultimos5": {
           "texto": "2V 1D",
           "resultados": [
+            "D",
             "V",
-            "V",
-            "D"
+            "V"
           ]
         },
         "goal_trend": {
-          "goles_favor": 2.67,
-          "goles_contra": 1.0,
-          "diferencia": 1.67
+          "goles_favor": 4.33,
+          "goles_contra": 1.33,
+          "diferencia": 3.0
         },
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.5,
+        "overperformance": 6.3,
         "vol": 0.06
       },
       "equipo_visitante": {
-        "id": "132376",
-        "nombre": "Ghana",
+        "id": "21560",
+        "nombre": "Morocco",
         "pais": "",
-        "rating": 1491.87,
-        "rd": 97.2,
-        "partidos_jugados": 25,
-        "pj_reales": 3,
-        "form_score": 66.0,
-        "form_local": 81.1,
+        "rating": 1696.03,
+        "rd": 118.7,
+        "partidos_jugados": 12,
+        "pj_reales": 12,
+        "form_score": 18.6,
+        "form_local": 37.8,
         "form_visitante": 0.0,
         "momentum": "stable",
         "momentum_diff": 0.0,
         "streak": {
-          "tipo": "W",
-          "cantidad": 1
+          "tipo": "L",
+          "cantidad": 2
         },
         "ultimos5": {
-          "texto": "1V 1D 1E",
+          "texto": "1V 2D",
           "resultados": [
-            "V",
-            "E",
-            "D"
+            "D",
+            "D",
+            "V"
           ]
         },
         "goal_trend": {
-          "goles_favor": 1.67,
-          "goles_contra": 2.0,
-          "diferencia": -0.33
+          "goles_favor": 2.33,
+          "goles_contra": 3.0,
+          "diferencia": -0.67
         },
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.8,
+        "overperformance": -34.2,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 84.1,
-        "prob_empate": 15.0,
-        "prob_visitante": 0.9
+        "prob_local": 52.1,
+        "prob_empate": 21.4,
+        "prob_visitante": 26.5
       },
-      "diff_elo": 314.6,
-      "confianza": 100.0
+      "diff_elo": -77.0,
+      "confianza": 38.5
     },
     {
       "fixture_id": "401916259",
@@ -4673,7 +4673,7 @@
         "nombre": "Alcoyano",
         "pais": "",
         "rating": 1579.81,
-        "rd": 263.44089902861424,
+        "rd": 263.8529528571556,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 49.6,
@@ -7055,13 +7055,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 14.3,
+        "overperformance": 14.0,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 70.8,
+        "prob_local": 70.9,
         "prob_empate": 18.6,
-        "prob_visitante": 10.6
+        "prob_visitante": 10.5
       },
       "diff_elo": 197.0,
       "confianza": 98.5
@@ -7079,7 +7079,7 @@
         "nombre": "Gim. Torrelavega",
         "pais": "",
         "rating": 1549.35,
-        "rd": 258.6698474523167,
+        "rd": 259.0894892338178,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 47.8,
@@ -7564,7 +7564,7 @@
         "nombre": "American Int'l",
         "pais": "EE.UU.",
         "rating": 1865.93,
-        "rd": 228.38583398172236,
+        "rd": 228.62351454758434,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 50.0,
@@ -10393,7 +10393,7 @@
         "nombre": "CA Baptist",
         "pais": "EE.UU.",
         "rating": 1708.53,
-        "rd": 161.6099084677156,
+        "rd": 161.94565637554774,
         "partidos_jugados": 7,
         "pj_reales": 0,
         "form_score": 58.4,
@@ -13503,7 +13503,7 @@
         "nombre": "Long Beach St",
         "pais": "EE.UU.",
         "rating": 1730.46,
-        "rd": 149.71626480428057,
+        "rd": 150.07852638884427,
         "partidos_jugados": 10,
         "pj_reales": 0,
         "form_score": 61.0,
@@ -15895,7 +15895,7 @@
         "nombre": "Colorado",
         "pais": "",
         "rating": 1652.19,
-        "rd": 236.78477012258054,
+        "rd": 237.014066478207,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 72.4,
@@ -16132,7 +16132,7 @@
         "nombre": "América",
         "pais": "",
         "rating": 1865.93,
-        "rd": 228.38583398172236,
+        "rd": 228.62351454758434,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 97.3,
