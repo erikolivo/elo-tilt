@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-30T23:25:24.977342Z",
+  "generado": "2026-10-31T03:47:51.958411Z",
   "fecha_consulta": "2026-10-30",
   "total": 138,
   "predicciones": [
@@ -12485,34 +12485,34 @@
         "rd": 167.63,
         "partidos_jugados": 5,
         "pj_reales": 5,
-        "form_score": 20.9,
-        "form_local": 31.1,
-        "form_visitante": 15.4,
+        "form_score": 16.1,
+        "form_local": 36.6,
+        "form_visitante": 12.7,
         "momentum": "stable",
-        "momentum_diff": 0.0,
+        "momentum_diff": -0.5,
         "streak": {
           "tipo": "L",
-          "cantidad": 1
+          "cantidad": 2
         },
         "ultimos5": {
-          "texto": "3D 2E",
+          "texto": "2D 3E",
           "resultados": [
             "D",
-            "E",
-            "E",
             "D",
-            "D"
+            "E",
+            "E",
+            "E"
           ]
         },
         "goal_trend": {
-          "goles_favor": 1.4,
-          "goles_contra": 3.6,
-          "diferencia": -2.2
+          "goles_favor": 1.44,
+          "goles_contra": 3.22,
+          "diferencia": -1.78
         },
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.8,
+        "overperformance": -4.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -12548,9 +12548,9 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 26.0,
+        "prob_local": 25.9,
         "prob_empate": 16.8,
-        "prob_visitante": 57.2
+        "prob_visitante": 57.3
       },
       "diff_elo": -276.0,
       "confianza": 100.0
@@ -12578,11 +12578,12 @@
         "momentum_diff": 0.0,
         "streak": {
           "tipo": "L",
-          "cantidad": 1
+          "cantidad": 2
         },
         "ultimos5": {
-          "texto": "1D",
+          "texto": "2D",
           "resultados": [
+            "D",
             "D"
           ]
         },
@@ -12605,19 +12606,21 @@
         "rd": 144.27,
         "partidos_jugados": 9,
         "pj_reales": 7,
-        "form_score": 18.9,
-        "form_local": 18.9,
+        "form_score": 13.4,
+        "form_local": 13.4,
         "form_visitante": 50.0,
         "momentum": "stable",
         "momentum_diff": 0.0,
         "streak": {
           "tipo": "L",
-          "cantidad": 1
+          "cantidad": 2
         },
         "ultimos5": {
-          "texto": "1D 1E",
+          "texto": "2D 2E",
           "resultados": [
             "D",
+            "D",
+            "E",
             "E"
           ]
         },
@@ -12633,9 +12636,9 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 23.1,
+        "prob_local": 23.3,
         "prob_empate": 15.5,
-        "prob_visitante": 61.4
+        "prob_visitante": 61.2
       },
       "diff_elo": -330.5,
       "confianza": 100.0
