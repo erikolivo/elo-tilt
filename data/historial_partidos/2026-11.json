@@ -467,6 +467,156 @@
         "overperformance_h": 6.5,
         "overperformance_a": 2.5
       }
+    },
+    {
+      "fixture_id": "401888374",
+      "fecha": "2026-11-01",
+      "fecha_hora_espn": "2026-11-01T10:30Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "132335",
+        "name": "Amed SFK"
+      },
+      "equipo_visitante": {
+        "id": "20729",
+        "name": "Eyupspor"
+      },
+      "goles_local": 5,
+      "goles_visitante": 1,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-11-01T05:30:00-05:00",
+        "prob_local": 88.6,
+        "prob_empate": 10.5,
+        "prob_visitante": 0.9,
+        "diff_elo": 492.0,
+        "pj_h": 9,
+        "pj_a": 9,
+        "rating_local": 1683.09,
+        "rating_visitante": 1191.08,
+        "overperformance_h": 7.0,
+        "overperformance_a": -4.6
+      }
+    },
+    {
+      "fixture_id": "401879819",
+      "fecha": "2026-11-01",
+      "fecha_hora_espn": "2026-11-01T10:00Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "18285",
+        "name": "Orenburg"
+      },
+      "equipo_visitante": {
+        "id": "1963",
+        "name": "CSKA Moscow"
+      },
+      "goles_local": 0,
+      "goles_visitante": 0,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-11-01T05:00:00-05:00",
+        "prob_local": 32.8,
+        "prob_empate": 18.3,
+        "prob_visitante": 48.9,
+        "diff_elo": -208.2,
+        "pj_h": 12,
+        "pj_a": 12,
+        "rating_local": 1528.99,
+        "rating_visitante": 1737.19,
+        "overperformance_h": -2.2,
+        "overperformance_a": 0.4
+      }
+    },
+    {
+      "fixture_id": "401930706",
+      "fecha": "2026-11-01",
+      "fecha_hora_espn": "2026-11-01T10:30Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "ind.2",
+      "equipo_local": {
+        "id": "21312",
+        "name": "Rajasthan Utd"
+      },
+      "equipo_visitante": {
+        "id": "21311",
+        "name": "Sreenidi"
+      },
+      "goles_local": 0,
+      "goles_visitante": 1,
+      "estadisticas": {
+        "home": {
+          "foulsCommitted": "0",
+          "yellowCards": "0",
+          "redCards": "0",
+          "offsides": "0",
+          "wonCorners": "0",
+          "saves": "0",
+          "possessionPct": "0",
+          "totalShots": "0",
+          "shotsOnTarget": "0",
+          "shotPct": "0.0",
+          "penaltyKickGoals": "0",
+          "penaltyKickShots": "0",
+          "accuratePasses": "0",
+          "totalPasses": "0",
+          "passPct": "0.0",
+          "crossPct": "0.0",
+          "longballPct": "0.0",
+          "blockedShots": "0",
+          "effectiveTackles": "0",
+          "totalTackles": "0",
+          "tacklePct": "0.0",
+          "effectiveClearance": "0",
+          "totalClearance": "0"
+        },
+        "away": {
+          "foulsCommitted": "0",
+          "yellowCards": "4",
+          "redCards": "0",
+          "offsides": "0",
+          "wonCorners": "0",
+          "saves": "0",
+          "possessionPct": "0",
+          "totalShots": "0",
+          "shotsOnTarget": "0",
+          "shotPct": "0.0",
+          "penaltyKickGoals": "0",
+          "penaltyKickShots": "0",
+          "accuratePasses": "0",
+          "totalPasses": "0",
+          "passPct": "0.0",
+          "crossPct": "0.0",
+          "longballPct": "0.0",
+          "blockedShots": "0",
+          "effectiveTackles": "0",
+          "totalTackles": "0",
+          "tacklePct": "0.0",
+          "effectiveClearance": "0",
+          "totalClearance": "0"
+        }
+      },
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-11-01T05:30:00-05:00",
+        "prob_local": 64.9,
+        "prob_empate": 19.9,
+        "prob_visitante": 15.3,
+        "diff_elo": 142.5,
+        "pj_h": 2,
+        "pj_a": 0,
+        "rating_local": 1642.48,
+        "rating_visitante": 1500.0,
+        "overperformance_h": 0.0,
+        "overperformance_a": 0.0
+      }
     }
   ]
 }
