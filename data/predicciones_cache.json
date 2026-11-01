@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-31T23:58:50.919280Z",
+  "generado": "2026-11-01T03:56:46.180910Z",
   "fecha_consulta": "2026-10-31",
   "total": 314,
   "predicciones": [
@@ -28580,34 +28580,33 @@
         "rd": 170.17,
         "partidos_jugados": 6,
         "pj_reales": 6,
-        "form_score": 21.8,
-        "form_local": 63.4,
-        "form_visitante": 9.3,
+        "form_score": 35.6,
+        "form_local": 68.9,
+        "form_visitante": 18.9,
         "momentum": "stable",
-        "momentum_diff": -3.3,
+        "momentum_diff": 0.0,
         "streak": {
           "tipo": "L",
-          "cantidad": 2
+          "cantidad": 1
         },
         "ultimos5": {
-          "texto": "1V 2D 2E",
+          "texto": "1V 1D 2E",
           "resultados": [
             "D",
-            "D",
             "E",
-            "E",
-            "V"
+            "V",
+            "E"
           ]
         },
         "goal_trend": {
-          "goles_favor": 1.29,
+          "goles_favor": 1.25,
           "goles_contra": 1.0,
-          "diferencia": 0.29
+          "diferencia": 0.25
         },
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.0,
+        "overperformance": 1.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -28618,19 +28617,18 @@
         "rd": 161.9,
         "partidos_jugados": 7,
         "pj_reales": 5,
-        "form_score": 34.4,
+        "form_score": 22.8,
         "form_local": 50.0,
         "form_visitante": 0.0,
         "momentum": "stable",
         "momentum_diff": 0.0,
         "streak": {
           "tipo": "D",
-          "cantidad": 2
+          "cantidad": 1
         },
         "ultimos5": {
-          "texto": "3D 2E",
+          "texto": "3D 1E",
           "resultados": [
-            "E",
             "E",
             "D",
             "D",
@@ -28638,20 +28636,20 @@
           ]
         },
         "goal_trend": {
-          "goles_favor": 1.4,
-          "goles_contra": 2.6,
-          "diferencia": -1.2
+          "goles_favor": 1.25,
+          "goles_contra": 2.75,
+          "diferencia": -1.5
         },
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -31.7,
+        "overperformance": -32.6,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 63.9,
+        "prob_local": 65.3,
         "prob_empate": 21.6,
-        "prob_visitante": 14.5
+        "prob_visitante": 13.0
       },
       "diff_elo": 65.4,
       "confianza": 32.7
@@ -28679,12 +28677,11 @@
         "momentum_diff": 0.0,
         "streak": {
           "tipo": "L",
-          "cantidad": 2
+          "cantidad": 1
         },
         "ultimos5": {
-          "texto": "2D",
+          "texto": "1D",
           "resultados": [
-            "D",
             "D"
           ]
         },
@@ -28714,12 +28711,11 @@
         "momentum_diff": 0.0,
         "streak": {
           "tipo": "L",
-          "cantidad": 2
+          "cantidad": 1
         },
         "ultimos5": {
-          "texto": "2D",
+          "texto": "1D",
           "resultados": [
-            "D",
             "D"
           ]
         },
@@ -28758,34 +28754,34 @@
         "rd": 140.39,
         "partidos_jugados": 11,
         "pj_reales": 11,
-        "form_score": 50.5,
-        "form_local": 59.8,
-        "form_visitante": 50.5,
+        "form_score": 53.5,
+        "form_local": 67.1,
+        "form_visitante": 52.1,
         "momentum": "stable",
-        "momentum_diff": -0.4,
+        "momentum_diff": -0.8,
         "streak": {
           "tipo": "D",
-          "cantidad": 8
+          "cantidad": 4
         },
         "ultimos5": {
-          "texto": "5E",
+          "texto": "1V 4E",
           "resultados": [
             "E",
             "E",
             "E",
             "E",
-            "E"
+            "V"
           ]
         },
         "goal_trend": {
-          "goles_favor": 1.2,
-          "goles_contra": 0.93,
-          "diferencia": 0.27
+          "goles_favor": 1.36,
+          "goles_contra": 1.0,
+          "diferencia": 0.36
         },
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.3,
+        "overperformance": 4.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -28796,40 +28792,40 @@
         "rd": 129.4,
         "partidos_jugados": 11,
         "pj_reales": 11,
-        "form_score": 96.4,
-        "form_local": 90.2,
-        "form_visitante": 92.3,
+        "form_score": 87.8,
+        "form_local": 79.5,
+        "form_visitante": 86.6,
         "momentum": "stable",
-        "momentum_diff": 3.5,
+        "momentum_diff": -0.4,
         "streak": {
           "tipo": "W",
-          "cantidad": 6
+          "cantidad": 3
         },
         "ultimos5": {
-          "texto": "5V",
+          "texto": "3V 1D 1E",
           "resultados": [
             "V",
             "V",
             "V",
-            "V",
-            "V"
+            "D",
+            "E"
           ]
         },
         "goal_trend": {
-          "goles_favor": 2.2,
-          "goles_contra": 1.47,
+          "goles_favor": 2.18,
+          "goles_contra": 1.45,
           "diferencia": 0.73
         },
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.9,
+        "overperformance": 1.2,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 39.4,
+        "prob_local": 40.4,
         "prob_empate": 20.9,
-        "prob_visitante": 39.7
+        "prob_visitante": 38.8
       },
       "diff_elo": -98.7,
       "confianza": 49.3
