@@ -1,8 +1,100 @@
 {
-  "generado": "2026-11-01T19:20:49.059605Z",
+  "generado": "2026-11-02T12:57:13.936275Z",
   "fecha_consulta": "2026-11-02",
-  "total": 58,
+  "total": 59,
   "predicciones": [
+    {
+      "fixture_id": "401883144",
+      "fecha": "2026-11-02T08:00:00-05:00",
+      "fecha_display": "2026-11-02",
+      "hora": "08:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "245",
+        "nombre": "Tenerife",
+        "pais": "",
+        "rating": 1528.68,
+        "rd": 113.52,
+        "partidos_jugados": 14,
+        "pj_reales": 14,
+        "form_score": 48.1,
+        "form_local": 53.5,
+        "form_visitante": 43.8,
+        "momentum": "stable",
+        "momentum_diff": 1.9,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 5
+        },
+        "ultimos5": {
+          "texto": "5E",
+          "resultados": [
+            "E",
+            "E",
+            "E",
+            "E",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.93,
+          "goles_contra": 1.07,
+          "diferencia": -0.14
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20179",
+        "nombre": "FC Andorra",
+        "pais": "",
+        "rating": 1350.97,
+        "rd": 93.78,
+        "partidos_jugados": 23,
+        "pj_reales": 23,
+        "form_score": 52.6,
+        "form_local": 28.5,
+        "form_visitante": 54.6,
+        "momentum": "stable",
+        "momentum_diff": 0.4,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "E",
+            "V",
+            "D",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.27,
+          "goles_contra": 1.6,
+          "diferencia": -0.33
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 7.8,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 73.5,
+        "prob_empate": 19.0,
+        "prob_visitante": 7.5
+      },
+      "diff_elo": 177.7,
+      "confianza": 88.9
+    },
     {
       "fixture_id": "401912631",
       "fecha": "2026-11-02T08:45:00-05:00",
@@ -137,7 +229,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.7,
+        "overperformance": -7.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -175,7 +267,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.8,
+        "overperformance": -0.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -267,7 +359,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.3,
+        "overperformance": -1.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -321,7 +413,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.5,
+        "overperformance": 3.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -589,7 +681,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.8,
+        "overperformance": -3.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -627,7 +719,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.2,
+        "overperformance": 0.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -773,7 +865,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.0,
+        "overperformance": -4.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -811,7 +903,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -13.2,
+        "overperformance": -13.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -865,7 +957,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 11.9,
+        "overperformance": 12.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -903,7 +995,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.3,
+        "overperformance": 0.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -957,7 +1049,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.7,
+        "overperformance": 3.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -995,7 +1087,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.1,
+        "overperformance": 6.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -1087,7 +1179,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.3,
+        "overperformance": 2.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -1141,7 +1233,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.1,
+        "overperformance": -4.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1179,7 +1271,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.2,
+        "overperformance": 1.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -1233,7 +1325,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.9,
+        "overperformance": 4.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1271,7 +1363,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.3,
+        "overperformance": 6.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -1325,7 +1417,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.0,
+        "overperformance": 2.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1417,7 +1509,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.9,
+        "overperformance": -6.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1455,7 +1547,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.8,
+        "overperformance": -1.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -1693,7 +1785,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.3,
+        "overperformance": -1.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1731,7 +1823,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.0,
+        "overperformance": -0.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -1785,7 +1877,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.6,
+        "overperformance": -2.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1823,7 +1915,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.4,
+        "overperformance": 0.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -1877,7 +1969,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.0,
+        "overperformance": -5.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1915,7 +2007,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.7,
+        "overperformance": -2.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -1969,7 +2061,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.3,
+        "overperformance": 3.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -2061,7 +2153,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.4,
+        "overperformance": 0.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -2099,7 +2191,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.4,
+        "overperformance": -3.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -2334,7 +2426,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.2,
+        "overperformance": -6.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -2372,7 +2464,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.8,
+        "overperformance": -1.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -2382,98 +2474,6 @@
       },
       "diff_elo": -348.5,
       "confianza": 100.0
-    },
-    {
-      "fixture_id": "401882475",
-      "fecha": "2026-11-02T14:00:00-05:00",
-      "fecha_display": "2026-11-02",
-      "hora": "14:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "131393",
-        "nombre": "Tenerife",
-        "pais": "",
-        "rating": 1446.78,
-        "rd": 149.22,
-        "partidos_jugados": 8,
-        "pj_reales": 8,
-        "form_score": 50.6,
-        "form_local": 60.0,
-        "form_visitante": 46.6,
-        "momentum": "stable",
-        "momentum_diff": 0.7,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 2D",
-          "resultados": [
-            "D",
-            "V",
-            "V",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.5,
-          "goles_contra": 1.75,
-          "diferencia": -0.25
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 6.5,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "21372",
-        "nombre": "Athletic ",
-        "pais": "",
-        "rating": 1629.94,
-        "rd": 158.29,
-        "partidos_jugados": 8,
-        "pj_reales": 8,
-        "form_score": 65.5,
-        "form_local": 73.8,
-        "form_visitante": 44.0,
-        "momentum": "stable",
-        "momentum_diff": -0.6,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 1D 2E",
-          "resultados": [
-            "E",
-            "V",
-            "E",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.5,
-          "goles_contra": 1.0,
-          "diferencia": 0.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 1.1,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 34.5,
-        "prob_empate": 18.9,
-        "prob_visitante": 46.6
-      },
-      "diff_elo": -183.2,
-      "confianza": 91.6
     },
     {
       "fixture_id": "401875871",
@@ -2518,7 +2518,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.9,
+        "overperformance": 1.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -2556,7 +2556,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.1,
+        "overperformance": -2.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -2610,7 +2610,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -10.1,
+        "overperformance": -10.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -2652,7 +2652,7 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 48.0,
+        "prob_local": 47.9,
         "prob_empate": 22.3,
         "prob_visitante": 29.8
       },
@@ -2740,7 +2740,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.0,
+        "overperformance": 5.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -2794,7 +2794,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.0,
+        "overperformance": 5.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -2886,7 +2886,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.2,
+        "overperformance": 7.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -2924,7 +2924,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.3,
+        "overperformance": 1.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -2978,7 +2978,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.6,
+        "overperformance": 5.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3016,7 +3016,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.9,
+        "overperformance": -4.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -3070,7 +3070,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.9,
+        "overperformance": -3.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3108,13 +3108,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.8,
+        "overperformance": -10.2,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 61.0,
+        "prob_local": 62.0,
         "prob_empate": 22.3,
-        "prob_visitante": 16.7
+        "prob_visitante": 15.7
       },
       "diff_elo": 35.3,
       "confianza": 17.6
@@ -3162,7 +3162,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.0,
+        "overperformance": -2.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3315,10 +3315,10 @@
         "id": "361",
         "nombre": "Newcastle",
         "pais": "",
-        "rating": 1459.69,
-        "rd": 105.43,
-        "partidos_jugados": 17,
-        "pj_reales": 17,
+        "rating": 1477.09,
+        "rd": 102.81,
+        "partidos_jugados": 18,
+        "pj_reales": 18,
         "form_score": 33.1,
         "form_local": 45.0,
         "form_visitante": 34.1,
@@ -3346,7 +3346,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 14.3,
+        "overperformance": 13.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3384,16 +3384,16 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.3,
+        "overperformance": 2.8,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 31.7,
-        "prob_empate": 18.7,
-        "prob_visitante": 49.6
+        "prob_local": 33.2,
+        "prob_empate": 19.1,
+        "prob_visitante": 47.7
       },
-      "diff_elo": -192.0,
-      "confianza": 96.0
+      "diff_elo": -174.6,
+      "confianza": 87.3
     },
     {
       "fixture_id": "401882824",
@@ -3438,7 +3438,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.0,
+        "overperformance": 2.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3476,7 +3476,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.0,
+        "overperformance": -0.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -3486,6 +3486,98 @@
       },
       "diff_elo": 37.8,
       "confianza": 18.9
+    },
+    {
+      "fixture_id": "401882475",
+      "fecha": "2026-11-02T15:00:00-05:00",
+      "fecha_display": "2026-11-02",
+      "hora": "15:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "131393",
+        "nombre": "Tenerife",
+        "pais": "",
+        "rating": 1446.78,
+        "rd": 149.22,
+        "partidos_jugados": 8,
+        "pj_reales": 8,
+        "form_score": 50.6,
+        "form_local": 60.0,
+        "form_visitante": 46.6,
+        "momentum": "stable",
+        "momentum_diff": 0.7,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 2D",
+          "resultados": [
+            "D",
+            "V",
+            "V",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.5,
+          "goles_contra": 1.75,
+          "diferencia": -0.25
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 6.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "21372",
+        "nombre": "Athletic ",
+        "pais": "",
+        "rating": 1629.94,
+        "rd": 158.29,
+        "partidos_jugados": 8,
+        "pj_reales": 8,
+        "form_score": 65.5,
+        "form_local": 73.8,
+        "form_visitante": 44.0,
+        "momentum": "stable",
+        "momentum_diff": -0.6,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "E",
+            "V",
+            "E",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.5,
+          "goles_contra": 1.0,
+          "diferencia": 0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.9,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 34.5,
+        "prob_empate": 18.9,
+        "prob_visitante": 46.6
+      },
+      "diff_elo": -183.2,
+      "confianza": 91.6
     },
     {
       "fixture_id": "401883147",
@@ -3530,7 +3622,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.2,
+        "overperformance": 1.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3568,7 +3660,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.9,
+        "overperformance": 0.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -3622,7 +3714,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.0,
+        "overperformance": 5.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3660,7 +3752,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.5,
+        "overperformance": -0.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -3752,7 +3844,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.1,
+        "overperformance": -1.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -3806,7 +3898,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.5,
+        "overperformance": 8.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3844,7 +3936,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.4,
+        "overperformance": 2.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -3936,7 +4028,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.3,
+        "overperformance": -2.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -3990,7 +4082,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.9,
+        "overperformance": 3.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4028,7 +4120,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.4,
+        "overperformance": -3.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -4082,7 +4174,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.9,
+        "overperformance": -2.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4120,7 +4212,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -16.9,
+        "overperformance": -15.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -4174,7 +4266,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.5,
+        "overperformance": 0.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4212,7 +4304,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.8,
+        "overperformance": -1.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -4266,7 +4358,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.8,
+        "overperformance": 1.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4304,7 +4396,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.3,
+        "overperformance": -0.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -4396,7 +4488,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.2,
+        "overperformance": -1.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -4450,7 +4542,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.1,
+        "overperformance": 0.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4542,7 +4634,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.4,
+        "overperformance": -3.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4580,7 +4672,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.5,
+        "overperformance": 6.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -4634,7 +4726,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.2,
+        "overperformance": -7.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4672,7 +4764,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.8,
+        "overperformance": 0.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -4726,7 +4818,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.6,
+        "overperformance": -6.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4764,7 +4856,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.8,
+        "overperformance": 0.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -4818,7 +4910,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.8,
+        "overperformance": 8.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4856,7 +4948,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 18.3,
+        "overperformance": 18.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -4948,7 +5040,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.8,
+        "overperformance": 8.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -5040,7 +5132,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.5,
+        "overperformance": 2.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -5183,7 +5275,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.9,
+        "overperformance": 2.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5221,7 +5313,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.0,
+        "overperformance": -2.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -5275,7 +5367,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.6,
+        "overperformance": -2.2,
         "vol": 0.06
       },
       "equipo_visitante": {
