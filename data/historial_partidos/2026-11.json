@@ -17222,6 +17222,72 @@
       "estadisticas": null,
       "neutral": false,
       "prediccion_previa": null
+    },
+    {
+      "fixture_id": "401912759",
+      "fecha": "2026-11-05",
+      "fecha_hora_espn": "2026-11-05T10:00Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "17686",
+        "name": "Kitchee SC"
+      },
+      "equipo_visitante": {
+        "id": "21432",
+        "name": "Phnom Penh"
+      },
+      "goles_local": 2,
+      "goles_visitante": 1,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-11-05T05:00:00-05:00",
+        "prob_local": 19.1,
+        "prob_empate": 14.6,
+        "prob_visitante": 66.3,
+        "diff_elo": -367.3,
+        "pj_h": 3,
+        "pj_a": 3,
+        "rating_local": 1366.48,
+        "rating_visitante": 1733.83,
+        "overperformance_h": -8.9,
+        "overperformance_a": 16.7
+      }
+    },
+    {
+      "fixture_id": "401912760",
+      "fecha": "2026-11-05",
+      "fecha_hora_espn": "2026-11-05T10:00Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "22167",
+        "name": "Machida Zelvia"
+      },
+      "equipo_visitante": {
+        "id": "977",
+        "name": "Shanghai Shenhua"
+      },
+      "goles_local": 2,
+      "goles_visitante": 1,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-11-05T05:00:00-05:00",
+        "prob_local": 74.8,
+        "prob_empate": 19.2,
+        "prob_visitante": 6.0,
+        "diff_elo": 169.2,
+        "pj_h": 15,
+        "pj_a": 13,
+        "rating_local": 1767.02,
+        "rating_visitante": 1597.79,
+        "overperformance_h": 6.8,
+        "overperformance_a": 1.3
+      }
     }
   ]
 }
