@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-05T01:16:06.808248Z",
+  "generado": "2026-11-05T10:16:36.521510Z",
   "fecha_consulta": "2026-11-05",
   "total": 122,
   "predicciones": [
@@ -85,94 +85,6 @@
         "prob_visitante": 62.5
       },
       "diff_elo": -365.2,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401912759",
-      "fecha": "2026-11-05T05:00:00-05:00",
-      "fecha_display": "2026-11-05",
-      "hora": "05:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "17686",
-        "nombre": "Kitchee SC",
-        "pais": "",
-        "rating": 1366.48,
-        "rd": 218.69,
-        "partidos_jugados": 3,
-        "pj_reales": 3,
-        "form_score": 24.7,
-        "form_local": 50.0,
-        "form_visitante": 18.9,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1D 2E",
-          "resultados": [
-            "D",
-            "E",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.33,
-          "goles_contra": 1.0,
-          "diferencia": -0.67
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -8.9,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "21432",
-        "nombre": "Phnom Penh",
-        "pais": "",
-        "rating": 1733.83,
-        "rd": 226.78,
-        "partidos_jugados": 3,
-        "pj_reales": 3,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "3V",
-          "resultados": [
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 0.67,
-          "diferencia": 1.33
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 16.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 19.1,
-        "prob_empate": 14.6,
-        "prob_visitante": 66.3
-      },
-      "diff_elo": -367.3,
       "confianza": 100.0
     },
     {
@@ -264,6 +176,94 @@
         "prob_visitante": 1.2
       },
       "diff_elo": 239.0,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401912759",
+      "fecha": "2026-11-05T05:00:00-05:00",
+      "fecha_display": "2026-11-05",
+      "hora": "05:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "17686",
+        "nombre": "Kitchee SC",
+        "pais": "",
+        "rating": 1366.48,
+        "rd": 218.69,
+        "partidos_jugados": 3,
+        "pj_reales": 3,
+        "form_score": 24.7,
+        "form_local": 50.0,
+        "form_visitante": 18.9,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1D 2E",
+          "resultados": [
+            "D",
+            "E",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.33,
+          "goles_contra": 1.0,
+          "diferencia": -0.67
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -8.9,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "21432",
+        "nombre": "Phnom Penh",
+        "pais": "",
+        "rating": 1733.83,
+        "rd": 226.78,
+        "partidos_jugados": 3,
+        "pj_reales": 3,
+        "form_score": 100.0,
+        "form_local": 100.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "3V",
+          "resultados": [
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.0,
+          "goles_contra": 0.67,
+          "diferencia": 1.33
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 16.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 19.1,
+        "prob_empate": 14.6,
+        "prob_visitante": 66.3
+      },
+      "diff_elo": -367.3,
       "confianza": 100.0
     },
     {
@@ -1049,7 +1049,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.5,
+        "overperformance": -1.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -3349,7 +3349,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.9,
+        "overperformance": 7.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -4359,7 +4359,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.2,
+        "overperformance": -5.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -5057,7 +5057,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.8,
+        "overperformance": 6.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5517,7 +5517,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.7,
+        "overperformance": -5.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5701,7 +5701,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.2,
+        "overperformance": -2.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5739,7 +5739,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.5,
+        "overperformance": 4.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -6435,7 +6435,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.3,
+        "overperformance": 1.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7205,7 +7205,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.7,
+        "overperformance": 2.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -7351,7 +7351,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.9,
+        "overperformance": 5.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7627,7 +7627,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.0,
+        "overperformance": -2.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7665,7 +7665,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.3,
+        "overperformance": -0.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -7941,13 +7941,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 12.6,
+        "overperformance": 12.1,
         "vol": 0.06
       },
       "prediccion": {
         "prob_local": 33.9,
         "prob_empate": 19.0,
-        "prob_visitante": 47.1
+        "prob_visitante": 47.0
       },
       "diff_elo": -177.4,
       "confianza": 88.7
@@ -8179,7 +8179,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.0,
+        "overperformance": -2.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8217,7 +8217,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.3,
+        "overperformance": -4.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -8547,7 +8547,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 10.1,
+        "overperformance": 10.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8591,7 +8591,7 @@
       "prediccion": {
         "prob_local": 61.3,
         "prob_empate": 21.7,
-        "prob_visitante": 17.0
+        "prob_visitante": 16.9
       },
       "diff_elo": 60.8,
       "confianza": 30.4
@@ -9007,7 +9007,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.9,
+        "overperformance": -1.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10146,7 +10146,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.4,
+        "overperformance": -5.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -10476,7 +10476,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 12.3,
+        "overperformance": 11.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10518,7 +10518,7 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 73.2,
+        "prob_local": 73.1,
         "prob_empate": 20.1,
         "prob_visitante": 6.8
       },
@@ -11028,7 +11028,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.5,
+        "overperformance": -8.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -11066,7 +11066,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.5,
+        "overperformance": 0.7,
         "vol": 0.06
       },
       "prediccion": {
