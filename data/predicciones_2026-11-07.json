@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-06T10:18:04.303043Z",
+  "generado": "2026-11-06T18:48:26.755350Z",
   "fecha_consulta": "2026-11-07",
   "total": 254,
   "predicciones": [
@@ -687,10 +687,10 @@
         "id": "13696",
         "nombre": "Western Sydney",
         "pais": "Australia",
-        "rating": 1648.91,
-        "rd": 126.48,
-        "partidos_jugados": 12,
-        "pj_reales": 10,
+        "rating": 1677.05,
+        "rd": 120.93,
+        "partidos_jugados": 13,
+        "pj_reales": 11,
         "form_score": 71.7,
         "form_local": 100.0,
         "form_visitante": 59.3,
@@ -718,16 +718,16 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 13.7,
+        "overperformance": 10.3,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 63.4,
-        "prob_empate": 20.6,
-        "prob_visitante": 15.9
+        "prob_local": 60.5,
+        "prob_empate": 21.3,
+        "prob_visitante": 18.2
       },
-      "diff_elo": 109.5,
-      "confianza": 54.8
+      "diff_elo": 81.4,
+      "confianza": 40.7
     },
     {
       "fixture_id": "401930701",
@@ -826,7 +826,7 @@
         "nombre": "Gabon",
         "pais": "",
         "rating": 1558.94,
-        "rd": 111.25955652647008,
+        "rd": 112.23121893327533,
         "partidos_jugados": 25,
         "pj_reales": 2,
         "form_score": 50.0,
@@ -1029,7 +1029,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -36.6,
+        "overperformance": -38.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1067,7 +1067,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.8,
+        "overperformance": -5.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -5155,7 +5155,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 22.7,
+        "overperformance": 22.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -6111,7 +6111,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.6,
+        "overperformance": 7.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -8136,98 +8136,6 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401843480",
-      "fecha": "2026-11-07T10:00:00-05:00",
-      "fecha_display": "2026-11-07",
-      "hora": "10:00",
-      "liga": "Noruega - Eliteserien",
-      "liga_pais": "Noruega",
-      "liga_slug": "nor.1",
-      "equipo_local": {
-        "id": "6672",
-        "nombre": "Kristiansund",
-        "pais": "Noruega",
-        "rating": 1446.82,
-        "rd": 125.07,
-        "partidos_jugados": 11,
-        "pj_reales": 11,
-        "form_score": 53.3,
-        "form_local": 36.8,
-        "form_visitante": 44.2,
-        "momentum": "stable",
-        "momentum_diff": 2.7,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "V",
-            "E",
-            "D",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.45,
-          "goles_contra": 2.64,
-          "diferencia": -1.19
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -1.2,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "2791",
-        "nombre": "Valerenga",
-        "pais": "Noruega",
-        "rating": 1553.57,
-        "rd": 140.01,
-        "partidos_jugados": 10,
-        "pj_reales": 10,
-        "form_score": 82.2,
-        "form_local": 76.7,
-        "form_visitante": 50.5,
-        "momentum": "up",
-        "momentum_diff": 5.3,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "3V 1D 1E",
-          "resultados": [
-            "V",
-            "V",
-            "V",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.1,
-          "goles_contra": 1.9,
-          "diferencia": 0.2
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -6.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 36.9,
-        "prob_empate": 20.7,
-        "prob_visitante": 42.4
-      },
-      "diff_elo": -106.8,
-      "confianza": 53.4
-    },
-    {
       "fixture_id": "401878531",
       "fecha": "2026-11-07T10:00:00-05:00",
       "fecha_display": "2026-11-07",
@@ -8594,6 +8502,98 @@
       },
       "diff_elo": -393.8,
       "confianza": 100.0
+    },
+    {
+      "fixture_id": "401843480",
+      "fecha": "2026-11-07T10:00:00-05:00",
+      "fecha_display": "2026-11-07",
+      "hora": "10:00",
+      "liga": "Noruega - Eliteserien",
+      "liga_pais": "Noruega",
+      "liga_slug": "nor.1",
+      "equipo_local": {
+        "id": "6672",
+        "nombre": "Kristiansund",
+        "pais": "Noruega",
+        "rating": 1446.82,
+        "rd": 125.07,
+        "partidos_jugados": 11,
+        "pj_reales": 11,
+        "form_score": 53.3,
+        "form_local": 36.8,
+        "form_visitante": 44.2,
+        "momentum": "stable",
+        "momentum_diff": 2.7,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 3D 1E",
+          "resultados": [
+            "V",
+            "E",
+            "D",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.45,
+          "goles_contra": 2.64,
+          "diferencia": -1.19
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -1.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "2791",
+        "nombre": "Valerenga",
+        "pais": "Noruega",
+        "rating": 1553.57,
+        "rd": 140.01,
+        "partidos_jugados": 10,
+        "pj_reales": 10,
+        "form_score": 82.2,
+        "form_local": 76.7,
+        "form_visitante": 50.5,
+        "momentum": "up",
+        "momentum_diff": 5.3,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.1,
+          "goles_contra": 1.9,
+          "diferencia": 0.2
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -6.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 36.9,
+        "prob_empate": 20.7,
+        "prob_visitante": 42.4
+      },
+      "diff_elo": -106.8,
+      "confianza": 53.4
     },
     {
       "fixture_id": "401882813",
@@ -9056,6 +9056,98 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401882463",
+      "fecha": "2026-11-07T11:00:00-05:00",
+      "fecha_display": "2026-11-07",
+      "hora": "11:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "21376",
+        "nombre": "Eibar",
+        "pais": "",
+        "rating": 1486.66,
+        "rd": 145.7,
+        "partidos_jugados": 10,
+        "pj_reales": 10,
+        "form_score": 35.8,
+        "form_local": 43.0,
+        "form_visitante": 41.8,
+        "momentum": "stable",
+        "momentum_diff": -3.6,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2D 3E",
+          "resultados": [
+            "E",
+            "D",
+            "E",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.9,
+          "goles_contra": 1.1,
+          "diferencia": -0.2
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 5.1,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "21428",
+        "nombre": "Real Sociedad",
+        "pais": "",
+        "rating": 1592.18,
+        "rd": 135.32,
+        "partidos_jugados": 13,
+        "pj_reales": 13,
+        "form_score": 69.4,
+        "form_local": 78.5,
+        "form_visitante": 58.1,
+        "momentum": "stable",
+        "momentum_diff": 0.9,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 2E",
+          "resultados": [
+            "E",
+            "V",
+            "E",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.46,
+          "goles_contra": 1.46,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -5.2,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 39.9,
+        "prob_empate": 20.7,
+        "prob_visitante": 39.4
+      },
+      "diff_elo": -105.5,
+      "confianza": 52.8
+    },
+    {
       "fixture_id": "401881750",
       "fecha": "2026-11-07T11:00:00-05:00",
       "fecha_display": "2026-11-07",
@@ -9330,98 +9422,6 @@
       },
       "diff_elo": 164.9,
       "confianza": 82.5
-    },
-    {
-      "fixture_id": "401882463",
-      "fecha": "2026-11-07T11:15:00-05:00",
-      "fecha_display": "2026-11-07",
-      "hora": "11:15",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "21376",
-        "nombre": "Eibar",
-        "pais": "",
-        "rating": 1486.66,
-        "rd": 145.7,
-        "partidos_jugados": 10,
-        "pj_reales": 10,
-        "form_score": 35.8,
-        "form_local": 43.0,
-        "form_visitante": 41.8,
-        "momentum": "stable",
-        "momentum_diff": -3.6,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2D 3E",
-          "resultados": [
-            "E",
-            "D",
-            "E",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.9,
-          "goles_contra": 1.1,
-          "diferencia": -0.2
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 5.1,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "21428",
-        "nombre": "Real Sociedad",
-        "pais": "",
-        "rating": 1592.18,
-        "rd": 135.32,
-        "partidos_jugados": 13,
-        "pj_reales": 13,
-        "form_score": 69.4,
-        "form_local": 78.5,
-        "form_visitante": 58.1,
-        "momentum": "stable",
-        "momentum_diff": 0.9,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 2E",
-          "resultados": [
-            "E",
-            "V",
-            "E",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.46,
-          "goles_contra": 1.46,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -5.2,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 39.9,
-        "prob_empate": 20.7,
-        "prob_visitante": 39.4
-      },
-      "diff_elo": -105.5,
-      "confianza": 52.8
     },
     {
       "fixture_id": "401899553",
@@ -17612,6 +17612,98 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401930996",
+      "fecha": "2026-11-07T16:30:00-05:00",
+      "fecha_display": "2026-11-07",
+      "hora": "16:30",
+      "liga": "Venezuela - Liga FUTVE",
+      "liga_pais": "Venezuela",
+      "liga_slug": "ven.1",
+      "equipo_local": {
+        "id": "4811",
+        "nombre": "Caracas",
+        "pais": "Venezuela",
+        "rating": 1550.73,
+        "rd": 112.72,
+        "partidos_jugados": 14,
+        "pj_reales": 14,
+        "form_score": 64.9,
+        "form_local": 23.2,
+        "form_visitante": 90.7,
+        "momentum": "stable",
+        "momentum_diff": -0.6,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 2D",
+          "resultados": [
+            "V",
+            "D",
+            "V",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.36,
+          "goles_contra": 1.14,
+          "diferencia": 0.22
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "18995",
+        "nombre": "Puerto Cabello",
+        "pais": "Venezuela",
+        "rating": 1598.87,
+        "rd": 138.54,
+        "partidos_jugados": 11,
+        "pj_reales": 11,
+        "form_score": 29.9,
+        "form_local": 22.8,
+        "form_visitante": 91.6,
+        "momentum": "stable",
+        "momentum_diff": -3.3,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "V",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.45,
+          "goles_contra": 0.73,
+          "diferencia": 0.72
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 6.9,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 47.8,
+        "prob_empate": 22.0,
+        "prob_visitante": 30.1
+      },
+      "diff_elo": -48.1,
+      "confianza": 24.1
+    },
+    {
       "fixture_id": "401930970",
       "fecha": "2026-11-07T16:30:00-05:00",
       "fecha_display": "2026-11-07",
@@ -19450,98 +19542,6 @@
       },
       "diff_elo": 15.1,
       "confianza": 7.5
-    },
-    {
-      "fixture_id": "401930996",
-      "fecha": "2026-11-07T18:30:00-05:00",
-      "fecha_display": "2026-11-07",
-      "hora": "18:30",
-      "liga": "Venezuela - Liga FUTVE",
-      "liga_pais": "Venezuela",
-      "liga_slug": "ven.1",
-      "equipo_local": {
-        "id": "4811",
-        "nombre": "Caracas",
-        "pais": "Venezuela",
-        "rating": 1550.73,
-        "rd": 112.72,
-        "partidos_jugados": 14,
-        "pj_reales": 14,
-        "form_score": 64.9,
-        "form_local": 23.2,
-        "form_visitante": 90.7,
-        "momentum": "stable",
-        "momentum_diff": -0.6,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 2D",
-          "resultados": [
-            "V",
-            "D",
-            "V",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.36,
-          "goles_contra": 1.14,
-          "diferencia": 0.22
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.4,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "18995",
-        "nombre": "Puerto Cabello",
-        "pais": "Venezuela",
-        "rating": 1598.87,
-        "rd": 138.54,
-        "partidos_jugados": 11,
-        "pj_reales": 11,
-        "form_score": 29.9,
-        "form_local": 22.8,
-        "form_visitante": 91.6,
-        "momentum": "stable",
-        "momentum_diff": -3.3,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "D",
-            "D",
-            "V",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.45,
-          "goles_contra": 0.73,
-          "diferencia": 0.72
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 6.9,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 47.8,
-        "prob_empate": 22.0,
-        "prob_visitante": 30.1
-      },
-      "diff_elo": -48.1,
-      "confianza": 24.1
     },
     {
       "fixture_id": "761942",
@@ -22446,7 +22446,7 @@
         "nombre": "Santa Barbara",
         "pais": "EE.UU.",
         "rating": 1649.64,
-        "rd": 167.10114310533524,
+        "rd": 167.7498146029165,
         "partidos_jugados": 8,
         "pj_reales": 0,
         "form_score": 51.9,
@@ -22814,7 +22814,7 @@
         "nombre": "San Diego St",
         "pais": "EE.UU.",
         "rating": 1480.62,
-        "rd": 259.3894961151201,
+        "rd": 260.2257541265088,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 33.6,
@@ -22850,7 +22850,7 @@
       "prediccion": {
         "prob_local": 77.1,
         "prob_empate": 18.5,
-        "prob_visitante": 4.3
+        "prob_visitante": 4.4
       },
       "diff_elo": 198.8,
       "confianza": 99.4
@@ -22868,7 +22868,7 @@
         "nombre": "Sacramento",
         "pais": "EE.UU.",
         "rating": 1524.06,
-        "rd": 186.14261280337473,
+        "rd": 186.72526348766775,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 52.9,
@@ -23265,7 +23265,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.9,
+        "overperformance": 0.7,
         "vol": 0.06
       },
       "equipo_visitante": {
