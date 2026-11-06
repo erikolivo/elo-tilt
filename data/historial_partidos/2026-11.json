@@ -20090,6 +20090,72 @@
       "estadisticas": null,
       "neutral": false,
       "prediccion_previa": null
+    },
+    {
+      "fixture_id": "401892144",
+      "fecha": "2026-11-06",
+      "fecha_hora_espn": "2026-11-06T08:40Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5327",
+        "name": "Sydney FC"
+      },
+      "equipo_visitante": {
+        "id": "5325",
+        "name": "CC Mariners"
+      },
+      "goles_local": 4,
+      "goles_visitante": 1,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-11-06T03:40:00-05:00",
+        "prob_local": 69.0,
+        "prob_empate": 20.8,
+        "prob_visitante": 10.2,
+        "diff_elo": 102.2,
+        "pj_h": 12,
+        "pj_a": 8,
+        "rating_local": 1648.91,
+        "rating_visitante": 1546.75,
+        "overperformance_h": -6.0,
+        "overperformance_a": -25.8
+      }
+    },
+    {
+      "fixture_id": "401930703",
+      "fecha": "2026-11-06",
+      "fecha_hora_espn": "2026-11-06T10:30Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "134033",
+        "name": "Bengal Utd"
+      },
+      "equipo_visitante": {
+        "id": "20842",
+        "name": "Mohammedan"
+      },
+      "goles_local": 4,
+      "goles_visitante": 3,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-11-06T05:30:00-05:00",
+        "prob_local": 58.1,
+        "prob_empate": 21.9,
+        "prob_visitante": 20.0,
+        "diff_elo": 53.8,
+        "pj_h": 1,
+        "pj_a": 1,
+        "rating_local": 1391.51,
+        "rating_visitante": 1337.69,
+        "overperformance_h": -17.9,
+        "overperformance_a": -24.3
+      }
     }
   ]
 }
