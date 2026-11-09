@@ -1,0 +1,5190 @@
+{
+  "generado": "2026-11-09T10:47:49.576242Z",
+  "fecha_consulta": "2026-11-10",
+  "total": 57,
+  "predicciones": [
+    {
+      "fixture_id": "401933275",
+      "fecha": "2026-11-10T05:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "05:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "134156",
+        "nombre": "Gabon",
+        "pais": "",
+        "rating": 1514.82,
+        "rd": 110.7,
+        "partidos_jugados": 26,
+        "pj_reales": 3,
+        "form_score": 0.0,
+        "form_local": 0.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1D",
+          "resultados": [
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 3.0,
+          "goles_contra": 6.0,
+          "diferencia": -3.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -51.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "131499",
+        "nombre": "Chad",
+        "pais": "",
+        "rating": 1388.28,
+        "rd": 294.57,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1E",
+          "resultados": [
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 1.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 13.4,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 59.4,
+        "prob_empate": 20.2,
+        "prob_visitante": 20.4
+      },
+      "diff_elo": 126.5,
+      "confianza": 63.3
+    },
+    {
+      "fixture_id": "401933295",
+      "fecha": "2026-11-10T07:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "07:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "134158",
+        "nombre": "Congo",
+        "pais": "",
+        "rating": 1474.81,
+        "rd": 100.08,
+        "partidos_jugados": 28,
+        "pj_reales": 4,
+        "form_score": 100.0,
+        "form_local": 50.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V",
+          "resultados": [
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 5.0,
+          "goles_contra": 2.0,
+          "diferencia": 3.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 37.7,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "134155",
+        "nombre": "Cent Afr Rep",
+        "pais": "",
+        "rating": 1539.43,
+        "rd": 251.21,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 81.1,
+        "form_local": 50.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1E",
+          "resultados": [
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 5.0,
+          "goles_contra": 0.5,
+          "diferencia": 4.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 9.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 48.7,
+        "prob_empate": 21.7,
+        "prob_visitante": 29.7
+      },
+      "diff_elo": -64.6,
+      "confianza": 32.3
+    },
+    {
+      "fixture_id": "401933765",
+      "fecha": "2026-11-10T07:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "07:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "3307",
+        "nombre": "Paderborn",
+        "pais": "",
+        "rating": 1611.76,
+        "rd": 113.05,
+        "partidos_jugados": 13,
+        "pj_reales": 13,
+        "form_score": 46.6,
+        "form_local": 41.5,
+        "form_visitante": 54.6,
+        "momentum": "stable",
+        "momentum_diff": 0.4,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "1V 1D 3E",
+          "resultados": [
+            "E",
+            "E",
+            "D",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.15,
+          "goles_contra": 1.23,
+          "diferencia": -0.08
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "3067",
+        "nombre": "E Braunschweig",
+        "pais": "",
+        "rating": 1366.54,
+        "rd": 124.09,
+        "partidos_jugados": 13,
+        "pj_reales": 13,
+        "form_score": 40.2,
+        "form_local": 64.3,
+        "form_visitante": 3.4,
+        "momentum": "stable",
+        "momentum_diff": 2.7,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "E",
+            "D",
+            "V",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.38,
+          "goles_contra": 2.0,
+          "diferencia": -0.62
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 80.8,
+        "prob_empate": 17.5,
+        "prob_visitante": 1.8
+      },
+      "diff_elo": 245.2,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401929834",
+      "fecha": "2026-11-10T12:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "12:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5730",
+        "nombre": "American",
+        "pais": "",
+        "rating": 1410.35,
+        "rd": 122.6,
+        "partidos_jugados": 13,
+        "pj_reales": 13,
+        "form_score": 79.8,
+        "form_local": 71.8,
+        "form_visitante": 66.5,
+        "momentum": "stable",
+        "momentum_diff": 4.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 2E",
+          "resultados": [
+            "V",
+            "E",
+            "V",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.71,
+          "goles_contra": 1.07,
+          "diferencia": -0.36
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "5708",
+        "nombre": "Bucknell",
+        "pais": "",
+        "rating": 1294.46,
+        "rd": 122.7,
+        "partidos_jugados": 13,
+        "pj_reales": 13,
+        "form_score": 72.1,
+        "form_local": 79.7,
+        "form_visitante": 2.8,
+        "momentum": "stable",
+        "momentum_diff": 2.2,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3V 2D",
+          "resultados": [
+            "V",
+            "V",
+            "D",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.85,
+          "goles_contra": 2.0,
+          "diferencia": -1.15
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.1,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 69.3,
+        "prob_empate": 20.5,
+        "prob_visitante": 10.2
+      },
+      "diff_elo": 115.9,
+      "confianza": 57.9
+    },
+    {
+      "fixture_id": "401931288",
+      "fecha": "2026-11-10T12:30:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "12:30",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20368",
+        "nombre": "South Carolina",
+        "pais": "",
+        "rating": 1782.9,
+        "rd": 124.81,
+        "partidos_jugados": 12,
+        "pj_reales": 12,
+        "form_score": 47.0,
+        "form_local": 100.0,
+        "form_visitante": 33.1,
+        "momentum": "stable",
+        "momentum_diff": -2.6,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "D",
+            "V",
+            "E",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.17,
+          "goles_contra": 0.75,
+          "diferencia": 0.42
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 9.1,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20532",
+        "nombre": "Georgia",
+        "pais": "",
+        "rating": 1746.07,
+        "rd": 129.06,
+        "partidos_jugados": 11,
+        "pj_reales": 11,
+        "form_score": 66.8,
+        "form_local": 100.0,
+        "form_visitante": 55.6,
+        "momentum": "stable",
+        "momentum_diff": -1.5,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "V",
+            "E",
+            "D",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.67,
+          "goles_contra": 0.92,
+          "diferencia": 0.75
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -1.2,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 58.3,
+        "prob_empate": 22.3,
+        "prob_visitante": 19.4
+      },
+      "diff_elo": 36.8,
+      "confianza": 18.4
+    },
+    {
+      "fixture_id": "401916991",
+      "fecha": "2026-11-10T12:45:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "12:45",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "21124",
+        "nombre": "BK Häcken",
+        "pais": "",
+        "rating": 1382.64,
+        "rd": 228.01,
+        "partidos_jugados": 3,
+        "pj_reales": 2,
+        "form_score": 25.3,
+        "form_local": 0.0,
+        "form_visitante": 31.1,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2D 1E",
+          "resultados": [
+            "E",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.33,
+          "goles_contra": 1.67,
+          "diferencia": -1.34
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -4.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "19970",
+        "nombre": "Chelsea ",
+        "pais": "",
+        "rating": 1914.55,
+        "rd": 138.51,
+        "partidos_jugados": 13,
+        "pj_reales": 13,
+        "form_score": 79.2,
+        "form_local": 79.0,
+        "form_visitante": 95.2,
+        "momentum": "stable",
+        "momentum_diff": -0.6,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "4V 1E",
+          "resultados": [
+            "E",
+            "V",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.77,
+          "goles_contra": 0.54,
+          "diferencia": 2.23
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 9.3,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 10.0,
+        "prob_empate": 11.1,
+        "prob_visitante": 78.9
+      },
+      "diff_elo": -531.9,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401916990",
+      "fecha": "2026-11-10T12:45:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "12:45",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "21128",
+        "nombre": "Real Madrid",
+        "pais": "",
+        "rating": 1838.17,
+        "rd": 135.23,
+        "partidos_jugados": 14,
+        "pj_reales": 14,
+        "form_score": 68.4,
+        "form_local": 89.6,
+        "form_visitante": 60.9,
+        "momentum": "stable",
+        "momentum_diff": 2.4,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 2E",
+          "resultados": [
+            "E",
+            "V",
+            "E",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.07,
+          "goles_contra": 1.57,
+          "diferencia": 0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 5.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "21640",
+        "nombre": "Paris FC",
+        "pais": "",
+        "rating": 1641.82,
+        "rd": 139.5,
+        "partidos_jugados": 11,
+        "pj_reales": 11,
+        "form_score": 73.7,
+        "form_local": 77.0,
+        "form_visitante": 57.0,
+        "momentum": "stable",
+        "momentum_diff": 0.6,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 3E",
+          "resultados": [
+            "V",
+            "E",
+            "E",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.18,
+          "goles_contra": 1.55,
+          "diferencia": 0.63
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 4.9,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 75.1,
+        "prob_empate": 18.6,
+        "prob_visitante": 6.3
+      },
+      "diff_elo": 196.4,
+      "confianza": 98.2
+    },
+    {
+      "fixture_id": "401928514",
+      "fecha": "2026-11-10T13:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "13:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20776",
+        "nombre": "Anaitasuna",
+        "pais": "",
+        "rating": 1565.91,
+        "rd": 204.3,
+        "partidos_jugados": 4,
+        "pj_reales": 4,
+        "form_score": 63.4,
+        "form_local": 59.3,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V 2E",
+          "resultados": [
+            "E",
+            "E",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.5,
+          "goles_contra": 0.5,
+          "diferencia": 2.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 5.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "96",
+        "nombre": "Alavés",
+        "pais": "",
+        "rating": 1442.95,
+        "rd": 112.22,
+        "partidos_jugados": 16,
+        "pj_reales": 16,
+        "form_score": 39.8,
+        "form_local": 38.9,
+        "form_visitante": 39.0,
+        "momentum": "stable",
+        "momentum_diff": 2.6,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "1D 4E",
+          "resultados": [
+            "E",
+            "E",
+            "D",
+            "E",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.07,
+          "goles_contra": 1.2,
+          "diferencia": -0.13
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.6,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 68.3,
+        "prob_empate": 20.3,
+        "prob_visitante": 11.4
+      },
+      "diff_elo": 123.0,
+      "confianza": 61.5
+    },
+    {
+      "fixture_id": "401928516",
+      "fecha": "2026-11-10T13:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "13:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "133835",
+        "nombre": "CD Pamplona",
+        "pais": "",
+        "rating": 1618.07,
+        "rd": 220.15,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2E",
+          "resultados": [
+            "E",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 6.9,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "3752",
+        "nombre": "Eibar",
+        "pais": "",
+        "rating": 1679.61,
+        "rd": 111.34,
+        "partidos_jugados": 16,
+        "pj_reales": 16,
+        "form_score": 47.8,
+        "form_local": 63.3,
+        "form_visitante": 46.5,
+        "momentum": "stable",
+        "momentum_diff": -0.4,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 4
+        },
+        "ultimos5": {
+          "texto": "1D 4E",
+          "resultados": [
+            "E",
+            "E",
+            "E",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.4,
+          "goles_contra": 0.93,
+          "diferencia": 0.47
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.6,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 47.5,
+        "prob_empate": 21.7,
+        "prob_visitante": 30.8
+      },
+      "diff_elo": -61.5,
+      "confianza": 30.8
+    },
+    {
+      "fixture_id": "401928137",
+      "fecha": "2026-11-10T13:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "13:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20984",
+        "nombre": "Feyenoord",
+        "pais": "",
+        "rating": 1363.77,
+        "rd": 124.49,
+        "partidos_jugados": 13,
+        "pj_reales": 13,
+        "form_score": 42.7,
+        "form_local": 15.8,
+        "form_visitante": 46.7,
+        "momentum": "stable",
+        "momentum_diff": 0.1,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 4D",
+          "resultados": [
+            "V",
+            "D",
+            "D",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.23,
+          "goles_contra": 2.54,
+          "diferencia": -1.31
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.9,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20107",
+        "nombre": "Wolfsburg",
+        "pais": "",
+        "rating": 1730.13,
+        "rd": 179.39,
+        "partidos_jugados": 5,
+        "pj_reales": 2,
+        "form_score": 90.4,
+        "form_local": 100.0,
+        "form_visitante": 62.2,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "4V 1D",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 3.6,
+          "goles_contra": 0.8,
+          "diferencia": 2.8
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 10.4,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 17.5,
+        "prob_empate": 14.7,
+        "prob_visitante": 67.8
+      },
+      "diff_elo": -366.4,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401929722",
+      "fecha": "2026-11-10T13:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "13:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5654",
+        "nombre": "Duquesne",
+        "pais": "",
+        "rating": 1680.12,
+        "rd": 141.48,
+        "partidos_jugados": 11,
+        "pj_reales": 11,
+        "form_score": 35.2,
+        "form_local": 99.0,
+        "form_visitante": 26.2,
+        "momentum": "stable",
+        "momentum_diff": -3.8,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3V 2D",
+          "resultados": [
+            "D",
+            "D",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.77,
+          "goles_contra": 0.77,
+          "diferencia": 1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.5,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "6802",
+        "nombre": "Fordham",
+        "pais": "",
+        "rating": 1517.7,
+        "rd": 123.85,
+        "partidos_jugados": 12,
+        "pj_reales": 12,
+        "form_score": 68.2,
+        "form_local": 62.2,
+        "form_visitante": 50.8,
+        "momentum": "stable",
+        "momentum_diff": 0.5,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V 3D",
+          "resultados": [
+            "V",
+            "V",
+            "D",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.29,
+          "goles_contra": 1.21,
+          "diferencia": 0.08
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -9.5,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 71.1,
+        "prob_empate": 19.4,
+        "prob_visitante": 9.5
+      },
+      "diff_elo": 162.4,
+      "confianza": 81.2
+    },
+    {
+      "fixture_id": "401931325",
+      "fecha": "2026-11-10T13:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "13:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "122813",
+        "nombre": "Incarnate Word",
+        "pais": "",
+        "rating": 1563.66,
+        "rd": 134.34,
+        "partidos_jugados": 10,
+        "pj_reales": 10,
+        "form_score": 36.5,
+        "form_local": 67.1,
+        "form_visitante": 33.7,
+        "momentum": "stable",
+        "momentum_diff": -1.9,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "D",
+            "E",
+            "V",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.4,
+          "goles_contra": 1.4,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -4.5,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20565",
+        "nombre": "Nicholls",
+        "pais": "",
+        "rating": 1332.46,
+        "rd": 123.15,
+        "partidos_jugados": 13,
+        "pj_reales": 13,
+        "form_score": 21.4,
+        "form_local": 20.6,
+        "form_visitante": 41.5,
+        "momentum": "stable",
+        "momentum_diff": -2.6,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "1V 3D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "V",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.38,
+          "goles_contra": 1.77,
+          "diferencia": 0.61
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -3.1,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 79.3,
+        "prob_empate": 17.8,
+        "prob_visitante": 2.9
+      },
+      "diff_elo": 231.2,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401929959",
+      "fecha": "2026-11-10T13:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "13:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20411",
+        "nombre": "UMass",
+        "pais": "",
+        "rating": 1724.73,
+        "rd": 123.54,
+        "partidos_jugados": 17,
+        "pj_reales": 17,
+        "form_score": 63.0,
+        "form_local": 40.6,
+        "form_visitante": 80.2,
+        "momentum": "stable",
+        "momentum_diff": 0.4,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "V",
+            "D",
+            "E",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.87,
+          "goles_contra": 1.0,
+          "diferencia": 0.87
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 4.9,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20599",
+        "nombre": "Ball State",
+        "pais": "",
+        "rating": 1618.15,
+        "rd": 101.55,
+        "partidos_jugados": 17,
+        "pj_reales": 17,
+        "form_score": 64.1,
+        "form_local": 32.6,
+        "form_visitante": 85.1,
+        "momentum": "stable",
+        "momentum_diff": -1.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "V",
+            "D",
+            "E",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.73,
+          "goles_contra": 0.93,
+          "diferencia": -0.2
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 64.7,
+        "prob_empate": 20.7,
+        "prob_visitante": 14.6
+      },
+      "diff_elo": 106.6,
+      "confianza": 53.3
+    },
+    {
+      "fixture_id": "401928519",
+      "fecha": "2026-11-10T14:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "12587",
+        "nombre": "Amorebieta",
+        "pais": "",
+        "rating": 1468.4,
+        "rd": 189.88,
+        "partidos_jugados": 4,
+        "pj_reales": 4,
+        "form_score": 53.3,
+        "form_local": 40.7,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "1V 1D 2E",
+          "resultados": [
+            "E",
+            "E",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.5,
+          "goles_contra": 0.5,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 3.9,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "7206",
+        "nombre": "UD Logroñés",
+        "pais": "",
+        "rating": 1478.52,
+        "rd": 224.23,
+        "partidos_jugados": 3,
+        "pj_reales": 3,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2E",
+          "resultados": [
+            "E",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -1.1,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 52.6,
+        "prob_empate": 22.9,
+        "prob_visitante": 24.5
+      },
+      "diff_elo": -10.1,
+      "confianza": 5.1
+    },
+    {
+      "fixture_id": "401928528",
+      "fecha": "2026-11-10T14:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "22043",
+        "nombre": "ML Lagunas",
+        "pais": "",
+        "rating": 1592.88,
+        "rd": 255.34,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 68.9,
+        "form_local": 50.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1E",
+          "resultados": [
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.5,
+          "goles_contra": 0.0,
+          "diferencia": 0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 15.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "5401",
+        "nombre": "Real Jaen CF",
+        "pais": "",
+        "rating": 1418.61,
+        "rd": 234.96,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 31.1,
+        "form_local": 0.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1D 1E",
+          "resultados": [
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.5,
+          "goles_contra": 1.0,
+          "diferencia": -0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -10.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 70.6,
+        "prob_empate": 19.1,
+        "prob_visitante": 10.2
+      },
+      "diff_elo": 174.3,
+      "confianza": 87.1
+    },
+    {
+      "fixture_id": "401928550",
+      "fecha": "2026-11-10T14:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "17573",
+        "nombre": "Trival Valde",
+        "pais": "",
+        "rating": 1508.06,
+        "rd": 254.91,
+        "partidos_jugados": 1,
+        "pj_reales": 1,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1E",
+          "resultados": [
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -7.6,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "17534",
+        "nombre": "Leganés",
+        "pais": "",
+        "rating": 1437.3,
+        "rd": 107.67,
+        "partidos_jugados": 16,
+        "pj_reales": 16,
+        "form_score": 12.8,
+        "form_local": 22.1,
+        "form_visitante": 16.4,
+        "momentum": "stable",
+        "momentum_diff": 0.3,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3D 2E",
+          "resultados": [
+            "D",
+            "D",
+            "E",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.73,
+          "goles_contra": 1.53,
+          "diferencia": -0.8
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.9,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 63.6,
+        "prob_empate": 21.5,
+        "prob_visitante": 14.9
+      },
+      "diff_elo": 70.8,
+      "confianza": 35.4
+    },
+    {
+      "fixture_id": "401906329",
+      "fecha": "2026-11-10T14:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "280",
+        "nombre": "Barnet",
+        "pais": "",
+        "rating": 1576.44,
+        "rd": 103.3,
+        "partidos_jugados": 18,
+        "pj_reales": 18,
+        "form_score": 77.2,
+        "form_local": 82.5,
+        "form_visitante": 70.1,
+        "momentum": "stable",
+        "momentum_diff": -0.8,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "V",
+            "E",
+            "V",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.87,
+          "goles_contra": 1.13,
+          "diferencia": 0.74
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.6,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "309",
+        "nombre": "Leyton Orient",
+        "pais": "",
+        "rating": 1518.22,
+        "rd": 95.76,
+        "partidos_jugados": 20,
+        "pj_reales": 20,
+        "form_score": 71.6,
+        "form_local": 83.9,
+        "form_visitante": 18.4,
+        "momentum": "stable",
+        "momentum_diff": 2.7,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3V 2D",
+          "resultados": [
+            "V",
+            "V",
+            "D",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.53,
+          "goles_contra": 1.2,
+          "diferencia": 0.33
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -1.5,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 62.9,
+        "prob_empate": 21.8,
+        "prob_visitante": 15.3
+      },
+      "diff_elo": 58.2,
+      "confianza": 29.1
+    },
+    {
+      "fixture_id": "401906331",
+      "fecha": "2026-11-10T14:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "308",
+        "nombre": "Bristol Rovers",
+        "pais": "",
+        "rating": 1373.6,
+        "rd": 97.79,
+        "partidos_jugados": 18,
+        "pj_reales": 18,
+        "form_score": 47.7,
+        "form_local": 63.6,
+        "form_visitante": 2.0,
+        "momentum": "stable",
+        "momentum_diff": 3.2,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 3D 1E",
+          "resultados": [
+            "V",
+            "D",
+            "E",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 1.53,
+          "diferencia": -0.53
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "338",
+        "nombre": "Reading",
+        "pais": "",
+        "rating": 1558.91,
+        "rd": 95.58,
+        "partidos_jugados": 19,
+        "pj_reales": 19,
+        "form_score": 62.9,
+        "form_local": 77.2,
+        "form_visitante": 55.7,
+        "momentum": "stable",
+        "momentum_diff": 3.2,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "V",
+            "D",
+            "E",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.73,
+          "goles_contra": 1.0,
+          "diferencia": 0.73
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 7.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 32.2,
+        "prob_empate": 18.9,
+        "prob_visitante": 49.0
+      },
+      "diff_elo": -185.3,
+      "confianza": 92.7
+    },
+    {
+      "fixture_id": "401906336",
+      "fecha": "2026-11-10T14:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "2567",
+        "nombre": "Burton Albion",
+        "pais": "",
+        "rating": 1520.66,
+        "rd": 102.22,
+        "partidos_jugados": 17,
+        "pj_reales": 17,
+        "form_score": 63.0,
+        "form_local": 78.1,
+        "form_visitante": 23.3,
+        "momentum": "stable",
+        "momentum_diff": 3.1,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "V",
+            "D",
+            "V",
+            "E",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.2,
+          "goles_contra": 1.33,
+          "diferencia": -0.13
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.8,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "340",
+        "nombre": "Notts County",
+        "pais": "",
+        "rating": 1614.83,
+        "rd": 95.47,
+        "partidos_jugados": 19,
+        "pj_reales": 19,
+        "form_score": 64.3,
+        "form_local": 66.3,
+        "form_visitante": 52.1,
+        "momentum": "stable",
+        "momentum_diff": 0.3,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "E",
+            "V",
+            "E",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.27,
+          "goles_contra": 1.0,
+          "diferencia": 0.27
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -4.2,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 43.2,
+        "prob_empate": 21.0,
+        "prob_visitante": 35.9
+      },
+      "diff_elo": -94.2,
+      "confianza": 47.1
+    },
+    {
+      "fixture_id": "401906251",
+      "fecha": "2026-11-10T14:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "396",
+        "nombre": "Crewe",
+        "pais": "",
+        "rating": 1521.31,
+        "rd": 97.27,
+        "partidos_jugados": 20,
+        "pj_reales": 20,
+        "form_score": 63.1,
+        "form_local": 84.6,
+        "form_visitante": 24.9,
+        "momentum": "stable",
+        "momentum_diff": -1.5,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "V",
+            "E",
+            "D",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.53,
+          "goles_contra": 1.4,
+          "diferencia": 0.13
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -3.6,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "350",
+        "nombre": "Wigan",
+        "pais": "",
+        "rating": 1433.84,
+        "rd": 100.05,
+        "partidos_jugados": 19,
+        "pj_reales": 19,
+        "form_score": 68.6,
+        "form_local": 69.0,
+        "form_visitante": 42.2,
+        "momentum": "stable",
+        "momentum_diff": 2.6,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "V",
+            "E",
+            "V",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.8,
+          "goles_contra": 1.33,
+          "diferencia": -0.53
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.6,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 65.2,
+        "prob_empate": 21.1,
+        "prob_visitante": 13.7
+      },
+      "diff_elo": 87.5,
+      "confianza": 43.7
+    },
+    {
+      "fixture_id": "401906335",
+      "fecha": "2026-11-10T14:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "386",
+        "nombre": "Grimsby",
+        "pais": "",
+        "rating": 1412.9,
+        "rd": 99.75,
+        "partidos_jugados": 19,
+        "pj_reales": 19,
+        "form_score": 63.9,
+        "form_local": 57.9,
+        "form_visitante": 53.3,
+        "momentum": "stable",
+        "momentum_diff": 4.2,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "E",
+            "V",
+            "V",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.8,
+          "goles_contra": 1.53,
+          "diferencia": 0.27
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "21979",
+        "nombre": "Nottm Forest U21",
+        "pais": "",
+        "rating": 1362.51,
+        "rd": 211.4,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 18.9,
+        "form_local": 50.0,
+        "form_visitante": 18.9,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1D 1E",
+          "resultados": [
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 3.0,
+          "diferencia": -2.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -3.1,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 62.5,
+        "prob_empate": 22.0,
+        "prob_visitante": 15.5
+      },
+      "diff_elo": 50.4,
+      "confianza": 25.2
+    },
+    {
+      "fixture_id": "401906334",
+      "fecha": "2026-11-10T14:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "335",
+        "nombre": "Huddersfield",
+        "pais": "",
+        "rating": 1678.13,
+        "rd": 96.18,
+        "partidos_jugados": 20,
+        "pj_reales": 20,
+        "form_score": 47.1,
+        "form_local": 44.1,
+        "form_visitante": 88.2,
+        "momentum": "stable",
+        "momentum_diff": -2.8,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "D",
+            "E",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.2,
+          "goles_contra": 0.93,
+          "diferencia": 1.27
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 5.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "16728",
+        "nombre": "Liverpool U21",
+        "pais": "",
+        "rating": 1308.64,
+        "rd": 221.90351049555386,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 18.9,
+        "form_local": 50.0,
+        "form_visitante": 18.9,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1D 1E",
+          "resultados": [
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.5,
+          "goles_contra": 2.0,
+          "diferencia": -0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -16.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 84.9,
+        "prob_empate": 14.1,
+        "prob_visitante": 1.0
+      },
+      "diff_elo": 369.5,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401906332",
+      "fecha": "2026-11-10T14:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "375",
+        "nombre": "Leicester",
+        "pais": "",
+        "rating": 1557.32,
+        "rd": 100.51,
+        "partidos_jugados": 18,
+        "pj_reales": 18,
+        "form_score": 75.7,
+        "form_local": 67.3,
+        "form_visitante": 61.8,
+        "momentum": "stable",
+        "momentum_diff": 1.6,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "V",
+            "E",
+            "V",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.13,
+          "goles_contra": 1.6,
+          "diferencia": 0.53
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.6,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "401",
+        "nombre": "Walsall",
+        "pais": "",
+        "rating": 1447.37,
+        "rd": 100.27,
+        "partidos_jugados": 19,
+        "pj_reales": 19,
+        "form_score": 41.0,
+        "form_local": 49.0,
+        "form_visitante": 42.0,
+        "momentum": "stable",
+        "momentum_diff": -2.2,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "D",
+            "V",
+            "D",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.53,
+          "goles_contra": 1.53,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 4.3,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 69.2,
+        "prob_empate": 20.6,
+        "prob_visitante": 10.2
+      },
+      "diff_elo": 110.0,
+      "confianza": 55.0
+    },
+    {
+      "fixture_id": "401906338",
+      "fecha": "2026-11-10T14:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "304",
+        "nombre": "Mansfield",
+        "pais": "",
+        "rating": 1508.53,
+        "rd": 97.83,
+        "partidos_jugados": 19,
+        "pj_reales": 19,
+        "form_score": 69.8,
+        "form_local": 63.5,
+        "form_visitante": 63.5,
+        "momentum": "stable",
+        "momentum_diff": 1.2,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "V",
+            "E",
+            "D",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.4,
+          "goles_contra": 0.93,
+          "diferencia": 0.47
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 5.6,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "343",
+        "nombre": "Chesterfield",
+        "pais": "",
+        "rating": 1472.95,
+        "rd": 97.77,
+        "partidos_jugados": 19,
+        "pj_reales": 19,
+        "form_score": 63.1,
+        "form_local": 89.0,
+        "form_visitante": 13.2,
+        "momentum": "stable",
+        "momentum_diff": 0.4,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "V",
+            "D",
+            "V",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.2,
+          "goles_contra": 1.8,
+          "diferencia": 0.4
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 59.9,
+        "prob_empate": 22.3,
+        "prob_visitante": 17.8
+      },
+      "diff_elo": 35.6,
+      "confianza": 17.8
+    },
+    {
+      "fixture_id": "401906328",
+      "fecha": "2026-11-10T14:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "353",
+        "nombre": "Northampton",
+        "pais": "",
+        "rating": 1278.16,
+        "rd": 95.81,
+        "partidos_jugados": 20,
+        "pj_reales": 20,
+        "form_score": 21.0,
+        "form_local": 33.5,
+        "form_visitante": 33.6,
+        "momentum": "stable",
+        "momentum_diff": -3.5,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "1V 3D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "E",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.67,
+          "goles_contra": 1.0,
+          "diferencia": -0.33
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 7.5,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "389",
+        "nombre": "Gillingham",
+        "pais": "",
+        "rating": 1438.3,
+        "rd": 98.89,
+        "partidos_jugados": 18,
+        "pj_reales": 18,
+        "form_score": 34.6,
+        "form_local": 22.4,
+        "form_visitante": 63.9,
+        "momentum": "stable",
+        "momentum_diff": -3.5,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 3D 1E",
+          "resultados": [
+            "D",
+            "V",
+            "D",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.67,
+          "goles_contra": 1.6,
+          "diferencia": 0.07
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.3,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 33.6,
+        "prob_empate": 19.4,
+        "prob_visitante": 46.9
+      },
+      "diff_elo": -160.1,
+      "confianza": 80.1
+    },
+    {
+      "fixture_id": "401906333",
+      "fecha": "2026-11-10T14:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "311",
+        "nombre": "Oxford Utd",
+        "pais": "",
+        "rating": 1668.6,
+        "rd": 100.41,
+        "partidos_jugados": 17,
+        "pj_reales": 17,
+        "form_score": 49.1,
+        "form_local": 53.2,
+        "form_visitante": 59.6,
+        "momentum": "stable",
+        "momentum_diff": -2.6,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "D",
+            "V",
+            "E",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.6,
+          "goles_contra": 0.93,
+          "diferencia": 0.67
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 4.5,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "320",
+        "nombre": "Cheltenham",
+        "pais": "",
+        "rating": 1448.62,
+        "rd": 96.07,
+        "partidos_jugados": 19,
+        "pj_reales": 19,
+        "form_score": 65.6,
+        "form_local": 88.6,
+        "form_visitante": 11.9,
+        "momentum": "stable",
+        "momentum_diff": 2.6,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 2D",
+          "resultados": [
+            "V",
+            "D",
+            "V",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.73,
+          "goles_contra": 1.73,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 6.4,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 78.3,
+        "prob_empate": 18.1,
+        "prob_visitante": 3.7
+      },
+      "diff_elo": 220.0,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401906330",
+      "fecha": "2026-11-10T14:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "307",
+        "nombre": "Plymouth",
+        "pais": "",
+        "rating": 1631.52,
+        "rd": 94.97,
+        "partidos_jugados": 20,
+        "pj_reales": 20,
+        "form_score": 72.2,
+        "form_local": 67.7,
+        "form_visitante": 65.9,
+        "momentum": "stable",
+        "momentum_diff": -0.5,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "V",
+            "E",
+            "V",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.0,
+          "goles_contra": 1.2,
+          "diferencia": 0.8
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 6.9,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "341",
+        "nombre": "Swindon",
+        "pais": "",
+        "rating": 1339.15,
+        "rd": 98.24,
+        "partidos_jugados": 19,
+        "pj_reales": 19,
+        "form_score": 43.3,
+        "form_local": 59.9,
+        "form_visitante": 27.2,
+        "momentum": "stable",
+        "momentum_diff": 2.9,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "D",
+            "V",
+            "E",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 1.47,
+          "diferencia": -0.47
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.4,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 83.2,
+        "prob_empate": 15.8,
+        "prob_visitante": 1.0
+      },
+      "diff_elo": 292.4,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401906250",
+      "fecha": "2026-11-10T14:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "285",
+        "nombre": "Stevenage",
+        "pais": "",
+        "rating": 1583.82,
+        "rd": 97.73,
+        "partidos_jugados": 18,
+        "pj_reales": 18,
+        "form_score": 67.1,
+        "form_local": 55.7,
+        "form_visitante": 64.7,
+        "momentum": "stable",
+        "momentum_diff": -1.6,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "V",
+            "E",
+            "D",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.6,
+          "goles_contra": 1.0,
+          "diferencia": 0.6
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.5,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "18777",
+        "nombre": "Fulham U21",
+        "pais": "",
+        "rating": 1232.25,
+        "rd": 216.33,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 0.0,
+        "form_local": 50.0,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2D",
+          "resultados": [
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.5,
+          "goles_contra": 4.5,
+          "diferencia": -3.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -22.8,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 84.9,
+        "prob_empate": 14.2,
+        "prob_visitante": 0.9
+      },
+      "diff_elo": 351.6,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401906337",
+      "fecha": "2026-11-10T14:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "400",
+        "nombre": "Stockport",
+        "pais": "",
+        "rating": 1707.7,
+        "rd": 107.02,
+        "partidos_jugados": 17,
+        "pj_reales": 17,
+        "form_score": 80.6,
+        "form_local": 92.6,
+        "form_visitante": 66.3,
+        "momentum": "stable",
+        "momentum_diff": -1.4,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "V",
+            "V",
+            "D",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.27,
+          "goles_contra": 1.07,
+          "diferencia": 1.2
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -1.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "345",
+        "nombre": "Tranmere",
+        "pais": "",
+        "rating": 1432.66,
+        "rd": 100.88,
+        "partidos_jugados": 16,
+        "pj_reales": 16,
+        "form_score": 43.3,
+        "form_local": 62.4,
+        "form_visitante": 31.2,
+        "momentum": "stable",
+        "momentum_diff": 0.1,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "D",
+            "V",
+            "E",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.2,
+          "goles_contra": 1.33,
+          "diferencia": -0.13
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.2,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 82.8,
+        "prob_empate": 16.2,
+        "prob_visitante": 1.0
+      },
+      "diff_elo": 275.0,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401906339",
+      "fecha": "2026-11-10T14:30:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "14:30",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "387",
+        "nombre": "Bradford",
+        "pais": "",
+        "rating": 1710.99,
+        "rd": 97.55,
+        "partidos_jugados": 21,
+        "pj_reales": 21,
+        "form_score": 67.5,
+        "form_local": 71.3,
+        "form_visitante": 62.9,
+        "momentum": "stable",
+        "momentum_diff": -1.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "V",
+            "D",
+            "V",
+            "E",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.6,
+          "goles_contra": 0.4,
+          "diferencia": 1.2
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 6.6,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "315",
+        "nombre": "York City",
+        "pais": "",
+        "rating": 1427.23,
+        "rd": 96.3,
+        "partidos_jugados": 18,
+        "pj_reales": 18,
+        "form_score": 55.2,
+        "form_local": 84.6,
+        "form_visitante": 10.4,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "V",
+            "D",
+            "D",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.73,
+          "goles_contra": 1.47,
+          "diferencia": 0.26
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.9,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 82.9,
+        "prob_empate": 16.1,
+        "prob_visitante": 1.0
+      },
+      "diff_elo": 283.8,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401906327",
+      "fecha": "2026-11-10T14:30:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "14:30",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "3129",
+        "nombre": "Bromley",
+        "pais": "",
+        "rating": 1273.63,
+        "rd": 94.49,
+        "partidos_jugados": 20,
+        "pj_reales": 20,
+        "form_score": 5.2,
+        "form_local": 19.9,
+        "form_visitante": 2.7,
+        "momentum": "stable",
+        "momentum_diff": -0.2,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "4D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "D",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.6,
+          "goles_contra": 2.13,
+          "diferencia": -1.53
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -4.7,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "390",
+        "nombre": "MK Dons",
+        "pais": "",
+        "rating": 1561.06,
+        "rd": 96.76,
+        "partidos_jugados": 18,
+        "pj_reales": 18,
+        "form_score": 92.0,
+        "form_local": 93.1,
+        "form_visitante": 58.4,
+        "momentum": "stable",
+        "momentum_diff": 2.1,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 4
+        },
+        "ultimos5": {
+          "texto": "4V 1D",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.07,
+          "goles_contra": 1.13,
+          "diferencia": 0.94
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.8,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 17.8,
+        "prob_empate": 16.5,
+        "prob_visitante": 65.7
+      },
+      "diff_elo": -287.4,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401906272",
+      "fecha": "2026-11-10T14:30:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "14:30",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "2594",
+        "nombre": "Crawley",
+        "pais": "",
+        "rating": 1339.89,
+        "rd": 102.44,
+        "partidos_jugados": 19,
+        "pj_reales": 19,
+        "form_score": 35.7,
+        "form_local": 39.5,
+        "form_visitante": 29.4,
+        "momentum": "stable",
+        "momentum_diff": -2.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 3D 1E",
+          "resultados": [
+            "D",
+            "V",
+            "E",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.07,
+          "goles_contra": 1.67,
+          "diferencia": -0.6
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -6.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "132923",
+        "nombre": "Brentford U21",
+        "pais": "",
+        "rating": 1470.02,
+        "rd": 225.39312248131452,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 37.8,
+        "form_local": 50.0,
+        "form_visitante": 37.8,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1D",
+          "resultados": [
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 3.5,
+          "diferencia": -2.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -5.4,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 40.4,
+        "prob_empate": 20.1,
+        "prob_visitante": 39.5
+      },
+      "diff_elo": -130.1,
+      "confianza": 65.1
+    },
+    {
+      "fixture_id": "401906271",
+      "fecha": "2026-11-10T14:45:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "14:45",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "339",
+        "nombre": "Colchester",
+        "pais": "",
+        "rating": 1341.07,
+        "rd": 98.48,
+        "partidos_jugados": 18,
+        "pj_reales": 18,
+        "form_score": 48.6,
+        "form_local": 58.5,
+        "form_visitante": 16.8,
+        "momentum": "stable",
+        "momentum_diff": 1.8,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 2D 2E",
+          "resultados": [
+            "V",
+            "D",
+            "D",
+            "E",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.73,
+          "goles_contra": 1.33,
+          "diferencia": -0.6
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.1,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "132922",
+        "nombre": "Ipswich U21",
+        "pais": "",
+        "rating": 1213.13,
+        "rd": 223.98883963271948,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 0.0,
+        "form_local": 50.0,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2D",
+          "resultados": [
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.5,
+          "goles_contra": 5.0,
+          "diferencia": -4.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -23.3,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 71.0,
+        "prob_empate": 20.2,
+        "prob_visitante": 8.8
+      },
+      "diff_elo": 127.9,
+      "confianza": 64.0
+    },
+    {
+      "fixture_id": "401916988",
+      "fecha": "2026-11-10T15:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "15:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "131635",
+        "nombre": "Inter Milan",
+        "pais": "",
+        "rating": 1632.02,
+        "rd": 181.88,
+        "partidos_jugados": 5,
+        "pj_reales": 2,
+        "form_score": 38.3,
+        "form_local": 100.0,
+        "form_visitante": 15.4,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "D",
+            "E",
+            "V",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 2.0,
+          "diferencia": -1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 7.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "19257",
+        "nombre": "Man City",
+        "pais": "",
+        "rating": 1915.38,
+        "rd": 130.31,
+        "partidos_jugados": 12,
+        "pj_reales": 12,
+        "form_score": 87.0,
+        "form_local": 85.0,
+        "form_visitante": 82.2,
+        "momentum": "stable",
+        "momentum_diff": 0.4,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3V 2E",
+          "resultados": [
+            "V",
+            "V",
+            "E",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.58,
+          "goles_contra": 1.17,
+          "diferencia": 1.41
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 7.3,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 24.9,
+        "prob_empate": 16.6,
+        "prob_visitante": 58.5
+      },
+      "diff_elo": -283.4,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401916987",
+      "fecha": "2026-11-10T15:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "15:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "19258",
+        "nombre": "PSG",
+        "pais": "",
+        "rating": 1848.25,
+        "rd": 133.53,
+        "partidos_jugados": 12,
+        "pj_reales": 12,
+        "form_score": 74.8,
+        "form_local": 84.8,
+        "form_visitante": 60.4,
+        "momentum": "stable",
+        "momentum_diff": -1.4,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "V",
+            "E",
+            "E",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.83,
+          "goles_contra": 0.75,
+          "diferencia": 1.08
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 4.1,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20103",
+        "nombre": "Bayern",
+        "pais": "",
+        "rating": 1827.46,
+        "rd": 211.67,
+        "partidos_jugados": 3,
+        "pj_reales": 2,
+        "form_score": 65.4,
+        "form_local": 50.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 2E",
+          "resultados": [
+            "E",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.33,
+          "goles_contra": 1.33,
+          "diferencia": 1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 10.8,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 55.9,
+        "prob_empate": 22.7,
+        "prob_visitante": 21.4
+      },
+      "diff_elo": 20.8,
+      "confianza": 10.4
+    },
+    {
+      "fixture_id": "401916989",
+      "fecha": "2026-11-10T15:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "15:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "21685",
+        "nombre": "Roma",
+        "pais": "",
+        "rating": 1443.01,
+        "rd": 83.87,
+        "partidos_jugados": 33,
+        "pj_reales": 8,
+        "form_score": 9.3,
+        "form_local": 0.0,
+        "form_visitante": 18.9,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 2.67,
+          "diferencia": -2.67
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20835",
+        "nombre": "Servette",
+        "pais": "",
+        "rating": 1521.82,
+        "rd": 161.75,
+        "partidos_jugados": 7,
+        "pj_reales": 7,
+        "form_score": 55.0,
+        "form_local": 72.4,
+        "form_visitante": 18.6,
+        "momentum": "stable",
+        "momentum_diff": -2.6,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 3D",
+          "resultados": [
+            "V",
+            "D",
+            "D",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.57,
+          "goles_contra": 2.43,
+          "diferencia": 0.14
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 19.4,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 39.9,
+        "prob_empate": 21.3,
+        "prob_visitante": 38.7
+      },
+      "diff_elo": -78.8,
+      "confianza": 39.4
+    },
+    {
+      "fixture_id": "401928504",
+      "fecha": "2026-11-10T15:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "15:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "133846",
+        "nombre": "UE Tavernes",
+        "pais": "",
+        "rating": 1448.99,
+        "rd": 212.93,
+        "partidos_jugados": 3,
+        "pj_reales": 3,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "3E",
+          "resultados": [
+            "E",
+            "E",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.33,
+          "goles_contra": 0.33,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.5,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "94",
+        "nombre": "Valencia",
+        "pais": "",
+        "rating": 1398.69,
+        "rd": 122.87,
+        "partidos_jugados": 13,
+        "pj_reales": 13,
+        "form_score": 36.7,
+        "form_local": 8.5,
+        "form_visitante": 70.8,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 2D 2E",
+          "resultados": [
+            "D",
+            "V",
+            "E",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.62,
+          "goles_contra": 1.54,
+          "diferencia": -0.92
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 59.0,
+        "prob_empate": 22.0,
+        "prob_visitante": 19.0
+      },
+      "diff_elo": 50.3,
+      "confianza": 25.1
+    },
+    {
+      "fixture_id": "401931289",
+      "fecha": "2026-11-10T15:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "15:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20524",
+        "nombre": "Alabama",
+        "pais": "",
+        "rating": 1913.6,
+        "rd": 139.32,
+        "partidos_jugados": 12,
+        "pj_reales": 12,
+        "form_score": 46.1,
+        "form_local": 74.9,
+        "form_visitante": 59.4,
+        "momentum": "stable",
+        "momentum_diff": -4.4,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 2D",
+          "resultados": [
+            "D",
+            "V",
+            "D",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.08,
+          "goles_contra": 0.69,
+          "diferencia": 1.39
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 10.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20536",
+        "nombre": "LSU",
+        "pais": "",
+        "rating": 1592.43,
+        "rd": 122.8,
+        "partidos_jugados": 12,
+        "pj_reales": 12,
+        "form_score": 72.4,
+        "form_local": 36.7,
+        "form_visitante": 76.1,
+        "momentum": "stable",
+        "momentum_diff": 0.5,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "V",
+            "E",
+            "E",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.47,
+          "goles_contra": 1.53,
+          "diferencia": -0.06
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.5,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 83.0,
+        "prob_empate": 15.7,
+        "prob_visitante": 1.3
+      },
+      "diff_elo": 321.2,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401929930",
+      "fecha": "2026-11-10T16:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "16:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20324",
+        "nombre": "Western KY",
+        "pais": "",
+        "rating": 1728.16,
+        "rd": 125.77,
+        "partidos_jugados": 12,
+        "pj_reales": 12,
+        "form_score": 90.2,
+        "form_local": 95.7,
+        "form_visitante": 49.8,
+        "momentum": "stable",
+        "momentum_diff": 2.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "3V 2E",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "E",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.46,
+          "goles_contra": 0.54,
+          "diferencia": 0.92
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.8,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20450",
+        "nombre": "Delaware",
+        "pais": "",
+        "rating": 1751.17,
+        "rd": 104.31,
+        "partidos_jugados": 17,
+        "pj_reales": 17,
+        "form_score": 77.3,
+        "form_local": 81.5,
+        "form_visitante": 69.3,
+        "momentum": "stable",
+        "momentum_diff": -0.1,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "V",
+            "E",
+            "V",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.53,
+          "goles_contra": 0.8,
+          "diferencia": 0.73
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.5,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 52.4,
+        "prob_empate": 22.6,
+        "prob_visitante": 25.0
+      },
+      "diff_elo": -23.0,
+      "confianza": 11.5
+    },
+    {
+      "fixture_id": "401899697",
+      "fecha": "2026-11-10T16:30:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "16:30",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "22330",
+        "nombre": "Cacahuatique",
+        "pais": "",
+        "rating": 1479.74,
+        "rd": 124.91,
+        "partidos_jugados": 11,
+        "pj_reales": 11,
+        "form_score": 78.1,
+        "form_local": 64.4,
+        "form_visitante": 61.0,
+        "momentum": "stable",
+        "momentum_diff": 3.4,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "V",
+            "V",
+            "E",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.09,
+          "goles_contra": 1.18,
+          "diferencia": -0.09
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -2.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "7232",
+        "nombre": "Luis Ángel Firpo",
+        "pais": "",
+        "rating": 1619.02,
+        "rd": 108.5,
+        "partidos_jugados": 16,
+        "pj_reales": 16,
+        "form_score": 61.3,
+        "form_local": 66.7,
+        "form_visitante": 62.9,
+        "momentum": "stable",
+        "momentum_diff": 0.2,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "V",
+            "D",
+            "E",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.47,
+          "goles_contra": 0.8,
+          "diferencia": 0.67
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 4.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 38.8,
+        "prob_empate": 19.9,
+        "prob_visitante": 41.3
+      },
+      "diff_elo": -139.3,
+      "confianza": 69.6
+    },
+    {
+      "fixture_id": "401931326",
+      "fecha": "2026-11-10T16:30:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "16:30",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20551",
+        "nombre": "N'Western St",
+        "pais": "",
+        "rating": 1414.53,
+        "rd": 120.23,
+        "partidos_jugados": 12,
+        "pj_reales": 12,
+        "form_score": 59.1,
+        "form_local": 83.3,
+        "form_visitante": 20.2,
+        "momentum": "stable",
+        "momentum_diff": -0.8,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 3D",
+          "resultados": [
+            "V",
+            "D",
+            "V",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.5,
+          "goles_contra": 2.92,
+          "diferencia": -1.42
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20581",
+        "nombre": "McNeese",
+        "pais": "",
+        "rating": 1569.6,
+        "rd": 126.01,
+        "partidos_jugados": 12,
+        "pj_reales": 12,
+        "form_score": 63.4,
+        "form_local": 57.9,
+        "form_visitante": 58.5,
+        "momentum": "stable",
+        "momentum_diff": 0.3,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1D 3E",
+          "resultados": [
+            "V",
+            "E",
+            "D",
+            "E",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.31,
+          "goles_contra": 1.0,
+          "diferencia": 0.31
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.5,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 37.0,
+        "prob_empate": 19.6,
+        "prob_visitante": 43.4
+      },
+      "diff_elo": -155.1,
+      "confianza": 77.5
+    },
+    {
+      "fixture_id": "401929723",
+      "fecha": "2026-11-10T17:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "17:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5620",
+        "nombre": "Saint Louis",
+        "pais": "",
+        "rating": 1710.56,
+        "rd": 110.73,
+        "partidos_jugados": 14,
+        "pj_reales": 7,
+        "form_score": 81.7,
+        "form_local": 88.2,
+        "form_visitante": 58.2,
+        "momentum": "stable",
+        "momentum_diff": 0.4,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 2E",
+          "resultados": [
+            "V",
+            "E",
+            "V",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.71,
+          "goles_contra": 1.0,
+          "diferencia": 0.71
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "5694",
+        "nombre": "Davidson",
+        "pais": "",
+        "rating": 1568.27,
+        "rd": 106.46,
+        "partidos_jugados": 15,
+        "pj_reales": 8,
+        "form_score": 62.6,
+        "form_local": 64.0,
+        "form_visitante": 62.5,
+        "momentum": "stable",
+        "momentum_diff": 3.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3V 2E",
+          "resultados": [
+            "E",
+            "E",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.6,
+          "goles_contra": 1.13,
+          "diferencia": 0.47
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 4.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 71.7,
+        "prob_empate": 19.9,
+        "prob_visitante": 8.4
+      },
+      "diff_elo": 142.3,
+      "confianza": 71.1
+    },
+    {
+      "fixture_id": "401929960",
+      "fecha": "2026-11-10T17:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "17:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20465",
+        "nombre": "W Michigan",
+        "pais": "",
+        "rating": 1675.53,
+        "rd": 111.24,
+        "partidos_jugados": 14,
+        "pj_reales": 14,
+        "form_score": 82.3,
+        "form_local": 62.4,
+        "form_visitante": 92.7,
+        "momentum": "stable",
+        "momentum_diff": 1.8,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "4V 1D",
+          "resultados": [
+            "V",
+            "V",
+            "D",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.64,
+          "goles_contra": 0.79,
+          "diferencia": 0.85
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -1.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20510",
+        "nombre": "Miami (OH)",
+        "pais": "",
+        "rating": 1609.85,
+        "rd": 95.77,
+        "partidos_jugados": 18,
+        "pj_reales": 8,
+        "form_score": 69.0,
+        "form_local": 68.9,
+        "form_visitante": 78.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "E",
+            "V",
+            "V",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.47,
+          "goles_contra": 1.0,
+          "diferencia": 0.47
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 4.4,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 61.8,
+        "prob_empate": 21.6,
+        "prob_visitante": 16.6
+      },
+      "diff_elo": 65.7,
+      "confianza": 32.8
+    },
+    {
+      "fixture_id": "401931290",
+      "fecha": "2026-11-10T17:30:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "17:30",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20370",
+        "nombre": "Vanderbilt",
+        "pais": "",
+        "rating": 2096.17,
+        "rd": 138.06,
+        "partidos_jugados": 11,
+        "pj_reales": 11,
+        "form_score": 100.0,
+        "form_local": 100.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 12
+        },
+        "ultimos5": {
+          "texto": "5V",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 3.08,
+          "goles_contra": 0.67,
+          "diferencia": 2.41
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 13.8,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20517",
+        "nombre": "Texas",
+        "pais": "",
+        "rating": 1759.92,
+        "rd": 108.14,
+        "partidos_jugados": 16,
+        "pj_reales": 7,
+        "form_score": 42.4,
+        "form_local": 62.6,
+        "form_visitante": 25.7,
+        "momentum": "stable",
+        "momentum_diff": -3.3,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 2D 2E",
+          "resultados": [
+            "E",
+            "D",
+            "E",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.67,
+          "goles_contra": 1.27,
+          "diferencia": 0.4
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.2,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 84.9,
+        "prob_empate": 14.2,
+        "prob_visitante": 0.9
+      },
+      "diff_elo": 336.2,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401929833",
+      "fecha": "2026-11-10T18:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "18:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5624",
+        "nombre": "Boston U",
+        "pais": "",
+        "rating": 1516.83,
+        "rd": 133.0,
+        "partidos_jugados": 10,
+        "pj_reales": 10,
+        "form_score": 84.4,
+        "form_local": 72.4,
+        "form_visitante": 91.9,
+        "momentum": "stable",
+        "momentum_diff": -0.4,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "4V 1D",
+          "resultados": [
+            "V",
+            "V",
+            "D",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.82,
+          "goles_contra": 0.82,
+          "diferencia": 1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.1,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "5675",
+        "nombre": "Lehigh",
+        "pais": "",
+        "rating": 1356.46,
+        "rd": 125.29,
+        "partidos_jugados": 11,
+        "pj_reales": 11,
+        "form_score": 71.9,
+        "form_local": 78.4,
+        "form_visitante": 24.7,
+        "momentum": "stable",
+        "momentum_diff": 2.5,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3V 2D",
+          "resultados": [
+            "V",
+            "V",
+            "D",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.15,
+          "goles_contra": 1.54,
+          "diferencia": -0.39
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 5.5,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 73.3,
+        "prob_empate": 19.4,
+        "prob_visitante": 7.2
+      },
+      "diff_elo": 160.4,
+      "confianza": 80.2
+    },
+    {
+      "fixture_id": "401929906",
+      "fecha": "2026-11-10T18:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "18:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20632",
+        "nombre": "SC Upstate",
+        "pais": "",
+        "rating": 1653.46,
+        "rd": 125.14,
+        "partidos_jugados": 13,
+        "pj_reales": 13,
+        "form_score": 92.0,
+        "form_local": 87.0,
+        "form_visitante": 94.1,
+        "momentum": "stable",
+        "momentum_diff": -0.2,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "4V 1E",
+          "resultados": [
+            "V",
+            "V",
+            "E",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.54,
+          "goles_contra": 0.85,
+          "diferencia": 1.69
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.6,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20477",
+        "nombre": "Radford",
+        "pais": "",
+        "rating": 1502.22,
+        "rd": 127.26,
+        "partidos_jugados": 10,
+        "pj_reales": 10,
+        "form_score": 88.7,
+        "form_local": 72.7,
+        "form_visitante": 81.4,
+        "momentum": "up",
+        "momentum_diff": 5.5,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 4
+        },
+        "ultimos5": {
+          "texto": "4V 1D",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.1,
+          "goles_contra": 1.7,
+          "diferencia": 0.4
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -1.8,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 67.8,
+        "prob_empate": 19.6,
+        "prob_visitante": 12.6
+      },
+      "diff_elo": 151.2,
+      "confianza": 75.6
+    },
+    {
+      "fixture_id": "401929907",
+      "fecha": "2026-11-10T18:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "18:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20562",
+        "nombre": "UNC Asheville",
+        "pais": "",
+        "rating": 1531.7,
+        "rd": 122.37,
+        "partidos_jugados": 12,
+        "pj_reales": 12,
+        "form_score": 62.1,
+        "form_local": 63.7,
+        "form_visitante": 59.8,
+        "momentum": "stable",
+        "momentum_diff": -1.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "E",
+            "V",
+            "E",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.17,
+          "goles_contra": 0.92,
+          "diferencia": 1.25
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.5,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20476",
+        "nombre": "High Point",
+        "pais": "",
+        "rating": 1458.15,
+        "rd": 110.63,
+        "partidos_jugados": 15,
+        "pj_reales": 15,
+        "form_score": 86.7,
+        "form_local": 76.6,
+        "form_visitante": 62.9,
+        "momentum": "stable",
+        "momentum_diff": 2.3,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.67,
+          "goles_contra": 1.2,
+          "diferencia": 0.47
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.4,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 61.1,
+        "prob_empate": 21.4,
+        "prob_visitante": 17.5
+      },
+      "diff_elo": 73.5,
+      "confianza": 36.8
+    },
+    {
+      "fixture_id": "401933182",
+      "fecha": "2026-11-10T18:30:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "18:30",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "7445",
+        "nombre": "Inter Bogotá",
+        "pais": "",
+        "rating": 1527.7,
+        "rd": 117.19,
+        "partidos_jugados": 14,
+        "pj_reales": 14,
+        "form_score": 69.4,
+        "form_local": 90.2,
+        "form_visitante": 27.6,
+        "momentum": "stable",
+        "momentum_diff": 1.6,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "V",
+            "D",
+            "V",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.29,
+          "goles_contra": 0.93,
+          "diferencia": 0.36
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -1.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "8109",
+        "nombre": "América Cali",
+        "pais": "",
+        "rating": 1676.53,
+        "rd": 126.48,
+        "partidos_jugados": 12,
+        "pj_reales": 12,
+        "form_score": 69.0,
+        "form_local": 61.3,
+        "form_visitante": 80.0,
+        "momentum": "stable",
+        "momentum_diff": -0.8,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "E",
+            "V",
+            "V",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.58,
+          "goles_contra": 0.75,
+          "diferencia": 0.83
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 37.4,
+        "prob_empate": 19.7,
+        "prob_visitante": 42.9
+      },
+      "diff_elo": -148.8,
+      "confianza": 74.4
+    },
+    {
+      "fixture_id": "401929931",
+      "fecha": "2026-11-10T19:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "19:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20474",
+        "nombre": "Liberty",
+        "pais": "",
+        "rating": 1845.27,
+        "rd": 115.34,
+        "partidos_jugados": 16,
+        "pj_reales": 16,
+        "form_score": 92.5,
+        "form_local": 100.0,
+        "form_visitante": 67.0,
+        "momentum": "stable",
+        "momentum_diff": -0.6,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "4V 1E",
+          "resultados": [
+            "V",
+            "V",
+            "E",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.53,
+          "goles_contra": 0.67,
+          "diferencia": 0.86
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 4.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20619",
+        "nombre": "New Mexico State",
+        "pais": "",
+        "rating": 1430.77,
+        "rd": 138.57,
+        "partidos_jugados": 11,
+        "pj_reales": 11,
+        "form_score": 58.6,
+        "form_local": 54.0,
+        "form_visitante": 27.9,
+        "momentum": "stable",
+        "momentum_diff": 4.8,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "V",
+            "D",
+            "V",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.62,
+          "goles_contra": 1.77,
+          "diferencia": -1.15
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -5.6,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 86.5,
+        "prob_empate": 12.5,
+        "prob_visitante": 0.9
+      },
+      "diff_elo": 414.5,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401932079",
+      "fecha": "2026-11-10T20:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "20:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "133981",
+        "nombre": "UNAM",
+        "pais": "",
+        "rating": 1313.89,
+        "rd": 139.45,
+        "partidos_jugados": 10,
+        "pj_reales": 10,
+        "form_score": 62.2,
+        "form_local": 62.2,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1D",
+          "resultados": [
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 1.5,
+          "diferencia": -0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 16.5,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "22413",
+        "nombre": "Tigres",
+        "pais": "",
+        "rating": 1469.7,
+        "rd": 99.97,
+        "partidos_jugados": 19,
+        "pj_reales": 19,
+        "form_score": 90.7,
+        "form_local": 65.4,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 1.4,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "4V 1E",
+          "resultados": [
+            "V",
+            "V",
+            "E",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 3.17,
+          "goles_contra": 0.67,
+          "diferencia": 2.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 37.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 31.8,
+        "prob_empate": 19.5,
+        "prob_visitante": 48.7
+      },
+      "diff_elo": -155.8,
+      "confianza": 77.9
+    },
+    {
+      "fixture_id": "401899696",
+      "fecha": "2026-11-10T20:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "20:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "7224",
+        "nombre": "Isidro Metapán",
+        "pais": "",
+        "rating": 1456.7,
+        "rd": 133.84,
+        "partidos_jugados": 9,
+        "pj_reales": 9,
+        "form_score": 34.2,
+        "form_local": 77.2,
+        "form_visitante": 7.9,
+        "momentum": "stable",
+        "momentum_diff": -0.3,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 2D 2E",
+          "resultados": [
+            "E",
+            "D",
+            "D",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 1.33,
+          "diferencia": -0.33
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "21092",
+        "nombre": "Platense ",
+        "pais": "",
+        "rating": 1561.38,
+        "rd": 112.01,
+        "partidos_jugados": 13,
+        "pj_reales": 13,
+        "form_score": 37.6,
+        "form_local": 36.2,
+        "form_visitante": 63.2,
+        "momentum": "stable",
+        "momentum_diff": -1.3,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "D",
+            "E",
+            "E",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.31,
+          "goles_contra": 1.23,
+          "diferencia": 0.08
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -3.5,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 42.0,
+        "prob_empate": 20.7,
+        "prob_visitante": 37.2
+      },
+      "diff_elo": -104.7,
+      "confianza": 52.3
+    },
+    {
+      "fixture_id": "401931327",
+      "fecha": "2026-11-10T20:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "20:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20611",
+        "nombre": "Hou Christian",
+        "pais": "",
+        "rating": 1580.47,
+        "rd": 136.59,
+        "partidos_jugados": 10,
+        "pj_reales": 10,
+        "form_score": 79.0,
+        "form_local": 54.8,
+        "form_visitante": 85.0,
+        "momentum": "stable",
+        "momentum_diff": 0.2,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 3E",
+          "resultados": [
+            "V",
+            "E",
+            "V",
+            "E",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.54,
+          "goles_contra": 1.31,
+          "diferencia": 0.23
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -4.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "21654",
+        "nombre": "East Texas A&M",
+        "pais": "",
+        "rating": 1499.25,
+        "rd": 129.45,
+        "partidos_jugados": 10,
+        "pj_reales": 10,
+        "form_score": 69.7,
+        "form_local": 37.3,
+        "form_visitante": 74.3,
+        "momentum": "stable",
+        "momentum_diff": 4.6,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 3E",
+          "resultados": [
+            "V",
+            "E",
+            "E",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.08,
+          "goles_contra": 1.25,
+          "diferencia": -0.17
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -1.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 62.8,
+        "prob_empate": 21.3,
+        "prob_visitante": 16.0
+      },
+      "diff_elo": 81.2,
+      "confianza": 40.6
+    },
+    {
+      "fixture_id": "401931291",
+      "fecha": "2026-11-10T20:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "20:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20427",
+        "nombre": "Kentucky",
+        "pais": "",
+        "rating": 1731.92,
+        "rd": 122.16,
+        "partidos_jugados": 12,
+        "pj_reales": 12,
+        "form_score": 83.0,
+        "form_local": 92.2,
+        "form_visitante": 40.2,
+        "momentum": "stable",
+        "momentum_diff": 4.4,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3V 2E",
+          "resultados": [
+            "V",
+            "V",
+            "E",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.46,
+          "goles_contra": 1.0,
+          "diferencia": 1.46
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 6.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20495",
+        "nombre": "Arkansas",
+        "pais": "",
+        "rating": 1646.19,
+        "rd": 122.18,
+        "partidos_jugados": 12,
+        "pj_reales": 12,
+        "form_score": 55.4,
+        "form_local": 81.3,
+        "form_visitante": 49.5,
+        "momentum": "stable",
+        "momentum_diff": -1.4,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "D",
+            "V",
+            "V",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.85,
+          "goles_contra": 1.31,
+          "diferencia": 0.54
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 6.1,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 66.2,
+        "prob_empate": 21.2,
+        "prob_visitante": 12.6
+      },
+      "diff_elo": 85.7,
+      "confianza": 42.9
+    },
+    {
+      "fixture_id": "401933181",
+      "fecha": "2026-11-10T20:30:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "20:30",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "2919",
+        "nombre": "Once Caldas",
+        "pais": "",
+        "rating": 1595.75,
+        "rd": 124.84,
+        "partidos_jugados": 11,
+        "pj_reales": 11,
+        "form_score": 91.5,
+        "form_local": 89.2,
+        "form_visitante": 63.0,
+        "momentum": "stable",
+        "momentum_diff": 3.4,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "4V 1E",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.73,
+          "goles_contra": 0.45,
+          "diferencia": 0.28
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -1.7,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "5264",
+        "nombre": "Atl. Nacional",
+        "pais": "",
+        "rating": 1722.9,
+        "rd": 132.32,
+        "partidos_jugados": 12,
+        "pj_reales": 12,
+        "form_score": 90.7,
+        "form_local": 98.3,
+        "form_visitante": 52.4,
+        "momentum": "stable",
+        "momentum_diff": -0.5,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "4V 1D",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.08,
+          "goles_contra": 0.92,
+          "diferencia": 1.16
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -2.2,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 40.6,
+        "prob_empate": 20.2,
+        "prob_visitante": 39.1
+      },
+      "diff_elo": -127.2,
+      "confianza": 63.6
+    },
+    {
+      "fixture_id": "401929791",
+      "fecha": "2026-11-10T21:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "21:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "18010",
+        "nombre": "Grand Canyon",
+        "pais": "",
+        "rating": 1502.96,
+        "rd": 134.11,
+        "partidos_jugados": 10,
+        "pj_reales": 2,
+        "form_score": 80.9,
+        "form_local": 9.6,
+        "form_visitante": 94.2,
+        "momentum": "stable",
+        "momentum_diff": 3.7,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "3V 2D",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.8,
+          "goles_contra": 1.3,
+          "diferencia": 0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -4.9,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "5718",
+        "nombre": "Air Force",
+        "pais": "",
+        "rating": 1464.98,
+        "rd": 159.26,
+        "partidos_jugados": 7,
+        "pj_reales": 7,
+        "form_score": 77.6,
+        "form_local": 62.2,
+        "form_visitante": 72.8,
+        "momentum": "stable",
+        "momentum_diff": 3.7,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "V",
+            "V",
+            "D",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.62,
+          "goles_contra": 1.5,
+          "diferencia": 0.12
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -2.8,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 56.2,
+        "prob_empate": 22.3,
+        "prob_visitante": 21.5
+      },
+      "diff_elo": 38.0,
+      "confianza": 19.0
+    },
+    {
+      "fixture_id": "401929790",
+      "fecha": "2026-11-10T21:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "21:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5653",
+        "nombre": "UNLV",
+        "pais": "",
+        "rating": 1551.57,
+        "rd": 129.51,
+        "partidos_jugados": 12,
+        "pj_reales": 4,
+        "form_score": 32.4,
+        "form_local": 74.7,
+        "form_visitante": 31.7,
+        "momentum": "stable",
+        "momentum_diff": -4.2,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "V",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.5,
+          "goles_contra": 0.92,
+          "diferencia": 0.58
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.8,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "18009",
+        "nombre": "San José State",
+        "pais": "",
+        "rating": 1547.7,
+        "rd": 136.09,
+        "partidos_jugados": 9,
+        "pj_reales": 1,
+        "form_score": 66.2,
+        "form_local": 77.4,
+        "form_visitante": 27.6,
+        "momentum": "stable",
+        "momentum_diff": 3.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "V",
+            "D",
+            "V",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.33,
+          "goles_contra": 1.67,
+          "diferencia": -0.34
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -6.3,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 53.9,
+        "prob_empate": 23.1,
+        "prob_visitante": 23.1
+      },
+      "diff_elo": 3.9,
+      "confianza": 1.9
+    },
+    {
+      "fixture_id": "401932078",
+      "fecha": "2026-11-10T22:00:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "22:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "133984",
+        "nombre": "Juárez",
+        "pais": "",
+        "rating": 1555.6,
+        "rd": 133.45,
+        "partidos_jugados": 11,
+        "pj_reales": 11,
+        "form_score": 81.4,
+        "form_local": 50.0,
+        "form_visitante": 81.4,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V 1D",
+          "resultados": [
+            "V",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.33,
+          "goles_contra": 1.0,
+          "diferencia": 0.33
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 12.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "22416",
+        "nombre": "Guadalajara",
+        "pais": "",
+        "rating": 1726.35,
+        "rd": 125.98,
+        "partidos_jugados": 13,
+        "pj_reales": 13,
+        "form_score": 100.0,
+        "form_local": 100.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 4
+        },
+        "ultimos5": {
+          "texto": "4V",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.0,
+          "goles_contra": 0.75,
+          "diferencia": 1.25
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 29.4,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 31.0,
+        "prob_empate": 19.2,
+        "prob_visitante": 49.8
+      },
+      "diff_elo": -170.8,
+      "confianza": 85.4
+    }
+  ]
+}
