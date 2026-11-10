@@ -1,7 +1,7 @@
 {
-  "generado": "2026-11-10T05:39:08.936658Z",
+  "generado": "2026-11-10T14:09:54.940483Z",
   "fecha_consulta": "2026-11-11",
-  "total": 75,
+  "total": 77,
   "predicciones": [
     {
       "fixture_id": "401932726",
@@ -106,7 +106,7 @@
         "nombre": "Vietnam",
         "pais": "",
         "rating": 1882.98,
-        "rd": 264.498317588586,
+        "rd": 265.31844628346295,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 79.3,
@@ -636,6 +636,88 @@
       "confianza": 28.8
     },
     {
+      "fixture_id": "401933839",
+      "fecha": "2026-11-11T12:00:00-05:00",
+      "fecha_display": "2026-11-11",
+      "hora": "12:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "11421",
+        "nombre": "SC Wiedenbrück",
+        "pais": "",
+        "rating": 1283.21,
+        "rd": 256.63,
+        "partidos_jugados": 1,
+        "pj_reales": 1,
+        "form_score": 0.0,
+        "form_local": 0.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1D",
+          "resultados": [
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 3.0,
+          "diferencia": -3.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -35.7,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "133878",
+        "nombre": "SC Munster",
+        "pais": "",
+        "rating": 1370.65,
+        "rd": 346.5953767149894,
+        "partidos_jugados": 1,
+        "pj_reales": 1,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 42.9,
+        "prob_empate": 21.1,
+        "prob_visitante": 36.0
+      },
+      "diff_elo": -87.4,
+      "confianza": 43.7
+    },
+    {
       "fixture_id": "401930126",
       "fecha": "2026-11-11T12:00:00-05:00",
       "fecha_display": "2026-11-11",
@@ -770,7 +852,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 14.4,
+        "overperformance": 14.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1324,7 +1406,7 @@
         "nombre": "Aachen",
         "pais": "",
         "rating": 1287.11,
-        "rd": 292.6175976261523,
+        "rd": 292.98863311324214,
         "partidos_jugados": 1,
         "pj_reales": 1,
         "form_score": 0.0,
@@ -1725,6 +1807,98 @@
       },
       "diff_elo": 259.4,
       "confianza": 100.0
+    },
+    {
+      "fixture_id": "401933838",
+      "fecha": "2026-11-11T14:00:00-05:00",
+      "fecha_display": "2026-11-11",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "95",
+        "nombre": "Valladolid",
+        "pais": "",
+        "rating": 1511.51,
+        "rd": 105.11,
+        "partidos_jugados": 15,
+        "pj_reales": 15,
+        "form_score": 76.6,
+        "form_local": 69.3,
+        "form_visitante": 61.3,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "V",
+            "V",
+            "E",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.73,
+          "goles_contra": 1.47,
+          "diferencia": 0.26
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 3.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "12215",
+        "nombre": "Santa Clara",
+        "pais": "",
+        "rating": 1613.77,
+        "rd": 126.4,
+        "partidos_jugados": 12,
+        "pj_reales": 12,
+        "form_score": 35.2,
+        "form_local": 24.2,
+        "form_visitante": 72.1,
+        "momentum": "stable",
+        "momentum_diff": -3.2,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 3D",
+          "resultados": [
+            "D",
+            "V",
+            "D",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.5,
+          "goles_contra": 0.92,
+          "diferencia": 0.58
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 6.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 43.9,
+        "prob_empate": 20.8,
+        "prob_visitante": 35.3
+      },
+      "diff_elo": -102.3,
+      "confianza": 51.1
     },
     {
       "fixture_id": "401911177",
@@ -3113,7 +3287,7 @@
         "nombre": "San Diego",
         "pais": "",
         "rating": 1707.93,
-        "rd": 195.72544930084499,
+        "rd": 196.2796741121117,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 69.7,
@@ -6274,7 +6448,7 @@
         "nombre": "CA La Paz",
         "pais": "",
         "rating": 1774.06,
-        "rd": 178.26337517195086,
+        "rd": 178.8717135078513,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 82.8,
@@ -6783,7 +6957,7 @@
         "nombre": "Portland",
         "pais": "",
         "rating": 1673.43,
-        "rd": 158.17958316672133,
+        "rd": 158.8648694290995,
         "partidos_jugados": 9,
         "pj_reales": 2,
         "form_score": 88.7,
