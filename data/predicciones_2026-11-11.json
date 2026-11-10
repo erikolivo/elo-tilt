@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-10T14:09:54.940483Z",
+  "generado": "2026-11-10T21:10:56.325858Z",
   "fecha_consulta": "2026-11-11",
   "total": 77,
   "predicciones": [
@@ -106,7 +106,7 @@
         "nombre": "Vietnam",
         "pais": "",
         "rating": 1882.98,
-        "rd": 265.31844628346295,
+        "rd": 265.72756143051845,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 79.3,
@@ -682,7 +682,7 @@
         "nombre": "SC Munster",
         "pais": "",
         "rating": 1370.65,
-        "rd": 346.5953767149894,
+        "rd": 346.6,
         "partidos_jugados": 1,
         "pj_reales": 1,
         "form_score": 50.0,
@@ -1406,7 +1406,7 @@
         "nombre": "Aachen",
         "pais": "",
         "rating": 1287.11,
-        "rd": 292.98863311324214,
+        "rd": 293.17397476600587,
         "partidos_jugados": 1,
         "pj_reales": 1,
         "form_score": 0.0,
@@ -2435,7 +2435,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.0,
+        "overperformance": 6.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -3287,7 +3287,7 @@
         "nombre": "San Diego",
         "pais": "",
         "rating": 1707.93,
-        "rd": 196.2796741121117,
+        "rd": 196.55620049320845,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 69.7,
@@ -5892,50 +5892,50 @@
         "vol": 0.06
       },
       "equipo_visitante": {
-        "id": "21712",
-        "nombre": "S Indiana",
+        "id": "5731",
+        "nombre": "E Illinois",
         "pais": "",
-        "rating": 1264.85,
-        "rd": 107.93,
-        "partidos_jugados": 15,
-        "pj_reales": 8,
-        "form_score": 34.9,
-        "form_local": 14.9,
-        "form_visitante": 59.1,
+        "rating": 1288.71,
+        "rd": 101.12,
+        "partidos_jugados": 17,
+        "pj_reales": 10,
+        "form_score": 32.2,
+        "form_local": 35.5,
+        "form_visitante": 35.3,
         "momentum": "stable",
-        "momentum_diff": 0.5,
+        "momentum_diff": -1.2,
         "streak": {
-          "tipo": "L",
+          "tipo": "D",
           "cantidad": 1
         },
         "ultimos5": {
-          "texto": "2V 3D",
+          "texto": "1V 3D 1E",
           "resultados": [
+            "E",
             "D",
-            "V",
             "D",
             "V",
             "D"
           ]
         },
         "goal_trend": {
-          "goles_favor": 1.4,
-          "goles_contra": 2.2,
-          "diferencia": -0.8
+          "goles_favor": 1.93,
+          "goles_contra": 1.87,
+          "diferencia": 0.06
         },
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.6,
+        "overperformance": 1.1,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 70.3,
-        "prob_empate": 20.0,
-        "prob_visitante": 9.8
+        "prob_local": 67.9,
+        "prob_empate": 20.5,
+        "prob_visitante": 11.6
       },
-      "diff_elo": 137.6,
-      "confianza": 68.8
+      "diff_elo": 113.7,
+      "confianza": 56.9
     },
     {
       "fixture_id": "401929715",
@@ -6448,7 +6448,7 @@
         "nombre": "CA La Paz",
         "pais": "",
         "rating": 1774.06,
-        "rd": 178.8717135078513,
+        "rd": 179.1751081372756,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 82.8,
@@ -6957,7 +6957,7 @@
         "nombre": "Portland",
         "pais": "",
         "rating": 1673.43,
-        "rd": 158.8648694290995,
+        "rd": 159.20640641220567,
         "partidos_jugados": 9,
         "pj_reales": 2,
         "form_score": 88.7,
