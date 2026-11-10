@@ -1,178 +1,8 @@
 {
-  "generado": "2026-11-10T05:40:07.825874Z",
+  "generado": "2026-11-10T13:06:15.737762Z",
   "fecha_consulta": "2026-11-10",
-  "total": 57,
+  "total": 58,
   "predicciones": [
-    {
-      "fixture_id": "401933275",
-      "fecha": "2026-11-10T05:00:00-05:00",
-      "fecha_display": "2026-11-10",
-      "hora": "05:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "134156",
-        "nombre": "Gabon",
-        "pais": "",
-        "rating": 1514.82,
-        "rd": 110.7,
-        "partidos_jugados": 26,
-        "pj_reales": 3,
-        "form_score": 0.0,
-        "form_local": 0.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1D",
-          "resultados": [
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 3.0,
-          "goles_contra": 6.0,
-          "diferencia": -3.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -51.4,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "131499",
-        "nombre": "Chad",
-        "pais": "",
-        "rating": 1388.28,
-        "rd": 294.57,
-        "partidos_jugados": 2,
-        "pj_reales": 2,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1E",
-          "resultados": [
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 1.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 13.4,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 59.4,
-        "prob_empate": 20.2,
-        "prob_visitante": 20.4
-      },
-      "diff_elo": 126.5,
-      "confianza": 63.3
-    },
-    {
-      "fixture_id": "401933295",
-      "fecha": "2026-11-10T07:00:00-05:00",
-      "fecha_display": "2026-11-10",
-      "hora": "07:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "134158",
-        "nombre": "Congo",
-        "pais": "",
-        "rating": 1474.81,
-        "rd": 100.08,
-        "partidos_jugados": 28,
-        "pj_reales": 4,
-        "form_score": 100.0,
-        "form_local": 50.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V",
-          "resultados": [
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 5.0,
-          "goles_contra": 2.0,
-          "diferencia": 3.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 37.7,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "134155",
-        "nombre": "Cent Afr Rep",
-        "pais": "",
-        "rating": 1539.43,
-        "rd": 251.21,
-        "partidos_jugados": 2,
-        "pj_reales": 2,
-        "form_score": 81.1,
-        "form_local": 50.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1E",
-          "resultados": [
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 5.0,
-          "goles_contra": 0.5,
-          "diferencia": 4.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 9.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 48.7,
-        "prob_empate": 21.7,
-        "prob_visitante": 29.7
-      },
-      "diff_elo": -64.6,
-      "confianza": 32.3
-    },
     {
       "fixture_id": "401933765",
       "fecha": "2026-11-10T07:00:00-05:00",
@@ -264,6 +94,176 @@
       },
       "diff_elo": 245.2,
       "confianza": 100.0
+    },
+    {
+      "fixture_id": "401933295",
+      "fecha": "2026-11-10T07:15:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "07:15",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "134158",
+        "nombre": "Congo",
+        "pais": "",
+        "rating": 1474.81,
+        "rd": 100.08,
+        "partidos_jugados": 28,
+        "pj_reales": 4,
+        "form_score": 100.0,
+        "form_local": 50.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V",
+          "resultados": [
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 5.0,
+          "goles_contra": 2.0,
+          "diferencia": 3.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 37.7,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "134155",
+        "nombre": "Cent Afr Rep",
+        "pais": "",
+        "rating": 1539.43,
+        "rd": 251.21,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 81.1,
+        "form_local": 50.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1E",
+          "resultados": [
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 5.0,
+          "goles_contra": 0.5,
+          "diferencia": 4.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 9.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 48.7,
+        "prob_empate": 21.7,
+        "prob_visitante": 29.7
+      },
+      "diff_elo": -64.6,
+      "confianza": 32.3
+    },
+    {
+      "fixture_id": "401933275",
+      "fecha": "2026-11-10T09:30:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "09:30",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "134156",
+        "nombre": "Gabon",
+        "pais": "",
+        "rating": 1514.82,
+        "rd": 110.7,
+        "partidos_jugados": 26,
+        "pj_reales": 3,
+        "form_score": 0.0,
+        "form_local": 0.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1D",
+          "resultados": [
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 3.0,
+          "goles_contra": 6.0,
+          "diferencia": -3.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -51.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "131499",
+        "nombre": "Chad",
+        "pais": "",
+        "rating": 1388.28,
+        "rd": 294.57,
+        "partidos_jugados": 2,
+        "pj_reales": 2,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1E",
+          "resultados": [
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 1.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 13.4,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 59.4,
+        "prob_empate": 20.2,
+        "prob_visitante": 20.4
+      },
+      "diff_elo": 126.5,
+      "confianza": 63.3
     },
     {
       "fixture_id": "401929834",
@@ -892,7 +892,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 10.4,
+        "overperformance": 10.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -1178,6 +1178,88 @@
       },
       "diff_elo": 106.6,
       "confianza": 53.3
+    },
+    {
+      "fixture_id": "401933840",
+      "fecha": "2026-11-10T13:30:00-05:00",
+      "fecha_display": "2026-11-10",
+      "hora": "13:30",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "133973",
+        "nombre": "SV Bergisch Gladbach 09",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 350.0,
+        "partidos_jugados": 0,
+        "pj_reales": 0,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "131554",
+        "nombre": "TBD Away",
+        "pais": "",
+        "rating": 1473.05,
+        "rd": 285.8351101734091,
+        "partidos_jugados": 1,
+        "pj_reales": 1,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1E",
+          "resultados": [
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -2.8,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 55.8,
+        "prob_empate": 22.5,
+        "prob_visitante": 21.7
+      },
+      "diff_elo": 27.0,
+      "confianza": 13.5
     },
     {
       "fixture_id": "401928519",
@@ -1949,7 +2031,7 @@
         "nombre": "Liverpool U21",
         "pais": "",
         "rating": 1308.64,
-        "rd": 223.1241127778742,
+        "rd": 223.36743283085417,
         "partidos_jugados": 2,
         "pj_reales": 2,
         "form_score": 18.9,
@@ -2863,7 +2945,7 @@
         "nombre": "Brentford U21",
         "pais": "",
         "rating": 1470.02,
-        "rd": 226.59496795254586,
+        "rd": 226.83457291454266,
         "partidos_jugados": 2,
         "pj_reales": 2,
         "form_score": 37.8,
@@ -2952,7 +3034,7 @@
         "nombre": "Ipswich U21",
         "pais": "",
         "rating": 1213.13,
-        "rd": 225.19809925064138,
+        "rd": 225.43917279683146,
         "partidos_jugados": 2,
         "pj_reales": 2,
         "form_score": 0.0,
@@ -2985,7 +3067,7 @@
       "prediccion": {
         "prob_local": 71.0,
         "prob_empate": 20.2,
-        "prob_visitante": 8.8
+        "prob_visitante": 8.9
       },
       "diff_elo": 127.9,
       "confianza": 64.0
@@ -4926,7 +5008,7 @@
         "nombre": "Grand Canyon",
         "pais": "",
         "rating": 1502.96,
-        "rd": 134.9176787371298,
+        "rd": 135.31971032973374,
         "partidos_jugados": 10,
         "pj_reales": 2,
         "form_score": 80.9,
