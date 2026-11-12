@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-11T21:46:04.830605Z",
+  "generado": "2026-11-12T01:46:45.851000Z",
   "fecha_consulta": "2026-11-11",
   "total": 77,
   "predicciones": [
@@ -5575,98 +5575,6 @@
       "confianza": 6.9
     },
     {
-      "fixture_id": "401929897",
-      "fecha": "2026-11-11T19:30:00-05:00",
-      "fecha_display": "2026-11-11",
-      "hora": "19:30",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "20424",
-        "nombre": "Villanova",
-        "pais": "",
-        "rating": 1813.97,
-        "rd": 111.2,
-        "partidos_jugados": 16,
-        "pj_reales": 16,
-        "form_score": 88.5,
-        "form_local": 91.6,
-        "form_visitante": 70.9,
-        "momentum": "stable",
-        "momentum_diff": 1.9,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "4V 1D",
-          "resultados": [
-            "V",
-            "V",
-            "V",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.67,
-          "goles_contra": 0.47,
-          "diferencia": 2.2
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 5.8,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20355",
-        "nombre": "Seton Hall",
-        "pais": "",
-        "rating": 1668.42,
-        "rd": 110.67,
-        "partidos_jugados": 14,
-        "pj_reales": 14,
-        "form_score": 64.9,
-        "form_local": 70.0,
-        "form_visitante": 59.4,
-        "momentum": "stable",
-        "momentum_diff": 0.1,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 1D 2E",
-          "resultados": [
-            "E",
-            "V",
-            "E",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.86,
-          "goles_contra": 0.43,
-          "diferencia": 0.43
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.3,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 72.4,
-        "prob_empate": 19.8,
-        "prob_visitante": 7.8
-      },
-      "diff_elo": 145.5,
-      "confianza": 72.8
-    },
-    {
       "fixture_id": "401932063",
       "fecha": "2026-11-11T20:00:00-05:00",
       "fecha_display": "2026-11-11",
@@ -6306,10 +6214,102 @@
       "confianza": 99.3
     },
     {
-      "fixture_id": "401929894",
-      "fecha": "2026-11-11T20:00:00-05:00",
+      "fixture_id": "401929897",
+      "fecha": "2026-11-11T20:46:00-05:00",
       "fecha_display": "2026-11-11",
-      "hora": "20:00",
+      "hora": "20:46",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20424",
+        "nombre": "Villanova",
+        "pais": "",
+        "rating": 1813.97,
+        "rd": 111.2,
+        "partidos_jugados": 16,
+        "pj_reales": 16,
+        "form_score": 88.5,
+        "form_local": 91.6,
+        "form_visitante": 70.9,
+        "momentum": "stable",
+        "momentum_diff": 1.9,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "4V 1D",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.67,
+          "goles_contra": 0.47,
+          "diferencia": 2.2
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 5.8,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20355",
+        "nombre": "Seton Hall",
+        "pais": "",
+        "rating": 1668.42,
+        "rd": 110.67,
+        "partidos_jugados": 14,
+        "pj_reales": 14,
+        "form_score": 64.9,
+        "form_local": 70.0,
+        "form_visitante": 59.4,
+        "momentum": "stable",
+        "momentum_diff": 0.1,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "E",
+            "V",
+            "E",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.86,
+          "goles_contra": 0.43,
+          "diferencia": 0.43
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.3,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 72.4,
+        "prob_empate": 19.8,
+        "prob_visitante": 7.8
+      },
+      "diff_elo": 145.5,
+      "confianza": 72.8
+    },
+    {
+      "fixture_id": "401929894",
+      "fecha": "2026-11-11T20:59:00-05:00",
+      "fecha_display": "2026-11-11",
+      "hora": "20:59",
       "liga": "all",
       "liga_pais": "",
       "liga_slug": "all",
@@ -6348,7 +6348,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.0,
+        "overperformance": 6.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -6448,7 +6448,7 @@
         "nombre": "CA La Paz",
         "pais": "",
         "rating": 1774.06,
-        "rd": 180.98479569461574,
+        "rd": 181.28465394343607,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 82.8,
@@ -6482,7 +6482,7 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 22.4,
+        "prob_local": 22.5,
         "prob_empate": 16.0,
         "prob_visitante": 61.5
       },
@@ -6532,7 +6532,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.1,
+        "overperformance": 0.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -6624,7 +6624,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.5,
+        "overperformance": -5.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -6662,7 +6662,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.2,
+        "overperformance": -2.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -6716,7 +6716,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.8,
+        "overperformance": -4.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -6808,7 +6808,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 12.4,
+        "overperformance": 12.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -6846,13 +6846,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.6,
+        "overperformance": 5.8,
         "vol": 0.06
       },
       "prediccion": {
         "prob_local": 74.9,
         "prob_empate": 19.5,
-        "prob_visitante": 5.6
+        "prob_visitante": 5.5
       },
       "diff_elo": 156.8,
       "confianza": 78.4
@@ -6957,7 +6957,7 @@
         "nombre": "Portland",
         "pais": "",
         "rating": 1673.43,
-        "rd": 161.24043682175326,
+        "rd": 161.5769524729111,
         "partidos_jugados": 9,
         "pj_reales": 2,
         "form_score": 88.7,
@@ -7025,7 +7025,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.2,
+        "overperformance": 5.7,
         "vol": 0.06
       },
       "prediccion": {
