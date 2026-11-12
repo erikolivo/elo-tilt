@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-12T14:31:52.213306Z",
+  "generado": "2026-11-12T21:43:54.523241Z",
   "fecha_consulta": "2026-11-12",
   "total": 98,
   "predicciones": [
@@ -6397,7 +6397,7 @@
         "nombre": "Martinique",
         "pais": "",
         "rating": 1561.02,
-        "rd": 108.8645079677842,
+        "rd": 109.36200906518606,
         "partidos_jugados": 24,
         "pj_reales": 3,
         "form_score": 56.0,
@@ -6425,7 +6425,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.9,
+        "overperformance": 2.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -6527,98 +6527,6 @@
       },
       "diff_elo": -88.2,
       "confianza": 44.1
-    },
-    {
-      "fixture_id": "401878034",
-      "fecha": "2026-11-12T17:00:00-05:00",
-      "fecha_display": "2026-11-12",
-      "hora": "17:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5485",
-        "nombre": "Pasto",
-        "pais": "",
-        "rating": 1229.48,
-        "rd": 132.74,
-        "partidos_jugados": 12,
-        "pj_reales": 12,
-        "form_score": 4.2,
-        "form_local": 13.0,
-        "form_visitante": 8.9,
-        "momentum": "stable",
-        "momentum_diff": -1.3,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 4
-        },
-        "ultimos5": {
-          "texto": "4D 1E",
-          "resultados": [
-            "D",
-            "D",
-            "D",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.25,
-          "goles_contra": 1.58,
-          "diferencia": -1.33
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -4.1,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "4815",
-        "nombre": "Atl. Junior",
-        "pais": "",
-        "rating": 1416.19,
-        "rd": 113.09,
-        "partidos_jugados": 13,
-        "pj_reales": 13,
-        "form_score": 55.5,
-        "form_local": 70.3,
-        "form_visitante": 19.2,
-        "momentum": "stable",
-        "momentum_diff": 2.8,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1D 3E",
-          "resultados": [
-            "V",
-            "D",
-            "E",
-            "E",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.53,
-          "goles_contra": 1.67,
-          "diferencia": -0.14
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 1.5,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 30.7,
-        "prob_empate": 18.8,
-        "prob_visitante": 50.5
-      },
-      "diff_elo": -186.7,
-      "confianza": 93.4
     },
     {
       "fixture_id": "401930994",
@@ -6977,7 +6885,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.0,
+        "overperformance": -2.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -7093,7 +7001,7 @@
         "nombre": "Antigua Barbuda",
         "pais": "",
         "rating": 1251.77,
-        "rd": 142.08055232332458,
+        "rd": 142.4623080331668,
         "partidos_jugados": 23,
         "pj_reales": 0,
         "form_score": 50.0,
@@ -7125,7 +7033,7 @@
         "nombre": "Trin & Tob",
         "pais": "",
         "rating": 1504.33,
-        "rd": 121.95762670232081,
+        "rd": 122.40202606579608,
         "partidos_jugados": 24,
         "pj_reales": 2,
         "form_score": 31.1,
@@ -7440,6 +7348,98 @@
       "confianza": 80.9
     },
     {
+      "fixture_id": "401878034",
+      "fecha": "2026-11-12T18:00:00-05:00",
+      "fecha_display": "2026-11-12",
+      "hora": "18:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5485",
+        "nombre": "Pasto",
+        "pais": "",
+        "rating": 1229.48,
+        "rd": 132.74,
+        "partidos_jugados": 12,
+        "pj_reales": 12,
+        "form_score": 4.2,
+        "form_local": 13.0,
+        "form_visitante": 8.9,
+        "momentum": "stable",
+        "momentum_diff": -1.3,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 4
+        },
+        "ultimos5": {
+          "texto": "4D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "D",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.25,
+          "goles_contra": 1.58,
+          "diferencia": -1.33
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -4.1,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "4815",
+        "nombre": "Atl. Junior",
+        "pais": "",
+        "rating": 1416.19,
+        "rd": 113.09,
+        "partidos_jugados": 13,
+        "pj_reales": 13,
+        "form_score": 55.5,
+        "form_local": 70.3,
+        "form_visitante": 19.2,
+        "momentum": "stable",
+        "momentum_diff": 2.8,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1D 3E",
+          "resultados": [
+            "V",
+            "D",
+            "E",
+            "E",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.53,
+          "goles_contra": 1.67,
+          "diferencia": -0.14
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.5,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 30.7,
+        "prob_empate": 18.8,
+        "prob_visitante": 50.5
+      },
+      "diff_elo": -186.7,
+      "confianza": 93.4
+    },
+    {
       "fixture_id": "401930227",
       "fecha": "2026-11-12T18:00:00-05:00",
       "fecha_display": "2026-11-12",
@@ -7612,7 +7612,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.1,
+        "overperformance": 4.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -7980,7 +7980,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.5,
+        "overperformance": -3.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -8280,7 +8280,7 @@
         "nombre": "Curaçao",
         "pais": "",
         "rating": 1529.02,
-        "rd": 137.14806172698474,
+        "rd": 137.54346888916962,
         "partidos_jugados": 13,
         "pj_reales": 3,
         "form_score": 64.6,
@@ -8490,7 +8490,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.0,
+        "overperformance": -5.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8582,7 +8582,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.4,
+        "overperformance": -3.6,
         "vol": 0.06
       },
       "equipo_visitante": {
