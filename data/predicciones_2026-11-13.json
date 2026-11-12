@@ -1,7 +1,7 @@
 {
-  "generado": "2026-11-12T05:24:21.333397Z",
+  "generado": "2026-11-12T14:30:22.303635Z",
   "fecha_consulta": "2026-11-13",
-  "total": 79,
+  "total": 81,
   "predicciones": [
     {
       "fixture_id": "401933780",
@@ -16,7 +16,7 @@
         "nombre": "Bregenz",
         "pais": "",
         "rating": 1254.72,
-        "rd": 287.7789642299493,
+        "rd": 288.1562301015331,
         "partidos_jugados": 1,
         "pj_reales": 0,
         "form_score": 0.0,
@@ -134,7 +134,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.5,
+        "overperformance": 1.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -320,7 +320,7 @@
         "nombre": "Floridsdorfer",
         "pais": "",
         "rating": 1359.33,
-        "rd": 270.64958236745525,
+        "rd": 271.05067770827236,
         "partidos_jugados": 1,
         "pj_reales": 1,
         "form_score": 0.0,
@@ -408,7 +408,7 @@
         "nombre": "Paraguay",
         "pais": "",
         "rating": 1702.92,
-        "rd": 99.93364174839262,
+        "rd": 101.01459432597957,
         "partidos_jugados": 24,
         "pj_reales": 3,
         "form_score": 100.0,
@@ -436,7 +436,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 27.7,
+        "overperformance": 27.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -534,6 +534,86 @@
       "confianza": 20.7
     },
     {
+      "fixture_id": "401934146",
+      "fecha": "2026-11-13T07:00:00-05:00",
+      "fecha_display": "2026-11-13",
+      "hora": "07:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "133773",
+        "nombre": "NK Istra 1961 Pula",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 350.0,
+        "partidos_jugados": 0,
+        "pj_reales": 0,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "133593",
+        "nombre": "NK Radomlje",
+        "pais": "",
+        "rating": 1316.57,
+        "rd": 339.44433539380304,
+        "partidos_jugados": 1,
+        "pj_reales": 1,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 66.6,
+        "prob_empate": 18.9,
+        "prob_visitante": 14.5
+      },
+      "diff_elo": 183.4,
+      "confianza": 91.7
+    },
+    {
       "fixture_id": "401933767",
       "fecha": "2026-11-13T07:00:00-05:00",
       "fecha_display": "2026-11-13",
@@ -546,7 +626,7 @@
         "nombre": "SV Kapfenberg",
         "pais": "",
         "rating": 1322.31,
-        "rd": 281.6179982206249,
+        "rd": 282.0034935461398,
         "partidos_jugados": 1,
         "pj_reales": 0,
         "form_score": 0.0,
@@ -715,7 +795,7 @@
         "nombre": "Mozambique",
         "pais": "",
         "rating": 1532.59,
-        "rd": 124.73153392068077,
+        "rd": 125.59919022424775,
         "partidos_jugados": 25,
         "pj_reales": 3,
         "form_score": 90.7,
@@ -751,7 +831,7 @@
         "nombre": "Ethiopia",
         "pais": "",
         "rating": 1288.54,
-        "rd": 122.6609703990663,
+        "rd": 123.5430814189076,
         "partidos_jugados": 24,
         "pj_reales": 4,
         "form_score": 0.0,
@@ -829,7 +909,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.6,
+        "overperformance": 9.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -837,7 +917,7 @@
         "nombre": "Burundi",
         "pais": "",
         "rating": 1314.96,
-        "rd": 134.52194002301198,
+        "rd": 135.32681233604106,
         "partidos_jugados": 22,
         "pj_reales": 2,
         "form_score": 31.1,
@@ -876,6 +956,90 @@
       "confianza": 24.4
     },
     {
+      "fixture_id": "401934163",
+      "fecha": "2026-11-13T08:00:00-05:00",
+      "fecha_display": "2026-11-13",
+      "hora": "08:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "133685",
+        "nombre": "NK Varazdin",
+        "pais": "",
+        "rating": 1395.58,
+        "rd": 293.46660778717865,
+        "partidos_jugados": 1,
+        "pj_reales": 1,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1E",
+          "resultados": [
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -10.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "619",
+        "nombre": "NK Maribor",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 304.02871047212625,
+        "partidos_jugados": 1,
+        "pj_reales": 1,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1E",
+          "resultados": [
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 1.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.4,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 45.5,
+        "prob_empate": 20.7,
+        "prob_visitante": 33.8
+      },
+      "diff_elo": -104.4,
+      "confianza": 52.2
+    },
+    {
       "fixture_id": "401934052",
       "fecha": "2026-11-13T08:00:00-05:00",
       "fecha_display": "2026-11-13",
@@ -888,7 +1052,7 @@
         "nombre": "Bosnia-Herz",
         "pais": "",
         "rating": 1497.57,
-        "rd": 99.74384559521305,
+        "rd": 100.82643798892168,
         "partidos_jugados": 27,
         "pj_reales": 6,
         "form_score": 0.0,
@@ -923,7 +1087,7 @@
         "nombre": "Montenegro",
         "pais": "",
         "rating": 1482.64,
-        "rd": 89.8662589337045,
+        "rd": 91.06666944727293,
         "partidos_jugados": 29,
         "pj_reales": 8,
         "form_score": 50.0,
@@ -1060,7 +1224,7 @@
         "nombre": "Raków",
         "pais": "",
         "rating": 1625.6,
-        "rd": 206.29118107076152,
+        "rd": 206.81705894025043,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 63.2,
@@ -1098,7 +1262,7 @@
         "nombre": "Lechia",
         "pais": "",
         "rating": 1662.31,
-        "rd": 298.4390685674974,
+        "rd": 298.8028753886091,
         "partidos_jugados": 1,
         "pj_reales": 1,
         "form_score": 100.0,
@@ -1124,7 +1288,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 24.6,
+        "overperformance": 24.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -1148,7 +1312,7 @@
         "nombre": "UAE",
         "pais": "",
         "rating": 1603.08,
-        "rd": 114.06378077157919,
+        "rd": 115.01184891629683,
         "partidos_jugados": 25,
         "pj_reales": 4,
         "form_score": 49.2,
@@ -1186,7 +1350,7 @@
         "nombre": "Honduras",
         "pais": "",
         "rating": 1653.32,
-        "rd": 103.43132624056403,
+        "rd": 104.47561146512015,
         "partidos_jugados": 28,
         "pj_reales": 3,
         "form_score": 39.5,
@@ -1239,7 +1403,7 @@
         "nombre": "Saudi Arabia",
         "pais": "",
         "rating": 1704.47,
-        "rd": 88.46581991023989,
+        "rd": 89.68477505782676,
         "partidos_jugados": 25,
         "pj_reales": 6,
         "form_score": 87.4,
@@ -1269,7 +1433,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 16.5,
+        "overperformance": 16.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1277,7 +1441,7 @@
         "nombre": "South Korea",
         "pais": "",
         "rating": 1692.98,
-        "rd": 123.38088780310555,
+        "rd": 124.25806304016004,
         "partidos_jugados": 25,
         "pj_reales": 4,
         "form_score": 69.5,
@@ -1330,7 +1494,7 @@
         "nombre": "Qatar",
         "pais": "",
         "rating": 1550.62,
-        "rd": 114.74091854464552,
+        "rd": 115.68356262093643,
         "partidos_jugados": 25,
         "pj_reales": 3,
         "form_score": 63.4,
@@ -1418,7 +1582,7 @@
         "nombre": "Iraq",
         "pais": "",
         "rating": 1420.37,
-        "rd": 163.1833233085076,
+        "rd": 163.8475724666167,
         "partidos_jugados": 9,
         "pj_reales": 2,
         "form_score": 33.9,
@@ -1456,7 +1620,7 @@
         "nombre": "Lebanon",
         "pais": "",
         "rating": 1544.79,
-        "rd": 86.4801048400693,
+        "rd": 87.7267382241477,
         "partidos_jugados": 26,
         "pj_reales": 4,
         "form_score": 37.8,
@@ -1507,7 +1671,7 @@
         "nombre": "Burkina Faso",
         "pais": "",
         "rating": 1574.26,
-        "rd": 110.81017580433658,
+        "rd": 111.78593870683744,
         "partidos_jugados": 29,
         "pj_reales": 1,
         "form_score": 40.0,
@@ -1543,7 +1707,7 @@
         "nombre": "Mauritania",
         "pais": "",
         "rating": 1458.73,
-        "rd": 135.12271831934478,
+        "rd": 135.92416636935204,
         "partidos_jugados": 22,
         "pj_reales": 1,
         "form_score": 37.8,
@@ -1594,7 +1758,7 @@
         "nombre": "Cape Verde",
         "pais": "",
         "rating": 1494.22,
-        "rd": 128.91254381334062,
+        "rd": 129.7528028005116,
         "partidos_jugados": 23,
         "pj_reales": 0,
         "form_score": 0.0,
@@ -1629,7 +1793,7 @@
         "nombre": "Liberia",
         "pais": "",
         "rating": 1425.67,
-        "rd": 128.60820475229193,
+        "rd": 129.4500755228799,
         "partidos_jugados": 23,
         "pj_reales": 2,
         "form_score": 0.0,
@@ -1662,7 +1826,7 @@
       "prediccion": {
         "prob_local": 60.8,
         "prob_empate": 21.6,
-        "prob_visitante": 17.6
+        "prob_visitante": 17.7
       },
       "diff_elo": 68.5,
       "confianza": 34.3
@@ -1715,7 +1879,7 @@
         "nombre": "Lesotho",
         "pais": "",
         "rating": 1359.2,
-        "rd": 133.6446687660994,
+        "rd": 134.45508893320567,
         "partidos_jugados": 23,
         "pj_reales": 2,
         "form_score": 0.0,
@@ -1742,7 +1906,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -37.2,
+        "overperformance": -37.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -1803,7 +1967,7 @@
         "nombre": "Tanzania",
         "pais": "",
         "rating": 1419.2,
-        "rd": 133.36098836498567,
+        "rd": 134.17314899319868,
         "partidos_jugados": 23,
         "pj_reales": 0,
         "form_score": 31.1,
@@ -1854,7 +2018,7 @@
         "nombre": "South Africa",
         "pais": "",
         "rating": 1620.09,
-        "rd": 105.72971762193947,
+        "rd": 106.75186057729127,
         "partidos_jugados": 32,
         "pj_reales": 2,
         "form_score": 100.0,
@@ -1942,7 +2106,7 @@
         "nombre": "Tunisia",
         "pais": "",
         "rating": 1671.02,
-        "rd": 125.3848322667629,
+        "rd": 126.24794141237568,
         "partidos_jugados": 24,
         "pj_reales": 2,
         "form_score": 50.0,
@@ -1978,7 +2142,7 @@
         "nombre": "Libya",
         "pais": "",
         "rating": 1531.01,
-        "rd": 138.02498766094865,
+        "rd": 138.8096015807558,
         "partidos_jugados": 22,
         "pj_reales": 1,
         "form_score": 18.9,
@@ -2009,7 +2173,7 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 73.1,
+        "prob_local": 73.0,
         "prob_empate": 19.9,
         "prob_visitante": 7.0
       },
@@ -2029,7 +2193,7 @@
         "nombre": "Türkiye U21",
         "pais": "",
         "rating": 1488.26,
-        "rd": 120.16955161669702,
+        "rd": 121.06993602030666,
         "partidos_jugados": 22,
         "pj_reales": 2,
         "form_score": 50.0,
@@ -2064,7 +2228,7 @@
         "nombre": "Czechia",
         "pais": "",
         "rating": 1455.75,
-        "rd": 87.98926169794352,
+        "rd": 89.21489069907314,
         "partidos_jugados": 29,
         "pj_reales": 7,
         "form_score": 40.0,
@@ -2116,7 +2280,7 @@
         "nombre": "Finland",
         "pais": "",
         "rating": 1657.33,
-        "rd": 92.4990680102755,
+        "rd": 93.66609070687595,
         "partidos_jugados": 31,
         "pj_reales": 7,
         "form_score": 74.7,
@@ -2152,7 +2316,7 @@
         "nombre": "Rep Ireland",
         "pais": "",
         "rating": 1581.16,
-        "rd": 92.66783107092999,
+        "rd": 93.83244612697281,
         "partidos_jugados": 29,
         "pj_reales": 6,
         "form_score": 100.0,
@@ -2204,7 +2368,7 @@
         "nombre": "Kuwait",
         "pais": "",
         "rating": 1349.94,
-        "rd": 148.23602060905748,
+        "rd": 148.96693526821048,
         "partidos_jugados": 11,
         "pj_reales": 2,
         "form_score": 0.0,
@@ -2232,7 +2396,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -29.5,
+        "overperformance": -29.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -2240,7 +2404,7 @@
         "nombre": "Syria",
         "pais": "",
         "rating": 1513.61,
-        "rd": 126.11031957246752,
+        "rd": 126.96846856565647,
         "partidos_jugados": 22,
         "pj_reales": 2,
         "form_score": 18.9,
@@ -2271,7 +2435,7 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 33.4,
+        "prob_local": 33.5,
         "prob_empate": 19.4,
         "prob_visitante": 47.2
       },
@@ -2458,7 +2622,7 @@
         "nombre": "Moldova",
         "pais": "",
         "rating": 1393.17,
-        "rd": 88.78792753770105,
+        "rd": 90.00256052979866,
         "partidos_jugados": 28,
         "pj_reales": 8,
         "form_score": 36.0,
@@ -2495,7 +2659,7 @@
         "nombre": "Kazakhstan",
         "pais": "",
         "rating": 1219.79,
-        "rd": 97.90606555317366,
+        "rd": 99.00882797158549,
         "partidos_jugados": 29,
         "pj_reales": 7,
         "form_score": 27.8,
@@ -2530,7 +2694,7 @@
       "prediccion": {
         "prob_local": 74.0,
         "prob_empate": 19.1,
-        "prob_visitante": 6.8
+        "prob_visitante": 6.9
       },
       "diff_elo": 173.4,
       "confianza": 86.7
@@ -2664,7 +2828,7 @@
         "nombre": "Belgium",
         "pais": "",
         "rating": 1626.41,
-        "rd": 89.1313330771035,
+        "rd": 90.34158958256546,
         "partidos_jugados": 29,
         "pj_reales": 6,
         "form_score": 74.7,
@@ -2784,7 +2948,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.4,
+        "overperformance": 0.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -2808,7 +2972,7 @@
         "nombre": "Denmark",
         "pais": "",
         "rating": 1679.72,
-        "rd": 92.77968156468414,
+        "rd": 93.9426017044038,
         "partidos_jugados": 29,
         "pj_reales": 7,
         "form_score": 59.3,
@@ -2844,7 +3008,7 @@
         "nombre": "Netherlands",
         "pais": "",
         "rating": 1731.49,
-        "rd": 89.80636164671417,
+        "rd": 91.00696553924453,
         "partidos_jugados": 29,
         "pj_reales": 7,
         "form_score": 90.7,
@@ -2925,7 +3089,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.4,
+        "overperformance": 8.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -2933,7 +3097,7 @@
         "nombre": "Italy",
         "pais": "",
         "rating": 1706.97,
-        "rd": 88.3069151997868,
+        "rd": 89.52799347861544,
         "partidos_jugados": 29,
         "pj_reales": 8,
         "form_score": 100.0,
@@ -3168,7 +3332,7 @@
         "nombre": "Albania",
         "pais": "",
         "rating": 1502.62,
-        "rd": 90.26353224652304,
+        "rd": 91.45864945896211,
         "partidos_jugados": 27,
         "pj_reales": 7,
         "form_score": 50.0,
@@ -3202,7 +3366,7 @@
         "nombre": "Luxembourg",
         "pais": "",
         "rating": 1207.75,
-        "rd": 100.03446008233145,
+        "rd": 101.1145855546602,
         "partidos_jugados": 30,
         "pj_reales": 7,
         "form_score": 62.2,
@@ -3339,7 +3503,7 @@
         "nombre": "Bermuda",
         "pais": "",
         "rating": 1396.12,
-        "rd": 108.97739444865611,
+        "rd": 109.9696184495667,
         "partidos_jugados": 27,
         "pj_reales": 4,
         "form_score": 0.0,
@@ -3368,7 +3532,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -35.8,
+        "overperformance": -35.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3376,7 +3540,7 @@
         "nombre": "St Lucia",
         "pais": "",
         "rating": 1631.61,
-        "rd": 116.09200794127723,
+        "rd": 117.0240787227262,
         "partidos_jugados": 23,
         "pj_reales": 3,
         "form_score": 100.0,
@@ -3465,7 +3629,7 @@
         "nombre": "Dominica",
         "pais": "",
         "rating": 1507.48,
-        "rd": 122.19328541660062,
+        "rd": 123.07916027487379,
         "partidos_jugados": 23,
         "pj_reales": 3,
         "form_score": 10.2,
@@ -3764,7 +3928,7 @@
         "nombre": "Egypt",
         "pais": "",
         "rating": 1671.31,
-        "rd": 113.9408829191719,
+        "rd": 114.88983917042059,
         "partidos_jugados": 29,
         "pj_reales": 1,
         "form_score": 36.0,
@@ -3801,7 +3965,7 @@
         "nombre": "Malawi",
         "pais": "",
         "rating": 1564.93,
-        "rd": 176.73443836925208,
+        "rd": 177.34812343067284,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 37.8,
@@ -3852,7 +4016,7 @@
         "nombre": "Mali",
         "pais": "",
         "rating": 1284.78,
-        "rd": 127.87997679883968,
+        "rd": 128.72680718385556,
         "partidos_jugados": 27,
         "pj_reales": 2,
         "form_score": 63.4,
@@ -3881,7 +4045,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 48.1,
+        "overperformance": 48.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3889,7 +4053,7 @@
         "nombre": "Rwanda",
         "pais": "",
         "rating": 1496.25,
-        "rd": 114.77386175642575,
+        "rd": 115.71633134384025,
         "partidos_jugados": 23,
         "pj_reales": 3,
         "form_score": 74.7,
@@ -4250,7 +4414,7 @@
         "nombre": "Gibraltar",
         "pais": "",
         "rating": 1119.12,
-        "rd": 101.55135584800331,
+        "rd": 102.61473957401785,
         "partidos_jugados": 28,
         "pj_reales": 7,
         "form_score": 72.8,
@@ -4303,7 +4467,7 @@
         "nombre": "Bulgaria",
         "pais": "",
         "rating": 1390.79,
-        "rd": 116.13173925535659,
+        "rd": 117.06340089034349,
         "partidos_jugados": 27,
         "pj_reales": 5,
         "form_score": 53.9,
@@ -4340,7 +4504,7 @@
         "nombre": "Iceland",
         "pais": "",
         "rating": 1588.75,
-        "rd": 88.25761341220323,
+        "rd": 89.48005238964576,
         "partidos_jugados": 29,
         "pj_reales": 7,
         "form_score": 68.0,
@@ -4374,7 +4538,7 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 30.2,
+        "prob_local": 30.3,
         "prob_empate": 18.6,
         "prob_visitante": 51.2
       },
@@ -4394,7 +4558,7 @@
         "nombre": "Liechtenstein",
         "pais": "",
         "rating": 1121.07,
-        "rd": 105.61279171846463,
+        "rd": 106.63568201049542,
         "partidos_jugados": 26,
         "pj_reales": 5,
         "form_score": 13.8,
@@ -4431,7 +4595,7 @@
         "nombre": "Azerbaijan",
         "pais": "",
         "rating": 1256.13,
-        "rd": 120.3723971904113,
+        "rd": 121.27121585456865,
         "partidos_jugados": 26,
         "pj_reales": 5,
         "form_score": 77.8,
@@ -4484,7 +4648,7 @@
         "nombre": "Luxembourg",
         "pais": "",
         "rating": 1207.75,
-        "rd": 100.03446008233145,
+        "rd": 101.1145855546602,
         "partidos_jugados": 30,
         "pj_reales": 7,
         "form_score": 10.2,
@@ -4521,7 +4685,7 @@
         "nombre": "Estonia",
         "pais": "",
         "rating": 1210.21,
-        "rd": 130.4760917691041,
+        "rd": 131.30593193926586,
         "partidos_jugados": 27,
         "pj_reales": 5,
         "form_score": 63.8,
@@ -4574,7 +4738,7 @@
         "nombre": "Netherlands",
         "pais": "",
         "rating": 1731.49,
-        "rd": 89.80636164671417,
+        "rd": 91.00696553924453,
         "partidos_jugados": 29,
         "pj_reales": 7,
         "form_score": 76.4,
@@ -4612,7 +4776,7 @@
         "nombre": "Greece",
         "pais": "",
         "rating": 1673.15,
-        "rd": 86.88719407795158,
+        "rd": 88.1281923349099,
         "partidos_jugados": 29,
         "pj_reales": 7,
         "form_score": 63.4,
@@ -4665,7 +4829,7 @@
         "nombre": "Scotland",
         "pais": "",
         "rating": 1580.94,
-        "rd": 83.42358863392684,
+        "rd": 84.71563977028059,
         "partidos_jugados": 30,
         "pj_reales": 8,
         "form_score": 32.7,
@@ -4702,7 +4866,7 @@
         "nombre": "North Macedonia",
         "pais": "",
         "rating": 1440.24,
-        "rd": 113.28823183863881,
+        "rd": 114.24254608742467,
         "partidos_jugados": 25,
         "pj_reales": 4,
         "form_score": 0.0,
@@ -4755,7 +4919,7 @@
         "nombre": "Serbia",
         "pais": "",
         "rating": 1430.87,
-        "rd": 93.25397617314952,
+        "rd": 94.41109265497889,
         "partidos_jugados": 27,
         "pj_reales": 5,
         "form_score": 0.0,
@@ -4846,7 +5010,7 @@
         "nombre": "Slovakia",
         "pais": "",
         "rating": 1504.5,
-        "rd": 99.27844577117243,
+        "rd": 100.36634687094511,
         "partidos_jugados": 21,
         "pj_reales": 7,
         "form_score": 86.2,
@@ -4883,7 +5047,7 @@
         "nombre": "Faroe Islands",
         "pais": "",
         "rating": 1365.15,
-        "rd": 92.261342093507,
+        "rd": 93.43094665684117,
         "partidos_jugados": 29,
         "pj_reales": 7,
         "form_score": 50.0,
@@ -4936,7 +5100,7 @@
         "nombre": "Slovenia",
         "pais": "",
         "rating": 1569.32,
-        "rd": 82.04417707686765,
+        "rd": 83.35665646282393,
         "partidos_jugados": 30,
         "pj_reales": 7,
         "form_score": 67.3,
@@ -4973,7 +5137,7 @@
         "nombre": "Switzerland",
         "pais": "",
         "rating": 1654.18,
-        "rd": 87.15512648205117,
+        "rd": 88.39211738784748,
         "partidos_jugados": 30,
         "pj_reales": 7,
         "form_score": 100.0,
@@ -5063,7 +5227,7 @@
         "nombre": "St Kitts & Nevis",
         "pais": "",
         "rating": 1445.68,
-        "rd": 115.18402432249266,
+        "rd": 116.12291559129635,
         "partidos_jugados": 23,
         "pj_reales": 3,
         "form_score": 59.3,
@@ -5295,7 +5459,7 @@
         "nombre": "TBD Home",
         "pais": "",
         "rating": 1442.65,
-        "rd": 248.04964215736538,
+        "rd": 248.48720526885108,
         "partidos_jugados": 2,
         "pj_reales": 1,
         "form_score": 50.0,
@@ -5330,7 +5494,7 @@
         "nombre": "TBD Away",
         "pais": "",
         "rating": 1473.05,
-        "rd": 287.35135985338275,
+        "rd": 287.72917380763477,
         "partidos_jugados": 1,
         "pj_reales": 1,
         "form_score": 50.0,
@@ -5380,7 +5544,7 @@
         "nombre": "TBD Home",
         "pais": "",
         "rating": 1442.65,
-        "rd": 248.04964215736538,
+        "rd": 248.48720526885108,
         "partidos_jugados": 2,
         "pj_reales": 1,
         "form_score": 50.0,
@@ -5415,7 +5579,7 @@
         "nombre": "TBD Away",
         "pais": "",
         "rating": 1473.05,
-        "rd": 287.35135985338275,
+        "rd": 287.72917380763477,
         "partidos_jugados": 1,
         "pj_reales": 1,
         "form_score": 50.0,
@@ -5741,7 +5905,7 @@
         "nombre": "St. Martin",
         "pais": "",
         "rating": 1403.79,
-        "rd": 111.72984754783707,
+        "rd": 112.69796929625107,
         "partidos_jugados": 24,
         "pj_reales": 3,
         "form_score": 83.3,
@@ -5770,7 +5934,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.5,
+        "overperformance": -4.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5778,7 +5942,7 @@
         "nombre": "El Salvador",
         "pais": "",
         "rating": 1504.45,
-        "rd": 96.44888584911203,
+        "rd": 97.56811941274525,
         "partidos_jugados": 24,
         "pj_reales": 2,
         "form_score": 50.0,
@@ -5866,7 +6030,7 @@
         "nombre": "Uruguay",
         "pais": "",
         "rating": 1574.4,
-        "rd": 122.8339000472507,
+        "rd": 123.71504145391243,
         "partidos_jugados": 23,
         "pj_reales": 2,
         "form_score": 81.4,
@@ -5900,7 +6064,7 @@
       "prediccion": {
         "prob_local": 78.6,
         "prob_empate": 18.1,
-        "prob_visitante": 3.3
+        "prob_visitante": 3.4
       },
       "diff_elo": 218.4,
       "confianza": 100.0
@@ -6010,7 +6174,7 @@
         "nombre": "Montserrat",
         "pais": "",
         "rating": 1417.05,
-        "rd": 107.6999071743617,
+        "rd": 108.70355925564434,
         "partidos_jugados": 25,
         "pj_reales": 3,
         "form_score": 100.0,
@@ -6039,7 +6203,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 24.4,
+        "overperformance": 24.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -6047,7 +6211,7 @@
         "nombre": "Nicaragua",
         "pais": "",
         "rating": 1424.56,
-        "rd": 139.38516830057188,
+        "rd": 140.16234910887408,
         "partidos_jugados": 21,
         "pj_reales": 1,
         "form_score": 0.0,
@@ -6098,7 +6262,7 @@
         "nombre": "Colombia",
         "pais": "",
         "rating": 1633.47,
-        "rd": 91.36625972091895,
+        "rd": 92.54725520603651,
         "partidos_jugados": 24,
         "pj_reales": 3,
         "form_score": 49.4,
@@ -6219,7 +6383,7 @@
         "nombre": "Costa Rica",
         "pais": "",
         "rating": 1644.01,
-        "rd": 120.29207745476558,
+        "rd": 121.19143206358082,
         "partidos_jugados": 22,
         "pj_reales": 2,
         "form_score": 50.6,
@@ -6253,7 +6417,7 @@
       "prediccion": {
         "prob_local": 37.6,
         "prob_empate": 19.5,
-        "prob_visitante": 43.0
+        "prob_visitante": 42.9
       },
       "diff_elo": -158.8,
       "confianza": 79.4
@@ -6455,7 +6619,7 @@
         "nombre": "Peru",
         "pais": "",
         "rating": 1349.59,
-        "rd": 98.23441871131381,
+        "rd": 99.33397333565775,
         "partidos_jugados": 26,
         "pj_reales": 3,
         "form_score": 0.0,
@@ -6633,7 +6797,7 @@
         "nombre": "Guatemala",
         "pais": "",
         "rating": 1619.06,
-        "rd": 107.35877107403495,
+        "rd": 108.36548247862787,
         "partidos_jugados": 25,
         "pj_reales": 2,
         "form_score": 81.1,
@@ -6720,7 +6884,7 @@
         "nombre": "Santa Barbara",
         "pais": "",
         "rating": 1649.64,
-        "rd": 176.58118843794423,
+        "rd": 177.19515902631176,
         "partidos_jugados": 8,
         "pj_reales": 0,
         "form_score": 51.9,
