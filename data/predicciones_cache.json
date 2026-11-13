@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-12T21:43:54.523241Z",
+  "generado": "2026-11-13T00:51:17.757533Z",
   "fecha_consulta": "2026-11-12",
   "total": 98,
   "predicciones": [
@@ -8084,98 +8084,6 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401931293",
-      "fecha": "2026-11-12T19:00:00-05:00",
-      "fecha_display": "2026-11-12",
-      "hora": "19:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "20368",
-        "nombre": "South Carolina",
-        "pais": "",
-        "rating": 1816.85,
-        "rd": 118.87,
-        "partidos_jugados": 13,
-        "pj_reales": 13,
-        "form_score": 67.9,
-        "form_local": 100.0,
-        "form_visitante": 33.1,
-        "momentum": "stable",
-        "momentum_diff": -1.6,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 1D 2E",
-          "resultados": [
-            "V",
-            "D",
-            "V",
-            "E",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.31,
-          "goles_contra": 0.69,
-          "diferencia": 0.62
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 8.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20524",
-        "nombre": "Alabama",
-        "pais": "",
-        "rating": 1928.4,
-        "rd": 134.92,
-        "partidos_jugados": 13,
-        "pj_reales": 13,
-        "form_score": 67.3,
-        "form_local": 85.1,
-        "form_visitante": 59.4,
-        "momentum": "stable",
-        "momentum_diff": -2.7,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 2D",
-          "resultados": [
-            "V",
-            "D",
-            "V",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.07,
-          "goles_contra": 0.71,
-          "diferencia": 1.36
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 8.5,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 42.4,
-        "prob_empate": 20.6,
-        "prob_visitante": 37.1
-      },
-      "diff_elo": -111.6,
-      "confianza": 55.8
-    },
-    {
       "fixture_id": "401929981",
       "fecha": "2026-11-12T19:00:00-05:00",
       "fecha_display": "2026-11-12",
@@ -8357,9 +8265,9 @@
     },
     {
       "fixture_id": "401929740",
-      "fecha": "2026-11-12T19:30:00-05:00",
+      "fecha": "2026-11-12T19:45:00-05:00",
       "fecha_display": "2026-11-12",
-      "hora": "19:30",
+      "hora": "19:45",
       "liga": "all",
       "liga_pais": "",
       "liga_slug": "all",
@@ -8398,7 +8306,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.8,
+        "overperformance": 5.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8582,7 +8490,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.6,
+        "overperformance": -3.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8620,7 +8528,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.6,
+        "overperformance": -1.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -8630,6 +8538,98 @@
       },
       "diff_elo": 106.7,
       "confianza": 53.4
+    },
+    {
+      "fixture_id": "401931293",
+      "fecha": "2026-11-12T20:00:00-05:00",
+      "fecha_display": "2026-11-12",
+      "hora": "20:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20368",
+        "nombre": "South Carolina",
+        "pais": "",
+        "rating": 1816.85,
+        "rd": 118.87,
+        "partidos_jugados": 13,
+        "pj_reales": 13,
+        "form_score": 67.9,
+        "form_local": 100.0,
+        "form_visitante": 33.1,
+        "momentum": "stable",
+        "momentum_diff": -1.6,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "V",
+            "D",
+            "V",
+            "E",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.31,
+          "goles_contra": 0.69,
+          "diferencia": 0.62
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 7.9,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20524",
+        "nombre": "Alabama",
+        "pais": "",
+        "rating": 1928.4,
+        "rd": 134.92,
+        "partidos_jugados": 13,
+        "pj_reales": 13,
+        "form_score": 67.3,
+        "form_local": 85.1,
+        "form_visitante": 59.4,
+        "momentum": "stable",
+        "momentum_diff": -2.7,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 2D",
+          "resultados": [
+            "V",
+            "D",
+            "V",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.07,
+          "goles_contra": 0.71,
+          "diferencia": 1.36
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 8.5,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 42.4,
+        "prob_empate": 20.6,
+        "prob_visitante": 37.1
+      },
+      "diff_elo": -111.6,
+      "confianza": 55.8
     },
     {
       "fixture_id": "401929737",
