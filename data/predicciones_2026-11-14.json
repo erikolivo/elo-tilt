@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-13T21:10:01.362263Z",
+  "generado": "2026-11-14T04:35:47.247623Z",
   "fecha_consulta": "2026-11-14",
   "total": 227,
   "predicciones": [
@@ -16,7 +16,7 @@
         "nombre": "Tahiti",
         "pais": "",
         "rating": 1527.62,
-        "rd": 142.2007503529878,
+        "rd": 142.96262576803738,
         "partidos_jugados": 19,
         "pj_reales": 1,
         "form_score": 100.0,
@@ -50,7 +50,7 @@
         "nombre": "Cook Isl",
         "pais": "",
         "rating": 1155.04,
-        "rd": 235.31036760192396,
+        "rd": 235.77155907040978,
         "partidos_jugados": 4,
         "pj_reales": 1,
         "form_score": 0.0,
@@ -100,7 +100,7 @@
         "nombre": "Bahrain",
         "pais": "",
         "rating": 1431.22,
-        "rd": 126.86178316226578,
+        "rd": 127.71499637596551,
         "partidos_jugados": 25,
         "pj_reales": 2,
         "form_score": 0.0,
@@ -128,7 +128,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -40.8,
+        "overperformance": -40.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -136,7 +136,7 @@
         "nombre": "Yemen",
         "pais": "",
         "rating": 1370.87,
-        "rd": 136.27142800471108,
+        "rd": 137.0660010314065,
         "partidos_jugados": 23,
         "pj_reales": 2,
         "form_score": 50.6,
@@ -164,7 +164,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.5,
+        "overperformance": 1.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -265,6 +265,86 @@
       "confianza": 32.8
     },
     {
+      "fixture_id": "401934157",
+      "fecha": "2026-11-14T04:00:00-05:00",
+      "fecha_display": "2026-11-14",
+      "hora": "04:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "133347",
+        "nombre": "Poli Timisoara",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 350.0,
+        "partidos_jugados": 0,
+        "pj_reales": 0,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "132445",
+        "nombre": "Dumbravita",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 350.0,
+        "partidos_jugados": 0,
+        "pj_reales": 0,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 53.7,
+        "prob_empate": 23.1,
+        "prob_visitante": 23.1
+      },
+      "diff_elo": 0.0,
+      "confianza": 0.0
+    },
+    {
       "fixture_id": "401934182",
       "fecha": "2026-11-14T04:00:00-05:00",
       "fecha_display": "2026-11-14",
@@ -355,86 +435,6 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401934157",
-      "fecha": "2026-11-14T04:00:00-05:00",
-      "fecha_display": "2026-11-14",
-      "hora": "04:00",
-      "liga": "club.friendly",
-      "liga_pais": "",
-      "liga_slug": "club.friendly",
-      "equipo_local": {
-        "id": "133347",
-        "nombre": "Poli Timisoara",
-        "pais": "",
-        "rating": 1500.0,
-        "rd": 350.0,
-        "partidos_jugados": 0,
-        "pj_reales": 0,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "132445",
-        "nombre": "Dumbravita",
-        "pais": "",
-        "rating": 1500.0,
-        "rd": 350.0,
-        "partidos_jugados": 0,
-        "pj_reales": 0,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 53.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 23.1
-      },
-      "diff_elo": 0.0,
-      "confianza": 0.0
-    },
-    {
       "fixture_id": "401934229",
       "fecha": "2026-11-14T04:00:00-05:00",
       "fecha_display": "2026-11-14",
@@ -447,7 +447,7 @@
         "nombre": "Farul Constanta",
         "pais": "",
         "rating": 1470.86,
-        "rd": 159.12834109417932,
+        "rd": 159.80949102137453,
         "partidos_jugados": 13,
         "pj_reales": 1,
         "form_score": 100.0,
@@ -473,7 +473,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 34.0,
+        "overperformance": 34.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -561,7 +561,7 @@
         "nombre": "Bacau",
         "pais": "",
         "rating": 1442.38,
-        "rd": 296.61074594716194,
+        "rd": 296.9767803411029,
         "partidos_jugados": 1,
         "pj_reales": 1,
         "form_score": 50.0,
@@ -611,7 +611,7 @@
         "nombre": "Arges",
         "pais": "",
         "rating": 1624.0,
-        "rd": 267.14122147533084,
+        "rd": 267.54757644532606,
         "partidos_jugados": 2,
         "pj_reales": 2,
         "form_score": 68.9,
@@ -646,7 +646,7 @@
         "nombre": "R Bucuresti",
         "pais": "",
         "rating": 1633.83,
-        "rd": 274.45305288413397,
+        "rd": 274.84859775494044,
         "partidos_jugados": 1,
         "pj_reales": 1,
         "form_score": 100.0,
@@ -672,7 +672,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 38.0,
+        "overperformance": 38.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -760,13 +760,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 23.5,
+        "overperformance": 24.3,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 65.9,
+        "prob_local": 65.8,
         "prob_empate": 20.8,
-        "prob_visitante": 13.2
+        "prob_visitante": 13.3
       },
       "diff_elo": 99.6,
       "confianza": 49.8
@@ -864,7 +864,7 @@
         "nombre": "Legia Warsaw",
         "pais": "",
         "rating": 1662.31,
-        "rd": 299.89164779916166,
+        "rd": 300.2536945863642,
         "partidos_jugados": 1,
         "pj_reales": 1,
         "form_score": 100.0,
@@ -1010,7 +1010,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.8,
+        "overperformance": -11.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -1158,7 +1158,7 @@
         "nombre": "Olimpija",
         "pais": "",
         "rating": 1662.31,
-        "rd": 302.05741933958166,
+        "rd": 302.41687332414693,
         "partidos_jugados": 1,
         "pj_reales": 1,
         "form_score": 100.0,
@@ -1184,7 +1184,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 24.8,
+        "overperformance": 26.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -1237,7 +1237,7 @@
       },
       "equipo_visitante": {
         "id": "134165",
-        "nombre": "PFC Nyva Vinnytsia",
+        "nombre": "Nyva Vinnytsia",
         "pais": "",
         "rating": 1500.0,
         "rd": 350.0,
@@ -1288,7 +1288,7 @@
         "nombre": "Widzew Lodz",
         "pais": "",
         "rating": 1500.0,
-        "rd": 307.22779471471415,
+        "rd": 307.5811946392405,
         "partidos_jugados": 1,
         "pj_reales": 1,
         "form_score": 50.0,
@@ -1322,7 +1322,7 @@
         "nombre": "Skiernwice",
         "pais": "",
         "rating": 1337.69,
-        "rd": 300.7959476993656,
+        "rd": 301.15690735134194,
         "partidos_jugados": 1,
         "pj_reales": 1,
         "form_score": 0.0,
@@ -1348,7 +1348,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -24.7,
+        "overperformance": -24.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -1402,7 +1402,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.3,
+        "overperformance": -0.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1410,7 +1410,7 @@
         "nombre": "Malaysia",
         "pais": "",
         "rating": 1614.59,
-        "rd": 198.73546062836698,
+        "rd": 199.28138710623378,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 18.6,
@@ -1496,7 +1496,7 @@
         "nombre": "Kyrgyz Rep.",
         "pais": "",
         "rating": 1529.06,
-        "rd": 116.24751868546124,
+        "rd": 117.17807437516971,
         "partidos_jugados": 23,
         "pj_reales": 2,
         "form_score": 100.0,
@@ -1523,7 +1523,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 35.3,
+        "overperformance": 34.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -1748,7 +1748,7 @@
         "nombre": "Otrant Ulcinj",
         "pais": "",
         "rating": 1290.08,
-        "rd": 287.38188030482024,
+        "rd": 287.75966677176854,
         "partidos_jugados": 1,
         "pj_reales": 1,
         "form_score": 0.0,
@@ -1774,7 +1774,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -31.2,
+        "overperformance": -31.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -2126,7 +2126,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.0,
+        "overperformance": 0.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -2372,7 +2372,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.3,
+        "overperformance": 3.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -2458,7 +2458,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.6,
+        "overperformance": 0.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -2612,7 +2612,7 @@
         "nombre": "First Vienna",
         "pais": "",
         "rating": 1378.47,
-        "rd": 277.7216032962165,
+        "rd": 278.11249951747385,
         "partidos_jugados": 1,
         "pj_reales": 1,
         "form_score": 0.0,
@@ -2692,7 +2692,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.3,
+        "overperformance": 0.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -2730,7 +2730,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.1,
+        "overperformance": 0.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -2907,7 +2907,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.5,
+        "overperformance": 6.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -3109,7 +3109,7 @@
         "nombre": "Kosovo",
         "pais": "",
         "rating": 1587.48,
-        "rd": 95.70955272370647,
+        "rd": 96.83748132727409,
         "partidos_jugados": 30,
         "pj_reales": 7,
         "form_score": 46.7,
@@ -3138,7 +3138,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.4,
+        "overperformance": -10.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3146,7 +3146,7 @@
         "nombre": "Israel",
         "pais": "",
         "rating": 1424.21,
-        "rd": 99.65146367142655,
+        "rd": 100.73544423689107,
         "partidos_jugados": 28,
         "pj_reales": 6,
         "form_score": 36.6,
@@ -3175,13 +3175,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -8.4,
+        "overperformance": -9.6,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 74.1,
+        "prob_local": 73.1,
         "prob_empate": 19.4,
-        "prob_visitante": 6.5
+        "prob_visitante": 7.5
       },
       "diff_elo": 163.3,
       "confianza": 81.6
@@ -3309,7 +3309,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.9,
+        "overperformance": -2.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3767,7 +3767,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.1,
+        "overperformance": -1.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -3916,10 +3916,10 @@
         "id": "21727",
         "nombre": "Portishead",
         "pais": "",
-        "rating": 1729.51,
-        "rd": 92.65,
-        "partidos_jugados": 24,
-        "pj_reales": 14,
+        "rating": 1748.94,
+        "rd": 90.34,
+        "partidos_jugados": 25,
+        "pj_reales": 15,
         "form_score": 100.0,
         "form_local": 50.0,
         "form_visitante": 100.0,
@@ -3943,16 +3943,16 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 19.9,
+        "overperformance": 18.6,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 55.6,
-        "prob_empate": 22.0,
-        "prob_visitante": 22.4
+        "prob_local": 53.6,
+        "prob_empate": 22.5,
+        "prob_visitante": 23.9
       },
-      "diff_elo": 49.0,
-      "confianza": 24.5
+      "diff_elo": 29.5,
+      "confianza": 14.8
     },
     {
       "fixture_id": "401880754",
@@ -6573,7 +6573,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.6,
+        "overperformance": 2.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -6611,7 +6611,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.8,
+        "overperformance": 1.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -6765,7 +6765,7 @@
         "nombre": "FK Partizan",
         "pais": "",
         "rating": 1452.27,
-        "rd": 219.21380356265882,
+        "rd": 219.70896729731842,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 41.4,
@@ -6881,7 +6881,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.5,
+        "overperformance": 4.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -7305,7 +7305,7 @@
         "nombre": "Uganda",
         "pais": "",
         "rating": 1629.73,
-        "rd": 121.01906331971227,
+        "rd": 121.91320355288296,
         "partidos_jugados": 27,
         "pj_reales": 3,
         "form_score": 72.2,
@@ -7334,7 +7334,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 17.4,
+        "overperformance": 17.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7342,7 +7342,7 @@
         "nombre": "Botswana",
         "pais": "",
         "rating": 1450.1,
-        "rd": 130.96728085036116,
+        "rd": 131.79380850622533,
         "partidos_jugados": 25,
         "pj_reales": 3,
         "form_score": 24.7,
@@ -7370,7 +7370,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.7,
+        "overperformance": -3.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -7603,7 +7603,7 @@
         "nombre": "Hungary",
         "pais": "",
         "rating": 1504.87,
-        "rd": 87.30818708184792,
+        "rd": 88.5430805670378,
         "partidos_jugados": 32,
         "pj_reales": 8,
         "form_score": 81.5,
@@ -7632,7 +7632,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 18.8,
+        "overperformance": 18.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -7655,10 +7655,10 @@
         "id": "464",
         "nombre": "Norway",
         "pais": "",
-        "rating": 1669.99,
-        "rd": 92.77,
-        "partidos_jugados": 33,
-        "pj_reales": 9,
+        "rating": 1641.84,
+        "rd": 90.49,
+        "partidos_jugados": 34,
+        "pj_reales": 10,
         "form_score": 14.4,
         "form_local": 37.8,
         "form_visitante": 21.8,
@@ -7686,7 +7686,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -15.8,
+        "overperformance": -13.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -7694,7 +7694,7 @@
         "nombre": "Wales",
         "pais": "",
         "rating": 1511.32,
-        "rd": 95.53187030999726,
+        "rd": 96.66228432261096,
         "partidos_jugados": 29,
         "pj_reales": 6,
         "form_score": 27.6,
@@ -7723,16 +7723,16 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -9.9,
+        "overperformance": -11.8,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 71.0,
-        "prob_empate": 19.5,
-        "prob_visitante": 9.5
+        "prob_local": 69.4,
+        "prob_empate": 20.1,
+        "prob_visitante": 10.4
       },
-      "diff_elo": 158.7,
-      "confianza": 79.3
+      "diff_elo": 130.5,
+      "confianza": 65.3
     },
     {
       "fixture_id": "401932802",
@@ -9015,7 +9015,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.5,
+        "overperformance": -0.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -9567,7 +9567,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.8,
+        "overperformance": 7.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9605,7 +9605,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.7,
+        "overperformance": -5.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -9659,7 +9659,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.7,
+        "overperformance": -2.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9697,7 +9697,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.9,
+        "overperformance": -6.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -9923,7 +9923,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.9,
+        "overperformance": -2.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -9961,7 +9961,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.9,
+        "overperformance": 1.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -10107,17 +10107,17 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.6,
+        "overperformance": -0.7,
         "vol": 0.06
       },
       "equipo_visitante": {
         "id": "20179",
         "nombre": "FC Andorra",
         "pais": "España",
-        "rating": 1368.18,
-        "rd": 92.94,
-        "partidos_jugados": 24,
-        "pj_reales": 24,
+        "rating": 1377.54,
+        "rd": 91.6,
+        "partidos_jugados": 25,
+        "pj_reales": 25,
         "form_score": 51.6,
         "form_local": 37.2,
         "form_visitante": 54.2,
@@ -10145,15 +10145,15 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.9,
+        "overperformance": 3.9,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 87.6,
-        "prob_empate": 11.4,
+        "prob_local": 87.4,
+        "prob_empate": 11.6,
         "prob_visitante": 0.9
       },
-      "diff_elo": 464.9,
+      "diff_elo": 455.5,
       "confianza": 100.0
     },
     {
@@ -10199,7 +10199,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.1,
+        "overperformance": -1.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10237,7 +10237,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.8,
+        "overperformance": -1.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -10963,7 +10963,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.1,
+        "overperformance": -0.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -11785,7 +11785,7 @@
         "nombre": "Sint Maarten",
         "pais": "",
         "rating": 1338.06,
-        "rd": 116.19750373229604,
+        "rd": 117.1286113504673,
         "partidos_jugados": 23,
         "pj_reales": 3,
         "form_score": 0.0,
@@ -11813,7 +11813,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -27.5,
+        "overperformance": -27.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -11821,7 +11821,7 @@
         "nombre": "French Guiana",
         "pais": "",
         "rating": 1456.39,
-        "rd": 146.9104303425473,
+        "rd": 147.64798090967682,
         "partidos_jugados": 8,
         "pj_reales": 2,
         "form_score": 100.0,
@@ -11854,7 +11854,7 @@
       "prediccion": {
         "prob_local": 30.5,
         "prob_empate": 20.4,
-        "prob_visitante": 49.1
+        "prob_visitante": 49.0
       },
       "diff_elo": -118.3,
       "confianza": 59.2
@@ -11982,7 +11982,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.4,
+        "overperformance": -2.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -11990,7 +11990,7 @@
         "nombre": "Togo",
         "pais": "",
         "rating": 1415.6,
-        "rd": 130.48760472245434,
+        "rd": 131.3171239880856,
         "partidos_jugados": 22,
         "pj_reales": 2,
         "form_score": 37.8,
@@ -12017,7 +12017,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.2,
+        "overperformance": -1.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -12041,7 +12041,7 @@
         "nombre": "Angola",
         "pais": "",
         "rating": 1611.86,
-        "rd": 113.27264150208434,
+        "rd": 114.22727616509958,
         "partidos_jugados": 29,
         "pj_reales": 2,
         "form_score": 84.6,
@@ -12924,7 +12924,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.8,
+        "overperformance": -0.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -13806,7 +13806,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.6,
+        "overperformance": 0.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -13844,7 +13844,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.7,
+        "overperformance": 0.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -13898,17 +13898,17 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 23.7,
+        "overperformance": 23.2,
         "vol": 0.06
       },
       "equipo_visitante": {
         "id": "476",
         "nombre": "Rep Ireland",
         "pais": "",
-        "rating": 1581.16,
-        "rd": 97.24264002233672,
-        "partidos_jugados": 29,
-        "pj_reales": 6,
+        "rating": 1559.44,
+        "rd": 94.46,
+        "partidos_jugados": 30,
+        "pj_reales": 7,
         "form_score": 53.1,
         "form_local": 50.0,
         "form_visitante": 60.0,
@@ -13936,16 +13936,16 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -6.6,
+        "overperformance": -4.1,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 44.9,
-        "prob_empate": 20.8,
-        "prob_visitante": 34.3
+        "prob_local": 47.4,
+        "prob_empate": 21.3,
+        "prob_visitante": 31.3
       },
-      "diff_elo": -103.4,
-      "confianza": 51.7
+      "diff_elo": -81.7,
+      "confianza": 40.8
     },
     {
       "fixture_id": "401861169",
@@ -13960,7 +13960,7 @@
         "nombre": "N Ireland",
         "pais": "",
         "rating": 1580.73,
-        "rd": 92.36954381159038,
+        "rd": 93.53744708438344,
         "partidos_jugados": 29,
         "pj_reales": 8,
         "form_score": 64.9,
@@ -13990,7 +13990,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.4,
+        "overperformance": 8.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -14050,10 +14050,10 @@
         "id": "482",
         "nombre": "Portugal",
         "pais": "",
-        "rating": 1729.51,
-        "rd": 92.65,
-        "partidos_jugados": 24,
-        "pj_reales": 14,
+        "rating": 1748.94,
+        "rd": 90.34,
+        "partidos_jugados": 25,
+        "pj_reales": 15,
         "form_score": 100.0,
         "form_local": 100.0,
         "form_visitante": 100.0,
@@ -14081,17 +14081,17 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 36.1,
+        "overperformance": 32.4,
         "vol": 0.06
       },
       "equipo_visitante": {
         "id": "479",
         "nombre": "Denmark",
         "pais": "",
-        "rating": 1679.72,
-        "rd": 97.34804428562724,
-        "partidos_jugados": 29,
-        "pj_reales": 7,
+        "rating": 1658.55,
+        "rd": 94.59,
+        "partidos_jugados": 30,
+        "pj_reales": 8,
         "form_score": 62.2,
         "form_local": 37.8,
         "form_visitante": 62.2,
@@ -14118,16 +14118,16 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -12.6,
+        "overperformance": -11.5,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 65.3,
-        "prob_empate": 22.0,
-        "prob_visitante": 12.7
+        "prob_local": 70.1,
+        "prob_empate": 21.1,
+        "prob_visitante": 8.8
       },
-      "diff_elo": 49.8,
-      "confianza": 24.9
+      "diff_elo": 90.4,
+      "confianza": 45.2
     },
     {
       "fixture_id": "401861168",
@@ -14171,17 +14171,17 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -33.3,
+        "overperformance": -31.8,
         "vol": 0.06
       },
       "equipo_visitante": {
         "id": "471",
         "nombre": "Poland",
         "pais": "",
-        "rating": 1585.56,
-        "rd": 79.23,
-        "partidos_jugados": 34,
-        "pj_reales": 12,
+        "rating": 1606.27,
+        "rd": 78.13,
+        "partidos_jugados": 35,
+        "pj_reales": 13,
         "form_score": 32.7,
         "form_local": 81.1,
         "form_visitante": 0.0,
@@ -14208,16 +14208,16 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -18.1,
+        "overperformance": -18.8,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 35.9,
-        "prob_empate": 20.3,
-        "prob_visitante": 43.8
+        "prob_local": 33.8,
+        "prob_empate": 19.9,
+        "prob_visitante": 46.4
       },
-      "diff_elo": -121.6,
-      "confianza": 60.8
+      "diff_elo": -142.3,
+      "confianza": 71.1
     },
     {
       "fixture_id": "401861166",
@@ -14232,7 +14232,7 @@
         "nombre": "Sweden",
         "pais": "",
         "rating": 1651.94,
-        "rd": 93.30383338809885,
+        "rd": 94.4606457585234,
         "partidos_jugados": 28,
         "pj_reales": 8,
         "form_score": 81.2,
@@ -14262,17 +14262,17 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.3,
+        "overperformance": 9.7,
         "vol": 0.06
       },
       "equipo_visitante": {
         "id": "452",
         "nombre": "Bosnia-Herz",
         "pais": "",
-        "rating": 1497.57,
-        "rd": 104.00662569168556,
-        "partidos_jugados": 27,
-        "pj_reales": 6,
+        "rating": 1525.1,
+        "rd": 100.41,
+        "partidos_jugados": 28,
+        "pj_reales": 7,
         "form_score": 81.1,
         "form_local": 81.1,
         "form_visitante": 81.1,
@@ -14299,16 +14299,16 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 35.6,
+        "overperformance": 33.8,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 70.1,
-        "prob_empate": 19.6,
-        "prob_visitante": 10.3
+        "prob_local": 67.2,
+        "prob_empate": 20.2,
+        "prob_visitante": 12.6
       },
-      "diff_elo": 154.4,
-      "confianza": 77.2
+      "diff_elo": 126.8,
+      "confianza": 63.4
     },
     {
       "fixture_id": "401885644",
@@ -14353,7 +14353,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.9,
+        "overperformance": 2.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -14391,7 +14391,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.0,
+        "overperformance": 5.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -14415,7 +14415,7 @@
         "nombre": "Z Luhansk",
         "pais": "",
         "rating": 1427.17,
-        "rd": 160.7957520773286,
+        "rd": 161.46995800008605,
         "partidos_jugados": 10,
         "pj_reales": 1,
         "form_score": 62.2,
@@ -14450,7 +14450,7 @@
         "nombre": "Kharkiv",
         "pais": "",
         "rating": 1403.99,
-        "rd": 173.6115868944748,
+        "rd": 174.23616751282415,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 0.0,
@@ -14530,7 +14530,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.6,
+        "overperformance": -0.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -14568,7 +14568,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.3,
+        "overperformance": 0.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -15500,6 +15500,98 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401929717",
+      "fecha": "2026-11-14T16:00:00-05:00",
+      "fecha_display": "2026-11-14",
+      "hora": "16:00",
+      "liga": "usa.ncaa.m.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.m.1",
+      "equipo_local": {
+        "id": "5595",
+        "nombre": "Tulsa",
+        "pais": "EE.UU.",
+        "rating": 1812.91,
+        "rd": 136.03,
+        "partidos_jugados": 9,
+        "pj_reales": 9,
+        "form_score": 93.4,
+        "form_local": 82.0,
+        "form_visitante": 90.7,
+        "momentum": "stable",
+        "momentum_diff": 3.7,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 4
+        },
+        "ultimos5": {
+          "texto": "4V 1E",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.22,
+          "goles_contra": 1.11,
+          "diferencia": 0.11
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "5628",
+        "nombre": "Charlotte",
+        "pais": "EE.UU.",
+        "rating": 1791.26,
+        "rd": 115.57,
+        "partidos_jugados": 14,
+        "pj_reales": 7,
+        "form_score": 80.5,
+        "form_local": 75.7,
+        "form_visitante": 80.3,
+        "momentum": "stable",
+        "momentum_diff": -1.4,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "V",
+            "V",
+            "D",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.14,
+          "goles_contra": 1.0,
+          "diferencia": 1.14
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.1,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 56.9,
+        "prob_empate": 22.6,
+        "prob_visitante": 20.4
+      },
+      "diff_elo": 21.7,
+      "confianza": 10.8
+    },
+    {
       "fixture_id": "401931283",
       "fecha": "2026-11-14T16:00:00-05:00",
       "fecha_display": "2026-11-14",
@@ -15542,7 +15634,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.1,
+        "overperformance": 1.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -15604,7 +15696,7 @@
         "nombre": "Haiti",
         "pais": "",
         "rating": 1606.33,
-        "rd": 107.71762420822246,
+        "rd": 108.72134586266456,
         "partidos_jugados": 24,
         "pj_reales": 4,
         "form_score": 49.4,
@@ -15756,7 +15848,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.4,
+        "overperformance": -0.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -16412,98 +16504,6 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401878607",
-      "fecha": "2026-11-14T18:00:00-05:00",
-      "fecha_display": "2026-11-14",
-      "hora": "18:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "131455",
-        "nombre": "Tampa Bay",
-        "pais": "",
-        "rating": 1463.88,
-        "rd": 135.92,
-        "partidos_jugados": 9,
-        "pj_reales": 7,
-        "form_score": 12.7,
-        "form_local": 34.0,
-        "form_visitante": 18.6,
-        "momentum": "stable",
-        "momentum_diff": -5.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "3D 2E",
-          "resultados": [
-            "D",
-            "D",
-            "D",
-            "E",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.11,
-          "goles_contra": 1.56,
-          "diferencia": -0.45
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 2.8,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "131447",
-        "nombre": "Dallas",
-        "pais": "",
-        "rating": 1525.03,
-        "rd": 135.02,
-        "partidos_jugados": 9,
-        "pj_reales": 3,
-        "form_score": 45.1,
-        "form_local": 66.1,
-        "form_visitante": 30.5,
-        "momentum": "stable",
-        "momentum_diff": -0.4,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 1D 2E",
-          "resultados": [
-            "E",
-            "D",
-            "E",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.22,
-          "goles_contra": 1.22,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 7.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 45.3,
-        "prob_empate": 21.7,
-        "prob_visitante": 33.0
-      },
-      "diff_elo": -61.1,
-      "confianza": 30.6
-    },
-    {
       "fixture_id": "401933618",
       "fecha": "2026-11-14T18:00:00-05:00",
       "fecha_display": "2026-11-14",
@@ -16912,7 +16912,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.0,
+        "overperformance": -4.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -17422,6 +17422,98 @@
       "confianza": 36.5
     },
     {
+      "fixture_id": "401878607",
+      "fecha": "2026-11-14T18:00:00-05:00",
+      "fecha_display": "2026-11-14",
+      "hora": "18:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "131455",
+        "nombre": "Tampa Bay",
+        "pais": "",
+        "rating": 1463.88,
+        "rd": 135.92,
+        "partidos_jugados": 9,
+        "pj_reales": 7,
+        "form_score": 12.7,
+        "form_local": 34.0,
+        "form_visitante": 18.6,
+        "momentum": "stable",
+        "momentum_diff": -5.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "3D 2E",
+          "resultados": [
+            "D",
+            "D",
+            "D",
+            "E",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.11,
+          "goles_contra": 1.56,
+          "diferencia": -0.45
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.8,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "131447",
+        "nombre": "Dallas",
+        "pais": "",
+        "rating": 1525.03,
+        "rd": 135.02,
+        "partidos_jugados": 9,
+        "pj_reales": 3,
+        "form_score": 45.1,
+        "form_local": 66.1,
+        "form_visitante": 30.5,
+        "momentum": "stable",
+        "momentum_diff": -0.4,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D 2E",
+          "resultados": [
+            "E",
+            "D",
+            "E",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.22,
+          "goles_contra": 1.22,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 7.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 45.3,
+        "prob_empate": 21.7,
+        "prob_visitante": 33.0
+      },
+      "diff_elo": -61.1,
+      "confianza": 30.6
+    },
+    {
       "fixture_id": "401841175",
       "fecha": "2026-11-14T18:30:00-05:00",
       "fecha_display": "2026-11-14",
@@ -17514,6 +17606,98 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401931354",
+      "fecha": "2026-11-14T18:30:00-05:00",
+      "fecha_display": "2026-11-14",
+      "hora": "18:30",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20607",
+        "nombre": "E Kentucky",
+        "pais": "EE.UU.",
+        "rating": 1543.6,
+        "rd": 109.25,
+        "partidos_jugados": 17,
+        "pj_reales": 17,
+        "form_score": 73.8,
+        "form_local": 43.7,
+        "form_visitante": 79.7,
+        "momentum": "stable",
+        "momentum_diff": -0.4,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "V",
+            "V",
+            "D",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.27,
+          "goles_contra": 0.93,
+          "diferencia": 0.34
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "17590",
+        "nombre": "Abilene Chrstn",
+        "pais": "EE.UU.",
+        "rating": 1666.61,
+        "rd": 122.54,
+        "partidos_jugados": 14,
+        "pj_reales": 14,
+        "form_score": 86.8,
+        "form_local": 88.7,
+        "form_visitante": 68.0,
+        "momentum": "stable",
+        "momentum_diff": 0.2,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3V 2E",
+          "resultados": [
+            "V",
+            "V",
+            "E",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.0,
+          "goles_contra": 0.67,
+          "diferencia": 1.33
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -4.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 38.2,
+        "prob_empate": 20.3,
+        "prob_visitante": 41.5
+      },
+      "diff_elo": -123.0,
+      "confianza": 61.5
+    },
+    {
       "fixture_id": "401929773",
       "fecha": "2026-11-14T19:00:00-05:00",
       "fecha_display": "2026-11-14",
@@ -17526,7 +17710,7 @@
         "nombre": "St. Vincent ",
         "pais": "",
         "rating": 1569.83,
-        "rd": 113.89101512750626,
+        "rd": 114.84032040266185,
         "partidos_jugados": 23,
         "pj_reales": 2,
         "form_score": 100.0,
@@ -17561,7 +17745,7 @@
         "nombre": "Belize",
         "pais": "",
         "rating": 1389.82,
-        "rd": 116.79915252997719,
+        "rd": 117.72525566419522,
         "partidos_jugados": 22,
         "pj_reales": 1,
         "form_score": 0.0,
@@ -17587,7 +17771,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -41.8,
+        "overperformance": -41.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -18047,7 +18231,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.6,
+        "overperformance": -4.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -18101,7 +18285,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 9.4,
+        "overperformance": 9.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -18139,7 +18323,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.1,
+        "overperformance": -0.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -18415,7 +18599,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.8,
+        "overperformance": 6.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -18439,7 +18623,7 @@
         "nombre": "Jamaica",
         "pais": "",
         "rating": 1632.21,
-        "rd": 99.48284220417209,
+        "rd": 100.56838826639424,
         "partidos_jugados": 27,
         "pj_reales": 3,
         "form_score": 31.1,
@@ -18466,7 +18650,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -22.2,
+        "overperformance": -26.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -18783,98 +18967,6 @@
       "confianza": 68.9
     },
     {
-      "fixture_id": "401931354",
-      "fecha": "2026-11-14T20:00:00-05:00",
-      "fecha_display": "2026-11-14",
-      "hora": "20:00",
-      "liga": "usa.ncaa.w.1",
-      "liga_pais": "EE.UU.",
-      "liga_slug": "usa.ncaa.w.1",
-      "equipo_local": {
-        "id": "20607",
-        "nombre": "E Kentucky",
-        "pais": "EE.UU.",
-        "rating": 1543.6,
-        "rd": 109.25,
-        "partidos_jugados": 17,
-        "pj_reales": 17,
-        "form_score": 73.8,
-        "form_local": 43.7,
-        "form_visitante": 79.7,
-        "momentum": "stable",
-        "momentum_diff": -0.4,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "V",
-            "V",
-            "D",
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.27,
-          "goles_contra": 0.93,
-          "diferencia": 0.34
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.3,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "17590",
-        "nombre": "Abilene Chrstn",
-        "pais": "EE.UU.",
-        "rating": 1666.61,
-        "rd": 122.54,
-        "partidos_jugados": 14,
-        "pj_reales": 14,
-        "form_score": 86.8,
-        "form_local": 88.7,
-        "form_visitante": 68.0,
-        "momentum": "stable",
-        "momentum_diff": 0.2,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "3V 2E",
-          "resultados": [
-            "V",
-            "V",
-            "E",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 0.67,
-          "diferencia": 1.33
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -4.2,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 38.2,
-        "prob_empate": 20.3,
-        "prob_visitante": 41.5
-      },
-      "diff_elo": -123.0,
-      "confianza": 61.5
-    },
-    {
       "fixture_id": "401931349",
       "fecha": "2026-11-14T20:00:00-05:00",
       "fecha_display": "2026-11-14",
@@ -18917,7 +19009,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.7,
+        "overperformance": -2.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -18955,7 +19047,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.1,
+        "overperformance": 1.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -18965,98 +19057,6 @@
       },
       "diff_elo": 227.8,
       "confianza": 100.0
-    },
-    {
-      "fixture_id": "401929717",
-      "fecha": "2026-11-14T20:30:00-05:00",
-      "fecha_display": "2026-11-14",
-      "hora": "20:30",
-      "liga": "usa.ncaa.m.1",
-      "liga_pais": "EE.UU.",
-      "liga_slug": "usa.ncaa.m.1",
-      "equipo_local": {
-        "id": "5595",
-        "nombre": "Tulsa",
-        "pais": "EE.UU.",
-        "rating": 1812.91,
-        "rd": 136.03,
-        "partidos_jugados": 9,
-        "pj_reales": 9,
-        "form_score": 93.4,
-        "form_local": 82.0,
-        "form_visitante": 90.7,
-        "momentum": "stable",
-        "momentum_diff": 3.7,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 4
-        },
-        "ultimos5": {
-          "texto": "4V 1E",
-          "resultados": [
-            "V",
-            "V",
-            "V",
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.22,
-          "goles_contra": 1.11,
-          "diferencia": 0.11
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 2.2,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "5628",
-        "nombre": "Charlotte",
-        "pais": "EE.UU.",
-        "rating": 1791.26,
-        "rd": 115.57,
-        "partidos_jugados": 14,
-        "pj_reales": 7,
-        "form_score": 80.5,
-        "form_local": 75.7,
-        "form_visitante": 80.3,
-        "momentum": "stable",
-        "momentum_diff": -1.4,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "3V 1D 1E",
-          "resultados": [
-            "V",
-            "V",
-            "D",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.14,
-          "goles_contra": 1.0,
-          "diferencia": 1.14
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.1,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 56.9,
-        "prob_empate": 22.6,
-        "prob_visitante": 20.4
-      },
-      "diff_elo": 21.7,
-      "confianza": 10.8
     },
     {
       "fixture_id": "401932876",
@@ -19465,7 +19465,7 @@
         "nombre": "San Diego St",
         "pais": "EE.UU.",
         "rating": 1480.62,
-        "rd": 274.84364026858486,
+        "rd": 275.6330150978681,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 33.6,
@@ -19501,7 +19501,7 @@
       "prediccion": {
         "prob_local": 74.7,
         "prob_empate": 18.6,
-        "prob_visitante": 6.6
+        "prob_visitante": 6.7
       },
       "diff_elo": 195.8,
       "confianza": 97.9
@@ -19610,7 +19610,7 @@
         "nombre": "CA La Paz",
         "pais": "",
         "rating": 1774.06,
-        "rd": 183.6658967188735,
+        "rd": 184.2563990288724,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 82.8,
@@ -19682,7 +19682,7 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 83.4,
+        "prob_local": 83.3,
         "prob_empate": 15.7,
         "prob_visitante": 1.0
       },
@@ -19702,7 +19702,7 @@
         "nombre": "Portland",
         "pais": "EE.UU.",
         "rating": 1673.43,
-        "rd": 164.2442583536542,
+        "rd": 164.9043438180724,
         "partidos_jugados": 9,
         "pj_reales": 2,
         "form_score": 88.7,
