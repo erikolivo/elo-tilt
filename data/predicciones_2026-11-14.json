@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-14T19:43:54.160764Z",
+  "generado": "2026-11-14T23:34:02.527462Z",
   "fecha_consulta": "2026-11-14",
   "total": 229,
   "predicciones": [
@@ -17514,98 +17514,6 @@
       "confianza": 30.6
     },
     {
-      "fixture_id": "401841175",
-      "fecha": "2026-11-14T18:30:00-05:00",
-      "fecha_display": "2026-11-14",
-      "hora": "18:30",
-      "liga": "Brasil - Série A",
-      "liga_pais": "Brasil",
-      "liga_slug": "bra.1",
-      "equipo_local": {
-        "id": "9318",
-        "nombre": "Chapecoense",
-        "pais": "Brasil",
-        "rating": 1369.84,
-        "rd": 135.18,
-        "partidos_jugados": 10,
-        "pj_reales": 10,
-        "form_score": 29.3,
-        "form_local": 67.3,
-        "form_visitante": 7.6,
-        "momentum": "stable",
-        "momentum_diff": -0.4,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "D",
-            "V",
-            "D",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 2.0,
-          "diferencia": -1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.3,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "3454",
-        "nombre": "Vasco",
-        "pais": "Brasil",
-        "rating": 1610.44,
-        "rd": 106.19,
-        "partidos_jugados": 16,
-        "pj_reales": 16,
-        "form_score": 75.6,
-        "form_local": 78.2,
-        "form_visitante": 54.0,
-        "momentum": "stable",
-        "momentum_diff": 2.6,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "3V 2D",
-          "resultados": [
-            "V",
-            "V",
-            "D",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.33,
-          "goles_contra": 1.27,
-          "diferencia": 0.06
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 6.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 26.7,
-        "prob_empate": 17.6,
-        "prob_visitante": 55.8
-      },
-      "diff_elo": -240.6,
-      "confianza": 100.0
-    },
-    {
       "fixture_id": "401931354",
       "fecha": "2026-11-14T18:30:00-05:00",
       "fecha_display": "2026-11-14",
@@ -17698,6 +17606,98 @@
       "confianza": 61.5
     },
     {
+      "fixture_id": "401841175",
+      "fecha": "2026-11-14T18:30:00-05:00",
+      "fecha_display": "2026-11-14",
+      "hora": "18:30",
+      "liga": "Brasil - Série A",
+      "liga_pais": "Brasil",
+      "liga_slug": "bra.1",
+      "equipo_local": {
+        "id": "9318",
+        "nombre": "Chapecoense",
+        "pais": "Brasil",
+        "rating": 1369.84,
+        "rd": 135.18,
+        "partidos_jugados": 10,
+        "pj_reales": 10,
+        "form_score": 29.3,
+        "form_local": 67.3,
+        "form_visitante": 7.6,
+        "momentum": "stable",
+        "momentum_diff": -0.4,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 3D 1E",
+          "resultados": [
+            "D",
+            "V",
+            "D",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 2.0,
+          "diferencia": -1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "3454",
+        "nombre": "Vasco",
+        "pais": "Brasil",
+        "rating": 1610.44,
+        "rd": 106.19,
+        "partidos_jugados": 16,
+        "pj_reales": 16,
+        "form_score": 75.6,
+        "form_local": 78.2,
+        "form_visitante": 54.0,
+        "momentum": "stable",
+        "momentum_diff": 2.6,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3V 2D",
+          "resultados": [
+            "V",
+            "V",
+            "D",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.33,
+          "goles_contra": 1.27,
+          "diferencia": 0.06
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 6.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 26.7,
+        "prob_empate": 17.6,
+        "prob_visitante": 55.8
+      },
+      "diff_elo": -240.6,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401929773",
       "fecha": "2026-11-14T19:00:00-05:00",
       "fecha_display": "2026-11-14",
@@ -17710,7 +17710,7 @@
         "nombre": "St. Vincent ",
         "pais": "",
         "rating": 1569.83,
-        "rd": 116.71576978716445,
+        "rd": 117.1799421774753,
         "partidos_jugados": 23,
         "pj_reales": 2,
         "form_score": 100.0,
@@ -17737,7 +17737,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 23.5,
+        "overperformance": 21.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -17745,7 +17745,7 @@
         "nombre": "Belize",
         "pais": "",
         "rating": 1389.82,
-        "rd": 119.5559425547665,
+        "rd": 120.00925087216508,
         "partidos_jugados": 22,
         "pj_reales": 1,
         "form_score": 0.0,
@@ -17771,7 +17771,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -41.9,
+        "overperformance": -37.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -18193,7 +18193,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.2,
+        "overperformance": 1.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -18231,7 +18231,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.7,
+        "overperformance": -4.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -18715,7 +18715,7 @@
         "nombre": "Jamaica",
         "pais": "",
         "rating": 1632.21,
-        "rd": 102.70506496497754,
+        "rd": 103.23232430881457,
         "partidos_jugados": 27,
         "pj_reales": 3,
         "form_score": 31.1,
@@ -18955,7 +18955,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.1,
+        "overperformance": 6.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -19193,7 +19193,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.5,
+        "overperformance": -2.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19495,7 +19495,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.8,
+        "overperformance": 1.9,
         "vol": 0.06
       },
       "prediccion": {
@@ -19649,7 +19649,7 @@
         "nombre": "San Diego St",
         "pais": "EE.UU.",
         "rating": 1480.62,
-        "rd": 277.2050213175262,
+        "rd": 277.5966319168468,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 33.6,
@@ -19703,7 +19703,7 @@
         "nombre": "CA La Paz",
         "pais": "",
         "rating": 1774.06,
-        "rd": 185.43176241994072,
+        "rd": 185.72444103277013,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 82.8,
@@ -19795,7 +19795,7 @@
         "nombre": "Portland",
         "pais": "EE.UU.",
         "rating": 1673.43,
-        "rd": 166.21665086844723,
+        "rd": 166.5431119256718,
         "partidos_jugados": 9,
         "pj_reales": 2,
         "form_score": 88.7,
@@ -20005,7 +20005,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.7,
+        "overperformance": 7.7,
         "vol": 0.06
       },
       "equipo_visitante": {
