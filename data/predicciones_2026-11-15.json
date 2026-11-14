@@ -1,7 +1,7 @@
 {
-  "generado": "2026-11-14T12:52:34.968548Z",
+  "generado": "2026-11-14T19:41:15.786085Z",
   "fecha_consulta": "2026-11-15",
-  "total": 132,
+  "total": 133,
   "predicciones": [
     {
       "fixture_id": "401933960",
@@ -103,7 +103,7 @@
         "nombre": "Chindia",
         "pais": "",
         "rating": 1670.87,
-        "rd": 286.6750756620238,
+        "rd": 286.86449650028095,
         "partidos_jugados": 1,
         "pj_reales": 1,
         "form_score": 100.0,
@@ -137,7 +137,7 @@
         "nombre": "FCSB",
         "pais": "",
         "rating": 1413.49,
-        "rd": 202.47595718625485,
+        "rd": 202.74405930883088,
         "partidos_jugados": 5,
         "pj_reales": 2,
         "form_score": 73.1,
@@ -218,7 +218,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 17.3,
+        "overperformance": 16.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -636,7 +636,7 @@
         "nombre": "FC Kolos",
         "pais": "",
         "rating": 1205.87,
-        "rd": 241.87409118585933,
+        "rd": 242.09855991352637,
         "partidos_jugados": 2,
         "pj_reales": 2,
         "form_score": 0.0,
@@ -662,7 +662,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -28.2,
+        "overperformance": -33.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -670,7 +670,7 @@
         "nombre": "Polissya",
         "pais": "",
         "rating": 1651.52,
-        "rd": 273.44985776592233,
+        "rd": 273.64842670371974,
         "partidos_jugados": 1,
         "pj_reales": 1,
         "form_score": 100.0,
@@ -1758,6 +1758,86 @@
       },
       "diff_elo": -68.7,
       "confianza": 34.3
+    },
+    {
+      "fixture_id": "401933096",
+      "fecha": "2026-11-15T08:00:00-05:00",
+      "fecha_display": "2026-11-15",
+      "hora": "08:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "134138",
+        "nombre": "Pauloise",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 350.0,
+        "partidos_jugados": 0,
+        "pj_reales": 0,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "21769",
+        "nombre": "La Tamponnaise",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 350.0,
+        "partidos_jugados": 0,
+        "pj_reales": 0,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 53.7,
+        "prob_empate": 23.1,
+        "prob_visitante": 23.1
+      },
+      "diff_elo": 0.0,
+      "confianza": 0.0
     },
     {
       "fixture_id": "401932860",
@@ -8773,7 +8853,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 3.8,
+        "overperformance": 3.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8811,7 +8891,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.3,
+        "overperformance": 2.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -8913,98 +8993,6 @@
       },
       "diff_elo": 30.7,
       "confianza": 15.4
-    },
-    {
-      "fixture_id": "401931330",
-      "fecha": "2026-11-15T14:00:00-05:00",
-      "fecha_display": "2026-11-15",
-      "hora": "14:00",
-      "liga": "usa.ncaa.w.1",
-      "liga_pais": "EE.UU.",
-      "liga_slug": "usa.ncaa.w.1",
-      "equipo_local": {
-        "id": "20617",
-        "nombre": "Lamar",
-        "pais": "EE.UU.",
-        "rating": 1744.56,
-        "rd": 111.74,
-        "partidos_jugados": 15,
-        "pj_reales": 7,
-        "form_score": 98.7,
-        "form_local": 94.9,
-        "form_visitante": 90.7,
-        "momentum": "stable",
-        "momentum_diff": 1.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 6
-        },
-        "ultimos5": {
-          "texto": "5V",
-          "resultados": [
-            "V",
-            "V",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.27,
-          "goles_contra": 0.53,
-          "diferencia": 1.74
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20551",
-        "nombre": "N'Western St",
-        "pais": "EE.UU.",
-        "rating": 1506.5,
-        "rd": 111.35,
-        "partidos_jugados": 14,
-        "pj_reales": 14,
-        "form_score": 85.0,
-        "form_local": 90.4,
-        "form_visitante": 51.9,
-        "momentum": "up",
-        "momentum_diff": 5.2,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "4V 1D",
-          "resultados": [
-            "V",
-            "V",
-            "V",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.43,
-          "goles_contra": 2.5,
-          "diferencia": -1.07
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -2.8,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 78.0,
-        "prob_empate": 17.6,
-        "prob_visitante": 4.4
-      },
-      "diff_elo": 238.1,
-      "confianza": 100.0
     },
     {
       "fixture_id": "401931342",
@@ -9191,17 +9179,109 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401931330",
+      "fecha": "2026-11-15T14:00:00-05:00",
+      "fecha_display": "2026-11-15",
+      "hora": "14:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20617",
+        "nombre": "Lamar",
+        "pais": "EE.UU.",
+        "rating": 1744.56,
+        "rd": 111.74,
+        "partidos_jugados": 15,
+        "pj_reales": 7,
+        "form_score": 98.7,
+        "form_local": 94.9,
+        "form_visitante": 90.7,
+        "momentum": "stable",
+        "momentum_diff": 1.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 6
+        },
+        "ultimos5": {
+          "texto": "5V",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.27,
+          "goles_contra": 0.53,
+          "diferencia": 1.74
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.6,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20551",
+        "nombre": "N'Western St",
+        "pais": "EE.UU.",
+        "rating": 1506.5,
+        "rd": 111.35,
+        "partidos_jugados": 14,
+        "pj_reales": 14,
+        "form_score": 85.0,
+        "form_local": 90.4,
+        "form_visitante": 51.9,
+        "momentum": "up",
+        "momentum_diff": 5.2,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "4V 1D",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.43,
+          "goles_contra": 2.5,
+          "diferencia": -1.07
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -2.8,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 78.0,
+        "prob_empate": 17.6,
+        "prob_visitante": 4.4
+      },
+      "diff_elo": 238.1,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401933255",
       "fecha": "2026-11-15T14:30:00-05:00",
       "fecha_display": "2026-11-15",
       "hora": "14:30",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
+      "liga": "Uruguay - Primera División",
+      "liga_pais": "Uruguay",
+      "liga_slug": "uru.1",
       "equipo_local": {
         "id": "4817",
         "nombre": "Danubio",
-        "pais": "",
+        "pais": "Uruguay",
         "rating": 1347.6,
         "rd": 128.35,
         "partidos_jugados": 13,
@@ -9239,7 +9319,7 @@
       "equipo_visitante": {
         "id": "5492",
         "nombre": "Liverpool",
-        "pais": "",
+        "pais": "Uruguay",
         "rating": 1854.9,
         "rd": 146.14,
         "partidos_jugados": 9,
@@ -9281,98 +9361,6 @@
       },
       "diff_elo": -507.3,
       "confianza": 100.0
-    },
-    {
-      "fixture_id": "401931294",
-      "fecha": "2026-11-15T14:30:00-05:00",
-      "fecha_display": "2026-11-15",
-      "hora": "14:30",
-      "liga": "usa.ncaa.w.1",
-      "liga_pais": "EE.UU.",
-      "liga_slug": "usa.ncaa.w.1",
-      "equipo_local": {
-        "id": "20368",
-        "nombre": "South Carolina",
-        "pais": "EE.UU.",
-        "rating": 1861.27,
-        "rd": 114.22,
-        "partidos_jugados": 14,
-        "pj_reales": 14,
-        "form_score": 80.5,
-        "form_local": 100.0,
-        "form_visitante": 33.1,
-        "momentum": "stable",
-        "momentum_diff": 0.8,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "3V 1D 1E",
-          "resultados": [
-            "V",
-            "V",
-            "D",
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.36,
-          "goles_contra": 0.71,
-          "diferencia": 0.65
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 7.1,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20517",
-        "nombre": "Texas",
-        "pais": "EE.UU.",
-        "rating": 1799.08,
-        "rd": 103.53,
-        "partidos_jugados": 18,
-        "pj_reales": 9,
-        "form_score": 59.1,
-        "form_local": 62.6,
-        "form_visitante": 53.0,
-        "momentum": "stable",
-        "momentum_diff": -1.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1D 3E",
-          "resultados": [
-            "E",
-            "V",
-            "E",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.8,
-          "goles_contra": 1.4,
-          "diferencia": 0.4
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -1.5,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 63.6,
-        "prob_empate": 21.7,
-        "prob_visitante": 14.7
-      },
-      "diff_elo": 62.2,
-      "confianza": 31.1
     },
     {
       "fixture_id": "401861176",
@@ -10663,6 +10651,98 @@
       "confianza": 9.4
     },
     {
+      "fixture_id": "401931294",
+      "fecha": "2026-11-15T16:30:00-05:00",
+      "fecha_display": "2026-11-15",
+      "hora": "16:30",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20368",
+        "nombre": "South Carolina",
+        "pais": "EE.UU.",
+        "rating": 1861.27,
+        "rd": 114.22,
+        "partidos_jugados": 14,
+        "pj_reales": 14,
+        "form_score": 80.5,
+        "form_local": 100.0,
+        "form_visitante": 33.1,
+        "momentum": "stable",
+        "momentum_diff": 0.8,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "V",
+            "V",
+            "D",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.36,
+          "goles_contra": 0.71,
+          "diferencia": 0.65
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 7.1,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20517",
+        "nombre": "Texas",
+        "pais": "EE.UU.",
+        "rating": 1799.08,
+        "rd": 103.53,
+        "partidos_jugados": 18,
+        "pj_reales": 9,
+        "form_score": 59.1,
+        "form_local": 62.6,
+        "form_visitante": 53.0,
+        "momentum": "stable",
+        "momentum_diff": -1.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1D 3E",
+          "resultados": [
+            "E",
+            "V",
+            "E",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.8,
+          "goles_contra": 1.4,
+          "diferencia": 0.4
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -1.5,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 63.6,
+        "prob_empate": 21.7,
+        "prob_visitante": 14.7
+      },
+      "diff_elo": 62.2,
+      "confianza": 31.1
+    },
+    {
       "fixture_id": "401878628",
       "fecha": "2026-11-15T17:00:00-05:00",
       "fecha_display": "2026-11-15",
@@ -11354,7 +11434,7 @@
         "nombre": "Sacramento",
         "pais": "",
         "rating": 1524.06,
-        "rd": 198.01858117352563,
+        "rd": 198.29267346932437,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 52.9,
