@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-15T12:21:57.168666Z",
+  "generado": "2026-11-15T18:25:43.847006Z",
   "fecha_consulta": "2026-11-15",
   "total": 133,
   "predicciones": [
@@ -8903,98 +8903,6 @@
       "confianza": 63.5
     },
     {
-      "fixture_id": "401931337",
-      "fecha": "2026-11-15T14:00:00-05:00",
-      "fecha_display": "2026-11-15",
-      "hora": "14:00",
-      "liga": "usa.ncaa.w.1",
-      "liga_pais": "EE.UU.",
-      "liga_slug": "usa.ncaa.w.1",
-      "equipo_local": {
-        "id": "20614",
-        "nombre": "Jackson St",
-        "pais": "EE.UU.",
-        "rating": 1520.86,
-        "rd": 114.37,
-        "partidos_jugados": 18,
-        "pj_reales": 18,
-        "form_score": 91.1,
-        "form_local": 95.2,
-        "form_visitante": 57.7,
-        "momentum": "stable",
-        "momentum_diff": 1.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "3V 2E",
-          "resultados": [
-            "V",
-            "V",
-            "V",
-            "E",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.53,
-          "goles_contra": 1.0,
-          "diferencia": 1.53
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -1.2,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "20596",
-        "nombre": "Alcorn St",
-        "pais": "EE.UU.",
-        "rating": 1490.13,
-        "rd": 113.54,
-        "partidos_jugados": 15,
-        "pj_reales": 15,
-        "form_score": 94.7,
-        "form_local": 96.3,
-        "form_visitante": 67.7,
-        "momentum": "stable",
-        "momentum_diff": 2.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 4
-        },
-        "ultimos5": {
-          "texto": "4V 1E",
-          "resultados": [
-            "V",
-            "V",
-            "V",
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 3.6,
-          "goles_contra": 1.93,
-          "diferencia": 1.67
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -5.1,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 58.0,
-        "prob_empate": 22.4,
-        "prob_visitante": 19.6
-      },
-      "diff_elo": 30.7,
-      "confianza": 15.4
-    },
-    {
       "fixture_id": "401931342",
       "fecha": "2026-11-15T14:00:00-05:00",
       "fecha_display": "2026-11-15",
@@ -9167,7 +9075,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.8,
+        "overperformance": -2.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -9177,6 +9085,98 @@
       },
       "diff_elo": 256.9,
       "confianza": 100.0
+    },
+    {
+      "fixture_id": "401931337",
+      "fecha": "2026-11-15T14:00:00-05:00",
+      "fecha_display": "2026-11-15",
+      "hora": "14:00",
+      "liga": "usa.ncaa.w.1",
+      "liga_pais": "EE.UU.",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20614",
+        "nombre": "Jackson St",
+        "pais": "EE.UU.",
+        "rating": 1520.86,
+        "rd": 114.37,
+        "partidos_jugados": 18,
+        "pj_reales": 18,
+        "form_score": 91.1,
+        "form_local": 95.2,
+        "form_visitante": 57.7,
+        "momentum": "stable",
+        "momentum_diff": 1.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "3V 2E",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "E",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.53,
+          "goles_contra": 1.0,
+          "diferencia": 1.53
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -1.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "20596",
+        "nombre": "Alcorn St",
+        "pais": "EE.UU.",
+        "rating": 1490.13,
+        "rd": 113.54,
+        "partidos_jugados": 15,
+        "pj_reales": 15,
+        "form_score": 94.7,
+        "form_local": 96.3,
+        "form_visitante": 67.7,
+        "momentum": "stable",
+        "momentum_diff": 2.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 4
+        },
+        "ultimos5": {
+          "texto": "4V 1E",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 3.6,
+          "goles_contra": 1.93,
+          "diferencia": 1.67
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -5.1,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 58.0,
+        "prob_empate": 22.4,
+        "prob_visitante": 19.6
+      },
+      "diff_elo": 30.7,
+      "confianza": 15.4
     },
     {
       "fixture_id": "401931330",
@@ -9275,13 +9275,13 @@
       "fecha": "2026-11-15T14:30:00-05:00",
       "fecha_display": "2026-11-15",
       "hora": "14:30",
-      "liga": "Uruguay - Primera División",
-      "liga_pais": "Uruguay",
-      "liga_slug": "uru.1",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
       "equipo_local": {
         "id": "4817",
         "nombre": "Danubio",
-        "pais": "Uruguay",
+        "pais": "",
         "rating": 1347.6,
         "rd": 128.35,
         "partidos_jugados": 13,
@@ -9319,7 +9319,7 @@
       "equipo_visitante": {
         "id": "5492",
         "nombre": "Liverpool",
-        "pais": "Uruguay",
+        "pais": "",
         "rating": 1854.9,
         "rd": 146.14,
         "partidos_jugados": 9,
