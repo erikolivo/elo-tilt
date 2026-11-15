@@ -62886,6 +62886,72 @@
         "overperformance_h": 2.8,
         "overperformance_a": 7.0
       }
+    },
+    {
+      "fixture_id": "401934228",
+      "fecha": "2026-11-15",
+      "fecha_hora_espn": "2026-11-15T10:00Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "19230",
+        "name": "Chindia"
+      },
+      "equipo_visitante": {
+        "id": "484",
+        "name": "FCSB"
+      },
+      "goles_local": 1,
+      "goles_visitante": 2,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-11-15T05:00:00-05:00",
+        "prob_local": 77.3,
+        "prob_empate": 17.2,
+        "prob_visitante": 5.5,
+        "diff_elo": 257.4,
+        "pj_h": 1,
+        "pj_a": 5,
+        "rating_local": 1670.87,
+        "rating_visitante": 1413.49,
+        "overperformance_h": 35.4,
+        "overperformance_a": -8.3
+      }
+    },
+    {
+      "fixture_id": "401933960",
+      "fecha": "2026-11-15",
+      "fecha_hora_espn": "2026-11-15T09:00Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20930",
+        "name": "Kazakhstan"
+      },
+      "equipo_visitante": {
+        "id": "4209",
+        "name": "Belarus"
+      },
+      "goles_local": 1,
+      "goles_visitante": 2,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-11-15T04:00:00-05:00",
+        "prob_local": 32.4,
+        "prob_empate": 18.2,
+        "prob_visitante": 49.3,
+        "diff_elo": -212.5,
+        "pj_h": 30,
+        "pj_a": 29,
+        "rating_local": 1204.59,
+        "rating_visitante": 1417.07,
+        "overperformance_h": -24.7,
+        "overperformance_a": -31.3
+      }
     }
   ]
 }
