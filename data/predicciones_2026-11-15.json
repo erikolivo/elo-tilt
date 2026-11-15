@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-15T00:39:31.648498Z",
+  "generado": "2026-11-15T10:20:48.785307Z",
   "fecha_consulta": "2026-11-15",
   "total": 133,
   "predicciones": [
@@ -103,7 +103,7 @@
         "nombre": "Chindia",
         "pais": "",
         "rating": 1670.87,
-        "rd": 287.2429634393591,
+        "rd": 287.6209323719159,
         "partidos_jugados": 1,
         "pj_reales": 1,
         "form_score": 100.0,
@@ -137,7 +137,7 @@
         "nombre": "FCSB",
         "pais": "",
         "rating": 1413.49,
-        "rd": 203.27920276823204,
+        "rd": 203.81294112777343,
         "partidos_jugados": 5,
         "pj_reales": 2,
         "form_score": 73.1,
@@ -170,9 +170,9 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 77.4,
+        "prob_local": 77.3,
         "prob_empate": 17.2,
-        "prob_visitante": 5.4
+        "prob_visitante": 5.5
       },
       "diff_elo": 257.4,
       "confianza": 100.0
@@ -636,7 +636,7 @@
         "nombre": "FC Kolos",
         "pais": "",
         "rating": 1205.87,
-        "rd": 242.5468741555726,
+        "rd": 242.99436127835352,
         "partidos_jugados": 2,
         "pj_reales": 2,
         "form_score": 0.0,
@@ -670,7 +670,7 @@
         "nombre": "Polissya",
         "pais": "",
         "rating": 1651.52,
-        "rd": 274.0451329395524,
+        "rd": 274.4412657351164,
         "partidos_jugados": 1,
         "pj_reales": 1,
         "form_score": 100.0,
@@ -706,6 +706,92 @@
       },
       "diff_elo": -445.7,
       "confianza": 100.0
+    },
+    {
+      "fixture_id": "401933956",
+      "fecha": "2026-11-15T07:00:00-05:00",
+      "fecha_display": "2026-11-15",
+      "hora": "07:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "11336",
+        "nombre": "Krasnodar",
+        "pais": "",
+        "rating": 1567.99,
+        "rd": 124.75,
+        "partidos_jugados": 13,
+        "pj_reales": 13,
+        "form_score": 57.2,
+        "form_local": 67.6,
+        "form_visitante": 39.9,
+        "momentum": "stable",
+        "momentum_diff": -1.5,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 2D 2E",
+          "resultados": [
+            "V",
+            "D",
+            "E",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.69,
+          "goles_contra": 1.15,
+          "diferencia": 0.54
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 9.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "134170",
+        "nombre": "Druzhba Maikop",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 350.0,
+        "partidos_jugados": 0,
+        "pj_reales": 0,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 60.4,
+        "prob_empate": 21.6,
+        "prob_visitante": 18.0
+      },
+      "diff_elo": 68.0,
+      "confianza": 34.0
     },
     {
       "fixture_id": "401932823",
@@ -2255,7 +2341,7 @@
       "liga_slug": "all",
       "equipo_local": {
         "id": "134111",
-        "nombre": "Castel",
+        "nombre": "Castelbourgeois",
         "pais": "",
         "rating": 1722.26,
         "rd": 104.55,
@@ -2453,7 +2539,7 @@
       },
       "equipo_visitante": {
         "id": "134110",
-        "nombre": "Baume",
+        "nombre": "Baume-Les-Dames",
         "pais": "",
         "rating": 1500.0,
         "rd": 350.0,
@@ -3808,92 +3894,6 @@
       },
       "diff_elo": 325.9,
       "confianza": 100.0
-    },
-    {
-      "fixture_id": "401933956",
-      "fecha": "2026-11-15T08:00:00-05:00",
-      "fecha_display": "2026-11-15",
-      "hora": "08:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "11336",
-        "nombre": "Krasnodar",
-        "pais": "",
-        "rating": 1567.99,
-        "rd": 124.75,
-        "partidos_jugados": 13,
-        "pj_reales": 13,
-        "form_score": 57.2,
-        "form_local": 67.6,
-        "form_visitante": 39.9,
-        "momentum": "stable",
-        "momentum_diff": -1.5,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 2D 2E",
-          "resultados": [
-            "V",
-            "D",
-            "E",
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.69,
-          "goles_contra": 1.15,
-          "diferencia": 0.54
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 9.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "134170",
-        "nombre": "Druzhba Maikop",
-        "pais": "",
-        "rating": 1500.0,
-        "rd": 350.0,
-        "partidos_jugados": 0,
-        "pj_reales": 0,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 60.4,
-        "prob_empate": 21.6,
-        "prob_visitante": 18.0
-      },
-      "diff_elo": 68.0,
-      "confianza": 34.0
     },
     {
       "fixture_id": "401883113",
@@ -7749,7 +7749,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.9,
+        "overperformance": -2.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -8063,7 +8063,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.3,
+        "overperformance": 7.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -8799,7 +8799,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.0,
+        "overperformance": 5.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -10141,7 +10141,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -4.7,
+        "overperformance": -4.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10509,7 +10509,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.1,
+        "overperformance": 6.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10693,7 +10693,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 7.1,
+        "overperformance": 6.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10785,7 +10785,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.8,
+        "overperformance": 1.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -10823,7 +10823,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.2,
+        "overperformance": -5.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -11434,7 +11434,7 @@
         "nombre": "Sacramento",
         "pais": "",
         "rating": 1524.06,
-        "rd": 198.8397245896402,
+        "rd": 199.38527477764208,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 52.9,
