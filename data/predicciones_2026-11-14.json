@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-14T23:34:02.527462Z",
+  "generado": "2026-11-15T00:41:29.694870Z",
   "fecha_consulta": "2026-11-14",
   "total": 229,
   "predicciones": [
@@ -18427,98 +18427,6 @@
       "confianza": 1.8
     },
     {
-      "fixture_id": "401933763",
-      "fecha": "2026-11-14T19:30:00-05:00",
-      "fecha_display": "2026-11-14",
-      "hora": "19:30",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "17826",
-        "nombre": "Charlotte",
-        "pais": "",
-        "rating": 1591.87,
-        "rd": 135.12,
-        "partidos_jugados": 10,
-        "pj_reales": 10,
-        "form_score": 56.0,
-        "form_local": 81.8,
-        "form_visitante": 49.4,
-        "momentum": "stable",
-        "momentum_diff": -1.8,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3V 1D 1E",
-          "resultados": [
-            "D",
-            "V",
-            "V",
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.3,
-          "goles_contra": 1.3,
-          "diferencia": 1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 5.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "131581",
-        "nombre": "Boise",
-        "pais": "",
-        "rating": 1786.57,
-        "rd": 179.36,
-        "partidos_jugados": 7,
-        "pj_reales": 7,
-        "form_score": 97.3,
-        "form_local": 100.0,
-        "form_visitante": 94.9,
-        "momentum": "stable",
-        "momentum_diff": -0.2,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 4
-        },
-        "ultimos5": {
-          "texto": "4V 1E",
-          "resultados": [
-            "V",
-            "V",
-            "V",
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 0.86,
-          "diferencia": 1.14
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 12.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 30.2,
-        "prob_empate": 18.6,
-        "prob_visitante": 51.2
-      },
-      "diff_elo": -194.7,
-      "confianza": 97.4
-    },
-    {
       "fixture_id": "401934378",
       "fecha": "2026-11-14T19:30:00-05:00",
       "fecha_display": "2026-11-14",
@@ -18609,6 +18517,98 @@
       },
       "diff_elo": -216.7,
       "confianza": 100.0
+    },
+    {
+      "fixture_id": "401933763",
+      "fecha": "2026-11-14T19:30:00-05:00",
+      "fecha_display": "2026-11-14",
+      "hora": "19:30",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "17826",
+        "nombre": "Charlotte",
+        "pais": "",
+        "rating": 1591.87,
+        "rd": 135.12,
+        "partidos_jugados": 10,
+        "pj_reales": 10,
+        "form_score": 56.0,
+        "form_local": 81.8,
+        "form_visitante": 49.4,
+        "momentum": "stable",
+        "momentum_diff": -1.8,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "D",
+            "V",
+            "V",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.3,
+          "goles_contra": 1.3,
+          "diferencia": 1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 5.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "131581",
+        "nombre": "Boise",
+        "pais": "",
+        "rating": 1786.57,
+        "rd": 179.36,
+        "partidos_jugados": 7,
+        "pj_reales": 7,
+        "form_score": 97.3,
+        "form_local": 100.0,
+        "form_visitante": 94.9,
+        "momentum": "stable",
+        "momentum_diff": -0.2,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 4
+        },
+        "ultimos5": {
+          "texto": "4V 1E",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.0,
+          "goles_contra": 0.86,
+          "diferencia": 1.14
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 12.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 30.2,
+        "prob_empate": 18.6,
+        "prob_visitante": 51.2
+      },
+      "diff_elo": -194.7,
+      "confianza": 97.4
     },
     {
       "fixture_id": "401930123",
@@ -18715,7 +18715,7 @@
         "nombre": "Jamaica",
         "pais": "",
         "rating": 1632.21,
-        "rd": 103.23232430881457,
+        "rd": 103.75690432419559,
         "partidos_jugados": 27,
         "pj_reales": 3,
         "form_score": 31.1,
@@ -18780,7 +18780,7 @@
       "prediccion": {
         "prob_local": 55.5,
         "prob_empate": 21.9,
-        "prob_visitante": 22.5
+        "prob_visitante": 22.6
       },
       "diff_elo": 52.7,
       "confianza": 26.3
@@ -19649,7 +19649,7 @@
         "nombre": "San Diego St",
         "pais": "EE.UU.",
         "rating": 1480.62,
-        "rd": 277.5966319168468,
+        "rd": 277.987690841707,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 33.6,
@@ -19703,7 +19703,7 @@
         "nombre": "CA La Paz",
         "pais": "",
         "rating": 1774.06,
-        "rd": 185.72444103277013,
+        "rd": 186.01665914563804,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 82.8,
@@ -19795,7 +19795,7 @@
         "nombre": "Portland",
         "pais": "EE.UU.",
         "rating": 1673.43,
-        "rd": 166.5431119256718,
+        "rd": 166.86893429830016,
         "partidos_jugados": 9,
         "pj_reales": 2,
         "form_score": 88.7,
