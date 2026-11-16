@@ -67047,6 +67047,72 @@
         "overperformance_h": -4.8,
         "overperformance_a": -1.8
       }
+    },
+    {
+      "fixture_id": "401878628",
+      "fecha": "2026-11-15",
+      "fecha_hora_espn": "2026-11-15T22:00Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "131453",
+        "name": "Sporting Jax"
+      },
+      "equipo_visitante": {
+        "id": "131450",
+        "name": "DC Power"
+      },
+      "goles_local": 1,
+      "goles_visitante": 1,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-11-15T17:00:00-05:00",
+        "prob_local": 43.2,
+        "prob_empate": 20.8,
+        "prob_visitante": 36.0,
+        "diff_elo": -103.0,
+        "pj_h": 8,
+        "pj_a": 6,
+        "rating_local": 1574.72,
+        "rating_visitante": 1677.75,
+        "overperformance_h": 1.7,
+        "overperformance_a": -5.4
+      }
+    },
+    {
+      "fixture_id": "401931294",
+      "fecha": "2026-11-15",
+      "fecha_hora_espn": "2026-11-15T21:30Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "usa.ncaa.w.1",
+      "equipo_local": {
+        "id": "20368",
+        "name": "South Carolina"
+      },
+      "equipo_visitante": {
+        "id": "20517",
+        "name": "Texas"
+      },
+      "goles_local": 4,
+      "goles_visitante": 1,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-11-15T16:30:00-05:00",
+        "prob_local": 63.6,
+        "prob_empate": 21.7,
+        "prob_visitante": 14.7,
+        "diff_elo": 62.2,
+        "pj_h": 14,
+        "pj_a": 18,
+        "rating_local": 1861.27,
+        "rating_visitante": 1799.08,
+        "overperformance_h": 6.9,
+        "overperformance_a": -1.5
+      }
     }
   ]
 }
