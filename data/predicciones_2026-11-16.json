@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-16T10:32:51.590705Z",
+  "generado": "2026-11-16T13:14:06.335406Z",
   "fecha_consulta": "2026-11-16",
   "total": 35,
   "predicciones": [
@@ -90,6 +90,94 @@
       },
       "diff_elo": 22.4,
       "confianza": 11.2
+    },
+    {
+      "fixture_id": "401927173",
+      "fecha": "2026-11-16T08:00:00-05:00",
+      "fecha_display": "2026-11-16",
+      "hora": "08:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "4214",
+        "nombre": "Zimbabwe",
+        "pais": "",
+        "rating": 1634.86,
+        "rd": 171.86,
+        "partidos_jugados": 8,
+        "pj_reales": 2,
+        "form_score": 44.0,
+        "form_local": 0.0,
+        "form_visitante": 68.9,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1D 1E",
+          "resultados": [
+            "E",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.33,
+          "goles_contra": 1.33,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -13.7,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "8938",
+        "nombre": "Eq. Guinea",
+        "pais": "",
+        "rating": 1483.68,
+        "rd": 133.85,
+        "partidos_jugados": 23,
+        "pj_reales": 2,
+        "form_score": 56.0,
+        "form_local": 68.9,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "D",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1D 1E",
+          "resultados": [
+            "E",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.33,
+          "goles_contra": 0.67,
+          "diferencia": -0.34
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 6.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 67.6,
+        "prob_empate": 19.6,
+        "prob_visitante": 12.7
+      },
+      "diff_elo": 151.2,
+      "confianza": 75.6
     },
     {
       "fixture_id": "401927170",
@@ -270,94 +358,6 @@
       },
       "diff_elo": -367.0,
       "confianza": 100.0
-    },
-    {
-      "fixture_id": "401927173",
-      "fecha": "2026-11-16T08:00:00-05:00",
-      "fecha_display": "2026-11-16",
-      "hora": "08:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "4214",
-        "nombre": "Zimbabwe",
-        "pais": "",
-        "rating": 1634.86,
-        "rd": 171.86,
-        "partidos_jugados": 8,
-        "pj_reales": 2,
-        "form_score": 44.0,
-        "form_local": 0.0,
-        "form_visitante": 68.9,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1D 1E",
-          "resultados": [
-            "E",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.33,
-          "goles_contra": 1.33,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -13.7,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "8938",
-        "nombre": "Eq. Guinea",
-        "pais": "",
-        "rating": 1483.68,
-        "rd": 133.85,
-        "partidos_jugados": 23,
-        "pj_reales": 2,
-        "form_score": 56.0,
-        "form_local": 68.9,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "D",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1D 1E",
-          "resultados": [
-            "E",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.33,
-          "goles_contra": 0.67,
-          "diferencia": -0.34
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 6.7,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 67.6,
-        "prob_empate": 19.6,
-        "prob_visitante": 12.7
-      },
-      "diff_elo": 151.2,
-      "confianza": 75.6
     },
     {
       "fixture_id": "401861180",
@@ -811,6 +811,94 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401927176",
+      "fecha": "2026-11-16T11:00:00-05:00",
+      "fecha_display": "2026-11-16",
+      "hora": "11:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5774",
+        "nombre": "Eritrea",
+        "pais": "",
+        "rating": 1269.36,
+        "rd": 157.11,
+        "partidos_jugados": 9,
+        "pj_reales": 3,
+        "form_score": 9.3,
+        "form_local": 0.0,
+        "form_visitante": 18.9,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.67,
+          "goles_contra": 2.67,
+          "diferencia": -2.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -13.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "2847",
+        "nombre": "Guinea",
+        "pais": "",
+        "rating": 1443.6,
+        "rd": 117.13,
+        "partidos_jugados": 28,
+        "pj_reales": 5,
+        "form_score": 81.4,
+        "form_local": 100.0,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V 1D",
+          "resultados": [
+            "V",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.33,
+          "goles_contra": 1.0,
+          "diferencia": 0.33
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 13.5,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 29.5,
+        "prob_empate": 19.1,
+        "prob_visitante": 51.4
+      },
+      "diff_elo": -174.2,
+      "confianza": 87.1
+    },
+    {
       "fixture_id": "401861183",
       "fecha": "2026-11-16T12:00:00-05:00",
       "fecha_display": "2026-11-16",
@@ -1085,94 +1173,6 @@
       },
       "diff_elo": 172.3,
       "confianza": 86.1
-    },
-    {
-      "fixture_id": "401927176",
-      "fecha": "2026-11-16T12:00:00-05:00",
-      "fecha_display": "2026-11-16",
-      "hora": "12:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "5774",
-        "nombre": "Eritrea",
-        "pais": "",
-        "rating": 1269.36,
-        "rd": 157.11,
-        "partidos_jugados": 9,
-        "pj_reales": 3,
-        "form_score": 9.3,
-        "form_local": 0.0,
-        "form_visitante": 18.9,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2D 1E",
-          "resultados": [
-            "D",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.67,
-          "goles_contra": 2.67,
-          "diferencia": -2.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -13.4,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "2847",
-        "nombre": "Guinea",
-        "pais": "",
-        "rating": 1443.6,
-        "rd": 117.13,
-        "partidos_jugados": 28,
-        "pj_reales": 5,
-        "form_score": 81.4,
-        "form_local": 100.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V 1D",
-          "resultados": [
-            "V",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.33,
-          "goles_contra": 1.0,
-          "diferencia": 0.33
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 13.5,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 29.5,
-        "prob_empate": 19.1,
-        "prob_visitante": 51.4
-      },
-      "diff_elo": -174.2,
-      "confianza": 87.1
     },
     {
       "fixture_id": "401929697",
@@ -3135,7 +3135,7 @@
         "nombre": "Sacramento",
         "pais": "",
         "rating": 1524.06,
-        "rd": 200.74266389169864,
+        "rd": 201.0130417857792,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 52.9,
