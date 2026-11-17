@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-17T13:57:59.083363Z",
+  "generado": "2026-11-17T18:05:18.221234Z",
   "fecha_consulta": "2026-11-17",
   "total": 65,
   "predicciones": [
@@ -1530,6 +1530,88 @@
       "confianza": 28.5
     },
     {
+      "fixture_id": "401934336",
+      "fecha": "2026-11-17T11:00:00-05:00",
+      "fecha_display": "2026-11-17",
+      "hora": "11:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "22243",
+        "nombre": "Egypt",
+        "pais": "",
+        "rating": 1681.7,
+        "rd": 110.34,
+        "partidos_jugados": 31,
+        "pj_reales": 3,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "19209",
+        "nombre": "Japan U21",
+        "pais": "",
+        "rating": 1583.31,
+        "rd": 161.56,
+        "partidos_jugados": 8,
+        "pj_reales": 1,
+        "form_score": 0.0,
+        "form_local": 50.0,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1D",
+          "resultados": [
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 2.0,
+          "diferencia": -2.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -24.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 70.6,
+        "prob_empate": 20.9,
+        "prob_visitante": 8.5
+      },
+      "diff_elo": 98.4,
+      "confianza": 49.2
+    },
+    {
       "fixture_id": "401919974",
       "fecha": "2026-11-17T11:00:00-05:00",
       "fecha_display": "2026-11-17",
@@ -2337,88 +2419,6 @@
       "confianza": 5.9
     },
     {
-      "fixture_id": "401934336",
-      "fecha": "2026-11-17T11:00:00-05:00",
-      "fecha_display": "2026-11-17",
-      "hora": "11:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "22243",
-        "nombre": "Egypt",
-        "pais": "",
-        "rating": 1695.21,
-        "rd": 113.61,
-        "partidos_jugados": 30,
-        "pj_reales": 2,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "19209",
-        "nombre": "Japan U21",
-        "pais": "",
-        "rating": 1583.31,
-        "rd": 161.56,
-        "partidos_jugados": 8,
-        "pj_reales": 1,
-        "form_score": 0.0,
-        "form_local": 50.0,
-        "form_visitante": 0.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1D",
-          "resultados": [
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 2.0,
-          "diferencia": -2.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -24.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 72.0,
-        "prob_empate": 20.6,
-        "prob_visitante": 7.4
-      },
-      "diff_elo": 111.9,
-      "confianza": 56.0
-    },
-    {
       "fixture_id": "401933615",
       "fecha": "2026-11-17T11:15:00-05:00",
       "fecha_display": "2026-11-17",
@@ -2600,6 +2600,94 @@
       "confianza": 97.3
     },
     {
+      "fixture_id": "401933436",
+      "fecha": "2026-11-17T12:00:00-05:00",
+      "fecha_display": "2026-11-17",
+      "hora": "12:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "18414",
+        "nombre": "Poland",
+        "pais": "",
+        "rating": 1583.4,
+        "rd": 77.24,
+        "partidos_jugados": 36,
+        "pj_reales": 14,
+        "form_score": 69.3,
+        "form_local": 100.0,
+        "form_visitante": 0.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1D",
+          "resultados": [
+            "V",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.33,
+          "goles_contra": 2.0,
+          "diferencia": 0.33
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 8.8,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "7751",
+        "nombre": "Serbia U21",
+        "pais": "",
+        "rating": 1635.4,
+        "rd": 152.64,
+        "partidos_jugados": 9,
+        "pj_reales": 3,
+        "form_score": 81.4,
+        "form_local": 81.4,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V 1D",
+          "resultados": [
+            "V",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.67,
+          "goles_contra": 1.33,
+          "diferencia": 0.34
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 48.5,
+        "prob_empate": 21.9,
+        "prob_visitante": 29.5
+      },
+      "diff_elo": -52.0,
+      "confianza": 26.0
+    },
+    {
       "fixture_id": "401931797",
       "fecha": "2026-11-17T12:00:00-05:00",
       "fecha_display": "2026-11-17",
@@ -2689,92 +2777,94 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401933436",
-      "fecha": "2026-11-17T12:00:00-05:00",
+      "fixture_id": "401931799",
+      "fecha": "2026-11-17T12:30:00-05:00",
       "fecha_display": "2026-11-17",
-      "hora": "12:00",
+      "hora": "12:30",
       "liga": "all",
       "liga_pais": "",
       "liga_slug": "all",
       "equipo_local": {
-        "id": "18414",
-        "nombre": "Poland",
+        "id": "11692",
+        "nombre": "Portugal",
         "pais": "",
-        "rating": 1583.4,
-        "rd": 77.24,
-        "partidos_jugados": 36,
-        "pj_reales": 14,
-        "form_score": 69.3,
+        "rating": 1742.4,
+        "rd": 84.28,
+        "partidos_jugados": 29,
+        "pj_reales": 19,
+        "form_score": 89.8,
         "form_local": 100.0,
-        "form_visitante": 0.0,
+        "form_visitante": 62.2,
         "momentum": "stable",
         "momentum_diff": 0.0,
         "streak": {
           "tipo": "W",
-          "cantidad": 1
+          "cantidad": 3
         },
         "ultimos5": {
-          "texto": "2V 1D",
+          "texto": "3V 1D",
           "resultados": [
             "V",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.33,
-          "goles_contra": 2.0,
-          "diferencia": 0.33
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 8.8,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "7751",
-        "nombre": "Serbia U21",
-        "pais": "",
-        "rating": 1635.4,
-        "rd": 152.64,
-        "partidos_jugados": 9,
-        "pj_reales": 3,
-        "form_score": 81.4,
-        "form_local": 81.4,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V 1D",
-          "resultados": [
             "V",
             "V",
             "D"
           ]
         },
         "goal_trend": {
-          "goles_favor": 1.67,
-          "goles_contra": 1.33,
-          "diferencia": 0.34
+          "goles_favor": 2.0,
+          "goles_contra": 0.5,
+          "diferencia": 1.5
         },
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.7,
+        "overperformance": -3.8,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "14253",
+        "nombre": "Norway",
+        "pais": "",
+        "rating": 1656.01,
+        "rd": 88.67,
+        "partidos_jugados": 35,
+        "pj_reales": 11,
+        "form_score": 35.6,
+        "form_local": 68.9,
+        "form_visitante": 18.9,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1D 2E",
+          "resultados": [
+            "D",
+            "E",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.75,
+          "goles_contra": 1.0,
+          "diferencia": 0.75
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -14.3,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 48.5,
-        "prob_empate": 21.9,
-        "prob_visitante": 29.5
+        "prob_local": 70.8,
+        "prob_empate": 21.1,
+        "prob_visitante": 8.0
       },
-      "diff_elo": -52.0,
-      "confianza": 26.0
+      "diff_elo": 86.4,
+      "confianza": 43.2
     },
     {
       "fixture_id": "401929698",
@@ -2865,96 +2955,6 @@
       },
       "diff_elo": 60.9,
       "confianza": 30.5
-    },
-    {
-      "fixture_id": "401931799",
-      "fecha": "2026-11-17T12:30:00-05:00",
-      "fecha_display": "2026-11-17",
-      "hora": "12:30",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "11692",
-        "nombre": "Portugal",
-        "pais": "",
-        "rating": 1742.4,
-        "rd": 84.28,
-        "partidos_jugados": 29,
-        "pj_reales": 19,
-        "form_score": 89.8,
-        "form_local": 100.0,
-        "form_visitante": 62.2,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "3V 1D",
-          "resultados": [
-            "V",
-            "V",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 0.5,
-          "diferencia": 1.5
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -3.7,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "14253",
-        "nombre": "Norway",
-        "pais": "",
-        "rating": 1656.01,
-        "rd": 88.67,
-        "partidos_jugados": 35,
-        "pj_reales": 11,
-        "form_score": 35.6,
-        "form_local": 68.9,
-        "form_visitante": 18.9,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 1D 2E",
-          "resultados": [
-            "D",
-            "E",
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.75,
-          "goles_contra": 1.0,
-          "diferencia": 0.75
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -14.3,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 70.8,
-        "prob_empate": 21.1,
-        "prob_visitante": 8.0
-      },
-      "diff_elo": 86.4,
-      "confianza": 43.2
     },
     {
       "fixture_id": "401929696",
@@ -3147,7 +3147,7 @@
         "nombre": "Belize",
         "pais": "",
         "rating": 1389.82,
-        "rd": 125.32111965576172,
+        "rd": 125.75364776623128,
         "partidos_jugados": 22,
         "pj_reales": 1,
         "form_score": 0.0,
@@ -3173,7 +3173,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -37.5,
+        "overperformance": -37.6,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3214,9 +3214,9 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 61.3,
+        "prob_local": 61.2,
         "prob_empate": 21.4,
-        "prob_visitante": 17.3
+        "prob_visitante": 17.4
       },
       "diff_elo": 75.7,
       "confianza": 37.8
@@ -3533,7 +3533,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.0,
+        "overperformance": 0.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3594,10 +3594,10 @@
         "id": "4276",
         "nombre": "Congo",
         "pais": "",
-        "rating": 1526.21,
-        "rd": 94.16,
-        "partidos_jugados": 31,
-        "pj_reales": 7,
+        "rating": 1534.02,
+        "rd": 92.11,
+        "partidos_jugados": 32,
+        "pj_reales": 8,
         "form_score": 40.7,
         "form_local": 50.0,
         "form_visitante": 31.1,
@@ -3623,7 +3623,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -22.9,
+        "overperformance": -23.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3664,12 +3664,12 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 41.2,
-        "prob_empate": 20.3,
-        "prob_visitante": 38.5
+        "prob_local": 42.0,
+        "prob_empate": 20.5,
+        "prob_visitante": 37.5
       },
-      "diff_elo": -123.8,
-      "confianza": 61.9
+      "diff_elo": -116.0,
+      "confianza": 58.0
     },
     {
       "fixture_id": "401927167",
@@ -4779,10 +4779,10 @@
         "id": "8937",
         "nombre": "Niger",
         "pais": "",
-        "rating": 1616.87,
-        "rd": 79.45,
-        "partidos_jugados": 38,
-        "pj_reales": 11,
+        "rating": 1608.15,
+        "rd": 78.85,
+        "partidos_jugados": 39,
+        "pj_reales": 12,
         "form_score": 10.2,
         "form_local": 100.0,
         "form_visitante": 0.0,
@@ -4809,7 +4809,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -42.0,
+        "overperformance": -41.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -4851,12 +4851,12 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 37.7,
-        "prob_empate": 21.5,
-        "prob_visitante": 40.8
+        "prob_local": 36.7,
+        "prob_empate": 21.3,
+        "prob_visitante": 42.0
       },
-      "diff_elo": -72.7,
-      "confianza": 36.3
+      "diff_elo": -81.4,
+      "confianza": 40.7
     },
     {
       "fixture_id": "401930895",
@@ -4901,7 +4901,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 14.5,
+        "overperformance": 14.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5026,7 +5026,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 14.5,
+        "overperformance": 16.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -5078,7 +5078,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 6.1,
+        "overperformance": 7.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5115,7 +5115,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -46.3,
+        "overperformance": -45.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -5168,7 +5168,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 32.3,
+        "overperformance": 32.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -5352,7 +5352,7 @@
         "nombre": "St. Vincent ",
         "pais": "",
         "rating": 1569.83,
-        "rd": 122.61302552824266,
+        "rd": 123.05495504405975,
         "partidos_jugados": 23,
         "pj_reales": 2,
         "form_score": 100.0,
@@ -5703,7 +5703,7 @@
         "nombre": "Jamaica",
         "pais": "",
         "rating": 1632.21,
-        "rd": 109.36133564967272,
+        "rd": 109.8566527244499,
         "partidos_jugados": 27,
         "pj_reales": 3,
         "form_score": 31.1,
@@ -5782,7 +5782,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -7.9,
+        "overperformance": -6.9,
         "vol": 0.06
       },
       "equipo_visitante": {
