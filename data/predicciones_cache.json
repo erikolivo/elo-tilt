@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-17T06:07:16.059135Z",
+  "generado": "2026-11-17T13:57:59.083363Z",
   "fecha_consulta": "2026-11-17",
   "total": 65,
   "predicciones": [
@@ -272,6 +272,96 @@
       "confianza": 81.7
     },
     {
+      "fixture_id": "401930242",
+      "fecha": "2026-11-17T07:00:00-05:00",
+      "fecha_display": "2026-11-17",
+      "hora": "07:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "6724",
+        "nombre": "Kyrgyz Rep.",
+        "pais": "",
+        "rating": 1538.35,
+        "rd": 116.58,
+        "partidos_jugados": 24,
+        "pj_reales": 3,
+        "form_score": 100.0,
+        "form_local": 100.0,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "3V",
+          "resultados": [
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 3.67,
+          "goles_contra": 0.33,
+          "diferencia": 3.34
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 26.9,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "7349",
+        "nombre": "Vietnam",
+        "pais": "",
+        "rating": 1892.16,
+        "rd": 261.88,
+        "partidos_jugados": 7,
+        "pj_reales": 7,
+        "form_score": 87.7,
+        "form_local": 86.2,
+        "form_visitante": 100.0,
+        "momentum": "stable",
+        "momentum_diff": -0.7,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "4V 1E",
+          "resultados": [
+            "V",
+            "E",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.29,
+          "goles_contra": 0.43,
+          "diferencia": 1.86
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 12.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 26.2,
+        "prob_empate": 15.0,
+        "prob_visitante": 58.8
+      },
+      "diff_elo": -353.8,
+      "confianza": 100.0
+    },
+    {
       "fixture_id": "401930880",
       "fecha": "2026-11-17T07:00:00-05:00",
       "fecha_display": "2026-11-17",
@@ -361,96 +451,6 @@
       },
       "diff_elo": 40.4,
       "confianza": 20.2
-    },
-    {
-      "fixture_id": "401930242",
-      "fecha": "2026-11-17T07:00:00-05:00",
-      "fecha_display": "2026-11-17",
-      "hora": "07:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "6724",
-        "nombre": "Kyrgyz Rep.",
-        "pais": "",
-        "rating": 1538.35,
-        "rd": 116.58,
-        "partidos_jugados": 24,
-        "pj_reales": 3,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "3V",
-          "resultados": [
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 3.67,
-          "goles_contra": 0.33,
-          "diferencia": 3.34
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 26.9,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "7349",
-        "nombre": "Vietnam",
-        "pais": "",
-        "rating": 1892.16,
-        "rd": 261.88,
-        "partidos_jugados": 7,
-        "pj_reales": 7,
-        "form_score": 87.7,
-        "form_local": 86.2,
-        "form_visitante": 100.0,
-        "momentum": "stable",
-        "momentum_diff": -0.7,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "4V 1E",
-          "resultados": [
-            "V",
-            "E",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.29,
-          "goles_contra": 0.43,
-          "diferencia": 1.86
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 12.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 26.3,
-        "prob_empate": 15.0,
-        "prob_visitante": 58.7
-      },
-      "diff_elo": -353.8,
-      "confianza": 100.0
     },
     {
       "fixture_id": "401933635",
@@ -1208,7 +1208,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 15.4,
+        "overperformance": 14.9,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1252,7 +1252,7 @@
       "prediccion": {
         "prob_local": 41.5,
         "prob_empate": 20.2,
-        "prob_visitante": 38.3
+        "prob_visitante": 38.4
       },
       "diff_elo": -128.9,
       "confianza": 64.4
@@ -1300,7 +1300,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.6,
+        "overperformance": -1.5,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1390,7 +1390,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 12.0,
+        "overperformance": 11.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1608,7 +1608,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.1,
+        "overperformance": -2.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -3147,7 +3147,7 @@
         "nombre": "Belize",
         "pais": "",
         "rating": 1389.82,
-        "rd": 124.88709355667672,
+        "rd": 125.32111965576172,
         "partidos_jugados": 22,
         "pj_reales": 1,
         "form_score": 0.0,
@@ -3210,13 +3210,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -25.2,
+        "overperformance": -25.3,
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 61.2,
+        "prob_local": 61.3,
         "prob_empate": 21.4,
-        "prob_visitante": 17.4
+        "prob_visitante": 17.3
       },
       "diff_elo": 75.7,
       "confianza": 37.8
@@ -5352,7 +5352,7 @@
         "nombre": "St. Vincent ",
         "pais": "",
         "rating": 1569.83,
-        "rd": 122.16949741029222,
+        "rd": 122.61302552824266,
         "partidos_jugados": 23,
         "pj_reales": 2,
         "form_score": 100.0,
@@ -5703,7 +5703,7 @@
         "nombre": "Jamaica",
         "pais": "",
         "rating": 1632.21,
-        "rd": 108.86376496493389,
+        "rd": 109.36133564967272,
         "partidos_jugados": 27,
         "pj_reales": 3,
         "form_score": 31.1,
