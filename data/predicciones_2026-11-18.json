@@ -1,7 +1,7 @@
 {
-  "generado": "2026-11-17T18:04:17.713404Z",
+  "generado": "2026-11-18T02:42:47.661564Z",
   "fecha_consulta": "2026-11-18",
-  "total": 27,
+  "total": 28,
   "predicciones": [
     {
       "fixture_id": "401930694",
@@ -531,7 +531,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.7,
+        "overperformance": 1.4,
         "vol": 0.06
       },
       "prediccion": {
@@ -713,7 +713,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.8,
+        "overperformance": -4.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -801,7 +801,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.1,
+        "overperformance": 0.8,
         "vol": 0.06
       },
       "prediccion": {
@@ -1347,7 +1347,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.6,
+        "overperformance": -0.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -1540,6 +1540,93 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401928690",
+      "fecha": "2026-11-18T14:45:00-05:00",
+      "fecha_display": "2026-11-18",
+      "hora": "14:45",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "21251",
+        "nombre": "Lye Town",
+        "pais": "",
+        "rating": 1547.4,
+        "rd": 180.58,
+        "partidos_jugados": 4,
+        "pj_reales": 6,
+        "form_score": 84.6,
+        "form_local": 84.6,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 1E",
+          "resultados": [
+            "V",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.0,
+          "goles_contra": 0.0,
+          "diferencia": 2.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 29.1,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "21259",
+        "nombre": "Peterborough",
+        "pais": "",
+        "rating": 1395.38,
+        "rd": 87.91,
+        "partidos_jugados": 24,
+        "pj_reales": 24,
+        "form_score": 18.9,
+        "form_local": 50.0,
+        "form_visitante": 18.9,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1D 1E",
+          "resultados": [
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.5,
+          "diferencia": -0.5
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -15.2,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 77.6,
+        "prob_empate": 19.6,
+        "prob_visitante": 2.8
+      },
+      "diff_elo": 152.0,
+      "confianza": 76.0
+    },
+    {
       "fixture_id": "401916980",
       "fecha": "2026-11-18T15:00:00-05:00",
       "fecha_display": "2026-11-18",
@@ -1712,7 +1799,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.9,
+        "overperformance": -1.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -2264,7 +2351,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.2,
+        "overperformance": -0.6,
         "vol": 0.06
       },
       "prediccion": {
