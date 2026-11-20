@@ -71634,6 +71634,72 @@
         "overperformance_h": -0.9,
         "overperformance_a": 9.2
       }
+    },
+    {
+      "fixture_id": "401892138",
+      "fecha": "2026-11-20",
+      "fecha_hora_espn": "2026-11-20T08:40Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "13696",
+        "name": "Western Sydney"
+      },
+      "equipo_visitante": {
+        "id": "5321",
+        "name": "Adelaide Utd"
+      },
+      "goles_local": 4,
+      "goles_visitante": 2,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-11-20T03:40:00-05:00",
+        "prob_local": 83.5,
+        "prob_empate": 15.6,
+        "prob_visitante": 1.0,
+        "diff_elo": 300.0,
+        "pj_h": 14,
+        "pj_a": 13,
+        "rating_local": 1649.59,
+        "rating_visitante": 1349.6,
+        "overperformance_h": 5.5,
+        "overperformance_a": 5.4
+      }
+    },
+    {
+      "fixture_id": "401913230",
+      "fecha": "2026-11-20",
+      "fecha_hora_espn": "2026-11-20T05:50Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "20283",
+        "name": "Western Sydney"
+      },
+      "equipo_visitante": {
+        "id": "21133",
+        "name": "Wellington"
+      },
+      "goles_local": 0,
+      "goles_visitante": 2,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-11-20T00:50:00-05:00",
+        "prob_local": 46.9,
+        "prob_empate": 21.5,
+        "prob_visitante": 31.6,
+        "diff_elo": -70.7,
+        "pj_h": 2,
+        "pj_a": 8,
+        "rating_local": 1466.65,
+        "rating_visitante": 1537.31,
+        "overperformance_h": -3.1,
+        "overperformance_a": -15.9
+      }
     }
   ]
 }
