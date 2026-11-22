@@ -85433,6 +85433,39 @@
         "overperformance_h": 1.3,
         "overperformance_a": 2.8
       }
+    },
+    {
+      "fixture_id": "401888243",
+      "fecha": "2026-11-22",
+      "fecha_hora_espn": "2026-11-22T10:30Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "19267",
+        "name": "Erzurum"
+      },
+      "equipo_visitante": {
+        "id": "789",
+        "name": "Goztepe"
+      },
+      "goles_local": 0,
+      "goles_visitante": 1,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-11-22T05:30:00-05:00",
+        "prob_local": 37.1,
+        "prob_empate": 20.2,
+        "prob_visitante": 42.7,
+        "diff_elo": -126.8,
+        "pj_h": 11,
+        "pj_a": 12,
+        "rating_local": 1453.65,
+        "rating_visitante": 1580.4,
+        "overperformance_h": -4.5,
+        "overperformance_a": -5.3
+      }
     }
   ]
 }
