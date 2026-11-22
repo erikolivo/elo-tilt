@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-21T18:38:31.504045Z",
+  "generado": "2026-11-22T00:01:10.797305Z",
   "fecha_consulta": "2026-11-21",
   "total": 226,
   "predicciones": [
@@ -17615,6 +17615,98 @@
       "confianza": 93.3
     },
     {
+      "fixture_id": "401899767",
+      "fecha": "2026-11-21T16:30:00-05:00",
+      "fecha_display": "2026-11-21",
+      "hora": "16:30",
+      "liga": "slv.1",
+      "liga_pais": "El Salvador",
+      "liga_slug": "slv.1",
+      "equipo_local": {
+        "id": "21987",
+        "nombre": "Fuerte SF",
+        "pais": "El Salvador",
+        "rating": 1443.21,
+        "rd": 130.2,
+        "partidos_jugados": 11,
+        "pj_reales": 11,
+        "form_score": 52.6,
+        "form_local": 54.0,
+        "form_visitante": 37.3,
+        "momentum": "stable",
+        "momentum_diff": 2.7,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "V",
+            "D",
+            "D",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.91,
+          "goles_contra": 1.45,
+          "diferencia": -0.54
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 4.2,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "132480",
+        "nombre": "Inca Aruba",
+        "pais": "El Salvador",
+        "rating": 1360.41,
+        "rd": 116.07,
+        "partidos_jugados": 13,
+        "pj_reales": 13,
+        "form_score": 5.7,
+        "form_local": 13.4,
+        "form_visitante": 12.2,
+        "momentum": "stable",
+        "momentum_diff": -2.8,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 4
+        },
+        "ultimos5": {
+          "texto": "4D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "D",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.6,
+          "goles_contra": 2.0,
+          "diferencia": -1.4
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -8.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 66.8,
+        "prob_empate": 21.2,
+        "prob_visitante": 12.0
+      },
+      "diff_elo": 82.8,
+      "confianza": 41.4
+    },
+    {
       "fixture_id": "401921326",
       "fecha": "2026-11-21T16:30:00-05:00",
       "fecha_display": "2026-11-21",
@@ -17705,98 +17797,6 @@
       },
       "diff_elo": -0.6,
       "confianza": 0.3
-    },
-    {
-      "fixture_id": "401899767",
-      "fecha": "2026-11-21T16:30:00-05:00",
-      "fecha_display": "2026-11-21",
-      "hora": "16:30",
-      "liga": "slv.1",
-      "liga_pais": "El Salvador",
-      "liga_slug": "slv.1",
-      "equipo_local": {
-        "id": "21987",
-        "nombre": "Fuerte SF",
-        "pais": "El Salvador",
-        "rating": 1443.21,
-        "rd": 130.2,
-        "partidos_jugados": 11,
-        "pj_reales": 11,
-        "form_score": 52.6,
-        "form_local": 54.0,
-        "form_visitante": 37.3,
-        "momentum": "stable",
-        "momentum_diff": 2.7,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "V",
-            "D",
-            "D",
-            "V",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.91,
-          "goles_contra": 1.45,
-          "diferencia": -0.54
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 4.6,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "132480",
-        "nombre": "Inca Aruba",
-        "pais": "El Salvador",
-        "rating": 1360.41,
-        "rd": 116.07,
-        "partidos_jugados": 13,
-        "pj_reales": 13,
-        "form_score": 5.7,
-        "form_local": 13.4,
-        "form_visitante": 12.2,
-        "momentum": "stable",
-        "momentum_diff": -2.8,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 4
-        },
-        "ultimos5": {
-          "texto": "4D 1E",
-          "resultados": [
-            "D",
-            "D",
-            "D",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.6,
-          "goles_contra": 2.0,
-          "diferencia": -1.4
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -9.4,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 66.8,
-        "prob_empate": 21.2,
-        "prob_visitante": 12.0
-      },
-      "diff_elo": 82.8,
-      "confianza": 41.4
     },
     {
       "fixture_id": "401930989",
@@ -19313,7 +19313,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.1,
+        "overperformance": -0.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19351,7 +19351,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.9,
+        "overperformance": 2.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -19497,7 +19497,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -0.3,
+        "overperformance": -0.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19535,7 +19535,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.5,
+        "overperformance": 1.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -19957,7 +19957,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 4.0,
+        "overperformance": 4.3,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -19965,7 +19965,7 @@
         "nombre": "Marathón",
         "pais": "Honduras",
         "rating": 1728.31,
-        "rd": 186.54302394338728,
+        "rd": 186.8339423726476,
         "partidos_jugados": 9,
         "pj_reales": 9,
         "form_score": 89.6,
@@ -19995,7 +19995,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.1,
+        "overperformance": 1.6,
         "vol": 0.06
       },
       "prediccion": {
@@ -20144,7 +20144,7 @@
         "nombre": "CA La Paz",
         "pais": "",
         "rating": 1774.06,
-        "rd": 195.13672367940052,
+        "rd": 195.41486742594654,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 82.8,
@@ -20266,7 +20266,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 8.2,
+        "overperformance": 8.3,
         "vol": 0.06
       },
       "prediccion": {
@@ -20358,7 +20358,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.0,
+        "overperformance": -2.7,
         "vol": 0.06
       },
       "prediccion": {
@@ -20450,13 +20450,13 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 26.4,
+        "overperformance": 25.6,
         "vol": 0.06
       },
       "prediccion": {
         "prob_local": 18.4,
         "prob_empate": 15.8,
-        "prob_visitante": 65.9
+        "prob_visitante": 65.8
       },
       "diff_elo": -318.4,
       "confianza": 100.0
@@ -20504,7 +20504,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.9,
+        "overperformance": 6.2,
         "vol": 0.06
       },
       "equipo_visitante": {
