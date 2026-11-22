@@ -85273,6 +85273,166 @@
         "overperformance_h": 3.3,
         "overperformance_a": 0.3
       }
+    },
+    {
+      "fixture_id": "401877050",
+      "fecha": "2026-11-21",
+      "fecha_hora_espn": "2026-11-21T22:50Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "234",
+        "name": "Pachuca"
+      },
+      "equipo_visitante": {
+        "id": "223",
+        "name": "Toluca"
+      },
+      "goles_local": 2,
+      "goles_visitante": 0,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-11-21T17:50:00-05:00",
+        "prob_local": 33.9,
+        "prob_empate": 18.9,
+        "prob_visitante": 47.2,
+        "diff_elo": -182.1,
+        "pj_h": 12,
+        "pj_a": 12,
+        "rating_local": 1524.88,
+        "rating_visitante": 1706.99,
+        "overperformance_h": -5.2,
+        "overperformance_a": 1.8
+      }
+    },
+    {
+      "fixture_id": "401878606",
+      "fecha": "2026-11-21",
+      "fecha_hora_espn": "2026-11-21T22:00Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "131453",
+        "name": "Sporting Jax"
+      },
+      "equipo_visitante": {
+        "id": "131454",
+        "name": "Carolina"
+      },
+      "goles_local": 1,
+      "goles_visitante": 0,
+      "estadisticas": null,
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-11-21T17:00:00-05:00",
+        "prob_local": 30.8,
+        "prob_empate": 18.4,
+        "prob_visitante": 50.8,
+        "diff_elo": -207.3,
+        "pj_h": 9,
+        "pj_a": 11,
+        "rating_local": 1588.19,
+        "rating_visitante": 1795.47,
+        "overperformance_h": 0.9,
+        "overperformance_a": 3.4
+      }
+    },
+    {
+      "fixture_id": "401913961",
+      "fecha": "2026-11-21",
+      "fecha_hora_espn": "2026-11-21T22:30Z",
+      "liga_pais": "",
+      "liga_nombre": "",
+      "liga_slug": "conmebol.sudamericana",
+      "equipo_local": {
+        "id": "7632",
+        "name": "Atlético-MG"
+      },
+      "equipo_visitante": {
+        "id": "5",
+        "name": "Boca "
+      },
+      "goles_local": 0,
+      "goles_visitante": 2,
+      "estadisticas": {
+        "home": {
+          "foulsCommitted": "10",
+          "yellowCards": "3",
+          "redCards": "0",
+          "offsides": "0",
+          "wonCorners": "4",
+          "saves": "4",
+          "possessionPct": "43.3",
+          "totalShots": "9",
+          "shotsOnTarget": "2",
+          "shotPct": "0.2",
+          "penaltyKickGoals": "0",
+          "penaltyKickShots": "0",
+          "accuratePasses": "300",
+          "totalPasses": "368",
+          "passPct": "0.8",
+          "accurateCrosses": "6",
+          "totalCrosses": "20",
+          "crossPct": "0.3",
+          "totalLongBalls": "48",
+          "accurateLongBalls": "26",
+          "longballPct": "0.5",
+          "blockedShots": "2",
+          "effectiveTackles": "11",
+          "totalTackles": "13",
+          "tacklePct": "0.8",
+          "interceptions": "11",
+          "effectiveClearance": "19",
+          "totalClearance": "19"
+        },
+        "away": {
+          "foulsCommitted": "9",
+          "yellowCards": "1",
+          "redCards": "0",
+          "offsides": "1",
+          "wonCorners": "4",
+          "saves": "2",
+          "possessionPct": "56.7",
+          "totalShots": "16",
+          "shotsOnTarget": "7",
+          "shotPct": "0.4",
+          "penaltyKickGoals": "0",
+          "penaltyKickShots": "0",
+          "accuratePasses": "423",
+          "totalPasses": "497",
+          "passPct": "0.9",
+          "accurateCrosses": "5",
+          "totalCrosses": "16",
+          "crossPct": "0.3",
+          "totalLongBalls": "46",
+          "accurateLongBalls": "20",
+          "longballPct": "0.4",
+          "blockedShots": "3",
+          "effectiveTackles": "10",
+          "totalTackles": "17",
+          "tacklePct": "0.6",
+          "interceptions": "8",
+          "effectiveClearance": "21",
+          "totalClearance": "21"
+        }
+      },
+      "neutral": false,
+      "prediccion_previa": {
+        "fecha": "2026-11-21T17:30:00-05:00",
+        "prob_local": 29.1,
+        "prob_empate": 18.9,
+        "prob_visitante": 52.0,
+        "diff_elo": -183.6,
+        "pj_h": 20,
+        "pj_a": 18,
+        "rating_local": 1693.58,
+        "rating_visitante": 1877.19,
+        "overperformance_h": 1.3,
+        "overperformance_a": 2.8
+      }
     }
   ]
 }
