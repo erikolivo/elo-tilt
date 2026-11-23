@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-23T00:33:57.443801Z",
+  "generado": "2026-11-23T01:23:13.831216Z",
   "fecha_consulta": "2026-11-22",
   "total": 154,
   "predicciones": [
@@ -13681,98 +13681,6 @@
       "confianza": 100.0
     },
     {
-      "fixture_id": "401877046",
-      "fecha": "2026-11-22T20:10:00-05:00",
-      "fecha_display": "2026-11-22",
-      "hora": "20:10",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "222",
-        "nombre": "Queretaro",
-        "pais": "",
-        "rating": 1241.81,
-        "rd": 121.88,
-        "partidos_jugados": 13,
-        "pj_reales": 13,
-        "form_score": 15.8,
-        "form_local": 62.2,
-        "form_visitante": 13.3,
-        "momentum": "stable",
-        "momentum_diff": -0.4,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 3
-        },
-        "ultimos5": {
-          "texto": "2V 3D",
-          "resultados": [
-            "D",
-            "D",
-            "D",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 0.9,
-          "goles_contra": 1.9,
-          "diferencia": -1.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 2.4,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "229",
-        "nombre": "Necaxa",
-        "pais": "",
-        "rating": 1266.65,
-        "rd": 146.93,
-        "partidos_jugados": 10,
-        "pj_reales": 10,
-        "form_score": 19.9,
-        "form_local": 0.0,
-        "form_visitante": 29.4,
-        "momentum": "stable",
-        "momentum_diff": -2.1,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "3D 2E",
-          "resultados": [
-            "D",
-            "E",
-            "D",
-            "E",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.12,
-          "goles_contra": 2.0,
-          "diferencia": -0.88
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 2.3,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 51.7,
-        "prob_empate": 22.6,
-        "prob_visitante": 25.8
-      },
-      "diff_elo": -24.8,
-      "confianza": 12.4
-    },
-    {
       "fixture_id": "401879614",
       "fecha": "2026-11-22T20:10:00-05:00",
       "fecha_display": "2026-11-22",
@@ -13863,6 +13771,98 @@
       },
       "diff_elo": -67.2,
       "confianza": 33.6
+    },
+    {
+      "fixture_id": "401877046",
+      "fecha": "2026-11-22T20:10:00-05:00",
+      "fecha_display": "2026-11-22",
+      "hora": "20:10",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "222",
+        "nombre": "Queretaro",
+        "pais": "",
+        "rating": 1241.81,
+        "rd": 121.88,
+        "partidos_jugados": 13,
+        "pj_reales": 13,
+        "form_score": 15.8,
+        "form_local": 62.2,
+        "form_visitante": 13.3,
+        "momentum": "stable",
+        "momentum_diff": -0.4,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "2V 3D",
+          "resultados": [
+            "D",
+            "D",
+            "D",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 0.9,
+          "goles_contra": 1.9,
+          "diferencia": -1.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.4,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "229",
+        "nombre": "Necaxa",
+        "pais": "",
+        "rating": 1266.65,
+        "rd": 146.93,
+        "partidos_jugados": 10,
+        "pj_reales": 10,
+        "form_score": 19.9,
+        "form_local": 0.0,
+        "form_visitante": 29.4,
+        "momentum": "stable",
+        "momentum_diff": -2.1,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3D 2E",
+          "resultados": [
+            "D",
+            "E",
+            "D",
+            "E",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.12,
+          "goles_contra": 2.0,
+          "diferencia": -0.88
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.3,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 51.7,
+        "prob_empate": 22.6,
+        "prob_visitante": 25.8
+      },
+      "diff_elo": -24.8,
+      "confianza": 12.4
     },
     {
       "fixture_id": "401933729",
@@ -14037,7 +14037,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.2,
+        "overperformance": 0.3,
         "vol": 0.06
       },
       "prediccion": {
