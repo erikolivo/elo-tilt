@@ -1,7 +1,7 @@
 {
-  "generado": "2026-11-26T11:48:19.532548Z",
+  "generado": "2026-11-26T20:50:53.352116Z",
   "fecha_consulta": "2026-11-27",
-  "total": 87,
+  "total": 89,
   "predicciones": [
     {
       "fixture_id": "401892133",
@@ -702,7 +702,7 @@
         "nombre": "Azam",
         "pais": "",
         "rating": 1617.93,
-        "rd": 232.66851131911588,
+        "rd": 233.1349445436713,
         "partidos_jugados": 2,
         "pj_reales": 2,
         "form_score": 81.1,
@@ -737,7 +737,7 @@
         "nombre": "Al Ahli Tripoli",
         "pais": "",
         "rating": 1799.05,
-        "rd": 208.97557159758875,
+        "rd": 209.4947284487388,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 100.0,
@@ -766,7 +766,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 15.9,
+        "overperformance": 16.0,
         "vol": 0.06
       },
       "prediccion": {
@@ -1346,7 +1346,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -39.3,
+        "overperformance": -39.2,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1852,7 +1852,7 @@
         "nombre": "Östers",
         "pais": "",
         "rating": 1318.93,
-        "rd": 248.4133040406788,
+        "rd": 248.85024226398204,
         "partidos_jugados": 3,
         "pj_reales": 3,
         "form_score": 0.0,
@@ -4010,7 +4010,7 @@
         "nombre": "Largs Thistle",
         "pais": "",
         "rating": 1775.05,
-        "rd": 247.12936146477895,
+        "rd": 247.56858037936604,
         "partidos_jugados": 2,
         "pj_reales": 2,
         "form_score": 100.0,
@@ -5142,7 +5142,7 @@
         "nombre": "UCLA",
         "pais": "",
         "rating": 1855.98,
-        "rd": 117.11360057497873,
+        "rd": 118.03754338159868,
         "partidos_jugados": 14,
         "pj_reales": 5,
         "form_score": 73.8,
@@ -7180,6 +7180,98 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401936055",
+      "fecha": "2026-11-27T18:35:00-05:00",
+      "fecha_display": "2026-11-27",
+      "hora": "18:35",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "2672",
+        "nombre": "Cali",
+        "pais": "",
+        "rating": 1505.8,
+        "rd": 120.19,
+        "partidos_jugados": 12,
+        "pj_reales": 12,
+        "form_score": 36.0,
+        "form_local": 63.0,
+        "form_visitante": 33.6,
+        "momentum": "stable",
+        "momentum_diff": -2.6,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 1D 3E",
+          "resultados": [
+            "D",
+            "E",
+            "E",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.25,
+          "goles_contra": 0.83,
+          "diferencia": 0.42
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 3.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "6137",
+        "nombre": "Bucaramanga",
+        "pais": "",
+        "rating": 1549.76,
+        "rd": 105.72,
+        "partidos_jugados": 16,
+        "pj_reales": 16,
+        "form_score": 42.6,
+        "form_local": 72.5,
+        "form_visitante": 33.6,
+        "momentum": "stable",
+        "momentum_diff": 1.5,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "D",
+            "E",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.47,
+          "goles_contra": 1.07,
+          "diferencia": 0.4
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 49.1,
+        "prob_empate": 22.1,
+        "prob_visitante": 28.8
+      },
+      "diff_elo": -44.0,
+      "confianza": 22.0
+    },
+    {
       "fixture_id": "401933219",
       "fecha": "2026-11-27T19:00:00-05:00",
       "fecha_display": "2026-11-27",
@@ -7322,7 +7414,7 @@
         "nombre": "G y T (Salta)",
         "pais": "",
         "rating": 1473.01,
-        "rd": 136.1301628137414,
+        "rd": 136.92582003857015,
         "partidos_jugados": 10,
         "pj_reales": 10,
         "form_score": 25.9,
@@ -7506,7 +7598,7 @@
         "nombre": "Virginia Tech",
         "pais": "",
         "rating": 1608.06,
-        "rd": 133.6180147923526,
+        "rd": 134.42840708890077,
         "partidos_jugados": 11,
         "pj_reales": 11,
         "form_score": 29.3,
@@ -7560,7 +7652,7 @@
         "nombre": "USA",
         "pais": "",
         "rating": 1806.41,
-        "rd": 149.21177861484188,
+        "rd": 149.93784014779393,
         "partidos_jugados": 21,
         "pj_reales": 1,
         "form_score": 0.0,
@@ -7632,6 +7724,98 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401936054",
+      "fecha": "2026-11-27T20:40:00-05:00",
+      "fecha_display": "2026-11-27",
+      "hora": "20:40",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "5484",
+        "nombre": "Millonarios",
+        "pais": "",
+        "rating": 1735.53,
+        "rd": 129.77,
+        "partidos_jugados": 11,
+        "pj_reales": 11,
+        "form_score": 92.8,
+        "form_local": 95.6,
+        "form_visitante": 63.8,
+        "momentum": "stable",
+        "momentum_diff": 2.4,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 3
+        },
+        "ultimos5": {
+          "texto": "4V 1E",
+          "resultados": [
+            "V",
+            "V",
+            "V",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.73,
+          "goles_contra": 0.36,
+          "diferencia": 1.37
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -2.7,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "8109",
+        "nombre": "América Cali",
+        "pais": "",
+        "rating": 1717.85,
+        "rd": 109.99,
+        "partidos_jugados": 16,
+        "pj_reales": 16,
+        "form_score": 83.9,
+        "form_local": 77.0,
+        "form_visitante": 75.6,
+        "momentum": "stable",
+        "momentum_diff": 0.1,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "3V 2E",
+          "resultados": [
+            "V",
+            "E",
+            "V",
+            "V",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.73,
+          "goles_contra": 0.87,
+          "diferencia": 0.86
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -1.7,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 56.8,
+        "prob_empate": 22.7,
+        "prob_visitante": 20.4
+      },
+      "diff_elo": 17.7,
+      "confianza": 8.8
+    },
+    {
       "fixture_id": "401876813",
       "fecha": "2026-11-27T21:00:00-05:00",
       "fecha_display": "2026-11-27",
@@ -7644,7 +7828,7 @@
         "nombre": "Herediano",
         "pais": "",
         "rating": 1485.71,
-        "rd": 195.31886808571943,
+        "rd": 195.87440971618352,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 60.3,
