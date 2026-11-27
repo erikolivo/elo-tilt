@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-27T14:29:04.145640Z",
+  "generado": "2026-11-27T16:03:03.011493Z",
   "fecha_consulta": "2026-11-27",
   "total": 89,
   "predicciones": [
@@ -358,86 +358,6 @@
       "confianza": 10.2
     },
     {
-      "fixture_id": "401936553",
-      "fecha": "2026-11-27T08:00:00-05:00",
-      "fecha_display": "2026-11-27",
-      "hora": "08:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "133391",
-        "nombre": "1. FC Tatran Presov",
-        "pais": "",
-        "rating": 1500.0,
-        "rd": 350.0,
-        "partidos_jugados": 0,
-        "pj_reales": 0,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "133249",
-        "nombre": "Kosice",
-        "pais": "",
-        "rating": 1500.0,
-        "rd": 350.0,
-        "partidos_jugados": 0,
-        "pj_reales": 0,
-        "form_score": 50.0,
-        "form_local": 50.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "N/A",
-          "cantidad": 0
-        },
-        "ultimos5": {
-          "texto": "N/A",
-          "resultados": []
-        },
-        "goal_trend": {
-          "goles_favor": 0.0,
-          "goles_contra": 0.0,
-          "diferencia": 0.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.0,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 53.7,
-        "prob_empate": 23.1,
-        "prob_visitante": 23.1
-      },
-      "diff_elo": 0.0,
-      "confianza": 0.0
-    },
-    {
       "fixture_id": "401936495",
       "fecha": "2026-11-27T08:00:00-05:00",
       "fecha_display": "2026-11-27",
@@ -480,6 +400,86 @@
       "equipo_visitante": {
         "id": "133525",
         "nombre": "Servette II",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 350.0,
+        "partidos_jugados": 0,
+        "pj_reales": 0,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 53.7,
+        "prob_empate": 23.1,
+        "prob_visitante": 23.1
+      },
+      "diff_elo": 0.0,
+      "confianza": 0.0
+    },
+    {
+      "fixture_id": "401936553",
+      "fecha": "2026-11-27T08:00:00-05:00",
+      "fecha_display": "2026-11-27",
+      "hora": "08:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "133391",
+        "nombre": "1. FC Tatran Presov",
+        "pais": "",
+        "rating": 1500.0,
+        "rd": 350.0,
+        "partidos_jugados": 0,
+        "pj_reales": 0,
+        "form_score": 50.0,
+        "form_local": 50.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "N/A",
+          "cantidad": 0
+        },
+        "ultimos5": {
+          "texto": "N/A",
+          "resultados": []
+        },
+        "goal_trend": {
+          "goles_favor": 0.0,
+          "goles_contra": 0.0,
+          "diferencia": 0.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "133249",
+        "nombre": "Kosice",
         "pais": "",
         "rating": 1500.0,
         "rd": 350.0,
@@ -1346,7 +1346,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -40.9,
+        "overperformance": -41.4,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -1852,7 +1852,7 @@
         "nombre": "Östers",
         "pais": "",
         "rating": 1318.93,
-        "rd": 249.72182518897748,
+        "rd": 249.93924601977207,
         "partidos_jugados": 3,
         "pj_reales": 3,
         "form_score": 0.0,
@@ -2497,7 +2497,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 2.6,
+        "overperformance": 2.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -2535,7 +2535,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -2.3,
+        "overperformance": -2.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -2894,98 +2894,6 @@
       "confianza": 51.4
     },
     {
-      "fixture_id": "401875834",
-      "fecha": "2026-11-27T14:00:00-05:00",
-      "fecha_display": "2026-11-27",
-      "hora": "14:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "4426",
-        "nombre": "Dordrecht",
-        "pais": "",
-        "rating": 1262.99,
-        "rd": 108.98,
-        "partidos_jugados": 17,
-        "pj_reales": 17,
-        "form_score": 10.0,
-        "form_local": 17.8,
-        "form_visitante": 11.7,
-        "momentum": "stable",
-        "momentum_diff": -2.2,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "4D 1E",
-          "resultados": [
-            "D",
-            "D",
-            "E",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.2,
-          "goles_contra": 2.73,
-          "diferencia": -1.53
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -2.1,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "154",
-        "nombre": "Vitesse",
-        "pais": "",
-        "rating": 1452.6,
-        "rd": 98.97,
-        "partidos_jugados": 17,
-        "pj_reales": 17,
-        "form_score": 18.7,
-        "form_local": 25.7,
-        "form_visitante": 32.6,
-        "momentum": "stable",
-        "momentum_diff": 0.1,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "1V 2D 2E",
-          "resultados": [
-            "D",
-            "D",
-            "E",
-            "E",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.0,
-          "goles_contra": 1.4,
-          "diferencia": -0.4
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.4,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 31.6,
-        "prob_empate": 18.8,
-        "prob_visitante": 49.6
-      },
-      "diff_elo": -189.6,
-      "confianza": 94.8
-    },
-    {
       "fixture_id": "401875833",
       "fecha": "2026-11-27T14:00:00-05:00",
       "fecha_display": "2026-11-27",
@@ -3028,7 +2936,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.6,
+        "overperformance": -5.7,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3066,7 +2974,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -1.1,
+        "overperformance": -1.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -3075,190 +2983,6 @@
         "prob_visitante": 55.4
       },
       "diff_elo": -252.9,
-      "confianza": 100.0
-    },
-    {
-      "fixture_id": "401875832",
-      "fecha": "2026-11-27T14:00:00-05:00",
-      "fecha_display": "2026-11-27",
-      "hora": "14:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "18748",
-        "nombre": "Jong AZ",
-        "pais": "",
-        "rating": 1475.05,
-        "rd": 105.85,
-        "partidos_jugados": 16,
-        "pj_reales": 16,
-        "form_score": 32.8,
-        "form_local": 40.0,
-        "form_visitante": 34.0,
-        "momentum": "stable",
-        "momentum_diff": -0.8,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 3D",
-          "resultados": [
-            "D",
-            "V",
-            "D",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.4,
-          "goles_contra": 2.2,
-          "diferencia": 0.2
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -1.5,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "3728",
-        "nombre": "TOP Oss",
-        "pais": "",
-        "rating": 1501.91,
-        "rd": 105.24,
-        "partidos_jugados": 17,
-        "pj_reales": 17,
-        "form_score": 79.7,
-        "form_local": 80.2,
-        "form_visitante": 54.8,
-        "momentum": "stable",
-        "momentum_diff": 2.8,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "3V 1D 1E",
-          "resultados": [
-            "V",
-            "V",
-            "E",
-            "D",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.6,
-          "goles_contra": 1.33,
-          "diferencia": 0.27
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 0.6,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 47.7,
-        "prob_empate": 22.5,
-        "prob_visitante": 29.8
-      },
-      "diff_elo": -26.9,
-      "confianza": 13.4
-    },
-    {
-      "fixture_id": "401875831",
-      "fecha": "2026-11-27T14:00:00-05:00",
-      "fecha_display": "2026-11-27",
-      "hora": "14:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "18278",
-        "nombre": "Jong Utrecht",
-        "pais": "",
-        "rating": 1349.67,
-        "rd": 113.27,
-        "partidos_jugados": 16,
-        "pj_reales": 16,
-        "form_score": 41.2,
-        "form_local": 71.5,
-        "form_visitante": 17.8,
-        "momentum": "stable",
-        "momentum_diff": 2.1,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "2V 2D 1E",
-          "resultados": [
-            "D",
-            "V",
-            "E",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.67,
-          "goles_contra": 2.33,
-          "diferencia": -0.66
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 2.0,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "5291",
-        "nombre": "Almere City",
-        "pais": "",
-        "rating": 1648.57,
-        "rd": 109.69,
-        "partidos_jugados": 17,
-        "pj_reales": 17,
-        "form_score": 54.9,
-        "form_local": 42.5,
-        "form_visitante": 85.6,
-        "momentum": "stable",
-        "momentum_diff": 2.4,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "4V 1D",
-          "resultados": [
-            "D",
-            "V",
-            "V",
-            "V",
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.33,
-          "goles_contra": 1.13,
-          "diferencia": 1.2
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -0.8,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 22.7,
-        "prob_empate": 16.2,
-        "prob_visitante": 61.1
-      },
-      "diff_elo": -298.9,
       "confianza": 100.0
     },
     {
@@ -3304,7 +3028,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -5.5,
+        "overperformance": -5.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3342,7 +3066,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 0.0,
+        "overperformance": 0.1,
         "vol": 0.06
       },
       "prediccion": {
@@ -3396,7 +3120,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.2,
+        "overperformance": 1.0,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -3434,7 +3158,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": -3.4,
+        "overperformance": -3.2,
         "vol": 0.06
       },
       "prediccion": {
@@ -3444,98 +3168,6 @@
       },
       "diff_elo": 184.4,
       "confianza": 92.2
-    },
-    {
-      "fixture_id": "401876061",
-      "fecha": "2026-11-27T14:00:00-05:00",
-      "fecha_display": "2026-11-27",
-      "hora": "14:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "3731",
-        "nombre": "VVV Venlo",
-        "pais": "",
-        "rating": 1498.88,
-        "rd": 109.33,
-        "partidos_jugados": 17,
-        "pj_reales": 17,
-        "form_score": 22.7,
-        "form_local": 28.5,
-        "form_visitante": 51.9,
-        "momentum": "stable",
-        "momentum_diff": -4.9,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "1V 3D 1E",
-          "resultados": [
-            "D",
-            "D",
-            "E",
-            "V",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.2,
-          "goles_contra": 1.53,
-          "diferencia": 0.67
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 4.9,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "155",
-        "nombre": "RKC Waalwijk",
-        "pais": "",
-        "rating": 1525.47,
-        "rd": 99.96,
-        "partidos_jugados": 17,
-        "pj_reales": 17,
-        "form_score": 37.3,
-        "form_local": 62.4,
-        "form_visitante": 26.6,
-        "momentum": "stable",
-        "momentum_diff": -0.2,
-        "streak": {
-          "tipo": "L",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V 2D 2E",
-          "resultados": [
-            "D",
-            "V",
-            "E",
-            "D",
-            "E"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.87,
-          "goles_contra": 1.47,
-          "diferencia": 0.4
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 1.3,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 49.8,
-        "prob_empate": 22.5,
-        "prob_visitante": 27.6
-      },
-      "diff_elo": -26.6,
-      "confianza": 13.3
     },
     {
       "fixture_id": "401921332",
@@ -3906,6 +3538,374 @@
       "confianza": 66.0
     },
     {
+      "fixture_id": "401875834",
+      "fecha": "2026-11-27T14:00:00-05:00",
+      "fecha_display": "2026-11-27",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "4426",
+        "nombre": "Dordrecht",
+        "pais": "",
+        "rating": 1262.99,
+        "rd": 108.98,
+        "partidos_jugados": 17,
+        "pj_reales": 17,
+        "form_score": 10.0,
+        "form_local": 17.8,
+        "form_visitante": 11.7,
+        "momentum": "stable",
+        "momentum_diff": -2.2,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "4D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "E",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.2,
+          "goles_contra": 2.73,
+          "diferencia": -1.53
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -2.1,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "154",
+        "nombre": "Vitesse",
+        "pais": "",
+        "rating": 1452.6,
+        "rd": 98.97,
+        "partidos_jugados": 17,
+        "pj_reales": 17,
+        "form_score": 18.7,
+        "form_local": 25.7,
+        "form_visitante": 32.6,
+        "momentum": "stable",
+        "momentum_diff": 0.1,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "1V 2D 2E",
+          "resultados": [
+            "D",
+            "D",
+            "E",
+            "E",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.0,
+          "goles_contra": 1.4,
+          "diferencia": -0.4
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.4,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 31.6,
+        "prob_empate": 18.8,
+        "prob_visitante": 49.6
+      },
+      "diff_elo": -189.6,
+      "confianza": 94.8
+    },
+    {
+      "fixture_id": "401875832",
+      "fecha": "2026-11-27T14:00:00-05:00",
+      "fecha_display": "2026-11-27",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "18748",
+        "nombre": "Jong AZ",
+        "pais": "",
+        "rating": 1475.05,
+        "rd": 105.85,
+        "partidos_jugados": 16,
+        "pj_reales": 16,
+        "form_score": 32.8,
+        "form_local": 40.0,
+        "form_visitante": 34.0,
+        "momentum": "stable",
+        "momentum_diff": -0.8,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 3D",
+          "resultados": [
+            "D",
+            "V",
+            "D",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.4,
+          "goles_contra": 2.2,
+          "diferencia": 0.2
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -1.5,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "3728",
+        "nombre": "TOP Oss",
+        "pais": "",
+        "rating": 1501.91,
+        "rd": 105.24,
+        "partidos_jugados": 17,
+        "pj_reales": 17,
+        "form_score": 79.7,
+        "form_local": 80.2,
+        "form_visitante": 54.8,
+        "momentum": "stable",
+        "momentum_diff": 2.8,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "3V 1D 1E",
+          "resultados": [
+            "V",
+            "V",
+            "E",
+            "D",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.6,
+          "goles_contra": 1.33,
+          "diferencia": 0.27
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 0.6,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 47.7,
+        "prob_empate": 22.5,
+        "prob_visitante": 29.8
+      },
+      "diff_elo": -26.9,
+      "confianza": 13.4
+    },
+    {
+      "fixture_id": "401875831",
+      "fecha": "2026-11-27T14:00:00-05:00",
+      "fecha_display": "2026-11-27",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "18278",
+        "nombre": "Jong Utrecht",
+        "pais": "",
+        "rating": 1349.67,
+        "rd": 113.27,
+        "partidos_jugados": 16,
+        "pj_reales": 16,
+        "form_score": 41.2,
+        "form_local": 71.5,
+        "form_visitante": 17.8,
+        "momentum": "stable",
+        "momentum_diff": 2.1,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "2V 2D 1E",
+          "resultados": [
+            "D",
+            "V",
+            "E",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.67,
+          "goles_contra": 2.33,
+          "diferencia": -0.66
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 2.0,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "5291",
+        "nombre": "Almere City",
+        "pais": "",
+        "rating": 1648.57,
+        "rd": 109.69,
+        "partidos_jugados": 17,
+        "pj_reales": 17,
+        "form_score": 54.9,
+        "form_local": 42.5,
+        "form_visitante": 85.6,
+        "momentum": "stable",
+        "momentum_diff": 2.4,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "4V 1D",
+          "resultados": [
+            "D",
+            "V",
+            "V",
+            "V",
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.33,
+          "goles_contra": 1.13,
+          "diferencia": 1.2
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -0.8,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 22.7,
+        "prob_empate": 16.2,
+        "prob_visitante": 61.1
+      },
+      "diff_elo": -298.9,
+      "confianza": 100.0
+    },
+    {
+      "fixture_id": "401876061",
+      "fecha": "2026-11-27T14:00:00-05:00",
+      "fecha_display": "2026-11-27",
+      "hora": "14:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "3731",
+        "nombre": "VVV Venlo",
+        "pais": "",
+        "rating": 1498.88,
+        "rd": 109.33,
+        "partidos_jugados": 17,
+        "pj_reales": 17,
+        "form_score": 22.7,
+        "form_local": 28.5,
+        "form_visitante": 51.9,
+        "momentum": "stable",
+        "momentum_diff": -4.9,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "1V 3D 1E",
+          "resultados": [
+            "D",
+            "D",
+            "E",
+            "V",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.2,
+          "goles_contra": 1.53,
+          "diferencia": 0.67
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 4.9,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "155",
+        "nombre": "RKC Waalwijk",
+        "pais": "",
+        "rating": 1525.47,
+        "rd": 99.96,
+        "partidos_jugados": 17,
+        "pj_reales": 17,
+        "form_score": 37.3,
+        "form_local": 62.4,
+        "form_visitante": 26.6,
+        "momentum": "stable",
+        "momentum_diff": -0.2,
+        "streak": {
+          "tipo": "L",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V 2D 2E",
+          "resultados": [
+            "D",
+            "V",
+            "E",
+            "D",
+            "E"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.87,
+          "goles_contra": 1.47,
+          "diferencia": 0.4
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 1.3,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 49.8,
+        "prob_empate": 22.5,
+        "prob_visitante": 27.6
+      },
+      "diff_elo": -26.6,
+      "confianza": 13.3
+    },
+    {
       "fixture_id": "401884720",
       "fecha": "2026-11-27T14:30:00-05:00",
       "fecha_display": "2026-11-27",
@@ -4010,7 +4010,7 @@
         "nombre": "Largs Thistle",
         "pais": "",
         "rating": 1775.05,
-        "rd": 248.44468876831547,
+        "rd": 248.66323355839677,
         "partidos_jugados": 2,
         "pj_reales": 2,
         "form_score": 100.0,
@@ -5142,7 +5142,7 @@
         "nombre": "UCLA",
         "pais": "",
         "rating": 1855.98,
-        "rd": 119.86406493781637,
+        "rd": 120.31636284138838,
         "partidos_jugados": 14,
         "pj_reales": 5,
         "form_score": 73.8,
@@ -5772,10 +5772,10 @@
         "id": "2894",
         "nombre": "Costa Rica",
         "pais": "",
-        "rating": 1525.47,
-        "rd": 106.67,
-        "partidos_jugados": 26,
-        "pj_reales": 6,
+        "rating": 1511.21,
+        "rd": 103.87,
+        "partidos_jugados": 27,
+        "pj_reales": 7,
         "form_score": 50.0,
         "form_local": 50.0,
         "form_visitante": 50.0,
@@ -5801,12 +5801,12 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 62.7,
-        "prob_empate": 22.3,
-        "prob_visitante": 15.0
+        "prob_local": 64.5,
+        "prob_empate": 21.9,
+        "prob_visitante": 13.6
       },
-      "diff_elo": 37.8,
-      "confianza": 18.9
+      "diff_elo": 52.1,
+      "confianza": 26.0
     },
     {
       "fixture_id": "401933218",
@@ -7414,7 +7414,7 @@
         "nombre": "G y T (Salta)",
         "pais": "",
         "rating": 1473.01,
-        "rd": 138.50342278916136,
+        "rd": 138.89502369445336,
         "partidos_jugados": 10,
         "pj_reales": 10,
         "form_score": 25.9,
@@ -7598,7 +7598,7 @@
         "nombre": "Virginia Tech",
         "pais": "",
         "rating": 1608.06,
-        "rd": 136.03470933287193,
+        "rd": 136.433329949041,
         "partidos_jugados": 11,
         "pj_reales": 11,
         "form_score": 29.3,
@@ -7652,7 +7652,7 @@
         "nombre": "USA",
         "pais": "",
         "rating": 1806.41,
-        "rd": 151.3795163479758,
+        "rd": 151.73779517686913,
         "partidos_jugados": 21,
         "pj_reales": 1,
         "form_score": 0.0,
@@ -7828,7 +7828,7 @@
         "nombre": "Herediano",
         "pais": "",
         "rating": 1485.71,
-        "rd": 196.98079267892257,
+        "rd": 197.25641880584013,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 60.3,
