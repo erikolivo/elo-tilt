@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<meta name="build" content="20261128061813">
+<meta name="build" content="20261128084629">
 <title>ELO + Tilt Tracker</title>
 <style>
 :root {
@@ -214,7 +214,7 @@ tr:hover { background: var(--surface2); }
   <div class="stats">
     <div class="stat"><div class="stat-val">244</div><div class="stat-label">Partidos</div></div>
     <div class="stat"><div class="stat-val">40</div><div class="stat-label">Ligas</div></div>
-    <div class="stat"><div class="stat-val" id="statAciertos" data-global="66.6%" data-global-title="4318/6485 calificados (últimos 90 días)" title="4318/6485 calificados (últimos 90 días)">66.6%</div><div class="stat-label">% Aciertos</div></div>
+    <div class="stat"><div class="stat-val" id="statAciertos" data-global="66.6%" data-global-title="4319/6487 calificados (últimos 90 días)" title="4319/6487 calificados (últimos 90 días)">66.6%</div><div class="stat-label">% Aciertos</div></div>
   </div>
 
   <div class="controls">
@@ -544,8 +544,8 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo average">1500 <span class="pj-count">0PJ</span></td>
   <td class="ex-forma mid">50</td>
   <td class="ex-racha"><span class="streak-na">—</span> </td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-finalizado">2 - 2</td>
+  <td class="ex-minuto marcador-finalizado">FIN</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401934357" target="_blank">South Korea</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo elite">1735 <span class="pj-count">30PJ</span></td>
   <td class="ex-forma mid">50</td>
@@ -578,15 +578,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo above">1573 <span class="pj-count">14PJ</span></td>
   <td class="ex-forma high">81</td>
   <td class="ex-racha"><span class="ultimos5" title="3V 2D"><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+1</span></td>
-  <td class="ex-marcador marcador-vivo">1 - 0</td>
-  <td class="ex-minuto marcador-vivo">15'</td>
+  <td class="ex-marcador marcador-finalizado">3 - 0</td>
+  <td class="ex-minuto marcador-finalizado">FIN</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401879793" target="_blank">Akron Tolyatti</a></td>
   <td class="ex-elo below">1383 <span class="pj-count">14PJ</span></td>
   <td class="ex-forma low">13</td>
   <td class="ex-racha"><span class="ultimos5" title="1V 3D 1E"><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-e">E</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+2</span></td>
   <td class="ex-diff" style="color:#22c55e">+190</td>
   <td class="ex-pred best" title="Código por Elo: dif +190 + 50 local = +240 | Prob. modelo: 80% | 19% | 1%">1</td>
-  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
+  <td class="ex-acierto acierto-ok" title="">✓</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401879793')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401879793" style="display:none">
@@ -612,15 +612,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo average">1528 <span class="pj-count">34PJ</span></td>
   <td class="ex-forma high">100</td>
   <td class="ex-racha"><span class="ultimos5" title="1V"><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#22c55e">+33</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-finalizado">3 - 0</td>
+  <td class="ex-minuto marcador-finalizado">FIN</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401934222" target="_blank">Thailand</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo above">1662 <span class="pj-count">6PJ</span></td>
   <td class="ex-forma mid">50</td>
   <td class="ex-racha"><span class="streak-na">—</span> </td>
   <td class="ex-diff" style="color:#ef4444">-134</td>
   <td class="ex-pred best" title="Código por Elo: dif -134 + 50 local = -84 | Prob. modelo: 47% | 20% | 33%">X2</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-fail" title="">✗</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401934222')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401934222" style="display:none">
@@ -646,15 +646,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo average">1503 <span class="pj-count">16PJ</span></td>
   <td class="ex-forma mid">66</td>
   <td class="ex-racha"><span class="ultimos5" title="3V 1D 1E"><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+2</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">0 - 1</td>
+  <td class="ex-minuto marcador-vivo">88'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401885044" target="_blank">St. Pauli</a></td>
   <td class="ex-elo average">1509 <span class="pj-count">14PJ</span></td>
   <td class="ex-forma mid">52</td>
   <td class="ex-racha"><span class="ultimos5" title="1V 2D 2E"><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-e">E</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-1</span></td>
   <td class="ex-diff" style="color:#ef4444">-6</td>
   <td class="ex-pred best" title="Código por Elo: dif -6 + 50 local = +44 | Prob. modelo: 56% | 23% | 21%">1X</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-fail" title="Provisional -- puede cambiar mientras el partido siga en curso">✗</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401885044')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401885044" style="display:none">
@@ -680,15 +680,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo elite">1928 <span class="pj-count">16PJ</span></td>
   <td class="ex-forma high">98</td>
   <td class="ex-racha"><span class="ultimos5" title="5V"><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+5</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">4 - 0</td>
+  <td class="ex-minuto marcador-vivo">85'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401885046" target="_blank">Karlsruher</a></td>
   <td class="ex-elo average">1441 <span class="pj-count">15PJ</span></td>
   <td class="ex-forma low">39</td>
   <td class="ex-racha"><span class="ultimos5" title="1V 3D 1E"><span class="u5-e">E</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+5</span></td>
   <td class="ex-diff" style="color:#22c55e">+487</td>
   <td class="ex-pred best" title="Código por Elo: dif +487 + 50 local = +537 | Prob. modelo: 88% | 11% | 1%">1</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401885046')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401885046" style="display:none">
@@ -714,15 +714,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo average">1497 <span class="pj-count">16PJ</span></td>
   <td class="ex-forma low">32</td>
   <td class="ex-racha"><span class="ultimos5" title="1V 3D 1E"><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-e">E</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-1</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">3 - 0</td>
+  <td class="ex-minuto marcador-vivo">86'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401885043" target="_blank">Kaiserslautern</a></td>
   <td class="ex-elo above">1691 <span class="pj-count">15PJ</span></td>
   <td class="ex-forma mid">64</td>
   <td class="ex-racha"><span class="ultimos5" title="3V 1D 1E"><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+3</span></td>
   <td class="ex-diff" style="color:#ef4444">-194</td>
   <td class="ex-pred best" title="Código por Elo: dif -194 + 50 local = -144 | Prob. modelo: 30% | 19% | 51%">X2</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-fail" title="Provisional -- puede cambiar mientras el partido siga en curso">✗</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401885043')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401885043" style="display:none">
@@ -748,8 +748,8 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo average">1499 <span class="pj-count">2PJ</span></td>
   <td class="ex-forma high">81</td>
   <td class="ex-racha"><span class="ultimos5" title="1V 1E"><span class="u5-v">V</span><span class="u5-e">E</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+2</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">4 - 1</td>
+  <td class="ex-minuto marcador-vivo">89'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401935554" target="_blank">Östersunds</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo below">1255 <span class="pj-count">2PJ</span></td>
   <td class="ex-forma low">0</td>
@@ -816,15 +816,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo below">1383 <span class="pj-count">14PJ</span></td>
   <td class="ex-forma low">30</td>
   <td class="ex-racha"><span class="ultimos5" title="3D 2E"><span class="u5-e">E</span><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-d">D</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+3</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">0 - 1</td>
+  <td class="ex-minuto marcador-vivo">72'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401900442" target="_blank">Al Nassr</a></td>
   <td class="ex-elo above">1697 <span class="pj-count">20PJ</span></td>
   <td class="ex-forma mid">67</td>
   <td class="ex-racha"><span class="ultimos5" title="3V 1D 1E"><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+1</span></td>
   <td class="ex-diff" style="color:#ef4444">-315</td>
   <td class="ex-pred best" title="Código por Elo: dif -315 + 50 local = -265 | Prob. modelo: 21% | 16% | 63%">2</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401900442')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401900442" style="display:none">
@@ -918,15 +918,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo above">1562 <span class="pj-count">19PJ</span></td>
   <td class="ex-forma high">71</td>
   <td class="ex-racha"><span class="ultimos5" title="2V 2D 1E"><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-6</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">0 - 0</td>
+  <td class="ex-minuto marcador-vivo">58'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401880135" target="_blank">Charlton</a></td>
   <td class="ex-elo average">1412 <span class="pj-count">18PJ</span></td>
   <td class="ex-forma mid">55</td>
   <td class="ex-racha"><span class="ultimos5" title="2V 3D"><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-3</span></td>
   <td class="ex-diff" style="color:#22c55e">+150</td>
   <td class="ex-pred best" title="Código por Elo: dif +150 + 50 local = +200 | Prob. modelo: 74% | 20% | 6%">1X</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401880135')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401880135" style="display:none">
@@ -952,15 +952,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo below">1390 <span class="pj-count">21PJ</span></td>
   <td class="ex-forma low">5</td>
   <td class="ex-racha"><span class="ultimos5" title="5D"><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-4</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">0 - 0</td>
+  <td class="ex-minuto marcador-vivo">57'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401880133" target="_blank">Wolves</a></td>
   <td class="ex-elo above">1640 <span class="pj-count">25PJ</span></td>
   <td class="ex-forma high">90</td>
   <td class="ex-racha"><span class="ultimos5" title="4V 1E"><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-1</span></td>
   <td class="ex-diff" style="color:#ef4444">-251</td>
   <td class="ex-pred best" title="Código por Elo: dif -251 + 50 local = -201 | Prob. modelo: 21% | 17% | 62%">2</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-fail" title="Provisional -- puede cambiar mientras el partido siga en curso">✗</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401880133')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401880133" style="display:none">
@@ -986,15 +986,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo below">1384 <span class="pj-count">21PJ</span></td>
   <td class="ex-forma mid">68</td>
   <td class="ex-racha"><span class="ultimos5" title="2V 2D 1E"><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-2</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">0 - 0</td>
+  <td class="ex-minuto marcador-vivo">58'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401880131" target="_blank">Norwich City</a></td>
   <td class="ex-elo above">1614 <span class="pj-count">22PJ</span></td>
   <td class="ex-forma high">76</td>
   <td class="ex-racha"><span class="ultimos5" title="4V 1E"><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-6</span></td>
   <td class="ex-diff" style="color:#ef4444">-230</td>
   <td class="ex-pred best" title="Código por Elo: dif -230 + 50 local = -180 | Prob. modelo: 28% | 18% | 55%">X2</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401880131')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401880131" style="display:none">
@@ -1020,15 +1020,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo above">1583 <span class="pj-count">21PJ</span></td>
   <td class="ex-forma high">78</td>
   <td class="ex-racha"><span class="ultimos5" title="4V 1E"><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+6</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">0 - 0</td>
+  <td class="ex-minuto marcador-vivo">59'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401880725" target="_blank">Notts County</a></td>
   <td class="ex-elo above">1573 <span class="pj-count">23PJ</span></td>
   <td class="ex-forma mid">41</td>
   <td class="ex-racha"><span class="ultimos5" title="2V 1D 2E"><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-5</span></td>
   <td class="ex-diff" style="color:#22c55e">+9</td>
   <td class="ex-pred best" title="Código por Elo: dif +9 + 50 local = +59 | Prob. modelo: 58% | 23% | 19%">1X</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401880725')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401880725" style="display:none">
@@ -1054,15 +1054,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo average">1427 <span class="pj-count">25PJ</span></td>
   <td class="ex-forma mid">43</td>
   <td class="ex-racha"><span class="ultimos5" title="1V 4D"><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-d">D</span></span> </td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">1 - 1</td>
+  <td class="ex-minuto marcador-vivo">61'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401880724" target="_blank">Cambridge</a></td>
   <td class="ex-elo above">1589 <span class="pj-count">23PJ</span></td>
   <td class="ex-forma low">21</td>
   <td class="ex-racha"><span class="ultimos5" title="1V 3D 1E"><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-e">E</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-5</span></td>
   <td class="ex-diff" style="color:#ef4444">-161</td>
   <td class="ex-pred best" title="Código por Elo: dif -161 + 50 local = -111 | Prob. modelo: 36% | 19% | 45%">X2</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401880724')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401880724" style="display:none">
@@ -1088,15 +1088,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo below">1395 <span class="pj-count">21PJ</span></td>
   <td class="ex-forma mid">57</td>
   <td class="ex-racha"><span class="ultimos5" title="2V 2D 1E"><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-8</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">1 - 3</td>
+  <td class="ex-minuto marcador-vivo">60'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401881252" target="_blank">Tranmere</a></td>
   <td class="ex-elo average">1454 <span class="pj-count">20PJ</span></td>
   <td class="ex-forma high">74</td>
   <td class="ex-racha"><span class="ultimos5" title="2V 2D 1E"><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-2</span></td>
   <td class="ex-diff" style="color:#ef4444">-59</td>
   <td class="ex-pred best" title="Código por Elo: dif -59 + 50 local = -9 | Prob. modelo: 46% | 22% | 32%">12</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401881252')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401881252" style="display:none">
@@ -1122,15 +1122,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo average">1531 <span class="pj-count">23PJ</span></td>
   <td class="ex-forma mid">70</td>
   <td class="ex-racha"><span class="ultimos5" title="3V 1D 1E"><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+3</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">0 - 0</td>
+  <td class="ex-minuto marcador-vivo">60'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401881249" target="_blank">Crawley</a></td>
   <td class="ex-elo below">1369 <span class="pj-count">23PJ</span></td>
   <td class="ex-forma mid">56</td>
   <td class="ex-racha"><span class="ultimos5" title="1V 2D 2E"><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-d">D</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+4</span></td>
   <td class="ex-diff" style="color:#22c55e">+162</td>
   <td class="ex-pred best" title="Código por Elo: dif +162 + 50 local = +212 | Prob. modelo: 75% | 19% | 6%">1</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-fail" title="Provisional -- puede cambiar mientras el partido siga en curso">✗</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401881249')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401881249" style="display:none">
@@ -1156,15 +1156,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo above">1619 <span class="pj-count">22PJ</span></td>
   <td class="ex-forma mid">46</td>
   <td class="ex-racha"><span class="ultimos5" title="3V 1D 1E"><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+8</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">0 - 1</td>
+  <td class="ex-minuto marcador-vivo">57'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401889178" target="_blank">Aldershot</a></td>
   <td class="ex-elo average">1445 <span class="pj-count">22PJ</span></td>
   <td class="ex-forma low">31</td>
   <td class="ex-racha"><span class="ultimos5" title="2V 3D"><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-5</span></td>
   <td class="ex-diff" style="color:#22c55e">+175</td>
   <td class="ex-pred best" title="Código por Elo: dif +175 + 50 local = +225 | Prob. modelo: 76% | 19% | 5%">1</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-fail" title="Provisional -- puede cambiar mientras el partido siga en curso">✗</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401889178')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401889178" style="display:none">
@@ -1190,15 +1190,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo average">1518 <span class="pj-count">20PJ</span></td>
   <td class="ex-forma mid">60</td>
   <td class="ex-racha"><span class="ultimos5" title="2V 2D 1E"><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+2</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">1 - 1</td>
+  <td class="ex-minuto marcador-vivo">46'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401889177" target="_blank">Barrow</a></td>
   <td class="ex-elo elite">1722 <span class="pj-count">22PJ</span></td>
   <td class="ex-forma high">73</td>
   <td class="ex-racha"><span class="ultimos5" title="3V 1D 1E"><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-e">E</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+5</span></td>
   <td class="ex-diff" style="color:#ef4444">-204</td>
   <td class="ex-pred best" title="Código por Elo: dif -204 + 50 local = -154 | Prob. modelo: 29% | 18% | 52%">X2</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401889177')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401889177" style="display:none">
@@ -1213,40 +1213,6 @@ tr:hover { background: var(--surface2); }
         <strong>Barrow</strong>
         <span class="mom-stable">— Momentum (-1.8)</span>
         <span class="op-pos">Overperf: +4.7</span>
-      </div>
-    </div>
-  </td>
-</tr>
-<tr class="excel-row" data-fixture-id="401882796" data-slug="all" data-fecha="2026-11-28" data-elo-h="1777" data-form-h="81" data-home="betis" data-away="rayo" data-diff="326" data-pj-h="23" data-pj-a="15" data-pj-h-total="23" data-pj-a-total="15">
-  <td class="ex-fecha">2026-11-28</td>
-  <td class="ex-hora">08:00</td>
-  <td class="ex-local"><a href="https://www.espn.com/soccer/match/_/gameId/401882796" target="_blank">Betis</a></td>
-  <td class="ex-elo elite">1777 <span class="pj-count">23PJ</span></td>
-  <td class="ex-forma high">81</td>
-  <td class="ex-racha"><span class="ultimos5" title="3V 1D 1E"><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+1</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
-  <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401882796" target="_blank">Rayo</a></td>
-  <td class="ex-elo average">1451 <span class="pj-count">15PJ</span></td>
-  <td class="ex-forma low">28</td>
-  <td class="ex-racha"><span class="ultimos5" title="2V 3D"><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-2</span></td>
-  <td class="ex-diff" style="color:#22c55e">+326</td>
-  <td class="ex-pred best" title="Código por Elo: dif +326 + 50 local = +376 | Prob. modelo: 84% | 15% | 1%">1</td>
-  <td class="ex-acierto " title=""></td>
-  <td><button class="expand-btn" onclick="toggleDetalle('401882796')">▾</button></td>
-</tr>
-<tr class="detail-row" id="detail-401882796" style="display:none">
-  <td colspan="16">
-    <div class="detail-panel">
-      <div class="detail-team">
-        <strong>Betis</strong>
-        <span class="mom-stable">— Momentum (+0.6)</span>
-        <span class="op-pos">Overperf: +1.3</span>
-      </div>
-      <div class="detail-team">
-        <strong>Rayo</strong>
-        <span class="mom-stable">— Momentum (-2.0)</span>
-        <span class="op-neg">Overperf: -1.7</span>
       </div>
     </div>
   </td>
@@ -1285,6 +1251,40 @@ tr:hover { background: var(--surface2); }
     </div>
   </td>
 </tr>
+<tr class="excel-row" data-fixture-id="401882796" data-slug="all" data-fecha="2026-11-28" data-elo-h="1777" data-form-h="81" data-home="betis" data-away="rayo" data-diff="326" data-pj-h="23" data-pj-a="15" data-pj-h-total="23" data-pj-a-total="15">
+  <td class="ex-fecha">2026-11-28</td>
+  <td class="ex-hora">08:00</td>
+  <td class="ex-local"><a href="https://www.espn.com/soccer/match/_/gameId/401882796" target="_blank">Betis</a></td>
+  <td class="ex-elo elite">1777 <span class="pj-count">23PJ</span></td>
+  <td class="ex-forma high">81</td>
+  <td class="ex-racha"><span class="ultimos5" title="3V 1D 1E"><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+1</span></td>
+  <td class="ex-marcador marcador-vivo">0 - 0</td>
+  <td class="ex-minuto marcador-vivo">42'</td>
+  <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401882796" target="_blank">Rayo</a></td>
+  <td class="ex-elo average">1451 <span class="pj-count">15PJ</span></td>
+  <td class="ex-forma low">28</td>
+  <td class="ex-racha"><span class="ultimos5" title="2V 3D"><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-2</span></td>
+  <td class="ex-diff" style="color:#22c55e">+326</td>
+  <td class="ex-pred best" title="Código por Elo: dif +326 + 50 local = +376 | Prob. modelo: 84% | 15% | 1%">1</td>
+  <td class="ex-acierto acierto-parcial-fail" title="Provisional -- puede cambiar mientras el partido siga en curso">✗</td>
+  <td><button class="expand-btn" onclick="toggleDetalle('401882796')">▾</button></td>
+</tr>
+<tr class="detail-row" id="detail-401882796" style="display:none">
+  <td colspan="16">
+    <div class="detail-panel">
+      <div class="detail-team">
+        <strong>Betis</strong>
+        <span class="mom-stable">— Momentum (+0.6)</span>
+        <span class="op-pos">Overperf: +1.3</span>
+      </div>
+      <div class="detail-team">
+        <strong>Rayo</strong>
+        <span class="mom-stable">— Momentum (-2.0)</span>
+        <span class="op-neg">Overperf: -1.7</span>
+      </div>
+    </div>
+  </td>
+</tr>
 <tr class="excel-row" data-fixture-id="401932181" data-slug="caf.champions" data-fecha="2026-11-28" data-elo-h="1712" data-form-h="95" data-home="young africans" data-away="mc alger" data-diff="150" data-pj-h="4" data-pj-a="4" data-pj-h-total="4" data-pj-a-total="4">
   <td class="ex-fecha">2026-11-28</td>
   <td class="ex-hora">08:00</td>
@@ -1292,8 +1292,8 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo elite">1712 <span class="pj-count">4PJ</span></td>
   <td class="ex-forma high">95</td>
   <td class="ex-racha"><span class="ultimos5" title="3V 1E"><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-e">E</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+10</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">0 - 0</td>
+  <td class="ex-minuto marcador-vivo">45'+1'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401932181" target="_blank">MC Alger</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo above">1562 <span class="pj-count">4PJ</span></td>
   <td class="ex-forma mid">67</td>
@@ -1326,15 +1326,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo above">1567 <span class="pj-count">16PJ</span></td>
   <td class="ex-forma mid">65</td>
   <td class="ex-racha"><span class="ultimos5" title="3V 1D 1E"><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-4</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">0 - 1</td>
+  <td class="ex-minuto marcador-vivo">45'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401883101" target="_blank">FC Andorra</a></td>
   <td class="ex-elo below">1335 <span class="pj-count">28PJ</span></td>
   <td class="ex-forma low">19</td>
   <td class="ex-racha"><span class="ultimos5" title="1V 2D 2E"><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-e">E</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+4</span></td>
   <td class="ex-diff" style="color:#22c55e">+232</td>
   <td class="ex-pred best" title="Código por Elo: dif +232 + 50 local = +282 | Prob. modelo: 81% | 18% | 1%">1</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-fail" title="Provisional -- puede cambiar mientras el partido siga en curso">✗</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401883101')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401883101" style="display:none">
@@ -1360,15 +1360,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo below">1284 <span class="pj-count">13PJ</span></td>
   <td class="ex-forma low">24</td>
   <td class="ex-racha"><span class="ultimos5" title="1V 4D"><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-d">D</span><span class="u5-d">D</span></span> </td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">3 - 0</td>
+  <td class="ex-minuto marcador-vivo">45'+1'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401888236" target="_blank">Genclerbirli</a></td>
   <td class="ex-elo below">1397 <span class="pj-count">12PJ</span></td>
   <td class="ex-forma mid">56</td>
   <td class="ex-racha"><span class="ultimos5" title="2V 3D"><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-d">D</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+8</span></td>
   <td class="ex-diff" style="color:#ef4444">-113</td>
   <td class="ex-pred best" title="Código por Elo: dif -113 + 50 local = -63 | Prob. modelo: 40% | 20% | 39%">X2</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-fail" title="Provisional -- puede cambiar mientras el partido siga en curso">✗</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401888236')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401888236" style="display:none">
@@ -1394,15 +1394,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo elite">1723 <span class="pj-count">9PJ</span></td>
   <td class="ex-forma high">78</td>
   <td class="ex-racha"><span class="ultimos5" title="4V 1E"><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+7</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">0 - 0</td>
+  <td class="ex-minuto marcador-vivo">15'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401902006" target="_blank">Milford</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo elite">1718 <span class="pj-count">8PJ</span></td>
   <td class="ex-forma high">88</td>
   <td class="ex-racha"><span class="ultimos5" title="3V 2E"><span class="u5-v">V</span><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-e">E</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+2</span></td>
   <td class="ex-diff" style="color:#22c55e">+5</td>
   <td class="ex-pred best" title="Código por Elo: dif +5 + 50 local = +55 | Prob. modelo: 54% | 23% | 23%">1X</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401902006')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401902006" style="display:none">
@@ -1428,15 +1428,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo average">1512 <span class="pj-count">9PJ</span></td>
   <td class="ex-forma mid">59</td>
   <td class="ex-racha"><span class="ultimos5" title="2V 1D 2E"><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-e">E</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+2</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">0 - 0</td>
+  <td class="ex-minuto marcador-vivo">16'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401902005" target="_blank">Kaizer Chiefs</a></td>
   <td class="ex-elo above">1597 <span class="pj-count">11PJ</span></td>
   <td class="ex-forma mid">42</td>
   <td class="ex-racha"><span class="ultimos5" title="1V 2D 2E"><span class="u5-e">E</span><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-e">E</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-2</span></td>
   <td class="ex-diff" style="color:#ef4444">-85</td>
   <td class="ex-pred best" title="Código por Elo: dif -85 + 50 local = -35 | Prob. modelo: 46% | 21% | 33%">X2</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-ok" title="Provisional -- puede cambiar mientras el partido siga en curso">✓</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401902005')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401902005" style="display:none">
@@ -1462,15 +1462,15 @@ tr:hover { background: var(--surface2); }
   <td class="ex-elo above">1661 <span class="pj-count">16PJ</span></td>
   <td class="ex-forma low">38</td>
   <td class="ex-racha"><span class="ultimos5" title="2V 2D 1E"><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-d">D</span><span class="u5-e">E</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">-1</span></td>
-  <td class="ex-marcador ">?</td>
-  <td class="ex-minuto "></td>
+  <td class="ex-marcador marcador-vivo">0 - 0</td>
+  <td class="ex-minuto marcador-vivo">14'</td>
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401879794" target="_blank">Zenit</a></td>
   <td class="ex-elo above">1687 <span class="pj-count">16PJ</span></td>
   <td class="ex-forma mid">53</td>
   <td class="ex-racha"><span class="ultimos5" title="3V 1D 1E"><span class="u5-d">D</span><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-v">V</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+6</span></td>
   <td class="ex-diff" style="color:#ef4444">-26</td>
   <td class="ex-pred best" title="Código por Elo: dif -26 + 50 local = +24 | Prob. modelo: 50% | 22% | 28%">12</td>
-  <td class="ex-acierto " title=""></td>
+  <td class="ex-acierto acierto-parcial-fail" title="Provisional -- puede cambiar mientras el partido siga en curso">✗</td>
   <td><button class="expand-btn" onclick="toggleDetalle('401879794')">▾</button></td>
 </tr>
 <tr class="detail-row" id="detail-401879794" style="display:none">
@@ -4697,7 +4697,7 @@ tr:hover { background: var(--surface2); }
   <td class="ex-visitante"><a href="https://www.espn.com/soccer/match/_/gameId/401932182" target="_blank">C. Africain</a><span class="badge-prov" title="Rating provisional (menos de 10 partidos)">PROV</span></td>
   <td class="ex-elo above">1693 <span class="pj-count">4PJ</span></td>
   <td class="ex-forma high">78</td>
-  <td class="ex-racha"><span class="ultimos5" title="2V 2E"><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-e">E</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+5</span></td>
+  <td class="ex-racha"><span class="ultimos5" title="2V 2E"><span class="u5-v">V</span><span class="u5-e">E</span><span class="u5-e">E</span><span class="u5-v">V</span></span> <span class="op-badge" title="Sobre-rendimiento vs ELO esperado" style="color:#94a3b8">+6</span></td>
   <td class="ex-diff" style="color:#22c55e">+68</td>
   <td class="ex-pred best" title="Código por Elo: dif +68 + 50 local = +118 | Prob. modelo: 63% | 22% | 16%">1X</td>
   <td class="ex-acierto " title=""></td>
@@ -4714,7 +4714,7 @@ tr:hover { background: var(--surface2); }
       <div class="detail-team">
         <strong>C. Africain</strong>
         <span class="mom-stable">— Momentum (+0.0)</span>
-        <span class="op-pos">Overperf: +5.4</span>
+        <span class="op-pos">Overperf: +5.5</span>
       </div>
     </div>
   </td>
@@ -4777,7 +4777,7 @@ tr:hover { background: var(--surface2); }
       <div class="detail-team">
         <strong>Baltika</strong>
         <span class="mom-stable">— Momentum (+3.0)</span>
-        <span class="op-pos">Overperf: +5.7</span>
+        <span class="op-pos">Overperf: +5.8</span>
       </div>
       <div class="detail-team">
         <strong>Akhmat Grozny</strong>
@@ -8211,7 +8211,7 @@ tr:hover { background: var(--surface2); }
       <div class="detail-team">
         <strong>Marathón</strong>
         <span class="mom-stable">— Momentum (-0.2)</span>
-        <span class="op-pos">Overperf: +1.7</span>
+        <span class="op-pos">Overperf: +1.8</span>
       </div>
       <div class="detail-team">
         <strong>Génesis</strong>
@@ -8245,7 +8245,7 @@ tr:hover { background: var(--surface2); }
       <div class="detail-team">
         <strong>Olimpia</strong>
         <span class="mom-stable">— Momentum (-2.0)</span>
-        <span class="op-pos">Overperf: +5.0</span>
+        <span class="op-pos">Overperf: +5.1</span>
       </div>
       <div class="detail-team">
         <strong>Estrella Roja</strong>

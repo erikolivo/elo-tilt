@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-28T11:18:13.259039Z",
+  "generado": "2026-11-28T13:46:29.084219Z",
   "fecha_consulta": "2026-11-28",
   "total": 244,
   "predicciones": [
@@ -2520,6 +2520,94 @@
       "confianza": 100.0
     },
     {
+      "fixture_id": "401934493",
+      "fecha": "2026-11-28T08:00:00-05:00",
+      "fecha_display": "2026-11-28",
+      "hora": "08:00",
+      "liga": "all",
+      "liga_pais": "",
+      "liga_slug": "all",
+      "equipo_local": {
+        "id": "134086",
+        "nombre": "Tremblay",
+        "pais": "",
+        "rating": 1662.31,
+        "rd": 290.32,
+        "partidos_jugados": 1,
+        "pj_reales": 1,
+        "form_score": 100.0,
+        "form_local": 100.0,
+        "form_visitante": 50.0,
+        "momentum": "stable",
+        "momentum_diff": 0.0,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 1
+        },
+        "ultimos5": {
+          "texto": "1V",
+          "resultados": [
+            "V"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 2.0,
+          "goles_contra": 0.0,
+          "diferencia": 2.0
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": 24.3,
+        "vol": 0.06
+      },
+      "equipo_visitante": {
+        "id": "11884",
+        "nombre": "Red Star FC ",
+        "pais": "",
+        "rating": 1622.63,
+        "rd": 106.31,
+        "partidos_jugados": 15,
+        "pj_reales": 15,
+        "form_score": 67.9,
+        "form_local": 52.3,
+        "form_visitante": 60.6,
+        "momentum": "stable",
+        "momentum_diff": 0.9,
+        "streak": {
+          "tipo": "W",
+          "cantidad": 2
+        },
+        "ultimos5": {
+          "texto": "2V 3D",
+          "resultados": [
+            "V",
+            "V",
+            "D",
+            "D",
+            "D"
+          ]
+        },
+        "goal_trend": {
+          "goles_favor": 1.33,
+          "goles_contra": 1.27,
+          "diferencia": 0.06
+        },
+        "field_tilt": {
+          "overall": 50.0
+        },
+        "overperformance": -2.1,
+        "vol": 0.06
+      },
+      "prediccion": {
+        "prob_local": 60.3,
+        "prob_empate": 22.2,
+        "prob_visitante": 17.5
+      },
+      "diff_elo": 39.7,
+      "confianza": 19.8
+    },
+    {
       "fixture_id": "401882796",
       "fecha": "2026-11-28T08:00:00-05:00",
       "fecha_display": "2026-11-28",
@@ -2610,94 +2698,6 @@
       },
       "diff_elo": 325.6,
       "confianza": 100.0
-    },
-    {
-      "fixture_id": "401934493",
-      "fecha": "2026-11-28T08:00:00-05:00",
-      "fecha_display": "2026-11-28",
-      "hora": "08:00",
-      "liga": "all",
-      "liga_pais": "",
-      "liga_slug": "all",
-      "equipo_local": {
-        "id": "134086",
-        "nombre": "Tremblay",
-        "pais": "",
-        "rating": 1662.31,
-        "rd": 290.32,
-        "partidos_jugados": 1,
-        "pj_reales": 1,
-        "form_score": 100.0,
-        "form_local": 100.0,
-        "form_visitante": 50.0,
-        "momentum": "stable",
-        "momentum_diff": 0.0,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 1
-        },
-        "ultimos5": {
-          "texto": "1V",
-          "resultados": [
-            "V"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 2.0,
-          "goles_contra": 0.0,
-          "diferencia": 2.0
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": 24.3,
-        "vol": 0.06
-      },
-      "equipo_visitante": {
-        "id": "11884",
-        "nombre": "Red Star FC ",
-        "pais": "",
-        "rating": 1622.63,
-        "rd": 106.31,
-        "partidos_jugados": 15,
-        "pj_reales": 15,
-        "form_score": 67.9,
-        "form_local": 52.3,
-        "form_visitante": 60.6,
-        "momentum": "stable",
-        "momentum_diff": 0.9,
-        "streak": {
-          "tipo": "W",
-          "cantidad": 2
-        },
-        "ultimos5": {
-          "texto": "2V 3D",
-          "resultados": [
-            "V",
-            "V",
-            "D",
-            "D",
-            "D"
-          ]
-        },
-        "goal_trend": {
-          "goles_favor": 1.33,
-          "goles_contra": 1.27,
-          "diferencia": 0.06
-        },
-        "field_tilt": {
-          "overall": 50.0
-        },
-        "overperformance": -2.1,
-        "vol": 0.06
-      },
-      "prediccion": {
-        "prob_local": 60.3,
-        "prob_empate": 22.2,
-        "prob_visitante": 17.5
-      },
-      "diff_elo": 39.7,
-      "confianza": 19.8
     },
     {
       "fixture_id": "401932181",
@@ -5884,7 +5884,7 @@
         "nombre": "Bo'ness",
         "pais": "",
         "rating": 1797.85,
-        "rd": 241.5391078696117,
+        "rd": 241.76388761695952,
         "partidos_jugados": 2,
         "pj_reales": 2,
         "form_score": 100.0,
@@ -5919,7 +5919,7 @@
         "nombre": "Brechin",
         "pais": "",
         "rating": 1296.77,
-        "rd": 191.74714454431452,
+        "rd": 192.03018851871747,
         "partidos_jugados": 6,
         "pj_reales": 2,
         "form_score": 31.8,
@@ -8917,7 +8917,7 @@
         "nombre": "Cumnock",
         "pais": "Escocia",
         "rating": 1791.93,
-        "rd": 252.8882367041133,
+        "rd": 253.10294468822022,
         "partidos_jugados": 2,
         "pj_reales": 2,
         "form_score": 100.0,
@@ -9006,7 +9006,7 @@
         "nombre": "Dumbarton",
         "pais": "Escocia",
         "rating": 1577.17,
-        "rd": 170.36654052497494,
+        "rd": 170.68507508175938,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 66.2,
@@ -9044,7 +9044,7 @@
         "nombre": "Johnstone Burgh",
         "pais": "Escocia",
         "rating": 1622.21,
-        "rd": 241.9685758504381,
+        "rd": 242.19294953208856,
         "partidos_jugados": 2,
         "pj_reales": 2,
         "form_score": 68.9,
@@ -9133,7 +9133,7 @@
         "nombre": "Clyde",
         "pais": "Escocia",
         "rating": 1412.34,
-        "rd": 179.6240939774801,
+        "rd": 179.92626018771773,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 59.8,
@@ -9463,7 +9463,7 @@
         "nombre": "Musselburgh",
         "pais": "Escocia",
         "rating": 1693.47,
-        "rd": 254.35604913280108,
+        "rd": 254.56951203093007,
         "partidos_jugados": 2,
         "pj_reales": 2,
         "form_score": 68.9,
@@ -9828,7 +9828,7 @@
         "nombre": "Renfrew",
         "pais": "Escocia",
         "rating": 1766.61,
-        "rd": 244.25436542761707,
+        "rd": 244.4766486919882,
         "partidos_jugados": 2,
         "pj_reales": 2,
         "form_score": 100.0,
@@ -9863,7 +9863,7 @@
         "nombre": "Cumbernauld",
         "pais": "Escocia",
         "rating": 1578.23,
-        "rd": 164.50395324604713,
+        "rd": 164.83385035520092,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 82.8,
@@ -9955,7 +9955,7 @@
         "nombre": "Brora",
         "pais": "Escocia",
         "rating": 1309.39,
-        "rd": 197.6065834773164,
+        "rd": 197.88130134735,
         "partidos_jugados": 6,
         "pj_reales": 2,
         "form_score": 63.6,
@@ -10047,7 +10047,7 @@
         "nombre": "East Fife",
         "pais": "Escocia",
         "rating": 1409.88,
-        "rd": 196.68097773920354,
+        "rd": 196.95692230792935,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 28.5,
@@ -10101,7 +10101,7 @@
         "nombre": "Stranraer",
         "pais": "Escocia",
         "rating": 1538.28,
-        "rd": 174.4006517638,
+        "rd": 174.7119143992869,
         "partidos_jugados": 7,
         "pj_reales": 7,
         "form_score": 71.1,
@@ -10139,7 +10139,7 @@
         "nombre": "Clachnacuddin",
         "pais": "Escocia",
         "rating": 1498.86,
-        "rd": 172.66547476256338,
+        "rd": 172.97989113761366,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 60.5,
@@ -10193,7 +10193,7 @@
         "nombre": "Threave Rovers",
         "pais": "Escocia",
         "rating": 1803.27,
-        "rd": 210.15359773484326,
+        "rd": 210.41188298794876,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 77.2,
@@ -10284,7 +10284,7 @@
         "nombre": "Troon",
         "pais": "Escocia",
         "rating": 1751.31,
-        "rd": 242.64261482775018,
+        "rd": 242.86637325011841,
         "partidos_jugados": 2,
         "pj_reales": 2,
         "form_score": 100.0,
@@ -11617,7 +11617,7 @@
         "nombre": "ES Tunis",
         "pais": "",
         "rating": 1631.68,
-        "rd": 259.3308915913752,
+        "rd": 259.5402838152889,
         "partidos_jugados": 2,
         "pj_reales": 2,
         "form_score": 62.2,
@@ -11652,7 +11652,7 @@
         "nombre": "Wiliete",
         "pais": "",
         "rating": 1740.13,
-        "rd": 202.30104699896984,
+        "rd": 202.5693359258554,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 63.4,
@@ -11705,7 +11705,7 @@
         "nombre": "Pyramids FC",
         "pais": "",
         "rating": 1647.33,
-        "rd": 183.32297910856474,
+        "rd": 183.61901903672404,
         "partidos_jugados": 5,
         "pj_reales": 5,
         "form_score": 94.2,
@@ -11743,7 +11743,7 @@
         "nombre": "Maghreb",
         "pais": "",
         "rating": 1660.42,
-        "rd": 196.02213454790925,
+        "rd": 196.2990145017406,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 77.8,
@@ -11796,7 +11796,7 @@
         "nombre": "Zamalek",
         "pais": "",
         "rating": 1760.51,
-        "rd": 215.50554201898902,
+        "rd": 215.75742050398676,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 100.0,
@@ -11833,7 +11833,7 @@
         "nombre": "C. Africain",
         "pais": "",
         "rating": 1692.77,
-        "rd": 197.3142420929585,
+        "rd": 197.58931143752326,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 77.8,
@@ -11862,7 +11862,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.4,
+        "overperformance": 5.5,
         "vol": 0.06
       },
       "prediccion": {
@@ -12008,7 +12008,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.7,
+        "overperformance": 5.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -16134,7 +16134,7 @@
         "nombre": "RSB Berkane",
         "pais": "",
         "rating": 1732.81,
-        "rd": 245.05536129431903,
+        "rd": 245.27691127183743,
         "partidos_jugados": 2,
         "pj_reales": 2,
         "form_score": 100.0,
@@ -16169,7 +16169,7 @@
         "nombre": "Colombe",
         "pais": "",
         "rating": 1691.76,
-        "rd": 196.35276845329017,
+        "rd": 196.62920124751295,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 86.6,
@@ -16222,7 +16222,7 @@
         "nombre": "AS FAR",
         "pais": "",
         "rating": 1710.79,
-        "rd": 183.5270347687077,
+        "rd": 183.82271652476516,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 75.2,
@@ -16349,7 +16349,7 @@
         "nombre": "ASKO Kara",
         "pais": "",
         "rating": 1660.04,
-        "rd": 206.4119688980227,
+        "rd": 206.67495646443527,
         "partidos_jugados": 4,
         "pj_reales": 4,
         "form_score": 72.4,
@@ -18150,7 +18150,7 @@
         "nombre": "Comunicaciones",
         "pais": "Guatemala",
         "rating": 1321.91,
-        "rd": 138.79119200897193,
+        "rd": 139.18199626113602,
         "partidos_jugados": 10,
         "pj_reales": 10,
         "form_score": 47.3,
@@ -21087,7 +21087,7 @@
         "nombre": "Marathón",
         "pais": "Honduras",
         "rating": 1728.31,
-        "rd": 195.08194944387492,
+        "rd": 195.36015263964453,
         "partidos_jugados": 9,
         "pj_reales": 9,
         "form_score": 89.6,
@@ -21117,7 +21117,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 1.7,
+        "overperformance": 1.8,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -21209,7 +21209,7 @@
         "field_tilt": {
           "overall": 50.0
         },
-        "overperformance": 5.0,
+        "overperformance": 5.1,
         "vol": 0.06
       },
       "equipo_visitante": {
@@ -21674,7 +21674,7 @@
         "nombre": "Philippines",
         "pais": "",
         "rating": 1182.56,
-        "rd": 153.40463907318653,
+        "rd": 153.75824624315854,
         "partidos_jugados": 22,
         "pj_reales": 4,
         "form_score": 62.2,
@@ -21725,7 +21725,7 @@
         "nombre": "CA La Paz",
         "pais": "México",
         "rating": 1774.06,
-        "rd": 203.3155808378142,
+        "rd": 203.58255056410732,
         "partidos_jugados": 6,
         "pj_reales": 6,
         "form_score": 82.8,
@@ -21817,7 +21817,7 @@
         "nombre": "América",
         "pais": "",
         "rating": 1656.13,
-        "rd": 216.07703227171976,
+        "rd": 216.32828720086863,
         "partidos_jugados": 8,
         "pj_reales": 8,
         "form_score": 97.3,
@@ -21889,7 +21889,7 @@
         "vol": 0.06
       },
       "prediccion": {
-        "prob_local": 75.6,
+        "prob_local": 75.5,
         "prob_empate": 19.8,
         "prob_visitante": 4.6
       },
